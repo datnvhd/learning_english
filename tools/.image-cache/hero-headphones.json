@@ -1,0 +1,35 @@
+[
+ {
+  "id": "a1cdd730-aa04-4ca2-913b-0a354a659c3f",
+  "title": "Woman Listening",
+  "creator": "Burst",
+  "license": "cc0",
+  "foreign_landing_url": "https://stocksnap.io/photo/woman-listening-CXVAJQHIMC",
+  "url": "https://cdn.stocksnap.io/img-thumbs/960w/CXVAJQHIMC.jpg",
+  "thumbnail": "https://api.openverse.org/v1/images/a1cdd730-aa04-4ca2-913b-0a354a659c3f/thumb/",
+  "width": 5446,
+  "height": 3631
+ },
+ {
+  "id": "cf1f90a6-4a2d-4d3e-8ce8-8899731fa3b6",
+  "title": "Quirky Woman",
+  "creator": "Lisa Fotios",
+  "license": "cc0",
+  "foreign_landing_url": "https://stocksnap.io/photo/quirky-woman-FOWGSZEWBU",
+  "url": "https://cdn.stocksnap.io/img-thumbs/960w/FOWGSZEWBU.jpg",
+  "thumbnail": "https://api.openverse.org/v1/images/cf1f90a6-4a2d-4d3e-8ce8-8899731fa3b6/thumb/",
+  "width": 6000,
+  "height": 4000
+ },
+ {
+  "id": "1ee53553-bc91-49ab-b16a-b2175c4e14cc",
+  "title": "Headphones People",
+  "creator": "Alice Moore",
+  "license": "cc0",
+  "foreign_landing_url": "https://stocksnap.io/photo/headphones-people-G2V8G1H1AQ",
+  "url": "https://cdn.stocksnap.io/img-thumbs/960w/G2V8G1H1AQ.jpg",
+  "thumbnail": "https://api.openverse.org/v1/images/1ee53553-bc91-49ab-b16a-b2175c4e14cc/thumb/",
+  "width": 3780,
+  "height": 2782
+ }
+]

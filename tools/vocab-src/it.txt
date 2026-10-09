@@ -1,0 +1,459 @@
+// Chủ đề: Công việc IT
+## 🖥️|Phần cứng máy tính|Computer Hardware
+computer|n|máy tính|My computer starts very quickly.|Máy tính của tôi khởi động rất nhanh.
+laptop|n|máy tính xách tay|I carry my laptop to work.|Tôi mang máy tính xách tay đi làm.
+desktop|n|máy tính để bàn|The office has ten desktops.|Văn phòng có mười máy tính để bàn.
+processor|n|bộ xử lý|This processor is very fast.|Bộ xử lý này rất nhanh.
+memory|n|bộ nhớ|The app uses a lot of memory.|Ứng dụng dùng rất nhiều bộ nhớ.
+storage|n|dung lượng lưu trữ|We need more storage.|Chúng ta cần thêm dung lượng lưu trữ.
+hard drive|n|ổ cứng|The hard drive is almost full.|Ổ cứng gần đầy.
+motherboard|n|bo mạch chủ|The motherboard connects all parts.|Bo mạch chủ kết nối mọi linh kiện.
+graphics card|n|card đồ họa|Gamers need a strong graphics card.|Game thủ cần một card đồ họa mạnh.
+fan|n|quạt tản nhiệt|The fan is making a loud noise.|Quạt tản nhiệt đang kêu rất to.
+power supply|n|bộ nguồn|Check the power supply first.|Hãy kiểm tra bộ nguồn trước.
+server|n|máy chủ|The server is down.|Máy chủ đang ngừng hoạt động.
+chip|n|con chip|The new chip saves energy.|Con chip mới tiết kiệm năng lượng.
+## ⌨️|Thiết bị ngoại vi|Peripherals
+keyboard|n|bàn phím|This keyboard is very comfortable.|Bàn phím này rất thoải mái.
+mouse|n|chuột máy tính|My mouse stopped working.|Chuột máy tính của tôi ngừng hoạt động.
+monitor|n|màn hình|I use two monitors at work.|Tôi dùng hai màn hình ở chỗ làm.
+printer|n|máy in|The printer is out of paper.|Máy in hết giấy.
+scanner|n|máy quét|Please use the scanner on the left.|Hãy dùng máy quét bên trái.
+webcam|n|camera máy tính|Turn on your webcam, please.|Làm ơn bật webcam của bạn lên.
+headset|n|tai nghe có micro|I wear a headset in meetings.|Tôi đeo tai nghe có micro trong các cuộc họp.
+speaker|n|loa|The speaker sounds great.|Cái loa nghe rất hay.
+microphone|n|micrô|Please speak into the microphone.|Xin hãy nói vào micrô.
+USB drive|n|ổ USB|Save the file on a USB drive.|Hãy lưu tệp vào ổ USB.
+cable|n|dây cáp|I need a longer cable.|Tôi cần một sợi cáp dài hơn.
+router|n|bộ định tuyến|Restart the router, please.|Làm ơn khởi động lại bộ định tuyến.
+touchscreen|n|màn hình cảm ứng|The tablet has a touchscreen.|Chiếc máy tính bảng có màn hình cảm ứng.
+## 💿|Hệ điều hành và phần mềm|Operating Systems and Software
+software|n|phần mềm|We develop software for banks.|Chúng tôi phát triển phần mềm cho ngân hàng.
+hardware|n|phần cứng|Hardware problems are hard to fix.|Lỗi phần cứng rất khó sửa.
+operating system|n|hệ điều hành|Windows is an operating system.|Windows là một hệ điều hành.
+application|n|ứng dụng|I installed a new application.|Tôi đã cài một ứng dụng mới.
+install|v|cài đặt|Please install the update.|Vui lòng cài đặt bản cập nhật.
+uninstall|v|gỡ cài đặt|I uninstalled the old program.|Tôi đã gỡ cài đặt chương trình cũ.
+update|n|bản cập nhật|There is a new update today.|Hôm nay có một bản cập nhật mới.
+upgrade|v|nâng cấp|We plan to upgrade the system.|Chúng tôi dự định nâng cấp hệ thống.
+version|n|phiên bản|This is the latest version.|Đây là phiên bản mới nhất.
+driver|n|trình điều khiển|You need to install a driver.|Bạn cần cài một trình điều khiển.
+license|n|giấy phép|The software needs a license.|Phần mềm cần có giấy phép.
+open source|n|mã nguồn mở|Linux is open source.|Linux là mã nguồn mở.
+browser|n|trình duyệt|Open your browser and search.|Hãy mở trình duyệt và tìm kiếm.
+## 📁|Tệp tin và dữ liệu|Files and Data
+file|n|tệp tin|I saved the file on my desktop.|Tôi đã lưu tệp ở màn hình nền.
+folder|n|thư mục|Create a new folder for the project.|Hãy tạo một thư mục mới cho dự án.
+document|n|tài liệu|Please send me the document.|Vui lòng gửi tôi tài liệu.
+download|v|tải xuống|I downloaded the report.|Tôi đã tải báo cáo xuống.
+upload|v|tải lên|Upload your photos here.|Hãy tải ảnh của bạn lên đây.
+save|v|lưu|Do not forget to save your work.|Đừng quên lưu công việc của bạn.
+delete|v|xóa|Delete the old files.|Hãy xóa các tệp cũ.
+copy|v|sao chép|Copy the text and paste it here.|Sao chép văn bản rồi dán vào đây.
+paste|v|dán|Paste the link into the box.|Dán liên kết vào ô này.
+backup|n|bản sao lưu|Make a backup every week.|Hãy tạo bản sao lưu mỗi tuần.
+restore|v|khôi phục|We can restore the lost data.|Chúng ta có thể khôi phục dữ liệu bị mất.
+compress|v|nén|Compress the file before sending.|Hãy nén tệp trước khi gửi.
+extension|n|phần mở rộng tệp|The file extension is PDF.|Phần mở rộng của tệp là PDF.
+## 🌐|Mạng máy tính|Networking
+network|n|mạng|The network is very slow.|Mạng đang rất chậm.
+internet|n|internet|I need a fast internet connection.|Tôi cần kết nối internet nhanh.
+wireless|adj|không dây|We have wireless internet.|Chúng tôi có internet không dây.
+bandwidth|n|băng thông|The video uses a lot of bandwidth.|Video dùng rất nhiều băng thông.
+connection|n|kết nối|The connection was lost.|Kết nối đã bị mất.
+protocol|n|giao thức|HTTP is a web protocol.|HTTP là một giao thức web.
+IP address|n|địa chỉ IP|Every device has an IP address.|Mỗi thiết bị đều có một địa chỉ IP.
+domain|n|tên miền|We bought a new domain.|Chúng tôi đã mua một tên miền mới.
+firewall|n|tường lửa|The firewall blocks bad traffic.|Tường lửa chặn lưu lượng độc hại.
+gateway|n|cổng kết nối|The gateway sends data outside.|Cổng kết nối gửi dữ liệu ra bên ngoài.
+latency|n|độ trễ|High latency makes games lag.|Độ trễ cao làm game bị giật.
+packet|n|gói dữ liệu|Some packets were lost.|Một số gói dữ liệu đã bị mất.
+switch|n|bộ chuyển mạch|Plug the cable into the switch.|Cắm dây cáp vào bộ chuyển mạch.
+## 🔍|Internet và web|Internet and the Web
+website|n|trang web|Our website is easy to use.|Trang web của chúng tôi dễ sử dụng.
+webpage|n|trang web (một trang)|This webpage loads slowly.|Trang web này tải chậm.
+link|n|liên kết|Click the link below.|Hãy nhấp vào liên kết bên dưới.
+search engine|n|công cụ tìm kiếm|Google is a search engine.|Google là một công cụ tìm kiếm.
+click|v|nhấp chuột|Click the blue button.|Nhấp vào nút màu xanh.
+scroll|v|cuộn|Scroll down to see more.|Cuộn xuống để xem thêm.
+bookmark|n|dấu trang|I added a bookmark to this page.|Tôi đã thêm dấu trang cho trang này.
+cookie|n|cookie|This site uses cookies.|Trang này sử dụng cookie.
+cache|n|bộ nhớ đệm|Clear the browser cache.|Hãy xóa bộ nhớ đệm của trình duyệt.
+hosting|n|dịch vụ lưu trữ web|We pay for web hosting.|Chúng tôi trả tiền cho dịch vụ lưu trữ web.
+traffic|n|lưu lượng truy cập|The site has heavy traffic.|Trang web có lưu lượng truy cập lớn.
+login|n|đăng nhập|Enter your login details.|Nhập thông tin đăng nhập của bạn.
+password|n|mật khẩu|Never share your password.|Đừng bao giờ chia sẻ mật khẩu của bạn.
+## 👨‍💻|Lập trình cơ bản|Programming Basics
+program|n|chương trình|I wrote a small program.|Tôi đã viết một chương trình nhỏ.
+code|n|mã lệnh|Your code is clean and clear.|Mã của bạn sạch và rõ ràng.
+programmer|n|lập trình viên|The programmer fixed the problem.|Lập trình viên đã sửa xong vấn đề.
+variable|n|biến|Declare a variable first.|Hãy khai báo một biến trước.
+constant|n|hằng số|Pi is a constant.|Pi là một hằng số.
+function|n|hàm|Call this function twice.|Hãy gọi hàm này hai lần.
+parameter|n|tham số|The function takes two parameters.|Hàm nhận hai tham số.
+loop|n|vòng lặp|The loop runs ten times.|Vòng lặp chạy mười lần.
+condition|n|điều kiện|Check the condition before running.|Kiểm tra điều kiện trước khi chạy.
+syntax|n|cú pháp|There is a syntax error here.|Có một lỗi cú pháp ở đây.
+comment|n|chú thích|Add a comment to explain the code.|Hãy thêm chú thích để giải thích mã.
+compile|v|biên dịch|It takes a minute to compile.|Mất một phút để biên dịch.
+execute|v|thực thi|Execute the script now.|Hãy thực thi đoạn mã ngay bây giờ.
+## 🧱|Cấu trúc dữ liệu|Data Structures
+array|n|mảng|Store the numbers in an array.|Lưu các số vào một mảng.
+list|n|danh sách|Add an item to the list.|Thêm một mục vào danh sách.
+string|n|chuỗi ký tự|A string is a group of characters.|Chuỗi là một nhóm ký tự.
+integer|n|số nguyên|The value must be an integer.|Giá trị phải là số nguyên.
+boolean|n|kiểu logic|A boolean is true or false.|Kiểu logic là đúng hoặc sai.
+object|n|đối tượng|Each user is an object.|Mỗi người dùng là một đối tượng.
+stack|n|ngăn xếp|A stack works last in, first out.|Ngăn xếp hoạt động theo kiểu vào sau ra trước.
+queue|n|hàng đợi|A queue works first in, first out.|Hàng đợi hoạt động theo kiểu vào trước ra trước.
+tree|n|cây (dữ liệu)|A tree has a root and branches.|Cây có một gốc và các nhánh.
+graph|n|đồ thị|We use a graph to show the map.|Chúng tôi dùng đồ thị để biểu diễn bản đồ.
+hash table|n|bảng băm|A hash table finds data quickly.|Bảng băm tìm dữ liệu rất nhanh.
+pointer|n|con trỏ|A pointer stores a memory address.|Con trỏ lưu một địa chỉ bộ nhớ.
+node|n|nút|Each node holds a value.|Mỗi nút giữ một giá trị.
+## 🧮|Thuật toán|Algorithms
+algorithm|n|thuật toán|This algorithm is very efficient.|Thuật toán này rất hiệu quả.
+sort|v|sắp xếp|Sort the names alphabetically.|Sắp xếp các tên theo bảng chữ cái.
+search|v|tìm kiếm|Search for the name in the list.|Tìm tên đó trong danh sách.
+recursion|n|đệ quy|Recursion is a function calling itself.|Đệ quy là khi một hàm tự gọi chính nó.
+iterate|v|lặp qua|Iterate over every item.|Lặp qua từng phần tử.
+optimize|v|tối ưu hóa|We need to optimize this query.|Chúng ta cần tối ưu hóa truy vấn này.
+complexity|n|độ phức tạp|Check the time complexity.|Hãy kiểm tra độ phức tạp về thời gian.
+efficient|adj|hiệu quả|Efficient code saves time.|Mã hiệu quả giúp tiết kiệm thời gian.
+binary|adj|nhị phân|Computers use binary numbers.|Máy tính dùng các số nhị phân.
+logic|n|logic|The logic of this code is wrong.|Logic của đoạn mã này bị sai.
+pattern|n|mẫu, khuôn mẫu|Use a common design pattern.|Hãy dùng một mẫu thiết kế phổ biến.
+solve|v|giải quyết|I solved the problem.|Tôi đã giải quyết được vấn đề.
+calculate|v|tính toán|The program calculates the total.|Chương trình tính tổng.
+## 🧰|Ngôn ngữ và công cụ|Languages and Tools
+language|n|ngôn ngữ|Python is an easy language.|Python là một ngôn ngữ dễ học.
+framework|n|khung phát triển|Angular is a web framework.|Angular là một framework web.
+library|n|thư viện|I used a library for charts.|Tôi dùng một thư viện cho biểu đồ.
+package|n|gói phần mềm|Install the package with npm.|Cài gói bằng npm.
+editor|n|trình soạn thảo|My favorite editor is VS Code.|Trình soạn thảo yêu thích của tôi là VS Code.
+terminal|n|cửa sổ dòng lệnh|Open the terminal and type this.|Hãy mở dòng lệnh và gõ dòng này.
+command|n|câu lệnh|Run this command to start.|Chạy lệnh này để bắt đầu.
+script|n|đoạn mã tự động|I wrote a script to save time.|Tôi viết một đoạn mã để tiết kiệm thời gian.
+plugin|n|phần mở rộng|Add a plugin to the editor.|Thêm một phần mở rộng vào trình soạn thảo.
+compiler|n|trình biên dịch|The compiler found an error.|Trình biên dịch phát hiện một lỗi.
+runtime|n|môi trường chạy|Node is a JavaScript runtime.|Node là một môi trường chạy JavaScript.
+dependency|n|thư viện phụ thuộc|Update every dependency.|Hãy cập nhật mọi thư viện phụ thuộc.
+## 🎨|Phát triển giao diện|Front-end Development
+front-end|n|giao diện người dùng|She works on front-end.|Cô ấy làm về giao diện người dùng.
+component|n|thành phần|Create a reusable component.|Tạo một thành phần có thể tái sử dụng.
+template|n|mẫu giao diện|This template shows the user list.|Mẫu này hiển thị danh sách người dùng.
+layout|n|bố cục|The layout looks great on phones.|Bố cục trông rất đẹp trên điện thoại.
+responsive|adj|thích ứng đa thiết bị|We need a responsive design.|Chúng ta cần một thiết kế thích ứng.
+style|n|kiểu dáng|Change the style of the button.|Đổi kiểu dáng của nút.
+animation|n|hiệu ứng chuyển động|The animation is smooth.|Hiệu ứng chuyển động rất mượt.
+button|n|nút bấm|Click the submit button.|Nhấp vào nút gửi.
+form|n|biểu mẫu|Fill in the form below.|Hãy điền vào biểu mẫu bên dưới.
+input|n|dữ liệu nhập|Check the user input.|Hãy kiểm tra dữ liệu người dùng nhập.
+render|v|hiển thị|The page renders in two seconds.|Trang hiển thị trong hai giây.
+event|n|sự kiện|A click event runs this code.|Một sự kiện nhấp chuột chạy đoạn mã này.
+state|n|trạng thái|Save the state of the app.|Lưu trạng thái của ứng dụng.
+## ⚙️|Phát triển hệ thống phía sau|Back-end Development
+back-end|n|hệ thống phía sau|He is a back-end developer.|Anh ấy là lập trình viên back-end.
+request|n|yêu cầu|The server got a request.|Máy chủ nhận được một yêu cầu.
+response|n|phản hồi|The response arrived in one second.|Phản hồi đến sau một giây.
+endpoint|n|điểm cuối API|Call this endpoint to get users.|Gọi điểm cuối này để lấy người dùng.
+route|n|đường dẫn|Add a new route to the app.|Thêm một đường dẫn mới vào ứng dụng.
+middleware|n|phần mềm trung gian|Use middleware to check tokens.|Dùng phần mềm trung gian để kiểm tra token.
+session|n|phiên làm việc|The session expires in an hour.|Phiên làm việc hết hạn sau một giờ.
+authentication|n|xác thực|Authentication is required.|Yêu cầu phải xác thực.
+authorization|n|phân quyền|Authorization decides who can enter.|Phân quyền quyết định ai được vào.
+cache|v|lưu tạm|We cache popular pages.|Chúng tôi lưu tạm các trang phổ biến.
+queue|v|xếp hàng xử lý|Queue the emails for sending.|Xếp các email vào hàng đợi để gửi.
+thread|n|luồng xử lý|Each thread runs a task.|Mỗi luồng chạy một tác vụ.
+performance|n|hiệu năng|Performance is our priority.|Hiệu năng là ưu tiên của chúng tôi.
+## 🗄️|Cơ sở dữ liệu|Databases
+database|n|cơ sở dữ liệu|The database stores user data.|Cơ sở dữ liệu lưu dữ liệu người dùng.
+table|n|bảng dữ liệu|The users table has five columns.|Bảng người dùng có năm cột.
+record|n|bản ghi|Add a new record.|Thêm một bản ghi mới.
+query|n|truy vấn|This query is very slow.|Truy vấn này rất chậm.
+index|n|chỉ mục|An index speeds up searches.|Chỉ mục giúp tìm kiếm nhanh hơn.
+schema|n|lược đồ|Change the database schema.|Thay đổi lược đồ cơ sở dữ liệu.
+primary key|n|khóa chính|Each row has a primary key.|Mỗi hàng đều có một khóa chính.
+transaction|n|giao dịch|The transaction was successful.|Giao dịch đã thành công.
+migration|n|di chuyển dữ liệu|Run the migration tonight.|Hãy chạy việc di chuyển dữ liệu tối nay.
+replica|n|bản sao dữ liệu|We keep a replica of the database.|Chúng tôi giữ một bản sao của cơ sở dữ liệu.
+insert|v|chèn|Insert a new row into the table.|Chèn một hàng mới vào bảng.
+column|n|cột|Add a column called email.|Thêm một cột tên là email.
+row|n|hàng|Each row is one customer.|Mỗi hàng là một khách hàng.
+## 🔌|API và dịch vụ|APIs and Services
+API|n|giao diện lập trình|We built an API for mobile apps.|Chúng tôi xây dựng một API cho ứng dụng di động.
+service|n|dịch vụ|This service sends emails.|Dịch vụ này gửi email.
+microservice|n|vi dịch vụ|Each microservice has one job.|Mỗi vi dịch vụ chỉ làm một việc.
+integrate|v|tích hợp|We integrate the payment system.|Chúng tôi tích hợp hệ thống thanh toán.
+webhook|n|webhook|The webhook notifies us instantly.|Webhook thông báo cho chúng tôi ngay lập tức.
+token|n|mã thông báo|Send the token with each request.|Gửi mã thông báo cùng mỗi yêu cầu.
+JSON|n|định dạng JSON|The server returns JSON data.|Máy chủ trả về dữ liệu JSON.
+parse|v|phân tích cú pháp|Parse the text into an object.|Phân tích văn bản thành đối tượng.
+timeout|n|hết thời gian chờ|The request ended with a timeout.|Yêu cầu kết thúc do hết thời gian chờ.
+rate limit|n|giới hạn tần suất|The API has a rate limit.|API có giới hạn tần suất.
+documentation|n|tài liệu hướng dẫn|Read the API documentation.|Hãy đọc tài liệu hướng dẫn API.
+sandbox|n|môi trường thử nghiệm|Test it in the sandbox.|Hãy thử nó trong môi trường thử nghiệm.
+## 🌿|Quản lý mã nguồn|Version Control
+repository|n|kho mã nguồn|Clone the repository first.|Hãy sao chép kho mã nguồn trước.
+commit|n|lần lưu thay đổi|I made a commit this morning.|Sáng nay tôi đã lưu một thay đổi.
+branch|n|nhánh|Create a new branch for this feature.|Tạo một nhánh mới cho tính năng này.
+merge|v|hợp nhất|Merge your branch into main.|Hợp nhất nhánh của bạn vào nhánh chính.
+conflict|n|xung đột|There is a merge conflict.|Có một xung đột khi hợp nhất.
+pull request|n|yêu cầu hợp nhất|Please review my pull request.|Vui lòng xem xét yêu cầu hợp nhất của tôi.
+clone|v|sao chép kho mã|Clone the project to your laptop.|Sao chép dự án về máy tính của bạn.
+push|v|đẩy mã lên|Push your changes to the server.|Đẩy các thay đổi của bạn lên máy chủ.
+pull|v|kéo mã về|Pull the latest code before you start.|Kéo mã mới nhất về trước khi bắt đầu.
+revert|v|hoàn tác|Revert the last commit.|Hoàn tác lần lưu gần nhất.
+tag|n|thẻ đánh dấu|We added a tag for version one.|Chúng tôi gắn thẻ cho phiên bản một.
+review|n|đánh giá mã|Code review helps us learn.|Đánh giá mã giúp chúng tôi học hỏi.
+history|n|lịch sử|Check the history of this file.|Hãy xem lịch sử của tệp này.
+## 🧪|Kiểm thử phần mềm|Software Testing
+test|n|bài kiểm thử|Write a test for this function.|Hãy viết một bài kiểm thử cho hàm này.
+tester|n|người kiểm thử|The tester found three bugs.|Người kiểm thử đã tìm ra ba lỗi.
+unit test|n|kiểm thử đơn vị|Every function needs a unit test.|Mỗi hàm đều cần một kiểm thử đơn vị.
+automation|n|tự động hóa|Test automation saves hours.|Tự động hóa kiểm thử tiết kiệm nhiều giờ.
+requirement|n|yêu cầu|We must meet every requirement.|Chúng ta phải đáp ứng mọi yêu cầu.
+coverage|n|độ bao phủ|Our test coverage is ninety percent.|Độ bao phủ kiểm thử của chúng tôi là chín mươi phần trăm.
+pass|v|đạt|All tests passed.|Tất cả các bài kiểm thử đều đạt.
+fail|v|thất bại|Two tests failed.|Hai bài kiểm thử đã thất bại.
+mock|n|đối tượng giả lập|Use a mock instead of the database.|Dùng đối tượng giả lập thay cho cơ sở dữ liệu.
+regression|n|lỗi hồi quy|We found a regression after the update.|Chúng tôi thấy một lỗi hồi quy sau khi cập nhật.
+quality|n|chất lượng|Quality is more important than speed.|Chất lượng quan trọng hơn tốc độ.
+verify|v|xác minh|Verify the result twice.|Hãy xác minh kết quả hai lần.
+release|n|bản phát hành|The release is on Friday.|Bản phát hành vào thứ Sáu.
+## 🐞|Gỡ lỗi|Debugging
+bug|n|lỗi phần mềm|We fixed a serious bug.|Chúng tôi đã sửa một lỗi nghiêm trọng.
+debug|v|gỡ lỗi|I need to debug this function.|Tôi cần gỡ lỗi cho hàm này.
+error|n|lỗi|The screen shows an error message.|Màn hình hiện thông báo lỗi.
+crash|v|bị sập|The app crashes on startup.|Ứng dụng bị sập khi khởi động.
+freeze|v|bị treo|My computer froze again.|Máy tính của tôi lại bị treo.
+log|n|nhật ký hệ thống|Check the log for details.|Hãy xem nhật ký để biết chi tiết.
+exception|n|ngoại lệ|The code throws an exception.|Đoạn mã ném ra một ngoại lệ.
+breakpoint|n|điểm dừng|Set a breakpoint on line ten.|Đặt điểm dừng ở dòng mười.
+stack trace|n|vết ngăn xếp|Send me the stack trace.|Gửi cho tôi vết ngăn xếp.
+fix|v|sửa|I will fix it today.|Hôm nay tôi sẽ sửa nó.
+patch|n|bản vá|We released a security patch.|Chúng tôi đã phát hành một bản vá bảo mật.
+reproduce|v|tái hiện|Can you reproduce the bug?|Bạn có thể tái hiện lỗi này không?
+troubleshoot|v|khắc phục sự cố|Let me troubleshoot the network.|Để tôi khắc phục sự cố mạng.
+## 🚀|DevOps và triển khai|DevOps and Deployment
+deploy|v|triển khai|We deploy every Friday.|Chúng tôi triển khai vào mỗi thứ Sáu.
+pipeline|n|quy trình tự động|The pipeline runs all tests.|Quy trình tự động chạy tất cả kiểm thử.
+build|n|bản dựng|The build failed again.|Bản dựng lại thất bại.
+environment|n|môi trường|Test it in the staging environment.|Hãy thử nó trong môi trường thử nghiệm trước khi phát hành.
+production|n|môi trường thật|The bug is only in production.|Lỗi này chỉ có ở môi trường thật.
+staging|n|môi trường thử trước|Deploy to staging first.|Hãy triển khai lên môi trường thử trước.
+rollback|n|quay lui|We did a rollback after the crash.|Chúng tôi đã quay lui sau khi bị sập.
+monitor|v|giám sát|We monitor the server all day.|Chúng tôi giám sát máy chủ cả ngày.
+alert|n|cảnh báo|An alert woke me at night.|Một cảnh báo đã đánh thức tôi lúc nửa đêm.
+uptime|n|thời gian hoạt động|Our uptime is ninety-nine percent.|Thời gian hoạt động của chúng tôi là chín mươi chín phần trăm.
+downtime|n|thời gian ngừng hoạt động|We planned a short downtime.|Chúng tôi lên kế hoạch cho một thời gian ngừng hoạt động ngắn.
+scale|v|mở rộng quy mô|The system can scale easily.|Hệ thống có thể mở rộng dễ dàng.
+configuration|n|cấu hình|Check the server configuration.|Hãy kiểm tra cấu hình máy chủ.
+## ☁️|Điện toán đám mây|Cloud Computing
+cloud|n|đám mây|We moved everything to the cloud.|Chúng tôi chuyển mọi thứ lên đám mây.
+virtual machine|n|máy ảo|Start a virtual machine for testing.|Hãy khởi động một máy ảo để thử nghiệm.
+instance|n|phiên bản chạy|Launch a new instance.|Khởi chạy một phiên bản mới.
+bucket|n|kho chứa tệp|Upload the images to the bucket.|Tải hình ảnh lên kho chứa.
+region|n|khu vực|Choose the closest region.|Hãy chọn khu vực gần nhất.
+subscription|n|gói đăng ký|Our subscription ends next month.|Gói đăng ký của chúng tôi hết hạn vào tháng sau.
+cost|n|chi phí|Cloud cost is rising every month.|Chi phí đám mây tăng lên mỗi tháng.
+serverless|adj|không máy chủ|We use a serverless function.|Chúng tôi dùng một hàm không máy chủ.
+load balancer|n|bộ cân bằng tải|The load balancer shares traffic.|Bộ cân bằng tải chia sẻ lưu lượng.
+provider|n|nhà cung cấp|Which cloud provider do you use?|Bạn dùng nhà cung cấp đám mây nào?
+data center|n|trung tâm dữ liệu|The data center is in Singapore.|Trung tâm dữ liệu đặt ở Singapore.
+availability|n|tính sẵn sàng|High availability is important.|Tính sẵn sàng cao rất quan trọng.
+## 📦|Container và hạ tầng|Containers and Infrastructure
+container|n|vùng chứa ứng dụng|The app runs in a container.|Ứng dụng chạy trong một vùng chứa.
+image|n|ảnh đóng gói|Build the image first.|Hãy dựng ảnh đóng gói trước.
+cluster|n|cụm máy chủ|We manage a cluster of servers.|Chúng tôi quản lý một cụm máy chủ.
+orchestration|n|điều phối|Kubernetes handles orchestration.|Kubernetes lo việc điều phối.
+volume|n|ổ lưu trữ|Attach a volume to the container.|Gắn một ổ lưu trữ vào vùng chứa.
+network|v|kết nối mạng|Network the two services together.|Kết nối mạng hai dịch vụ với nhau.
+resource|n|tài nguyên|The job needs more resources.|Tác vụ cần thêm tài nguyên.
+infrastructure|n|hạ tầng|We manage infrastructure with code.|Chúng tôi quản lý hạ tầng bằng mã.
+provision|v|cấp phát|Provision three new servers.|Cấp phát ba máy chủ mới.
+automate|v|tự động hóa|We automate the setup.|Chúng tôi tự động hóa việc cài đặt.
+registry|n|kho lưu trữ ảnh|Push the image to the registry.|Đẩy ảnh lên kho lưu trữ.
+node|n|máy trong cụm|One node is offline.|Một máy trong cụm đang ngoại tuyến.
+proxy|n|máy chủ trung gian|Requests go through a proxy.|Các yêu cầu đi qua một máy chủ trung gian.
+## 🔒|Bảo mật|Security
+security|n|bảo mật|Security is everyone's job.|Bảo mật là công việc của mọi người.
+encrypt|v|mã hóa|We encrypt all passwords.|Chúng tôi mã hóa mọi mật khẩu.
+decrypt|v|giải mã|Only the owner can decrypt it.|Chỉ chủ sở hữu mới giải mã được.
+key|n|khóa mã hóa|Keep your private key secret.|Hãy giữ bí mật khóa riêng của bạn.
+certificate|n|chứng chỉ số|The certificate has expired.|Chứng chỉ đã hết hạn.
+permission|n|quyền truy cập|You need permission to open it.|Bạn cần có quyền để mở nó.
+vulnerability|n|lỗ hổng bảo mật|They found a serious vulnerability.|Họ đã tìm thấy một lỗ hổng nghiêm trọng.
+access|n|quyền truy cập|Only admins have access.|Chỉ quản trị viên mới có quyền truy cập.
+two-factor|adj|hai lớp xác thực|Turn on two-factor login.|Hãy bật đăng nhập hai lớp.
+secure|adj|an toàn|Keep your data secure.|Hãy giữ dữ liệu của bạn an toàn.
+protect|v|bảo vệ|The firewall protects our network.|Tường lửa bảo vệ mạng của chúng tôi.
+privacy|n|quyền riêng tư|We respect user privacy.|Chúng tôi tôn trọng quyền riêng tư của người dùng.
+audit|n|kiểm toán bảo mật|The security audit starts Monday.|Đợt kiểm toán bảo mật bắt đầu vào thứ Hai.
+## 🛡️|An ninh mạng|Cybersecurity
+hacker|n|tin tặc|A hacker attacked the website.|Một tin tặc đã tấn công trang web.
+virus|n|vi-rút|My laptop has a virus.|Máy tính của tôi bị nhiễm vi-rút.
+malware|n|phần mềm độc hại|Malware can steal your data.|Phần mềm độc hại có thể đánh cắp dữ liệu.
+phishing|n|lừa đảo qua mạng|Be careful with phishing emails.|Hãy cẩn thận với email lừa đảo.
+scam|n|trò lừa đảo|That website is a scam.|Trang web đó là một trò lừa đảo.
+attack|n|cuộc tấn công|The site survived a big attack.|Trang web đã vượt qua một cuộc tấn công lớn.
+breach|n|vụ rò rỉ dữ liệu|The company had a data breach.|Công ty đã bị một vụ rò rỉ dữ liệu.
+antivirus|n|phần mềm diệt vi-rút|Update your antivirus regularly.|Hãy cập nhật phần mềm diệt vi-rút thường xuyên.
+ransomware|n|mã độc tống tiền|Ransomware locks all your files.|Mã độc tống tiền khóa mọi tệp của bạn.
+spam|n|thư rác|My inbox is full of spam.|Hộp thư của tôi đầy thư rác.
+suspicious|adj|đáng ngờ|Do not open suspicious links.|Đừng mở các liên kết đáng ngờ.
+detect|v|phát hiện|The system detected an intruder.|Hệ thống đã phát hiện một kẻ xâm nhập.
+block|v|chặn|Block that website, please.|Làm ơn chặn trang web đó.
+## 🤖|Trí tuệ nhân tạo|Artificial Intelligence
+artificial intelligence|n|trí tuệ nhân tạo|Artificial intelligence is changing work.|Trí tuệ nhân tạo đang thay đổi công việc.
+machine learning|n|học máy|Machine learning finds patterns in data.|Học máy tìm ra các mẫu trong dữ liệu.
+model|n|mô hình|We trained a new model.|Chúng tôi đã huấn luyện một mô hình mới.
+train|v|huấn luyện|It takes days to train the model.|Mất nhiều ngày để huấn luyện mô hình.
+dataset|n|tập dữ liệu|The dataset has a million images.|Tập dữ liệu có một triệu hình ảnh.
+neural network|n|mạng nơ-ron|A neural network learns from examples.|Mạng nơ-ron học từ các ví dụ.
+prediction|n|dự đoán|The prediction was very accurate.|Dự đoán rất chính xác.
+chatbot|n|chatbot|Our chatbot answers questions all day.|Chatbot của chúng tôi trả lời câu hỏi cả ngày.
+prompt|n|câu lệnh gợi ý|Write a clear prompt for the AI.|Hãy viết một câu lệnh rõ ràng cho AI.
+accuracy|n|độ chính xác|The accuracy is ninety-five percent.|Độ chính xác là chín mươi lăm phần trăm.
+generate|v|tạo ra|The tool generates images from text.|Công cụ tạo ra hình ảnh từ văn bản.
+robot|n|người máy|The robot cleans the floor.|Người máy lau sàn nhà.
+recognize|v|nhận diện|The app can recognize faces.|Ứng dụng có thể nhận diện khuôn mặt.
+## 📊|Dữ liệu và phân tích|Data and Analytics
+data|n|dữ liệu|We collect data every day.|Chúng tôi thu thập dữ liệu mỗi ngày.
+analyze|v|phân tích|Analyze the sales data.|Hãy phân tích dữ liệu bán hàng.
+report|n|báo cáo|I sent the report to my boss.|Tôi đã gửi báo cáo cho sếp.
+dashboard|n|bảng điều khiển|The dashboard shows live numbers.|Bảng điều khiển hiển thị số liệu trực tiếp.
+chart|n|biểu đồ|This chart shows monthly growth.|Biểu đồ này cho thấy mức tăng trưởng hằng tháng.
+metric|n|chỉ số đo lường|Which metric matters most?|Chỉ số nào quan trọng nhất?
+trend|n|xu hướng|We see a clear upward trend.|Chúng tôi thấy một xu hướng đi lên rõ rệt.
+statistics|n|thống kê|Statistics help us make decisions.|Thống kê giúp chúng tôi ra quyết định.
+clean|v|làm sạch dữ liệu|Clean the data before analysis.|Hãy làm sạch dữ liệu trước khi phân tích.
+filter|v|lọc|Filter the list by date.|Lọc danh sách theo ngày.
+export|v|xuất|Export the results to Excel.|Xuất kết quả ra Excel.
+spreadsheet|n|bảng tính|Open the spreadsheet, please.|Làm ơn mở bảng tính ra.
+insight|n|thông tin chi tiết|The report gave us useful insights.|Báo cáo mang lại cho chúng tôi những hiểu biết hữu ích.
+## 🔄|Phương pháp Agile|Agile and Scrum
+agile|adj|linh hoạt (Agile)|We work in an agile way.|Chúng tôi làm việc theo cách linh hoạt.
+sprint|n|chu kỳ làm việc ngắn|Each sprint lasts two weeks.|Mỗi chu kỳ làm việc kéo dài hai tuần.
+backlog|n|danh sách công việc tồn|Add the task to the backlog.|Thêm công việc vào danh sách tồn.
+user story|n|câu chuyện người dùng|Write a user story first.|Hãy viết câu chuyện người dùng trước.
+standup|n|họp đứng hằng ngày|Our standup starts at nine.|Buổi họp đứng của chúng tôi bắt đầu lúc chín giờ.
+retrospective|n|buổi nhìn lại|We hold a retrospective after each sprint.|Chúng tôi tổ chức buổi nhìn lại sau mỗi chu kỳ.
+scrum master|n|người điều phối Scrum|The scrum master leads the team.|Người điều phối Scrum dẫn dắt nhóm.
+velocity|n|tốc độ làm việc|Our team velocity is improving.|Tốc độ làm việc của nhóm đang tăng lên.
+estimate|v|ước tính|Can you estimate this task?|Bạn có thể ước tính công việc này không?
+priority|n|độ ưu tiên|This task has high priority.|Công việc này có độ ưu tiên cao.
+iteration|n|vòng lặp phát triển|Each iteration adds new features.|Mỗi vòng lặp bổ sung tính năng mới.
+feature|n|tính năng|We are building a new feature.|Chúng tôi đang xây dựng một tính năng mới.
+kanban|n|bảng Kanban|Move the card on the kanban board.|Hãy di chuyển thẻ trên bảng Kanban.
+## 📋|Quản lý dự án|Project Management
+project|n|dự án|The project ends in June.|Dự án kết thúc vào tháng Sáu.
+deadline|n|hạn chót|The deadline is next Friday.|Hạn chót là thứ Sáu tuần sau.
+milestone|n|cột mốc|We reached an important milestone.|Chúng tôi đã đạt một cột mốc quan trọng.
+task|n|nhiệm vụ|I finished three tasks today.|Hôm nay tôi hoàn thành ba nhiệm vụ.
+manager|n|quản lý|The manager approved the plan.|Người quản lý đã duyệt kế hoạch.
+stakeholder|n|bên liên quan|We updated every stakeholder.|Chúng tôi đã cập nhật cho mọi bên liên quan.
+scope|n|phạm vi|The scope of the project changed.|Phạm vi của dự án đã thay đổi.
+risk|n|rủi ro|Every project has some risk.|Dự án nào cũng có rủi ro.
+plan|n|kế hoạch|Let's make a clear plan.|Hãy lập một kế hoạch rõ ràng.
+delay|n|sự chậm trễ|A delay is possible.|Có thể sẽ có sự chậm trễ.
+progress|n|tiến độ|Please update your progress.|Hãy cập nhật tiến độ của bạn.
+assign|v|giao việc|I will assign this task to Nam.|Tôi sẽ giao việc này cho Nam.
+deliver|v|bàn giao|We will deliver the app on time.|Chúng tôi sẽ bàn giao ứng dụng đúng hạn.
+## 🗣️|Họp và giao tiếp công sở|Meetings and Workplace Communication
+meeting|n|cuộc họp|The meeting starts at ten.|Cuộc họp bắt đầu lúc mười giờ.
+agenda|n|chương trình họp|Please check the agenda.|Hãy xem chương trình họp.
+presentation|n|bài thuyết trình|My presentation is tomorrow.|Bài thuyết trình của tôi vào ngày mai.
+discuss|v|thảo luận|Let's discuss the schedule.|Chúng ta hãy thảo luận về lịch trình.
+suggest|v|đề xuất|I suggest a different approach.|Tôi đề xuất một cách tiếp cận khác.
+agree|v|đồng ý|I agree with your idea.|Tôi đồng ý với ý tưởng của bạn.
+disagree|v|không đồng ý|I disagree, and here is why.|Tôi không đồng ý, và đây là lý do.
+clarify|v|làm rõ|Could you clarify that point?|Bạn có thể làm rõ điểm đó không?
+update|v|cập nhật tình hình|Let me update you on the project.|Để tôi cập nhật cho bạn về dự án.
+feedback|n|phản hồi|Thanks for your feedback.|Cảm ơn phản hồi của bạn.
+follow up|phr|theo dõi tiếp|I will follow up by email.|Tôi sẽ theo dõi tiếp qua email.
+minutes|n|biên bản họp|Who will write the minutes?|Ai sẽ viết biên bản họp?
+share screen|phr|chia sẻ màn hình|Can you share your screen?|Bạn có thể chia sẻ màn hình không?
+## 💼|Tuyển dụng và sự nghiệp|Hiring and Careers
+developer|n|lập trình viên|We are hiring a developer.|Chúng tôi đang tuyển một lập trình viên.
+engineer|n|kỹ sư|She is a software engineer.|Cô ấy là một kỹ sư phần mềm.
+designer|n|nhà thiết kế|The designer created a new logo.|Nhà thiết kế đã tạo một logo mới.
+analyst|n|chuyên viên phân tích|The analyst studies our sales.|Chuyên viên phân tích nghiên cứu doanh số của chúng tôi.
+intern|n|thực tập sinh|Our intern learns very fast.|Thực tập sinh của chúng tôi học rất nhanh.
+resume|n|sơ yếu lý lịch|Please send your resume.|Vui lòng gửi sơ yếu lý lịch của bạn.
+interview|n|buổi phỏng vấn|I have an interview on Monday.|Tôi có một buổi phỏng vấn vào thứ Hai.
+candidate|n|ứng viên|We met three good candidates.|Chúng tôi đã gặp ba ứng viên tốt.
+experience|n|kinh nghiệm|He has five years of experience.|Anh ấy có năm năm kinh nghiệm.
+skill|n|kỹ năng|Communication is an important skill.|Giao tiếp là một kỹ năng quan trọng.
+promotion|n|thăng chức|She got a promotion last month.|Cô ấy được thăng chức vào tháng trước.
+remote|adj|làm việc từ xa|Many developers work remotely.|Nhiều lập trình viên làm việc từ xa.
+freelancer|n|người làm tự do|A freelancer chooses his own projects.|Người làm tự do tự chọn dự án của mình.
+## 📧|Email và tài liệu công việc|Emails and Work Documents
+subject|n|tiêu đề thư|Write a clear subject line.|Hãy viết tiêu đề thư rõ ràng.
+attachment|n|tệp đính kèm|I opened the attachment.|Tôi đã mở tệp đính kèm.
+reply|v|trả lời|Please reply as soon as possible.|Vui lòng trả lời sớm nhất có thể.
+forward|v|chuyển tiếp|I will forward you this email.|Tôi sẽ chuyển tiếp email này cho bạn.
+inbox|n|hộp thư đến|My inbox has fifty new emails.|Hộp thư đến của tôi có năm mươi email mới.
+schedule|v|lên lịch|Let's schedule a call for Monday.|Hãy lên lịch một cuộc gọi vào thứ Hai.
+proposal|n|bản đề xuất|The proposal was accepted.|Bản đề xuất đã được chấp nhận.
+contract|n|hợp đồng|Please sign the contract.|Vui lòng ký hợp đồng.
+invoice|n|hóa đơn|I will send you the invoice.|Tôi sẽ gửi hóa đơn cho bạn.
+specification|n|bản đặc tả|Read the specification carefully.|Hãy đọc kỹ bản đặc tả.
+guideline|n|hướng dẫn|Follow the company guidelines.|Hãy tuân theo hướng dẫn của công ty.
+regards|n|lời chào cuối thư|Best regards, Minh.|Trân trọng, Minh.
+attach|v|đính kèm|I attached the file.|Tôi đã đính kèm tệp.
+## 🎨|Thiết kế UI/UX|UI and UX Design
+interface|n|giao diện|The interface is clean and simple.|Giao diện sạch sẽ và đơn giản.
+user experience|n|trải nghiệm người dùng|Good user experience keeps customers.|Trải nghiệm người dùng tốt giữ chân khách hàng.
+wireframe|n|bản phác thảo giao diện|Draw a wireframe first.|Hãy vẽ bản phác thảo giao diện trước.
+prototype|n|bản mẫu thử|We showed a prototype to users.|Chúng tôi đã cho người dùng xem bản mẫu thử.
+icon|n|biểu tượng|Add an icon to the button.|Thêm một biểu tượng vào nút.
+menu|n|thực đơn, menu|Open the settings menu.|Hãy mở menu cài đặt.
+navigation|n|điều hướng|The navigation is easy to use.|Việc điều hướng rất dễ dùng.
+color scheme|n|bảng màu|Choose a soft color scheme.|Hãy chọn một bảng màu dịu.
+font|n|phông chữ|This font is easy to read.|Phông chữ này dễ đọc.
+accessibility|n|khả năng tiếp cận|We care about accessibility.|Chúng tôi quan tâm đến khả năng tiếp cận.
+usability|n|tính dễ sử dụng|We tested the usability of the app.|Chúng tôi đã thử nghiệm tính dễ sử dụng của ứng dụng.
+mockup|n|bản dựng mẫu|The mockup looks beautiful.|Bản dựng mẫu trông rất đẹp.
+consistent|adj|nhất quán|Keep the design consistent.|Hãy giữ thiết kế nhất quán.
+## 📱|Ứng dụng di động|Mobile Apps
+mobile|adj|di động|We build mobile apps.|Chúng tôi xây dựng các ứng dụng di động.
+smartphone|n|điện thoại thông minh|Almost everyone has a smartphone.|Hầu như ai cũng có điện thoại thông minh.
+tablet|n|máy tính bảng|The app also works on a tablet.|Ứng dụng cũng chạy trên máy tính bảng.
+notification|n|thông báo|I turned off notifications.|Tôi đã tắt thông báo.
+permission|n|quyền ứng dụng|The app asks for camera permission.|Ứng dụng xin quyền dùng camera.
+app store|n|kho ứng dụng|Download it from the app store.|Hãy tải nó từ kho ứng dụng.
+offline|adj|ngoại tuyến|This app works offline.|Ứng dụng này chạy được khi ngoại tuyến.
+sync|v|đồng bộ|The phone will sync your photos.|Điện thoại sẽ đồng bộ ảnh của bạn.
+gesture|n|cử chỉ vuốt chạm|Swipe is a common gesture.|Vuốt là một cử chỉ phổ biến.
+sensor|n|cảm biến|The phone has a light sensor.|Điện thoại có cảm biến ánh sáng.
+crash report|n|báo cáo sự cố|Send us the crash report.|Hãy gửi cho chúng tôi báo cáo sự cố.
+rating|n|xếp hạng|The app has a five-star rating.|Ứng dụng có xếp hạng năm sao.
+## 🛠️|Hỗ trợ kỹ thuật|IT Support
+support|n|hỗ trợ|Contact IT support for help.|Hãy liên hệ bộ phận hỗ trợ IT để được giúp.
+ticket|n|phiếu yêu cầu|I opened a ticket yesterday.|Hôm qua tôi đã mở một phiếu yêu cầu.
+helpdesk|n|bàn hỗ trợ|Call the helpdesk if you can not log in.|Hãy gọi bàn hỗ trợ nếu bạn không đăng nhập được.
+reset|v|đặt lại|I reset my password.|Tôi đã đặt lại mật khẩu.
+restart|v|khởi động lại|Please restart your computer.|Vui lòng khởi động lại máy tính.
+shut down|phr|tắt máy|Shut down the computer at night.|Hãy tắt máy tính vào buổi tối.
+slow|adj|chậm|My laptop is very slow.|Máy tính xách tay của tôi rất chậm.
+account|n|tài khoản|Your account is locked.|Tài khoản của bạn đã bị khóa.
+remote access|n|truy cập từ xa|I need remote access to fix it.|Tôi cần truy cập từ xa để sửa nó.
+setup|n|cài đặt ban đầu|The setup takes ten minutes.|Việc cài đặt ban đầu mất mười phút.
+issue|n|sự cố|We have an issue with email.|Chúng tôi gặp sự cố với email.
+solution|n|giải pháp|Here is a quick solution.|Đây là một giải pháp nhanh.
+replace|v|thay thế|We will replace the old printer.|Chúng tôi sẽ thay máy in cũ.
+## 🚀|Xu hướng công nghệ|Technology Trends
+technology|n|công nghệ|Technology changes very fast.|Công nghệ thay đổi rất nhanh.
+innovation|n|sự đổi mới|Innovation drives our company.|Sự đổi mới thúc đẩy công ty chúng tôi.
+startup|n|công ty khởi nghiệp|She works at a young startup.|Cô ấy làm việc ở một công ty khởi nghiệp trẻ.
+digital|adj|kỹ thuật số|We are going digital.|Chúng tôi đang chuyển sang kỹ thuật số.
+blockchain|n|chuỗi khối|Blockchain records transactions safely.|Chuỗi khối ghi lại các giao dịch một cách an toàn.
+virtual reality|n|thực tế ảo|Virtual reality feels amazing.|Thực tế ảo mang lại cảm giác tuyệt vời.
+quantum|adj|lượng tử|Quantum computers are very powerful.|Máy tính lượng tử rất mạnh.
+automation|n|sự tự động hóa|Automation replaces boring tasks.|Sự tự động hóa thay thế các công việc nhàm chán.
+wearable|n|thiết bị đeo|A smartwatch is a wearable.|Đồng hồ thông minh là một thiết bị đeo.
+smart home|n|nhà thông minh|A smart home saves energy.|Nhà thông minh tiết kiệm năng lượng.
+streaming|n|phát trực tuyến|Video streaming is very popular.|Phát video trực tuyến rất phổ biến.
+digital transformation|n|chuyển đổi số|Digital transformation is a big goal.|Chuyển đổi số là một mục tiêu lớn.
+future|n|tương lai|The future of tech is exciting.|Tương lai của công nghệ thật thú vị.

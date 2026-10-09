@@ -1,0 +1,1001 @@
+/* quiz-runner.component.scss – Kiểu dáng màn hình làm bài */
+.runner {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ---- Thanh tiêu đề ---- */
+.rh {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ttl {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 0 1 auto;
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  background: var(--white);
+  color: var(--primary-dark);
+  padding: 6px 18px 6px 12px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Tiêu đề dài (ví dụ "Writing Q1–5 – Viết câu theo tranh") gọn trên 1 dòng */
+.ttx {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cnt {
+  flex: none;
+  white-space: nowrap;
+  font-family: var(--font-head);
+  color: var(--ink-soft);
+}
+
+.star {
+  color: var(--accent);
+}
+
+/* ---- Thẻ câu hỏi ---- */
+.qcard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+}
+
+.qcard.shake {
+  animation: shake 0.35s;
+}
+
+.prompt {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+.focus {
+  text-align: center;
+  padding: 10px 6px 4px;
+}
+
+.focus h2 {
+  font-size: 2rem;
+  color: var(--primary-dark);
+  word-break: break-word;
+}
+
+.focus h2.long {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-family: var(--font);
+  font-weight: 800;
+}
+
+.sub {
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+.snd {
+  justify-content: center;
+  margin-top: 8px;
+}
+
+/* ---- Đoạn văn ---- */
+.passage {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  line-height: 1.55;
+}
+
+.passage .ph {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.passage h4 {
+  color: var(--primary-dark);
+}
+
+.passage .tr {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 2px dashed var(--line);
+  color: var(--ink-soft);
+}
+
+.icon-btn.sm {
+  width: 32px;
+  height: 32px;
+  font-size: 0.95rem;
+}
+
+/* ---- Trình phát (nghe) ---- */
+.dlg {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary-soft);
+  border-radius: 999px;
+  padding: 8px 12px;
+}
+
+.play {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 1.2rem;
+  flex: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.play:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Thanh sóng âm trang trí */
+.wave {
+  flex: 1;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.wave i {
+  width: 4px;
+  border-radius: 4px;
+  background: var(--sky-300);
+  height: 30%;
+}
+
+.wave i:nth-child(3n) {
+  height: 70%;
+}
+
+.wave i:nth-child(3n + 1) {
+  height: 45%;
+}
+
+.wave i:nth-child(4n) {
+  height: 90%;
+}
+
+.wave.big {
+  height: 42px;
+}
+
+.wave.live i {
+  background: var(--primary);
+  animation: bounce 0.7s ease-in-out infinite alternate;
+}
+
+.wave.live i:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+@keyframes bounce {
+  from {
+    transform: scaleY(0.4);
+  }
+
+  to {
+    transform: scaleY(1.3);
+  }
+}
+
+.script {
+  margin: 0;
+  padding: 10px 14px;
+  list-style: none;
+  background: var(--bg-soft);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.script em {
+  display: block;
+  color: var(--ink-soft);
+  font-style: normal;
+  font-size: 0.9rem;
+}
+
+.reveal {
+  text-align: center;
+  color: var(--primary-dark);
+}
+
+/* ---- Trắc nghiệm ---- */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.opt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: left;
+  padding: 11px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--white);
+  font-size: 1.02rem;
+  transition: border-color 0.12s, background 0.12s, transform 0.1s;
+}
+
+.opt:hover:not(:disabled) {
+  border-color: var(--sky-300);
+}
+
+.opt:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.opt .letter {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-size: 0.9rem;
+}
+
+.opt .txt {
+  flex: 1;
+  line-height: 1.3;
+}
+
+.longopts .opt {
+  font-size: 0.95rem;
+}
+
+.opt.sel {
+  border-color: var(--primary);
+  background: var(--sky-50);
+}
+
+.opt.sel .letter {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.opt.right {
+  border-color: var(--good);
+  background: var(--good-soft);
+}
+
+.opt.right .letter {
+  background: var(--good);
+  color: var(--white);
+}
+
+.opt.wrong {
+  border-color: var(--bad);
+  background: var(--bad-soft);
+}
+
+.opt.wrong .letter {
+  background: var(--bad);
+  color: var(--white);
+}
+
+.opt.dim {
+  opacity: 0.55;
+}
+
+.mark {
+  font-size: 1.2rem;
+}
+
+.mark.ok {
+  color: var(--good);
+}
+
+.mark.no {
+  color: var(--bad);
+}
+
+/* ---- Gõ đáp án ---- */
+.area {
+  resize: none;
+  min-height: 96px;
+  line-height: 1.4;
+}
+
+.hint {
+  background: var(--sand-100);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+}
+
+.hintbtn {
+  align-self: flex-start;
+}
+
+/* ---- Sắp xếp từ ---- */
+.answerbox {
+  min-height: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  border: 2px dashed var(--sky-300);
+  background: var(--slate-50);
+  align-items: center;
+}
+
+.answerbox .ph {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.pool {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.tile {
+  padding: 9px 14px;
+  border-radius: 12px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-sm);
+  font-size: 1rem;
+}
+
+.tile.picked {
+  background: var(--primary-soft);
+  border-color: var(--primary);
+  color: var(--primary-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.tile:active:not(:disabled) {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* ---- Nói ---- */
+.speak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.target {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: var(--primary-soft);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.target .tt {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  line-height: 1.3;
+}
+
+.tvi {
+  color: var(--ink-soft);
+}
+
+.mic {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  font-size: 2.2rem;
+  background: linear-gradient(180deg, var(--sky-400), var(--primary));
+  color: var(--white);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.12s;
+}
+
+.mic:active {
+  transform: translateY(3px);
+}
+
+.mic.live {
+  background: linear-gradient(180deg, var(--coral-400), var(--bad));
+  box-shadow: var(--shadow-sm);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.07);
+  }
+}
+
+.status {
+  color: var(--primary-dark);
+}
+
+.tiny {
+  font-size: 0.82rem;
+}
+
+.heard {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.rate {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.rbtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* ---- Phản hồi ---- */
+.fb {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+
+.fb.good {
+  background: var(--good-soft);
+  border-color: var(--leaf-200);
+}
+
+.fb.good .fh {
+  color: var(--leaf-600);
+}
+
+.fb.half {
+  background: var(--sand-100);
+  border-color: var(--sun-200);
+}
+
+.fb.bad {
+  background: var(--bad-soft);
+  border-color: var(--coral-200);
+}
+
+.fb.bad .fh {
+  color: var(--coral-600);
+}
+
+.fb.neutral {
+  text-align: center;
+}
+
+.fh {
+  font-size: 1.1rem;
+}
+
+.ans {
+  color: var(--primary-dark);
+}
+
+.exp {
+  white-space: pre-line;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.bongfb {
+  align-self: flex-start;
+}
+
+/* ---- Nút điều khiển dưới cùng ---- */
+.foot {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0 4px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--sky-50) 0%, transparent), var(--sky-50) 30%);
+}
+
+.grow {
+  flex: 1;
+}
+
+/* ---- Đồng hồ, combo, +XP ---- */
+.clk {
+  font-family: var(--font-head);
+  background: var(--white);
+  border-radius: 99px;
+  padding: 3px 12px;
+  color: var(--primary-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.clk.low {
+  color: var(--white);
+  background: var(--bad);
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.combo {
+  font-family: var(--font-head);
+  background: linear-gradient(180deg, var(--sun-400), var(--tangerine-500));
+  color: var(--white);
+  border-radius: 99px;
+  padding: 3px 12px;
+  animation: pop 0.3s ease both;
+}
+
+.xppop {
+  position: fixed;
+  left: 50%;
+  top: 38%;
+  transform: translateX(-50%);
+  font-family: var(--font-head);
+  font-size: 2rem;
+  color: var(--sun-500);
+  text-shadow: 0 2px 0 var(--white), 0 0 12px color-mix(in srgb, var(--sun-400) 90%, transparent);
+  pointer-events: none;
+  animation: floatup 1s ease-out forwards;
+  z-index: 60;
+}
+
+@keyframes floatup {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(0.8);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -80px) scale(1.3);
+  }
+}
+
+/* ---- Ảnh trong câu hỏi ---- */
+.qimg {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.options.pics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.options.pics .opt {
+  flex-direction: column;
+  padding: var(--space-2);
+  gap: var(--space-1);
+  position: relative;
+}
+
+.oimg {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.options.pics .mark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--white);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+
+/* Đồng hồ và combo không bị co lại khi tiêu đề dài */
+.clk,
+.combo {
+  flex: none;
+  white-space: nowrap;
+}
+
+/* ---- Icon trong các nút/nhãn (Tabler, nét theo currentColor) ---- */
+.clk app-icon,
+.combo app-icon,
+.cnt app-icon,
+.reveal app-icon,
+.hint app-icon,
+.fh app-icon {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.18em;
+}
+
+.play app-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mic app-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* ---- Đoạn văn nhiều dòng và bảng biểu (TOEIC Part 3/4 "Look at the graphic", Part 7) ---- */
+.passage p {
+  white-space: pre-line;
+}
+
+.ptbl {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-2) 0;
+  font-size: var(--fs-sm);
+  background: var(--surface);
+}
+
+.ptbl td {
+  border: 1px solid var(--line);
+  padding: 6px 8px;
+}
+
+.ptbl tr.th td {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+/* ---- Lựa chọn chỉ nghe (TOEIC Part 1–2): lưới 2 cột gọn ---- */
+.options.audio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.options.audio .opt {
+  min-height: var(--touch-primary);
+}
+
+.opt .vol {
+  width: 18px;
+  height: 18px;
+  vertical-align: -3px;
+}
+
+/* ---- Viết câu theo tranh: 2 từ bắt buộc ---- */
+.focus.words h2 {
+  font-size: var(--fs-2xl);
+  letter-spacing: 0.02em;
+}
+
+.kw {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.kw .chip.on {
+  background: var(--good-soft);
+  border-color: var(--good);
+  color: var(--good-dark);
+}
+
+.kw .chip app-icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: -3px;
+}
+
+/* ---- Nhận xét chi tiết trong khung phản hồi ---- */
+.fb .notes {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.45;
+}
+
+.fh .pts {
+  font-family: var(--font);
+  font-weight: 800;
+}
+
+
+/* ============================================================================
+ *  Bố cục "English Master": đầu trang dạng thẻ, dải số câu, chia 2 cột khi có bài đọc / bài nghe
+ * ========================================================================== */
+.runner {
+  max-width: none;
+  gap: var(--space-4);
+}
+
+.rh.card {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+}
+
+.rh .ttl {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 0;
+  font-family: var(--font);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--ink);
+}
+
+.rh .ttx {
+  font-size: var(--fs-xl);
+  white-space: normal;
+}
+
+.rh .prog {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 190px;
+  padding-left: var(--space-4);
+  border-left: 1px solid var(--line);
+}
+
+.rh .cnt {
+  font-family: var(--font);
+  font-size: var(--fs-sm);
+  color: var(--slate-600);
+  background: none;
+  padding: 0;
+}
+
+.rh .cnt b {
+  color: var(--ink);
+}
+
+.clk {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: var(--fs-xl);
+  font-variant-numeric: tabular-nums;
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--coral-50);
+  border: 1px solid var(--coral-200);
+  color: var(--ink);
+}
+
+.clk app-icon {
+  color: var(--bad);
+}
+
+.strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.strip .n {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 6px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--slate-600);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.strip .ok {
+  background: var(--leaf-100);
+  border-color: var(--leaf-200);
+  color: var(--leaf-700);
+}
+
+.strip .half {
+  background: var(--sun-100);
+  border-color: var(--sun-200);
+  color: var(--sun-700);
+}
+
+.strip .bad {
+  background: var(--coral-100);
+  border-color: var(--coral-200);
+  color: var(--coral-700);
+}
+
+.strip .done {
+  background: var(--sky-100);
+  border-color: var(--sky-200);
+  color: var(--primary-dark);
+}
+
+.strip .cur {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--primary) 35%, transparent);
+}
+
+.qcard {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  align-items: start;
+}
+
+.qcard:not(.split) {
+  max-width: 860px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qcard.split {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+}
+
+.ctx,
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+}
+
+.ctx {
+  position: sticky;
+  top: calc(var(--topbar-h) + var(--space-3));
+  max-height: calc(100vh - var(--topbar-h) - var(--space-6));
+  overflow-y: auto;
+}
+
+.ctx .passage {
+  border: 0;
+  padding: 0;
+  background: none;
+  max-height: none;
+}
+
+.ctx .qimg {
+  max-height: 420px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+}
+
+.prompt {
+  text-align: left;
+  color: var(--slate-600);
+}
+
+.qn {
+  display: inline-block;
+  margin-right: var(--space-2);
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: var(--fs-sm);
+}
+
+.opt {
+  border-radius: var(--radius-md);
+  box-shadow: none;
+}
+
+.opt.sel {
+  box-shadow: 0 0 0 1px var(--primary);
+}
+
+.fb,
+.bongfb,
+.foot {
+  max-width: 860px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.split ~ .fb,
+.split ~ .bongfb,
+.split ~ .foot {
+  max-width: none;
+}
+
+.foot {
+  position: sticky;
+  bottom: 0;
+  padding: var(--space-3) 0;
+  background: linear-gradient(180deg, transparent, var(--bg) 35%);
+}
+
+@media (max-width: 1000px) {
+  .qcard.split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .ctx {
+    position: static;
+    max-height: none;
+  }
+
+  .rh .prog {
+    border-left: 0;
+    padding-left: 0;
+    flex: 1;
+  }
+}
+
+.ctx .scene {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.ctx .note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-align: left;
+}
+
+.ctx .note app-icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}

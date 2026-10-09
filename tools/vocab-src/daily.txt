@@ -1,0 +1,417 @@
+// Chủ đề: Cuộc sống hàng ngày
+## 👨‍👩‍👧|Gia đình|Family
+mother|n|mẹ|My mother cooks dinner every evening.|Mẹ tôi nấu bữa tối mỗi buổi chiều.
+father|n|bố, cha|My father drives me to school.|Bố tôi chở tôi đến trường.
+parents|n|bố mẹ|My parents live in Hanoi.|Bố mẹ tôi sống ở Hà Nội.
+brother|n|anh/em trai|I have one older brother.|Tôi có một người anh trai.
+sister|n|chị/em gái|My sister loves painting.|Chị gái tôi rất thích vẽ tranh.
+grandmother|n|bà|My grandmother tells us old stories.|Bà tôi kể cho chúng tôi nghe những câu chuyện xưa.
+grandfather|n|ông|My grandfather grows vegetables.|Ông tôi trồng rau.
+uncle|n|chú, bác, cậu|My uncle works in a bank.|Chú tôi làm việc ở ngân hàng.
+aunt|n|cô, dì, thím|My aunt visits us every summer.|Cô tôi đến thăm chúng tôi mỗi mùa hè.
+cousin|n|anh/chị/em họ|My cousin is the same age as me.|Anh họ tôi bằng tuổi tôi.
+husband|n|chồng|Her husband is a doctor.|Chồng cô ấy là bác sĩ.
+wife|n|vợ|His wife teaches English.|Vợ anh ấy dạy tiếng Anh.
+## 🤝|Bạn bè và các mối quan hệ|Friends and Relationships
+friend|n|bạn bè|She is my best friend.|Cô ấy là bạn thân nhất của tôi.
+neighbor|n|hàng xóm|Our neighbor is very kind.|Hàng xóm của chúng tôi rất tốt bụng.
+classmate|n|bạn cùng lớp|My classmate lent me a pen.|Bạn cùng lớp cho tôi mượn cây bút.
+roommate|n|bạn cùng phòng|My roommate snores at night.|Bạn cùng phòng của tôi ngáy vào ban đêm.
+colleague|n|đồng nghiệp|I have lunch with my colleagues.|Tôi ăn trưa cùng các đồng nghiệp.
+boyfriend|n|bạn trai|Her boyfriend gave her flowers.|Bạn trai cô ấy tặng hoa cho cô ấy.
+girlfriend|n|bạn gái|His girlfriend loves music.|Bạn gái anh ấy yêu âm nhạc.
+partner|n|người bạn đời, đối tác|She travels with her partner.|Cô ấy đi du lịch cùng người bạn đời.
+stranger|n|người lạ|Do not talk to strangers.|Đừng nói chuyện với người lạ.
+guest|n|khách|We have a guest tonight.|Tối nay chúng tôi có khách.
+host|n|chủ nhà|The host welcomed everyone warmly.|Chủ nhà chào đón mọi người thật nồng nhiệt.
+introduce|v|giới thiệu|Let me introduce my sister.|Để tôi giới thiệu chị gái tôi.
+## 🧑|Mô tả ngoại hình|Describing People
+tall|adj|cao|My brother is very tall.|Anh trai tôi rất cao.
+short|adj|thấp, ngắn|She has short black hair.|Cô ấy có mái tóc đen ngắn.
+slim|adj|mảnh mai|The dancer is slim and graceful.|Vũ công mảnh mai và duyên dáng.
+handsome|adj|đẹp trai|He is a handsome young man.|Anh ấy là một chàng trai đẹp trai.
+beautiful|adj|xinh đẹp|What a beautiful smile!|Nụ cười thật xinh đẹp!
+pretty|adj|xinh xắn|The little girl is pretty.|Cô bé rất xinh xắn.
+young|adj|trẻ|My teacher is young and funny.|Cô giáo tôi trẻ và vui tính.
+elderly|adj|lớn tuổi|An elderly man sat on the bench.|Một cụ ông ngồi trên ghế dài.
+curly|adj|xoăn|She has long curly hair.|Cô ấy có mái tóc dài xoăn.
+straight|adj|thẳng|He has straight brown hair.|Anh ấy có mái tóc nâu thẳng.
+bald|adj|hói|My uncle is bald.|Chú tôi bị hói.
+beard|n|râu|My grandfather has a white beard.|Ông tôi có bộ râu trắng.
+## 😀|Tính cách|Personality
+kind|adj|tốt bụng|A kind boy helped the old lady.|Một cậu bé tốt bụng đã giúp bà cụ.
+friendly|adj|thân thiện|The staff are very friendly.|Nhân viên rất thân thiện.
+funny|adj|hài hước|My dad tells funny jokes.|Bố tôi kể những câu chuyện cười hài hước.
+shy|adj|nhút nhát, e thẹn|He is shy with new people.|Cậu ấy e thẹn với người mới.
+polite|adj|lịch sự|Please be polite to the guests.|Hãy lịch sự với khách nhé.
+honest|adj|trung thực|She is an honest girl.|Cô ấy là một cô gái trung thực.
+lazy|adj|lười biếng|I feel lazy on Sunday mornings.|Tôi thấy lười vào sáng Chủ nhật.
+hardworking|adj|chăm chỉ|My sister is very hardworking.|Chị tôi rất chăm chỉ.
+generous|adj|hào phóng|He is generous with his time.|Anh ấy hào phóng với thời gian của mình.
+patient|adj|kiên nhẫn|A good teacher is patient.|Một giáo viên giỏi thì kiên nhẫn.
+brave|adj|dũng cảm|The brave boy saved the puppy.|Cậu bé dũng cảm đã cứu chú cún.
+curious|adj|tò mò, ham hiểu biết|Children are curious about everything.|Trẻ con tò mò về mọi thứ.
+## 😊|Cảm xúc|Feelings and Emotions
+happy|adj|vui vẻ, hạnh phúc|I am happy to see you.|Tôi vui khi gặp bạn.
+sad|adj|buồn|She felt sad after the movie.|Cô ấy thấy buồn sau bộ phim.
+angry|adj|tức giận|Dad was angry about the mess.|Bố tức giận vì sự bừa bộn.
+excited|adj|hào hứng|We are excited about the trip.|Chúng tôi hào hứng về chuyến đi.
+nervous|adj|lo lắng, hồi hộp|I feel nervous before exams.|Tôi thấy hồi hộp trước kỳ thi.
+tired|adj|mệt mỏi|I am tired after work.|Tôi mệt sau giờ làm việc.
+bored|adj|chán|He was bored in the meeting.|Anh ấy chán trong buổi họp.
+surprised|adj|ngạc nhiên|She was surprised by the gift.|Cô ấy ngạc nhiên vì món quà.
+proud|adj|tự hào|I am proud of my team.|Tôi tự hào về đội của mình.
+lonely|adj|cô đơn|He felt lonely in the big city.|Anh ấy thấy cô đơn ở thành phố lớn.
+worried|adj|lo âu|Mom is worried about my health.|Mẹ lo lắng về sức khỏe của tôi.
+relaxed|adj|thư giãn|I feel relaxed at the beach.|Tôi thấy thư giãn ở bãi biển.
+## 🏠|Ngôi nhà|The House
+house|n|ngôi nhà|We live in a small house.|Chúng tôi sống trong một ngôi nhà nhỏ.
+apartment|n|căn hộ|Their apartment has two bedrooms.|Căn hộ của họ có hai phòng ngủ.
+bedroom|n|phòng ngủ|My bedroom is on the second floor.|Phòng ngủ của tôi ở tầng hai.
+bathroom|n|phòng tắm|The bathroom is next to the kitchen.|Phòng tắm nằm cạnh nhà bếp.
+kitchen|n|nhà bếp|Mom is in the kitchen.|Mẹ đang ở trong bếp.
+living room|n|phòng khách|We watch TV in the living room.|Chúng tôi xem TV trong phòng khách.
+garden|n|khu vườn|The garden is full of flowers.|Khu vườn đầy hoa.
+garage|n|nhà để xe|The car is in the garage.|Xe ô tô ở trong nhà để xe.
+balcony|n|ban công|I drink coffee on the balcony.|Tôi uống cà phê ở ban công.
+roof|n|mái nhà|Birds sit on the roof.|Chim đậu trên mái nhà.
+stairs|n|cầu thang|Be careful on the stairs.|Hãy cẩn thận trên cầu thang.
+floor|n|sàn nhà, tầng|The floor is clean.|Sàn nhà sạch sẽ.
+## 🛋️|Đồ nội thất|Furniture
+sofa|n|ghế sô-pha|The cat sleeps on the sofa.|Con mèo ngủ trên ghế sô-pha.
+table|n|cái bàn|Put the books on the table.|Đặt sách lên bàn.
+chair|n|cái ghế|Please sit on this chair.|Xin hãy ngồi lên chiếc ghế này.
+bed|n|cái giường|I make my bed every morning.|Tôi dọn giường mỗi sáng.
+desk|n|bàn làm việc|My desk is near the window.|Bàn làm việc của tôi ở gần cửa sổ.
+shelf|n|kệ, giá sách|The shelf is full of books.|Cái kệ đầy sách.
+wardrobe|n|tủ quần áo|My clothes are in the wardrobe.|Quần áo của tôi ở trong tủ.
+curtain|n|rèm cửa|Please close the curtains.|Làm ơn kéo rèm lại.
+carpet|n|thảm|The carpet is soft and warm.|Tấm thảm mềm và ấm.
+lamp|n|đèn|Turn on the lamp, please.|Làm ơn bật đèn lên.
+mirror|n|gương|She looked in the mirror.|Cô ấy nhìn vào gương.
+pillow|n|gối|I need a softer pillow.|Tôi cần một cái gối mềm hơn.
+## 🧹|Việc nhà|Household Chores
+clean|v|dọn dẹp, lau chùi|I clean my room on Saturdays.|Tôi dọn phòng vào các ngày thứ Bảy.
+wash|v|rửa, giặt|Please wash the dishes.|Làm ơn rửa bát đĩa.
+sweep|v|quét|He sweeps the floor after dinner.|Anh ấy quét nhà sau bữa tối.
+mop|v|lau nhà|I mop the kitchen floor.|Tôi lau sàn nhà bếp.
+vacuum|v|hút bụi|We vacuum the carpet weekly.|Chúng tôi hút bụi tấm thảm mỗi tuần.
+iron|v|là (ủi) quần áo|She irons her shirt in the morning.|Cô ấy ủi áo sơ mi vào buổi sáng.
+laundry|n|đồ giặt|I do the laundry on Sundays.|Tôi giặt đồ vào Chủ nhật.
+trash|n|rác|Take out the trash, please.|Làm ơn đem rác đi đổ.
+dust|n|bụi|There is dust on the shelf.|Có bụi trên kệ.
+tidy|v|dọn gọn gàng|Tidy your desk before you leave.|Hãy dọn gọn bàn trước khi đi.
+water|v|tưới nước|I water the plants every day.|Tôi tưới cây mỗi ngày.
+repair|v|sửa chữa|Dad will repair the broken chair.|Bố sẽ sửa cái ghế hỏng.
+## ⏰|Thói quen hằng ngày|Daily Routine
+wake up|phr|thức dậy|I wake up at six o'clock.|Tôi thức dậy lúc sáu giờ.
+get up|phr|ngồi dậy, rời giường|He gets up early on weekdays.|Anh ấy dậy sớm vào các ngày trong tuần.
+brush|v|đánh (răng), chải|I brush my teeth twice a day.|Tôi đánh răng hai lần một ngày.
+take a shower|phr|tắm vòi sen|She takes a shower before breakfast.|Cô ấy tắm trước bữa sáng.
+get dressed|phr|mặc quần áo|Get dressed quickly, please.|Hãy mặc quần áo nhanh lên nhé.
+have breakfast|phr|ăn sáng|We have breakfast together.|Chúng tôi ăn sáng cùng nhau.
+commute|v|đi làm hằng ngày|I commute by bus.|Tôi đi làm bằng xe buýt.
+go to bed|phr|đi ngủ|I go to bed at ten.|Tôi đi ngủ lúc mười giờ.
+fall asleep|phr|ngủ thiếp đi|The baby fell asleep quickly.|Em bé ngủ thiếp đi rất nhanh.
+alarm clock|n|đồng hồ báo thức|My alarm clock rings at six.|Đồng hồ báo thức của tôi reo lúc sáu giờ.
+routine|n|thói quen hằng ngày|Exercise is part of my routine.|Tập thể dục là một phần trong thói quen của tôi.
+schedule|n|lịch trình|My schedule is busy today.|Lịch trình của tôi hôm nay rất bận.
+## 📅|Thời gian và lịch|Time and Calendar
+morning|n|buổi sáng|I read the news in the morning.|Tôi đọc tin tức vào buổi sáng.
+afternoon|n|buổi chiều|We play football in the afternoon.|Chúng tôi chơi bóng đá vào buổi chiều.
+evening|n|buổi tối|The family eats together in the evening.|Cả nhà ăn cùng nhau vào buổi tối.
+midnight|n|nửa đêm|The clock struck midnight.|Đồng hồ điểm nửa đêm.
+today|n|hôm nay|Today is a special day.|Hôm nay là một ngày đặc biệt.
+tomorrow|n|ngày mai|See you tomorrow!|Hẹn gặp bạn ngày mai!
+yesterday|n|hôm qua|I stayed home yesterday.|Hôm qua tôi ở nhà.
+weekend|n|cuối tuần|What do you do at the weekend?|Bạn làm gì vào cuối tuần?
+Monday|n|thứ Hai|I have English class on Monday.|Tôi có lớp tiếng Anh vào thứ Hai.
+Friday|n|thứ Sáu|We go out on Friday night.|Chúng tôi đi chơi vào tối thứ Sáu.
+month|n|tháng|There are twelve months in a year.|Một năm có mười hai tháng.
+January|n|tháng Một|It is cold in January.|Tháng Một trời lạnh.
+## ☀️|Thời tiết|Weather
+weather|n|thời tiết|The weather is nice today.|Hôm nay thời tiết đẹp.
+sunny|adj|có nắng|It is sunny and warm.|Trời nắng và ấm.
+cloudy|adj|nhiều mây|The sky is cloudy this morning.|Sáng nay trời nhiều mây.
+rainy|adj|có mưa|Bring an umbrella on rainy days.|Hãy mang ô vào những ngày mưa.
+windy|adj|có gió|It is very windy at the beach.|Ở bãi biển gió rất lớn.
+snow|n|tuyết|Children play in the snow.|Trẻ em chơi trong tuyết.
+storm|n|cơn bão|A storm is coming tonight.|Tối nay có một cơn bão đang đến.
+thunder|n|sấm|I hear thunder in the distance.|Tôi nghe thấy tiếng sấm ở xa.
+fog|n|sương mù|Thick fog covered the town.|Sương mù dày bao phủ thị trấn.
+temperature|n|nhiệt độ|The temperature is thirty degrees.|Nhiệt độ là ba mươi độ.
+umbrella|n|cái ô|I forgot my umbrella.|Tôi quên mang ô.
+forecast|n|dự báo|The forecast says it will rain.|Dự báo nói trời sẽ mưa.
+## 👕|Quần áo|Clothes
+shirt|n|áo sơ mi|He wears a white shirt.|Anh ấy mặc áo sơ mi trắng.
+T-shirt|n|áo phông|I love this blue T-shirt.|Tôi thích chiếc áo phông xanh này.
+dress|n|váy liền|She wore a red dress.|Cô ấy mặc chiếc váy đỏ.
+skirt|n|chân váy|The skirt is too short.|Chiếc chân váy quá ngắn.
+jeans|n|quần bò|These jeans are comfortable.|Chiếc quần bò này rất thoải mái.
+jacket|n|áo khoác|Take your jacket with you.|Hãy mang theo áo khoác.
+coat|n|áo choàng dài|It is cold, so wear a coat.|Trời lạnh nên hãy mặc áo choàng.
+sweater|n|áo len|Grandma knitted me a sweater.|Bà đan cho tôi một chiếc áo len.
+shoes|n|giày|My shoes are wet.|Giày của tôi bị ướt.
+socks|n|tất, vớ|I need a new pair of socks.|Tôi cần một đôi tất mới.
+hat|n|mũ|She wears a big hat.|Cô ấy đội một chiếc mũ lớn.
+uniform|n|đồng phục|Students wear a uniform.|Học sinh mặc đồng phục.
+## 🛍️|Mua sắm|Shopping
+shop|n|cửa hàng|The shop opens at nine.|Cửa hàng mở cửa lúc chín giờ.
+market|n|chợ|We buy fruit at the market.|Chúng tôi mua trái cây ở chợ.
+supermarket|n|siêu thị|The supermarket is near my house.|Siêu thị ở gần nhà tôi.
+mall|n|trung tâm thương mại|Let's go to the mall.|Chúng ta đến trung tâm thương mại đi.
+customer|n|khách hàng|The customer asked for a discount.|Khách hàng xin giảm giá.
+price|n|giá|What is the price of this bag?|Giá của chiếc túi này là bao nhiêu?
+cheap|adj|rẻ|This T-shirt is very cheap.|Chiếc áo phông này rất rẻ.
+expensive|adj|đắt|That watch is too expensive.|Chiếc đồng hồ đó quá đắt.
+discount|n|giảm giá|There is a ten percent discount.|Có giảm giá mười phần trăm.
+receipt|n|hóa đơn|Keep the receipt, please.|Hãy giữ lại hóa đơn nhé.
+try on|phr|mặc thử|Can I try on this jacket?|Tôi mặc thử chiếc áo khoác này được không?
+size|n|kích cỡ|Do you have a bigger size?|Bạn có cỡ lớn hơn không?
+## 💰|Tiền bạc và ngân hàng|Money and Banking
+money|n|tiền|I saved some money for the trip.|Tôi để dành ít tiền cho chuyến đi.
+cash|n|tiền mặt|Do you pay by cash or card?|Bạn trả bằng tiền mặt hay thẻ?
+coin|n|đồng xu|I found a coin on the street.|Tôi nhặt được đồng xu trên đường.
+bank|n|ngân hàng|I need to go to the bank.|Tôi cần đến ngân hàng.
+account|n|tài khoản|She opened a new bank account.|Cô ấy mở một tài khoản ngân hàng mới.
+save|v|tiết kiệm|I save money every month.|Tôi tiết kiệm tiền mỗi tháng.
+spend|v|tiêu (tiền)|Do not spend too much.|Đừng tiêu quá nhiều.
+borrow|v|mượn|Can I borrow your pen?|Tôi mượn bút của bạn được không?
+lend|v|cho mượn|He lent me some money.|Anh ấy cho tôi mượn ít tiền.
+salary|n|tiền lương|My salary is paid monthly.|Lương của tôi được trả hằng tháng.
+bill|n|hóa đơn|The electricity bill is high.|Hóa đơn tiền điện khá cao.
+budget|n|ngân sách|We have a small budget.|Chúng tôi có một ngân sách nhỏ.
+## 🚌|Giao thông|Transportation
+bus|n|xe buýt|The bus arrives at eight.|Xe buýt đến lúc tám giờ.
+bicycle|n|xe đạp|I ride my bicycle to school.|Tôi đạp xe đến trường.
+motorbike|n|xe máy|Many people ride motorbikes in Vietnam.|Nhiều người đi xe máy ở Việt Nam.
+car|n|ô tô|Dad washes the car on Sunday.|Bố rửa xe vào Chủ nhật.
+taxi|n|taxi|We took a taxi to the airport.|Chúng tôi đi taxi ra sân bay.
+train|n|tàu hỏa|The train leaves in ten minutes.|Tàu sẽ rời đi sau mười phút.
+subway|n|tàu điện ngầm|The subway is fast and cheap.|Tàu điện ngầm nhanh và rẻ.
+traffic|n|giao thông|The traffic is heavy today.|Hôm nay giao thông đông đúc.
+road|n|con đường|This road is very busy.|Con đường này rất đông.
+traffic light|n|đèn giao thông|Stop at the red traffic light.|Hãy dừng lại ở đèn giao thông màu đỏ.
+helmet|n|mũ bảo hiểm|Always wear a helmet.|Luôn luôn đội mũ bảo hiểm.
+ticket|n|vé|I bought a bus ticket.|Tôi đã mua một vé xe buýt.
+## 🏙️|Trong thành phố|In the City
+city|n|thành phố|Ho Chi Minh City is very big.|Thành phố Hồ Chí Minh rất lớn.
+village|n|làng|My grandparents live in a village.|Ông bà tôi sống ở một ngôi làng.
+street|n|đường phố|There are many shops on this street.|Có nhiều cửa hàng trên con phố này.
+park|n|công viên|We walk in the park.|Chúng tôi đi dạo trong công viên.
+school|n|trường học|My school is near the river.|Trường của tôi ở gần con sông.
+hospital|n|bệnh viện|The hospital is on Main Street.|Bệnh viện ở trên phố Chính.
+library|n|thư viện|I study at the library.|Tôi học ở thư viện.
+cinema|n|rạp chiếu phim|Let's go to the cinema tonight.|Tối nay chúng ta đi xem phim nhé.
+museum|n|bảo tàng|The museum is free on Sundays.|Bảo tàng miễn phí vào Chủ nhật.
+restaurant|n|nhà hàng|This restaurant is very popular.|Nhà hàng này rất nổi tiếng.
+bridge|n|cây cầu|We crossed the old bridge.|Chúng tôi băng qua cây cầu cũ.
+police station|n|đồn cảnh sát|The police station is opposite the bank.|Đồn cảnh sát đối diện ngân hàng.
+## 📮|Dịch vụ và bưu điện|Post and Services
+post office|n|bưu điện|I sent a parcel at the post office.|Tôi gửi bưu kiện ở bưu điện.
+letter|n|lá thư|She wrote a letter to her friend.|Cô ấy viết thư cho bạn.
+parcel|n|bưu kiện|The parcel arrived yesterday.|Bưu kiện đã đến hôm qua.
+stamp|n|tem|I need a stamp for this letter.|Tôi cần một con tem cho lá thư này.
+envelope|n|phong bì|Put the card in an envelope.|Hãy cho tấm thiệp vào phong bì.
+address|n|địa chỉ|What is your home address?|Địa chỉ nhà bạn là gì?
+postman|n|người đưa thư|The postman comes at noon.|Người đưa thư đến vào buổi trưa.
+deliver|v|giao hàng|They deliver food to your door.|Họ giao đồ ăn tận cửa.
+laundry service|n|dịch vụ giặt ủi|The hotel has a laundry service.|Khách sạn có dịch vụ giặt ủi.
+barber|n|thợ cắt tóc nam|The barber cut my hair short.|Thợ cắt tóc cắt tóc tôi ngắn.
+hairdresser|n|thợ làm tóc|My hairdresser is very talented.|Thợ làm tóc của tôi rất tài năng.
+pharmacy|n|hiệu thuốc|The pharmacy is open all night.|Hiệu thuốc mở cửa cả đêm.
+## 📱|Điện thoại và liên lạc|Phones and Communication
+phone|n|điện thoại|My phone is on the table.|Điện thoại của tôi ở trên bàn.
+call|v|gọi điện|I will call you tonight.|Tối nay tôi sẽ gọi cho bạn.
+message|n|tin nhắn|She sent me a message.|Cô ấy gửi cho tôi một tin nhắn.
+text|v|nhắn tin|I text my mom every day.|Tôi nhắn tin cho mẹ mỗi ngày.
+email|n|thư điện tử|I check my email every morning.|Tôi kiểm tra email mỗi sáng.
+charger|n|bộ sạc|Where is my phone charger?|Bộ sạc điện thoại của tôi đâu rồi?
+battery|n|pin|My battery is almost empty.|Pin của tôi gần hết.
+screen|n|màn hình|The screen is cracked.|Màn hình bị nứt.
+number|n|số điện thoại, con số|What is your phone number?|Số điện thoại của bạn là gì?
+signal|n|tín hiệu|There is no signal here.|Ở đây không có tín hiệu.
+video call|n|cuộc gọi video|We had a video call with grandma.|Chúng tôi gọi video với bà.
+voicemail|n|hộp thư thoại|Please leave a voicemail.|Xin hãy để lại thư thoại.
+## 🎨|Sở thích|Hobbies and Interests
+hobby|n|sở thích|My hobby is drawing.|Sở thích của tôi là vẽ tranh.
+draw|v|vẽ|She likes to draw animals.|Cô ấy thích vẽ các con vật.
+paint|v|sơn, vẽ màu|We paint the wall blue.|Chúng tôi sơn bức tường màu xanh.
+sing|v|hát|My sister sings very well.|Chị tôi hát rất hay.
+dance|v|nhảy múa|They dance at every party.|Họ nhảy ở mọi bữa tiệc.
+read|v|đọc|I read a book before bed.|Tôi đọc sách trước khi đi ngủ.
+collect|v|sưu tầm|He collects old coins.|Anh ấy sưu tầm những đồng xu cũ.
+knit|v|đan len|Grandma loves to knit.|Bà thích đan len.
+photography|n|nhiếp ảnh|Photography is a fun hobby.|Nhiếp ảnh là một sở thích thú vị.
+gardening|n|làm vườn|Gardening relaxes me.|Làm vườn giúp tôi thư giãn.
+puzzle|n|trò xếp hình, câu đố|We solved the puzzle together.|Chúng tôi cùng giải xong trò xếp hình.
+board game|n|trò chơi cờ bàn|Let's play a board game.|Chúng ta chơi trò chơi cờ bàn đi.
+## 🎬|Âm nhạc và phim ảnh|Music and Movies
+music|n|âm nhạc|I listen to music on the bus.|Tôi nghe nhạc trên xe buýt.
+song|n|bài hát|This song is my favorite.|Bài hát này là bài tôi thích nhất.
+singer|n|ca sĩ|The singer has a lovely voice.|Ca sĩ có giọng hát rất hay.
+guitar|n|đàn ghi-ta|He plays the guitar well.|Anh ấy chơi ghi-ta giỏi.
+piano|n|đàn dương cầm|She practices the piano daily.|Cô ấy tập dương cầm hằng ngày.
+concert|n|buổi hòa nhạc|We went to a concert last night.|Tối qua chúng tôi đi xem hòa nhạc.
+movie|n|bộ phim|That movie was really funny.|Bộ phim đó thật sự rất hài hước.
+actor|n|nam diễn viên|The actor won an award.|Nam diễn viên đã giành một giải thưởng.
+actress|n|nữ diễn viên|The actress smiled at the camera.|Nữ diễn viên mỉm cười với máy quay.
+comedy|n|phim hài|I prefer a comedy to a horror film.|Tôi thích phim hài hơn phim kinh dị.
+cartoon|n|phim hoạt hình|Kids love watching cartoons.|Trẻ em thích xem phim hoạt hình.
+popcorn|n|bắp rang|We shared a bag of popcorn.|Chúng tôi chia nhau một túi bắp rang.
+## 🎉|Lễ hội và sự kiện|Festivals and Events
+festival|n|lễ hội|The lantern festival is beautiful.|Lễ hội đèn lồng rất đẹp.
+birthday|n|sinh nhật|Today is my birthday.|Hôm nay là sinh nhật của tôi.
+party|n|bữa tiệc|We had a party last night.|Tối qua chúng tôi có một bữa tiệc.
+wedding|n|đám cưới|I am going to a wedding on Sunday.|Chủ nhật tôi đi dự đám cưới.
+gift|n|món quà|She gave me a lovely gift.|Cô ấy tặng tôi một món quà đáng yêu.
+balloon|n|bóng bay|The children hold colorful balloons.|Bọn trẻ cầm những quả bóng bay đầy màu sắc.
+cake|n|bánh ngọt|We cut the birthday cake.|Chúng tôi cắt bánh sinh nhật.
+Tet|n|Tết|We clean the house before Tet.|Chúng tôi dọn nhà trước Tết.
+holiday|n|ngày lễ, kỳ nghỉ|Christmas is a popular holiday.|Giáng sinh là một ngày lễ phổ biến.
+celebrate|v|ăn mừng|We celebrate New Year together.|Chúng tôi cùng nhau đón Năm mới.
+fireworks|n|pháo hoa|The fireworks lit up the sky.|Pháo hoa thắp sáng bầu trời.
+invitation|n|lời mời, thiệp mời|I received an invitation to her party.|Tôi nhận được lời mời đến bữa tiệc của cô ấy.
+## 🐶|Động vật và thú cưng|Animals and Pets
+dog|n|con chó|My dog loves to run.|Con chó của tôi thích chạy.
+cat|n|con mèo|The cat is sleeping on my bed.|Con mèo đang ngủ trên giường tôi.
+bird|n|con chim|A bird sings outside my window.|Một chú chim hót ngoài cửa sổ tôi.
+fish|n|con cá|We keep fish in a small tank.|Chúng tôi nuôi cá trong một bể nhỏ.
+rabbit|n|con thỏ|The rabbit eats carrots.|Con thỏ ăn cà rốt.
+hamster|n|chuột hamster|My hamster runs on its wheel.|Con chuột hamster của tôi chạy trên bánh xe.
+puppy|n|chó con|The puppy follows me everywhere.|Chú chó con theo tôi khắp nơi.
+kitten|n|mèo con|The kitten plays with a ball.|Chú mèo con chơi với quả bóng.
+horse|n|con ngựa|She rides a brown horse.|Cô ấy cưỡi một con ngựa nâu.
+cow|n|con bò|The cow gives us milk.|Con bò cho chúng ta sữa.
+chicken|n|con gà|Chickens live on my grandpa's farm.|Gà sống ở trang trại của ông tôi.
+pet|n|thú cưng|Do you have a pet?|Bạn có nuôi thú cưng không?
+## 🌳|Thiên nhiên và cây cối|Nature and Plants
+tree|n|cây|We sat under a big tree.|Chúng tôi ngồi dưới một cái cây lớn.
+flower|n|bông hoa|She picked a yellow flower.|Cô ấy hái một bông hoa vàng.
+grass|n|cỏ|The children run on the grass.|Bọn trẻ chạy trên cỏ.
+leaf|n|chiếc lá|A green leaf fell down.|Một chiếc lá xanh rơi xuống.
+river|n|dòng sông|The river is calm today.|Hôm nay dòng sông êm đềm.
+lake|n|hồ|We had a picnic by the lake.|Chúng tôi đi dã ngoại bên hồ.
+mountain|n|ngọn núi|The mountain is covered in mist.|Ngọn núi bị sương mù bao phủ.
+forest|n|khu rừng|We walked through the forest.|Chúng tôi đi bộ xuyên qua khu rừng.
+sky|n|bầu trời|The sky is clear tonight.|Đêm nay bầu trời quang đãng.
+moon|n|mặt trăng|The moon is bright.|Mặt trăng thật sáng.
+star|n|ngôi sao|I can see many stars.|Tôi thấy rất nhiều ngôi sao.
+sun|n|mặt trời|The sun rises in the east.|Mặt trời mọc ở phía đông.
+## 🔢|Số đếm và đo lường|Numbers and Measurements
+one|n|số một|I have one sister.|Tôi có một người chị.
+ten|n|số mười|There are ten students here.|Có mười học sinh ở đây.
+hundred|n|một trăm|The book has a hundred pages.|Cuốn sách có một trăm trang.
+thousand|n|một nghìn|The bike costs a thousand dollars.|Chiếc xe đạp giá một nghìn đô la.
+half|n|một nửa|Give me half of the apple.|Cho tôi một nửa quả táo.
+double|adj|gấp đôi|I need a double room.|Tôi cần một phòng đôi.
+first|adj|thứ nhất|This is my first day at school.|Đây là ngày đầu tiên của tôi ở trường.
+second|adj|thứ hai|She came in second place.|Cô ấy về vị trí thứ hai.
+kilometer|n|ki-lô-mét|The school is one kilometer away.|Trường cách đây một ki-lô-mét.
+meter|n|mét|The room is five meters long.|Căn phòng dài năm mét.
+kilogram|n|ki-lô-gam|I bought two kilograms of rice.|Tôi mua hai ki-lô-gam gạo.
+liter|n|lít|Drink two liters of water a day.|Hãy uống hai lít nước mỗi ngày.
+## 🎨|Màu sắc và hình dạng|Colors and Shapes
+red|adj|màu đỏ|She has a red bag.|Cô ấy có một chiếc túi màu đỏ.
+blue|adj|màu xanh dương|The sea is deep blue.|Biển có màu xanh thẫm.
+green|adj|màu xanh lá|The leaves are bright green.|Những chiếc lá xanh tươi.
+yellow|adj|màu vàng|Bananas are yellow.|Chuối có màu vàng.
+orange|adj|màu cam|I love the orange sunset.|Tôi yêu hoàng hôn màu cam.
+purple|adj|màu tím|She wears a purple scarf.|Cô ấy quàng chiếc khăn màu tím.
+pink|adj|màu hồng|The baby's room is pink.|Phòng em bé màu hồng.
+black|adj|màu đen|He has a black cat.|Anh ấy có một con mèo đen.
+white|adj|màu trắng|The wall is painted white.|Bức tường được sơn màu trắng.
+circle|n|hình tròn|Draw a circle on the paper.|Hãy vẽ một hình tròn lên giấy.
+square|n|hình vuông|The box is a square.|Cái hộp là hình vuông.
+triangle|n|hình tam giác|A triangle has three sides.|Hình tam giác có ba cạnh.
+## 🛁|Đồ dùng cá nhân|Personal Items
+toothbrush|n|bàn chải đánh răng|I bought a new toothbrush.|Tôi mua một chiếc bàn chải đánh răng mới.
+toothpaste|n|kem đánh răng|We ran out of toothpaste.|Chúng tôi hết kem đánh răng rồi.
+soap|n|xà phòng|Wash your hands with soap.|Hãy rửa tay bằng xà phòng.
+shampoo|n|dầu gội|This shampoo smells good.|Loại dầu gội này thơm.
+towel|n|khăn tắm|Here is a clean towel.|Đây là một chiếc khăn sạch.
+comb|n|cái lược|She combs her hair every morning.|Cô ấy chải tóc mỗi sáng.
+razor|n|dao cạo|He shaves with an electric razor.|Anh ấy cạo râu bằng dao cạo điện.
+perfume|n|nước hoa|She wears a light perfume.|Cô ấy dùng loại nước hoa nhẹ.
+wallet|n|ví tiền|I lost my wallet.|Tôi làm mất ví.
+backpack|n|ba lô|My backpack is very heavy.|Ba lô của tôi rất nặng.
+key|n|chìa khóa|Where are my keys?|Chìa khóa của tôi đâu rồi?
+watch|n|đồng hồ đeo tay|His watch is ten minutes late.|Đồng hồ của anh ấy chậm mười phút.
+## 🏘️|Cộng đồng|Community
+community|n|cộng đồng|Our community is friendly.|Cộng đồng của chúng tôi thân thiện.
+volunteer|n|tình nguyện viên|She is a volunteer at the shelter.|Cô ấy là tình nguyện viên ở trạm cứu trợ.
+charity|n|từ thiện|They raise money for charity.|Họ quyên tiền làm từ thiện.
+event|n|sự kiện|The event starts at noon.|Sự kiện bắt đầu vào buổi trưa.
+meeting|n|cuộc họp|We have a meeting on Monday.|Chúng tôi có một cuộc họp vào thứ Hai.
+rule|n|quy tắc|Please follow the rules.|Xin hãy tuân theo quy tắc.
+noise|n|tiếng ồn|The noise kept me awake.|Tiếng ồn làm tôi thức giấc.
+safe|adj|an toàn|This area is safe at night.|Khu vực này an toàn vào ban đêm.
+clean up|phr|dọn dẹp sạch|We clean up the beach together.|Chúng tôi cùng dọn sạch bãi biển.
+recycle|v|tái chế|We recycle paper and bottles.|Chúng tôi tái chế giấy và chai lọ.
+share|v|chia sẻ|Children should share their toys.|Trẻ em nên chia sẻ đồ chơi.
+help|v|giúp đỡ|Can you help me, please?|Bạn giúp tôi được không?
+## 🏃|Động từ thông dụng|Common Verbs
+go|v|đi|I go to school by bike.|Tôi đến trường bằng xe đạp.
+come|v|đến|Please come to my house.|Mời bạn đến nhà tôi.
+eat|v|ăn|We eat rice every day.|Chúng tôi ăn cơm mỗi ngày.
+drink|v|uống|Do you drink tea?|Bạn có uống trà không?
+sleep|v|ngủ|Babies sleep a lot.|Em bé ngủ nhiều.
+walk|v|đi bộ|I walk to work.|Tôi đi bộ đi làm.
+run|v|chạy|He runs in the park.|Anh ấy chạy trong công viên.
+open|v|mở|Please open the window.|Làm ơn mở cửa sổ ra.
+close|v|đóng|Close the door, please.|Làm ơn đóng cửa lại.
+buy|v|mua|I want to buy a new phone.|Tôi muốn mua một chiếc điện thoại mới.
+give|v|cho, tặng|She gave me a book.|Cô ấy tặng tôi một quyển sách.
+take|v|cầm, lấy|Take an umbrella with you.|Hãy mang theo một cái ô.
+## 🌟|Tính từ thông dụng|Common Adjectives
+big|adj|to, lớn|We live in a big city.|Chúng tôi sống ở một thành phố lớn.
+small|adj|nhỏ|It is a small room.|Đó là một căn phòng nhỏ.
+new|adj|mới|I have a new bike.|Tôi có một chiếc xe đạp mới.
+old|adj|cũ, già|That is an old house.|Đó là một ngôi nhà cũ.
+hot|adj|nóng|The soup is very hot.|Món súp rất nóng.
+cold|adj|lạnh|The water is cold.|Nước lạnh.
+easy|adj|dễ|The test was easy.|Bài kiểm tra rất dễ.
+difficult|adj|khó|This problem is difficult.|Bài toán này khó.
+fast|adj|nhanh|The train is very fast.|Tàu rất nhanh.
+slow|adj|chậm|The bus is slow today.|Hôm nay xe buýt chạy chậm.
+neat|adj|gọn gàng, sạch sẽ|My room is neat and clean.|Phòng tôi gọn gàng và sạch sẽ.
+dirty|adj|bẩn|Your shoes are dirty.|Giày của bạn bẩn.
+## 🕒|Trạng từ và từ nối|Adverbs and Connectors
+always|adv|luôn luôn|I always eat breakfast.|Tôi luôn luôn ăn sáng.
+usually|adv|thường xuyên|We usually walk to school.|Chúng tôi thường đi bộ đến trường.
+sometimes|adv|thỉnh thoảng|Sometimes I cook dinner.|Thỉnh thoảng tôi nấu bữa tối.
+never|adv|không bao giờ|He never drinks coffee.|Anh ấy không bao giờ uống cà phê.
+often|adv|hay, thường|She often visits her grandma.|Cô ấy hay thăm bà.
+already|adv|đã, rồi|I have already finished.|Tôi đã làm xong rồi.
+soon|adv|sớm, chẳng bao lâu|See you soon!|Hẹn sớm gặp lại!
+because|conj|bởi vì|I stayed home because it rained.|Tôi ở nhà vì trời mưa.
+but|conj|nhưng|I like tea but not coffee.|Tôi thích trà nhưng không thích cà phê.
+and|conj|và|I have a cat and a dog.|Tôi có một con mèo và một con chó.
+so|conj|vì vậy|I was tired, so I slept early.|Tôi mệt nên đi ngủ sớm.
+although|conj|mặc dù|Although it was cold, we went out.|Mặc dù trời lạnh, chúng tôi vẫn đi ra ngoài.
+## 📍|Giới từ chỉ vị trí|Prepositions of Place
+in|prep|trong|The keys are in my bag.|Chìa khóa ở trong túi của tôi.
+on|prep|trên|The book is on the table.|Cuốn sách ở trên bàn.
+under|prep|dưới|The cat is under the chair.|Con mèo ở dưới cái ghế.
+next to|prep|bên cạnh|The bank is next to the school.|Ngân hàng nằm cạnh trường học.
+between|prep|ở giữa|The park is between two streets.|Công viên nằm giữa hai con phố.
+behind|prep|phía sau|He stands behind the door.|Anh ấy đứng sau cánh cửa.
+in front of|prep|phía trước|A car stopped in front of me.|Một chiếc xe dừng lại trước mặt tôi.
+opposite|prep|đối diện|The cafe is opposite the library.|Quán cà phê đối diện thư viện.
+near|prep|gần|I live near the station.|Tôi sống gần nhà ga.
+above|prep|phía trên|The lamp hangs above the table.|Chiếc đèn treo phía trên bàn.
+inside|prep|bên trong|Come inside, it is raining.|Vào trong đi, trời đang mưa.
+outside|prep|bên ngoài|The children play outside.|Bọn trẻ chơi bên ngoài.
+## 💬|Chào hỏi và giao tiếp|Greetings and Polite Phrases
+hello|int|xin chào|Hello, how are you?|Xin chào, bạn khỏe không?
+goodbye|int|tạm biệt|Goodbye, see you tomorrow!|Tạm biệt, hẹn mai gặp lại!
+please|int|làm ơn|Please sit down.|Xin mời ngồi.
+thank you|phr|cảm ơn|Thank you for your help.|Cảm ơn sự giúp đỡ của bạn.
+sorry|adj|xin lỗi, tiếc|I am sorry I am late.|Tôi xin lỗi vì đến muộn.
+excuse me|phr|xin lỗi (làm phiền)|Excuse me, where is the station?|Xin lỗi, nhà ga ở đâu ạ?
+welcome|int|chào mừng|Welcome to our home!|Chào mừng đến nhà chúng tôi!
+congratulations|int|chúc mừng|Congratulations on your new job!|Chúc mừng bạn có công việc mới!
+good luck|phr|chúc may mắn|Good luck with your exam!|Chúc bạn may mắn trong kỳ thi!
+nice to meet you|phr|rất vui được gặp bạn|Nice to meet you, Lan.|Rất vui được gặp bạn, Lan.
+take care|phr|bảo trọng|Take care and stay safe.|Bảo trọng và giữ an toàn nhé.
+see you later|phr|hẹn gặp lại sau|I have to go now, see you later.|Giờ tôi phải đi rồi, hẹn gặp lại.

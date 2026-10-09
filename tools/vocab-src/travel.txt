@@ -1,0 +1,406 @@
+// Chủ đề: Du lịch và Khám phá
+## 🧳|Chuẩn bị chuyến đi|Trip Preparation
+travel|v|đi du lịch|I love to travel with my family.|Tôi thích đi du lịch cùng gia đình.
+trip|n|chuyến đi|We planned a trip to Da Nang.|Chúng tôi lên kế hoạch cho chuyến đi Đà Nẵng.
+journey|n|hành trình|The journey took five hours.|Hành trình mất năm tiếng.
+vacation|n|kỳ nghỉ|We spent our vacation at the beach.|Chúng tôi trải qua kỳ nghỉ ở bãi biển.
+destination|n|điểm đến|Paris is my dream destination.|Paris là điểm đến mơ ước của tôi.
+luggage|n|hành lý|My luggage is very heavy.|Hành lý của tôi rất nặng.
+suitcase|n|va-li|She packed her suitcase last night.|Cô ấy đã xếp va-li tối qua.
+pack|v|đóng gói, xếp đồ|Did you pack your camera?|Bạn đã xếp máy ảnh chưa?
+budget|n|ngân sách|Our travel budget is small.|Ngân sách du lịch của chúng tôi khá nhỏ.
+itinerary|n|lịch trình chuyến đi|Here is our itinerary for the week.|Đây là lịch trình chuyến đi của chúng tôi cho cả tuần.
+guidebook|n|sách hướng dẫn du lịch|I bought a guidebook about Japan.|Tôi mua một cuốn sách hướng dẫn du lịch Nhật Bản.
+map|n|bản đồ|Can you show me on the map?|Bạn chỉ cho tôi trên bản đồ được không?
+## ✈️|Ở sân bay|At the Airport
+airport|n|sân bay|The airport is far from the city.|Sân bay cách xa thành phố.
+terminal|n|nhà ga sân bay|Our flight leaves from terminal two.|Chuyến bay của chúng tôi khởi hành từ nhà ga số hai.
+check-in|n|thủ tục làm vé|Check-in opens three hours before.|Thủ tục làm vé mở trước ba tiếng.
+boarding pass|n|thẻ lên máy bay|Please show your boarding pass.|Vui lòng xuất trình thẻ lên máy bay.
+gate|n|cổng ra máy bay|Go to gate twelve.|Hãy đến cổng số mười hai.
+departure|n|giờ khởi hành|The departure time is nine o'clock.|Giờ khởi hành là chín giờ.
+arrival|n|giờ đến|The arrival board shows the time.|Bảng giờ đến hiển thị thời gian.
+security check|n|kiểm tra an ninh|The security check was quick.|Việc kiểm tra an ninh diễn ra nhanh.
+duty-free|adj|miễn thuế|We bought perfume at the duty-free shop.|Chúng tôi mua nước hoa ở cửa hàng miễn thuế.
+baggage claim|n|khu nhận hành lý|Wait at the baggage claim.|Hãy chờ ở khu nhận hành lý.
+carry-on|n|hành lý xách tay|My carry-on is small.|Hành lý xách tay của tôi nhỏ.
+delayed|adj|bị hoãn|Our flight is delayed.|Chuyến bay của chúng tôi bị hoãn.
+## 🛫|Chuyến bay|On the Plane
+plane|n|máy bay|The plane is very big.|Máy bay rất lớn.
+flight|n|chuyến bay|The flight lasts two hours.|Chuyến bay kéo dài hai tiếng.
+pilot|n|phi công|The pilot welcomed the passengers.|Phi công chào đón hành khách.
+flight attendant|n|tiếp viên hàng không|The flight attendant served drinks.|Tiếp viên hàng không phục vụ đồ uống.
+passenger|n|hành khách|Every passenger must wear a seat belt.|Mọi hành khách đều phải thắt dây an toàn.
+seat belt|n|dây an toàn|Fasten your seat belt.|Hãy thắt dây an toàn.
+window seat|n|ghế cạnh cửa sổ|I prefer a window seat.|Tôi thích ghế cạnh cửa sổ hơn.
+aisle|n|lối đi giữa các hàng ghế|He sat on the aisle.|Anh ấy ngồi ở ghế cạnh lối đi.
+take off|phr|cất cánh|The plane takes off in ten minutes.|Máy bay cất cánh sau mười phút.
+land|v|hạ cánh|We will land in Tokyo soon.|Chúng ta sắp hạ cánh ở Tokyo.
+turbulence|n|nhiễu động|We felt some turbulence.|Chúng tôi cảm thấy vài đợt nhiễu động.
+economy class|n|hạng phổ thông|We flew economy class.|Chúng tôi bay hạng phổ thông.
+## 🛂|Giấy tờ và hải quan|Documents and Customs
+passport|n|hộ chiếu|Do not lose your passport.|Đừng làm mất hộ chiếu của bạn.
+visa|n|thị thực|I need a visa for this country.|Tôi cần thị thực cho quốc gia này.
+customs|n|hải quan|We passed through customs quickly.|Chúng tôi qua hải quan rất nhanh.
+immigration|n|nhập cảnh|The immigration officer checked my passport.|Nhân viên nhập cảnh kiểm tra hộ chiếu của tôi.
+declare|v|khai báo|Do you have anything to declare?|Bạn có gì cần khai báo không?
+form|n|tờ khai|Fill in this form, please.|Vui lòng điền vào tờ khai này.
+identity card|n|thẻ căn cước|Please show your identity card.|Vui lòng xuất trình thẻ căn cước.
+insurance|n|bảo hiểm|Travel insurance is important.|Bảo hiểm du lịch rất quan trọng.
+stamp|n|dấu xác nhận|The officer put a stamp in my passport.|Nhân viên đóng dấu vào hộ chiếu của tôi.
+border|n|biên giới|We crossed the border by bus.|Chúng tôi qua biên giới bằng xe buýt.
+quarantine|n|cách ly|Visitors did not need quarantine.|Du khách không cần cách ly.
+expire|v|hết hạn|My passport expires next year.|Hộ chiếu của tôi hết hạn vào năm sau.
+## 🏨|Khách sạn|Hotels
+hotel|n|khách sạn|The hotel is near the beach.|Khách sạn gần bãi biển.
+hostel|n|nhà nghỉ bình dân|We stayed in a cheap hostel.|Chúng tôi ở một nhà nghỉ bình dân rẻ tiền.
+resort|n|khu nghỉ dưỡng|The resort has a big pool.|Khu nghỉ dưỡng có một hồ bơi lớn.
+reception|n|quầy lễ tân|Ask at the reception, please.|Hãy hỏi ở quầy lễ tân.
+receptionist|n|nhân viên lễ tân|The receptionist speaks English.|Nhân viên lễ tân nói được tiếng Anh.
+single room|n|phòng đơn|I booked a single room.|Tôi đã đặt một phòng đơn.
+double room|n|phòng đôi|A double room costs fifty dollars.|Một phòng đôi giá năm mươi đô la.
+key card|n|thẻ chìa khóa|Here is your key card.|Đây là thẻ chìa khóa của bạn.
+lobby|n|sảnh khách sạn|We waited in the lobby.|Chúng tôi chờ ở sảnh.
+elevator|n|thang máy|The elevator is on your left.|Thang máy ở bên trái bạn.
+breakfast included|phr|bao gồm bữa sáng|The room has breakfast included.|Phòng có bao gồm bữa sáng.
+view|n|cảnh nhìn|The room has a lovely sea view.|Phòng có tầm nhìn ra biển tuyệt đẹp.
+## 📝|Đặt phòng và dịch vụ|Booking and Services
+book|v|đặt chỗ|I want to book a room.|Tôi muốn đặt một phòng.
+reservation|n|sự đặt chỗ|I have a reservation under Lan.|Tôi có đặt chỗ dưới tên Lan.
+cancel|v|hủy|We had to cancel our booking.|Chúng tôi phải hủy đặt chỗ.
+available|adj|còn trống|Is a room available tonight?|Tối nay còn phòng trống không?
+full|adj|hết chỗ|Sorry, the hotel is full.|Xin lỗi, khách sạn đã hết phòng.
+check out|phr|trả phòng|We check out at noon.|Chúng tôi trả phòng lúc trưa.
+extra|adj|thêm|Can I have an extra towel?|Cho tôi xin thêm một chiếc khăn được không?
+deposit|n|tiền đặt cọc|You need to pay a deposit.|Bạn cần trả tiền đặt cọc.
+room service|n|dịch vụ phòng|We ordered room service.|Chúng tôi đã gọi dịch vụ phòng.
+Wi-Fi|n|Wi-Fi|What is the Wi-Fi password?|Mật khẩu Wi-Fi là gì?
+air conditioner|n|máy điều hòa|The air conditioner does not work.|Máy điều hòa không hoạt động.
+complaint|n|lời phàn nàn|I would like to make a complaint.|Tôi muốn phàn nàn một việc.
+## 🚗|Phương tiện di chuyển|Getting Around
+transport|n|phương tiện giao thông|Public transport is cheap here.|Phương tiện công cộng ở đây rất rẻ.
+bus stop|n|trạm xe buýt|The bus stop is over there.|Trạm xe buýt ở đằng kia.
+station|n|nhà ga|The station is crowded.|Nhà ga rất đông.
+ferry|n|phà|We took a ferry to the island.|Chúng tôi đi phà ra đảo.
+cable car|n|cáp treo|The cable car goes up the mountain.|Cáp treo đi lên núi.
+tram|n|xe điện|The old tram is very charming.|Chiếc xe điện cũ rất duyên dáng.
+scooter|n|xe tay ga|We rented a scooter for two days.|Chúng tôi thuê một chiếc xe tay ga trong hai ngày.
+rickshaw|n|xe xích lô|A rickshaw ride is fun.|Đi xích lô rất vui.
+timetable|n|bảng giờ tàu xe|Check the timetable first.|Hãy xem bảng giờ tàu xe trước.
+fare|n|giá vé|The fare is two dollars.|Giá vé là hai đô la.
+one-way|adj|một chiều|A one-way ticket, please.|Cho tôi một vé một chiều.
+round-trip|adj|khứ hồi|I bought a round-trip ticket.|Tôi đã mua vé khứ hồi.
+## 🧭|Hỏi đường|Asking for Directions
+direction|n|hướng đi|Which direction is the museum?|Bảo tàng ở hướng nào?
+turn left|phr|rẽ trái|Turn left at the corner.|Rẽ trái ở góc phố.
+turn right|phr|rẽ phải|Turn right at the traffic light.|Rẽ phải ở đèn giao thông.
+straight ahead|phr|đi thẳng|Go straight ahead for two blocks.|Đi thẳng hai dãy nhà.
+corner|n|góc phố|The cafe is on the corner.|Quán cà phê ở góc phố.
+crossing|n|chỗ băng qua đường|Use the crossing, please.|Hãy dùng chỗ băng qua đường.
+intersection|n|ngã tư|Turn left at the next intersection.|Rẽ trái ở ngã tư tiếp theo.
+lost|adj|bị lạc|Excuse me, I am lost.|Xin lỗi, tôi bị lạc.
+nearby|adv|gần đây|Is there a bank nearby?|Gần đây có ngân hàng không?
+distance|n|khoảng cách|What is the distance to the beach?|Khoảng cách đến bãi biển là bao xa?
+landmark|n|địa danh nổi bật|The tower is a famous landmark.|Tòa tháp là một địa danh nổi tiếng.
+block|n|dãy nhà|The hotel is two blocks away.|Khách sạn cách hai dãy nhà.
+## 🗼|Địa danh nổi tiếng|Famous Places
+tower|n|tòa tháp|We climbed the tower.|Chúng tôi leo lên tòa tháp.
+castle|n|lâu đài|The castle is on a hill.|Lâu đài nằm trên một ngọn đồi.
+palace|n|cung điện|The king lived in this palace.|Nhà vua sống trong cung điện này.
+temple|n|ngôi đền|We visited an old temple.|Chúng tôi thăm một ngôi đền cổ.
+pagoda|n|ngôi chùa|The pagoda is peaceful.|Ngôi chùa rất yên bình.
+cathedral|n|nhà thờ lớn|The cathedral is very tall.|Nhà thờ lớn rất cao.
+monument|n|đài tưởng niệm|We took photos of the monument.|Chúng tôi chụp ảnh đài tưởng niệm.
+statue|n|bức tượng|The statue stands in the square.|Bức tượng đứng ở quảng trường.
+square|n|quảng trường|Many people gather in the square.|Nhiều người tụ tập ở quảng trường.
+skyscraper|n|tòa nhà chọc trời|Tokyo has many skyscrapers.|Tokyo có nhiều tòa nhà chọc trời.
+harbor|n|bến cảng|Boats fill the harbor.|Thuyền đầy bến cảng.
+opera house|n|nhà hát opera|The Opera House in Sydney is famous.|Nhà hát Opera ở Sydney rất nổi tiếng.
+## 🏖️|Bãi biển|At the Beach
+beach|n|bãi biển|The beach is clean and quiet.|Bãi biển sạch và yên tĩnh.
+sea|n|biển|The sea is calm today.|Hôm nay biển lặng.
+ocean|n|đại dương|The ocean is deep and blue.|Đại dương sâu và xanh.
+wave|n|con sóng|The waves are high.|Sóng rất cao.
+sand|n|cát|The sand is hot.|Cát rất nóng.
+shell|n|vỏ sò|She collected pretty shells.|Cô ấy nhặt những chiếc vỏ sò xinh xắn.
+island|n|hòn đảo|We visited a small island.|Chúng tôi thăm một hòn đảo nhỏ.
+coast|n|bờ biển|The road follows the coast.|Con đường chạy dọc bờ biển.
+sunscreen|n|kem chống nắng|Put on some sunscreen.|Hãy bôi kem chống nắng.
+swimsuit|n|đồ bơi|I forgot my swimsuit.|Tôi quên đồ bơi.
+snorkel|v|lặn ngắm san hô|We snorkel near the reef.|Chúng tôi lặn ngắm san hô gần rạn san hô.
+lifeguard|n|nhân viên cứu hộ|The lifeguard watches the swimmers.|Nhân viên cứu hộ trông chừng những người bơi.
+## ⛰️|Núi và phiêu lưu|Mountains and Adventure
+hill|n|ngọn đồi|We walked up the hill.|Chúng tôi đi bộ lên đồi.
+peak|n|đỉnh núi|We reached the peak at sunrise.|Chúng tôi lên tới đỉnh núi lúc bình minh.
+valley|n|thung lũng|The valley is green and quiet.|Thung lũng xanh và yên tĩnh.
+cliff|n|vách đá|Be careful near the cliff.|Hãy cẩn thận gần vách đá.
+cave|n|hang động|We explored a huge cave.|Chúng tôi khám phá một hang động khổng lồ.
+trail|n|lối mòn|Follow the trail to the waterfall.|Đi theo lối mòn đến thác nước.
+waterfall|n|thác nước|The waterfall is beautiful.|Thác nước rất đẹp.
+hike|v|đi bộ đường dài|We hike every summer.|Chúng tôi đi bộ đường dài mỗi mùa hè.
+climb|v|leo|They climbed the mountain.|Họ đã leo lên núi.
+adventure|n|cuộc phiêu lưu|Our trip was a real adventure.|Chuyến đi của chúng tôi là một cuộc phiêu lưu thật sự.
+explore|v|khám phá|Let's explore the old town.|Chúng ta hãy khám phá khu phố cổ.
+backpacker|n|khách du lịch bụi|Many backpackers visit Sapa.|Nhiều khách du lịch bụi đến Sa Pa.
+## ⛺|Cắm trại|Camping
+camp|v|cắm trại|We camp by the lake.|Chúng tôi cắm trại bên hồ.
+tent|n|lều|Our tent is small.|Cái lều của chúng tôi nhỏ.
+sleeping bag|n|túi ngủ|My sleeping bag is warm.|Túi ngủ của tôi rất ấm.
+campfire|n|lửa trại|We sang around the campfire.|Chúng tôi hát quanh lửa trại.
+flashlight|n|đèn pin|Bring a flashlight, please.|Hãy mang theo đèn pin.
+compass|n|la bàn|The compass points north.|La bàn chỉ hướng bắc.
+firewood|n|củi|We need more firewood.|Chúng tôi cần thêm củi.
+campsite|n|khu cắm trại|The campsite is near the river.|Khu cắm trại gần con sông.
+picnic|n|buổi dã ngoại|Let's have a picnic in the park.|Chúng ta hãy đi dã ngoại ở công viên.
+lantern|n|đèn lồng|The lantern lit up our tent.|Chiếc đèn lồng thắp sáng cái lều của chúng tôi.
+bug spray|n|thuốc xịt muỗi|Put on some bug spray.|Hãy xịt thuốc chống muỗi.
+survive|v|sống sót|You can survive with basic tools.|Bạn có thể sống sót với những dụng cụ cơ bản.
+## 🌄|Cảnh quan thiên nhiên|Landscapes
+desert|n|sa mạc|The desert is hot and dry.|Sa mạc nóng và khô.
+jungle|n|rừng nhiệt đới|We walked through the jungle.|Chúng tôi đi bộ xuyên rừng nhiệt đới.
+volcano|n|núi lửa|The volcano is still active.|Ngọn núi lửa vẫn còn hoạt động.
+glacier|n|sông băng|The glacier is melting.|Sông băng đang tan chảy.
+canyon|n|hẻm núi|The canyon is very deep.|Hẻm núi rất sâu.
+plain|n|đồng bằng|Rice grows on the plain.|Lúa mọc trên đồng bằng.
+field|n|cánh đồng|The field is full of flowers.|Cánh đồng đầy hoa.
+bay|n|vịnh|Ha Long Bay is world famous.|Vịnh Hạ Long nổi tiếng thế giới.
+cape|n|mũi đất|We stood on the cape.|Chúng tôi đứng trên mũi đất.
+scenery|n|phong cảnh|The scenery is breathtaking.|Phong cảnh đẹp đến nghẹt thở.
+sunrise|n|bình minh|We watched the sunrise together.|Chúng tôi cùng ngắm bình minh.
+sunset|n|hoàng hôn|The sunset was pink and orange.|Hoàng hôn có màu hồng và cam.
+## 🦁|Động vật hoang dã|Wildlife
+wildlife|n|động vật hoang dã|We saw amazing wildlife.|Chúng tôi thấy động vật hoang dã tuyệt vời.
+zoo|n|sở thú|The zoo is fun for kids.|Sở thú rất vui cho trẻ em.
+safari|n|chuyến săn thú (ngắm thú)|We went on a safari in Africa.|Chúng tôi đi một chuyến safari ở châu Phi.
+elephant|n|con voi|The elephant is huge.|Con voi rất to.
+lion|n|sư tử|A lion sleeps under the tree.|Một con sư tử ngủ dưới gốc cây.
+tiger|n|con hổ|The tiger is a rare animal.|Hổ là một loài động vật quý hiếm.
+monkey|n|con khỉ|A monkey took my banana.|Một con khỉ đã lấy quả chuối của tôi.
+dolphin|n|cá heo|We saw dolphins near the boat.|Chúng tôi thấy cá heo gần thuyền.
+turtle|n|con rùa|The turtle walks slowly.|Con rùa đi chậm rãi.
+parrot|n|con vẹt|The parrot can say hello.|Con vẹt có thể nói xin chào.
+penguin|n|chim cánh cụt|Penguins live in cold places.|Chim cánh cụt sống ở nơi lạnh.
+whale|n|cá voi|A whale jumped out of the water.|Một con cá voi nhảy lên khỏi mặt nước.
+## 🌍|Quốc gia|Countries
+Vietnam|n|Việt Nam|Vietnam is a beautiful country.|Việt Nam là một đất nước xinh đẹp.
+Japan|n|Nhật Bản|Japan is famous for sushi.|Nhật Bản nổi tiếng với món sushi.
+Korea|n|Hàn Quốc|We want to visit Korea.|Chúng tôi muốn thăm Hàn Quốc.
+China|n|Trung Quốc|China has a long history.|Trung Quốc có lịch sử lâu đời.
+Thailand|n|Thái Lan|Thailand has beautiful islands.|Thái Lan có những hòn đảo đẹp.
+France|n|nước Pháp|France is famous for its food.|Nước Pháp nổi tiếng về ẩm thực.
+Italy|n|nước Ý|We visited Rome in Italy.|Chúng tôi thăm Rome ở nước Ý.
+Germany|n|nước Đức|Germany has many old castles.|Nước Đức có nhiều lâu đài cổ.
+Greece|n|Hy Lạp|Santorini is in Greece.|Santorini thuộc Hy Lạp.
+Australia|n|nước Úc|Kangaroos live in Australia.|Chuột túi sống ở nước Úc.
+Canada|n|Canada|Canada is very cold in winter.|Canada rất lạnh vào mùa đông.
+Brazil|n|Brazil|Brazil is famous for football.|Brazil nổi tiếng về bóng đá.
+Egypt|n|Ai Cập|The pyramids are in Egypt.|Các kim tự tháp ở Ai Cập.
+## 🗺️|Châu lục và địa lý|Continents and Geography
+continent|n|châu lục|Asia is the largest continent.|Châu Á là châu lục lớn nhất.
+Asia|n|châu Á|Vietnam is in Asia.|Việt Nam ở châu Á.
+Europe|n|châu Âu|We traveled around Europe.|Chúng tôi đi du lịch khắp châu Âu.
+Africa|n|châu Phi|Elephants live in Africa.|Voi sống ở châu Phi.
+America|n|châu Mỹ|America has two continents.|Châu Mỹ có hai lục địa.
+Antarctica|n|châu Nam Cực|Antarctica is covered in ice.|Châu Nam Cực bị băng bao phủ.
+equator|n|đường xích đạo|Singapore is near the equator.|Singapore ở gần đường xích đạo.
+north|n|phía bắc|Sapa is in the north of Vietnam.|Sa Pa ở phía bắc Việt Nam.
+south|n|phía nam|Can Tho is in the south.|Cần Thơ ở phía nam.
+east|n|phía đông|The sun rises in the east.|Mặt trời mọc ở phía đông.
+west|n|phía tây|The sun sets in the west.|Mặt trời lặn ở phía tây.
+capital|n|thủ đô|Hanoi is the capital of Vietnam.|Hà Nội là thủ đô của Việt Nam.
+globe|n|quả địa cầu|I spun the globe and pointed.|Tôi xoay quả địa cầu và chỉ vào một chỗ.
+## 🗣️|Quốc tịch và ngôn ngữ|Nationalities and Languages
+nationality|n|quốc tịch|What is your nationality?|Quốc tịch của bạn là gì?
+foreigner|n|người nước ngoài|Many foreigners visit Hoi An.|Nhiều người nước ngoài đến thăm Hội An.
+tourist|n|khách du lịch|The tourists take many photos.|Các du khách chụp rất nhiều ảnh.
+local|adj|người địa phương|The locals are very friendly.|Người địa phương rất thân thiện.
+native|adj|bản địa|She is a native English speaker.|Cô ấy là người nói tiếng Anh bản ngữ.
+Vietnamese|adj|người/tiếng Việt|I speak Vietnamese and English.|Tôi nói tiếng Việt và tiếng Anh.
+English|adj|tiếng Anh|English is spoken around the world.|Tiếng Anh được nói khắp thế giới.
+Japanese|adj|người/tiếng Nhật|Japanese food is healthy.|Đồ ăn Nhật tốt cho sức khỏe.
+French|adj|người/tiếng Pháp|She is learning French.|Cô ấy đang học tiếng Pháp.
+translate|v|dịch|Can you translate this sign?|Bạn dịch giúp tấm biển này được không?
+interpreter|n|thông dịch viên|We need an interpreter.|Chúng tôi cần một thông dịch viên.
+accent|n|giọng nói|He has a British accent.|Anh ấy có giọng Anh.
+## 🎎|Văn hóa và lễ hội|Culture and Traditions
+culture|n|văn hóa|Learning about culture is exciting.|Tìm hiểu về văn hóa rất thú vị.
+tradition|n|truyền thống|It is a local tradition.|Đó là một truyền thống địa phương.
+custom|n|phong tục|Bowing is a custom in Japan.|Cúi chào là một phong tục ở Nhật Bản.
+costume|n|trang phục truyền thống|They wear colorful costumes.|Họ mặc những bộ trang phục nhiều màu sắc.
+handicraft|n|đồ thủ công|The village sells handicrafts.|Ngôi làng bán đồ thủ công.
+folk|adj|dân gian|We listened to folk music.|Chúng tôi nghe nhạc dân gian.
+ceremony|n|nghi lễ|The tea ceremony was calm.|Nghi lễ trà đạo thật thanh bình.
+parade|n|cuộc diễu hành|The parade passed our hotel.|Cuộc diễu hành đi ngang qua khách sạn của chúng tôi.
+lantern festival|n|lễ hội đèn lồng|Hoi An has a lantern festival.|Hội An có lễ hội đèn lồng.
+religion|n|tôn giáo|Respect every religion.|Hãy tôn trọng mọi tôn giáo.
+ancient|adj|cổ xưa|We saw ancient paintings.|Chúng tôi thấy những bức tranh cổ xưa.
+heritage|n|di sản|Hoi An is a world heritage site.|Hội An là một di sản thế giới.
+## 🏛️|Lịch sử và di tích|History and Ruins
+history|n|lịch sử|History is my favorite subject.|Lịch sử là môn học yêu thích của tôi.
+historic|adj|có tính lịch sử|We visited a historic town.|Chúng tôi thăm một thị trấn lịch sử.
+ruins|n|tàn tích|The ruins are thousands of years old.|Tàn tích đó đã có hàng nghìn năm tuổi.
+pyramid|n|kim tự tháp|The pyramid is huge.|Kim tự tháp rất đồ sộ.
+emperor|n|hoàng đế|The emperor built this palace.|Hoàng đế đã xây cung điện này.
+dynasty|n|triều đại|The Nguyen dynasty ruled Hue.|Triều Nguyễn cai trị Huế.
+battle|n|trận chiến|A famous battle happened here.|Một trận chiến nổi tiếng đã xảy ra ở đây.
+war|n|chiến tranh|The museum tells the story of the war.|Bảo tàng kể câu chuyện về chiến tranh.
+exhibition|n|cuộc triển lãm|We saw an art exhibition.|Chúng tôi xem một cuộc triển lãm nghệ thuật.
+gallery|n|phòng tranh|The gallery is free today.|Phòng tranh hôm nay miễn phí.
+artifact|n|cổ vật|The museum keeps many artifacts.|Bảo tàng lưu giữ nhiều cổ vật.
+citadel|n|thành cổ|The citadel stands by the river.|Thành cổ nằm bên sông.
+## 🎁|Quà lưu niệm và mua sắm|Souvenirs and Shopping
+souvenir|n|quà lưu niệm|I bought a souvenir for my mom.|Tôi mua một món quà lưu niệm cho mẹ.
+postcard|n|bưu thiếp|She sent me a postcard.|Cô ấy gửi cho tôi một tấm bưu thiếp.
+bargain|v|mặc cả|You can bargain at the market.|Bạn có thể mặc cả ở chợ.
+stall|n|quầy hàng|The stall sells scarves.|Quầy hàng bán khăn choàng.
+vendor|n|người bán hàng rong|The vendor smiled at us.|Người bán hàng mỉm cười với chúng tôi.
+market|n|chợ|The night market is lively.|Chợ đêm rất nhộn nhịp.
+local product|n|đặc sản địa phương|Try the local products.|Hãy thử các đặc sản địa phương.
+gift shop|n|cửa hàng quà tặng|The gift shop sells postcards.|Cửa hàng quà tặng bán bưu thiếp.
+scarf|n|khăn choàng|I bought a silk scarf.|Tôi mua một chiếc khăn lụa.
+fridge magnet|n|nam châm tủ lạnh|I collect fridge magnets.|Tôi sưu tầm nam châm tủ lạnh.
+wrap|v|gói|Could you wrap it as a gift?|Bạn gói giúp như một món quà được không?
+worth|adj|đáng giá|This trip is worth every penny.|Chuyến đi này rất đáng đồng tiền.
+## 📸|Ảnh và kỷ niệm|Photos and Memories
+camera|n|máy ảnh|I brought my new camera.|Tôi mang theo máy ảnh mới.
+photo|n|bức ảnh|Take a photo of us, please.|Làm ơn chụp cho chúng tôi một tấm ảnh.
+selfie|n|ảnh tự chụp|Let's take a selfie together.|Chúng ta chụp ảnh tự sướng cùng nhau nhé.
+album|n|an-bum ảnh|We looked at the photo album.|Chúng tôi xem an-bum ảnh.
+memory|n|kỷ niệm|This trip is a happy memory.|Chuyến đi này là một kỷ niệm vui.
+capture|v|ghi lại|I want to capture this moment.|Tôi muốn ghi lại khoảnh khắc này.
+tripod|n|chân máy ảnh|Use a tripod for night photos.|Hãy dùng chân máy cho ảnh ban đêm.
+memory card|n|thẻ nhớ|My memory card is full.|Thẻ nhớ của tôi đã đầy.
+blog|n|nhật ký trực tuyến|She writes a travel blog.|Cô ấy viết một blog du lịch.
+diary|n|nhật ký|I write in my travel diary daily.|Ngày nào tôi cũng viết nhật ký du lịch.
+share|v|chia sẻ|Share your photos with us.|Hãy chia sẻ ảnh của bạn với chúng tôi.
+unforgettable|adj|khó quên|It was an unforgettable trip.|Đó là một chuyến đi khó quên.
+## 🚑|Khẩn cấp khi đi du lịch|Emergencies While Traveling
+emergency|n|tình huống khẩn cấp|Call this number in an emergency.|Hãy gọi số này trong trường hợp khẩn cấp.
+police|n|cảnh sát|Call the police, please.|Làm ơn gọi cảnh sát.
+ambulance|n|xe cứu thương|The ambulance arrived quickly.|Xe cứu thương đến rất nhanh.
+lost property|n|đồ thất lạc|Ask the lost property office.|Hãy hỏi phòng đồ thất lạc.
+stolen|adj|bị đánh cắp|My bag was stolen.|Túi của tôi bị đánh cắp.
+danger|n|mối nguy hiểm|There is danger ahead.|Phía trước có nguy hiểm.
+first aid kit|n|hộp sơ cứu|Keep a first aid kit in the car.|Hãy để một hộp sơ cứu trong xe.
+embassy|n|đại sứ quán|Contact your embassy for help.|Hãy liên hệ đại sứ quán của bạn để được giúp.
+medicine|n|thuốc|I always carry some medicine.|Tôi luôn mang theo ít thuốc.
+allergic|adj|bị dị ứng|I am allergic to seafood.|Tôi bị dị ứng với hải sản.
+missed|adj|bị lỡ|We missed the last bus.|Chúng tôi đã lỡ chuyến xe buýt cuối.
+urgent|adj|khẩn cấp|This is very urgent.|Việc này rất gấp.
+## 💱|Tiền tệ và thanh toán|Currency and Payment
+currency|n|tiền tệ|The local currency is the dong.|Đơn vị tiền tệ địa phương là đồng.
+exchange|v|đổi tiền|Where can I exchange money?|Tôi có thể đổi tiền ở đâu?
+exchange rate|n|tỷ giá|The exchange rate changes daily.|Tỷ giá thay đổi hằng ngày.
+credit card|n|thẻ tín dụng|Do you accept credit cards?|Bạn có nhận thẻ tín dụng không?
+ATM|n|máy rút tiền|There is an ATM near the hotel.|Có một máy rút tiền gần khách sạn.
+tip|n|tiền boa|Leave a small tip.|Hãy để lại một khoản tiền boa nhỏ.
+tax|n|thuế|Tax is included in the price.|Thuế đã bao gồm trong giá.
+refund|n|hoàn tiền|I asked for a refund.|Tôi đã yêu cầu hoàn tiền.
+change|n|tiền thối|Keep the change.|Bạn giữ lại tiền thừa nhé.
+pay|v|trả tiền|How would you like to pay?|Bạn muốn thanh toán bằng cách nào?
+cost|v|có giá|How much does it cost?|Cái này giá bao nhiêu?
+total|n|tổng cộng|What is the total?|Tổng cộng là bao nhiêu?
+## 🚙|Thuê xe và lái xe|Renting and Driving
+rent|v|thuê|We rent a car for the trip.|Chúng tôi thuê một chiếc xe cho chuyến đi.
+driver's license|n|bằng lái xe|Show me your driver's license.|Cho tôi xem bằng lái xe của bạn.
+petrol station|n|trạm xăng|There is a petrol station ahead.|Có một trạm xăng ở phía trước.
+fuel|n|nhiên liệu|We are running out of fuel.|Chúng tôi sắp hết nhiên liệu.
+highway|n|đường cao tốc|The highway is quiet.|Đường cao tốc rất vắng.
+parking|n|chỗ đỗ xe|There is free parking here.|Ở đây có chỗ đỗ xe miễn phí.
+speed limit|n|giới hạn tốc độ|Obey the speed limit.|Hãy tuân thủ giới hạn tốc độ.
+GPS|n|định vị GPS|The GPS guided us to the hotel.|GPS đã dẫn chúng tôi đến khách sạn.
+toll|n|phí cầu đường|We paid a toll on the highway.|Chúng tôi trả phí cầu đường trên cao tốc.
+tire|n|lốp xe|We have a flat tire.|Xe chúng tôi bị xẹp lốp.
+gas|n|xăng|Fill the tank with gas.|Đổ đầy bình xăng.
+driver|n|tài xế|The driver was friendly.|Tài xế rất thân thiện.
+## 🚂|Tàu hỏa và xe buýt|Trains and Buses
+platform|n|sân ga|The train leaves from platform three.|Tàu rời từ sân ga số ba.
+carriage|n|toa tàu|Our carriage is number six.|Toa tàu của chúng tôi là số sáu.
+sleeper|n|giường nằm|We booked a sleeper for the night.|Chúng tôi đặt giường nằm cho đêm nay.
+conductor|n|nhân viên soát vé|The conductor checked our tickets.|Nhân viên soát vé kiểm tra vé của chúng tôi.
+rail|n|đường ray|The rail runs along the coast.|Đường ray chạy dọc bờ biển.
+coach|n|xe khách đường dài|We took a coach to Hue.|Chúng tôi đi xe khách đến Huế.
+express|adj|tốc hành|This is an express train.|Đây là một chuyến tàu tốc hành.
+connection|n|chuyến nối|We missed our connection.|Chúng tôi lỡ chuyến nối.
+stop|n|điểm dừng|Which stop is ours?|Điểm dừng nào là của chúng ta?
+crowded|adj|đông đúc|The bus was crowded.|Xe buýt rất đông.
+seat|n|chỗ ngồi|Is this seat free?|Chỗ này còn trống không?
+luggage rack|n|giá để hành lý|Put your bag on the luggage rack.|Hãy để túi lên giá hành lý.
+## 🚢|Du thuyền và tàu thuyền|Boats and Cruises
+cruise|n|chuyến du thuyền|We took a cruise around Ha Long Bay.|Chúng tôi đi du thuyền quanh Vịnh Hạ Long.
+ship|n|con tàu|The ship left the port at noon.|Con tàu rời cảng vào buổi trưa.
+boat|n|con thuyền|We rented a small boat.|Chúng tôi thuê một chiếc thuyền nhỏ.
+port|n|cảng|The port is very busy.|Cảng rất nhộn nhịp.
+deck|n|boong tàu|We stood on the deck.|Chúng tôi đứng trên boong tàu.
+captain|n|thuyền trưởng|The captain welcomed us aboard.|Thuyền trưởng chào đón chúng tôi lên tàu.
+anchor|n|cái neo|The ship dropped its anchor.|Con tàu thả neo.
+life jacket|n|áo phao|Wear a life jacket on the boat.|Hãy mặc áo phao trên thuyền.
+kayak|n|thuyền kayak|We paddled a kayak in the bay.|Chúng tôi chèo thuyền kayak trong vịnh.
+sail|v|đi thuyền buồm|They sail across the sea.|Họ đi thuyền buồm qua biển.
+cabin|n|phòng trên tàu|Our cabin has a small window.|Phòng trên tàu của chúng tôi có một cửa sổ nhỏ.
+seasick|adj|say sóng|I felt seasick on the ferry.|Tôi bị say sóng trên chuyến phà.
+## 📆|Lên lịch trình|Planning the Route
+plan|v|lên kế hoạch|We plan to stay a week.|Chúng tôi dự định ở lại một tuần.
+route|n|tuyến đường|Which route is faster?|Tuyến đường nào nhanh hơn?
+stopover|n|điểm dừng chân|We had a stopover in Seoul.|Chúng tôi có một điểm dừng chân ở Seoul.
+schedule|n|lịch trình|The schedule is very tight.|Lịch trình rất sát.
+overnight|adj|qua đêm|We took an overnight train.|Chúng tôi đi tàu đêm.
+weekend trip|n|chuyến đi cuối tuần|Let's take a weekend trip.|Chúng ta hãy đi chơi cuối tuần nhé.
+package tour|n|tour trọn gói|We bought a package tour.|Chúng tôi mua một tour trọn gói.
+season|n|mùa|Summer is the busy season.|Mùa hè là mùa cao điểm.
+peak season|n|mùa cao điểm|Prices rise in peak season.|Giá tăng vào mùa cao điểm.
+weather forecast|n|dự báo thời tiết|Check the weather forecast first.|Hãy xem dự báo thời tiết trước.
+recommend|v|giới thiệu|Can you recommend a good hotel?|Bạn giới thiệu giúp một khách sạn tốt được không?
+reserve|v|giữ chỗ|Reserve a table for four.|Hãy giữ một bàn cho bốn người.
+## 🏞️|Miêu tả nơi chốn|Describing Places
+beautiful|adj|đẹp|The view is beautiful.|Cảnh nhìn thật đẹp.
+peaceful|adj|yên bình|The village is very peaceful.|Ngôi làng rất yên bình.
+crowded|adj|đông người|The market is crowded today.|Hôm nay chợ đông người.
+famous|adj|nổi tiếng|Hanoi is famous for its food.|Hà Nội nổi tiếng về ẩm thực.
+modern|adj|hiện đại|Singapore is a modern city.|Singapore là một thành phố hiện đại.
+traditional|adj|truyền thống|We ate a traditional meal.|Chúng tôi ăn một bữa ăn truyền thống.
+lively|adj|sôi động|The street is lively at night.|Con phố sôi động vào ban đêm.
+romantic|adj|lãng mạn|Venice is a romantic city.|Venice là một thành phố lãng mạn.
+spectacular|adj|ngoạn mục|The fireworks were spectacular.|Màn pháo hoa thật ngoạn mục.
+charming|adj|duyên dáng|The old town is charming.|Khu phố cổ rất duyên dáng.
+hidden|adj|ẩn giấu|We found a hidden beach.|Chúng tôi tìm thấy một bãi biển ẩn mình.
+touristy|adj|đông khách du lịch|That street is too touristy.|Con phố đó quá đông khách du lịch.
+## 💬|Giao tiếp khi đi du lịch|Travel Phrases
+excuse me|phr|xin lỗi cho hỏi|Excuse me, how do I get there?|Xin lỗi, làm sao để đến đó?
+how much|phr|bao nhiêu tiền|How much is this ticket?|Vé này giá bao nhiêu?
+where is|phr|ở đâu|Where is the nearest bank?|Ngân hàng gần nhất ở đâu?
+I would like|phr|tôi muốn|I would like a coffee, please.|Tôi muốn một ly cà phê.
+can you help me|phr|bạn giúp tôi được không|Can you help me find my hotel?|Bạn giúp tôi tìm khách sạn được không?
+I do not understand|phr|tôi không hiểu|Sorry, I do not understand.|Xin lỗi, tôi không hiểu.
+speak slowly|phr|nói chậm|Please speak slowly.|Xin hãy nói chậm.
+repeat|v|nhắc lại|Could you repeat that, please?|Bạn có thể nhắc lại được không?
+enjoy|v|tận hưởng|Enjoy your stay!|Chúc bạn kỳ nghỉ vui vẻ!
+have a nice trip|phr|chúc chuyến đi vui vẻ|Have a nice trip!|Chúc chuyến đi vui vẻ!
+welcome|int|chào mừng|Welcome to Vietnam!|Chào mừng đến Việt Nam!
+farewell|n|lời tạm biệt|We had a farewell dinner.|Chúng tôi có bữa tối chia tay.
+## 🌱|Du lịch sinh thái|Eco-tourism
+eco-friendly|adj|thân thiện với môi trường|We chose an eco-friendly hotel.|Chúng tôi chọn một khách sạn thân thiện với môi trường.
+nature|n|thiên nhiên|Nature calms me down.|Thiên nhiên làm tôi bình tâm.
+national park|n|vườn quốc gia|Cat Tien is a national park.|Cát Tiên là một vườn quốc gia.
+protect|v|bảo vệ|We must protect the forest.|Chúng ta phải bảo vệ khu rừng.
+environment|n|môi trường|Do not harm the environment.|Đừng làm hại môi trường.
+plastic|n|nhựa|Please avoid plastic bags.|Xin hãy tránh dùng túi nhựa.
+reef|n|rạn san hô|The coral reef is fragile.|Rạn san hô rất mong manh.
+endangered|adj|có nguy cơ tuyệt chủng|The tiger is an endangered animal.|Hổ là loài có nguy cơ tuyệt chủng.
+sustainable|adj|bền vững|We support sustainable travel.|Chúng tôi ủng hộ du lịch bền vững.
+farm stay|n|ở nhà nông trại|We tried a farm stay in Da Lat.|Chúng tôi thử ở nông trại tại Đà Lạt.
+organic|adj|hữu cơ|The farm grows organic tea.|Nông trại trồng trà hữu cơ.
+trash|n|rác|Take your trash with you.|Hãy mang rác của bạn đi.
+## 🧑‍🏫|Tour và hướng dẫn viên|Tours and Guides
+tour|n|chuyến tham quan|We joined a city tour.|Chúng tôi tham gia một tour tham quan thành phố.
+guide|n|hướng dẫn viên|Our guide knows the history well.|Hướng dẫn viên của chúng tôi hiểu rõ lịch sử.
+group|n|nhóm|Our group has twelve people.|Nhóm của chúng tôi có mười hai người.
+sightseeing|n|ngắm cảnh|We went sightseeing all day.|Chúng tôi đi ngắm cảnh cả ngày.
+attraction|n|điểm tham quan|The tower is a top attraction.|Tòa tháp là một điểm tham quan hàng đầu.
+entrance fee|n|phí vào cửa|The entrance fee is ten dollars.|Phí vào cửa là mười đô la.
+opening hours|n|giờ mở cửa|What are the opening hours?|Giờ mở cửa là khi nào?
+audio guide|n|hướng dẫn bằng âm thanh|I rented an audio guide.|Tôi thuê một thiết bị hướng dẫn bằng âm thanh.
+brochure|n|tờ rơi giới thiệu|Take a brochure from the desk.|Hãy lấy một tờ rơi ở quầy.
+visitor|n|du khách|Visitors must buy a ticket.|Du khách phải mua vé.
+local guide|n|hướng dẫn viên địa phương|A local guide showed us the market.|Hướng dẫn viên địa phương đã chỉ cho chúng tôi khu chợ.
+meeting point|n|điểm hẹn|The meeting point is the lobby.|Điểm hẹn là ở sảnh.

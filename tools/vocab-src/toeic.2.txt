@@ -1,0 +1,40 @@
+// Chủ đề: TOEIC – phần bổ sung (được gộp vào toeic.txt khi build)
+## 🎁|Phúc lợi và đãi ngộ|Benefits and Compensation
+benefits|n|phúc lợi|The job offers excellent benefits.|Công việc này có phúc lợi tuyệt vời.
+bonus|n|tiền thưởng|Staff received a year-end bonus.|Nhân viên nhận tiền thưởng cuối năm.
+overtime|n|làm thêm giờ|Overtime is paid at double rate.|Làm thêm giờ được trả gấp đôi.
+raise|n|sự tăng lương|She asked for a raise.|Cô ấy xin tăng lương.
+pension|n|lương hưu|The firm contributes to a pension plan.|Công ty đóng góp vào quỹ lương hưu.
+paid leave|n|nghỉ phép có lương|Employees get twenty days of paid leave.|Nhân viên được hai mươi ngày nghỉ phép có lương.
+maternity leave|n|nghỉ thai sản|Maternity leave lasts six months.|Nghỉ thai sản kéo dài sáu tháng.
+flexible hours|n|giờ làm linh hoạt|We offer flexible hours.|Chúng tôi cho phép giờ làm linh hoạt.
+incentive|n|sự khuyến khích|Bonuses are an incentive to work harder.|Tiền thưởng là sự khuyến khích làm việc chăm chỉ hơn.
+stipend|n|trợ cấp|Interns receive a monthly stipend.|Thực tập sinh nhận trợ cấp hằng tháng.
+commute|n|việc đi làm|Her commute takes forty minutes.|Việc đi làm của cô ấy mất bốn mươi phút.
+seniority|n|thâm niên|Promotions are based on seniority.|Thăng chức dựa trên thâm niên.
+## 🌐|Thương mại điện tử|Online Business
+e-commerce|n|thương mại điện tử|E-commerce sales grow every year.|Doanh số thương mại điện tử tăng mỗi năm.
+website|n|trang web|Visit our website for details.|Truy cập trang web của chúng tôi để biết chi tiết.
+subscribe|v|đăng ký nhận|Subscribe to our newsletter.|Hãy đăng ký nhận bản tin của chúng tôi.
+newsletter|n|bản tin|The newsletter is sent monthly.|Bản tin được gửi hằng tháng.
+testimonial|n|lời chứng thực|The site displays customer testimonials.|Trang web hiển thị lời chứng thực của khách hàng.
+checkout page|n|trang thanh toán|The checkout page is secure.|Trang thanh toán rất an toàn.
+online shopping|n|mua sắm trực tuyến|Online shopping is convenient.|Mua sắm trực tuyến rất tiện lợi.
+free shipping|n|miễn phí vận chuyển|Free shipping applies to orders over fifty dollars.|Miễn phí vận chuyển cho đơn trên năm mươi đô la.
+customer review|n|đánh giá của khách|Customer reviews influence sales.|Đánh giá của khách hàng ảnh hưởng đến doanh số.
+click-through|n|lượt nhấp|The ad had a high click-through rate.|Quảng cáo có tỷ lệ nhấp cao.
+traffic|n|lưu lượng truy cập|Website traffic doubled in June.|Lưu lượng truy cập trang web tăng gấp đôi vào tháng Sáu.
+update|n|bản cập nhật|An update will be released next week.|Một bản cập nhật sẽ phát hành vào tuần tới.
+## 🍽️|Đặt tiệc và tiếp khách|Corporate Hospitality
+reception|n|tiệc chiêu đãi|A reception follows the meeting.|Tiệc chiêu đãi diễn ra sau cuộc họp.
+host|v|chiêu đãi, đăng cai|The company will host a dinner for clients.|Công ty sẽ chiêu đãi khách hàng bữa tối.
+guest list|n|danh sách khách mời|Please confirm the guest list.|Vui lòng xác nhận danh sách khách mời.
+dietary|adj|liên quan chế độ ăn|Tell us about any dietary restrictions.|Hãy cho chúng tôi biết mọi hạn chế về chế độ ăn.
+appetizer|n|món khai vị|Appetizers are served at six.|Món khai vị được phục vụ lúc sáu giờ.
+cater|v|phục vụ tiệc|Our firm caters corporate events.|Công ty chúng tôi phục vụ tiệc cho các sự kiện doanh nghiệp.
+seating|n|chỗ ngồi|Seating is limited to fifty guests.|Chỗ ngồi giới hạn năm mươi khách.
+toast|n|lời chúc rượu|The CEO gave a toast to the team.|Tổng giám đốc nâng ly chúc mừng cả nhóm.
+dress code|n|quy định trang phục|The dress code is business casual.|Quy định trang phục là công sở thoải mái.
+valet parking|n|dịch vụ đỗ xe hộ|Valet parking is available.|Có dịch vụ đỗ xe hộ.
+reservation deposit|n|tiền cọc đặt chỗ|A reservation deposit is required.|Cần một khoản cọc đặt chỗ.
+gala|n|dạ tiệc|The annual gala raises money for charity.|Dạ tiệc thường niên gây quỹ từ thiện.

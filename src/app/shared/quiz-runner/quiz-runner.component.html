@@ -1,0 +1,337 @@
+<!--
+  quiz-runner.component.html – Giao diện làm bài (một câu hỏi mỗi màn hình).
+  Cấu trúc: thanh tiêu đề + tiến độ -> thẻ câu hỏi (đề, nội dung, phần trả lời)
+            -> khung phản hồi (chỉ ở chế độ luyện tập) -> nút điều khiển.
+  Icon dùng <app-icon> (Tabler) theo theme chung; emoji chỉ còn ở phần cảm xúc cho trẻ em.
+-->
+<section class="runner">
+  <!-- Đầu trang: tên bài, tiến độ, đồng hồ, nút thoát/nộp (theo thiết kế English Master) -->
+  <header class="rh card">
+    <span class="tile-ic lg" [style.--c]="skillColor()"><app-icon [name]="skillIcon()" /></span>
+    <div class="ttl">
+      <h1 class="ttx">{{ title() }}</h1>
+      <small class="muted">{{ isTest() ? 'Chế độ thi: không báo đúng/sai cho tới khi nộp bài' : 'Luyện tập: có đáp án và giải thích sau mỗi câu' }}</small>
+    </div>
+    <span class="spacer"></span>
+    @if (!isTest() && streak() >= 2) {
+      <span class="combo" [attr.aria-label]="'Chuỗi đúng ' + streak()"><app-icon name="flame" /> x{{ streak() }}</span>
+    }
+    <div class="prog">
+      <span class="cnt">Câu <b>{{ index() + 1 }}</b> / <b>{{ total() }}</b></span>
+      <div class="bar"><i [style.width.%]="((index() + (phase() === 'feedback' ? 1 : 0)) / total()) * 100"></i></div>
+    </div>
+    @if (timeLimit() > 0) {
+      <span class="clk" [class.low]="lowTime()"><app-icon name="alarm" /> {{ clockText() }}</span>
+    }
+    <button class="btn btn-ghost" type="button" (click)="quit()"><app-icon name="x" /> Thoát</button>
+  </header>
+
+  <!-- Dải số câu: xanh lá = đúng, đỏ = sai, xanh dương = câu đang làm (chế độ thi chỉ đánh dấu đã làm) -->
+  <nav class="strip" aria-label="Danh sách câu hỏi">
+    @for (m of marks(); track $index) {
+      <span [class]="'n ' + m" [attr.aria-current]="m === 'cur' ? 'step' : null">{{ $index + 1 }}</span>
+    }
+  </nav>
+
+  <article class="qcard" [class.split]="hasContext()" [class.shake]="!isTest() && verdict() === 'bad'">
+    @if (hasContext()) {
+    <div class="ctx card">
+    <!-- Ảnh minh họa của câu hỏi -->
+    @if (q().image) {
+      <img class="qimg" [src]="q().image" alt="Ảnh câu hỏi" />
+    }
+
+    <!-- Đoạn văn của bài đọc / bảng biểu của bài nghe (dòng "a | b" hiển thị thành bảng) -->
+    @if (q().passage; as p) {
+      <div class="passage">
+        <div class="ph">
+          <h4>{{ p.title }}</h4>
+          @if (p.textVi) {
+            <button class="icon-btn sm" type="button" (click)="speak(p.text)" aria-label="Nghe đoạn văn"><app-icon name="volume" /></button>
+          }
+        </div>
+        @for (b of blocks(p.text); track $index) {
+          @if (b.rows) {
+            <table class="ptbl">
+              @for (r of b.rows; track $index; let first = $first) {
+                <tr [class.th]="first">@for (c of r; track $index) { <td>{{ c }}</td> }</tr>
+              }
+            </table>
+          } @else {
+            <p>{{ b.text }}</p>
+          }
+        }
+        @if (phase() === 'feedback' && !isTest() && p.textVi) {
+          <p class="tr">{{ p.textVi }}</p>
+        }
+      </div>
+    }
+
+    <!-- Hội thoại của bài nghe: chỉ nghe, chữ hiện sau khi trả lời -->
+    @if (q().dialogue; as d) {
+      <div class="dlg">
+        <button class="play" type="button" (click)="playMain()" aria-label="Nghe hội thoại"><app-icon name="player-play" /></button>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <button class="btn btn-soft btn-sm" type="button" (click)="playMain()"><app-icon name="refresh" /> Nghe lại</button>
+      </div>
+      @if (!q().image) {
+        <img class="qimg scene" src="assets/art/photo-office.jpg" alt="" />
+      }
+      @if (phase() === 'answer' || isTest()) {
+        <p class="muted tiny note"><app-icon name="info-circle" /> {{ isTest() ? 'Nội dung bài nghe (script) và bản dịch hiện ở phần kết quả sau khi nộp bài.' : 'Nội dung bài nghe (script) và bản dịch sẽ hiện sau khi bạn trả lời.' }}</p>
+      }
+      @if (phase() === 'feedback' && !isTest()) {
+        <ul class="script">
+          @for (l of d.lines; track $index) {
+            <li><b>{{ l.who }}:</b> {{ l.text }} <em>{{ l.vi }}</em></li>
+          }
+        </ul>
+      }
+    }
+
+    <!-- Câu chỉ cho nghe (ẩn chữ) hoặc đọc nối tiếp các lựa chọn (TOEIC Part 1–2) -->
+    @if (!q().dialogue && ((q().audio && q().hideText) || q().audioParts)) {
+      <div class="dlg">
+        <button class="play" type="button" (click)="playMain()" aria-label="Nghe"><app-icon name="player-play" /></button>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <button class="btn btn-soft btn-sm" type="button" (click)="playMain(true)"><app-icon name="gauge" /> Chậm</button>
+      </div>
+      @if (phase() === 'feedback' && !isTest() && q().audio && q().hideText) {
+        <p class="reveal"><app-icon name="volume" /> “{{ q().audio }}”</p>
+      }
+    }
+
+    </div>
+    }
+
+    <div class="main card">
+    <!-- Đề bài (hướng dẫn) -->
+    <p class="prompt"><span class="qn">Câu {{ index() + 1 }}</span> {{ q().prompt }}</p>
+
+    <!-- Nội dung chính (từ/câu cần hỏi) -->
+    @if (q().focus) {
+      <div class="focus" [class.words]="!!picQ()">
+        <h2 [class.long]="(q().focus?.length ?? 0) > 34">{{ q().focus }}</h2>
+        @if (q().focusSub) {
+          <p class="sub">{{ q().focusSub }}</p>
+        }
+        @if (q().audio && !q().hideText) {
+          <div class="row snd">
+            <button class="icon-btn" type="button" (click)="playMain()" aria-label="Nghe"><app-icon name="volume" /></button>
+            <button class="icon-btn" type="button" (click)="playMain(true)" aria-label="Nghe chậm"><app-icon name="gauge" /></button>
+          </div>
+        }
+      </div>
+    }
+
+    <!-- ============ TRẮC NGHIỆM ============ -->
+    @if (mcq(); as m) {
+      <div class="options" [class.longopts]="m.longOptions" [class.pics]="!!m.optionImages" [class.audio]="m.hideOptions && !showOptionText()">
+        @for (o of m.options; track $index) {
+          <button class="opt" type="button" [class]="'opt ' + optionClass($index)" (click)="choose($index)" [disabled]="phase() === 'feedback'">
+            @if (m.optionImages) {
+              <img class="oimg" [src]="m.optionImages[$index]" [alt]="'Lựa chọn ' + 'ABCD'[$index]" />
+              @if (phase() === 'feedback' && !isTest()) {
+                <span class="txt">{{ o }}</span>
+              }
+            } @else {
+              <span class="letter">{{ 'ABCD'[$index] }}</span>
+              @if (m.hideOptions && !showOptionText()) {
+                <span class="txt muted"><app-icon name="volume" class="vol" /> Lựa chọn {{ 'ABCD'[$index] }}</span>
+              } @else {
+                <span class="txt">{{ o }}</span>
+              }
+            }
+            @if (!isTest() && phase() === 'feedback') {
+              @if ($index === m.answer) {
+                <span class="mark ok"><app-icon name="check" [stroke]="3" /></span>
+              } @else if (selected() === $index) {
+                <span class="mark no"><app-icon name="x" [stroke]="3" /></span>
+              }
+            }
+          </button>
+        }
+      </div>
+      @if (m.hideOptions && !isTest() && phase() === 'answer' && !revealed()) {
+        <button class="btn btn-ghost btn-sm hintbtn" type="button" (click)="revealed.set(true)"><app-icon name="eye" /> Hiện chữ các lựa chọn (gợi ý)</button>
+      }
+    }
+
+    <!-- ============ GÕ ĐÁP ÁN ============ -->
+    @if (typeQ(); as t) {
+      @if (t.mode === 'sentence') {
+        <textarea class="input area" rows="3" [placeholder]="t.placeholder ?? 'Type your answer here...'"
+                  [ngModel]="typed()" (ngModelChange)="typed.set($event)" [disabled]="phase() === 'feedback'"
+                  (keydown.enter)="onEnter($event)" autocomplete="off" autocapitalize="off" spellcheck="false"></textarea>
+      } @else {
+        <input class="input" type="text" [placeholder]="t.placeholder ?? 'Type your answer here...'"
+               [ngModel]="typed()" (ngModelChange)="typed.set($event)" [disabled]="phase() === 'feedback'"
+               (keydown.enter)="onEnter($event)" autocomplete="off" autocapitalize="off" spellcheck="false" />
+      }
+      @if (t.hint && phase() === 'answer') {
+        @if (hintShown()) {
+          <p class="hint"><app-icon name="bulb" /> {{ t.hint }}</p>
+        } @else {
+          <button class="btn btn-ghost btn-sm hintbtn" type="button" (click)="hintShown.set(true)"><app-icon name="bulb" /> Gợi ý</button>
+        }
+      }
+    }
+
+    <!-- ============ VIẾT CÂU THEO TRANH (TOEIC Writing Q1–5) ============ -->
+    @if (picQ(); as pw) {
+      <textarea class="input area" rows="3" placeholder="Write ONE sentence about the picture..."
+                [ngModel]="typed()" (ngModelChange)="typed.set($event)" [disabled]="phase() === 'feedback'"
+                (keydown.enter)="onEnter($event)" autocomplete="off" autocapitalize="sentences" spellcheck="false"></textarea>
+      <div class="kw">
+        @for (w of pw.words; track $index) {
+          <span class="chip" [class.on]="usedWords()[$index]">
+            @if (usedWords()[$index]) { <app-icon name="check" [stroke]="3" /> } {{ w[0] }}
+          </span>
+        }
+        <span class="muted tiny">{{ typedWords() }} từ</span>
+      </div>
+    }
+
+    <!-- ============ SẮP XẾP TỪ ============ -->
+    @if (orderQ(); as o) {
+      <div class="answerbox" [class.filled]="pickedTiles().length">
+        @for (t of pickedTiles(); track t.i) {
+          <button class="tile picked" type="button" (click)="unpickTile(t.i)" [disabled]="phase() === 'feedback'">{{ t.text }}</button>
+        } @empty {
+          <span class="ph">Chạm vào các từ bên dưới để ghép thành câu</span>
+        }
+      </div>
+      <div class="pool">
+        @for (t of freeTiles(); track t.i) {
+          <button class="tile" type="button" (click)="pickTile(t.i)" [disabled]="phase() === 'feedback'">{{ t.text }}</button>
+        }
+      </div>
+      @if (picked().length && phase() === 'answer') {
+        <button class="btn btn-ghost btn-sm" type="button" (click)="clearTiles()"><app-icon name="refresh" /> Làm lại</button>
+      }
+    }
+
+    <!-- ============ VIẾT LUẬN (IELTS Writing / TOEIC email, bài luận) ============ -->
+    @if (essayQ(); as e) {
+      <app-essay-card [task]="e.task" [test]="isTest()" (done)="onChild($event)" />
+    }
+
+    <!-- ============ BÀI NÓI (IELTS Speaking / TOEIC Speaking) ============ -->
+    @if (talkQ(); as t) {
+      <app-talk-card [item]="t.item" [prepSeconds]="t.prepSeconds" [speakSeconds]="t.speakSeconds" (done)="onChild($event)" />
+    }
+
+    <!-- ============ NÓI ============ -->
+    @if (speakQ(); as s) {
+      <div class="speak">
+        <div class="target">
+          <span class="tt">{{ s.target }}</span>
+          <button class="icon-btn" type="button" (click)="playMain()" aria-label="Nghe mẫu"><app-icon name="volume" /></button>
+          <button class="icon-btn" type="button" (click)="playMain(true)" aria-label="Nghe mẫu chậm"><app-icon name="gauge" /></button>
+        </div>
+        @if (s.focusSub) {
+          <p class="sub">{{ s.focusSub }}</p>
+        }
+        @if (s.targetVi) {
+          <p class="tvi">{{ s.targetVi }}</p>
+        }
+
+        @if (speakState() !== 'rate' && speakState() !== 'done') {
+          <button class="mic" type="button" [class.live]="speakState() === 'listening' || speakState() === 'recording'"
+                  (click)="micPressed()" [attr.aria-label]="speakState() === 'recording' ? 'Dừng ghi âm' : 'Bấm để nói'">
+            <app-icon [name]="speakState() === 'recording' ? 'player-stop' : 'microphone'" />
+          </button>
+          <div class="wave big" [class.live]="speakState() === 'listening' || speakState() === 'recording'" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+        }
+
+        @if (speakMsg()) {
+          <p class="status">{{ speakMsg() }}</p>
+        }
+        @if (speakState() === 'idle') {
+          <p class="muted tiny">
+            {{ canRecognize() ? 'Bấm micro rồi đọc to câu trên. App sẽ chấm điểm phát âm cho bạn.' : (canRecord ? 'Bấm micro để ghi âm, nghe lại rồi tự đánh giá (hoạt động không cần internet).' : 'Đọc to theo mẫu rồi tự đánh giá nhé.') }}
+          </p>
+        }
+
+        <!-- Chế độ ghi âm offline: nghe lại và tự chấm -->
+        @if (speakState() === 'rate') {
+          <div class="rate">
+            @if (recUrl()) {
+              <button class="btn btn-soft" type="button" (click)="playRecording()"><app-icon name="player-play" /> Nghe lại giọng của mình</button>
+            }
+            <div class="rbtns">
+              <button class="btn btn-good btn-sm" type="button" (click)="selfRate(1)">😄 Đọc tốt</button>
+              <button class="btn btn-accent btn-sm" type="button" (click)="selfRate(0.5)">🙂 Tạm được</button>
+              <button class="btn btn-ghost btn-sm" type="button" (click)="selfRate(0)">😅 Cần luyện thêm</button>
+            </div>
+          </div>
+        }
+
+        @if (phase() === 'feedback' && transcript()) {
+          <p class="heard">App nghe được: “{{ transcript() }}”</p>
+        }
+      </div>
+    }
+    </div>
+  </article>
+
+  <!-- ============ PHẢN HỒI (chỉ ở chế độ luyện tập) ============ -->
+  @if (phase() === 'feedback' && !isTest() && pending(); as p) {
+    <section class="fb fade-up" [class]="'fb fade-up ' + verdict()">
+      <b class="fh">
+        <app-icon [name]="verdict() === 'good' ? 'circle-check' : verdict() === 'half' ? 'alert-triangle' : 'circle-x'" />
+        @if (picQ()) {
+          {{ verdict() === 'good' ? 'Đạt yêu cầu' : verdict() === 'half' ? 'Gần đạt' : 'Chưa đạt' }}
+          <span class="pts">· ước tính {{ p.points }}/3 điểm</span>
+        } @else {
+          {{ verdict() === 'good' ? 'Chính xác!' : verdict() === 'half' ? 'Gần đúng!' : 'Chưa đúng' }}
+        }
+      </b>
+      @if (p.notes?.length) {
+        <ul class="notes">@for (n of p.notes; track n) { <li>{{ n }}</li> }</ul>
+      }
+      @if (verdict() !== 'good' && !picQ()) {
+        <p>Đáp án đúng: <b class="ans">{{ p.correct }}</b></p>
+        @if (typeQ() && p.given) {
+          <p class="muted">Bạn viết: {{ p.given }}</p>
+        }
+      }
+      @if (q().explain) {
+        <p class="exp">{{ q().explain }}</p>
+      }
+      @if (speakQ() && verdict() !== 'good') {
+        <button class="btn btn-soft btn-sm" type="button" (click)="retrySpeak()"><app-icon name="microphone" /> Thử nói lại</button>
+      }
+    </section>
+    <app-bong class="bongfb" [mood]="verdict() === 'good' ? 'cheer' : 'hello'" [size]="76" [message]="bongSays()" />
+  }
+
+  @if (phase() === 'feedback' && isTest() && speakQ()) {
+    <section class="fb neutral fade-up"><b><app-icon name="check" /> Đã ghi nhận câu trả lời của bạn</b></section>
+  }
+
+  <!-- ============ NÚT ĐIỀU KHIỂN ============ -->
+  @if (!essayQ() && !talkQ()) {
+  <footer class="foot">
+    @if (phase() === 'answer' && !isTest()) {
+      <button class="btn btn-ghost" type="button" (click)="skip()">Bỏ qua</button>
+    }
+    @if (phase() === 'answer' && isTest() && speakQ()) {
+      <button class="btn btn-ghost" type="button" (click)="skip()">Bỏ qua câu này</button>
+    }
+    @if (!speakQ() || phase() === 'feedback') {
+      <button class="btn btn-primary grow" type="button" [disabled]="!canSubmit()" (click)="primary()">{{ primaryLabel() }}</button>
+    }
+  </footer>
+  }
+
+  <!-- Hiệu ứng +XP và pháo giấy -->
+  @if (xpPop(); as pop) {
+    @for (k of [pop.id]; track k) {
+      <span class="xppop">{{ pop.text }}</span>
+    }
+  }
+  <app-confetti />
+</section>

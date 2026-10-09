@@ -1,0 +1,399 @@
+// Chủ đề: Học tập và Giáo dục
+## 🏫|Trường học và cấp học|Schools and Levels
+school|n|trường học|My school is near my house.|Trường của tôi ở gần nhà.
+kindergarten|n|trường mẫu giáo|My little sister goes to kindergarten.|Em gái tôi đi học mẫu giáo.
+primary school|n|trường tiểu học|I started primary school at six.|Tôi bắt đầu học tiểu học năm sáu tuổi.
+secondary school|n|trường trung học cơ sở|He is in secondary school now.|Bây giờ cậu ấy học trung học cơ sở.
+high school|n|trường trung học phổ thông|She finished high school last year.|Cô ấy tốt nghiệp trung học phổ thông năm ngoái.
+university|n|trường đại học|My brother studies at university.|Anh trai tôi học đại học.
+college|n|trường cao đẳng|She goes to a small college.|Cô ấy học ở một trường cao đẳng nhỏ.
+boarding school|n|trường nội trú|He lives at a boarding school.|Cậu ấy sống ở trường nội trú.
+public school|n|trường công lập|Most children go to a public school.|Hầu hết trẻ em học ở trường công.
+private school|n|trường tư thục|Private schools charge fees.|Trường tư thục thu học phí.
+campus|n|khuôn viên trường|The campus is green and quiet.|Khuôn viên trường xanh và yên tĩnh.
+education|n|giáo dục|Education is important for everyone.|Giáo dục quan trọng với mọi người.
+## 🎒|Lớp học và đồ dùng|Classroom and Supplies
+classroom|n|lớp học|Our classroom is on the third floor.|Lớp học của chúng tôi ở tầng ba.
+blackboard|n|bảng đen|The teacher writes on the blackboard.|Cô giáo viết lên bảng đen.
+whiteboard|n|bảng trắng|Please clean the whiteboard.|Hãy lau bảng trắng.
+chalk|n|phấn|I need a piece of chalk.|Tôi cần một viên phấn.
+pencil|n|bút chì|Bring a pencil to the test.|Hãy mang bút chì đến buổi kiểm tra.
+pen|n|bút mực|May I borrow your pen?|Tôi mượn bút của bạn được không?
+eraser|n|cục tẩy|Use an eraser to fix mistakes.|Hãy dùng tẩy để sửa lỗi.
+ruler|n|thước kẻ|Draw a line with a ruler.|Kẻ một đường bằng thước.
+notebook|n|vở ghi chép|I write notes in my notebook.|Tôi ghi chép vào vở.
+textbook|n|sách giáo khoa|Open your textbook to page ten.|Hãy mở sách giáo khoa đến trang mười.
+backpack|n|ba lô|My backpack is full of books.|Ba lô của tôi đầy sách.
+calculator|n|máy tính bỏ túi|You can use a calculator.|Bạn được dùng máy tính bỏ túi.
+scissors|n|cái kéo|Cut the paper with scissors.|Cắt tờ giấy bằng kéo.
+glue|n|hồ dán|Put some glue on the paper.|Hãy bôi ít hồ dán lên giấy.
+## 📚|Môn học|School Subjects
+subject|n|môn học|Math is my favorite subject.|Toán là môn học yêu thích của tôi.
+mathematics|n|môn toán|Mathematics needs logical thinking.|Môn toán cần tư duy logic.
+science|n|khoa học|We do experiments in science.|Chúng tôi làm thí nghiệm trong môn khoa học.
+physics|n|vật lý|Physics explains how things move.|Vật lý giải thích cách mọi thứ chuyển động.
+chemistry|n|hóa học|Chemistry class is exciting.|Giờ hóa học rất thú vị.
+biology|n|sinh học|Biology is the study of life.|Sinh học là môn nghiên cứu về sự sống.
+geography|n|địa lý|In geography we study maps.|Trong môn địa lý chúng tôi học về bản đồ.
+literature|n|văn học|She loves literature and poetry.|Cô ấy yêu văn học và thơ ca.
+art|n|mỹ thuật|We paint in art class.|Chúng tôi vẽ tranh trong giờ mỹ thuật.
+music|n|âm nhạc|Music class starts at ten.|Giờ âm nhạc bắt đầu lúc mười giờ.
+PE|n|thể dục|We play football in PE.|Chúng tôi chơi bóng đá trong giờ thể dục.
+IT|n|tin học|We learn coding in IT.|Chúng tôi học lập trình trong môn tin học.
+foreign language|n|ngoại ngữ|A foreign language opens many doors.|Ngoại ngữ mở ra nhiều cánh cửa.
+## 🧑‍🏫|Những người trong trường|People at School
+teacher|n|giáo viên|My teacher is very kind.|Giáo viên của tôi rất tốt bụng.
+student|n|học sinh, sinh viên|Every student has a desk.|Mỗi học sinh đều có một chiếc bàn.
+pupil|n|học sinh nhỏ|The pupils sing in the hall.|Các em học sinh hát trong hội trường.
+principal|n|hiệu trưởng|The principal gave a speech.|Hiệu trưởng đã phát biểu.
+professor|n|giáo sư|The professor teaches physics.|Giáo sư dạy vật lý.
+lecturer|n|giảng viên|The lecturer speaks clearly.|Giảng viên nói rất rõ ràng.
+tutor|n|gia sư|I have a math tutor.|Tôi có một gia sư toán.
+librarian|n|thủ thư|The librarian helped me find a book.|Thủ thư giúp tôi tìm một cuốn sách.
+classmate|n|bạn cùng lớp|My classmate sits next to me.|Bạn cùng lớp ngồi cạnh tôi.
+graduate|n|người tốt nghiệp|She is a university graduate.|Cô ấy là người tốt nghiệp đại học.
+freshman|n|sinh viên năm nhất|A freshman must join orientation.|Sinh viên năm nhất phải tham gia buổi định hướng.
+monitor|n|lớp trưởng|The class monitor collects homework.|Lớp trưởng thu bài tập về nhà.
+## ✍️|Hoạt động trong lớp|Classroom Activities
+learn|v|học|I learn ten new words a day.|Mỗi ngày tôi học mười từ mới.
+study|v|học bài|I study at night.|Tôi học bài vào buổi tối.
+teach|v|dạy|She teaches English at school.|Cô ấy dạy tiếng Anh ở trường.
+listen|v|lắng nghe|Listen carefully to the teacher.|Hãy lắng nghe cô giáo cẩn thận.
+answer|v|trả lời|Can you answer this question?|Bạn có thể trả lời câu hỏi này không?
+ask|v|hỏi|Raise your hand and ask.|Hãy giơ tay và đặt câu hỏi.
+explain|v|giải thích|Please explain this rule again.|Xin hãy giải thích lại quy tắc này.
+write|v|viết|Write your name at the top.|Hãy viết tên của bạn ở phía trên.
+read|v|đọc|Read the text aloud.|Hãy đọc to đoạn văn.
+practice|v|luyện tập|Practice every day.|Hãy luyện tập mỗi ngày.
+repeat|v|lặp lại|Repeat after me.|Hãy lặp lại theo tôi.
+discuss|v|thảo luận|Let's discuss this topic in pairs.|Hãy thảo luận chủ đề này theo cặp.
+attend|v|tham dự|Students must attend every class.|Học sinh phải tham dự mọi buổi học.
+## 📝|Bài tập và thi cử|Homework and Exams
+homework|n|bài tập về nhà|I finish my homework before dinner.|Tôi làm xong bài tập trước bữa tối.
+exercise|n|bài tập|Do exercise five on page ten.|Hãy làm bài tập số năm ở trang mười.
+quiz|n|bài kiểm tra ngắn|We have a quiz on Friday.|Chúng tôi có bài kiểm tra ngắn vào thứ Sáu.
+test|n|bài kiểm tra|The test was not difficult.|Bài kiểm tra không khó.
+exam|n|kỳ thi|I have an exam next week.|Tuần sau tôi có một kỳ thi.
+question|n|câu hỏi|The last question is hard.|Câu hỏi cuối cùng rất khó.
+mistake|n|lỗi sai|I made a small mistake.|Tôi đã mắc một lỗi nhỏ.
+correct|adj|đúng|Your answer is correct.|Câu trả lời của bạn đúng.
+wrong|adj|sai|That answer is wrong.|Câu trả lời đó sai.
+revise|v|ôn tập|I revise before every exam.|Tôi ôn tập trước mỗi kỳ thi.
+cheat|v|gian lận|Do not cheat on the test.|Đừng gian lận trong bài kiểm tra.
+deadline|n|hạn nộp|The deadline is Monday.|Hạn nộp là thứ Hai.
+submit|v|nộp|Submit your essay by noon.|Hãy nộp bài luận trước buổi trưa.
+## 🏅|Điểm số và bằng cấp|Grades and Qualifications
+grade|n|điểm số|I got a good grade in math.|Tôi được điểm tốt môn toán.
+score|n|điểm|Her score was ninety percent.|Điểm của cô ấy là chín mươi phần trăm.
+pass|v|đỗ|I passed the exam!|Tôi đã đỗ kỳ thi!
+fail|v|trượt|He failed the driving test.|Anh ấy trượt kỳ thi lái xe.
+certificate|n|chứng chỉ|She has an English certificate.|Cô ấy có chứng chỉ tiếng Anh.
+diploma|n|văn bằng|He received his diploma in June.|Anh ấy nhận văn bằng vào tháng Sáu.
+degree|n|bằng đại học|She has a degree in biology.|Cô ấy có bằng đại học ngành sinh học.
+bachelor|n|cử nhân|He has a bachelor's degree.|Anh ấy có bằng cử nhân.
+master|n|thạc sĩ|She is studying for a master's degree.|Cô ấy đang học lấy bằng thạc sĩ.
+report card|n|phiếu điểm|Mom signed my report card.|Mẹ đã ký vào phiếu điểm của tôi.
+transcript|n|bảng điểm|Please send your transcript.|Vui lòng gửi bảng điểm của bạn.
+graduation|n|lễ tốt nghiệp|Graduation is in July.|Lễ tốt nghiệp vào tháng Bảy.
+excellent|adj|xuất sắc|Your work is excellent.|Bài làm của bạn xuất sắc.
+## 🎓|Đời sống đại học|University Life
+lecture|n|bài giảng|The lecture lasts an hour.|Bài giảng kéo dài một tiếng.
+seminar|n|buổi hội thảo chuyên đề|We have a seminar on Friday.|Chúng tôi có một buổi hội thảo vào thứ Sáu.
+semester|n|học kỳ|The new semester starts in September.|Học kỳ mới bắt đầu vào tháng Chín.
+course|n|khóa học|I am taking an English course.|Tôi đang học một khóa tiếng Anh.
+major|n|chuyên ngành|My major is computer science.|Chuyên ngành của tôi là khoa học máy tính.
+faculty|n|khoa|She works in the faculty of law.|Cô ấy làm ở khoa luật.
+dormitory|n|ký túc xá|I live in the dormitory.|Tôi sống ở ký túc xá.
+tuition|n|học phí|Tuition is paid every semester.|Học phí được đóng mỗi học kỳ.
+enroll|v|đăng ký nhập học|I enrolled in a new course.|Tôi đã đăng ký một khóa học mới.
+credit|n|tín chỉ|This course gives three credits.|Khóa học này có ba tín chỉ.
+thesis|n|luận văn|She is writing her thesis.|Cô ấy đang viết luận văn.
+club|n|câu lạc bộ|I joined the music club.|Tôi tham gia câu lạc bộ âm nhạc.
+canteen|n|căng-tin|We eat lunch in the canteen.|Chúng tôi ăn trưa ở căng-tin.
+## 📖|Thư viện và sách|Library and Books
+library|n|thư viện|The library closes at nine.|Thư viện đóng cửa lúc chín giờ.
+book|n|sách|This book is very interesting.|Cuốn sách này rất thú vị.
+novel|n|tiểu thuyết|I am reading a long novel.|Tôi đang đọc một cuốn tiểu thuyết dài.
+dictionary|n|từ điển|Look it up in the dictionary.|Hãy tra nó trong từ điển.
+encyclopedia|n|bách khoa toàn thư|The encyclopedia has many facts.|Bách khoa toàn thư có nhiều thông tin.
+magazine|n|tạp chí|She reads a science magazine.|Cô ấy đọc một tạp chí khoa học.
+newspaper|n|báo|My grandpa reads the newspaper.|Ông tôi đọc báo.
+shelf|n|giá sách|Put the book back on the shelf.|Hãy đặt sách lại lên giá.
+borrow|v|mượn|You can borrow five books.|Bạn có thể mượn năm cuốn sách.
+return|v|trả lại|Return the book by Friday.|Hãy trả sách trước thứ Sáu.
+page|n|trang|Turn to page twenty.|Hãy lật đến trang hai mươi.
+chapter|n|chương|I finished chapter three.|Tôi đã đọc xong chương ba.
+author|n|tác giả|Who is the author of this book?|Tác giả của cuốn sách này là ai?
+## 🖋️|Viết luận và học thuật|Academic Writing
+essay|n|bài luận|I wrote an essay about my town.|Tôi viết một bài luận về quê tôi.
+paragraph|n|đoạn văn|Each paragraph has one idea.|Mỗi đoạn văn có một ý chính.
+sentence|n|câu|Write a short sentence.|Hãy viết một câu ngắn.
+title|n|tiêu đề|Choose a title for your essay.|Hãy chọn tiêu đề cho bài luận.
+introduction|n|phần mở bài|The introduction is short.|Phần mở bài ngắn gọn.
+conclusion|n|phần kết luận|End with a strong conclusion.|Hãy kết thúc bằng một kết luận mạnh mẽ.
+argument|n|lập luận|Your argument is very clear.|Lập luận của bạn rất rõ ràng.
+opinion|n|ý kiến|In my opinion, homework is useful.|Theo ý kiến của tôi, bài tập về nhà là hữu ích.
+evidence|n|bằng chứng|Give evidence for your idea.|Hãy đưa bằng chứng cho ý tưởng của bạn.
+summary|n|bản tóm tắt|Write a summary of the story.|Hãy viết bản tóm tắt câu chuyện.
+draft|n|bản nháp|This is only a first draft.|Đây mới chỉ là bản nháp đầu tiên.
+edit|v|chỉnh sửa|Edit your essay carefully.|Hãy chỉnh sửa bài luận cẩn thận.
+reference|n|tài liệu tham khảo|List your references at the end.|Hãy liệt kê tài liệu tham khảo ở cuối bài.
+## ➕|Toán học|Mathematics
+number|n|con số|Choose a number from one to ten.|Hãy chọn một số từ một đến mười.
+add|v|cộng|Add two and three.|Hãy cộng hai với ba.
+subtract|v|trừ|Subtract five from ten.|Hãy trừ năm khỏi mười.
+multiply|v|nhân|Multiply four by six.|Hãy nhân bốn với sáu.
+divide|v|chia|Divide twelve by three.|Hãy chia mười hai cho ba.
+fraction|n|phân số|One half is a fraction.|Một phần hai là một phân số.
+percentage|n|phần trăm|What percentage of students passed?|Bao nhiêu phần trăm học sinh đã đỗ?
+equation|n|phương trình|Solve this equation.|Hãy giải phương trình này.
+angle|n|góc|A square has four right angles.|Hình vuông có bốn góc vuông.
+line|n|đường thẳng|Draw a straight line.|Hãy vẽ một đường thẳng.
+area|n|diện tích|Find the area of the room.|Hãy tìm diện tích căn phòng.
+average|n|trung bình|The average score is eighty.|Điểm trung bình là tám mươi.
+geometry|n|hình học|Geometry uses shapes and angles.|Hình học dùng các hình và góc.
+## 🔬|Khoa học tự nhiên|Physical Science
+experiment|n|thí nghiệm|We did an experiment in the lab.|Chúng tôi làm một thí nghiệm trong phòng thí nghiệm.
+laboratory|n|phòng thí nghiệm|Wear goggles in the laboratory.|Hãy đeo kính bảo hộ trong phòng thí nghiệm.
+microscope|n|kính hiển vi|Look through the microscope.|Hãy nhìn qua kính hiển vi.
+energy|n|năng lượng|The sun gives us energy.|Mặt trời cho chúng ta năng lượng.
+force|n|lực|Gravity is a strong force.|Trọng lực là một lực mạnh.
+gravity|n|trọng lực|Gravity pulls things down.|Trọng lực kéo mọi vật xuống.
+electricity|n|điện|Electricity powers our homes.|Điện cung cấp năng lượng cho nhà chúng ta.
+magnet|n|nam châm|A magnet attracts iron.|Nam châm hút sắt.
+atom|n|nguyên tử|Everything is made of atoms.|Mọi thứ đều được tạo bởi nguyên tử.
+oxygen|n|oxy|We breathe oxygen.|Chúng ta hít thở oxy.
+chemical|n|hóa chất|Do not mix these chemicals.|Đừng trộn các hóa chất này.
+liquid|n|chất lỏng|Water is a liquid.|Nước là chất lỏng.
+solid|n|chất rắn|Ice is a solid.|Băng là chất rắn.
+gas|n|chất khí|Steam is a gas.|Hơi nước là chất khí.
+## 🌱|Sinh học|Biology
+cell|n|tế bào|A cell is very small.|Tế bào rất nhỏ.
+plant|n|thực vật|Plants need water and light.|Thực vật cần nước và ánh sáng.
+animal|n|động vật|Every animal needs food.|Mọi động vật đều cần thức ăn.
+human|n|con người|The human body has many parts.|Cơ thể con người có nhiều bộ phận.
+brain|n|não|The brain controls the body.|Bộ não điều khiển cơ thể.
+heart|n|tim|The heart pumps blood.|Tim bơm máu.
+bone|n|xương|A baby has many bones.|Em bé có nhiều xương.
+blood|n|máu|Blood carries oxygen.|Máu mang oxy.
+seed|n|hạt giống|Plant a seed in the soil.|Hãy gieo một hạt giống vào đất.
+root|n|rễ cây|The root takes water from the soil.|Rễ cây hút nước từ đất.
+species|n|loài|This species is very rare.|Loài này rất hiếm.
+habitat|n|môi trường sống|Forests are the habitat of many animals.|Rừng là môi trường sống của nhiều loài vật.
+ecosystem|n|hệ sinh thái|A coral reef is a rich ecosystem.|Rạn san hô là một hệ sinh thái phong phú.
+## 🌏|Địa lý và lịch sử|Geography and History
+map|n|bản đồ|Find Vietnam on the map.|Hãy tìm Việt Nam trên bản đồ.
+earth|n|Trái Đất|The Earth moves around the sun.|Trái Đất quay quanh mặt trời.
+planet|n|hành tinh|Mars is a red planet.|Sao Hỏa là một hành tinh đỏ.
+climate|n|khí hậu|The climate here is tropical.|Khí hậu ở đây là nhiệt đới.
+population|n|dân số|The population is growing fast.|Dân số đang tăng nhanh.
+border|n|biên giới|The river is the border.|Con sông là biên giới.
+century|n|thế kỷ|This temple is a century old.|Ngôi đền này đã một thế kỷ tuổi.
+king|n|nhà vua|The king lived in a big palace.|Nhà vua sống trong một cung điện lớn.
+independence|n|độc lập|Vietnam won its independence in 1945.|Việt Nam giành độc lập năm 1945.
+civilization|n|nền văn minh|Ancient Egypt was a great civilization.|Ai Cập cổ đại là một nền văn minh vĩ đại.
+event|n|sự kiện|It was an important event in history.|Đó là một sự kiện quan trọng trong lịch sử.
+timeline|n|dòng thời gian|Draw a timeline of the war.|Hãy vẽ dòng thời gian của cuộc chiến.
+empire|n|đế chế|The Roman Empire was huge.|Đế chế La Mã rất rộng lớn.
+## 🔤|Ngôn ngữ và ngữ pháp|Language and Grammar
+grammar|n|ngữ pháp|English grammar is not so hard.|Ngữ pháp tiếng Anh không quá khó.
+vocabulary|n|từ vựng|I learn new vocabulary every day.|Tôi học từ vựng mới mỗi ngày.
+noun|n|danh từ|A noun is the name of a thing.|Danh từ là tên của một sự vật.
+verb|n|động từ|A verb shows an action.|Động từ chỉ một hành động.
+adjective|n|tính từ|Big is an adjective.|Big là một tính từ.
+adverb|n|trạng từ|Quickly is an adverb.|Quickly là một trạng từ.
+pronoun|n|đại từ|She is a pronoun.|She là một đại từ.
+tense|n|thì (ngữ pháp)|Learn the past tense first.|Hãy học thì quá khứ trước.
+plural|n|số nhiều|The plural of child is children.|Số nhiều của child là children.
+spelling|n|chính tả|My spelling is getting better.|Chính tả của tôi ngày càng tốt hơn.
+pronunciation|n|cách phát âm|Her pronunciation is very clear.|Cách phát âm của cô ấy rất rõ ràng.
+meaning|n|ý nghĩa|What is the meaning of this word?|Từ này có nghĩa là gì?
+translate|v|dịch|Translate this sentence into English.|Hãy dịch câu này sang tiếng Anh.
+## 💡|Kỹ năng học tập|Study Skills
+concentrate|v|tập trung|I can not concentrate with noise.|Tôi không thể tập trung khi có tiếng ồn.
+remember|v|nhớ|I remember this word.|Tôi nhớ từ này.
+forget|v|quên|Don't forget your homework.|Đừng quên bài tập về nhà.
+memorize|v|ghi nhớ|Memorize five words a day.|Hãy ghi nhớ năm từ mỗi ngày.
+note|n|ghi chú|Take notes during the lesson.|Hãy ghi chép trong giờ học.
+highlight|v|đánh dấu nổi|Highlight the key words.|Hãy đánh dấu nổi các từ khóa.
+review|v|xem lại|Review your notes tonight.|Tối nay hãy xem lại ghi chú của bạn.
+focus|v|tập trung|Focus on one task at a time.|Hãy tập trung vào một việc mỗi lần.
+goal|n|mục tiêu|My goal is to speak English well.|Mục tiêu của tôi là nói tiếng Anh giỏi.
+habit|n|thói quen|Reading is a good habit.|Đọc sách là một thói quen tốt.
+timetable|n|thời khóa biểu|Check the class timetable.|Hãy xem thời khóa biểu.
+improve|v|cải thiện|Practice will improve your English.|Luyện tập sẽ cải thiện tiếng Anh của bạn.
+progress|n|sự tiến bộ|You are making good progress.|Bạn đang tiến bộ rất tốt.
+## 🔎|Nghiên cứu|Research
+research|n|nghiên cứu|She does research on climate.|Cô ấy nghiên cứu về khí hậu.
+researcher|n|nhà nghiên cứu|The researcher published a paper.|Nhà nghiên cứu đã công bố một bài báo.
+survey|n|khảo sát|We did a survey of fifty students.|Chúng tôi khảo sát năm mươi học sinh.
+questionnaire|n|bảng câu hỏi|Please fill in this questionnaire.|Vui lòng điền vào bảng câu hỏi này.
+result|n|kết quả|The results are surprising.|Kết quả thật đáng ngạc nhiên.
+hypothesis|n|giả thuyết|Our hypothesis was correct.|Giả thuyết của chúng tôi đã đúng.
+method|n|phương pháp|This method saves time.|Phương pháp này tiết kiệm thời gian.
+theory|n|lý thuyết|The theory explains everything.|Lý thuyết đó giải thích mọi thứ.
+analyze|v|phân tích|Analyze the results carefully.|Hãy phân tích kết quả cẩn thận.
+source|n|nguồn|Always check your source.|Luôn kiểm tra nguồn của bạn.
+fact|n|sự thật|This is a scientific fact.|Đây là một sự thật khoa học.
+discovery|n|phát hiện|It was a great discovery.|Đó là một phát hiện vĩ đại.
+invention|n|phát minh|The telephone was a great invention.|Điện thoại là một phát minh tuyệt vời.
+## 💻|Học trực tuyến|Online Learning
+online|adj|trực tuyến|I take an online course.|Tôi học một khóa trực tuyến.
+e-learning|n|học qua mạng|E-learning is flexible.|Học qua mạng rất linh hoạt.
+webinar|n|hội thảo trực tuyến|Join our webinar tonight.|Hãy tham gia hội thảo trực tuyến tối nay.
+video lesson|n|bài học video|I watch a video lesson daily.|Tôi xem một bài học video mỗi ngày.
+platform|n|nền tảng|This platform offers free courses.|Nền tảng này cung cấp các khóa học miễn phí.
+login|n|đăng nhập|Use your login to enter.|Dùng tài khoản đăng nhập để vào.
+subtitle|n|phụ đề|Turn on the English subtitles.|Hãy bật phụ đề tiếng Anh.
+quiz online|n|bài kiểm tra trực tuyến|Take the quiz online.|Hãy làm bài kiểm tra trực tuyến.
+certificate online|n|chứng nhận trực tuyến|You get a certificate online.|Bạn nhận được chứng nhận trực tuyến.
+self-study|n|tự học|Self-study needs discipline.|Tự học cần có kỷ luật.
+podcast|n|podcast|I listen to an English podcast.|Tôi nghe một podcast tiếng Anh.
+tablet|n|máy tính bảng|Kids learn with a tablet.|Trẻ em học bằng máy tính bảng.
+download|v|tải về|Download the lesson to study offline.|Hãy tải bài học về để học ngoại tuyến.
+## 💼|Nghề nghiệp tương lai|Future Careers
+career|n|sự nghiệp|She wants a career in science.|Cô ấy muốn có sự nghiệp trong khoa học.
+job|n|công việc|He found a job in a bank.|Anh ấy tìm được việc ở ngân hàng.
+doctor|n|bác sĩ|I want to be a doctor.|Tôi muốn trở thành bác sĩ.
+nurse|n|y tá|The nurse is very gentle.|Cô y tá rất dịu dàng.
+engineer|n|kỹ sư|My father is an engineer.|Bố tôi là một kỹ sư.
+lawyer|n|luật sư|The lawyer explained the law.|Luật sư giải thích luật.
+scientist|n|nhà khoa học|The scientist made a discovery.|Nhà khoa học đã có một phát hiện.
+architect|n|kiến trúc sư|The architect designed our school.|Kiến trúc sư thiết kế trường chúng tôi.
+journalist|n|nhà báo|The journalist wrote about the festival.|Nhà báo viết về lễ hội.
+pilot|n|phi công|My dream is to be a pilot.|Ước mơ của tôi là làm phi công.
+dream|n|ước mơ|What is your dream job?|Công việc mơ ước của bạn là gì?
+profession|n|nghề nghiệp|Teaching is a noble profession.|Dạy học là một nghề cao quý.
+## 🌏|Học bổng và du học|Scholarships and Studying Abroad
+scholarship|n|học bổng|She won a scholarship to Australia.|Cô ấy giành học bổng đi Úc.
+apply|v|nộp đơn|I want to apply for the course.|Tôi muốn nộp đơn xin học khóa này.
+application|n|đơn xin|Send your application by May.|Hãy gửi đơn xin trước tháng Năm.
+admission|n|sự tuyển sinh|Admission opens in March.|Đợt tuyển sinh mở vào tháng Ba.
+requirement|n|yêu cầu|What are the requirements?|Các yêu cầu là gì?
+IELTS|n|kỳ thi IELTS|He needs seven in IELTS.|Anh ấy cần được bảy điểm IELTS.
+abroad|adv|ở nước ngoài|She wants to study abroad.|Cô ấy muốn du học nước ngoài.
+exchange student|n|sinh viên trao đổi|He is an exchange student in Japan.|Anh ấy là sinh viên trao đổi ở Nhật.
+interview|n|buổi phỏng vấn|The interview was not scary.|Buổi phỏng vấn không đáng sợ.
+recommendation|n|thư giới thiệu|My teacher wrote me a recommendation.|Giáo viên của tôi viết thư giới thiệu cho tôi.
+deadline|n|hạn chót nộp hồ sơ|The application deadline is May tenth.|Hạn chót nộp hồ sơ là ngày mười tháng Năm.
+international|adj|quốc tế|It is an international school.|Đó là một trường quốc tế.
+visa|n|thị thực|You need a student visa.|Bạn cần thị thực du học.
+## 🧠|Tư duy và trí nhớ|Thinking and Memory
+think|v|suy nghĩ|Think before you answer.|Hãy suy nghĩ trước khi trả lời.
+idea|n|ý tưởng|That is a great idea!|Đó là một ý tưởng tuyệt vời!
+imagine|v|tưởng tượng|Imagine you are on a beach.|Hãy tưởng tượng bạn đang ở bãi biển.
+creative|adj|sáng tạo|She is a creative student.|Cô ấy là một học sinh sáng tạo.
+smart|adj|thông minh|He is a smart boy.|Cậu ấy là một cậu bé thông minh.
+intelligent|adj|thông minh sáng suốt|She is very intelligent.|Cô ấy rất thông minh.
+wise|adj|khôn ngoan|A wise person listens first.|Người khôn ngoan biết lắng nghe trước.
+understand|v|hiểu|I understand the lesson now.|Bây giờ tôi hiểu bài rồi.
+solve|v|giải quyết|Solve the problem step by step.|Hãy giải quyết vấn đề từng bước.
+decide|v|quyết định|I decided to study abroad.|Tôi đã quyết định du học.
+knowledge|n|kiến thức|Knowledge is power.|Kiến thức là sức mạnh.
+curiosity|n|sự tò mò|Curiosity makes us learn.|Sự tò mò khiến chúng ta học hỏi.
+brain|n|bộ não|A sleeping brain still works.|Bộ não đang ngủ vẫn hoạt động.
+## 🎭|Nghệ thuật và văn học|Arts and Literature
+poem|n|bài thơ|We read a poem in class.|Chúng tôi đọc một bài thơ trong lớp.
+poet|n|nhà thơ|The poet wrote about the sea.|Nhà thơ viết về biển.
+story|n|câu chuyện|The teacher told a funny story.|Cô giáo kể một câu chuyện vui.
+character|n|nhân vật|Who is your favorite character?|Nhân vật yêu thích của bạn là ai?
+plot|n|cốt truyện|The plot is very exciting.|Cốt truyện rất hấp dẫn.
+theme|n|chủ đề|The theme is friendship.|Chủ đề là tình bạn.
+drama|n|kịch|Our class performed a drama.|Lớp chúng tôi diễn một vở kịch.
+painting|n|bức tranh|This painting is very old.|Bức tranh này rất cũ.
+sculpture|n|tác phẩm điêu khắc|The sculpture is made of stone.|Tác phẩm điêu khắc làm bằng đá.
+choir|n|dàn hợp xướng|She sings in the school choir.|Cô ấy hát trong dàn hợp xướng của trường.
+orchestra|n|dàn nhạc|The orchestra plays every Friday.|Dàn nhạc chơi vào mỗi thứ Sáu.
+folktale|n|truyện dân gian|Grandma tells us folktales.|Bà kể cho chúng tôi những truyện dân gian.
+## 🧩|Tính từ học thuật|Academic Adjectives
+important|adj|quan trọng|Sleep is important for students.|Giấc ngủ quan trọng với học sinh.
+difficult|adj|khó|Chemistry is difficult for me.|Môn hóa khó với tôi.
+easy|adj|dễ|This exercise is easy.|Bài tập này dễ.
+useful|adj|hữu ích|A dictionary is very useful.|Từ điển rất hữu ích.
+boring|adj|nhàm chán|The lecture was boring.|Bài giảng thật nhàm chán.
+interesting|adj|thú vị|History is interesting.|Lịch sử rất thú vị.
+strict|adj|nghiêm khắc|Our teacher is strict but fair.|Giáo viên của chúng tôi nghiêm khắc nhưng công bằng.
+clear|adj|rõ ràng|Your explanation is clear.|Lời giải thích của bạn rõ ràng.
+complete|adj|hoàn chỉnh|Give a complete answer.|Hãy đưa ra câu trả lời hoàn chỉnh.
+accurate|adj|chính xác|The data must be accurate.|Dữ liệu phải chính xác.
+basic|adj|cơ bản|Learn the basic rules first.|Hãy học các quy tắc cơ bản trước.
+advanced|adj|nâng cao|She takes an advanced class.|Cô ấy học một lớp nâng cao.
+academic|adj|thuộc học thuật|She has a strong academic record.|Cô ấy có thành tích học tập vững vàng.
+## 🏃‍♀️|Động từ học thuật|Academic Verbs
+compare|v|so sánh|Compare these two pictures.|Hãy so sánh hai bức tranh này.
+describe|v|mô tả|Describe your best friend.|Hãy mô tả người bạn thân nhất của bạn.
+define|v|định nghĩa|Define this word in English.|Hãy định nghĩa từ này bằng tiếng Anh.
+complete|v|hoàn thành|Complete the sentences below.|Hãy hoàn thành các câu bên dưới.
+choose|v|chọn|Choose the correct answer.|Hãy chọn câu trả lời đúng.
+match|v|nối|Match the words with pictures.|Hãy nối các từ với hình ảnh.
+underline|v|gạch chân|Underline the verbs.|Hãy gạch chân các động từ.
+circle|v|khoanh tròn|Circle the right letter.|Hãy khoanh tròn chữ cái đúng.
+predict|v|dự đoán|Predict what happens next.|Hãy dự đoán điều gì xảy ra tiếp theo.
+conclude|v|kết luận|We can conclude that he is right.|Chúng ta có thể kết luận rằng anh ấy đúng.
+present|v|trình bày|I will present my project.|Tôi sẽ trình bày dự án của mình.
+develop|v|phát triển|Reading develops your imagination.|Đọc sách phát triển trí tưởng tượng của bạn.
+## 🎤|Thuyết trình|Presentations
+presentation|n|bài thuyết trình|Her presentation was excellent.|Bài thuyết trình của cô ấy rất xuất sắc.
+speech|n|bài phát biểu|He gave a short speech.|Anh ấy có một bài phát biểu ngắn.
+audience|n|khán giả|The audience clapped loudly.|Khán giả vỗ tay rất to.
+slide|n|trang trình chiếu|The last slide shows a chart.|Trang cuối cùng có một biểu đồ.
+projector|n|máy chiếu|Turn on the projector, please.|Làm ơn bật máy chiếu lên.
+topic|n|chủ đề|Choose a topic you like.|Hãy chọn một chủ đề bạn thích.
+outline|n|dàn ý|Write an outline first.|Hãy viết dàn ý trước.
+volume|n|âm lượng|Speak with a loud volume.|Hãy nói với âm lượng lớn.
+confident|adj|tự tin|Stay confident on stage.|Hãy giữ sự tự tin trên sân khấu.
+nervous|adj|hồi hộp|I feel nervous before a speech.|Tôi thấy hồi hộp trước bài phát biểu.
+eye contact|n|giao tiếp bằng mắt|Keep eye contact with the audience.|Hãy giữ giao tiếp bằng mắt với khán giả.
+applause|n|tràng vỗ tay|The class gave her applause.|Cả lớp dành cho cô ấy một tràng vỗ tay.
+## 🤝|Làm việc nhóm|Teamwork
+team|n|đội, nhóm|Our team won first prize.|Đội của chúng tôi giành giải nhất.
+partner|n|bạn cùng cặp|Work with a partner.|Hãy làm việc với một bạn cùng cặp.
+cooperate|v|hợp tác|We cooperate on the project.|Chúng tôi hợp tác trong dự án.
+share|v|chia sẻ|Share your ideas with the group.|Hãy chia sẻ ý tưởng của bạn với nhóm.
+role|n|vai trò|Everyone has a role in the group.|Mọi người đều có vai trò trong nhóm.
+leader|n|trưởng nhóm|Who is the group leader?|Ai là trưởng nhóm?
+member|n|thành viên|Each member did a part.|Mỗi thành viên làm một phần.
+deadline|n|thời hạn|We must meet the deadline together.|Chúng ta phải cùng nhau kịp thời hạn.
+help|v|giúp đỡ|Good teams help each other.|Các nhóm tốt giúp đỡ lẫn nhau.
+respect|v|tôn trọng|Respect other people's ideas.|Hãy tôn trọng ý tưởng của người khác.
+agree|v|đồng ý|We all agree on the plan.|Tất cả chúng tôi đều đồng ý với kế hoạch.
+compromise|n|sự nhượng bộ|A compromise solved the problem.|Sự nhượng bộ đã giải quyết vấn đề.
+## ⚽|Hoạt động ngoại khóa|Extracurricular Activities
+activity|n|hoạt động|Swimming is my favorite activity.|Bơi lội là hoạt động yêu thích của tôi.
+competition|n|cuộc thi|She won the English competition.|Cô ấy thắng cuộc thi tiếng Anh.
+prize|n|giải thưởng|He got first prize.|Cậu ấy đạt giải nhất.
+trip|n|chuyến đi thực tế|The class trip was fun.|Chuyến đi thực tế của lớp rất vui.
+volunteer|v|làm tình nguyện|Students volunteer at the shelter.|Học sinh làm tình nguyện ở trạm cứu trợ.
+debate|n|cuộc tranh luận|Our school has a debate club.|Trường chúng tôi có câu lạc bộ tranh luận.
+science fair|n|hội chợ khoa học|My project was at the science fair.|Dự án của tôi được trưng bày ở hội chợ khoa học.
+talent show|n|cuộc thi tài năng|She sang at the talent show.|Cô ấy hát trong cuộc thi tài năng.
+camp|n|trại hè|I went to summer camp.|Tôi đã đi trại hè.
+rehearsal|n|buổi diễn tập|We have a rehearsal today.|Hôm nay chúng tôi có buổi diễn tập.
+perform|v|biểu diễn|The class will perform a play.|Cả lớp sẽ biểu diễn một vở kịch.
+join|v|tham gia|Join our English club.|Hãy tham gia câu lạc bộ tiếng Anh.
+## 🎒|Năm học và kỳ nghỉ|The School Year
+term|n|học kỳ|The first term ends in December.|Học kỳ một kết thúc vào tháng Mười Hai.
+break|n|giờ nghỉ|We play during the break.|Chúng tôi chơi trong giờ nghỉ.
+summer vacation|n|kỳ nghỉ hè|Summer vacation is my favorite time.|Kỳ nghỉ hè là thời gian tôi thích nhất.
+first day|n|ngày đầu tiên|Today is my first day of school.|Hôm nay là ngày đầu tiên tôi đi học.
+opening ceremony|n|lễ khai giảng|The opening ceremony starts at eight.|Lễ khai giảng bắt đầu lúc tám giờ.
+uniform|n|đồng phục|We wear a white uniform.|Chúng tôi mặc đồng phục trắng.
+bell|n|chuông|The bell rings at seven.|Chuông reo lúc bảy giờ.
+lesson|n|bài học|Today's lesson is about animals.|Bài học hôm nay là về động vật.
+period|n|tiết học|The first period is math.|Tiết đầu tiên là môn toán.
+absent|adj|vắng mặt|He was absent yesterday.|Hôm qua cậu ấy vắng mặt.
+late|adj|muộn|Do not be late for class.|Đừng đến lớp muộn.
+attendance|n|sự điểm danh|Attendance is compulsory.|Việc điểm danh là bắt buộc.
+## ⭐|Đánh giá và phản hồi|Assessment and Feedback
+feedback|n|phản hồi|The teacher gave me useful feedback.|Giáo viên cho tôi phản hồi hữu ích.
+comment|n|nhận xét|Read the teacher's comments.|Hãy đọc nhận xét của giáo viên.
+praise|v|khen ngợi|The teacher praised my work.|Giáo viên khen ngợi bài làm của tôi.
+encourage|v|khuyến khích|Parents encourage their children.|Bố mẹ khuyến khích con cái.
+reward|n|phần thưởng|A star is a small reward.|Một ngôi sao là phần thưởng nhỏ.
+punishment|n|hình phạt|There is no punishment for mistakes.|Không có hình phạt cho những lỗi sai.
+evaluate|v|đánh giá|Teachers evaluate students fairly.|Giáo viên đánh giá học sinh công bằng.
+assessment|n|bài đánh giá|The assessment is at the end of term.|Bài đánh giá diễn ra vào cuối học kỳ.
+strength|n|điểm mạnh|Reading is her strength.|Đọc là điểm mạnh của cô ấy.
+weakness|n|điểm yếu|Spelling is my weakness.|Chính tả là điểm yếu của tôi.
+effort|n|nỗ lực|Your effort will pay off.|Nỗ lực của bạn sẽ được đền đáp.
+achievement|n|thành tích|She is proud of her achievement.|Cô ấy tự hào về thành tích của mình.

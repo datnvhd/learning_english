@@ -1,0 +1,53 @@
+// Chủ đề: IELTS – phần bổ sung (được gộp vào ielts.txt khi build)
+## 🧬|Danh từ trừu tượng học thuật|Abstract Nouns
+concept|n|khái niệm|The concept of freedom differs between cultures.|Khái niệm tự do khác nhau giữa các nền văn hóa.
+phenomenon|n|hiện tượng|Urban migration is a global phenomenon.|Di cư ra thành thị là một hiện tượng toàn cầu.
+trend|n|xu hướng|There is a trend toward smaller families.|Có xu hướng gia đình nhỏ hơn.
+priority|n|sự ưu tiên|Safety should be the first priority.|An toàn nên là ưu tiên hàng đầu.
+perspective|n|góc nhìn|Travel broadens our perspective.|Du lịch mở rộng góc nhìn của chúng ta.
+attitude|n|thái độ|A positive attitude helps learning.|Thái độ tích cực giúp việc học.
+awareness|n|nhận thức|Public awareness of health is growing.|Nhận thức của công chúng về sức khỏe đang tăng.
+capacity|n|khả năng, sức chứa|The stadium has a capacity of fifty thousand.|Sân vận động có sức chứa năm mươi nghìn người.
+challenge|n|thách thức|Learning a language is a challenge.|Học một ngôn ngữ là một thách thức.
+factor|n|yếu tố|Cost is a key factor in the decision.|Chi phí là yếu tố then chốt trong quyết định.
+principle|n|nguyên tắc|Equality is a basic principle of democracy.|Bình đẳng là nguyên tắc cơ bản của dân chủ.
+potential|n|tiềm năng|Young people have great potential.|Người trẻ có tiềm năng lớn.
+## ✈️|Du lịch và du lịch bền vững|Tourism
+tourism|n|ngành du lịch|Tourism provides jobs for local people.|Du lịch tạo việc làm cho người dân địa phương.
+mass tourism|n|du lịch đại trà|Mass tourism can damage fragile sites.|Du lịch đại trà có thể làm hại các địa điểm mong manh.
+ecotourism|n|du lịch sinh thái|Ecotourism protects natural habitats.|Du lịch sinh thái bảo vệ môi trường sống tự nhiên.
+attraction|n|điểm tham quan|The castle is a major tourist attraction.|Lâu đài là điểm tham quan du lịch lớn.
+souvenir|n|quà lưu niệm|Tourists buy souvenirs to remember the trip.|Du khách mua quà lưu niệm để nhớ chuyến đi.
+overseas|adv|ở nước ngoài|Many students study overseas.|Nhiều sinh viên du học nước ngoài.
+package holiday|n|kỳ nghỉ trọn gói|A package holiday is easy to organize.|Kỳ nghỉ trọn gói rất dễ sắp xếp.
+backpacker|n|khách du lịch bụi|Backpackers travel on a low budget.|Khách du lịch bụi đi với ngân sách thấp.
+landmark|n|địa danh nổi tiếng|The tower is a famous landmark.|Tòa tháp là một địa danh nổi tiếng.
+off the beaten track|phr|nơi ít người biết|We love places off the beaten track.|Chúng tôi thích những nơi ít người biết đến.
+cultural exchange|n|giao lưu văn hóa|Travel encourages cultural exchange.|Du lịch khuyến khích giao lưu văn hóa.
+host country|n|nước sở tại|Visitors should respect the host country's customs.|Du khách nên tôn trọng phong tục của nước sở tại.
+## 👨‍👩‍👧|Gia đình và các mối quan hệ|Family and Relationships
+nuclear family|n|gia đình hạt nhân|The nuclear family is common in cities.|Gia đình hạt nhân phổ biến ở thành phố.
+extended family|n|đại gia đình|Extended families often live together.|Đại gia đình thường sống chung.
+upbringing|n|sự nuôi dạy|A strict upbringing shaped his character.|Sự nuôi dạy nghiêm khắc đã hình thành tính cách anh ấy.
+bond|n|sự gắn kết|Shared meals strengthen family bonds.|Bữa ăn chung củng cố sự gắn kết gia đình.
+sibling|n|anh chị em ruột|I get along well with my siblings.|Tôi hòa thuận với anh chị em ruột.
+role model|n|hình mẫu|Parents are the first role models.|Cha mẹ là hình mẫu đầu tiên.
+mutual respect|n|sự tôn trọng lẫn nhau|A good friendship needs mutual respect.|Một tình bạn tốt cần sự tôn trọng lẫn nhau.
+close-knit|adj|gắn bó chặt chẽ|We live in a close-knit community.|Chúng tôi sống trong một cộng đồng gắn bó chặt chẽ.
+single parent|n|cha/mẹ đơn thân|Single parents face many challenges.|Cha mẹ đơn thân đối mặt nhiều thách thức.
+childcare|n|chăm sóc trẻ|Affordable childcare helps working parents.|Chăm sóc trẻ giá phải chăng giúp cha mẹ đi làm.
+adolescence|n|tuổi vị thành niên|Adolescence is a period of rapid change.|Tuổi vị thành niên là giai đoạn thay đổi nhanh.
+retirement|n|sự nghỉ hưu|Retirement gives people more free time.|Nghỉ hưu cho con người nhiều thời gian rảnh hơn.
+## 🎨|Nghệ thuật và giải trí|Arts and Leisure
+exhibition|n|cuộc triển lãm|The exhibition attracted thousands of visitors.|Cuộc triển lãm thu hút hàng nghìn khách.
+performance|n|buổi biểu diễn|The dance performance was spectacular.|Buổi biểu diễn múa thật ngoạn mục.
+masterpiece|n|kiệt tác|The painting is a masterpiece.|Bức tranh là một kiệt tác.
+sculpture|n|tác phẩm điêu khắc|The sculpture stands in the town square.|Tác phẩm điêu khắc đặt ở quảng trường thị trấn.
+folk music|n|nhạc dân gian|Folk music reflects local traditions.|Nhạc dân gian phản ánh truyền thống địa phương.
+leisure|n|thời gian rảnh rỗi|People have more leisure time today.|Ngày nay con người có nhiều thời gian rảnh hơn.
+pastime|n|thú tiêu khiển|Reading is my favorite pastime.|Đọc sách là thú tiêu khiển yêu thích của tôi.
+entertainment|n|giải trí|Streaming has changed home entertainment.|Phát trực tuyến đã thay đổi giải trí tại nhà.
+spectator|n|khán giả|Thousands of spectators watched the match.|Hàng nghìn khán giả xem trận đấu.
+amateur|n|người nghiệp dư|He is an amateur photographer.|Anh ấy là nhiếp ảnh gia nghiệp dư.
+professional|adj|chuyên nghiệp|She became a professional dancer.|Cô ấy trở thành vũ công chuyên nghiệp.
+talent|n|tài năng|Young talent should be encouraged.|Tài năng trẻ nên được khuyến khích.

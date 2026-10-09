@@ -1,0 +1,26 @@
+{
+  "name": "English Master – IELTS, TOEIC & từ vựng offline",
+  "short_name": "English Master",
+  "description": "Luyện IELTS, TOEIC và từ vựng. Toàn bộ dữ liệu nằm trên máy, học không cần Internet.",
+  "lang": "vi",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f3f6fb",
+  "theme_color": "#1a6bf5",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

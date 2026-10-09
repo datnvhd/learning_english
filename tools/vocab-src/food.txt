@@ -1,0 +1,461 @@
+// Chủ đề: Ẩm thực
+## 🍎|Trái cây|Fruits
+apple|n|quả táo|I eat an apple every day.|Tôi ăn một quả táo mỗi ngày.
+banana|n|quả chuối|Monkeys love bananas.|Khỉ rất thích chuối.
+orange|n|quả cam|She drinks orange juice.|Cô ấy uống nước cam.
+mango|n|quả xoài|Mango is my favorite fruit.|Xoài là loại trái cây tôi thích nhất.
+pineapple|n|quả dứa|Pineapple is sweet and sour.|Dứa vừa ngọt vừa chua.
+watermelon|n|dưa hấu|We eat watermelon in summer.|Chúng tôi ăn dưa hấu vào mùa hè.
+grape|n|quả nho|These grapes are very sweet.|Những quả nho này rất ngọt.
+strawberry|n|quả dâu tây|She loves strawberry cake.|Cô ấy thích bánh dâu tây.
+lemon|n|quả chanh vàng|Add a slice of lemon.|Hãy thêm một lát chanh.
+lime|n|quả chanh xanh|Squeeze a lime over the salad.|Vắt chanh xanh lên món salad.
+peach|n|quả đào|A peach is soft and juicy.|Quả đào mềm và mọng nước.
+pear|n|quả lê|The pear is ripe.|Quả lê đã chín.
+coconut|n|quả dừa|Fresh coconut water is refreshing.|Nước dừa tươi rất sảng khoái.
+papaya|n|quả đu đủ|Papaya is good for digestion.|Đu đủ tốt cho tiêu hóa.
+dragon fruit|n|thanh long|Dragon fruit has pink skin.|Thanh long có vỏ màu hồng.
+durian|n|sầu riêng|Durian has a strong smell.|Sầu riêng có mùi rất nồng.
+lychee|n|quả vải|Lychee is sweet and juicy.|Vải vừa ngọt vừa mọng nước.
+## 🥕|Rau củ|Vegetables
+carrot|n|cà rốt|Rabbits love carrots.|Thỏ rất thích cà rốt.
+potato|n|khoai tây|I like mashed potato.|Tôi thích khoai tây nghiền.
+tomato|n|cà chua|Slice the tomato thinly.|Hãy thái mỏng quả cà chua.
+onion|n|hành tây|Onions make me cry.|Hành tây làm tôi chảy nước mắt.
+garlic|n|tỏi|Add some garlic to the pan.|Hãy cho một ít tỏi vào chảo.
+cucumber|n|dưa chuột|Cucumber is cool and fresh.|Dưa chuột mát và tươi.
+cabbage|n|bắp cải|We made cabbage soup.|Chúng tôi nấu súp bắp cải.
+lettuce|n|rau xà lách|Put lettuce in the sandwich.|Cho rau xà lách vào bánh mì kẹp.
+spinach|n|rau chân vịt|Spinach makes you strong.|Rau chân vịt giúp bạn khỏe mạnh.
+broccoli|n|bông cải xanh|Steam the broccoli for five minutes.|Hấp bông cải xanh trong năm phút.
+pumpkin|n|bí ngô|Pumpkin soup is delicious.|Súp bí ngô rất ngon.
+corn|n|ngô|Grilled corn smells great.|Ngô nướng thơm lắm.
+mushroom|n|nấm|These mushrooms are fresh.|Những cây nấm này còn tươi.
+eggplant|n|cà tím|Grilled eggplant is tasty.|Cà tím nướng rất ngon.
+bean|n|đậu|Green beans are healthy.|Đậu xanh rất tốt cho sức khỏe.
+pea|n|đậu Hà Lan|Peas are small and green.|Đậu Hà Lan nhỏ và xanh.
+chili|n|ớt|Vietnamese people love chili.|Người Việt thích ăn ớt.
+## 🥩|Thịt và hải sản|Meat and Seafood
+beef|n|thịt bò|Beef noodle soup is famous.|Phở bò rất nổi tiếng.
+pork|n|thịt lợn|We ate grilled pork.|Chúng tôi ăn thịt lợn nướng.
+chicken|n|thịt gà|Fried chicken is popular.|Gà rán rất phổ biến.
+duck|n|thịt vịt|Roast duck is a special dish.|Vịt quay là món đặc biệt.
+lamb|n|thịt cừu|Lamb is common in Europe.|Thịt cừu phổ biến ở châu Âu.
+sausage|n|xúc xích|I had sausage for breakfast.|Tôi ăn xúc xích vào bữa sáng.
+bacon|n|thịt xông khói|Bacon and eggs is a classic.|Thịt xông khói và trứng là món kinh điển.
+ham|n|giăm bông|Put ham in the sandwich.|Cho giăm bông vào bánh mì kẹp.
+fish|n|cá|Grilled fish is healthy.|Cá nướng tốt cho sức khỏe.
+salmon|n|cá hồi|Salmon has healthy fat.|Cá hồi có chất béo tốt.
+tuna|n|cá ngừ|Tuna sandwiches are quick.|Bánh mì kẹp cá ngừ làm rất nhanh.
+shrimp|n|con tôm|Fried shrimp is delicious.|Tôm chiên rất ngon.
+crab|n|con cua|We ate steamed crab.|Chúng tôi ăn cua hấp.
+squid|n|con mực|Grilled squid is a street snack.|Mực nướng là món ăn vặt đường phố.
+oyster|n|con hàu|Fresh oysters taste salty.|Hàu tươi có vị mặn.
+lobster|n|tôm hùm|Lobster is expensive.|Tôm hùm rất đắt.
+clam|n|con nghêu|Clam soup is light.|Súp nghêu rất thanh.
+## 🥛|Sữa và trứng|Dairy and Eggs
+milk|n|sữa|I drink milk every morning.|Tôi uống sữa mỗi sáng.
+cheese|n|phô mai|She loves melted cheese.|Cô ấy thích phô mai tan chảy.
+butter|n|bơ|Spread butter on the toast.|Phết bơ lên bánh mì nướng.
+yogurt|n|sữa chua|Yogurt is good for your stomach.|Sữa chua tốt cho dạ dày.
+cream|n|kem tươi|Add some cream to the coffee.|Thêm chút kem tươi vào cà phê.
+egg|n|quả trứng|I boil two eggs.|Tôi luộc hai quả trứng.
+egg yolk|n|lòng đỏ trứng|Separate the egg yolk.|Hãy tách lòng đỏ trứng ra.
+egg white|n|lòng trắng trứng|Beat the egg white well.|Đánh lòng trắng trứng thật kỹ.
+omelet|n|trứng ốp la cuộn|She made a cheese omelet.|Cô ấy làm món trứng cuộn phô mai.
+condensed milk|n|sữa đặc|Vietnamese coffee uses condensed milk.|Cà phê Việt Nam dùng sữa đặc.
+soy milk|n|sữa đậu nành|I prefer soy milk.|Tôi thích sữa đậu nành hơn.
+mozzarella|n|phô mai mozzarella|Pizza needs mozzarella.|Bánh pizza cần phô mai mozzarella.
+## 🍚|Ngũ cốc và tinh bột|Grains and Starches
+rice|n|gạo, cơm|We eat rice every day.|Chúng tôi ăn cơm mỗi ngày.
+bread|n|bánh mì|Fresh bread smells wonderful.|Bánh mì tươi thơm tuyệt vời.
+noodle|n|mì, bún|I love hot noodle soup.|Tôi thích món mì nước nóng.
+pasta|n|mì Ý|We had pasta for dinner.|Chúng tôi ăn mì Ý cho bữa tối.
+flour|n|bột mì|Mix the flour and eggs.|Trộn bột mì với trứng.
+oats|n|yến mạch|I eat oats for breakfast.|Tôi ăn yến mạch vào bữa sáng.
+cereal|n|ngũ cốc ăn sáng|Kids eat cereal with milk.|Trẻ em ăn ngũ cốc với sữa.
+wheat|n|lúa mì|Wheat is used to make bread.|Lúa mì dùng để làm bánh mì.
+sticky rice|n|xôi, gạo nếp|Sticky rice is a Vietnamese breakfast.|Xôi là bữa sáng của người Việt.
+rice noodles|n|bún, phở|Rice noodles are soft.|Bún gạo rất mềm.
+toast|n|bánh mì nướng|I have toast and jam.|Tôi ăn bánh mì nướng với mứt.
+baguette|n|bánh mì baguette|A baguette is long and crispy.|Bánh mì baguette dài và giòn.
+tortilla|n|bánh ngô tortilla|We ate tacos with tortillas.|Chúng tôi ăn tacos với bánh tortilla.
+## 🧂|Gia vị|Spices and Seasonings
+salt|n|muối|Add a little salt.|Hãy thêm một chút muối.
+pepper|n|hạt tiêu|Sprinkle some black pepper.|Rắc một ít tiêu đen.
+sugar|n|đường|I do not take sugar in tea.|Tôi không cho đường vào trà.
+vinegar|n|giấm|Add a spoon of vinegar.|Thêm một thìa giấm.
+oil|n|dầu ăn|Heat the oil in the pan.|Làm nóng dầu trong chảo.
+soy sauce|n|nước tương|Dip the sushi in soy sauce.|Chấm sushi vào nước tương.
+fish sauce|n|nước mắm|Fish sauce is important in Vietnam.|Nước mắm rất quan trọng ở Việt Nam.
+honey|n|mật ong|Honey makes tea sweeter.|Mật ong làm trà ngọt hơn.
+cinnamon|n|quế|Cinnamon smells sweet.|Quế có mùi ngọt.
+ginger|n|gừng|Ginger tea is warm.|Trà gừng rất ấm.
+curry|n|cà ri|Thai curry is spicy.|Cà ri Thái rất cay.
+mustard|n|mù tạt|I like mustard on my hot dog.|Tôi thích mù tạt trên bánh mì xúc xích.
+ketchup|n|tương cà|Kids love ketchup.|Trẻ em thích tương cà.
+mayonnaise|n|sốt mayonnaise|Put mayonnaise on the burger.|Cho sốt mayonnaise lên bánh burger.
+## 🌿|Rau thơm và nước chấm|Herbs and Sauces
+basil|n|húng quế|Basil goes well with tomato.|Húng quế hợp với cà chua.
+mint|n|bạc hà|Add fresh mint leaves.|Hãy thêm lá bạc hà tươi.
+coriander|n|rau mùi|Coriander is common in soup.|Rau mùi thường có trong món súp.
+lemongrass|n|sả|Lemongrass gives a nice smell.|Sả tạo mùi thơm dễ chịu.
+parsley|n|mùi tây|Sprinkle parsley on top.|Rắc mùi tây lên trên.
+spring onion|n|hành lá|Chop the spring onion.|Hãy thái hành lá.
+chili sauce|n|tương ớt|Do you want chili sauce?|Bạn có muốn tương ớt không?
+dipping sauce|n|nước chấm|Make a dipping sauce for the rolls.|Hãy pha nước chấm cho món cuốn.
+peanut sauce|n|sốt đậu phộng|Peanut sauce goes with spring rolls.|Sốt đậu phộng ăn kèm với gỏi cuốn.
+rosemary|n|hương thảo|Rosemary is good with chicken.|Hương thảo hợp với thịt gà.
+dill|n|thì là|We use dill in fish soup.|Chúng tôi dùng thì là trong canh cá.
+vanilla|n|vani|Add a drop of vanilla.|Thêm một giọt vani.
+## 🍽️|Các bữa ăn|Meals
+breakfast|n|bữa sáng|I have breakfast at seven.|Tôi ăn sáng lúc bảy giờ.
+lunch|n|bữa trưa|We have lunch at noon.|Chúng tôi ăn trưa vào giữa ngày.
+dinner|n|bữa tối|Dinner is ready!|Bữa tối đã sẵn sàng!
+snack|n|bữa ăn nhẹ|I eat a snack at four.|Tôi ăn nhẹ lúc bốn giờ.
+brunch|n|bữa nửa buổi|We have brunch on Sundays.|Chúng tôi ăn brunch vào Chủ nhật.
+appetizer|n|món khai vị|The appetizer is spring rolls.|Món khai vị là chả giò.
+main course|n|món chính|The main course is grilled fish.|Món chính là cá nướng.
+side dish|n|món ăn kèm|Salad is a good side dish.|Salad là món ăn kèm tốt.
+dessert|n|món tráng miệng|Would you like some dessert?|Bạn có muốn dùng món tráng miệng không?
+leftovers|n|đồ ăn thừa|We ate the leftovers for lunch.|Chúng tôi ăn đồ thừa cho bữa trưa.
+buffet|n|tiệc buffet|The hotel serves a big buffet.|Khách sạn phục vụ tiệc buffet lớn.
+picnic|n|bữa ăn dã ngoại|We packed food for a picnic.|Chúng tôi chuẩn bị đồ ăn cho buổi dã ngoại.
+feast|n|bữa tiệc lớn|They prepared a feast for Tet.|Họ chuẩn bị một bữa tiệc lớn cho Tết.
+## 🥤|Đồ uống|Drinks
+water|n|nước|Please give me a glass of water.|Làm ơn cho tôi một ly nước.
+juice|n|nước ép|Fresh juice is healthy.|Nước ép tươi rất tốt cho sức khỏe.
+soda|n|nước ngọt có ga|Do not drink too much soda.|Đừng uống quá nhiều nước ngọt có ga.
+smoothie|n|sinh tố|A banana smoothie, please.|Cho tôi một ly sinh tố chuối.
+lemonade|n|nước chanh|Lemonade is cool in summer.|Nước chanh mát vào mùa hè.
+milkshake|n|sữa lắc|She ordered a chocolate milkshake.|Cô ấy gọi một ly sữa lắc sô-cô-la.
+mineral water|n|nước khoáng|I prefer mineral water.|Tôi thích nước khoáng hơn.
+sugarcane juice|n|nước mía|Sugarcane juice is sweet.|Nước mía rất ngọt.
+coconut water|n|nước dừa|Coconut water is refreshing.|Nước dừa rất sảng khoái.
+iced tea|n|trà đá|Iced tea is cheap.|Trà đá rất rẻ.
+hot chocolate|n|sô-cô-la nóng|Hot chocolate warms me up.|Sô-cô-la nóng làm tôi ấm lên.
+sparkling|adj|có ga|Do you want sparkling water?|Bạn có muốn nước có ga không?
+straw|n|ống hút|Please give me a straw.|Làm ơn cho tôi ống hút.
+## ☕|Cà phê và trà|Coffee and Tea
+coffee|n|cà phê|I drink coffee every morning.|Tôi uống cà phê mỗi sáng.
+espresso|n|cà phê espresso|An espresso is strong.|Cà phê espresso rất đậm.
+cappuccino|n|cà phê cappuccino|A cappuccino has milk foam.|Cappuccino có lớp bọt sữa.
+latte|n|cà phê latte|I order a latte.|Tôi gọi một ly latte.
+iced coffee|n|cà phê đá|Vietnamese iced coffee is famous.|Cà phê đá Việt Nam rất nổi tiếng.
+tea|n|trà|Would you like some tea?|Bạn có muốn dùng trà không?
+green tea|n|trà xanh|Green tea is healthy.|Trà xanh tốt cho sức khỏe.
+black tea|n|trà đen|I like black tea with lemon.|Tôi thích trà đen với chanh.
+milk tea|n|trà sữa|Milk tea is popular with teens.|Trà sữa phổ biến với thanh thiếu niên.
+herbal tea|n|trà thảo mộc|Herbal tea helps me sleep.|Trà thảo mộc giúp tôi ngủ ngon.
+teapot|n|ấm trà|The teapot is hot.|Ấm trà đang nóng.
+mug|n|cốc lớn có quai|She holds a warm mug.|Cô ấy cầm một chiếc cốc ấm.
+barista|n|nhân viên pha cà phê|The barista draws a heart on the foam.|Nhân viên pha chế vẽ trái tim lên lớp bọt.
+## 🍰|Bánh ngọt và đồ ngọt|Sweets and Pastries
+cake|n|bánh ngọt|We bought a chocolate cake.|Chúng tôi mua một chiếc bánh sô-cô-la.
+cookie|n|bánh quy|Grandma bakes cookies.|Bà nướng bánh quy.
+biscuit|n|bánh bích quy|I dip biscuits in tea.|Tôi chấm bánh bích quy vào trà.
+pie|n|bánh nướng nhân|Apple pie is her favorite.|Bánh táo là món cô ấy thích nhất.
+muffin|n|bánh muffin|I ate a blueberry muffin.|Tôi ăn một chiếc bánh muffin việt quất.
+donut|n|bánh vòng|Donuts are sweet and soft.|Bánh vòng ngọt và mềm.
+chocolate|n|sô-cô-la|Dark chocolate is bitter.|Sô-cô-la đen có vị đắng.
+candy|n|kẹo|Children love candy.|Trẻ em thích kẹo.
+jam|n|mứt|Spread jam on your toast.|Hãy phết mứt lên bánh mì nướng.
+pudding|n|bánh pudding|We had chocolate pudding.|Chúng tôi ăn bánh pudding sô-cô-la.
+croissant|n|bánh sừng bò|A croissant is buttery.|Bánh sừng bò rất béo bơ.
+pancake|n|bánh kếp|Pancakes with honey are great.|Bánh kếp với mật ong rất tuyệt.
+waffle|n|bánh tổ ong|She ate a waffle with cream.|Cô ấy ăn bánh tổ ong với kem.
+## 🍔|Đồ ăn nhanh|Fast Food
+hamburger|n|bánh mì kẹp thịt|He ordered a hamburger.|Anh ấy gọi một chiếc bánh mì kẹp thịt.
+pizza|n|bánh pizza|We shared a large pizza.|Chúng tôi chia nhau một chiếc pizza lớn.
+hot dog|n|bánh mì xúc xích|A hot dog costs two dollars.|Một chiếc bánh mì xúc xích giá hai đô la.
+french fries|n|khoai tây chiên|I want french fries.|Tôi muốn khoai tây chiên.
+sandwich|n|bánh mì kẹp|She made a cheese sandwich.|Cô ấy làm một chiếc bánh mì kẹp phô mai.
+taco|n|bánh taco|Tacos come from Mexico.|Bánh taco có nguồn gốc từ Mexico.
+nugget|n|gà viên chiên|Kids love chicken nuggets.|Trẻ em thích gà viên chiên.
+takeaway|n|đồ ăn mang đi|Let's get a takeaway.|Chúng ta mua đồ ăn mang đi nhé.
+combo|n|suất ăn combo|I ordered a burger combo.|Tôi gọi một suất combo bánh burger.
+drive-through|n|dịch vụ mua qua cửa xe|We used the drive-through.|Chúng tôi mua ở cửa mua qua xe.
+delivery|n|giao hàng|Food delivery is very fast.|Giao đồ ăn rất nhanh.
+fried chicken|n|gà rán|Fried chicken is crunchy.|Gà rán giòn rụm.
+popcorn|n|bắp rang|Popcorn is a movie snack.|Bắp rang là món ăn vặt khi xem phim.
+## 🇻🇳|Món Việt Nam|Vietnamese Dishes
+pho|n|phở|A bowl of pho is warm and tasty.|Một tô phở ấm và ngon.
+banh mi|n|bánh mì Việt Nam|Banh mi is a Vietnamese sandwich.|Bánh mì là món bánh mì kẹp của Việt Nam.
+spring roll|n|chả giò, gỏi cuốn|Fresh spring rolls are light.|Gỏi cuốn tươi rất thanh nhẹ.
+fried rice|n|cơm chiên|Fried rice is quick to cook.|Cơm chiên nấu rất nhanh.
+broken rice|n|cơm tấm|Broken rice with grilled pork is popular.|Cơm tấm sườn nướng rất phổ biến.
+grilled pork|n|thịt nướng|Grilled pork smells delicious.|Thịt nướng thơm phức.
+rice paper|n|bánh tráng|Wrap the food in rice paper.|Hãy cuốn thức ăn trong bánh tráng.
+hotpot|n|lẩu|We ate hotpot on a cold night.|Chúng tôi ăn lẩu vào một đêm lạnh.
+sweet soup|n|chè|Sweet soup is a Vietnamese dessert.|Chè là món tráng miệng của Việt Nam.
+sticky rice cake|n|bánh chưng|We make sticky rice cakes at Tet.|Chúng tôi gói bánh chưng vào dịp Tết.
+pancake|n|bánh xèo|Vietnamese pancake is crispy.|Bánh xèo Việt Nam giòn rụm.
+vermicelli|n|bún|Vermicelli with grilled pork is my lunch.|Bún thịt nướng là bữa trưa của tôi.
+sour soup|n|canh chua|Sour soup is common in the south.|Canh chua phổ biến ở miền Nam.
+## 🍜|Món ăn châu Á|Asian Dishes
+sushi|n|sushi|We had sushi for dinner.|Chúng tôi ăn sushi cho bữa tối.
+ramen|n|mì ramen|A hot bowl of ramen is perfect.|Một tô ramen nóng thật hoàn hảo.
+tempura|n|tempura|Tempura is a fried Japanese dish.|Tempura là món chiên của Nhật.
+kimchi|n|kim chi|Kimchi is spicy and sour.|Kim chi cay và chua.
+dumpling|n|há cảo|Steamed dumplings are my favorite.|Há cảo hấp là món tôi thích nhất.
+tofu|n|đậu phụ|Tofu is made from soybeans.|Đậu phụ được làm từ đậu nành.
+satay|n|thịt xiên satay|We ordered chicken satay.|Chúng tôi gọi gà xiên satay.
+pad thai|n|pad thai|Pad thai is a Thai noodle dish.|Pad thai là món mì của Thái Lan.
+dim sum|n|dim sum|We had dim sum on Sunday.|Chúng tôi ăn dim sum vào Chủ nhật.
+miso soup|n|súp miso|Miso soup comes with sushi.|Súp miso đi kèm với sushi.
+bibimbap|n|cơm trộn Hàn Quốc|Bibimbap is a colorful dish.|Bibimbap là món ăn nhiều màu sắc.
+seaweed|n|rong biển|Sushi is wrapped in seaweed.|Sushi được cuốn bằng rong biển.
+wasabi|n|mù tạt xanh|Wasabi is very hot.|Wasabi rất cay.
+## 🥘|Món Âu|Western Dishes
+steak|n|bít tết|I like my steak medium.|Tôi thích bít tết chín vừa.
+salad|n|món rau trộn|A salad is a light meal.|Salad là một bữa ăn nhẹ.
+soup|n|món súp|Tomato soup is warm.|Súp cà chua rất ấm.
+spaghetti|n|mì spaghetti|Spaghetti with tomato sauce is easy.|Mì spaghetti sốt cà chua rất dễ làm.
+lasagna|n|mì lasagna|Lasagna has many layers.|Lasagna có nhiều lớp.
+roast chicken|n|gà nướng nguyên con|Roast chicken is a Sunday meal.|Gà nướng là món ăn ngày Chủ nhật.
+mashed potato|n|khoai tây nghiền|Mashed potato goes with steak.|Khoai tây nghiền ăn kèm bít tết.
+risotto|n|cơm risotto|Mushroom risotto is creamy.|Cơm risotto nấm rất béo ngậy.
+fish and chips|n|cá chiên khoai|Fish and chips is a British dish.|Cá chiên khoai là món ăn của Anh.
+meatball|n|thịt viên|Add meatballs to the spaghetti.|Hãy thêm thịt viên vào mì spaghetti.
+gravy|n|nước sốt thịt|Pour gravy on the potatoes.|Rưới nước sốt thịt lên khoai tây.
+paella|n|cơm paella|Paella comes from Spain.|Paella có nguồn gốc từ Tây Ban Nha.
+## 🍳|Đồ dùng nhà bếp|Kitchen Tools
+pan|n|chảo|Heat the pan first.|Hãy làm nóng chảo trước.
+pot|n|nồi|Put water in the pot.|Đổ nước vào nồi.
+knife|n|con dao|The knife is very sharp.|Con dao rất sắc.
+cutting board|n|thớt|Use a clean cutting board.|Hãy dùng một cái thớt sạch.
+oven|n|lò nướng|Preheat the oven to two hundred degrees.|Làm nóng lò đến hai trăm độ.
+stove|n|bếp nấu|Turn off the stove.|Hãy tắt bếp.
+microwave|n|lò vi sóng|Heat the soup in the microwave.|Hãy hâm súp trong lò vi sóng.
+fridge|n|tủ lạnh|Put the milk in the fridge.|Hãy cất sữa vào tủ lạnh.
+blender|n|máy xay sinh tố|Use a blender for the smoothie.|Dùng máy xay để làm sinh tố.
+rice cooker|n|nồi cơm điện|The rice cooker keeps rice warm.|Nồi cơm điện giữ cơm ấm.
+kettle|n|ấm đun nước|The kettle is boiling.|Ấm nước đang sôi.
+grill|n|vỉ nướng|We cook fish on the grill.|Chúng tôi nướng cá trên vỉ.
+whisk|n|cây đánh trứng|Use a whisk to beat the eggs.|Dùng cây đánh trứng để đánh trứng.
+## 🍴|Dụng cụ bàn ăn|Tableware
+plate|n|cái đĩa|Put the rice on the plate.|Hãy xới cơm ra đĩa.
+bowl|n|cái bát|A bowl of hot soup, please.|Cho tôi một bát súp nóng.
+cup|n|cái tách|She holds a cup of tea.|Cô ấy cầm một tách trà.
+glass|n|cái ly|Fill the glass with water.|Hãy rót đầy nước vào ly.
+fork|n|cái nĩa|Use a fork for the pasta.|Dùng nĩa cho món mì Ý.
+spoon|n|cái thìa|Stir the soup with a spoon.|Khuấy súp bằng thìa.
+chopsticks|n|đôi đũa|I can use chopsticks well.|Tôi dùng đũa rất giỏi.
+napkin|n|khăn ăn|Please give me a napkin.|Làm ơn đưa tôi một chiếc khăn ăn.
+tray|n|cái khay|She carried a tray of food.|Cô ấy bưng một khay đồ ăn.
+tablecloth|n|khăn trải bàn|The tablecloth is white.|Khăn trải bàn màu trắng.
+jug|n|bình rót|Pour water from the jug.|Rót nước từ bình.
+teaspoon|n|thìa nhỏ|Add a teaspoon of sugar.|Thêm một thìa nhỏ đường.
+## 🔪|Động từ nấu ăn|Cooking Verbs
+cook|v|nấu ăn|My mom cooks very well.|Mẹ tôi nấu ăn rất ngon.
+boil|v|luộc, đun sôi|Boil the eggs for ten minutes.|Luộc trứng trong mười phút.
+fry|v|chiên, rán|Fry the fish until golden.|Chiên cá cho đến khi vàng.
+bake|v|nướng bánh|I bake bread on weekends.|Tôi nướng bánh mì vào cuối tuần.
+grill|v|nướng vỉ|We grill meat in the garden.|Chúng tôi nướng thịt trong vườn.
+steam|v|hấp|Steam the vegetables gently.|Hấp rau nhẹ nhàng.
+roast|v|quay, nướng|Roast the chicken for an hour.|Quay gà trong một giờ.
+stir|v|khuấy, đảo|Stir the soup slowly.|Khuấy súp từ từ.
+chop|v|chặt, băm|Chop the onions finely.|Băm nhỏ hành tây.
+slice|v|thái lát|Slice the bread thin.|Cắt bánh mì thành lát mỏng.
+peel|v|gọt vỏ|Peel the potatoes first.|Hãy gọt vỏ khoai tây trước.
+mix|v|trộn|Mix the flour and sugar.|Trộn bột mì với đường.
+pour|v|rót|Pour the milk into a glass.|Rót sữa vào ly.
+taste|v|nếm|Taste the soup before serving.|Hãy nếm súp trước khi dọn ra.
+## 🔥|Cách chế biến|Cooking Methods
+raw|adj|sống|Sushi is made with raw fish.|Sushi làm từ cá sống.
+fresh|adj|tươi|Fresh vegetables taste better.|Rau tươi ngon hơn.
+cooked|adj|đã nấu chín|The chicken is well cooked.|Gà đã được nấu chín kỹ.
+fried|adj|chiên|Fried food is oily.|Đồ chiên nhiều dầu.
+grilled|adj|nướng|Grilled fish is my favorite.|Cá nướng là món tôi thích nhất.
+steamed|adj|hấp|Steamed rice is soft.|Cơm hấp mềm.
+baked|adj|nướng lò|She made baked potatoes.|Cô ấy làm khoai tây nướng lò.
+boiled|adj|luộc|Boiled eggs are healthy.|Trứng luộc tốt cho sức khỏe.
+smoked|adj|hun khói|Smoked salmon is delicious.|Cá hồi hun khói rất ngon.
+pickled|adj|muối chua|Pickled cabbage is sour.|Bắp cải muối chua có vị chua.
+frozen|adj|đông lạnh|We buy frozen shrimp.|Chúng tôi mua tôm đông lạnh.
+canned|adj|đóng hộp|Canned food lasts long.|Đồ hộp để được lâu.
+## 🎂|Nguyên liệu làm bánh|Baking Ingredients
+yeast|n|men|Yeast makes bread rise.|Men làm bánh mì nở.
+dough|n|bột nhào|Knead the dough well.|Hãy nhào bột thật kỹ.
+batter|n|bột lỏng|Pour the batter into the pan.|Đổ bột lỏng vào chảo.
+baking powder|n|bột nở|Add a spoon of baking powder.|Thêm một thìa bột nở.
+icing|n|lớp kem phủ|Put icing on the cake.|Phủ lớp kem lên bánh.
+sprinkles|n|cốm trang trí|The cupcakes have colorful sprinkles.|Bánh cupcake có cốm trang trí nhiều màu.
+cocoa|n|bột ca cao|Cocoa gives the cake its color.|Bột ca cao tạo màu cho bánh.
+raisin|n|nho khô|Add raisins to the bread.|Thêm nho khô vào bánh mì.
+almond|n|hạnh nhân|Almonds are crunchy.|Hạnh nhân giòn.
+peanut|n|đậu phộng|Peanuts are cheap and tasty.|Đậu phộng rẻ và ngon.
+cashew|n|hạt điều|Cashew nuts are from Vietnam.|Hạt điều có nguồn gốc từ Việt Nam.
+cream cheese|n|phô mai kem|Cream cheese is used for cheesecake.|Phô mai kem dùng để làm bánh phô mai.
+mold|n|khuôn bánh|Pour the mix into a mold.|Đổ hỗn hợp vào khuôn.
+## 📏|Công thức và định lượng|Recipes and Measurements
+recipe|n|công thức nấu ăn|This recipe is very easy.|Công thức này rất dễ.
+ingredient|n|nguyên liệu|List all the ingredients.|Hãy liệt kê tất cả nguyên liệu.
+cup|n|cốc (đơn vị đo)|Add one cup of flour.|Thêm một cốc bột mì.
+tablespoon|n|thìa lớn|Add one tablespoon of oil.|Thêm một thìa lớn dầu.
+pinch|n|nhúm|Add a pinch of salt.|Thêm một nhúm muối.
+slice|n|lát|Cut a slice of cheese.|Cắt một lát phô mai.
+piece|n|miếng|Would you like a piece of cake?|Bạn có muốn một miếng bánh không?
+gram|n|gam|You need two hundred grams of sugar.|Bạn cần hai trăm gam đường.
+serve|v|phục vụ, dọn ra|Serve the soup hot.|Hãy dọn súp lúc còn nóng.
+serving|n|khẩu phần|This recipe makes four servings.|Công thức này làm được bốn khẩu phần.
+preheat|v|làm nóng trước|Preheat the oven first.|Hãy làm nóng lò trước.
+instructions|n|hướng dẫn|Follow the instructions carefully.|Hãy làm theo hướng dẫn cẩn thận.
+## 👅|Vị và kết cấu|Tastes and Textures
+sweet|adj|ngọt|The cake is very sweet.|Chiếc bánh rất ngọt.
+sour|adj|chua|Lemon is sour.|Chanh có vị chua.
+salty|adj|mặn|The soup is too salty.|Súp mặn quá.
+bitter|adj|đắng|Black coffee is bitter.|Cà phê đen có vị đắng.
+spicy|adj|cay|This dish is very spicy.|Món này rất cay.
+delicious|adj|ngon|The soup is delicious!|Món súp thật ngon!
+tasty|adj|ngon miệng|That was a tasty meal.|Đó là một bữa ăn ngon miệng.
+crunchy|adj|giòn|The chips are crunchy.|Khoai tây chiên giòn tan.
+crispy|adj|giòn rụm|Crispy pork is my favorite.|Thịt heo giòn là món tôi thích nhất.
+soft|adj|mềm|The bread is soft.|Bánh mì mềm.
+juicy|adj|mọng nước|The orange is very juicy.|Quả cam rất mọng nước.
+creamy|adj|béo ngậy|The soup is thick and creamy.|Súp đặc và béo ngậy.
+greasy|adj|nhiều dầu mỡ|The pizza was too greasy.|Chiếc pizza quá nhiều dầu mỡ.
+bland|adj|nhạt|The soup tastes bland.|Súp có vị nhạt.
+## 📜|Thực đơn nhà hàng|The Menu
+menu|n|thực đơn|Can I see the menu, please?|Cho tôi xem thực đơn được không?
+starter|n|món khai vị|I will have soup as a starter.|Tôi sẽ dùng súp làm món khai vị.
+special|n|món đặc biệt|Today's special is grilled fish.|Món đặc biệt hôm nay là cá nướng.
+vegetarian|adj|chay|Do you have vegetarian dishes?|Bạn có món chay không?
+spicy dish|n|món cay|This is a spicy dish.|Đây là một món cay.
+set menu|n|thực đơn cố định|The set menu costs ten dollars.|Thực đơn cố định giá mười đô la.
+drink list|n|thực đơn đồ uống|Here is the drink list.|Đây là thực đơn đồ uống.
+portion|n|phần ăn|The portion is huge.|Phần ăn rất lớn.
+recommendation|n|món gợi ý|What is your recommendation?|Bạn gợi ý món nào?
+ingredients list|n|danh sách nguyên liệu|Check the ingredients list.|Hãy xem danh sách nguyên liệu.
+signature dish|n|món đặc trưng|Pho is their signature dish.|Phở là món đặc trưng của họ.
+kids menu|n|thực đơn trẻ em|They have a kids menu.|Họ có thực đơn cho trẻ em.
+## 🧾|Gọi món và thanh toán|Ordering and Paying
+order|v|gọi món|I would like to order now.|Tôi muốn gọi món bây giờ.
+table|n|bàn ăn|A table for two, please.|Cho tôi một bàn hai người.
+reserve|v|đặt bàn|I reserved a table for seven.|Tôi đã đặt bàn lúc bảy giờ.
+bill|n|hóa đơn|Can I have the bill, please?|Cho tôi xin hóa đơn được không?
+tip|n|tiền boa|Leave a tip for the waiter.|Hãy để lại tiền boa cho người phục vụ.
+pay|v|thanh toán|I will pay by card.|Tôi sẽ trả bằng thẻ.
+split|v|chia hóa đơn|Let's split the bill.|Chúng ta chia hóa đơn nhé.
+takeout|n|mang về|Two takeouts, please.|Cho hai suất mang về.
+refill|n|rót thêm|Can I have a refill?|Cho tôi rót thêm được không?
+change|n|tiền thừa|Here is your change.|Đây là tiền thừa của bạn.
+complaint|n|lời phàn nàn|I have a complaint about the soup.|Tôi có phàn nàn về món súp.
+service charge|n|phí phục vụ|A service charge is included.|Đã bao gồm phí phục vụ.
+## 🧑‍🍳|Nhân viên nhà hàng|Restaurant Staff
+waiter|n|nam phục vụ|The waiter brought the menu.|Người phục vụ mang thực đơn đến.
+waitress|n|nữ phục vụ|The waitress smiled at us.|Cô phục vụ mỉm cười với chúng tôi.
+chef|n|đầu bếp trưởng|The chef is famous.|Đầu bếp trưởng rất nổi tiếng.
+cook|n|người nấu ăn|The cook prepares the soup.|Người nấu chuẩn bị món súp.
+manager|n|quản lý|Please call the manager.|Xin hãy gọi quản lý.
+cashier|n|thu ngân|The cashier gave me a receipt.|Thu ngân đưa cho tôi hóa đơn.
+host|n|người đón khách|The host showed us the table.|Người đón khách dẫn chúng tôi đến bàn.
+bartender|n|người pha chế rượu|The bartender mixes drinks.|Người pha chế trộn đồ uống.
+dishwasher|n|người rửa bát|The dishwasher works hard.|Người rửa bát làm việc rất vất vả.
+delivery man|n|người giao hàng|The delivery man rang the bell.|Người giao hàng bấm chuông.
+baker|n|thợ làm bánh|The baker starts at four.|Thợ làm bánh bắt đầu lúc bốn giờ.
+butcher|n|người bán thịt|The butcher cut the meat.|Người bán thịt cắt thịt.
+## 🛒|Chợ và siêu thị|Markets and Supermarkets
+grocery|n|cửa hàng tạp hóa|I buy food at the grocery.|Tôi mua thức ăn ở cửa hàng tạp hóa.
+shopping list|n|danh sách mua sắm|Check the shopping list.|Hãy xem danh sách mua sắm.
+basket|n|giỏ|Put the eggs in the basket.|Cho trứng vào giỏ.
+trolley|n|xe đẩy|Push the trolley slowly.|Hãy đẩy xe từ từ.
+aisle|n|lối đi giữa các kệ|Milk is in aisle three.|Sữa ở lối đi số ba.
+fruit stall|n|quầy trái cây|The fruit stall is near the gate.|Quầy trái cây gần cổng.
+weigh|v|cân|Please weigh the mangoes.|Làm ơn cân xoài giúp tôi.
+kilo|n|ki-lô|Two kilos of rice, please.|Cho tôi hai ki-lô gạo.
+expiry date|n|hạn sử dụng|Check the expiry date.|Hãy kiểm tra hạn sử dụng.
+package|n|gói, bao bì|The package is torn.|Bao bì bị rách.
+bargain|n|món hời|This is a real bargain.|Đây đúng là một món hời.
+fishmonger|n|người bán cá|The fishmonger sells fresh fish.|Người bán cá bán cá tươi.
+## 🥦|Ăn chay và dị ứng|Vegetarian and Allergies
+vegan|adj|thuần chay|She eats a vegan diet.|Cô ấy ăn theo chế độ thuần chay.
+gluten|n|gluten|This bread has no gluten.|Loại bánh mì này không có gluten.
+lactose|n|đường sữa|He can not drink milk because of lactose.|Anh ấy không uống được sữa vì không dung nạp đường sữa.
+nut allergy|n|dị ứng hạt|My son has a nut allergy.|Con trai tôi bị dị ứng hạt.
+seafood allergy|n|dị ứng hải sản|She has a seafood allergy.|Cô ấy bị dị ứng hải sản.
+meat-free|adj|không có thịt|This is a meat-free dish.|Đây là món không có thịt.
+dairy-free|adj|không có sữa|Is there a dairy-free option?|Có lựa chọn nào không có sữa không?
+organic|adj|hữu cơ|We buy organic vegetables.|Chúng tôi mua rau hữu cơ.
+sugar-free|adj|không đường|I drink sugar-free tea.|Tôi uống trà không đường.
+low-fat|adj|ít béo|Choose low-fat milk.|Hãy chọn sữa ít béo.
+ingredient label|n|nhãn thành phần|Read the ingredient label.|Hãy đọc nhãn thành phần.
+substitute|n|đồ thay thế|Tofu is a good substitute.|Đậu phụ là đồ thay thế tốt.
+## 🍿|Đồ ăn vặt|Snacks
+chips|n|khoai tây lát chiên|A bag of chips, please.|Cho tôi một túi khoai tây chiên lát.
+crackers|n|bánh quy giòn|Crackers go with cheese.|Bánh quy giòn ăn với phô mai.
+peanuts|n|lạc rang|Salted peanuts are tasty.|Lạc rang muối rất ngon.
+seeds|n|hạt hướng dương|We ate sunflower seeds.|Chúng tôi ăn hạt hướng dương.
+dried fruit|n|trái cây sấy|Dried fruit is a healthy snack.|Trái cây sấy là món ăn nhẹ lành mạnh.
+granola bar|n|thanh ngũ cốc|I eat a granola bar at ten.|Tôi ăn một thanh ngũ cốc lúc mười giờ.
+rice cracker|n|bánh gạo|Rice crackers are crunchy.|Bánh gạo giòn.
+jelly|n|thạch|The kids love fruit jelly.|Bọn trẻ thích thạch trái cây.
+cotton candy|n|kẹo bông|Cotton candy melts in your mouth.|Kẹo bông tan trong miệng.
+street food|n|đồ ăn đường phố|Street food is cheap and tasty.|Đồ ăn đường phố rẻ và ngon.
+skewer|n|xiên nướng|We ate grilled skewers.|Chúng tôi ăn xiên nướng.
+roasted corn|n|bắp nướng|Roasted corn smells great.|Bắp nướng thơm ngon.
+## 🍦|Kem và món tráng miệng|Ice Cream and Desserts
+ice cream|n|kem|I want vanilla ice cream.|Tôi muốn kem vani.
+scoop|n|viên kem|Two scoops of chocolate, please.|Cho tôi hai viên kem sô-cô-la.
+cone|n|vỏ ốc quế|The ice cream is in a cone.|Kem đựng trong ốc quế.
+sundae|n|kem ly có topping|A strawberry sundae, please.|Cho tôi một ly kem dâu.
+sorbet|n|kem trái cây đá|Lemon sorbet is refreshing.|Kem đá chanh rất sảng khoái.
+cheesecake|n|bánh phô mai|Cheesecake is rich and creamy.|Bánh phô mai béo ngậy.
+tiramisu|n|bánh tiramisu|Tiramisu tastes like coffee.|Tiramisu có vị cà phê.
+flan|n|bánh flan|Flan is soft and sweet.|Bánh flan mềm và ngọt.
+brownie|n|bánh brownie|A warm brownie with ice cream is great.|Bánh brownie ấm với kem thật tuyệt.
+fruit salad|n|trái cây trộn|We had fruit salad for dessert.|Chúng tôi ăn trái cây trộn tráng miệng.
+syrup|n|siro|Pour syrup on the pancakes.|Rưới siro lên bánh kếp.
+topping|n|lớp phủ|Choose your topping.|Hãy chọn loại phủ bạn thích.
+## 🌏|Ẩm thực thế giới|World Cuisine
+cuisine|n|ẩm thực|Vietnamese cuisine is famous.|Ẩm thực Việt Nam nổi tiếng.
+traditional|adj|truyền thống|We ate a traditional meal.|Chúng tôi ăn một bữa ăn truyền thống.
+local|adj|địa phương|Try the local food.|Hãy thử món ăn địa phương.
+authentic|adj|chính gốc|This is an authentic Italian pizza.|Đây là chiếc pizza Ý chính gốc.
+specialty|n|đặc sản|Hue's specialty is beef noodle soup.|Đặc sản của Huế là bún bò.
+Italian|adj|của Ý|Italian food is popular.|Đồ ăn Ý rất phổ biến.
+Chinese|adj|của Trung Quốc|We had Chinese noodles.|Chúng tôi ăn mì Trung Quốc.
+Mexican|adj|của Mexico|Mexican food is often spicy.|Đồ ăn Mexico thường cay.
+Indian|adj|của Ấn Độ|Indian curry is rich.|Cà ri Ấn Độ đậm đà.
+French|adj|của Pháp|French bread is famous.|Bánh mì Pháp rất nổi tiếng.
+Korean|adj|của Hàn Quốc|Korean barbecue is fun.|Nướng kiểu Hàn Quốc rất vui.
+fusion|n|ẩm thực kết hợp|This restaurant serves fusion food.|Nhà hàng này phục vụ ẩm thực kết hợp.
+## 🍷|Đồ uống có cồn|Alcoholic Drinks
+beer|n|bia|A cold beer, please.|Cho tôi một ly bia lạnh.
+wine|n|rượu vang|They drink red wine with steak.|Họ uống rượu vang đỏ với bít tết.
+champagne|n|sâm-panh|We opened a bottle of champagne.|Chúng tôi mở một chai sâm-panh.
+whisky|n|rượu whisky|He drinks whisky with ice.|Anh ấy uống whisky với đá.
+cocktail|n|cocktail|She ordered a fruit cocktail.|Cô ấy gọi một ly cocktail trái cây.
+rice wine|n|rượu gạo|Rice wine is common at festivals.|Rượu gạo phổ biến trong các lễ hội.
+toast|v|nâng ly|Let's toast to our friendship.|Hãy nâng ly vì tình bạn của chúng ta.
+bottle|n|chai|Open the bottle, please.|Làm ơn mở chai ra.
+cheers|int|cạn ly|Cheers, everyone!|Cạn ly nào mọi người!
+drunk|adj|say|He is too drunk to drive.|Anh ấy say quá không lái xe được.
+sober|adj|tỉnh táo|Stay sober when you drive.|Hãy tỉnh táo khi lái xe.
+non-alcoholic|adj|không cồn|Do you have a non-alcoholic drink?|Bạn có đồ uống không cồn không?
+## 👩‍🍳|Nghề bếp|Kitchen Careers
+kitchen|n|nhà bếp|The kitchen is very busy.|Nhà bếp rất bận rộn.
+sous chef|n|phó bếp|The sous chef helps the head chef.|Phó bếp hỗ trợ bếp trưởng.
+apprentice|n|người học việc|An apprentice cuts vegetables.|Người học việc cắt rau.
+menu planner|n|người lên thực đơn|The menu planner chooses the dishes.|Người lên thực đơn chọn các món ăn.
+food critic|n|nhà phê bình ẩm thực|A food critic visited the restaurant.|Một nhà phê bình ẩm thực đã đến nhà hàng.
+food safety|n|an toàn thực phẩm|Food safety is very important.|An toàn thực phẩm rất quan trọng.
+hygiene|n|vệ sinh|Kitchen hygiene is a must.|Vệ sinh nhà bếp là bắt buộc.
+apron|n|tạp dề|The chef wears a white apron.|Đầu bếp mặc tạp dề trắng.
+cooking class|n|lớp nấu ăn|I joined a cooking class.|Tôi tham gia một lớp nấu ăn.
+food blogger|n|người viết blog ẩm thực|She is a food blogger.|Cô ấy là một người viết blog ẩm thực.
+catering|n|dịch vụ tiệc|They offer a catering service.|Họ cung cấp dịch vụ tiệc.
+sommelier|n|chuyên gia rượu vang|The sommelier chose a wine.|Chuyên gia rượu vang đã chọn một loại rượu.
+## 🥗|Ăn uống lành mạnh|Healthy Eating
+healthy|adj|lành mạnh|Salad is a healthy meal.|Salad là một bữa ăn lành mạnh.
+diet|n|chế độ ăn|A good diet includes vegetables.|Một chế độ ăn tốt có rau củ.
+nutritious|adj|bổ dưỡng|Eggs are nutritious.|Trứng rất bổ dưỡng.
+fresh produce|n|nông sản tươi|Buy fresh produce at the market.|Hãy mua nông sản tươi ở chợ.
+whole grain|n|ngũ cốc nguyên hạt|Whole grain bread has more fiber.|Bánh mì nguyên hạt có nhiều chất xơ hơn.
+lean meat|n|thịt nạc|Lean meat is low in fat.|Thịt nạc ít chất béo.
+olive oil|n|dầu ô-liu|Cook with olive oil.|Hãy nấu ăn với dầu ô-liu.
+portion control|n|kiểm soát khẩu phần|Portion control helps you stay slim.|Kiểm soát khẩu phần giúp bạn giữ dáng.
+sugary|adj|nhiều đường|Avoid sugary drinks.|Hãy tránh đồ uống nhiều đường.
+processed|adj|chế biến sẵn|Processed food is not healthy.|Đồ ăn chế biến sẵn không tốt cho sức khỏe.
+balanced diet|n|chế độ ăn cân bằng|A balanced diet keeps you strong.|Chế độ ăn cân bằng giúp bạn khỏe mạnh.
+meal plan|n|kế hoạch bữa ăn|I follow a weekly meal plan.|Tôi theo một kế hoạch bữa ăn hằng tuần.

@@ -1,0 +1,436 @@
+// Chủ đề: Sức khỏe và Thể thao
+## 🧍|Các bộ phận cơ thể|Parts of the Body
+head|n|đầu|I have a pain in my head.|Tôi bị đau đầu.
+face|n|khuôn mặt|Wash your face every morning.|Hãy rửa mặt mỗi buổi sáng.
+eye|n|mắt|She has beautiful brown eyes.|Cô ấy có đôi mắt nâu rất đẹp.
+ear|n|tai|My ears are cold.|Tai tôi lạnh.
+nose|n|mũi|He has a runny nose.|Anh ấy bị sổ mũi.
+mouth|n|miệng|Open your mouth, please.|Xin hãy há miệng ra.
+tooth|n|răng|I have a broken tooth.|Tôi bị gãy một chiếc răng.
+neck|n|cổ|My neck hurts after work.|Sau giờ làm cổ tôi bị đau.
+shoulder|n|vai|She has a sore shoulder.|Cô ấy bị đau vai.
+arm|n|cánh tay|He broke his arm.|Anh ấy bị gãy tay.
+hand|n|bàn tay|Wash your hands often.|Hãy rửa tay thường xuyên.
+finger|n|ngón tay|I cut my finger.|Tôi bị đứt ngón tay.
+back|n|lưng|I have a bad back.|Tôi bị đau lưng.
+stomach|n|dạ dày, bụng|My stomach hurts.|Bụng tôi đau.
+leg|n|chân|Her legs are strong.|Đôi chân của cô ấy rất khỏe.
+knee|n|đầu gối|He hurt his knee.|Anh ấy bị đau đầu gối.
+foot|n|bàn chân|My foot is swollen.|Bàn chân tôi bị sưng.
+toe|n|ngón chân|I hit my toe on the door.|Tôi va ngón chân vào cửa.
+## 🫀|Cơ quan nội tạng|Internal Organs
+heart|n|tim|Exercise is good for your heart.|Tập thể dục tốt cho tim của bạn.
+lung|n|phổi|Smoking harms your lungs.|Hút thuốc gây hại cho phổi.
+liver|n|gan|The liver cleans the blood.|Gan làm sạch máu.
+kidney|n|thận|We have two kidneys.|Chúng ta có hai quả thận.
+brain|n|não|The brain never stops working.|Bộ não không bao giờ ngừng hoạt động.
+muscle|n|cơ bắp|Exercise builds muscle.|Tập thể dục giúp phát triển cơ bắp.
+bone|n|xương|Milk makes your bones strong.|Sữa giúp xương chắc khỏe.
+skin|n|da|Protect your skin from the sun.|Hãy bảo vệ da khỏi ánh nắng.
+blood|n|máu|Blood flows through the body.|Máu chảy khắp cơ thể.
+vein|n|tĩnh mạch|The nurse found a vein quickly.|Y tá tìm thấy tĩnh mạch rất nhanh.
+throat|n|cổ họng|I have a sore throat.|Tôi bị đau họng.
+spine|n|cột sống|Sit straight to protect your spine.|Hãy ngồi thẳng để bảo vệ cột sống.
+joint|n|khớp|Her joints hurt in the cold.|Các khớp của bà đau khi trời lạnh.
+## 👀|Các giác quan|The Five Senses
+sense|n|giác quan|We have five senses.|Chúng ta có năm giác quan.
+see|v|nhìn thấy|I can not see without my glasses.|Tôi không nhìn thấy nếu không có kính.
+hear|v|nghe thấy|Can you hear the music?|Bạn có nghe thấy tiếng nhạc không?
+smell|v|ngửi|I smell fresh bread.|Tôi ngửi thấy bánh mì tươi.
+taste|v|nếm|Taste the soup, please.|Hãy nếm thử món súp.
+touch|v|chạm|Do not touch the hot pan.|Đừng chạm vào cái chảo nóng.
+vision|n|thị lực|His vision is very good.|Thị lực của anh ấy rất tốt.
+hearing|n|thính giác|Loud music can damage your hearing.|Nhạc lớn có thể làm hại thính giác của bạn.
+glasses|n|kính mắt|She wears glasses to read.|Cô ấy đeo kính để đọc.
+contact lens|n|kính áp tròng|He wears contact lenses.|Anh ấy đeo kính áp tròng.
+blind|adj|mù|The blind man uses a stick.|Người đàn ông mù dùng một cây gậy.
+deaf|adj|điếc|She learned sign language for her deaf friend.|Cô ấy học ngôn ngữ ký hiệu cho người bạn khiếm thính.
+## 🤒|Triệu chứng|Symptoms
+pain|n|cơn đau|I feel a sharp pain here.|Tôi thấy đau nhói ở đây.
+headache|n|đau đầu|I have a terrible headache.|Tôi bị đau đầu kinh khủng.
+stomachache|n|đau bụng|He has a stomachache.|Anh ấy bị đau bụng.
+toothache|n|đau răng|A toothache kept me awake.|Cơn đau răng làm tôi mất ngủ.
+fever|n|sốt|The child has a high fever.|Đứa trẻ bị sốt cao.
+cough|n|cơn ho|She has a bad cough.|Cô ấy bị ho nặng.
+sneeze|v|hắt hơi|I sneeze in spring.|Tôi hắt hơi vào mùa xuân.
+dizzy|adj|chóng mặt|I feel dizzy.|Tôi thấy chóng mặt.
+nausea|n|buồn nôn|The smell gave me nausea.|Mùi đó làm tôi buồn nôn.
+rash|n|phát ban|He has a rash on his arm.|Anh ấy bị phát ban trên tay.
+swollen|adj|sưng|Her ankle is swollen.|Mắt cá chân của cô ấy bị sưng.
+itchy|adj|ngứa|My skin is itchy.|Da tôi bị ngứa.
+weak|adj|yếu|I feel weak after the flu.|Tôi thấy yếu sau khi bị cúm.
+exhausted|adj|kiệt sức|He was exhausted after the race.|Anh ấy kiệt sức sau cuộc đua.
+## 🤧|Bệnh thường gặp|Common Illnesses
+cold|n|cảm lạnh|I caught a cold last week.|Tuần trước tôi bị cảm lạnh.
+flu|n|cúm|The flu is going around school.|Bệnh cúm đang lan trong trường.
+allergy|n|dị ứng|She has a pollen allergy.|Cô ấy bị dị ứng phấn hoa.
+asthma|n|bệnh hen suyễn|He uses an inhaler for asthma.|Anh ấy dùng ống hít để trị hen suyễn.
+diabetes|n|bệnh tiểu đường|Diabetes needs careful eating.|Bệnh tiểu đường cần ăn uống cẩn thận.
+infection|n|nhiễm trùng|The wound got an infection.|Vết thương bị nhiễm trùng.
+food poisoning|n|ngộ độc thực phẩm|Bad shrimp gave him food poisoning.|Tôm hỏng khiến anh ấy bị ngộ độc thực phẩm.
+sore throat|n|viêm họng|A sore throat makes it hard to swallow.|Viêm họng khiến khó nuốt.
+diarrhea|n|tiêu chảy|Drink water when you have diarrhea.|Hãy uống nước khi bị tiêu chảy.
+migraine|n|đau nửa đầu|A migraine ruined my day.|Cơn đau nửa đầu làm hỏng cả ngày của tôi.
+measles|n|bệnh sởi|Vaccines prevent measles.|Vắc-xin phòng ngừa bệnh sởi.
+chickenpox|n|bệnh thủy đậu|My brother has chickenpox.|Em trai tôi bị thủy đậu.
+high blood pressure|n|huyết áp cao|My grandpa has high blood pressure.|Ông tôi bị huyết áp cao.
+## 🏥|Bệnh viện|At the Hospital
+hospital|n|bệnh viện|She works at a big hospital.|Cô ấy làm việc ở một bệnh viện lớn.
+clinic|n|phòng khám|The clinic opens at eight.|Phòng khám mở cửa lúc tám giờ.
+emergency room|n|phòng cấp cứu|He went to the emergency room.|Anh ấy vào phòng cấp cứu.
+ward|n|khu điều trị|The children's ward is on the first floor.|Khu điều trị nhi nằm ở tầng một.
+patient|n|bệnh nhân|The patient is resting.|Bệnh nhân đang nghỉ ngơi.
+visitor|n|khách thăm|Visitors must wear masks.|Khách thăm phải đeo khẩu trang.
+waiting room|n|phòng chờ|Please sit in the waiting room.|Xin hãy ngồi ở phòng chờ.
+stretcher|n|cáng|They carried him on a stretcher.|Họ khiêng anh ấy trên cáng.
+wheelchair|n|xe lăn|She uses a wheelchair.|Cô ấy dùng xe lăn.
+operating room|n|phòng phẫu thuật|The surgery is in the operating room.|Ca phẫu thuật diễn ra trong phòng phẫu thuật.
+bed|n|giường bệnh|He stayed in bed for three days.|Anh ấy nằm trên giường ba ngày.
+recovery|n|sự hồi phục|Her recovery was quick.|Sự hồi phục của cô ấy rất nhanh.
+## 👩‍⚕️|Bác sĩ và chuyên khoa|Doctors and Specialists
+doctor|n|bác sĩ|The doctor checked my throat.|Bác sĩ kiểm tra cổ họng của tôi.
+nurse|n|y tá|The nurse took my temperature.|Y tá đo nhiệt độ cho tôi.
+surgeon|n|bác sĩ phẫu thuật|The surgeon operated for two hours.|Bác sĩ phẫu thuật mổ trong hai tiếng.
+dentist|n|nha sĩ|I visit the dentist twice a year.|Tôi đi khám nha sĩ hai lần mỗi năm.
+pharmacist|n|dược sĩ|The pharmacist explained the medicine.|Dược sĩ giải thích về thuốc.
+specialist|n|bác sĩ chuyên khoa|You should see a specialist.|Bạn nên gặp bác sĩ chuyên khoa.
+pediatrician|n|bác sĩ nhi|A pediatrician treats children.|Bác sĩ nhi chữa bệnh cho trẻ em.
+cardiologist|n|bác sĩ tim mạch|A cardiologist checks your heart.|Bác sĩ tim mạch kiểm tra tim của bạn.
+dermatologist|n|bác sĩ da liễu|The dermatologist treated my rash.|Bác sĩ da liễu chữa phát ban cho tôi.
+therapist|n|nhà trị liệu|A therapist helped him walk again.|Nhà trị liệu đã giúp anh ấy đi lại.
+midwife|n|nữ hộ sinh|The midwife helped the baby arrive.|Nữ hộ sinh giúp em bé chào đời.
+paramedic|n|nhân viên cấp cứu|The paramedic arrived in five minutes.|Nhân viên cấp cứu đến sau năm phút.
+## 🩺|Khám bệnh|Medical Check-ups
+appointment|n|cuộc hẹn khám|I have a doctor's appointment at three.|Tôi có cuộc hẹn khám bác sĩ lúc ba giờ.
+check-up|n|khám sức khỏe tổng quát|I have a check-up every year.|Hằng năm tôi đi khám sức khỏe tổng quát.
+examine|v|khám|The doctor will examine you now.|Bác sĩ sẽ khám cho bạn ngay bây giờ.
+temperature|n|nhiệt độ cơ thể|Your temperature is normal.|Nhiệt độ cơ thể của bạn bình thường.
+blood pressure|n|huyết áp|Your blood pressure is fine.|Huyết áp của bạn ổn.
+pulse|n|mạch|The nurse checked my pulse.|Y tá bắt mạch cho tôi.
+X-ray|n|chụp X-quang|The doctor ordered an X-ray.|Bác sĩ chỉ định chụp X-quang.
+blood test|n|xét nghiệm máu|I need a blood test.|Tôi cần xét nghiệm máu.
+scan|n|chụp cắt lớp|The scan showed nothing serious.|Kết quả chụp không có gì nghiêm trọng.
+diagnosis|n|chẩn đoán|The diagnosis was a simple cold.|Chẩn đoán chỉ là cảm lạnh thông thường.
+symptom|n|triệu chứng|What are your symptoms?|Triệu chứng của bạn là gì?
+weigh|v|cân|The nurse weighed the baby.|Y tá cân em bé.
+height|n|chiều cao|Please measure your height.|Vui lòng đo chiều cao của bạn.
+## 💊|Thuốc và điều trị|Medicine and Treatment
+medicine|n|thuốc|Take this medicine twice a day.|Hãy uống thuốc này hai lần một ngày.
+pill|n|viên thuốc|Take one pill after lunch.|Uống một viên thuốc sau bữa trưa.
+tablet|n|viên nén|Swallow the tablet with water.|Nuốt viên nén với nước.
+syrup|n|siro|Cough syrup tastes sweet.|Siro ho có vị ngọt.
+ointment|n|thuốc mỡ|Put some ointment on the burn.|Hãy bôi ít thuốc mỡ lên vết bỏng.
+prescription|n|đơn thuốc|The doctor wrote a prescription.|Bác sĩ đã kê một đơn thuốc.
+painkiller|n|thuốc giảm đau|I took a painkiller.|Tôi đã uống thuốc giảm đau.
+antibiotic|n|thuốc kháng sinh|Antibiotics kill bacteria.|Kháng sinh tiêu diệt vi khuẩn.
+vaccine|n|vắc-xin|Children get a vaccine at school.|Trẻ em được tiêm vắc-xin ở trường.
+injection|n|mũi tiêm|The injection did not hurt.|Mũi tiêm không đau.
+dose|n|liều lượng|Do not take a double dose.|Đừng uống gấp đôi liều.
+side effect|n|tác dụng phụ|This drug has few side effects.|Thuốc này có ít tác dụng phụ.
+surgery|n|phẫu thuật|He needs surgery on his knee.|Anh ấy cần phẫu thuật đầu gối.
+## 🦷|Nha khoa|Dental Care
+dentist's chair|n|ghế nha sĩ|Please sit in the dentist's chair.|Xin hãy ngồi vào ghế nha sĩ.
+cavity|n|răng sâu|I have a cavity in my tooth.|Tôi bị sâu một chiếc răng.
+filling|n|trám răng|The dentist gave me a filling.|Nha sĩ trám răng cho tôi.
+braces|n|niềng răng|She wears braces.|Cô ấy niềng răng.
+floss|n|chỉ nha khoa|Use floss every night.|Hãy dùng chỉ nha khoa mỗi tối.
+mouthwash|n|nước súc miệng|Mouthwash makes my breath fresh.|Nước súc miệng làm hơi thở tôi thơm tho.
+gum|n|nướu|My gums bleed sometimes.|Nướu của tôi thỉnh thoảng chảy máu.
+plaque|n|mảng bám|Brushing removes plaque.|Đánh răng loại bỏ mảng bám.
+extract|v|nhổ (răng)|The dentist extracted my tooth.|Nha sĩ đã nhổ răng của tôi.
+whitening|n|tẩy trắng|Tooth whitening is popular.|Tẩy trắng răng rất phổ biến.
+decay|n|sâu răng|Sugar causes tooth decay.|Đường gây ra sâu răng.
+crown|n|mão răng|He has a gold crown.|Anh ấy có một chiếc mão răng vàng.
+## 🩹|Sơ cứu|First Aid
+first aid|n|sơ cứu|Everyone should learn first aid.|Mọi người nên học sơ cứu.
+bandage|n|băng gạc|Wrap the wound in a bandage.|Hãy quấn vết thương bằng băng gạc.
+plaster|n|băng dán|Put a plaster on the cut.|Dán một miếng băng lên vết cắt.
+wound|n|vết thương|Clean the wound first.|Hãy làm sạch vết thương trước.
+bleed|v|chảy máu|My finger is bleeding.|Ngón tay tôi đang chảy máu.
+burn|n|vết bỏng|Cool the burn with cold water.|Hãy làm mát vết bỏng bằng nước lạnh.
+bruise|n|vết bầm|I have a bruise on my leg.|Tôi bị bầm ở chân.
+sting|v|đốt, chích|A bee stung my arm.|Một con ong đã chích vào tay tôi.
+CPR|n|hô hấp nhân tạo|He knows how to do CPR.|Anh ấy biết cách hô hấp nhân tạo.
+antiseptic|n|thuốc sát trùng|Use antiseptic on the cut.|Dùng thuốc sát trùng lên vết cắt.
+faint|v|ngất xỉu|She fainted from the heat.|Cô ấy ngất xỉu vì nóng.
+choke|v|nghẹn|The baby is choking!|Em bé bị nghẹn!
+## 🤕|Chấn thương|Injuries
+injury|n|chấn thương|He has a knee injury.|Anh ấy bị chấn thương đầu gối.
+injured|adj|bị thương|The injured player left the field.|Cầu thủ bị thương rời sân.
+sprain|v|bong gân|I sprained my ankle.|Tôi bị bong gân mắt cá chân.
+fracture|n|gãy xương|The X-ray shows a fracture.|Phim X-quang cho thấy một chỗ gãy xương.
+break|v|làm gãy|She broke her leg skiing.|Cô ấy bị gãy chân khi trượt tuyết.
+cut|n|vết cắt|He has a small cut on his hand.|Anh ấy có một vết cắt nhỏ ở tay.
+scratch|n|vết xước|The cat gave me a scratch.|Con mèo cào tôi một vết.
+cast|n|bó bột|He has a cast on his arm.|Anh ấy bó bột ở tay.
+crutches|n|nạng|She walks with crutches.|Cô ấy đi bằng nạng.
+recover|v|hồi phục|He is recovering well.|Anh ấy đang hồi phục tốt.
+hurt|v|làm đau|Where does it hurt?|Bạn đau ở đâu?
+accident|n|tai nạn|There was an accident on the road.|Có một tai nạn trên đường.
+## 🥗|Dinh dưỡng|Nutrition
+nutrition|n|dinh dưỡng|Good nutrition keeps us healthy.|Dinh dưỡng tốt giúp chúng ta khỏe mạnh.
+protein|n|chất đạm|Eggs are rich in protein.|Trứng giàu chất đạm.
+carbohydrate|n|tinh bột|Rice is a carbohydrate.|Cơm là một loại tinh bột.
+fat|n|chất béo|Nuts contain healthy fat.|Các loại hạt chứa chất béo lành mạnh.
+fiber|n|chất xơ|Vegetables are full of fiber.|Rau đầy chất xơ.
+calorie|n|ca-lo|This meal has five hundred calories.|Bữa ăn này có năm trăm ca-lo.
+vitamin|n|vi-ta-min|Oranges have a lot of vitamin C.|Cam có nhiều vi-ta-min C.
+mineral|n|khoáng chất|Milk has minerals like calcium.|Sữa có các khoáng chất như canxi.
+calcium|n|canxi|Calcium makes bones strong.|Canxi giúp xương chắc khỏe.
+iron|n|chất sắt|Spinach contains iron.|Rau chân vịt chứa chất sắt.
+balanced|adj|cân bằng|Eat a balanced diet.|Hãy ăn uống cân bằng.
+portion|n|khẩu phần|A small portion is enough.|Một khẩu phần nhỏ là đủ.
+## 🍎|Chế độ ăn uống|Diet
+diet|n|chế độ ăn|I am on a healthy diet.|Tôi đang theo chế độ ăn lành mạnh.
+healthy|adj|lành mạnh|Fruit is a healthy snack.|Trái cây là món ăn vặt lành mạnh.
+unhealthy|adj|không lành mạnh|Fast food is unhealthy.|Đồ ăn nhanh không lành mạnh.
+vegetarian|n|người ăn chay|My sister is a vegetarian.|Chị tôi là người ăn chay.
+sugar|n|đường|Too much sugar is bad.|Quá nhiều đường thì không tốt.
+salt|n|muối|Reduce salt in your food.|Hãy giảm muối trong thức ăn.
+junk food|n|đồ ăn vặt vô bổ|Avoid junk food.|Hãy tránh đồ ăn vặt vô bổ.
+lose weight|phr|giảm cân|He wants to lose weight.|Anh ấy muốn giảm cân.
+gain weight|phr|tăng cân|Babies gain weight quickly.|Em bé tăng cân rất nhanh.
+skip|v|bỏ qua|Never skip breakfast.|Đừng bao giờ bỏ bữa sáng.
+hydrated|adj|đủ nước|Stay hydrated in summer.|Hãy uống đủ nước vào mùa hè.
+overweight|adj|thừa cân|Being overweight is risky.|Thừa cân là điều rủi ro.
+fasting|n|nhịn ăn|Fasting is not for everyone.|Nhịn ăn không dành cho tất cả mọi người.
+## 😴|Giấc ngủ và nghỉ ngơi|Sleep and Rest
+sleep|n|giấc ngủ|I need eight hours of sleep.|Tôi cần tám tiếng ngủ.
+bedtime|n|giờ đi ngủ|My bedtime is ten o'clock.|Giờ đi ngủ của tôi là mười giờ.
+nap|n|giấc ngủ ngắn|I take a nap after lunch.|Tôi ngủ trưa một chút sau bữa ăn.
+insomnia|n|chứng mất ngủ|Stress can cause insomnia.|Căng thẳng có thể gây mất ngủ.
+yawn|v|ngáp|I yawn when I am tired.|Tôi ngáp khi mệt.
+snore|v|ngáy|My dad snores loudly.|Bố tôi ngáy rất to.
+dream|n|giấc mơ|I had a strange dream.|Tôi có một giấc mơ kỳ lạ.
+rest|v|nghỉ ngơi|You should rest today.|Hôm nay bạn nên nghỉ ngơi.
+relax|v|thư giãn|I relax by listening to music.|Tôi thư giãn bằng cách nghe nhạc.
+energetic|adj|tràn đầy năng lượng|I feel energetic after sleep.|Tôi thấy tràn đầy năng lượng sau khi ngủ.
+sleepy|adj|buồn ngủ|The medicine makes me sleepy.|Thuốc làm tôi buồn ngủ.
+mattress|n|nệm|A good mattress helps you sleep.|Một chiếc nệm tốt giúp bạn ngủ ngon.
+## 🧘|Sức khỏe tinh thần|Mental Health
+stress|n|căng thẳng|Too much work causes stress.|Quá nhiều việc gây căng thẳng.
+anxiety|n|lo âu|She talked about her anxiety.|Cô ấy nói về nỗi lo âu của mình.
+depression|n|trầm cảm|Depression is a serious illness.|Trầm cảm là một căn bệnh nghiêm trọng.
+mood|n|tâm trạng|Music improves my mood.|Âm nhạc cải thiện tâm trạng của tôi.
+mindfulness|n|chánh niệm|Mindfulness helps me stay calm.|Chánh niệm giúp tôi giữ bình tĩnh.
+counselor|n|chuyên viên tư vấn|A counselor listens to students.|Chuyên viên tư vấn lắng nghe học sinh.
+calm|adj|bình tĩnh|Stay calm and breathe.|Hãy bình tĩnh và hít thở.
+positive|adj|tích cực|Try to think positive.|Hãy cố gắng nghĩ tích cực.
+confidence|n|sự tự tin|Sports build confidence.|Thể thao xây dựng sự tự tin.
+balance|n|sự cân bằng|Find balance between work and rest.|Hãy tìm sự cân bằng giữa làm việc và nghỉ ngơi.
+support|n|sự hỗ trợ|Friends give us support.|Bạn bè cho chúng ta sự hỗ trợ.
+burnout|n|kiệt sức vì công việc|Long hours can cause burnout.|Làm việc nhiều giờ có thể gây kiệt sức.
+## 🧼|Vệ sinh cá nhân|Personal Hygiene
+hygiene|n|vệ sinh|Good hygiene prevents illness.|Vệ sinh tốt giúp phòng bệnh.
+soap|n|xà phòng|Use soap and warm water.|Dùng xà phòng và nước ấm.
+sanitizer|n|nước rửa tay khô|Carry a bottle of hand sanitizer.|Hãy mang theo một chai nước rửa tay khô.
+shower|n|vòi sen|I take a shower after sports.|Tôi tắm sau khi chơi thể thao.
+tissue|n|khăn giấy|Use a tissue when you sneeze.|Dùng khăn giấy khi bạn hắt hơi.
+mask|n|khẩu trang|Wear a mask in crowded places.|Hãy đeo khẩu trang ở nơi đông người.
+germ|n|vi trùng|Germs spread quickly.|Vi trùng lây lan rất nhanh.
+bacteria|n|vi khuẩn|Some bacteria are helpful.|Một số vi khuẩn có lợi.
+clean|adj|sạch sẽ|Keep your hands clean.|Hãy giữ tay sạch sẽ.
+nail|n|móng tay|Cut your nails regularly.|Hãy cắt móng tay thường xuyên.
+deodorant|n|lăn khử mùi|He uses deodorant every day.|Anh ấy dùng lăn khử mùi mỗi ngày.
+wash|v|rửa|Wash your hands before meals.|Hãy rửa tay trước bữa ăn.
+## 🛡️|Phòng bệnh|Prevention
+prevent|v|phòng ngừa|Vaccines prevent many diseases.|Vắc-xin phòng ngừa nhiều bệnh.
+disease|n|bệnh tật|Exercise fights disease.|Tập thể dục chống lại bệnh tật.
+immune system|n|hệ miễn dịch|Sleep boosts your immune system.|Giấc ngủ tăng cường hệ miễn dịch.
+contagious|adj|dễ lây|The flu is very contagious.|Cúm rất dễ lây.
+spread|v|lây lan|Viruses spread through the air.|Vi-rút lây lan qua không khí.
+quarantine|n|cách ly|He stayed in quarantine for a week.|Anh ấy cách ly một tuần.
+screening|n|tầm soát|Regular screening saves lives.|Tầm soát định kỳ cứu sống nhiều người.
+sunscreen|n|kem chống nắng|Sunscreen protects your skin.|Kem chống nắng bảo vệ làn da.
+insurance|n|bảo hiểm|Health insurance covers hospital bills.|Bảo hiểm y tế chi trả viện phí.
+habit|n|thói quen|Walking is a healthy habit.|Đi bộ là một thói quen lành mạnh.
+avoid|v|tránh|Avoid smoking and alcohol.|Hãy tránh thuốc lá và rượu bia.
+safe|adj|an toàn|Wash the fruit to keep it safe.|Hãy rửa trái cây để giữ an toàn.
+## ⚽|Thể thao đồng đội|Team Sports
+football|n|bóng đá|We play football every Sunday.|Chúng tôi chơi bóng đá vào mỗi Chủ nhật.
+basketball|n|bóng rổ|He plays basketball at school.|Cậu ấy chơi bóng rổ ở trường.
+volleyball|n|bóng chuyền|Volleyball is popular on the beach.|Bóng chuyền rất phổ biến trên bãi biển.
+baseball|n|bóng chày|Baseball is big in Japan.|Bóng chày rất phổ biến ở Nhật.
+rugby|n|bóng bầu dục|Rugby players are very strong.|Các cầu thủ bóng bầu dục rất khỏe.
+handball|n|bóng ném|Handball is fast and fun.|Bóng ném nhanh và vui.
+hockey|n|khúc côn cầu|Hockey is played on ice.|Khúc côn cầu được chơi trên băng.
+cricket|n|cricket|Cricket is popular in India.|Cricket phổ biến ở Ấn Độ.
+team|n|đội|Our team has eleven players.|Đội chúng tôi có mười một cầu thủ.
+player|n|cầu thủ|The best player scored twice.|Cầu thủ xuất sắc nhất ghi hai bàn.
+coach|n|huấn luyện viên|The coach shouted from the side.|Huấn luyện viên hét từ ngoài sân.
+goalkeeper|n|thủ môn|The goalkeeper saved the ball.|Thủ môn cản phá quả bóng.
+captain|n|đội trưởng|Our captain is very brave.|Đội trưởng của chúng tôi rất dũng cảm.
+## 🎾|Thể thao cá nhân|Individual Sports
+tennis|n|quần vợt|She plays tennis on Saturdays.|Cô ấy chơi quần vợt vào thứ Bảy.
+badminton|n|cầu lông|We play badminton after school.|Chúng tôi chơi cầu lông sau giờ học.
+table tennis|n|bóng bàn|He is good at table tennis.|Anh ấy chơi bóng bàn giỏi.
+golf|n|gôn|Golf is a slow sport.|Gôn là môn thể thao chậm rãi.
+boxing|n|quyền anh|Boxing needs strong arms.|Quyền anh cần đôi tay khỏe.
+karate|n|karate|My brother learns karate.|Anh tôi học karate.
+judo|n|judo|Judo comes from Japan.|Judo có nguồn gốc từ Nhật Bản.
+gymnastics|n|thể dục dụng cụ|She loves gymnastics.|Cô ấy yêu thể dục dụng cụ.
+archery|n|bắn cung|Archery needs a steady hand.|Bắn cung cần bàn tay vững.
+cycling|n|đạp xe|Cycling is good for the legs.|Đạp xe tốt cho đôi chân.
+skateboarding|n|trượt ván|Skateboarding is popular with teens.|Trượt ván phổ biến với thanh thiếu niên.
+martial arts|n|võ thuật|Martial arts teach discipline.|Võ thuật dạy tính kỷ luật.
+## 🏊|Thể thao dưới nước|Water Sports
+swimming|n|bơi lội|Swimming is a great exercise.|Bơi lội là bài tập tuyệt vời.
+swim|v|bơi|I can swim very fast.|Tôi có thể bơi rất nhanh.
+dive|v|lặn|They dive in the sea.|Họ lặn dưới biển.
+surf|v|lướt sóng|We surf at Nha Trang.|Chúng tôi lướt sóng ở Nha Trang.
+rowing|n|chèo thuyền|Rowing strengthens your arms.|Chèo thuyền làm khỏe đôi tay.
+sailing|n|đua thuyền buồm|Sailing needs good wind.|Đua thuyền buồm cần có gió tốt.
+kayaking|n|chèo kayak|Kayaking is fun on the river.|Chèo kayak rất vui trên sông.
+water polo|n|bóng nước|Water polo is a team sport.|Bóng nước là môn thể thao đồng đội.
+pool|n|hồ bơi|The pool is open until nine.|Hồ bơi mở đến chín giờ.
+goggles|n|kính bơi|Wear goggles in the pool.|Hãy đeo kính bơi khi ở hồ.
+lane|n|làn bơi|Swim in the fast lane.|Hãy bơi ở làn nhanh.
+float|v|nổi|Wood floats on water.|Gỗ nổi trên mặt nước.
+## ⛷️|Thể thao mùa đông|Winter Sports
+ski|v|trượt tuyết|We ski in the mountains.|Chúng tôi trượt tuyết trên núi.
+snowboard|n|ván trượt tuyết|He bought a new snowboard.|Anh ấy mua một tấm ván trượt tuyết mới.
+ice skating|n|trượt băng|Ice skating is fun in winter.|Trượt băng rất vui vào mùa đông.
+sled|n|xe trượt tuyết|The children ride a sled.|Bọn trẻ đi xe trượt tuyết.
+slope|n|sườn dốc|The slope was very steep.|Sườn dốc rất đứng.
+helmet|n|mũ bảo hiểm|Always wear a helmet.|Luôn đội mũ bảo hiểm.
+glove|n|găng tay|My gloves keep me warm.|Găng tay giữ ấm cho tôi.
+snowman|n|người tuyết|We built a snowman.|Chúng tôi đắp một người tuyết.
+ice|n|băng|Be careful on the ice.|Hãy cẩn thận trên băng.
+lift|n|cáp kéo|Take the lift to the top.|Đi cáp kéo lên đỉnh.
+avalanche|n|tuyết lở|An avalanche blocked the road.|Một trận tuyết lở chặn con đường.
+instructor|n|người hướng dẫn|The ski instructor was patient.|Người hướng dẫn trượt tuyết rất kiên nhẫn.
+## 🥅|Trang thiết bị thể thao|Sports Equipment
+ball|n|quả bóng|Kick the ball to me.|Hãy đá quả bóng cho tôi.
+racket|n|cây vợt|My racket is new.|Cây vợt của tôi còn mới.
+net|n|lưới|The ball hit the net.|Quả bóng chạm lưới.
+goal|n|khung thành, bàn thắng|He scored a great goal.|Anh ấy ghi một bàn thắng tuyệt vời.
+bat|n|gậy bóng chày|He swung the bat hard.|Anh ấy vung gậy thật mạnh.
+whistle|n|cái còi|The referee blew the whistle.|Trọng tài thổi còi.
+jersey|n|áo thi đấu|The team wears a red jersey.|Đội mặc áo thi đấu màu đỏ.
+sneakers|n|giày thể thao|These sneakers are comfortable.|Đôi giày thể thao này rất thoải mái.
+shorts|n|quần đùi|I wear shorts to play.|Tôi mặc quần đùi khi chơi.
+sportswear|n|quần áo thể thao|She bought new sportswear.|Cô ấy mua quần áo thể thao mới.
+water bottle|n|bình nước|Bring a water bottle.|Hãy mang theo bình nước.
+towel|n|khăn|Wipe your sweat with a towel.|Hãy lau mồ hôi bằng khăn.
+## 🏋️|Phòng tập gym|At the Gym
+gym|n|phòng tập thể hình|I go to the gym after work.|Tôi đến phòng tập sau giờ làm.
+weight|n|tạ|He lifts heavy weights.|Anh ấy nâng tạ nặng.
+dumbbell|n|tạ tay|Lift the dumbbell slowly.|Hãy nâng tạ tay từ từ.
+treadmill|n|máy chạy bộ|I run on the treadmill.|Tôi chạy trên máy chạy bộ.
+push-up|n|hít đất|Do ten push-ups.|Hãy hít đất mười cái.
+sit-up|n|gập bụng|She does fifty sit-ups daily.|Cô ấy gập bụng năm mươi cái mỗi ngày.
+squat|n|động tác squat|Squats build strong legs.|Squat giúp chân khỏe.
+plank|n|động tác plank|Hold the plank for one minute.|Giữ tư thế plank trong một phút.
+stretch|v|kéo giãn|Stretch your legs before running.|Hãy kéo giãn chân trước khi chạy.
+warm up|phr|khởi động|Always warm up first.|Luôn luôn khởi động trước.
+cool down|phr|thả lỏng|Cool down after training.|Hãy thả lỏng sau khi tập.
+trainer|n|huấn luyện viên cá nhân|My trainer gives me a plan.|Huấn luyện viên cá nhân đưa cho tôi một kế hoạch.
+membership|n|thẻ hội viên|I bought a gym membership.|Tôi đã mua thẻ hội viên phòng tập.
+## 🧘‍♀️|Yoga và thiền|Yoga and Meditation
+yoga|n|yoga|I do yoga every morning.|Tôi tập yoga mỗi sáng.
+meditation|n|thiền|Meditation clears my mind.|Thiền giúp đầu óc tôi thanh thản.
+breathe|v|hít thở|Breathe in and breathe out.|Hãy hít vào và thở ra.
+posture|n|tư thế|Good posture protects your back.|Tư thế tốt bảo vệ lưng của bạn.
+mat|n|thảm tập|Roll out your yoga mat.|Hãy trải thảm yoga ra.
+flexible|adj|dẻo dai|Yoga makes you flexible.|Yoga giúp bạn dẻo dai.
+balance|v|giữ thăng bằng|Balance on one leg.|Hãy giữ thăng bằng trên một chân.
+pilates|n|pilates|She takes a pilates class.|Cô ấy học một lớp pilates.
+tai chi|n|thái cực quyền|Old people practice tai chi.|Người lớn tuổi tập thái cực quyền.
+peaceful|adj|yên bình|The room feels peaceful.|Căn phòng mang lại cảm giác yên bình.
+inhale|v|hít vào|Inhale slowly through your nose.|Hãy hít vào chậm bằng mũi.
+exhale|v|thở ra|Exhale through your mouth.|Hãy thở ra bằng miệng.
+## 🏃|Chạy bộ và điền kinh|Running and Athletics
+run|v|chạy|I run five kilometers every morning.|Tôi chạy năm ki-lô-mét mỗi sáng.
+jog|v|chạy chậm|We jog in the park.|Chúng tôi chạy bộ chậm trong công viên.
+sprint|v|chạy nước rút|He sprinted to the finish.|Anh ấy chạy nước rút về đích.
+marathon|n|cuộc thi ma-ra-tông|She ran a marathon last year.|Cô ấy đã chạy ma-ra-tông năm ngoái.
+race|n|cuộc đua|The race starts at six.|Cuộc đua bắt đầu lúc sáu giờ.
+track|n|đường chạy|Run around the track.|Hãy chạy quanh đường chạy.
+jump|v|nhảy|She jumped over the bar.|Cô ấy nhảy qua xà.
+throw|v|ném|He can throw the ball far.|Anh ấy có thể ném bóng rất xa.
+high jump|n|nhảy cao|She won the high jump.|Cô ấy thắng môn nhảy cao.
+long jump|n|nhảy xa|The long jump needs speed.|Nhảy xa cần tốc độ.
+relay|n|chạy tiếp sức|Our relay team won.|Đội chạy tiếp sức của chúng tôi đã thắng.
+finish line|n|vạch đích|He crossed the finish line first.|Anh ấy về vạch đích đầu tiên.
+endurance|n|sức bền|Running builds endurance.|Chạy bộ xây dựng sức bền.
+## 🏁|Luật và thuật ngữ thi đấu|Rules and Terms
+match|n|trận đấu|The match starts at seven.|Trận đấu bắt đầu lúc bảy giờ.
+game|n|ván đấu|We won the first game.|Chúng tôi thắng ván đầu.
+score|v|ghi điểm|He scored two goals.|Anh ấy ghi hai bàn thắng.
+win|v|thắng|Our team won the match.|Đội chúng tôi thắng trận đấu.
+lose|v|thua|We lost by one point.|Chúng tôi thua một điểm.
+draw|n|hòa|The game ended in a draw.|Trận đấu kết thúc với tỷ số hòa.
+referee|n|trọng tài|The referee was fair.|Trọng tài rất công bằng.
+foul|n|lỗi phạm quy|That was a foul.|Đó là một lỗi phạm quy.
+penalty|n|quả phạt đền|He missed the penalty.|Anh ấy đá hỏng quả phạt đền.
+rule|n|luật|Everyone must follow the rules.|Mọi người phải tuân thủ luật.
+opponent|n|đối thủ|Our opponent is very strong.|Đối thủ của chúng tôi rất mạnh.
+fan|n|người hâm mộ|The fans cheered loudly.|Người hâm mộ cổ vũ rất to.
+stadium|n|sân vận động|The stadium is full.|Sân vận động chật kín.
+## 🏆|Giải đấu và Olympic|Tournaments and the Olympics
+tournament|n|giải đấu|She joined a tennis tournament.|Cô ấy tham gia một giải quần vợt.
+champion|n|nhà vô địch|He is the national champion.|Anh ấy là nhà vô địch quốc gia.
+medal|n|huy chương|She won a gold medal.|Cô ấy giành một tấm huy chương vàng.
+gold|n|vàng|Vietnam won gold in football.|Việt Nam giành huy chương vàng bóng đá.
+silver|n|bạc|He got silver in swimming.|Anh ấy giành huy chương bạc bơi lội.
+bronze|n|đồng|The team took the bronze.|Đội giành huy chương đồng.
+trophy|n|cúp|They lifted the trophy.|Họ nâng chiếc cúp lên.
+Olympics|n|Thế vận hội|The Olympics happen every four years.|Thế vận hội diễn ra bốn năm một lần.
+final|n|trận chung kết|We reached the final.|Chúng tôi vào tới chung kết.
+league|n|giải vô địch quốc gia|The league starts in autumn.|Giải vô địch bắt đầu vào mùa thu.
+athlete|n|vận động viên|The athlete trains every day.|Vận động viên tập luyện mỗi ngày.
+record|n|kỷ lục|She broke the world record.|Cô ấy phá kỷ lục thế giới.
+qualify|v|đủ điều kiện dự vòng sau|Our team qualified for the final.|Đội chúng tôi đã đủ điều kiện vào chung kết.
+## 🤸|Động từ vận động|Movement Verbs
+walk|v|đi bộ|I walk for half an hour daily.|Tôi đi bộ nửa tiếng mỗi ngày.
+kick|v|đá|Kick the ball into the goal.|Hãy đá bóng vào khung thành.
+catch|v|bắt|Catch the ball with two hands.|Hãy bắt bóng bằng hai tay.
+hit|v|đánh|Hit the ball hard.|Hãy đánh bóng thật mạnh.
+pass|v|chuyền|Pass the ball to me.|Hãy chuyền bóng cho tôi.
+shoot|v|sút|He shot from far away.|Anh ấy sút từ rất xa.
+lift|v|nâng|Lift the weight slowly.|Hãy nâng tạ từ từ.
+bend|v|cúi, uốn|Bend your knees.|Hãy cong đầu gối.
+climb|v|leo|She climbs the wall well.|Cô ấy leo tường rất giỏi.
+roll|v|lăn|Roll on the mat.|Hãy lăn trên thảm.
+train|v|luyện tập|We train three times a week.|Chúng tôi luyện tập ba lần mỗi tuần.
+compete|v|thi đấu|Many countries compete here.|Nhiều quốc gia thi đấu ở đây.
+## 💪|Tính từ về sức khỏe|Health Adjectives
+fit|adj|cân đối, khỏe|He keeps fit by running.|Anh ấy giữ dáng bằng cách chạy bộ.
+strong|adj|khỏe|Strong legs help you run.|Đôi chân khỏe giúp bạn chạy.
+sick|adj|ốm|My sister is sick today.|Hôm nay chị tôi bị ốm.
+ill|adj|đau ốm|He was ill for a week.|Anh ấy bị ốm một tuần.
+well|adj|khỏe|I do not feel well.|Tôi không thấy khỏe.
+healthy|adj|khỏe mạnh|Healthy people sleep well.|Người khỏe mạnh ngủ ngon.
+painful|adj|đau đớn|The injection was painful.|Mũi tiêm rất đau.
+serious|adj|nghiêm trọng|It is not a serious illness.|Đó không phải là bệnh nghiêm trọng.
+mild|adj|nhẹ|She has a mild fever.|Cô ấy sốt nhẹ.
+sore|adj|đau nhức|My legs are sore after training.|Chân tôi đau nhức sau khi tập.
+stiff|adj|cứng đờ|My neck is stiff.|Cổ tôi bị cứng.
+active|adj|năng động|Active kids are happy kids.|Trẻ năng động là trẻ vui vẻ.
+## 🌞|Thói quen sống lành mạnh|Healthy Lifestyle
+exercise|n|tập thể dục|Exercise makes you feel great.|Tập thể dục khiến bạn cảm thấy tuyệt vời.
+lifestyle|n|lối sống|A healthy lifestyle starts early.|Lối sống lành mạnh bắt đầu từ sớm.
+routine|n|thói quen hằng ngày|My morning routine includes yoga.|Thói quen buổi sáng của tôi có yoga.
+fresh air|n|không khí trong lành|Go outside and enjoy fresh air.|Hãy ra ngoài và tận hưởng không khí trong lành.
+drink water|phr|uống nước|Drink water all day long.|Hãy uống nước suốt cả ngày.
+quit|v|bỏ|He quit smoking last year.|Anh ấy đã bỏ thuốc lá năm ngoái.
+smoke|v|hút thuốc|Do not smoke near children.|Đừng hút thuốc gần trẻ em.
+alcohol|n|rượu bia|Drink less alcohol.|Hãy uống ít rượu bia hơn.
+sunlight|n|ánh nắng|Sunlight gives us vitamin D.|Ánh nắng cho chúng ta vi-ta-min D.
+step|n|bước chân|I walk ten thousand steps a day.|Tôi đi mười nghìn bước mỗi ngày.
+regular|adj|đều đặn|Regular exercise keeps you fit.|Tập thể dục đều đặn giúp bạn khỏe mạnh.
+motivation|n|động lực|Friends give me motivation.|Bạn bè cho tôi động lực.
+wellbeing|n|sức khỏe tổng thể|Music improves our wellbeing.|Âm nhạc cải thiện sức khỏe tổng thể của chúng ta.
+## 🏸|Thể thao trong nhà|Indoor Activities
+dance|v|nhảy|She dances to keep fit.|Cô ấy nhảy để giữ dáng.
+aerobics|n|thể dục nhịp điệu|Aerobics is fun with music.|Thể dục nhịp điệu vui khi có nhạc.
+zumba|n|zumba|We do zumba on Thursday.|Chúng tôi tập zumba vào thứ Năm.
+skipping rope|n|dây nhảy|A skipping rope is cheap.|Dây nhảy rất rẻ.
+climbing wall|n|tường leo núi|The gym has a climbing wall.|Phòng tập có một bức tường leo núi.
+bowling|n|bóng gỗ|We went bowling last night.|Tối qua chúng tôi đi chơi bowling.
+billiards|n|bi-a|My uncle plays billiards.|Chú tôi chơi bi-a.
+chess|n|cờ vua|Chess trains your brain.|Cờ vua rèn luyện trí não.
+darts|n|phi tiêu|We play darts at the pub.|Chúng tôi chơi phi tiêu ở quán.
+trampoline|n|bạt nhún|Kids love the trampoline.|Trẻ em thích bạt nhún.
+indoor|adj|trong nhà|Indoor sports are good on rainy days.|Thể thao trong nhà rất tốt vào ngày mưa.
+workout|n|buổi tập|I do a workout at home.|Tôi tập luyện ở nhà.

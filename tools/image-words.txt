@@ -1,0 +1,187 @@
+// Danh sách từ cần ảnh minh họa (tải từ Openverse, giấy phép CC0 / Public Domain).
+// Định dạng: chủ đề|từ|từ khóa tìm kiếm|chỉ số ảnh chọn (0 = kết quả đầu tiên)
+food|apple|red apple fruit|0
+food|banana|bunch of bananas|6
+food|orange|orange fruit|0
+food|mango|mango fruit|0
+food|pineapple|pineapple fruit|0
+food|watermelon|watermelon|0
+food|grape|grapes|0
+food|strawberry|strawberry|5
+food|lemon|lemon fruit|0
+food|coconut|coconut|7
+food|carrot|carrot|0
+food|potato|potato|0
+food|tomato|tomato|2
+food|onion|onion|1
+food|cucumber|cucumber|6
+food|cabbage|cabbage|4
+food|broccoli|broccoli|0
+food|pumpkin|pumpkin|0
+food|corn|corn cob|0
+food|mushroom|mushroom|0
+food|eggplant|eggplant|6
+food|chili|red chili peppers|0
+food|beef|raw beef meat|0
+food|shrimp|shrimp prawns food|1
+food|crab|crab seafood|0
+food|salmon|salmon fillet|0
+food|milk|glass of milk|0
+food|cheese|cheese|6
+food|egg|chicken eggs carton|4
+food|rice|bowl of rice|0
+food|bread|bread loaf|0
+food|noodle|noodles bowl|2
+food|honey|honey jar|0
+food|pizza|pizza|4
+food|hamburger|burger sandwich|2
+food|sandwich|sandwich|0
+food|pho|pho vietnamese noodle soup|0
+food|spring roll|spring rolls|0
+food|sushi|sushi|0
+food|steak|steak|0
+food|salad|salad bowl|0
+food|soup|soup bowl|0
+food|cake|cake dessert|0
+food|donut|donuts|0
+food|pancake|pancakes|5
+food|ice cream|ice cream cone|4
+food|chocolate|chocolate bar|4
+food|coffee|cup of coffee|5
+food|tea|cup of tea|7
+food|juice|orange juice glass|0
+food|smoothie|smoothie drink|0
+food|chopsticks|chopsticks|0
+food|spoon|spoon|2
+daily|house|house exterior|1
+daily|kitchen|kitchen interior|0
+daily|bedroom|bedroom interior|0
+daily|garden|garden flowers|0
+daily|balcony|balcony|0
+daily|sofa|sofa couch|0
+daily|chair|wooden chair|0
+daily|bed|bed bedroom|0
+daily|lamp|table lamp|0
+daily|umbrella|umbrella|0
+daily|shirt|shirt clothing|0
+daily|dress|dress clothing|7
+daily|jacket|jacket clothing|7
+daily|shoes|shoes|2
+daily|hat|hat|7
+daily|backpack|backpack|5
+daily|key|house keys|6
+daily|watch|wrist watch|0
+daily|toothbrush|toothbrush|0
+daily|bus|city bus|1
+daily|bicycle|bicycle|0
+daily|motorbike|motorbike|0
+daily|car|car|0
+daily|taxi|taxi cab|0
+daily|train|train railway|0
+daily|bridge|bridge river|0
+daily|park|city park|0
+daily|library|library bookshelves|0
+daily|museum|museum hall|1
+daily|market|street market|6
+daily|supermarket|supermarket aisle|4
+daily|dog|dog|0
+daily|cat|cat|0
+daily|bird|bird|0
+daily|fish|fish aquarium|4
+daily|rabbit|rabbit|4
+daily|horse|horse|2
+daily|cow|cow|0
+daily|chicken|chicken hen|0
+daily|puppy|puppy|0
+daily|kitten|kitten|7
+daily|tree|lone tree field|0
+daily|flower|flower|0
+daily|river|river|4
+daily|lake|lake|0
+daily|mountain|mountain|0
+daily|forest|forest|0
+daily|moon|full moon|0
+daily|sun|sunset sun|5
+daily|fireworks|fireworks|0
+daily|guitar|guitar|0
+daily|piano|piano|0
+daily|phone|smartphone phone|5
+travel|airport|airport terminal|0
+travel|plane|airplane|2
+travel|passport|passport|2
+travel|suitcase|suitcase luggage|0
+travel|map|paper map|0
+travel|hotel|hotel building|0
+travel|beach|beach|0
+travel|island|tropical island|0
+travel|cable car|cable car|0
+travel|tent|camping tent|0
+travel|campfire|campfire|3
+travel|waterfall|waterfall|4
+travel|cave|cave|0
+travel|volcano|volcano eruption|0
+travel|desert|desert dunes|2
+travel|camera|photo camera lens|5
+travel|temple|temple|5
+travel|castle|castle|0
+travel|tower|tower|1
+travel|statue|statue|4
+travel|elephant|elephant|7
+travel|lion|lion|0
+travel|tiger|tiger|4
+travel|monkey|monkey|4
+travel|dolphin|dolphin|0
+travel|turtle|sea turtle|0
+travel|penguin|penguin|6
+travel|whale|whale|5
+travel|boat|boat|6
+travel|ship|ship|0
+study|classroom|classroom|7
+study|pencil|pencils|0
+study|ruler|ruler|3
+study|notebook|notebook|0
+study|textbook|textbooks|0
+study|calculator|calculator|0
+study|scissors|scissors|5
+study|microscope|microscope|1
+study|dictionary|dictionary book|2
+study|blackboard|blackboard chalkboard|0
+study|laboratory|science laboratory|0
+study|book|books|5
+health|doctor|doctor stethoscope|0
+health|nurse|nurse hospital|0
+health|hospital|hospital ward bed|5
+health|pill|pills medicine|0
+health|bandage|bandage|3
+health|wheelchair|wheelchair|0
+health|football|soccer ball|0
+health|basketball|basketball ball|0
+health|tennis|tennis racket|0
+health|badminton|badminton shuttlecock|0
+health|swimming|swimming pool swimmer|0
+health|yoga|yoga pose|0
+health|gym|gym fitness|0
+health|dumbbell|dumbbells|2
+health|treadmill|treadmill|3
+it|laptop|laptop|0
+it|keyboard|computer keyboard|6
+it|mouse|computer mouse|0
+it|monitor|computer monitor|0
+it|headset|headset headphones|0
+it|server|server rack|0
+it|cable|network cable|0
+it|router|wifi router|0
+it|smartphone|smartphone|0
+it|tablet|tablet computer|0
+it|robot|robot|0
+// ---- Cảnh công sở/đời sống cho TOEIC Part 1 và Speaking/Writing (không phải từ vựng) ----
+scene|meeting|business meeting table|5
+scene|notes|business meeting table|3
+scene|typing|woman typing laptop office|0
+scene|chef|chef cooking restaurant kitchen|1
+scene|kitchen|chef cooking restaurant kitchen|0
+scene|waiter|waiter serving restaurant|1
+scene|cleaning|waiter serving restaurant|0
+scene|platform|passengers train platform|0
+scene|newspaper|man reading newspaper|3
+scene|train|man reading newspaper|4
