@@ -5,6 +5,7 @@
  *  - build(section)          : sinh câu hỏi cho từng phần thi (luyện riêng)
  *  - buildMock(exam, variant): sinh bài thi thử rút gọn có giới hạn thời gian
  *                              (TOEIC có 2 loại: 'lr' Listening & Reading, 'sw' Speaking & Writing)
+ *  - buildTest(exam, no)     : một đề CỐ ĐỊNH trong bộ 20 đề IELTS / 20 đề TOEIC (data/exam/tests)
  *  - analyzeEssay(...)       : phân tích bài viết → band IELTS hoặc điểm TOEIC (0–4 / 0–5)
  *  - gradePicSentence(...)   : chấm câu viết theo tranh TOEIC Writing Q1–5 (0–3)
  *  - summarize(...)          : quy đổi kết quả sang band IELTS hoặc điểm TOEIC (mang tính ước lượng)
@@ -16,11 +17,11 @@ import { rawToBand, scoreToBand, toeicLrScaled, toeicSwLevel, toeicSwScaled } fr
 import { Injectable, inject } from '@angular/core';
 import { Dialogue } from '../models/content.model';
 import {
-  ExamAudio, ExamFill, ExamId, ExamKind, ExamMcq, ExamPassage, ExamSectionId, MockVariant, SpeakingItem, WritingTask,
+  ExamAudio, ExamFill, ExamId, ExamKind, ExamMcq, ExamPassage, ExamSectionId, MockVariant, SpeakingItem, ToeicPhotoItem, WritingTask,
 } from '../models/exam.model';
 import { McqQuestion, PicWriteQuestion, Question, SessionResult, TalkQuestion, TypeQuestion } from '../models/question.model';
 import { IELTS_LISTENING, IELTS_READING, IELTS_SPEAKING, IELTS_WRITING } from '../data/exam/ielts';
-import { TOEIC_PART2, TOEIC_PART3, TOEIC_PART4, TOEIC_PART5, TOEIC_PART6, TOEIC_PART7 } from '../data/exam/toeic';
+import { Part2Item, Part5Item, TOEIC_PART2, TOEIC_PART3, TOEIC_PART4, TOEIC_PART5, TOEIC_PART6, TOEIC_PART7 } from '../data/exam/toeic';
 import { TOEIC_PART1 } from '../data/exam/toeic-part1';
 import {
   TOEIC_PART2_MORE, TOEIC_PART3_MORE, TOEIC_PART4_MORE, TOEIC_PART5_MORE, TOEIC_PART6_MORE, TOEIC_PART7_MORE,
@@ -29,6 +30,7 @@ import {
   TOEIC_S_INFO, TOEIC_S_OPINION, TOEIC_S_PICTURE, TOEIC_S_READ, TOEIC_S_RESPOND, TOEIC_W_EMAIL, TOEIC_W_OPINION, TOEIC_W_PICTURE,
 } from '../data/exam/toeic-sw';
 import { SECTION_BY_ID } from '../data/exam/sections';
+import { FULL_TESTS, formatOf } from '../data/exam/tests/catalog';
 import { photoOf } from './photos';
 import { pct, sample, shuffle } from './text-utils';
 import { VocabService } from './vocab.service';
@@ -85,6 +87,31 @@ const P4 = [...TOEIC_PART4, ...TOEIC_PART4_MORE];
 const P5 = [...TOEIC_PART5, ...TOEIC_PART5_MORE];
 const P6: ExamPassage[] = [...TOEIC_PART6, ...TOEIC_PART6_MORE];
 const P7: ExamPassage[] = [...TOEIC_PART7, ...TOEIC_PART7_MORE];
+
+/** Lời dẫn của từng phần thi (dùng chung cho luyện riêng, thi thử và đề cố định) */
+const PROMPT = {
+  p3: 'Part 3 · Nghe hội thoại và trả lời câu hỏi.',
+  p4: 'Part 4 · Nghe bài nói và trả lời câu hỏi.',
+  p6: 'Part 6 · Chọn từ hoặc câu điền vào chỗ trống trong đoạn văn.',
+  p7: 'Part 7 · Đọc và trả lời câu hỏi.',
+  reading: 'Reading · Đọc bài và trả lời (True/False/Not Given, trắc nghiệm, điền câu).',
+};
+
+/** Lời thoại kèm bản dịch (nếu có) – hiển thị ở phần giải thích sau khi làm bài */
+const transcript = (lines: ExamAudio['lines']): string => lines.map((l) => `${l.who}: ${l.text}${l.vi ? ` (${l.vi})` : ''}`).join('\n');
+
+/**
+ * 4 ảnh Part 1 của đề cố định số `no`: kho ảnh offline có hạn nên các đề đầu dùng ảnh không trùng nhau,
+ * các đề sau ghép lại theo bước nhảy khác để mỗi đề vẫn là một tổ hợp riêng.
+ */
+export function part1ForTest(no: number): ToeicPhotoItem[] {
+  const pool = TOEIC_PART1.filter((it) => photoOf(it.photo));
+  // Đề đầy đủ: 6 ảnh liên tiếp trong kho, mỗi đề lệch 6 vị trí nên không đề nào trùng trọn bộ ảnh
+  if (no <= FULL_TESTS.toeic) return [0, 1, 2, 3, 4, 5].map((i) => pool[((no - 1) * 6 + i) % pool.length]);
+  const unique = Math.floor(pool.length / 4);
+  const at = (i: number) => (no <= unique ? (no - 1) * 4 + i : (no - unique - 1) * 5 + i * 11 + 2);
+  return [0, 1, 2, 3].map((i) => pool[at(i) % pool.length]);
+}
 
 /** Số câu trong kho đề của mỗi phần TOEIC (hiển thị ở trang Luyện thi) */
 export const TOEIC_BANK_SIZE: Partial<Record<ExamSectionId, number>> = {
@@ -188,11 +215,11 @@ export class ExamService {
     switch (section) {
       case 'toeic-part1': return this.toeicPart1(n);
       case 'toeic-part2': return this.toeicPart2(n);
-      case 'toeic-part3': return this.audioSet(P3, n, 'Part 3 · Nghe hội thoại và trả lời câu hỏi.');
-      case 'toeic-part4': return this.audioSet(P4, n, 'Part 4 · Nghe bài nói và trả lời câu hỏi.');
+      case 'toeic-part3': return this.audioSet(P3, n, PROMPT.p3);
+      case 'toeic-part4': return this.audioSet(P4, n, PROMPT.p4);
       case 'toeic-part5': return this.toeicPart5(n);
-      case 'toeic-part6': return this.passageSet(P6, n, 'Part 6 · Chọn từ hoặc câu điền vào chỗ trống trong đoạn văn.', 'toeic');
-      case 'toeic-part7': return this.passageSet(P7, n, 'Part 7 · Đọc và trả lời câu hỏi.', 'toeic');
+      case 'toeic-part6': return this.passageSet(P6, n, PROMPT.p6, 'toeic');
+      case 'toeic-part7': return this.passageSet(P7, n, PROMPT.p7, 'toeic');
       case 'toeic-s-read': return this.talks(sample(TOEIC_S_READ, n), 45, 45);
       case 'toeic-s-picture': return this.talks(sample(TOEIC_S_PICTURE, n), 45, 30);
       case 'toeic-s-respond': return this.respondSet();
@@ -232,10 +259,8 @@ export class ExamService {
         minutes: 38,
         questions: [
           ...this.toeicPart1(4), ...this.toeicPart2(8),
-          ...this.audioSet(P3, 6, 'Part 3 · Nghe hội thoại và trả lời câu hỏi.'),
-          ...this.audioSet(P4, 6, 'Part 4 · Nghe bài nói và trả lời câu hỏi.'), ...this.toeicPart5(12),
-          ...this.passageSet(P6, 6, 'Part 6 · Chọn từ hoặc câu điền vào chỗ trống trong đoạn văn.', 'toeic'),
-          ...this.passageSet(P7, 9, 'Part 7 · Đọc và trả lời câu hỏi.', 'toeic'),
+          ...this.audioSet(P3, 6, PROMPT.p3), ...this.audioSet(P4, 6, PROMPT.p4), ...this.toeicPart5(12),
+          ...this.passageSet(P6, 6, PROMPT.p6, 'toeic'), ...this.passageSet(P7, 9, PROMPT.p7, 'toeic'),
         ],
       };
     }
@@ -246,13 +271,46 @@ export class ExamService {
     return { minutes: 80, questions: [...listening, ...reading, ...writing, ...speaking] };
   }
 
+  /**
+   * Đề cố định số `no` trong bộ đề (data/exam/tests): nội dung giữ nguyên giữa các lần làm, chỉ thứ tự đáp án được xáo.
+   * Dữ liệu đề được nạp động để không làm nặng lần mở app đầu tiên. Trả về null nếu không có đề đó.
+   */
+  async buildTest(exam: ExamId, no: number): Promise<{ questions: Question[]; minutes: number } | null> {
+    const minutes = formatOf(exam, no).minutes;
+    if (exam === 'toeic') {
+      const t = (await import('../data/exam/tests/toeic-all')).TOEIC_TESTS.find((x) => x.no === no);
+      if (!t) return null;
+      return {
+        minutes,
+        questions: [
+          ...this.part1Of(part1ForTest(no)), ...this.part2Of(t.part2),
+          ...this.audioQs(t.part3, () => PROMPT.p3, 'toeic'), ...this.audioQs(t.part4, () => PROMPT.p4, 'toeic'),
+          ...this.part5Of(t.part5), ...this.passageQs(t.part6, PROMPT.p6, 'toeic'), ...this.passageQs(t.part7, PROMPT.p7, 'toeic'),
+        ],
+      };
+    }
+    const t = (await import('../data/exam/tests/ielts-all')).IELTS_TESTS.find((x) => x.no === no);
+    if (!t) return null;
+    return {
+      minutes,
+      questions: [
+        ...this.audioQs(t.listening, (a) => `Listening · ${a.title}`, 'ielts'), ...this.passageQs(t.reading, PROMPT.reading, 'ielts'),
+        ...this.ieltsEssays(t.writing), ...this.ieltsTalks(t.speaking),
+      ],
+    };
+  }
+
   // ---------------------------------------------------------------------
   //  TOEIC LISTENING & READING
   // ---------------------------------------------------------------------
 
   /** Part 1: ảnh + 4 câu mô tả chỉ được nghe (đọc lần lượt "(A) ...", "(B) ...") */
   private toeicPart1(n: number): Question[] {
-    return sample(TOEIC_PART1.filter((it) => photoOf(it.photo)), n).map((it) => {
+    return this.part1Of(sample(TOEIC_PART1.filter((it) => photoOf(it.photo)), n));
+  }
+
+  private part1Of(items: ToeicPhotoItem[]): Question[] {
+    return items.map((it) => {
       const options = shuffle([it.a, ...it.wrong]);
       const answer = options.indexOf(it.a);
       const q: McqQuestion = {
@@ -267,7 +325,11 @@ export class ExamService {
 
   /** Part 2: nghe câu hỏi rồi 3 câu đáp (chỉ nghe, như đề thật) */
   private toeicPart2(n: number): Question[] {
-    return sample(P2, n).map(([q, a, w1, w2, ex]) => {
+    return this.part2Of(sample(P2, n));
+  }
+
+  private part2Of(items: Part2Item[]): Question[] {
+    return items.map(([q, a, w1, w2, ex]) => {
       const options = shuffle([a, w1, w2]);
       const item: McqQuestion = {
         id: this.id(), kind: 'mcq', skill: 'listening', prompt: 'Part 2 · Nghe câu hỏi/câu nói và 3 câu đáp, chọn câu phù hợp nhất.',
@@ -280,7 +342,11 @@ export class ExamService {
   }
 
   private toeicPart5(n: number): Question[] {
-    return sample(P5, n).map(([sentence, a, w1, w2, w3, ex]) => {
+    return this.part5Of(sample(P5, n));
+  }
+
+  private part5Of(items: Part5Item[]): Question[] {
+    return items.map(([sentence, a, w1, w2, w3, ex]) => {
       const options = shuffle([a, w1, w2, w3]);
       const q: McqQuestion = {
         id: this.id(), kind: 'mcq', skill: 'reading', prompt: 'Part 5 · Chọn từ/cụm từ điền vào chỗ trống.', focus: sentence,
@@ -354,29 +420,48 @@ export class ExamService {
     const out: Question[] = [];
     for (const item of shuffle(items)) {
       if (out.length >= n) break;
-      const dlg = this.asDialogue(item, 'toeic');
-      const passage = item.graphic ? { title: item.graphic.title, text: item.graphic.text, textVi: '' } : undefined;
-      for (const m of item.mcq) {
-        out.push(this.mcqOf(m, {
-          skill: 'listening', prompt, focus: m.q, dialogue: dlg, passage, hideText: true,
-          autoPlay: out.length === 0 || out.at(-1)?.dialogue?.id !== dlg.id, topicId: 'toeic', longOptions: true,
-          explain: item.lines.map((l) => `${l.who}: ${l.text} (${l.vi})`).join('\n'),
-        }));
-      }
+      out.push(...this.audioQs([item], () => prompt, 'toeic'));
     }
     return out.slice(0, n);
   }
 
-  /** TOEIC Part 6/7 và IELTS Reading dùng chung: bài đọc + nhiều câu hỏi */
+  /** Mọi câu hỏi của các bài nghe theo đúng thứ tự: trắc nghiệm trước, câu điền sau; bài tự phát ở câu đầu của mỗi đoạn */
+  private audioQs(items: ExamAudio[], promptOf: (a: ExamAudio) => string, topic: 'ielts' | 'toeic'): Question[] {
+    return items.flatMap((item) => {
+      const dlg = this.asDialogue(item, topic);
+      const passage = item.graphic ? { title: item.graphic.title, text: item.graphic.text, textVi: '' } : undefined;
+      const prompt = promptOf(item);
+      return [
+        ...item.mcq.map((m, i) => this.mcqOf(m, {
+          skill: 'listening', prompt, focus: m.q, dialogue: dlg, passage, hideText: true, autoPlay: i === 0, topicId: topic, longOptions: true,
+          explain: transcript(item.lines),
+        })),
+        ...(item.fill ?? []).map((f) => this.fillOf(f, {
+          skill: 'listening', prompt: `${prompt} – điền từ/số bạn nghe được.`, focus: f.q, dialogue: dlg, hideText: true, topicId: topic,
+        })),
+      ];
+    });
+  }
+
+  /** TOEIC Part 6/7 và IELTS Reading dùng chung: chọn đủ bài đọc để có khoảng n câu hỏi */
   private passageSet(items: ExamPassage[], n: number, prompt: string, topic: 'ielts' | 'toeic'): Question[] {
     const out: Question[] = [];
     for (const p of shuffle(items)) {
       if (out.length >= n) break;
-      const passage = { title: p.title, text: p.text, textVi: p.textVi };
-      for (const m of p.mcq) out.push(this.mcqOf(m, { skill: 'reading', prompt, focus: m.q, passage, topicId: topic, longOptions: true, explain: `${p.titleVi}` }));
-      for (const f of p.fill ?? []) out.push(this.fillOf(f, { skill: 'reading', prompt: 'Điền đáp án (tối đa 3 từ lấy trong bài).', focus: f.q, passage, topicId: topic }));
+      out.push(...this.passageQs([p], prompt, topic));
     }
     return out.slice(0, n);
+  }
+
+  /** Mọi câu hỏi của các bài đọc theo đúng thứ tự */
+  private passageQs(items: ExamPassage[], prompt: string, topic: 'ielts' | 'toeic'): Question[] {
+    return items.flatMap((p) => {
+      const passage = { title: p.title, text: p.text, textVi: p.textVi };
+      return [
+        ...p.mcq.map((m) => this.mcqOf(m, { skill: 'reading', prompt, focus: m.q, passage, topicId: topic, longOptions: true, explain: `${p.titleVi}` })),
+        ...(p.fill ?? []).map((f) => this.fillOf(f, { skill: 'reading', prompt: 'Điền đáp án (tối đa 3 từ lấy trong bài).', focus: f.q, passage, topicId: topic })),
+      ];
+    });
   }
 
   // ---------------------------------------------------------------------
@@ -389,20 +474,23 @@ export class ExamService {
       if (out.length >= n) break;
       const dlg = this.asDialogue(item, 'ielts');
       const prompt = `Listening · ${item.title}`;
-      for (const m of item.mcq) out.push(this.mcqOf(m, { skill: 'listening', prompt, focus: m.q, dialogue: dlg, hideText: true, autoPlay: out.length === 0, topicId: 'ielts', longOptions: true, explain: item.lines.map((l) => `${l.who}: ${l.text} (${l.vi})`).join('\n') }));
+      for (const m of item.mcq) out.push(this.mcqOf(m, { skill: 'listening', prompt, focus: m.q, dialogue: dlg, hideText: true, autoPlay: out.length === 0, topicId: 'ielts', longOptions: true, explain: transcript(item.lines) }));
       for (const f of item.fill ?? []) out.push(this.fillOf(f, { skill: 'listening', prompt: `${prompt} – điền từ/số bạn nghe được.`, focus: f.q, dialogue: dlg, hideText: true, topicId: 'ielts' }));
     }
     return out.slice(0, n);
   }
 
   private ieltsReading(n: number): Question[] {
-    return this.passageSet(IELTS_READING, n, 'Reading · Đọc bài và trả lời (True/False/Not Given, trắc nghiệm, điền câu).', 'ielts');
+    return this.passageSet(IELTS_READING, n, PROMPT.reading, 'ielts');
   }
 
   /** IELTS Writing: chọn `count` đề; `task` = 1 hoặc 2 để giới hạn loại đề */
   private ieltsWriting(count: number, task?: 1 | 2): Question[] {
-    const pool = IELTS_WRITING.filter((t) => !task || t.task === task);
-    return sample(pool, count).map((t) => ({
+    return this.ieltsEssays(sample(IELTS_WRITING.filter((t) => !task || t.task === task), count));
+  }
+
+  private ieltsEssays(tasks: WritingTask[]): Question[] {
+    return tasks.map((t) => ({
       id: this.id(), kind: 'essay' as const, skill: 'writing' as const, prompt: `Writing ${t.title.split(' – ')[0]} · ${t.minutes} phút gợi ý`, focus: t.title.split(' – ')[1] ?? t.title,
       task: t, topicId: 'ielts' as const, explain: t.model,
     }));
@@ -411,7 +499,11 @@ export class ExamService {
   /** IELTS Speaking: một đề Part 1, một Part 2 và một Part 3 */
   private ieltsSpeaking(): Question[] {
     const pick = (part: 1 | 2 | 3) => sample(IELTS_SPEAKING.filter((s) => s.part === part), 1)[0];
-    return [pick(1), pick(2), pick(3)].map((item) => ({
+    return this.ieltsTalks([pick(1), pick(2), pick(3)]);
+  }
+
+  private ieltsTalks(items: SpeakingItem[]): Question[] {
+    return items.map((item) => ({
       id: this.id(), kind: 'talk' as const, skill: 'speaking' as const, prompt: `Speaking ${item.title.split(' – ')[0]}`, focus: item.title.split(' – ')[1] ?? item.title,
       item, prepSeconds: item.part === 2 ? 60 : 0, speakSeconds: item.part === 2 ? 120 : 30 * item.lines.length,
       topicId: 'ielts' as const, explain: item.sample,

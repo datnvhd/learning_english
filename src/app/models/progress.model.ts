@@ -4,7 +4,7 @@
  * ============================================================================
  */
 import { Skill, TopicId } from './content.model';
-import { ExamId, ExamSectionId } from './exam.model';
+import { ExamId, ExamKind } from './exam.model';
 
 /** Trạng thái học của MỘT từ vựng (theo phương pháp lặp lại ngắt quãng – hộp Leitner) */
 export interface WordState {
@@ -109,8 +109,8 @@ export interface ExamRecord {
   id: string;
   date: string;
   exam: ExamId;
-  /** 'mock' = thi thử (TOEIC: Listening & Reading), 'mock-sw' = thi thử TOEIC Speaking & Writing, hoặc mã phần thi */
-  kind: 'mock' | 'mock-sw' | ExamSectionId;
+  /** 'mock' = thi thử (TOEIC: Listening & Reading), 'mock-sw' = thi thử TOEIC Speaking & Writing, 'test-<n>' = đề cố định số n, hoặc mã phần thi */
+  kind: ExamKind;
   /** Điểm quy về phần trăm */
   percent: number;
   /** Điểm ước tính hiển thị, ví dụ "Band 6.5" hoặc "Tổng 640/990" */

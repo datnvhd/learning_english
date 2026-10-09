@@ -7,6 +7,7 @@
  *   mode = lesson  -> bài kiểm tra nhanh sau khi học một bài từ vựng   ?lesson=<số thứ tự bài>
  *   mode = review  -> ôn tập từ đến hạn (topic = all | saved | mã chủ đề)
  *   mode = mixed   -> luyện tập tổng hợp 4 kỹ năng
+ *   mode = exam    -> luyện thi (topic = ielts | toeic)   ?section=<phần thi> | ?mock=1|sw (thi thử ngẫu nhiên) | ?test=<1..20> (đề cố định)
  *   topic = all hoặc mã chủ đề (daily, it, travel, study, health, food)
  *
  * Các bước: tạo câu hỏi (QuestionService) -> làm bài (QuizRunner) -> ghi nhận tiến độ
@@ -22,6 +23,7 @@ import { QuestionService, Scope } from '../../core/question.service';
 import { SfxService } from '../../core/sfx.service';
 import { SpeechService } from '../../core/speech.service';
 import { EXAM_INFO, SECTION_BY_ID } from '../../data/exam/sections';
+import { testTitle } from '../../data/exam/tests/catalog';
 import { GRAMMAR_BY_ID } from '../../data/grammar';
 import { SKILL_INFO, TOPIC_BY_ID } from '../../data/topics';
 import { ExamId, ExamKind, ExamSectionId } from '../../models/exam.model';
@@ -97,6 +99,8 @@ export class SessionPage {
         section: (q.get('section') ?? '') as ExamSectionId | '',
         /** '' = không phải thi thử, '1' = thi thử (TOEIC: Listening & Reading), 'sw' = thi thử TOEIC Speaking & Writing */
         mock: q.get('mock') ?? '',
+        /** Số thứ tự đề cố định trong bộ 20 đề (0 = không phải đề cố định) */
+        test: Number(q.get('test') ?? 0) || 0,
       })),
     ),
     { requireSync: true },
@@ -118,7 +122,7 @@ export class SessionPage {
     const topic = p.topic !== 'all' && p.topic !== 'saved' ? TOPIC_BY_ID[p.topic]?.title : '';
     switch (p.mode) {
       case 'grammar': return GRAMMAR_BY_ID[p.topic]?.title ?? 'Ngữ pháp';
-      case 'exam': return p.mock ? `Thi thử ${EXAM_INFO[p.topic as ExamId].name.split(' ')[0]}${p.mock === 'sw' ? ' S&W' : ''}` : (p.section ? this.sectionTitle(p.section) : 'Luyện thi');
+      case 'exam': return p.test ? testTitle(p.topic as ExamId, p.test) : p.mock ? `Thi thử ${EXAM_INFO[p.topic as ExamId].name.split(' ')[0]}${p.mock === 'sw' ? ' S&W' : ''}` : (p.section ? this.sectionTitle(p.section) : 'Luyện thi');
       case 'skill': return `Luyện ${SKILL_INFO[p.skill].label.toLowerCase()}`;
       case 'test': return p.kind === 'all' ? 'Kiểm tra tổng quát' : `Kiểm tra ${SKILL_INFO[p.kind].label.toLowerCase()}`;
       case 'lesson': return 'Kiểm tra nhanh';
@@ -144,7 +148,7 @@ export class SessionPage {
     return '💡';
   });
 
-  protected readonly runnerMode = computed<'practice' | 'test'>(() => (this.params().mode === 'test' || (this.params().mode === 'exam' && this.params().mock) ? 'test' : 'practice'));
+  protected readonly runnerMode = computed<'practice' | 'test'>(() => (this.params().mode === 'test' || (this.params().mode === 'exam' && (this.params().mock || this.params().test)) ? 'test' : 'practice'));
 
   protected readonly emptyText = computed(() =>
     this.params().mode === 'review'
@@ -177,7 +181,11 @@ export class SessionPage {
       switch (p.mode) {
         case 'exam': {
           const exam = p.topic as ExamId;
-          if (p.mock) {
+          if (p.test) {
+            const t = await this.examSvc.buildTest(exam, p.test);
+            qs = t?.questions ?? [];
+            this.timeLimit.set((t?.minutes ?? 0) * 60);
+          } else if (p.mock) {
             const m = this.examSvc.buildMock(exam, p.mock === 'sw' ? 'sw' : 'lr');
             qs = m.questions;
             this.timeLimit.set(m.minutes * 60);
@@ -213,7 +221,7 @@ export class SessionPage {
     let exam: { id: ExamId; kind: ExamKind; label: string } | undefined;
     if (p.mode === 'exam') {
       const id = p.topic as ExamId;
-      const kind: ExamKind = p.mock === 'sw' ? 'mock-sw' : p.mock ? 'mock' : (p.section as ExamSectionId);
+      const kind: ExamKind = p.test ? `test-${p.test}` : p.mock === 'sw' ? 'mock-sw' : p.mock ? 'mock' : (p.section as ExamSectionId);
       const sum = this.examSvc.summarize(id, kind, r);
       this.examSummary.set(sum);
       exam = { id, kind, label: sum.label };
@@ -254,7 +262,7 @@ export class SessionPage {
   protected leave(): void {
     const p = this.params();
     if (p.mode === 'grammar') this.router.navigateByUrl(`/grammar/${p.topic}`);
-    else if (p.mode === 'exam') this.router.navigateByUrl(p.mock ? '/mock' : `/${p.topic}`);
+    else if (p.mode === 'exam') this.router.navigateByUrl(p.mock || p.test ? '/mock' : `/${p.topic}`);
     else if (p.mode === 'lesson' || p.mode === 'review') this.router.navigateByUrl(p.mode === 'lesson' ? `/vocab/${p.topic}?tab=lessons` : '/vocab');
     else if (p.mode === 'test') this.router.navigateByUrl('/practice');
     else this.router.navigateByUrl('/practice');

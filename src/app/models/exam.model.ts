@@ -24,8 +24,17 @@ export type ExamSectionId =
 /** Loại bài thi thử: 'lr' = Listening & Reading (mặc định), 'sw' = TOEIC Speaking & Writing */
 export type MockVariant = 'lr' | 'sw';
 
-/** Loại bài đã làm (lưu lịch sử): thi thử L&R, thi thử S&W hoặc một phần thi */
-export type ExamKind = 'mock' | 'mock-sw' | ExamSectionId;
+/** Mã của một đề cố định trong bộ 20 đề, ví dụ "test-7" */
+export type ExamTestKind = `test-${number}`;
+
+/** Loại bài đã làm (lưu lịch sử): thi thử L&R, thi thử S&W, một đề cố định hoặc một phần thi */
+export type ExamKind = 'mock' | 'mock-sw' | ExamTestKind | ExamSectionId;
+
+/** Số thứ tự đề nếu `kind` là một đề cố định ("test-7" → 7), ngược lại là 0 */
+export const testNoOf = (kind: string): number => (/^test-\d+$/.test(kind) ? Number(kind.slice(5)) : 0);
+
+/** true nếu là bài thi đầy đủ (thi thử ngẫu nhiên hoặc đề cố định), không phải luyện một phần thi */
+export const isFullExam = (kind: string): boolean => kind === 'mock' || kind === 'mock-sw' || testNoOf(kind) > 0;
 
 /** Thông tin hiển thị của một phần thi */
 export interface ExamSectionInfo {

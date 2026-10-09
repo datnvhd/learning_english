@@ -17,9 +17,10 @@ import { EXAM_SKILLS, EXAM_SKILL_LABEL, ExamSkill, GoalService, bandText } from 
 import { ProgressService } from '../../core/progress.service';
 import { IELTS_LISTENING, IELTS_READING, IELTS_SPEAKING, IELTS_WRITING } from '../../data/exam/ielts';
 import { EXAM_INFO, EXAM_SECTIONS, SECTION_BY_ID } from '../../data/exam/sections';
+import { TEST_COUNT, formatOf, testTitle } from '../../data/exam/tests/catalog';
 import { HERO_PHOTOS } from '../../data/hero-photos';
 import { topicWordCount } from '../../data/topics';
-import { ExamId, ExamKind, ExamSectionInfo } from '../../models/exam.model';
+import { ExamId, ExamKind, ExamSectionInfo, isFullExam, testNoOf } from '../../models/exam.model';
 import { RingComponent } from '../../shared/ring.component';
 import { IconComponent } from '../../theme/icon.component';
 import { SKILL_COLORS } from '../../theme/theme';
@@ -133,6 +134,13 @@ const ROADMAP: Record<ExamId, { title: string; desc: string; from: number; to: n
               <!-- Gợi ý -->
               <section class="card">
                 <div class="card-head"><app-icon name="file-text" /><h2>Đề luyện được gợi ý</h2><a class="link-more" routerLink="/mock">Xem tất cả <app-icon name="arrow-right" /></a></div>
+                @if (nextTest(); as t) {
+                  <div class="list-row">
+                    <span class="tile-ic" style="--c: var(--tangerine-500)"><app-icon name="clock-play" /></span>
+                    <span class="lr-text"><b>{{ t.title }}</b><small>{{ t.count }} · {{ t.minutes }} phút · đã làm {{ t.done }}/{{ t.total }} đề trong bộ đề</small></span>
+                    <a class="btn btn-primary btn-sm" [routerLink]="['/session/exam', exam()]" [queryParams]="{ test: t.no }">Làm bài</a>
+                  </div>
+                }
                 @for (s of suggested(); track s.id) {
                   <div class="list-row">
                     <span class="tile-ic" [style.--c]="skillColor[s.skill]"><app-icon [name]="s.ico" /></span>
@@ -411,7 +419,7 @@ export class ExamPage {
   private readonly sectionScores = computed(() => {
     const by = new Map<string, { sum: number; n: number }>();
     for (const h of this.history()) {
-      if (h.kind === 'mock' || h.kind === 'mock-sw') continue;
+      if (isFullExam(h.kind)) continue;
       const b = by.get(h.kind) ?? { sum: 0, n: 0 };
       b.sum += h.percent;
       b.n++;
@@ -427,6 +435,15 @@ export class ExamPage {
     const done = new Map(this.sectionScores().map((s) => [s.id, s.avg]));
     const list = this.sections();
     return list.find((s) => !done.has(s.id)) ?? [...list].sort((a, b) => (done.get(a.id) ?? 0) - (done.get(b.id) ?? 0))[0];
+  });
+
+  /** Đề cố định tiếp theo chưa làm trong bộ 20 đề (làm hết thì quay lại đề 1) */
+  protected readonly nextTest = computed(() => {
+    const exam = this.exam();
+    const total = TEST_COUNT[exam];
+    const done = new Set(this.history().map((h) => testNoOf(h.kind)).filter((n) => n > 0));
+    const no = Array.from({ length: total }, (_, i) => i + 1).find((n) => !done.has(n)) ?? 1;
+    return { no, title: testTitle(exam, no), total, done: done.size, count: formatOf(exam, no).count, minutes: formatOf(exam, no).minutes };
   });
 
   /** Đề gợi ý: ưu tiên phần chưa làm hoặc điểm thấp */
@@ -466,11 +483,12 @@ export class ExamPage {
   protected kindLabel(kind: ExamKind): string {
     if (kind === 'mock') return this.exam() === 'toeic' ? 'Thi thử Listening & Reading' : 'Thi thử IELTS';
     if (kind === 'mock-sw') return 'Thi thử Speaking & Writing';
+    if (testNoOf(kind)) return `Practice Test ${String(testNoOf(kind)).padStart(2, '0')}`;
     return SECTION_BY_ID[kind]?.title ?? kind;
   }
 
   protected kindIcon(kind: ExamKind) {
-    if (kind === 'mock' || kind === 'mock-sw') return 'clock-play' as const;
+    if (isFullExam(kind)) return 'clock-play' as const;
     return SECTION_BY_ID[kind]?.ico ?? 'target';
   }
 

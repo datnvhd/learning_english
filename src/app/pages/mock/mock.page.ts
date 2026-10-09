@@ -3,16 +3,19 @@
  * (thiết kế theo ảnh "Offline English Master Mock Test Dashboard").
  *
  *  - Tab: Tất cả · IELTS · TOEIC · Kỹ năng · Đề yêu thích; lọc theo kỹ năng và tìm theo tên.
+ *  - Bộ đề cố định: 20 đề IELTS + 20 đề TOEIC (data/exam/tests) – mỗi đề có nội dung riêng, làm lại vẫn đúng đề đó.
+ *  - "Đề ngẫu nhiên": 3 bài thi thử rút câu hỏi từ kho, mỗi lần làm một đề khác.
  *  - Mỗi đề: ảnh, nhãn, số kỹ năng, số câu, thời lượng, đánh dấu yêu thích và nút "Bắt đầu làm bài".
  *  - Cột phải: tiến độ (số loại đề đã làm), kết quả gần đây, đề gợi ý tiếp theo.
- * Đề được tạo từ kho câu hỏi đóng gói sẵn nên làm được khi không có Internet; mỗi lần làm đề được xáo lại.
+ * Mọi đề đều đóng gói sẵn nên làm được khi không có Internet.
  */
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, WritableSignal, computed, inject, signal } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProgressService } from '../../core/progress.service';
 import { photoOf } from '../../core/photos';
 import { EXAM_INFO, EXAM_SECTIONS } from '../../data/exam/sections';
+import { TEST_CATALOG, formatOf, testTitle } from '../../data/exam/tests/catalog';
 import { HERO_PHOTOS } from '../../data/hero-photos';
 import { ExamId, ExamKind } from '../../models/exam.model';
 import { DonutComponent } from '../../shared/donut.component';
@@ -42,17 +45,29 @@ const SKILL_PHOTO: Record<string, string> = {
   listening: HERO_PHOTOS.headphones.src, reading: HERO_PHOTOS.library.src, writing: HERO_PHOTOS.writing.src, speaking: HERO_PHOTOS.office.src,
 };
 
+/** Ảnh bìa luân phiên cho bộ đề cố định */
+const TEST_PHOTOS: Record<ExamId, string[]> = {
+  ielts: [HERO_PHOTOS.london.src, HERO_PHOTOS.library.src, HERO_PHOTOS.writing.src, HERO_PHOTOS.mountain.src],
+  toeic: [HERO_PHOTOS.skyline.src, HERO_PHOTOS.office.src, HERO_PHOTOS.study.src, HERO_PHOTOS.headphones.src],
+};
+
 const ITEMS: MockItem[] = [
+  // Xen kẽ IELTS 01, TOEIC 01, IELTS 02... để tab "Tất cả" có đủ hai kỳ thi ngay từ đầu
+  ...[...TEST_CATALOG].sort((a, b) => a.no - b.no).map((t): MockItem => ({
+    id: `${t.exam}-test-${t.no}`, kind: `test-${t.no}`, exam: t.exam, title: testTitle(t.exam, t.no), desc: `${t.topic}. ${formatOf(t.exam, t.no).desc}`,
+    photo: TEST_PHOTOS[t.exam][(t.no - 1) % TEST_PHOTOS[t.exam].length], skills: formatOf(t.exam, t.no).skills, count: formatOf(t.exam, t.no).count,
+    minutes: formatOf(t.exam, t.no).minutes, skill: 'Full Test', level: t.exam === 'ielts' ? 'B1 – C1' : 'A2 – B2', full: true, query: { test: String(t.no) },
+  })),
   {
-    id: 'ielts-full', kind: 'mock', exam: 'ielts', title: 'IELTS Full Test', desc: EXAM_INFO.ielts.mockDesc, photo: HERO_PHOTOS.london.src,
+    id: 'ielts-full', kind: 'mock', exam: 'ielts', title: 'IELTS Full Test (đề ngẫu nhiên)', desc: EXAM_INFO.ielts.mockDesc, photo: HERO_PHOTOS.london.src,
     skills: '4 kỹ năng', count: '~20 mục', minutes: EXAM_INFO.ielts.mockMinutes, skill: 'Full Test', level: 'B1 – C1', full: true, query: { mock: '1' },
   },
   {
-    id: 'toeic-lr', kind: 'mock', exam: 'toeic', title: 'TOEIC Listening & Reading Test', desc: EXAM_INFO.toeic.mockDesc, photo: HERO_PHOTOS.skyline.src,
+    id: 'toeic-lr', kind: 'mock', exam: 'toeic', title: 'TOEIC Listening & Reading Test (đề ngẫu nhiên)', desc: EXAM_INFO.toeic.mockDesc, photo: HERO_PHOTOS.skyline.src,
     skills: '2 kỹ năng', count: '51 câu', minutes: EXAM_INFO.toeic.mockMinutes, skill: 'Full Test', level: 'A2 – B2', full: true, query: { mock: '1' },
   },
   {
-    id: 'toeic-sw', kind: 'mock-sw', exam: 'toeic', title: 'TOEIC Speaking & Writing Test', desc: EXAM_INFO.toeic.mockSw!.desc, photo: HERO_PHOTOS.study.src,
+    id: 'toeic-sw', kind: 'mock-sw', exam: 'toeic', title: 'TOEIC Speaking & Writing Test (đề ngẫu nhiên)', desc: EXAM_INFO.toeic.mockSw!.desc, photo: HERO_PHOTOS.study.src,
     skills: '2 kỹ năng', count: '13 câu', minutes: EXAM_INFO.toeic.mockSw!.minutes, skill: 'Full Test', level: 'B1 – B2', full: true, query: { mock: 'sw' },
   },
   ...EXAM_SECTIONS.map((s): MockItem => ({
@@ -84,24 +99,24 @@ const ITEMS: MockItem[] = [
           <section class="card flush">
             <nav class="tabs" aria-label="Loại đề">
               @for (t of tabs; track t.id) {
-                <button type="button" class="tab" [class.active]="tab() === t.id" (click)="tab.set(t.id)"><app-icon [name]="t.icon" /> {{ t.label }}</button>
+                <button type="button" class="tab" [class.active]="tab() === t.id" (click)="pick(tab, t.id)"><app-icon [name]="t.icon" /> {{ t.label }}</button>
               }
             </nav>
             <div class="filters">
-              <select class="select" [value]="skill()" (change)="skill.set($any($event.target).value)" aria-label="Kỹ năng">
+              <select class="select" [value]="skill()" (change)="pick(skill, $any($event.target).value)" aria-label="Kỹ năng">
                 <option value="">Kỹ năng: Tất cả</option>
                 @for (s of skillOptions; track s) { <option [value]="s">{{ s }}</option> }
               </select>
-              <select class="select" [value]="status()" (change)="status.set($any($event.target).value)" aria-label="Trạng thái">
+              <select class="select" [value]="status()" (change)="pick(status, $any($event.target).value)" aria-label="Trạng thái">
                 <option value="">Trạng thái: Tất cả</option>
                 <option value="done">Đã làm</option>
                 <option value="todo">Chưa làm</option>
               </select>
-              <label class="find"><app-icon name="search" /><input type="search" placeholder="Tìm kiếm đề thi..." [value]="query()" (input)="query.set($any($event.target).value)" /></label>
+              <label class="find"><app-icon name="search" /><input type="search" placeholder="Tìm kiếm đề thi..." [value]="query()" (input)="pick(query, $any($event.target).value)" /></label>
             </div>
 
             <ul class="list">
-              @for (m of visible(); track m.id) {
+              @for (m of shown(); track m.id) {
                 <li>
                   <img [src]="m.photo" alt="" loading="lazy" />
                   <div class="info">
@@ -125,6 +140,9 @@ const ITEMS: MockItem[] = [
                 <li class="empty">{{ tab() === 'fav' ? 'Chưa có đề yêu thích. Bấm ngôi sao ở một đề để lưu lại.' : 'Không có đề nào phù hợp bộ lọc.' }}</li>
               }
             </ul>
+            @if (visible().length > shown().length) {
+              <div class="more"><button type="button" class="btn btn-soft" (click)="limit.set(limit() + pageSize)">Xem thêm {{ visible().length - shown().length }} đề</button></div>
+            }
           </section>
         </div>
 
@@ -188,6 +206,7 @@ const ITEMS: MockItem[] = [
     .info h3 { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
     .info p { font-size: var(--fs-sm); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .new { background: var(--bad); color: var(--white); }
+    .more { display: flex; justify-content: center; padding: var(--space-3) var(--space-4) var(--space-4); border-top: 1px solid var(--line); }
     .tg { flex-wrap: wrap; }
     .meta { display: grid; grid-template-columns: auto auto; gap: 4px var(--space-4); font-size: var(--fs-sm); color: var(--slate-600); white-space: nowrap; flex: none; }
     .meta span { display: flex; align-items: center; gap: 6px; }
@@ -239,6 +258,9 @@ export class MockPage {
   protected readonly skill = signal('');
   protected readonly status = signal('');
   protected readonly query = signal('');
+  /** Số đề hiển thị mỗi lượt – danh sách dài (hơn 60 đề) nên hiện dần bằng nút "Xem thêm" */
+  protected readonly pageSize = 12;
+  protected readonly limit = signal(this.pageSize);
 
   /** Kết quả gần nhất theo từng loại đề: "<kỳ thi>|<loại>" -> nhãn điểm */
   private readonly lastByKind = computed(() => {
@@ -264,6 +286,14 @@ export class MockPage {
       return !q || `${m.title} ${m.desc} ${m.skill}`.toLowerCase().includes(q);
     });
   });
+
+  protected readonly shown = computed(() => this.visible().slice(0, this.limit()));
+
+  /** Đổi tab / bộ lọc / từ khóa: quay về lượt hiển thị đầu tiên */
+  protected pick<T>(target: WritableSignal<T>, value: T): void {
+    target.set(value);
+    this.limit.set(this.pageSize);
+  }
 
   protected readonly doneCount = computed(() => ITEMS.filter((m) => this.lastByKind().has(`${m.exam}|${m.kind}`)).length);
   protected readonly donePercent = computed(() => Math.round((this.doneCount() / ITEMS.length) * 100));

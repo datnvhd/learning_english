@@ -14,6 +14,8 @@ import { ProgressService } from '../../core/progress.service';
 import { dayKey, formatDuration, pct } from '../../core/text-utils';
 import { BADGES } from '../../data/badges';
 import { SECTION_BY_ID } from '../../data/exam/sections';
+import { testTitle } from '../../data/exam/tests/catalog';
+import { isFullExam, testNoOf } from '../../models/exam.model';
 import { SKILL_INFO, TOPICS, topicWordCount, totalWordCount } from '../../data/topics';
 import { LANGUAGE_SKILLS, Skill } from '../../models/content.model';
 import { RingComponent } from '../../shared/ring.component';
@@ -275,8 +277,8 @@ export class ProgressPage {
   protected readonly history = computed(() => {
     const exams = this.progress.exams().map((h) => ({
       id: 'e' + h.id, date: h.date, percent: h.percent, label: h.label,
-      title: h.kind === 'mock' ? `Thi thử ${h.exam.toUpperCase()}` : h.kind === 'mock-sw' ? 'Thi thử TOEIC S&W' : `${h.exam.toUpperCase()} · ${SECTION_BY_ID[h.kind]?.titleEn ?? h.kind}`,
-      icon: (h.kind === 'mock' || h.kind === 'mock-sw' ? 'clock-play' : (SECTION_BY_ID[h.kind]?.ico ?? 'target')), color: h.exam === 'ielts' ? 'var(--ielts)' : 'var(--toeic)',
+      title: testNoOf(h.kind) ? testTitle(h.exam, testNoOf(h.kind)) : h.kind === 'mock' ? `Thi thử ${h.exam.toUpperCase()}` : h.kind === 'mock-sw' ? 'Thi thử TOEIC S&W' : `${h.exam.toUpperCase()} · ${SECTION_BY_ID[h.kind]?.titleEn ?? h.kind}`,
+      icon: (isFullExam(h.kind) ? 'clock-play' : (SECTION_BY_ID[h.kind]?.ico ?? 'target')), color: h.exam === 'ielts' ? 'var(--ielts)' : 'var(--toeic)',
     }));
     const tests = this.progress.tests().map((t) => ({
       id: 't' + t.id, date: t.date, percent: t.percent, label: `${t.percent}%`,

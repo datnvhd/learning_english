@@ -24,6 +24,8 @@ import { IELTS_LISTENING, IELTS_SPEAKING, IELTS_WRITING } from '../src/app/data/
 import { TOEIC_PART2, TOEIC_PART3, TOEIC_PART4 } from '../src/app/data/exam/toeic';
 import { TOEIC_PART2_MORE, TOEIC_PART3_MORE, TOEIC_PART4_MORE } from '../src/app/data/exam/toeic-more';
 import { TOEIC_PART1 } from '../src/app/data/exam/toeic-part1';
+import { IELTS_TESTS } from '../src/app/data/exam/tests/ielts-all';
+import { TOEIC_TESTS } from '../src/app/data/exam/tests/toeic-all';
 import { TOEIC_S_INFO, TOEIC_S_OPINION, TOEIC_S_PICTURE, TOEIC_S_READ, TOEIC_S_RESPOND, TOEIC_W_EMAIL, TOEIC_W_OPINION } from '../src/app/data/exam/toeic-sw';
 
 const out = new Map<string, { k: string; t: string; v: AudioVoice; g: string }>();
@@ -58,18 +60,21 @@ for (const g of GRAMMAR) {
 }
 
 // 5) Luyện thi – phần nghe
-for (const a of [...IELTS_LISTENING, ...TOEIC_PART3, ...TOEIC_PART4, ...TOEIC_PART3_MORE, ...TOEIC_PART4_MORE]) dialogue(a.lines, 'exam');
+// Bộ đề cố định (20 đề IELTS + 20 đề TOEIC): bài nghe, Part 2, đề nói và bài mẫu
+const testAudio = [...IELTS_TESTS.flatMap((t) => t.listening), ...TOEIC_TESTS.flatMap((t) => [...t.part3, ...t.part4])];
+const testPart2 = TOEIC_TESTS.flatMap((t) => t.part2);
+for (const a of [...IELTS_LISTENING, ...TOEIC_PART3, ...TOEIC_PART4, ...TOEIC_PART3_MORE, ...TOEIC_PART4_MORE, ...testAudio]) dialogue(a.lines, 'exam');
 for (const p of TOEIC_PART1) for (const s of [p.a, ...p.wrong]) add(s, 'exam');
-for (const row of [...TOEIC_PART2, ...TOEIC_PART2_MORE]) for (const s of row.slice(0, 4)) add(s, 'exam');
+for (const row of [...TOEIC_PART2, ...TOEIC_PART2_MORE, ...testPart2]) for (const s of row.slice(0, 4)) add(s, 'exam');
 for (const s of ['A', 'B', 'C', 'D', 'Look at the picture.']) add(s, 'exam');
 
 // 6) Luyện thi – phần nói (lời giám khảo + bài mẫu) và bài viết mẫu
-const speaking: SpeakingItem[] = [...IELTS_SPEAKING, ...TOEIC_S_READ, ...TOEIC_S_PICTURE, ...TOEIC_S_RESPOND.flat(), ...TOEIC_S_INFO.flat(), ...TOEIC_S_OPINION];
+const speaking: SpeakingItem[] = [...IELTS_SPEAKING, ...IELTS_TESTS.flatMap((t) => t.speaking), ...TOEIC_S_READ, ...TOEIC_S_PICTURE, ...TOEIC_S_RESPOND.flat(), ...TOEIC_S_INFO.flat(), ...TOEIC_S_OPINION];
 for (const s of speaking) {
   add(s.examiner ?? (s.part === 2 ? s.lines[0] : s.lines.join(' ')), 'exam');
   add(s.sample, 'exam');
 }
-const writing: WritingTask[] = [...IELTS_WRITING, ...TOEIC_W_EMAIL, ...TOEIC_W_OPINION];
+const writing: WritingTask[] = [...IELTS_WRITING, ...IELTS_TESTS.flatMap((t) => t.writing), ...TOEIC_W_EMAIL, ...TOEIC_W_OPINION];
 for (const w of writing) add(w.model, 'exam');
 
 // 7) Câu nghe thử giọng ở trang Cài đặt

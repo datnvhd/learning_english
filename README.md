@@ -35,7 +35,7 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | Dữ liệu | Vị trí | Dung lượng |
 |---|---|---|
 | ~3.600 từ vựng (10 chủ đề, có gắn trình độ CEFR A1–B2), đề IELTS & TOEIC, bài đọc, hội thoại, ngữ pháp | `src/app/data/**` (đóng gói trong mã ứng dụng) | ≈ 2 MB |
-| **Âm thanh tiếng Anh thu sẵn**: 7.791 tệp mp3 cho mọi từ, câu ví dụ, hội thoại (2 giọng), bài nghe luyện thi, bài mẫu | `public/assets/audio` | ≈ 125 MB |
+| **Âm thanh tiếng Anh thu sẵn**: 9.475 tệp mp3 cho mọi từ, câu ví dụ, hội thoại (2 giọng), bài nghe luyện thi, bài mẫu | `public/assets/audio` | ≈ 204 MB |
 | Ảnh từ vựng, ảnh đề thi TOEIC Part 1 | `public/assets/photos` | ≈ 2,7 MB |
 | Ảnh bìa, hình minh họa | `public/assets/art` | ≈ 1 MB |
 | Lời hướng dẫn tiếng Việt | `public/assets/voice` | ≈ 0,7 MB |
@@ -45,7 +45,7 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
   Chỉ khi một câu chưa có bản thu (nội dung mới thêm) mới dùng giọng đọc của thiết bị làm dự phòng.
   Thêm nội dung mới xong chạy `npm run build:audio` để tải phần còn thiếu; test `audio-key.spec.ts` sẽ báo nếu thiếu file.
 - **Dùng như ứng dụng cài đặt**: bản production có service worker (PWA). Vào *Settings › Quản lý dữ liệu offline* bấm
-  **Tải toàn bộ dữ liệu** để trình duyệt lưu hết ~8.000 tệp; sau đó app mở được kể cả khi tắt máy chủ và ngắt mạng.
+  **Tải toàn bộ dữ liệu** để trình duyệt lưu hết ~9.700 tệp; sau đó app mở được kể cả khi tắt máy chủ và ngắt mạng.
 - **Tiến độ học** lưu trong `localStorage` của trình duyệt; sao lưu/khôi phục bằng tệp JSON ở trang Settings.
 - Chỉ còn một tính năng tùy chọn cần mạng: nhận dạng giọng nói của trình duyệt khi luyện nói. Không có mạng, app tự chuyển
   sang ghi âm → nghe lại → tự đánh giá.
@@ -67,7 +67,7 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | IELTS, TOEIC | `/ielts`, `/toeic` | Banner, 4 kỹ năng / Part 1–7 / Speaking & Writing, lộ trình, đề gợi ý, điểm mạnh – yếu, chiến lược làm bài |
 | Từ vựng & Cụm từ | `/vocab`, `/word/:id` | Bảng từ có lọc – tìm – phân trang, bài học flashcard, yêu thích, ôn tập; trang chi tiết từ có bài tập vận dụng |
 | Practice | `/practice` | Luyện theo kỹ năng và chủ đề, kiểm tra, trò chơi từ vựng, ôn tập ngắt quãng, ngữ pháp |
-| Mock Test | `/mock` | Thi thử IELTS, TOEIC L&R, TOEIC S&W có đồng hồ; đề theo từng kỹ năng; yêu thích; kết quả gần đây |
+| Mock Test | `/mock` | **Bộ đề cố định: 20 đề IELTS + 20 đề TOEIC** (làm lại vẫn đúng đề đó); thi thử ngẫu nhiên IELTS, TOEIC L&R, TOEIC S&W có đồng hồ; đề theo từng kỹ năng; yêu thích; kết quả gần đây |
 | Làm bài | `/session/...` | Đầu trang có đồng hồ, dải số câu; bài đọc/bài nghe bên trái – câu hỏi bên phải; trang kết quả chi tiết |
 | Error Review | `/errors` | Mọi câu làm sai kèm đáp án, giải thích; lọc theo kỹ năng; từ hay sai; luyện lại |
 | Progress | `/progress` | Chuỗi ngày, thời gian học, XP, biểu đồ 7 ngày, lịch hoạt động 12 tuần, huy hiệu, lịch sử |
@@ -110,6 +110,12 @@ src/app/
 
 **Thêm từ vựng**: sửa file `.txt` trong `tools/vocab-src/` rồi chạy `npm run build:vocab` và `npm run build:audio`.
 **Thêm bài đọc/hội thoại**: thêm phần tử vào `data/reading.ts` / `data/dialogues.ts`, rồi `npm run build:audio`.
+**Bộ đề cố định** (`data/exam/tests/`): `ielts-01..05.ts` (20 đề, mỗi đề 2 phần Nghe + 1 bài Đọc + Writing Task 1, 2 + Speaking Part 1–3)
+và `toeic-01..10.ts` (20 đề Listening & Reading, 51 câu/đề). Nội dung do dự án tự biên soạn theo đúng dạng câu hỏi của đề thật,
+không sao chép đề có bản quyền của Cambridge/ETS. Đề viết ở dạng rút gọn (xem `helpers.ts`); danh mục hiển thị ở `catalog.ts`;
+dữ liệu đề chỉ được nạp khi mở đề (`ExamService.buildTest`). Thêm/sửa đề xong chạy `npm run build:audio` và `npm test`
+(`exam-tests.spec.ts` kiểm tra số câu, đáp án, số từ bài mẫu và độ phủ âm thanh).
+
 **Thêm đề thi**: thêm phần tử vào `data/exam/ielts.ts` hoặc các file `toeic*.ts` (đáp án đúng ghi đầu tiên, app tự xáo trộn),
 rồi `npm run build:audio`. Đề Part 1 / mô tả tranh dùng mã ảnh trong `data/photos.ts`.
 
