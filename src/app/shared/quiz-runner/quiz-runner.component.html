@@ -69,10 +69,11 @@
 
     <!-- Hội thoại của bài nghe: chỉ nghe, chữ hiện sau khi trả lời -->
     @if (q().dialogue; as d) {
-      <div class="dlg">
-        <button class="play" type="button" (click)="playMain()" aria-label="Nghe hội thoại"><app-icon name="player-play" /></button>
-        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <button class="btn btn-soft btn-sm" type="button" (click)="playMain()"><app-icon name="refresh" /> Nghe lại</button>
+      <div class="dlg" [class.on]="playing()">
+        <button class="play" type="button" (click)="togglePlay()" [attr.aria-label]="playing() ? 'Tạm dừng' : 'Nghe'"><app-icon [name]="playing() ? 'player-pause' : 'player-play'" /></button>
+        <div class="wave" [class.live]="playing()" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <button class="btn btn-soft btn-sm" type="button" [class.on]="slowOn()" [attr.aria-pressed]="slowOn()" (click)="toggleSlow()"><app-icon name="gauge" /> Chậm</button>
+        <button class="btn btn-soft btn-sm" type="button" (click)="playMain()" aria-label="Nghe lại từ đầu"><app-icon name="refresh" /> Nghe lại</button>
       </div>
       @if (!q().image) {
         <img class="qimg scene" src="assets/art/photo-office.jpg" alt="" />
@@ -91,10 +92,11 @@
 
     <!-- Câu chỉ cho nghe (ẩn chữ) hoặc đọc nối tiếp các lựa chọn (TOEIC Part 1–2) -->
     @if (!q().dialogue && ((q().audio && q().hideText) || q().audioParts)) {
-      <div class="dlg">
-        <button class="play" type="button" (click)="playMain()" aria-label="Nghe"><app-icon name="player-play" /></button>
-        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <button class="btn btn-soft btn-sm" type="button" (click)="playMain(true)"><app-icon name="gauge" /> Chậm</button>
+      <div class="dlg" [class.on]="playing()">
+        <button class="play" type="button" (click)="togglePlay()" [attr.aria-label]="playing() ? 'Tạm dừng' : 'Nghe'"><app-icon [name]="playing() ? 'player-pause' : 'player-play'" /></button>
+        <div class="wave" [class.live]="playing()" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <button class="btn btn-soft btn-sm" type="button" [class.on]="slowOn()" [attr.aria-pressed]="slowOn()" (click)="toggleSlow()"><app-icon name="gauge" /> Chậm</button>
+        <button class="btn btn-soft btn-sm" type="button" (click)="playMain()" aria-label="Nghe lại từ đầu"><app-icon name="refresh" /> Nghe lại</button>
       </div>
       @if (phase() === 'feedback' && !isTest() && q().audio && q().hideText) {
         <p class="reveal"><app-icon name="volume" /> “{{ q().audio }}”</p>
@@ -117,7 +119,7 @@
         }
         @if (q().audio && !q().hideText) {
           <div class="row snd">
-            <button class="icon-btn" type="button" (click)="playMain()" aria-label="Nghe"><app-icon name="volume" /></button>
+            <button class="icon-btn" type="button" (click)="playMain(false)" aria-label="Nghe"><app-icon name="volume" /></button>
             <button class="icon-btn" type="button" (click)="playMain(true)" aria-label="Nghe chậm"><app-icon name="gauge" /></button>
           </div>
         }
@@ -226,7 +228,7 @@
       <div class="speak">
         <div class="target">
           <span class="tt">{{ s.target }}</span>
-          <button class="icon-btn" type="button" (click)="playMain()" aria-label="Nghe mẫu"><app-icon name="volume" /></button>
+          <button class="icon-btn" type="button" (click)="playMain(false)" aria-label="Nghe mẫu"><app-icon name="volume" /></button>
           <button class="icon-btn" type="button" (click)="playMain(true)" aria-label="Nghe mẫu chậm"><app-icon name="gauge" /></button>
         </div>
         @if (s.focusSub) {

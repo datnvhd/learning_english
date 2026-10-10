@@ -35,7 +35,7 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | Dữ liệu | Vị trí | Dung lượng |
 |---|---|---|
 | ~3.600 từ vựng (10 chủ đề, có gắn trình độ CEFR A1–B2), đề IELTS & TOEIC, bài đọc, hội thoại, ngữ pháp | `src/app/data/**` (đóng gói trong mã ứng dụng) | ≈ 2 MB |
-| **Âm thanh tiếng Anh thu sẵn**: 9.475 tệp mp3 cho mọi từ, câu ví dụ, hội thoại (2 giọng), bài nghe luyện thi, bài mẫu | `public/assets/audio` | ≈ 204 MB |
+| **Âm thanh tiếng Anh thu sẵn**: 14.182 tệp mp3 cho mọi từ, câu ví dụ, hội thoại (2 giọng), bài nghe luyện thi, bài mẫu | `public/assets/audio` | ≈ 380 MB |
 | Ảnh từ vựng, ảnh đề thi TOEIC Part 1 | `public/assets/photos` | ≈ 2,7 MB |
 | Ảnh bìa, hình minh họa | `public/assets/art` | ≈ 1 MB |
 | Lời hướng dẫn tiếng Việt | `public/assets/voice` | ≈ 0,7 MB |
@@ -44,6 +44,9 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 - **Nghe phát âm**: `SpeechService` tìm file mp3 theo mã băm của câu (`core/audio-key.ts`) và phát file đó.
   Chỉ khi một câu chưa có bản thu (nội dung mới thêm) mới dùng giọng đọc của thiết bị làm dự phòng.
   Thêm nội dung mới xong chạy `npm run build:audio` để tải phần còn thiếu; test `audio-key.spec.ts` sẽ báo nếu thiếu file.
+- **Trình phát bài nghe** (màn làm bài): nút tròn là phát / tạm dừng / phát tiếp, **Chậm** bật–tắt tốc độ 0,7× (đổi ngay khi
+  đang nghe, áp dụng cho cả hội thoại), **Nghe lại** phát từ đầu. Các câu chung một bài nghe thì bài nghe chạy tiếp khi sang câu;
+  sang bài khác thì bài cũ tự dừng.
 - **Dùng như ứng dụng cài đặt**: bản production có service worker (PWA). Vào *Settings › Quản lý dữ liệu offline* bấm
   **Tải toàn bộ dữ liệu** để trình duyệt lưu hết ~9.700 tệp; sau đó app mở được kể cả khi tắt máy chủ và ngắt mạng.
 - **Tiến độ học** lưu trong `localStorage` của trình duyệt; sao lưu/khôi phục bằng tệp JSON ở trang Settings.
@@ -110,8 +113,10 @@ src/app/
 
 **Thêm từ vựng**: sửa file `.txt` trong `tools/vocab-src/` rồi chạy `npm run build:vocab` và `npm run build:audio`.
 **Thêm bài đọc/hội thoại**: thêm phần tử vào `data/reading.ts` / `data/dialogues.ts`, rồi `npm run build:audio`.
-**Bộ đề cố định** (`data/exam/tests/`): `ielts-01..05.ts` (20 đề, mỗi đề 2 phần Nghe + 1 bài Đọc + Writing Task 1, 2 + Speaking Part 1–3)
-và `toeic-01..10.ts` (20 đề Listening & Reading, 51 câu/đề). Nội dung do dự án tự biên soạn theo đúng dạng câu hỏi của đề thật,
+**Bộ đề cố định** (`data/exam/tests/`): 20 đề IELTS và 20 đề TOEIC, đều **đủ độ dài đề thật** – IELTS 4 phần Nghe (40 câu)
++ 3 bài Đọc (40 câu) + Writing Task 1, 2 + Speaking Part 1–3; TOEIC Listening & Reading 200 câu (Part 1–7: 6/25/39/30/30/16/54).
+Mỗi đề ghép từ phần gốc (`ielts-01..05.ts`, `toeic-01..10.ts`) và phần mở rộng trong `full/` (`ielts-NN.ts`, `toeic-NN-l.ts`,
+`toeic-NN-r.ts`), đăng ký ở `ielts-all.ts` / `toeic-all.ts`. Part 1 TOEIC dùng lại kho ảnh offline trong `data/photos.ts`. Nội dung do dự án tự biên soạn theo đúng dạng câu hỏi của đề thật,
 không sao chép đề có bản quyền của Cambridge/ETS. Đề viết ở dạng rút gọn (xem `helpers.ts`); danh mục hiển thị ở `catalog.ts`;
 dữ liệu đề chỉ được nạp khi mở đề (`ExamService.buildTest`). Thêm/sửa đề xong chạy `npm run build:audio` và `npm test`
 (`exam-tests.spec.ts` kiểm tra số câu, đáp án, số từ bài mẫu và độ phủ âm thanh).

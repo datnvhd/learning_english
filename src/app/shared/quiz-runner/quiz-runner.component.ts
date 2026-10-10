@@ -126,6 +126,8 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
 
   private readonly startedAt = Date.now();
   private audioEl: HTMLAudioElement | null = null;
+  /** Nguồn âm thanh của câu trước (để biết câu mới có chung bài nghe không) */
+  private audioSrc: unknown;
 
   // ---------------------------------------------------------------------
   //  DỮ LIỆU SUY DIỄN
@@ -230,6 +232,11 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
       const q = this.q();
       untracked(() => {
         this.resetInputs();
+        // Sang câu thuộc bài nghe khác (hoặc câu không có bài nghe): dừng bài đang phát.
+        // Các câu chung một bài nghe thì để bài nghe chạy tiếp như khi thi thật.
+        const src = q.dialogue ?? q.audioParts ?? q.audio ?? null;
+        if (this.audioSrc !== undefined && src !== this.audioSrc && this.speech.busy()) this.speech.cancel();
+        this.audioSrc = src;
         if (q.autoPlay) setTimeout(() => this.playMain(), 350);
       });
     });
@@ -297,13 +304,32 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
   //  ÂM THANH
   // ---------------------------------------------------------------------
 
-  /** Phát âm thanh chính của câu hỏi (hội thoại hoặc văn bản tiếng Anh) */
-  protected playMain(slow = false): void {
+  /** Nút "Chậm" của trình phát bài nghe đang bật hay không (giữ nguyên khi sang câu khác) */
+  protected readonly slowOn = signal(false);
+  /** Bài nghe đang phát (không tính lúc tạm dừng) -> đổi icon nút phát và cho sóng âm chuyển động */
+  protected readonly playing = computed(() => this.speech.busy() && !this.speech.paused());
+
+  /** Phát âm thanh chính của câu hỏi từ đầu (hội thoại hoặc văn bản tiếng Anh) */
+  protected playMain(slow = this.slowOn()): void {
     const q = this.q();
     if (q.audioParts) void this.speech.speakSequence(q.audioParts, { slow });
-    else if (q.dialogue) void this.speech.speakDialogue(q.dialogue.lines);
+    else if (q.dialogue) void this.speech.speakDialogue(q.dialogue.lines, { slow });
     else if (q.audio) void this.speech.speakEn(q.audio, { slow });
     else if (q.kind === 'speak') void this.speech.speakEn(q.target, { slow });
+  }
+
+  /** Nút phát của trình phát bài nghe: phát -> tạm dừng -> phát tiếp */
+  protected togglePlay(): void {
+    if (this.speech.paused()) this.speech.resume();
+    else if (this.speech.busy()) this.speech.pause();
+    else this.playMain();
+  }
+
+  /** Nút "Chậm": đang phát thì đổi tốc độ ngay, chưa phát thì bắt đầu phát ở tốc độ mới */
+  protected toggleSlow(): void {
+    this.slowOn.update((v) => !v);
+    if (this.speech.busy()) this.speech.setSlow(this.slowOn());
+    else this.playMain();
   }
 
   /** Đọc một đoạn văn tiếng Anh bất kỳ (bài đọc, đáp án...) */

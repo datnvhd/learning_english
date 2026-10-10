@@ -12,8 +12,8 @@ export const OFFLINE_PACK: OfflineGroup[] = [
   {
     "id": "audio",
     "label": "Âm thanh tiếng Anh (từ vựng, câu ví dụ, bài nghe)",
-    "files": 9475,
-    "bytes": 214215984
+    "files": 14182,
+    "bytes": 366307344
   },
   {
     "id": "photos",

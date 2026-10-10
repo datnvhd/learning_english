@@ -40,6 +40,16 @@ import { L as l14 } from './full/toeic-14-l';
 import { R as r14 } from './full/toeic-14-r';
 import { L as l15 } from './full/toeic-15-l';
 import { R as r15 } from './full/toeic-15-r';
+import { L as l16 } from './full/toeic-16-l';
+import { R as r16 } from './full/toeic-16-r';
+import { L as l17 } from './full/toeic-17-l';
+import { R as r17 } from './full/toeic-17-r';
+import { L as l18 } from './full/toeic-18-l';
+import { R as r18 } from './full/toeic-18-r';
+import { L as l19 } from './full/toeic-19-l';
+import { R as r19 } from './full/toeic-19-r';
+import { L as l20 } from './full/toeic-20-l';
+import { R as r20 } from './full/toeic-20-r';
 // <full-imports>
 
 /** Phần bổ sung để nâng đề lên 200 câu: số đề -> [phần Nghe, phần Đọc]. Nhớ tăng FULL_TESTS.toeic trong catalog.ts */
@@ -59,6 +69,11 @@ const FULL: Record<number, [RawToeicL, RawToeicR]> = {
   13: [l13, r13],
   14: [l14, r14],
   15: [l15, r15],
+  16: [l16, r16],
+  17: [l17, r17],
+  18: [l18, r18],
+  19: [l19, r19],
+  20: [l20, r20],
   // <full-map>
 };
 

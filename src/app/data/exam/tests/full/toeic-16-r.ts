@@ -7,7 +7,7 @@ export const R: RawToeicR = {
     ['The technician explained the process ____.', 'clearly', 'clear', 'clarity', 'clearer', 'Trạng từ bổ nghĩa cho "explained".'],
     ['The exhibition runs ____ the end of September.', 'until', 'by', 'at', 'on', '"runs until".'],
     ['Ms. Watanabe is a highly ____ engineer.', 'respected', 'respecting', 'respect', 'respectfully', 'Phân từ làm tính từ.'],
-    ['All visitors must report ____ the security desk.', 'to', 'at the', 'on', 'for', '"report to".'],
+    ['All visitors must report ____ the security desk.', 'to', 'onto', 'on', 'for', '"report to".'],
     ['The firm ____ a profit for the first time last year.', 'made', 'did', 'took', 'gave', '"make a profit".'],
     ['The new policy is ____ unpopular with staff.', 'understandably', 'understandable', 'understand', 'understanding', 'Trạng từ bổ nghĩa cho tính từ.'],
     ['The seminar is open to anyone ____ is interested.', 'who', 'whom', 'which', 'whose', 'Đại từ quan hệ làm chủ ngữ.'],
@@ -50,7 +50,7 @@ export const R: RawToeicR = {
         ['(1) ____', 'personally', 'personal', 'person', 'personality', 'Trạng từ bổ nghĩa cho "works".'],
         ['(2) ____', 'They are not simply consultants who have read about business.', 'Small businesses pay taxes.', 'Video calls need good internet.', 'Our logo is green.', 'Bổ sung cho ý các huấn luyện viên từng điều hành công ty.'],
         ['(3) ____', 'average', 'averaged', 'averaging', 'averagely', '"an average of".'],
-        ['(4) ____', 'what', 'that', 'which', 'how much of', '"see what we can do".'],
+        ['(4) ____', 'what', 'that', 'which', 'whom', '"see what we can do".'],
       ],
     },
     {
@@ -59,8 +59,8 @@ export const R: RawToeicR = {
       qs: [
         ['(1) ____', 'place', 'put on', 'set', 'lay', '"place an order".'],
         ['(2) ____', 'However, demand may increase before the holidays.', 'Olive oil is made from olives.', 'Our office is in the north.', 'Bottles are made of glass.', '"therefore need to know that you could supply up to 500".'],
-        ['(3) ____', 'payment', 'pay', 'paid', 'paying of', 'Danh từ ghép "payment terms".'],
-        ['(4) ____', 'signature', 'sign', 'signed', 'signing off', 'Sau "your" cần danh từ.'],
+        ['(3) ____', 'payment', 'pay', 'paid', 'payer', 'Danh từ ghép "payment terms".'],
+        ['(4) ____', 'signature', 'sign', 'signed', 'signs', 'Sau "your" cần danh từ.'],
       ],
     },
   ],

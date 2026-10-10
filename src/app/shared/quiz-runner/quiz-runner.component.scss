@@ -146,6 +146,15 @@
   box-shadow: var(--shadow-sm);
 }
 
+.dlg .btn {
+  flex: none;
+}
+
+.dlg .btn.on {
+  background: var(--primary);
+  color: var(--white);
+}
+
 .play:active {
   transform: translateY(2px);
   box-shadow: none;

@@ -16,7 +16,7 @@ export interface TestInfo {
  * Số đề đã được nâng lên ĐỘ DÀI ĐẦY ĐỦ như đề thật (các đề 1..n); những đề còn lại vẫn ở dạng rút gọn.
  * Tăng số này mỗi khi thêm phần bổ sung trong thư mục full/ (xem ielts-all.ts / toeic-all.ts).
  */
-export const FULL_TESTS: Record<ExamId, number> = { ielts: 20, toeic: 15 };
+export const FULL_TESTS: Record<ExamId, number> = { ielts: 20, toeic: 20 };
 
 type Format = { minutes: number; count: string; skills: string; desc: string };
 

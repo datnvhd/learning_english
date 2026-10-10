@@ -51416,6 +51416,2934 @@ var R14 = {
   ]
 };
 
+// src/app/data/exam/tests/full/toeic-15-l.ts
+var L15 = {
+  p2: [
+    ["Where do I collect my visitor badge?", "From the guard at the gate.", "For one day.", "It is blue.", "Where \u2192 v\u1ECB tr\xED."],
+    ["Who wrote the instructions for the new machine?", "The manufacturer did.", "In three languages.", "On page ten.", "Who \u2192 ng\u01B0\u1EDDi vi\u1EBFt."],
+    ["When is the lease on the copier due to end?", "In about six months.", "Fifty dollars a month.", "In the copy room.", "When \u2192 th\u1EDDi gian."],
+    ["How do I change the toner?", "There are instructions inside the cover.", "It is black.", "About once a month.", "How \u2192 c\xE1ch l\xE0m."],
+    ["Would you like to borrow my charger?", "Thanks, my battery is almost dead.", "I charged it.", "It is free of charge.", "L\u1EDDi \u0111\u1EC1 ngh\u1ECB \u2192 nh\u1EADn."],
+    ["Why is the staff room locked?", "It is being painted today.", "With a key.", "On the ground floor.", "Why \u2192 l\xFD do."],
+    ["Has the client replied to our offer?", "Not yet, but I expect an answer today.", "A special offer.", "I replied yesterday.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Which entrance is closest to the conference hall?", "The one on Park Street.", "About two hundred seats.", "At nine o'clock.", "Which \u2192 x\xE1c \u0111\u1ECBnh."],
+    ["You booked the hotel already, didn't you?", "Yes, for three nights.", "It is a nice hotel.", "A book about hotels.", "C\xE2u h\u1ECFi \u0111u\xF4i."],
+    ["Could you keep an eye on my bag for a minute?", "Sure, no problem.", "I have good eyes.", "It is a big bag.", "L\u1EDDi nh\u1EDD \u2192 \u0111\u1ED3ng \xFD."],
+    ["How much notice do I need to give?", "One month, according to the contract.", "I noticed it.", "On the notice board.", "How much notice \u2192 th\u1EDDi h\u1EA1n b\xE1o tr\u01B0\u1EDBc."],
+    ["The air conditioner is leaking water.", "I will put a bucket under it and call a technician.", "It is very cold.", "A glass of water.", "V\u1EA5n \u0111\u1EC1 \u2192 h\xE0nh \u0111\u1ED9ng."],
+    ["Shall we hold the meeting today or tomorrow?", "Tomorrow would give us more time to prepare.", "Yes, we shall.", "In the meeting room.", "C\xE2u h\u1ECFi l\u1EF1a ch\u1ECDn."],
+    ["Is there a bus to the exhibition center?", "Yes, the number twelve goes there.", "It is a large exhibition.", "I center it.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Why don't we ask the supplier for a discount?", "It is worth a try.", "Because it was cheap.", "They supplied it.", "L\u1EDDi g\u1EE3i \xFD \u2192 t\xE1n th\xE0nh."],
+    ["Whose signature is required on this form?", "The department manager's.", "At the bottom.", "In ink.", "Whose \u2192 ng\u01B0\u1EDDi k\xFD."],
+    ["I think I sent the email to the wrong person.", "Can you recall the message?", "It was a long email.", "The right person.", "V\u1EA5n \u0111\u1EC1 \u2192 g\u1EE3i \xFD."]
+  ],
+  p3: [
+    {
+      title: "A customer wants to extend a rental",
+      lines: [
+        "M: Hello, I rented a van from you yesterday, and I am supposed to return it at five today. Could I keep it until tomorrow?",
+        "W: Let me check. Yes, it is not booked tomorrow. It will be an extra sixty dollars.",
+        "M: That is fine. What time do I need to bring it back?",
+        "W: By noon. And please remember to fill the tank."
+      ],
+      qs: [
+        ["What does the man want to do?", "Keep a van for another day", "Return a van early", "Buy a van", "Rent a second van", "L\u1EDDi tho\u1EA1i."],
+        ["How much extra will he pay?", "$60", "$16", "$50", "Nothing", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman remind him to do?", "Fill the fuel tank", "Wash the van", "Bring his license", "Pay in cash", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A problem with a presentation file",
+      lines: [
+        "W: Mark, I cannot open the presentation you sent me. It says the file is damaged.",
+        "M: Strange. It works on my computer. I will send it again in a different format.",
+        "W: Thanks. The client arrives at eleven.",
+        "M: In case it still does not open, I will also put it on a memory stick and bring it to your office."
+      ],
+      qs: [
+        ["What is the problem?", "A file will not open.", "A computer is broken.", "A client is late.", "An email was lost.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man do first?", "Send the file in another format", "Call the client", "Repair the computer", "Cancel the meeting", "L\u1EDDi tho\u1EA1i."],
+        ["What else will the man bring?", "A memory stick", "A printed copy", "A laptop", "A projector", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A new member of staff",
+      lines: [
+        "M: Have you met Sofia, the new accountant?",
+        "W: Briefly. She seems very friendly. Where did she work before?",
+        "M: At a bank in Madrid for six years. She moved here last month.",
+        "W: We should invite her to lunch. How about Thursday?",
+        "M: Good idea. I will book the Spanish restaurant on Bridge Street so that she feels at home."
+      ],
+      qs: [
+        ["What is Sofia's job?", "Accountant", "Bank manager", "Receptionist", "Chef", "L\u1EDDi tho\u1EA1i."],
+        ["Where did she work before?", "At a bank in Madrid", "At a restaurant", "At a school", "At this company's other office", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man do?", "Book a restaurant", "Cook lunch", "Call Sofia", "Find her a flat", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A broken zipper",
+      lines: [
+        "W: I bought this suitcase here two months ago, and the zipper has already broken.",
+        "M: I am sorry about that. It has a two-year guarantee, so we can repair it or replace it.",
+        "W: I am flying to Rome on Saturday. How long would a repair take?",
+        "M: About a week. I think a replacement is better. We have the same model in gray or blue.",
+        "W: Blue, please."
+      ],
+      qs: [
+        ["What is wrong with the suitcase?", "The zipper is broken.", "A wheel is missing.", "It is too small.", "The handle is loose.", "L\u1EDDi tho\u1EA1i."],
+        ["Why is a repair not suitable?", "It would take too long.", "It is too expensive.", "The guarantee has ended.", "The shop cannot do repairs.", "C\xF4 bay th\u1EE9 B\u1EA3y; s\u1EEDa m\u1EA5t m\u1ED9t tu\u1EA7n."],
+        ["What color does the woman choose?", "Blue", "Gray", "Black", "Red", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A meeting about office space",
+      lines: [
+        "M: With the new hires, we will have twenty-two people in a room designed for sixteen.",
+        "W: I know. The room next door is used only for storage. Could we clear it out?",
+        "M: Most of those boxes are old files. We could send them to the archive.",
+        "W: Then we could put six desks in there. I will ask the facilities team for a quote."
+      ],
+      qs: [
+        ["What is the problem?", "The office is too small.", "There are too many boxes.", "The archive is full.", "New staff have not arrived.", "L\u1EDDi tho\u1EA1i."],
+        ["What is in the room next door?", "Old files", "Desks", "Computers", "Furniture", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Ask for a quote", "Move the boxes herself", "Hire more staff", "Buy desks today", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A customer at a mobile phone shop",
+      lines: [
+        "W: Hi, my phone screen cracked when I dropped it. Can you fix it?",
+        "M: Yes. A new screen for this model costs ninety dollars.",
+        "W: How long will it take?",
+        "M: About an hour. You can wait here or come back later.",
+        "W: I will go and have a coffee. Will I lose my photos?",
+        "M: No, everything on the phone will stay the same."
+      ],
+      qs: [
+        ["What happened to the phone?", "The screen cracked.", "It was stolen.", "The battery died.", "It fell in water.", "L\u1EDDi tho\u1EA1i."],
+        ["How long will the repair take?", "About an hour", "One day", "Ninety minutes", "A week", "L\u1EDDi tho\u1EA1i."],
+        ["What is the woman worried about?", "Losing her photos", "The price", "The color", "The warranty", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "Planning a staff survey",
+      lines: [
+        "M: The director wants to know how staff feel about working from home.",
+        "W: We could send out a short online survey. Five questions at most.",
+        "M: Should it be anonymous?",
+        "W: Definitely. People will be more honest.",
+        "M: I agree. Could you draft the questions by Wednesday? I would like to send it on Friday."
+      ],
+      qs: [
+        ["What is the survey about?", "Working from home", "Office furniture", "Salaries", "The cafeteria", "L\u1EDDi tho\u1EA1i."],
+        ["Why should it be anonymous?", "People will answer more honestly.", "It is required by law.", "It is faster.", "The director asked for it.", "L\u1EDDi tho\u1EA1i."],
+        ["When will the survey be sent?", "On Friday", "On Wednesday", "Today", "Next month", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A late guest speaker",
+      lines: [
+        "W: Professor Kent has just phoned. His train is delayed, and he will be forty minutes late.",
+        "M: His talk is supposed to open the seminar at nine.",
+        "W: Could we swap him with the second speaker?",
+        "M: Ms. Li is already here. I will ask her.",
+        "W: And I will change the program on the screen in the lobby."
+      ],
+      qs: [
+        ["Why is Professor Kent late?", "His train is delayed.", "He overslept.", "His car broke down.", "He is unwell.", "L\u1EDDi tho\u1EA1i."],
+        ["What do the speakers decide to do?", "Change the order of the talks", "Cancel the seminar", "Start forty minutes late", "Find a new speaker", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman change?", "The program on a screen", "The room", "The date", "The lunch time", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Ordering lunch for a meeting",
+      lines: [
+        "M: Could you order lunch for the board meeting tomorrow? Eight people.",
+        "W: Sure. From the usual sandwich shop?",
+        "M: Yes, but one of the directors cannot eat bread. Could you add a salad?",
+        "W: Of course. What time should it arrive?",
+        "M: Twelve fifteen, in the boardroom. Charge it to the management account."
+      ],
+      qs: [
+        ["What is the lunch for?", "A board meeting", "A client visit", "A training day", "A birthday", "L\u1EDDi tho\u1EA1i."],
+        ["Why does the man ask for a salad?", "One director cannot eat bread.", "It is cheaper.", "The shop has no sandwiches.", "It is healthier for everyone.", "L\u1EDDi tho\u1EA1i."],
+        ["When should the food arrive?", "At 12:15", "At 12:50", "At noon", "At 1:15", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A question about a pay slip",
+      lines: [
+        'W: Hello, I have a question about my pay slip. There is a deduction called "pension" that I have not seen before.',
+        "M: Yes, all employees are now enrolled in the company pension plan after six months of service.",
+        "W: I did not realize. How much is it?",
+        "M: Three percent of your salary, and the company adds another five.",
+        "W: That sounds like a good deal. Can I pay in more?",
+        "M: Yes. I will email you the form."
+      ],
+      qs: [
+        ["What is the woman asking about?", "A deduction on her pay slip", "A pay rise", "A late payment", "Her tax number", "L\u1EDDi tho\u1EA1i."],
+        ["How much does the company add?", "Five percent", "Three percent", "Six percent", "Eight percent", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man send?", "A form", "A new pay slip", "A contract", "A refund", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Choosing an advertising option",
+      lines: [
+        "W: We have fifteen hundred dollars to advertise the summer sale. Here are the newspaper's options.",
+        "M: We want as many readers as possible to see it.",
+        "W: The front page is over our budget.",
+        "M: Then let us take the option with the most readers that we can afford.",
+        "W: I will book it today."
+      ],
+      graphic: ["Newspaper advertising", "Option | Readers | Price\nFront page | 200,000 | $2,400\nPage 3 | 150,000 | $1,400\nBusiness section | 60,000 | $900\nClassified | 30,000 | $300"],
+      qs: [
+        ["What are the speakers advertising?", "A summer sale", "A job", "A new store", "A newspaper", "L\u1EDDi tho\u1EA1i."],
+        ["What is their budget?", "$1,500", "$2,400", "$900", "$300", "L\u1EDDi tho\u1EA1i."],
+        ["Look at the graphic. Which option will they book?", "Page 3", "Front page", "Business section", "Classified", "Nhi\u1EC1u \u0111\u1ED9c gi\u1EA3 nh\u1EA5t trong ng\xE2n s\xE1ch: Page 3 ($1,400)."]
+      ]
+    }
+  ],
+  p4: [
+    {
+      title: "Announcement at a railway station",
+      lines: [
+        "M: This is a platform announcement. The fourteen twenty service to Glasgow is delayed by approximately twenty-five minutes because of a fault with the train.",
+        "M: Passengers may use their tickets on the fourteen forty-five service from platform eight.",
+        "M: We apologize for the delay. Refreshments are available in the waiting room."
+      ],
+      qs: [
+        ["Why is the train delayed?", "There is a fault with the train.", "The weather is bad.", "The driver is late.", "The track is closed.", "Th\xF4ng b\xE1o."],
+        ["What may passengers do?", "Take a later train with the same ticket", "Get a refund immediately", "Board at platform four", "Travel by bus", "Th\xF4ng b\xE1o."],
+        ["Where are refreshments available?", "In the waiting room", "On the platform", "On the train", "At the ticket office", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Voicemail from a customer",
+      lines: [
+        "W: Hello, this is Julia Marsh from Marsh Dental. I ordered two dentist's chairs from you last month.",
+        "W: They were delivered this morning, but one of them has a torn seat. The other is perfect.",
+        "W: I have taken photographs and emailed them to you. Could you arrange a replacement as soon as possible? We open our new clinic on the first of next month."
+      ],
+      qs: [
+        ["What did the speaker order?", "Dentist's chairs", "Office desks", "Cameras", "Computers", "L\u1EDDi nh\u1EAFn."],
+        ["What is the problem?", "One chair is damaged.", "Both chairs are missing.", "The wrong color was sent.", "The delivery was late.", "L\u1EDDi nh\u1EAFn."],
+        ["What has the speaker sent by email?", "Photographs", "An invoice", "A complaint form", "A new order", "L\u1EDDi nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Advertisement for a garden center",
+      lines: [
+        "M: Spring is here, and Greenacres Garden Center has everything you need for a beautiful garden.",
+        "M: This weekend, all fruit trees are two for the price of one, and our experts will give free advice on planting. Children can plant a sunflower seed to take home.",
+        "M: We are open from nine to six, with a caf\xE9 serving homemade cakes. Greenacres, on the Old Mill Road."
+      ],
+      qs: [
+        ["What is the offer on fruit trees?", "Two for the price of one", "Half price", "A free tree", "Ten percent off", "Qu\u1EA3ng c\xE1o."],
+        ["What can children do?", "Plant a seed", "Feed animals", "Paint pots", "Ride a train", "Qu\u1EA3ng c\xE1o."],
+        ["What does the caf\xE9 serve?", "Homemade cakes", "Hot meals only", "Fruit", "Nothing on weekends", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Talk to hotel staff",
+      lines: [
+        "W: Good morning, everyone. Tomorrow we welcome two hundred guests for the international medical conference.",
+        "W: Many of them will arrive after long flights, so please be patient and helpful. The front desk will have three extra staff from four p.m.",
+        "W: Housekeeping, please make sure every room has a welcome letter and a bottle of water. And remember, breakfast will start half an hour earlier, at six, for the whole week."
+      ],
+      qs: [
+        ["Why will the hotel be busy tomorrow?", "A conference is starting.", "A wedding is being held.", "It is a public holiday.", "A tour group is leaving.", "L\u1EDDi n\xF3i."],
+        ["What should housekeeping put in every room?", "A welcome letter and water", "Flowers", "A map", "Extra towels", "L\u1EDDi n\xF3i."],
+        ["What will change about breakfast?", "It will start earlier.", "It will be served in rooms.", "It will cost more.", "It will end at six.", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Recorded message for a delivery company",
+      lines: [
+        "M: Thank you for calling SwiftShip. If you are expecting a delivery today, you can follow it on our website using your tracking number.",
+        "M: Because of heavy snow in the north of the country, deliveries to that region may be delayed by up to two days.",
+        "M: To change your delivery date or address, press one. To speak to an agent, press two."
+      ],
+      qs: [
+        ["How can customers follow a delivery?", "On the website", "By pressing one", "By visiting a depot", "By text message only", "Th\xF4ng b\xE1o."],
+        ["Why may some deliveries be late?", "Because of snow", "Because of a strike", "Because of a holiday", "Because of a computer fault", "Th\xF4ng b\xE1o."],
+        ["Why would a caller press one?", "To change a delivery date or address", "To speak to an agent", "To make a complaint", "To pay a bill", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Excerpt from a meeting about a product recall",
+      lines: [
+        "W: As you may know, we have found a fault in the charger for our model X2 speaker. It can become too hot.",
+        "W: Nobody has been hurt, but we are recalling all chargers sold since March. Customers will receive a new one free of charge.",
+        "W: The customer service team should expect a lot of calls this week. I have prepared a list of answers to the most common questions, which you will find in your email."
+      ],
+      qs: [
+        ["What is wrong with the charger?", "It can overheat.", "It is too slow.", "It is the wrong size.", "It makes a noise.", "L\u1EDDi n\xF3i."],
+        ["What will customers receive?", "A free replacement", "A refund", "A new speaker", "A discount", "L\u1EDDi n\xF3i."],
+        ["What has the speaker prepared?", "A list of answers", "A new design", "A press advertisement", "A training video", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "News report on a local business",
+      lines: [
+        "M: A family bakery in the old town has become an unexpected success online.",
+        "M: Three months ago, the owner's daughter began posting short videos of her father making bread. The videos have now been watched more than ten million times.",
+        "M: The bakery has hired four new employees and now ships its bread across the country. The family plans to open a second shop in the capital next year."
+      ],
+      qs: [
+        ["How did the bakery become well known?", "Through online videos", "Through a television show", "Through a newspaper article", "Through a competition", "B\u1EA3n tin."],
+        ["Who makes the videos?", "The owner's daughter", "The owner", "A customer", "A journalist", "B\u1EA3n tin."],
+        ["What does the family plan to do next year?", "Open a second shop", "Sell the bakery", "Stop shipping bread", "Move abroad", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Message about a team schedule",
+      lines: [
+        "W: Hi, team. This is Rosa with next week's on-call schedule.",
+        "W: There is one change. The person who was on call on the day with the system update has swapped with the person on Friday, because he will be on vacation. The system update is on Tuesday.",
+        "W: Everyone else stays the same. Please keep your phones on."
+      ],
+      graphic: ["On-call schedule \u2013 original", "Day | Engineer\nMonday | Anna\nTuesday | Ben\nWednesday | Chloe\nThursday | Dev\nFriday | Emil"],
+      qs: [
+        ["What is the message about?", "An on-call schedule", "A vacation policy", "A new system", "A team lunch", "L\u1EDDi nh\u1EAFn."],
+        ["Look at the graphic. Who will now be on call on Tuesday?", "Emil", "Ben", "Anna", "Dev", "Ben (th\u1EE9 Ba) \u0111\u1ED5i v\u1EDBi Emil (th\u1EE9 S\xE1u)."],
+        ["What are listeners asked to do?", "Keep their phones on", "Come in early", "Update the system", "Email Rosa", "C\xE2u cu\u1ED1i."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-15-r.ts
+var R15 = {
+  p5: [
+    ["The team will ____ the project by the end of May.", "complete", "completion", "completed", "completely", 'Sau "will" l\xE0 V nguy\xEAn m\u1EABu.'],
+    ["Mr. Ward handled the difficult customer very ____.", "skillfully", "skillful", "skill", "skilled", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "handled".'],
+    ["The price list is available ____ request.", "on", "in", "at", "for", '"on request".'],
+    ["The new offices are ____ and well lit.", "spacious", "space", "spaciously", "spaces", 'T\xEDnh t\u1EEB song song v\u1EDBi "well lit".'],
+    ["Please confirm your attendance ____ replying to this email.", "by", "with", "from", "to", '"by + V-ing".'],
+    ["The manager ____ the staff to share their ideas.", "encouraged", "encouraging", "encouragement", "encourage", "\u0110\u1ED9ng t\u1EEB qu\xE1 kh\u1EE9."],
+    ["The hotel is located ____ the city center.", "near", "nearly", "nearness", "next", '"near the city center".'],
+    ["The company has ____ announced a new partnership.", "recently", "recent", "recency", "more recent", 'Tr\u1EA1ng t\u1EEB gi\u1EEFa "has" v\xE0 V3.'],
+    ["Customers ____ order before noon receive same-day delivery.", "who", "whose", "which", "whom", "\u0110\u1EA1i t\u1EEB quan h\u1EC7 ch\u1EC9 ng\u01B0\u1EDDi l\xE0m ch\u1EE7 ng\u1EEF."],
+    ["The store is having a ____ sale this weekend.", "clearance", "clear", "clearly", "cleared", 'Danh t\u1EEB gh\xE9p "clearance sale".'],
+    ["The instructions were ____ to follow.", "easy", "easily", "ease", "easiness", 'Sau "were" c\u1EA7n t\xEDnh t\u1EEB.'],
+    ["The schedule may change ____ short notice.", "at", "in", "of", "by", '"at short notice".'],
+    ["The firm ____ more than two hundred people.", "employs", "employ", "employing", "employment", "Ch\u1EE7 ng\u1EEF s\u1ED1 \xEDt, hi\u1EC7n t\u1EA1i \u0111\u01A1n."],
+    ["The product is ____ popular among young professionals.", "especially", "especial", "special", "specialty", "Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho t\xEDnh t\u1EEB."],
+    ["We will contact you ____ a decision has been made.", "as soon as", "as well as", "as far as", "as long", '"as soon as".'],
+    ["One of the printers ____ out of order.", "is", "are", "were", "have been", '"One of + danh t\u1EEB s\u1ED1 nhi\u1EC1u" + \u0111\u1ED9ng t\u1EEB s\u1ED1 \xEDt.'],
+    ["Should you ____ any assistance, please call the front desk.", "require", "required", "requiring", "requires", '\u0110\u1EA3o ng\u1EEF \u0111i\u1EC1u ki\u1EC7n v\u1EDBi "Should".'],
+    ["No sooner had the sale begun ____ the most popular items sold out.", "than", "when", "that", "then", '"No sooner ... than".']
+  ],
+  p6: [
+    {
+      title: "Email: Product launch invitation",
+      text: "Dear Partner,\n\nWe are (1)____ to invite you to the launch of our new range of electric bicycles on Wednesday, April 23, at 6:00 p.m.\n\nThe event will be held at our showroom on River Road. (2)____. You will also have the chance to try the bicycles on a short test track.\n\nRefreshments will be served. Please (3)____ your attendance by April 16, as places are limited. We look forward to (4)____ you.\n\nVolta Cycles",
+      qs: [
+        ["(1) ____", "delighted", "delighting", "delight", "delightful", "Ng\u01B0\u1EDDi c\u1EA3m th\u1EA5y \u2192 -ed."],
+        ["(2) ____", "Our chief designer will give a short presentation at 6:30.", "River Road is very long.", "Bicycles have two wheels.", "April is in the spring.", 'C\xE2u sau c\xF3 "also".'],
+        ["(3) ____", "confirm", "confirming", "confirmed", "confirmation", "C\xE2u m\u1EC7nh l\u1EC7nh."],
+        ["(4) ____", "seeing", "see", "saw", "seen", '"look forward to + V-ing".']
+      ]
+    },
+    {
+      title: "Notice: Kitchen renovation",
+      text: "STAFF KITCHEN CLOSED\n\nThe staff kitchen on the second floor will be closed for renovation from Monday, March 10, (1)____ Friday, March 21.\n\nDuring this period, you may use the kitchen on the fourth floor. (2)____. Please therefore be patient at lunchtime.\n\nAll food must be (3)____ from the second-floor refrigerator by Friday, March 7. Anything left will be thrown away. The new kitchen will have twice as much seating and two (4)____ microwaves.",
+      qs: [
+        ["(1) ____", "until", "by", "at", "since", '"from ... until ...".'],
+        ["(2) ____", "It is smaller and will be busier than usual.", "The fourth floor has a nice view.", "Lunch is at noon.", "Refrigerators keep food cold.", '"therefore be patient".'],
+        ["(3) ____", "removed", "removing", "remove", "removal", "B\u1ECB \u0111\u1ED9ng: must be removed."],
+        ["(4) ____", "extra", "extras", "extremely", "exceed", "T\xEDnh t\u1EEB tr\u01B0\u1EDBc danh t\u1EEB."]
+      ]
+    },
+    {
+      title: "Advertisement: Recruitment agency",
+      text: "LOOKING FOR YOUR NEXT JOB?\n\nAt CareerLink, we have been matching people with employers for more than twenty-five years. We work with over 400 companies in (1)____ industry.\n\nRegistering takes ten minutes. (2)____. Our advisers will then contact you when a suitable position becomes available.\n\nOur service is completely free for job seekers. We also offer (3)____ on writing a r\xE9sum\xE9 and preparing for interviews. Visit careerlink.example and take the first step (4)____ a new career.",
+      qs: [
+        ["(1) ____", "every", "all", "both", "several", '"every + danh t\u1EEB s\u1ED1 \xEDt".'],
+        ["(2) ____", "Simply upload your r\xE9sum\xE9 and tell us what kind of work you want.", "Industries change over time.", "Ten minutes is not long.", "Our office has two floors.", 'C\xE2u sau: "Our advisers will then contact you".'],
+        ["(3) ____", "advice", "advise", "advised", "advisers", 'Danh t\u1EEB kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c "advice".'],
+        ["(4) ____", "toward", "among", "against", "during", '"a step toward".']
+      ]
+    },
+    {
+      title: "Letter: Warranty extension",
+      text: "Dear Mr. Lindqvist,\n\nThe two-year warranty on your washing machine will end on August 31. For just $59, you can (1)____ it for a further three years.\n\nWith an extended warranty, all repairs are free, including parts and labor. (2)____. There is no limit on the number of repairs.\n\nTo take up this offer, (3)____ the form below or call us before the current warranty ends. After that date, the offer will no longer be (4)____.\n\nYours sincerely,\nHomeTech Customer Care",
+      qs: [
+        ["(1) ____", "extend", "extent", "extensive", "extension", 'Sau "can" l\xE0 V nguy\xEAn m\u1EABu.'],
+        ["(2) ____", "If the machine cannot be repaired, we will replace it.", "Washing machines use water.", "August is a summer month.", "Our factory is in Sweden.", "B\u1ED5 sung quy\u1EC1n l\u1EE3i b\u1EA3o h\xE0nh."],
+        ["(3) ____", "return", "returning", "returned", "returns", "C\xE2u m\u1EC7nh l\u1EC7nh."],
+        ["(4) ____", "available", "capable", "probable", "valuable", '"no longer be available".']
+      ]
+    }
+  ],
+  p7: [
+    {
+      title: "Sign: Staff room",
+      text: "PLEASE HELP KEEP THIS ROOM TIDY\n\n\u2022 Wash your own cups.\n\u2022 Wipe the table after eating.\n\u2022 Put newspapers back on the shelf.\n\nThe cleaners come only once a day, at 6 p.m.",
+      qs: [
+        ["What are staff asked to do with cups?", "Wash them", "Throw them away", "Leave them in the sink", "Take them home", "Bi\u1EC3n b\xE1o."],
+        ["When do the cleaners come?", "At 6 p.m.", "At noon", "Twice a day", "At 8 a.m.", "Bi\u1EC3n b\xE1o."]
+      ]
+    },
+    {
+      title: "Text message",
+      text: "From: QuickPark\n\nYour parking session at Station Car Park ends in 15 minutes (at 4:30 p.m.). To extend by one hour for $2.50, reply EXTEND. Vehicles left after the paid time may be fined $35.",
+      qs: [
+        ["When does the parking session end?", "At 4:30 p.m.", "At 4:15 p.m.", "In one hour", "At 5:30 p.m.", "Tin nh\u1EAFn."],
+        ["How can the driver get more time?", "By replying EXTEND", "By calling an office", "By visiting a machine", "By paying $35", "Tin nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Email: Welcome to a new client",
+      text: "To: David Park, Park & Sons\nFrom: Elise Martin, Coastal Accounting\nSubject: Welcome\n\nDear Mr. Park,\n\nThank you for choosing Coastal Accounting. I will be your main contact and will prepare your monthly accounts.\n\nTo get started, I need copies of your bank statements for the past twelve months and a list of your employees. You can upload these securely through the link below.\n\nI suggest that we meet at your office next week so that I can learn more about your business. Would Tuesday at 10:00 suit you?",
+      qs: [
+        ["What is Ms. Martin's role?", "She will prepare the monthly accounts.", "She is the company director.", "She sells software.", "She is a bank manager.", "Email."],
+        ["What does she need from Mr. Park?", "Bank statements and an employee list", "A contract and a deposit", "Tax forms from last year only", "A list of customers", "Email."],
+        ["What does she suggest?", "A meeting at his office", "A telephone call", "A visit to her office", "A video conference", "Email."]
+      ]
+    },
+    {
+      title: "Advertisement: Mobile car wash",
+      text: "SHINE ON WHEELS \u2013 We come to you!\n\nHave your car washed while you work. Our van carries its own water and power, so we can clean your car in any office car park.\n\nOutside wash: $20 \xB7 Inside and outside: $35 \xB7 Full valet with polish: $60\n\nBook online by 5 p.m. for the next day. Companies that book ten or more cars on the same day receive 15% off.",
+      qs: [
+        ["What is special about this service?", "It comes to the customer.", "It is open 24 hours.", "It uses no water.", "It is free for companies.", "Qu\u1EA3ng c\xE1o."],
+        ["How much is an inside and outside wash?", "$35", "$20", "$60", "$15", "Qu\u1EA3ng c\xE1o."],
+        ["How can a company get a discount?", "By booking ten or more cars on one day", "By paying monthly", "By booking before noon", "By choosing the full valet", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Memo: Dress code reminder",
+      text: "MEMO\nTo: All front-of-house staff\nFrom: Hotel Manager\n\nWith the summer season starting, please remember our dress code:\n\n\u2022 Uniform shirts must be clean and ironed.\n\u2022 Name badges are worn on the left side.\n\u2022 Shoes must be black and closed.\n\u2022 Strong perfume should be avoided.\n\nSpare shirts are available from housekeeping. Staff who arrive without the correct uniform may be sent home to change.",
+      qs: [
+        ["Who is the memo for?", "Front-of-house staff", "Kitchen staff", "Guests", "Suppliers", "Th\xF4ng b\xE1o."],
+        ["Where should name badges be worn?", "On the left side", "On the right side", "On the collar", "On the belt", "Th\xF4ng b\xE1o."],
+        ["Where can staff get a spare shirt?", "From housekeeping", "From reception", "From the manager", "From a shop", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Information: Returns label",
+      text: "HOW TO RETURN YOUR ORDER\n\n1. Pack the item in its original box.\n2. Stick the prepaid label on the outside.\n3. Take it to any post office within 30 days of delivery.\n\nYour refund will be made within 7 days of our receiving the item. Items that have been used or washed cannot be refunded. Keep your post office receipt until the refund arrives.",
+      qs: [
+        ["How long do customers have to return an item?", "30 days", "7 days", "14 days", "One year", "H\u01B0\u1EDBng d\u1EABn."],
+        ["What cannot be refunded?", "Used or washed items", "Items in the original box", "Items sent by post", "Items paid by card", "H\u01B0\u1EDBng d\u1EABn."],
+        ["What should customers keep?", "The post office receipt", "The label", "The box", "The invoice only", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Article: Town introduces free Wi-Fi",
+      text: 'Residents and visitors can now use free wireless internet throughout the center of Milbrook. \u2014 [1] \u2014 The service, which was switched on last Friday, covers the main square, the high street, and the riverside park.\n\nThe $180,000 project was paid for by the town council and local businesses. \u2014 [2] \u2014 Users must register with an email address and may stay connected for two hours at a time.\n\nShop owners hope the service will bring more people into town. \u2014 [3] \u2014 "Visitors can look up our opening hours or find a restaurant," said caf\xE9 owner Lena Brandt. \u2014 [4] \u2014 The council plans to extend the network to the railway station next year.',
+      qs: [
+        ["Where is the free Wi-Fi available?", "In the town center", "Only in the library", "In the whole county", "At the railway station", "\u0110o\u1EA1n 1."],
+        ["Who paid for the project?", "The council and local businesses", "The national government", "A telephone company", "Visitors", "\u0110o\u1EA1n 2."],
+        ["What must users do?", "Register with an email address", "Pay a small fee", "Buy a drink in a caf\xE9", "Download an app", "\u0110o\u1EA1n 2."],
+        ['In which position does this sentence best belong? "It was installed over a period of three months."', "[2]", "[1]", "[3]", "[4]", "N\u1ED1i v\u1EDBi c\xE2u n\xF3i v\u1EC1 d\u1EF1 \xE1n v\xE0 chi ph\xED."]
+      ]
+    },
+    {
+      title: "Email and price list",
+      text: "To: Stellar Trophies\nFrom: Nadia Okoye, Lakeside Tennis Club\nSubject: Trophies for tournament\n\nOur annual tournament is on June 21, and we need six trophies with the winners' names engraved. We will only know the names on the day, so could you engrave them afterwards? Our budget is $200 in total.\n\n--------------------\nSTELLAR TROPHIES \u2013 Price list\nSmall cup (15 cm): $18 \xB7 Medium cup (25 cm): $28 \xB7 Large cup (35 cm): $45\nEngraving: $4 per trophy (free on orders of 10 or more)\nEngraving after purchase: bring the trophy to our shop; ready in 2 days.",
+      qs: [
+        ["How many trophies does the club need?", "Six", "Ten", "Two", "Twenty-one", "Email."],
+        ["Why must the engraving be done after the tournament?", "The winners' names are not yet known.", "The trophies are not ready.", "The shop is closed in June.", "It is cheaper.", "Email."],
+        ["How much would six medium cups with engraving cost?", "$192", "$168", "$200", "$132", "6 \xD7 ($28 + $4)."],
+        ["Could the club afford six large cups within its budget?", "No, they would cost $270 before engraving.", "Yes, exactly.", "Yes, with money left.", "It is not stated.", "6 \xD7 $45 = $270 > $200."],
+        ["How long does engraving after purchase take?", "2 days", "10 days", "One week", "The same day", "B\u1EA3ng gi\xE1."]
+      ]
+    },
+    {
+      title: "Notice and email",
+      text: "EASTSIDE BUSINESS CENTRE \u2013 Fire safety notice\nA full evacuation drill will take place on Thursday, October 9, at 10:30 a.m. All occupants must leave by the nearest exit and gather in the car park on Mill Road. Each company must appoint one person to check that its offices are empty and to report to the building manager. The drill will last about 20 minutes.\n\n--------------------\nTo: Building Manager\nFrom: Olivia Grant, Grant Translations\n\nWe have an important video interview with a client in Tokyo at 10:30 on October 9, which cannot be moved. Is it possible for two of our staff to stay in the office during the drill?",
+      qs: [
+        ["When will the drill take place?", "On October 9 at 10:30 a.m.", "On October 9 at 10:50 a.m.", "On October 10", "Every Thursday", "Th\xF4ng b\xE1o."],
+        ["Where must people gather?", "In the car park on Mill Road", "In the lobby", "On the roof", "At the main gate", "Th\xF4ng b\xE1o."],
+        ["What must each company appoint?", "A person to check its offices", "A fire officer from outside", "A new manager", "A driver", "Th\xF4ng b\xE1o."],
+        ["Why does Ms. Grant write?", "Her company has a meeting at the same time.", "She will be on holiday.", "Her office has no exit.", "She did not receive the notice.", "Email."],
+        ["What does she request?", "That two staff may remain inside", "That the drill be canceled", "That the client be invited", "That the car park be closed", "Email."]
+      ]
+    },
+    {
+      title: "Web page, email, and reply",
+      text: "HARBORVIEW SUITES \u2013 Long-stay rates\n1\u20136 nights: $110 per night \xB7 7\u201329 nights: $90 per night \xB7 30 nights or more: $70 per night\nAll suites have a kitchen and a washing machine. Weekly cleaning is included; daily cleaning costs $10 per day.\n\n--------------------\nTo: Harborview Suites\nFrom: Simon Keller\n\nI will be working in your city for five weeks from March 2 and would like a suite for the whole period (35 nights). I do not need daily cleaning. Could you confirm the price?\n\n--------------------\nTo: Simon Keller\nFrom: Harborview Suites\n\nWe would be pleased to welcome you. For 35 nights, the total will be $2,450. A deposit of one week's rent is required to confirm the booking.",
+      qs: [
+        ["What do all suites have?", "A kitchen and a washing machine", "A sea view", "Daily cleaning", "Two bedrooms", "Trang web."],
+        ["Which nightly rate applies to Mr. Keller?", "$70", "$90", "$110", "$10", "35 \u0111\xEAm \u2265 30."],
+        ["How was the total of $2,450 calculated?", "35 nights at $70", "35 nights at $90", "5 weeks at $110 a week", "30 nights at $70 plus cleaning", "35 \xD7 $70."],
+        ["What service does Mr. Keller decline?", "Daily cleaning", "Weekly cleaning", "The kitchen", "The deposit", "Email."],
+        ["How much is the deposit?", "$490", "$70", "$245", "$2,450", "M\u1ED9t tu\u1EA7n: 7 \xD7 $70."]
+      ]
+    },
+    {
+      title: "Advertisement, form, and email",
+      text: "BRIGHT MINDS TUTORING \u2013 Maths and English for ages 8\u201316\nGroup lesson (max. 4 students): $25 per hour \xB7 Individual lesson: $45 per hour\nFree first assessment. Lessons Monday\u2013Friday 4\u20138 p.m. and Saturday 9 a.m.\u20131 p.m. Pay for ten lessons and get one free.\n\n--------------------\nENROLMENT FORM\nParent: Helen Brooks   Child: Oliver (13)\nSubject: Maths   Type: Individual\nPreferred time: Saturday morning\n\n--------------------\nTo: Helen Brooks\nFrom: Bright Minds Tutoring\n\nThank you for enrolling Oliver. His free assessment is on Saturday, May 3, at 9:00. After that, his regular lesson will be at 10:00 every Saturday with Mr. Shah. If you pay for ten lessons now, the total is $450.",
+      qs: [
+        ["What ages does the centre teach?", "8 to 16", "4 to 8", "13 to 18", "Adults only", "Qu\u1EA3ng c\xE1o."],
+        ["What kind of lessons will Oliver have?", "Individual maths lessons", "Group maths lessons", "Individual English lessons", "Group English lessons", "Phi\u1EBFu."],
+        ["What happens on May 3?", "A free assessment", "The first paid lesson", "A group class", "A parents' meeting", "Email."],
+        ["How many lessons will Mrs. Brooks get for $450?", "Eleven", "Ten", "Nine", "Twelve", "Tr\u1EA3 m\u01B0\u1EDDi bu\u1ED5i, t\u1EB7ng m\u1ED9t."],
+        ["Who will teach Oliver?", "Mr. Shah", "Mrs. Brooks", "A group tutor", "It is not stated", "Email."]
+      ]
+    },
+    {
+      title: "Schedule, notice, and email",
+      text: "GREENFIELD COMMUNITY POOL \u2013 Weekly timetable\nLane swimming: Mon.\u2013Fri. 6:30\u20138:30 a.m. and 12:00\u20131:30 p.m.\nFamily swim: Sat. and Sun. 10:00 a.m.\u20131:00 p.m.\nAdult lessons: Tue. and Thu. 7:00\u20138:00 p.m.\nAqua fitness: Wed. 6:00\u20137:00 p.m.\n\n--------------------\nNOTICE: The pool will be closed all day on Thursday, May 15, for a regional school competition.\n\n--------------------\nTo: Greenfield Community Pool\nFrom: Carlos Mendez\n\nI am taking adult lessons twice a week and have paid for the month. As the pool is closed on May 15, will that lesson be held on another day?",
+      qs: [
+        ["When is lane swimming available at lunchtime?", "From 12:00 to 1:30 on weekdays", "From 10:00 to 1:00 at weekends", "Every day at noon", "Only on Wednesdays", "L\u1ECBch."],
+        ["Why will the pool be closed on May 15?", "A school competition is being held.", "The pool is being cleaned.", "Staff are being trained.", "It is a holiday.", "Th\xF4ng b\xE1o."],
+        ["Which of Mr. Mendez's lessons is affected?", "The Thursday lesson", "The Tuesday lesson", "Both lessons", "Neither", "15/5 l\xE0 th\u1EE9 N\u0103m."],
+        ["What does he ask?", "Whether the lesson will be rescheduled", "How to cancel his membership", "Whether he can enter the competition", "What time the pool opens", "Email."],
+        ["Which other activity that week is NOT affected by the closure?", "Aqua fitness on Wednesday", "Lane swimming on Thursday", "Adult lessons on Thursday", "All Thursday sessions", "Th\u1EE9 T\u01B0 kh\xF4ng \u0111\xF3ng c\u1EEDa."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-16-l.ts
+var L16 = {
+  p2: [
+    ["Where can I charge my laptop?", "There is a socket under the table.", "About two hours.", "It was expensive.", "Where \u2192 v\u1ECB tr\xED."],
+    ["Who is going to interview the candidates?", "Ms. Reed and Mr. Cho.", "Three candidates.", "On Tuesday morning.", "Who \u2192 ng\u01B0\u1EDDi ph\u1ECFng v\u1EA5n."],
+    ["When is the product catalog going to print?", "Next Monday, I believe.", "Five thousand copies.", "At the print shop.", "When \u2192 th\u1EDDi gian."],
+    ["How many units did we sell last month?", "Just over two thousand.", "To three countries.", "Last month was April.", "How many \u2192 s\u1ED1 l\u01B0\u1EE3ng."],
+    ["Would you like to try on a larger size?", "Yes, please. This one is tight.", "It is a large store.", "I tried it yesterday.", "L\u1EDDi m\u1EDDi \u2192 nh\u1EADn."],
+    ["Why has the meeting been postponed?", "The director is stuck at the airport.", "In the boardroom.", "For two hours.", "Why \u2192 l\xFD do."],
+    ["Have you updated the contact list?", "Yes, I added the new suppliers.", "By phone.", "It is a long list.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Which of these chairs is more comfortable?", "The one with the armrests.", "They are both new.", "In the showroom.", "Which \u2192 ch\u1ECDn."],
+    ["The invoice has been sent, hasn't it?", "I will check with accounts.", "It was a large invoice.", "In an envelope.", 'C\xE2u h\u1ECFi \u0111u\xF4i \u2192 "\u0111\u1EC3 t\xF4i ki\u1EC3m tra".'],
+    ["Could you help me move this table?", "Of course. Where do you want it?", "It is a round table.", "I moved last year.", "L\u1EDDi nh\u1EDD \u2192 \u0111\u1ED3ng \xFD."],
+    ["How late is the pharmacy open?", "Until nine tonight.", "On Mill Street.", "For a prescription.", "How late \u2192 gi\u1EDD \u0111\xF3ng c\u1EEDa."],
+    ["Our website was down for two hours this morning.", "Do we know what caused it?", "It is upstairs.", "Two hours ago.", "Th\xF4ng tin \u2192 h\u1ECFi nguy\xEAn nh\xE2n."],
+    ["Should I send the samples by courier or by post?", "By courier. They are urgent.", "Yes, please send them.", "Simple samples.", "C\xE2u h\u1ECFi l\u1EF1a ch\u1ECDn."],
+    ["Is the manager in today?", "She will be in after lunch.", "He manages well.", "In the office.", "C\xE2u h\u1ECFi Yes/No \u2192 th\u1EDDi gian."],
+    ["Why don't we move the printer closer to the door?", "Then everyone could reach it easily.", "Because it is closed.", "It prints slowly.", "L\u1EDDi g\u1EE3i \xFD \u2192 t\xE1n th\xE0nh."],
+    ["Whose idea was the new logo?", "The design team came up with it.", "It is blue and gold.", "On the letterhead.", "Whose \u2192 ng\u01B0\u1EDDi."],
+    ["I forgot to bring the contract.", "I have a copy on my laptop.", "It was signed.", "For three years.", "V\u1EA5n \u0111\u1EC1 \u2192 gi\u1EA3i ph\xE1p."]
+  ],
+  p3: [
+    {
+      title: "A customer in a bookshop",
+      lines: [
+        "M: Excuse me, I am looking for a book on Italian cooking by Marco Rossi.",
+        "W: Let me check. We had it last week, but it has sold out. I can order it for you.",
+        "M: How long would that take?",
+        "W: Three or four days. We will send you a text message when it arrives.",
+        "M: Fine. Do I need to pay now?",
+        "W: No, you can pay when you collect it."
+      ],
+      qs: [
+        ["What is the man looking for?", "A cookbook", "A travel guide", "A dictionary", "A magazine", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman offer to do?", "Order the book", "Give a discount", "Lend him a copy", "Call another shop", "L\u1EDDi tho\u1EA1i."],
+        ["When will the man pay?", "When he collects the book", "Now", "By text message", "In four days by mail", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A delayed building project",
+      lines: [
+        "W: The builders say the new warehouse will not be finished until the end of October.",
+        "M: That is a month late. What happened?",
+        "W: The steel for the roof arrived three weeks late, and then it rained for ten days.",
+        "M: We have stock arriving in the middle of October. Where will we put it?",
+        "W: I have asked about renting space at the old warehouse on Dock Road for six weeks."
+      ],
+      qs: [
+        ["What is being built?", "A warehouse", "An office", "A road", "A dock", "L\u1EDDi tho\u1EA1i."],
+        ["What is one reason for the delay?", "Materials arrived late.", "Workers went on strike.", "The plans were changed.", "The money ran out.", "L\u1EDDi tho\u1EA1i."],
+        ["What has the woman done?", "Asked about renting temporary space", "Canceled the stock order", "Hired new builders", "Sold the old warehouse", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A new customer loyalty card",
+      lines: [
+        "M: Head office wants every store to sign up at least two hundred customers for the new loyalty card this month.",
+        "W: How many do we have so far?",
+        "M: Eighty-five, and it is already the fifteenth.",
+        "W: We could offer a free coffee to everyone who signs up.",
+        "M: Good idea. I will make a poster for the entrance."
+      ],
+      qs: [
+        ["What is the store's target?", "Two hundred sign-ups", "Eighty-five sign-ups", "Fifteen sign-ups", "One thousand sales", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman suggest?", "Offering a free coffee", "Lowering prices", "Extending the deadline", "Hiring more staff", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man do?", "Make a poster", "Call head office", "Buy coffee", "Count the cards", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A problem with a flight booking",
+      lines: [
+        "W: Hello, I booked a flight to Vienna for the tenth of May, but my confirmation shows the tenth of June.",
+        "M: I am sorry. Let me look at your booking. Yes, I see the mistake.",
+        "W: Can it be changed?",
+        "M: There are still seats on May tenth. Because the error was ours, there will be no change fee.",
+        "W: Thank you. Could you send me a new confirmation?"
+      ],
+      qs: [
+        ["What is wrong with the booking?", "The date is wrong.", "The destination is wrong.", "The name is misspelled.", "The price is too high.", "L\u1EDDi tho\u1EA1i."],
+        ["Why is there no change fee?", "The company made the error.", "The woman is a member.", "The flight is empty.", "It is a special offer.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman ask for?", "A new confirmation", "A refund", "A better seat", "A hotel booking", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Discussing a new assistant",
+      lines: [
+        "M: How is the new assistant getting on?",
+        "W: Very well. He has already reorganized the filing system, and he is good with customers on the phone.",
+        "M: Excellent. Does he need any training?",
+        "W: He has not used our accounting software before. There is a one-day course next week.",
+        "M: Please register him. The department will pay."
+      ],
+      qs: [
+        ["What does the woman say about the assistant?", "He is doing well.", "He is often late.", "He dislikes the job.", "He is leaving.", "L\u1EDDi tho\u1EA1i."],
+        ["What training does he need?", "Accounting software", "Telephone skills", "Filing", "Customer service", "L\u1EDDi tho\u1EA1i."],
+        ["Who will pay for the course?", "The department", "The assistant", "The woman", "The software company", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A customer returns a faulty kettle",
+      lines: [
+        "W: This kettle stopped working after two weeks. Here is my receipt.",
+        "M: I am sorry. Would you like a replacement or a refund?",
+        "W: A replacement, please. But not the same model.",
+        "M: This one is ten dollars more, but it has a three-year guarantee.",
+        "W: I will take it and pay the difference."
+      ],
+      qs: [
+        ["What is wrong with the kettle?", "It stopped working.", "It leaks.", "It is too small.", "It is the wrong color.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman want?", "A different model", "A refund", "A repair", "The same model", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Pay ten dollars more", "Come back tomorrow", "Keep the old kettle", "Write a complaint", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Organizing a company blood donation",
+      lines: [
+        "M: The hospital has asked whether our company would host a blood donation day.",
+        "W: That is a good cause. Where would it be held?",
+        "M: They bring a mobile unit that parks outside. They just need electricity and about thirty volunteers.",
+        "W: I am sure we can find thirty. I will send an email to all staff.",
+        "M: Great. They suggested the fourteenth of next month."
+      ],
+      qs: [
+        ["What has the hospital asked?", "To hold a blood donation day at the company", "To borrow a vehicle", "To hire some staff", "To use the car park for patients", "L\u1EDDi tho\u1EA1i."],
+        ["What does the hospital need from the company?", "Electricity and volunteers", "Doctors", "A large room", "Money", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Email all staff", "Call the hospital", "Donate blood today", "Book the car park", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A hotel room with a problem",
+      lines: [
+        "W: Hello, this is room five ten. The shower has no hot water.",
+        "M: I am sorry, madam. A pipe is being repaired on your floor. It should be fixed within the hour.",
+        "W: I need to leave for a dinner in thirty minutes.",
+        "M: You are welcome to use the shower in the spa on the second floor. I will send up a key card right away."
+      ],
+      qs: [
+        ["What is the problem?", "There is no hot water.", "The room is noisy.", "The door will not lock.", "The light is broken.", "L\u1EDDi tho\u1EA1i."],
+        ["Why can the woman not wait?", "She has a dinner soon.", "She is checking out.", "She has a flight.", "She feels ill.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the man offer?", "Use of a shower in the spa", "A different room", "A refund", "A free dinner", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Planning a newsletter for customers",
+      lines: [
+        "M: I would like to start a monthly email newsletter for our customers.",
+        "W: What would be in it?",
+        "M: New products, a special offer, and a short article with tips on home decorating.",
+        "W: I can write the articles. Who will design it?",
+        "M: I have found a simple template online. Could you have the first article ready by the twentieth?"
+      ],
+      qs: [
+        ["What does the man want to start?", "An email newsletter", "A new store", "A decorating course", "A magazine", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Write the articles", "Design the template", "Choose the products", "Send the emails", "L\u1EDDi tho\u1EA1i."],
+        ["When is the first article due?", "By the twentieth", "Tomorrow", "Next month", "By the tenth", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A driver delivers a package",
+      lines: [
+        "M: Good morning. I have a delivery for Ms. Novak. It needs a signature.",
+        "W: She is not in today. Can I sign for it?",
+        "M: Are you a colleague?",
+        "W: Yes, I am her assistant.",
+        "M: That is fine. Please sign here and print your name. Where shall I leave the box?",
+        "W: On that table by the window, please."
+      ],
+      qs: [
+        ["Why can Ms. Novak not sign?", "She is absent.", "She is in a meeting.", "She has left the company.", "She refused the delivery.", "L\u1EDDi tho\u1EA1i."],
+        ["Who signs for the package?", "Ms. Novak's assistant", "The driver", "A security guard", "A customer", "L\u1EDDi tho\u1EA1i."],
+        ["Where will the box be left?", "On a table by the window", "At reception", "In the storeroom", "Outside the door", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Choosing a venue for a workshop",
+      lines: [
+        "W: We need a venue for the design workshop. There will be eighteen people.",
+        "M: Here are the four rooms available. Natural light is important for design work.",
+        "W: And the budget is three hundred dollars for the day.",
+        "M: Then this one is the only room that fits all three conditions.",
+        "W: Please reserve it for the twelfth."
+      ],
+      graphic: ["Workshop rooms (per day)", "Room | Seats | Windows | Price\nStudio A | 12 | Yes | $180\nStudio B | 20 | No | $220\nLoft | 24 | Yes | $280\nGallery | 30 | Yes | $400"],
+      qs: [
+        ["How many people will attend?", "Eighteen", "Twelve", "Twenty-four", "Thirty", "L\u1EDDi tho\u1EA1i."],
+        ["Why is natural light important?", "It is needed for design work.", "It saves electricity.", "The speakers dislike lamps.", "Photos will be taken.", "L\u1EDDi tho\u1EA1i."],
+        ["Look at the graphic. Which room will be reserved?", "Loft", "Studio A", "Studio B", "Gallery", "\u0110\u1EE7 18 ch\u1ED7, c\xF3 c\u1EEDa s\u1ED5, \u2264 $300: Loft."]
+      ]
+    }
+  ],
+  p4: [
+    {
+      title: "Announcement in a department store",
+      lines: [
+        "W: Good morning, shoppers, and welcome to Harlow's. Today only, our kitchen department on the third floor is holding a cooking demonstration at eleven and at two.",
+        "W: Everyone who attends will receive a ten percent discount on any cookware bought today.",
+        "W: Seats are limited, so please come to the third floor a few minutes early."
+      ],
+      qs: [
+        ["What is being held today?", "A cooking demonstration", "A fashion show", "A book signing", "A clearance sale", "Th\xF4ng b\xE1o."],
+        ["What do attendees receive?", "A discount on cookware", "A free meal", "A gift bag", "A recipe book", "Th\xF4ng b\xE1o."],
+        ["Why should shoppers arrive early?", "Seats are limited.", "The elevator is slow.", "The store closes early.", "There is a long line for food.", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Voicemail from a hotel manager",
+      lines: [
+        "M: Hello, Ms. Fischer. This is Daniel Roth, manager of the Lakeside Hotel.",
+        "M: I am calling about your review of your recent stay. I was very sorry to read that your room was not cleaned properly on the second day.",
+        "M: I have spoken to our housekeeping team, and I would like to offer you a free night on your next visit. Please call me directly on five five five, zero one two three."
+      ],
+      qs: [
+        ["Why is the speaker calling?", "To respond to a complaint", "To confirm a booking", "To request a payment", "To offer a job", "L\u1EDDi nh\u1EAFn."],
+        ["What was the problem?", "A room was not cleaned properly.", "The room was too small.", "The breakfast was cold.", "The bill was wrong.", "L\u1EDDi nh\u1EAFn."],
+        ["What does the speaker offer?", "A free night", "A refund", "A room upgrade today", "A free dinner", "L\u1EDDi nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Advertisement for a tax service",
+      lines: [
+        "W: Is tax season giving you a headache? Let the experts at ClearTax take care of it.",
+        "W: Our advisers will prepare your tax return in under an hour, and we guarantee that it will be correct. If we make a mistake, we pay the penalty.",
+        "W: Book an appointment before March thirty-first and save twenty dollars. We have offices in fifteen locations and are open on Saturdays."
+      ],
+      qs: [
+        ["What service is offered?", "Preparing tax returns", "Selling insurance", "Treating headaches", "Lending money", "Qu\u1EA3ng c\xE1o."],
+        ["What does the company promise if it makes a mistake?", "It will pay the penalty.", "It will give a free appointment.", "It will apologize in writing.", "It will refund twenty dollars.", "Qu\u1EA3ng c\xE1o."],
+        ["How can customers save twenty dollars?", "By booking before March 31", "By coming on a Saturday", "By bringing a friend", "By paying cash", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Talk to new drivers at a delivery company",
+      lines: [
+        "M: Welcome to QuickDrop. Before you go out on the road, here are three rules.",
+        "M: First, never leave a package outside without the customer's permission. Second, take a photograph of every delivery with your handheld device. Third, if you are running more than twenty minutes late, call the office so that we can warn the customer.",
+        "M: Your vans are parked in bay four. Please check the tires and fuel before you leave."
+      ],
+      qs: [
+        ["What must drivers do with every delivery?", "Take a photograph", "Get a signature", "Call the office", "Leave it outside", "L\u1EDDi n\xF3i."],
+        ["When should drivers call the office?", "When they are more than twenty minutes late", "After every delivery", "At the end of the day", "When the van is empty", "L\u1EDDi n\xF3i."],
+        ["What should drivers check before leaving?", "The tires and fuel", "The packages", "The photographs", "The customer list", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Recorded message for a city council",
+      lines: [
+        "W: You have reached the city council's waste collection line.",
+        "W: Because of the public holiday on Monday, all collections this week will take place one day later than usual. For example, if your collection day is Tuesday, your bins will be emptied on Wednesday.",
+        "W: To report a missed collection, press one. To order a new recycling bin, press two."
+      ],
+      qs: [
+        ["Why are collections later this week?", "There is a public holiday.", "The trucks are being repaired.", "There is bad weather.", "There is a staff shortage.", "Th\xF4ng b\xE1o."],
+        ["When will Tuesday's bins be emptied?", "On Wednesday", "On Monday", "On Thursday", "On Tuesday as usual", "Th\xF4ng b\xE1o."],
+        ["Why would a caller press two?", "To order a recycling bin", "To report a missed collection", "To pay a bill", "To hear the timetable", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Excerpt from a marketing meeting",
+      lines: [
+        "M: The results of our online advertising test are in. We ran two versions of the same advertisement for two weeks.",
+        "M: Version A, with a photograph of the product, was clicked on four thousand times. Version B, which showed a customer using the product, was clicked on nine thousand times.",
+        "M: So, from next month, all our advertisements will show real customers. I would like the design team to prepare three examples by Friday."
+      ],
+      qs: [
+        ["What was tested?", "Two versions of an advertisement", "Two new products", "Two websites", "Two prices", "L\u1EDDi n\xF3i."],
+        ["Which version was more successful?", "The one showing a customer", "The one showing only the product", "Both were equal", "Neither worked", "9.000 so v\u1EDBi 4.000 l\u01B0\u1EE3t nh\u1EA5p."],
+        ["What should the design team do by Friday?", "Prepare three examples", "Take new product photos", "Write a report", "Run another test", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "News report on a hotel opening",
+      lines: [
+        "W: The city's tallest building, the forty-story Sky Tower, will welcome its first hotel guests next Friday.",
+        "W: The hotel occupies the top fifteen floors and has three hundred rooms, a restaurant with views across the bay, and a swimming pool on the roof.",
+        "W: It has created four hundred jobs. Room prices start at two hundred and fifty dollars a night."
+      ],
+      qs: [
+        ["What will open next Friday?", "A hotel", "An office tower", "A swimming club", "A restaurant chain", "B\u1EA3n tin."],
+        ["Where is the swimming pool?", "On the roof", "In the basement", "On the fifteenth floor", "Beside the bay", "B\u1EA3n tin."],
+        ["How many jobs has the hotel created?", "Four hundred", "Three hundred", "Fifteen", "Two hundred and fifty", "B\u1EA3n tin."]
+      ]
+    },
+    {
+      title: "Message about a client lunch",
+      lines: [
+        "M: Hi, Petra. It is Jonas. I have looked at the restaurants near the client's office for Thursday's lunch.",
+        "M: The client is vegetarian, and we need a place that takes reservations, because we only have one hour. Only one restaurant on the list offers both, so I have booked a table for four at twelve thirty.",
+        "M: See you there."
+      ],
+      graphic: ["Restaurants near the client", "Restaurant | Vegetarian menu | Reservations\nThe Steakhouse | No | Yes\nGreen Leaf | Yes | Yes\nNoodle Bar | Yes | No\nBurger Stop | No | No"],
+      qs: [
+        ["What is the message about?", "A lunch with a client", "A new office", "A cooking class", "A staff party", "L\u1EDDi nh\u1EAFn."],
+        ["Look at the graphic. Where will the lunch take place?", "Green Leaf", "The Steakhouse", "Noodle Bar", "Burger Stop", "C\xF3 th\u1EF1c \u0111\u01A1n chay v\xE0 nh\u1EADn \u0111\u1EB7t b\xE0n."],
+        ["For how many people is the table booked?", "Four", "Two", "Twelve", "Six", "L\u1EDDi nh\u1EAFn."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-16-r.ts
+var R16 = {
+  p5: [
+    ["The board will ____ the proposal at its next meeting.", "consider", "consideration", "considerate", "considering", 'Sau "will" l\xE0 V nguy\xEAn m\u1EABu.'],
+    ["The technician explained the process ____.", "clearly", "clear", "clarity", "clearer", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "explained".'],
+    ["The exhibition runs ____ the end of September.", "until", "by", "at", "on", '"runs until".'],
+    ["Ms. Watanabe is a highly ____ engineer.", "respected", "respecting", "respect", "respectfully", "Ph\xE2n t\u1EEB l\xE0m t\xEDnh t\u1EEB."],
+    ["All visitors must report ____ the security desk.", "to", "onto", "on", "for", '"report to".'],
+    ["The firm ____ a profit for the first time last year.", "made", "did", "took", "gave", '"make a profit".'],
+    ["The new policy is ____ unpopular with staff.", "understandably", "understandable", "understand", "understanding", "Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho t\xEDnh t\u1EEB."],
+    ["The seminar is open to anyone ____ is interested.", "who", "whom", "which", "whose", "\u0110\u1EA1i t\u1EEB quan h\u1EC7 l\xE0m ch\u1EE7 ng\u1EEF."],
+    ["Orders are ____ processed within one working day.", "normally", "normal", "normality", "norm", 'Tr\u1EA1ng t\u1EEB gi\u1EEFa "are" v\xE0 V3.'],
+    ["The manager is looking for a ____ solution to the problem.", "practical", "practice", "practically", "practiced", "T\xEDnh t\u1EEB tr\u01B0\u1EDBc danh t\u1EEB."],
+    ["The meeting ended ____ than expected.", "earlier", "early", "earliest", "more early", 'So s\xE1nh h\u01A1n v\u1EDBi "than".'],
+    ["Staff may leave early ____ their work is finished.", "as long as", "as well as", "as far as", "as much as", '"as long as": mi\u1EC5n l\xE0.'],
+    ["The store has a large ____ of winter clothing.", "selection", "select", "selective", "selected", 'Sau "a large" c\u1EA7n danh t\u1EEB.'],
+    ["The CEO thanked everyone ____ had contributed to the project.", "who", "which", "whose", "what", "\u0110\u1EA1i t\u1EEB quan h\u1EC7 ch\u1EC9 ng\u01B0\u1EDDi."],
+    ["The package was returned ____ the address was incomplete.", "because", "due to", "despite", "although", "Sau ch\u1ED7 tr\u1ED1ng l\xE0 m\u1EC7nh \u0111\u1EC1."],
+    ["Each of the participants ____ given a certificate.", "was", "were", "have been", "are", '"Each of..." + \u0111\u1ED9ng t\u1EEB s\u1ED1 \xEDt.'],
+    ["At no time ____ the customer told about the extra charge.", "was", "did", "had", "has", '\u0110\u1EA3o ng\u1EEF sau "At no time": was + S + V3.'],
+    ["It is vital that the report ____ accurate.", "be", "is", "was", "being", "Th\u1EC3 gi\u1EA3 \u0111\u1ECBnh."]
+  ],
+  p6: [
+    {
+      title: "Email: Annual leave reminder",
+      text: "Dear colleagues,\n\nThis is a reminder that any annual leave not taken by December 31 will be (1)____. Only five days may be carried over to next year.\n\nPlease check your remaining days on the staff portal. (2)____. Your manager will try to approve all reasonable requests.\n\nRequests for the last two weeks of December must be submitted (3)____ November 15, as many people wish to be away at that time. Thank you for your (4)____.\n\nHuman Resources",
+      qs: [
+        ["(1) ____", "lost", "losing", "lose", "loss", "B\u1ECB \u0111\u1ED9ng t\u01B0\u01A1ng lai."],
+        ["(2) ____", "If you still have days left, we encourage you to book them soon.", "December has thirty-one days.", "The portal was updated last year.", "Managers work long hours.", "D\u1EABn t\u1EDBi c\xE2u v\u1EC1 vi\u1EC7c qu\u1EA3n l\xFD duy\u1EC7t y\xEAu c\u1EA7u."],
+        ["(3) ____", "by", "until", "on", "at", '"by + h\u1EA1n ch\xF3t".'],
+        ["(4) ____", "cooperation", "cooperate", "cooperative", "cooperatively", 'Sau "your" c\u1EA7n danh t\u1EEB.']
+      ]
+    },
+    {
+      title: "Notice: New recycling bins",
+      text: "NEW IN THE CAFETERIA\n\nFrom Monday, you will find three new bins beside the exit: one for food waste, one for plastic and cans, and one for everything (1)____.\n\nPlease take a moment to sort your waste correctly. (2)____. Signs with pictures above each bin will help you.\n\nLast year, our cafeteria produced twelve tons of waste. We hope to (3)____ this figure by half. Your help will make a real (4)____.",
+      qs: [
+        ["(1) ____", "else", "other", "another", "more", '"everything else".'],
+        ["(2) ____", "If the wrong items are mixed in, the whole bin cannot be recycled.", "The cafeteria opens at seven.", "Bins are made of plastic.", "Monday is a busy day.", "Gi\u1EA3i th\xEDch v\xEC sao c\u1EA7n ph\xE2n lo\u1EA1i \u0111\xFAng."],
+        ["(3) ____", "reduce", "reducing", "reduced", "reduction", '"hope to + V".'],
+        ["(4) ____", "difference", "different", "differ", "differently", '"make a difference".']
+      ]
+    },
+    {
+      title: "Advertisement: Business coaching",
+      text: "TAKE YOUR BUSINESS TO THE NEXT LEVEL\n\nRunning a small business can be lonely. At GrowthPartners, an experienced coach works with you (1)____ to set goals and solve problems.\n\nOur coaches have all run successful companies themselves. (2)____. They understand the challenges you face.\n\nSessions take place once a month, in person or by video. Clients who work with us for a year increase their sales by an (3)____ of 22 percent. Book a free first session and see (4)____ we can do for you.",
+      qs: [
+        ["(1) ____", "personally", "personal", "person", "personality", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "works".'],
+        ["(2) ____", "They are not simply consultants who have read about business.", "Small businesses pay taxes.", "Video calls need good internet.", "Our logo is green.", "B\u1ED5 sung cho \xFD c\xE1c hu\u1EA5n luy\u1EC7n vi\xEAn t\u1EEBng \u0111i\u1EC1u h\xE0nh c\xF4ng ty."],
+        ["(3) ____", "average", "averaged", "averaging", "averagely", '"an average of".'],
+        ["(4) ____", "what", "that", "which", "whom", '"see what we can do".']
+      ]
+    },
+    {
+      title: "Letter: Supplier contract",
+      text: "Dear Mr. Lombardi,\n\nThank you for meeting with us last week. We were impressed by the quality of your olive oil and would like to (1)____ a regular order.\n\nTo begin with, we would require 200 bottles a month. (2)____. We would therefore need to know that you could supply up to 500.\n\nPlease send us your price list and your (3)____ terms. If these are acceptable, we will send a contract for your (4)____.\n\nYours sincerely,\nHelen Marsh, Purchasing Manager",
+      qs: [
+        ["(1) ____", "place", "put on", "set", "lay", '"place an order".'],
+        ["(2) ____", "However, demand may increase before the holidays.", "Olive oil is made from olives.", "Our office is in the north.", "Bottles are made of glass.", '"therefore need to know that you could supply up to 500".'],
+        ["(3) ____", "payment", "pay", "paid", "payer", 'Danh t\u1EEB gh\xE9p "payment terms".'],
+        ["(4) ____", "signature", "sign", "signed", "signs", 'Sau "your" c\u1EA7n danh t\u1EEB.']
+      ]
+    }
+  ],
+  p7: [
+    {
+      title: "Sign: Photocopier",
+      text: "PLEASE NOTE\n\nThis copier is for black-and-white copies only. For color copies, use the machine in Room 210.\n\nIf the paper jams, do not open the side panel. Call IT on extension 250.",
+      qs: [
+        ["Where can color copies be made?", "In Room 210", "On this machine", "At reception", "In the IT office", "Bi\u1EC3n b\xE1o."],
+        ["What should users do if the paper jams?", "Call IT", "Open the side panel", "Switch off the machine", "Add more paper", "Bi\u1EC3n b\xE1o."]
+      ]
+    },
+    {
+      title: "Text message",
+      text: "From: Elena\n\nHi Sam, I am running late. The train is stuck outside the station. Please start the meeting without me and show slides 1\u20135. I will present the budget part when I arrive, hopefully by 9:20.",
+      qs: [
+        ["Why is Elena late?", "Her train is stuck.", "She overslept.", "She is in traffic.", "She missed her flight.", "Tin nh\u1EAFn."],
+        ["What will Elena present?", "The budget part", "Slides 1\u20135", "Nothing", "The whole meeting", "Tin nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Email: Company charity run",
+      text: "To: All staff\nFrom: Wellness Committee\nSubject: Charity run \u2013 September 14\n\nJoin us for the City 5K Charity Run on Sunday, September 14! The company will pay the $20 entry fee for every employee who takes part and will donate a further $50 per runner to the Children's Hospital.\n\nYou do not need to be fast. Walking is welcome. Every participant will receive a company T-shirt.\n\nTo sign up, add your name and T-shirt size to the list on the intranet by September 1.",
+      qs: [
+        ["Who will pay the entry fee?", "The company", "Each employee", "The hospital", "The city", "Email."],
+        ["How much will the company donate per runner?", "$50", "$20", "$5", "$70", "Email."],
+        ["What must employees add to the list?", "Their name and T-shirt size", "Their running time", "A photograph", "A payment", "Email."]
+      ]
+    },
+    {
+      title: "Advertisement: Meeting app",
+      text: "MEETWELL \u2013 Shorter, better meetings\n\nStop wasting time in meetings. MeetWell helps you plan an agenda, keeps each item to time, and sends notes to everyone automatically when the meeting ends.\n\n\u2022 Works with all major calendars\n\u2022 Free for teams of up to 5 people\n\u2022 $4 per user per month for larger teams\n\nTry it free for 60 days. No credit card needed.",
+      qs: [
+        ["What does the app send automatically?", "Meeting notes", "Invoices", "Calendar invitations", "Reminders to pay", "Qu\u1EA3ng c\xE1o."],
+        ["For whom is the app free?", "Teams of up to five people", "All companies", "Students", "Nobody", "Qu\u1EA3ng c\xE1o."],
+        ["How long is the free trial?", "60 days", "30 days", "5 days", "One year", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Memo: Laboratory safety",
+      text: "MEMO\nTo: All laboratory staff\nFrom: Safety Officer\n\nFollowing last week's inspection, please note these points:\n\n\u2022 Safety glasses must be worn at all times, including by visitors.\n\u2022 Food and drink are not allowed in the laboratory.\n\u2022 Chemical containers must be labeled with the date they were opened.\n\nThe inspector will return on the 28th. Any laboratory that does not follow these rules may be closed until the problems are corrected.",
+      qs: [
+        ["Who must wear safety glasses?", "Everyone, including visitors", "Only staff", "Only visitors", "Only inspectors", "Th\xF4ng b\xE1o."],
+        ["What must be written on chemical containers?", "The date of opening", "The price", "The name of the user", "The supplier", "Th\xF4ng b\xE1o."],
+        ["What may happen if the rules are not followed?", "The laboratory may be closed.", "Staff may be fined.", "The inspector will not return.", "Visitors will be banned.", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Information: Airport lounge",
+      text: "SKYVIEW LOUNGE \u2013 Terminal 1, after security\n\nOpen daily 5:00 a.m. \u2013 11:00 p.m.\nEntry: $35 for three hours; free for Gold members and business-class passengers\nIncludes: hot and cold food, drinks, Wi-Fi, showers, and newspapers\nChildren under 2 enter free. Maximum stay: three hours before your flight.",
+      qs: [
+        ["Where is the lounge?", "In Terminal 1, after security", "Outside the airport", "In Terminal 2", "Next to the car park", "Th\xF4ng tin."],
+        ["Who enters free?", "Gold members", "All passengers", "Children under 12", "Airport staff", "Th\xF4ng tin."],
+        ["What is included?", "Showers", "A hotel room", "A taxi", "A massage", "Th\xF4ng tin."]
+      ]
+    },
+    {
+      title: "Article: Company moves to renewable energy",
+      text: 'The furniture manufacturer Nordholm announced on Monday that all of its factories now run entirely on renewable electricity. \u2014 [1] \u2014 The company reached the goal two years earlier than planned.\n\nMost of the power comes from wind farms, under a fifteen-year contract with an energy supplier. \u2014 [2] \u2014 Solar panels on factory roofs provide the rest.\n\nChief executive Karin Olsson said that the change had not increased costs. \u2014 [3] \u2014 "The contract gives us a fixed price, which protects us when energy prices rise," she explained. \u2014 [4] \u2014 Nordholm now plans to replace its delivery trucks with electric vehicles by 2030.',
+      qs: [
+        ["What did Nordholm announce?", "Its factories use only renewable electricity.", "It is closing two factories.", "It is building wind farms.", "It is raising its prices.", "\u0110o\u1EA1n 1."],
+        ["Where does most of the power come from?", "Wind farms", "Solar panels", "Coal", "Its own generators", "\u0110o\u1EA1n 2."],
+        ["What does Ms. Olsson say about the contract?", "It provides a fixed price.", "It is too short.", "It increased costs.", "It will end soon.", "\u0110o\u1EA1n 3."],
+        ['In which position does this sentence best belong? "In fact, it has saved the company money."', "[3]", "[1]", "[2]", "[4]", 'N\u1ED1i v\u1EDBi "had not increased costs".']
+      ]
+    },
+    {
+      title: "Email and form",
+      text: "To: All department heads\nFrom: Peter Novak, IT\nSubject: New laptops\n\nWe will replace laptops that are more than four years old. Please complete the form below for your department by June 10. Laptops will be delivered in July. Staff who travel frequently may request the lightweight model; all others will receive the standard model.\n\n--------------------\nLAPTOP REQUEST \u2013 Sales Department\nHead of department: Maria Santos\nLaptops older than four years: 9\nLightweight model requested: 6 (field sales staff)\nStandard model requested: 3 (office staff)\nSubmitted: June 4",
+      qs: [
+        ["Which laptops will be replaced?", "Those more than four years old", "All laptops", "Only broken ones", "Those used by managers", "Email."],
+        ["When will the new laptops arrive?", "In July", "By June 10", "On June 4", "Next year", "Email."],
+        ["Who may request the lightweight model?", "Staff who travel often", "Department heads", "Office staff", "New employees", "Email."],
+        ["How many laptops did the Sales Department request in total?", "Nine", "Six", "Three", "Fifteen", "6 + 3."],
+        ["Did Ms. Santos meet the deadline?", "Yes, by six days", "No, she was late", "Exactly on the deadline", "There was no deadline", "N\u1ED9p 4/6, h\u1EA1n 10/6."]
+      ]
+    },
+    {
+      title: "Brochure and email",
+      text: "COASTAL EXPRESS \u2013 Coach hire\n16-seat minibus: $280 per day \xB7 33-seat coach: $420 per day \xB7 53-seat coach: $560 per day\nPrices include driver and fuel for up to 200 km. Extra distance: $1.50 per km. Coaches have air conditioning and Wi-Fi; minibuses have air conditioning only.\n\n--------------------\nTo: Coastal Express\nFrom: Lucy Tan, Brightwell School\n\nWe would like to hire a coach to take 30 students and 3 teachers to the Science Museum on May 22. The round trip is about 240 km. The students will need to work online during the journey. Please send a quote.",
+      qs: [
+        ["What do the prices include?", "A driver and fuel for 200 km", "Lunch", "Museum tickets", "Insurance for passengers' bags", "Brochure."],
+        ["How many people will travel?", "33", "30", "3", "53", "30 h\u1ECDc sinh + 3 gi\xE1o vi\xEAn."],
+        ["Which vehicle is the smallest that will fit the group?", "The 33-seat coach", "The minibus", "The 53-seat coach", "Two minibuses", "33 ng\u01B0\u1EDDi."],
+        ["Why is a minibus unsuitable, apart from size?", "It has no Wi-Fi.", "It has no air conditioning.", "It is too expensive.", "It cannot go to museums.", "H\u1ECDc sinh c\u1EA7n l\xE0m vi\u1EC7c tr\u1EF1c tuy\u1EBFn."],
+        ["What will the total cost be?", "$480", "$420", "$560", "$360", "$420 + 40 km \xD7 $1.50 = $480."]
+      ]
+    },
+    {
+      title: "Notice, email, and reply",
+      text: "RIVERSIDE OFFICE PARK \u2013 Notice\nThe cafeteria will be closed for refurbishment from July 7 to July 25. During this time, a food truck will be in the car park from 11:30 a.m. to 2:00 p.m. each weekday. The coffee bar in the lobby will stay open as usual.\n\n--------------------\nTo: Facilities\nFrom: Deepak Rao, Level 3\n\nSeveral of my team have special diets (two are vegetarian, one cannot eat gluten). Will the food truck offer suitable meals?\n\n--------------------\nTo: Deepak Rao\nFrom: Facilities\n\nYes. The truck will have at least two vegetarian dishes every day and one gluten-free option. The menu will be posted in the lobby each Monday. If anything is missing, please let me know.",
+      qs: [
+        ["Why is the cafeteria closing?", "It is being refurbished.", "It is losing money.", "The staff are on holiday.", "It failed an inspection.", "Th\xF4ng b\xE1o."],
+        ["Where will food be available at lunchtime?", "From a truck in the car park", "In the lobby only", "In a tent", "In each office", "Th\xF4ng b\xE1o."],
+        ["What will stay open as usual?", "The coffee bar", "The cafeteria", "The kitchen", "The food truck at night", "Th\xF4ng b\xE1o."],
+        ["What is Mr. Rao concerned about?", "Meals for people with special diets", "The price of food", "The noise of the work", "The opening hours", "Email."],
+        ["Where will the weekly menu be posted?", "In the lobby", "On the truck", "By email only", "In the car park", "Email tr\u1EA3 l\u1EDDi."]
+      ]
+    },
+    {
+      title: "Web page, order, and email",
+      text: "PRINT & FRAME \u2013 Custom framing\nSmall (up to 30 \xD7 40 cm): $45 \xB7 Medium (up to 50 \xD7 70 cm): $75 \xB7 Large (up to 70 \xD7 100 cm): $110\nNon-reflective glass: add $15. Ready in 7 days. Rush service (3 days): add 25%.\n\n--------------------\nORDER #3305\nCustomer: Thomas Reed   Item: company award certificate, 40 \xD7 55 cm\nGlass: non-reflective   Service: standard   Order date: March 3\n\n--------------------\nTo: Print & Frame\nFrom: Thomas Reed\nDate: March 4\n\nI have just learned that the award ceremony has been moved forward to March 7. Could you change my order to the rush service? Please confirm the new price.",
+      qs: [
+        ["Which frame size does Mr. Reed need?", "Medium", "Small", "Large", "Extra large", "40 \xD7 55 cm v\u01B0\u1EE3t c\u1EE1 Small."],
+        ["What extra did he choose?", "Non-reflective glass", "A gold frame", "Delivery", "A second copy", "\u0110\u01A1n h\xE0ng."],
+        ["What was the original price of his order?", "$90", "$75", "$60", "$125", "$75 + $15."],
+        ["Why does he need the rush service?", "The ceremony was moved to an earlier date.", "He is leaving the country.", "The frame is a gift.", "The shop is closing.", "Email."],
+        ["When would the standard service have been ready?", "On March 10", "On March 6", "On March 7", "On March 13", "3/3 + 7 ng\xE0y."]
+      ]
+    },
+    {
+      title: "Article, email, and notice",
+      text: "CITY BUSINESS \u2013 Lakeview Mall will extend its opening hours from November 1. Shops will stay open until 10 p.m. on Thursdays, Fridays, and Saturdays, two hours later than now. The mall's manager says evening shoppers have increased by 30 percent in a year.\n\n--------------------\nTo: Mall Management\nFrom: Irina Volkova, The Tea Corner\n\nI run a small shop with only two employees. Staying open until 10 p.m. three nights a week is difficult for us. Is the new closing time compulsory for all tenants?\n\n--------------------\nNOTICE TO TENANTS\nFollowing questions from several shops, management confirms that shops with fewer than five employees may choose to close at the present time on Thursdays. On Fridays and Saturdays, all shops must stay open until 10 p.m.",
+      qs: [
+        ["What time do shops close on Fridays at present?", "8 p.m.", "10 p.m.", "6 p.m.", "9 p.m.", "Mu\u1ED9n h\u01A1n hai gi\u1EDD so v\u1EDBi hi\u1EC7n t\u1EA1i: 10 \u2212 2 = 8."],
+        ["Why are the hours being extended?", "More people shop in the evening.", "A new law requires it.", "Shops asked for it.", "The mall is losing money.", "B\xE0i b\xE1o."],
+        ["What is Ms. Volkova's concern?", "She has few staff.", "Her rent will rise.", "Her shop is too small.", "She sells only tea.", "Email."],
+        ["What does the notice allow small shops to do?", "Close earlier on Thursdays", "Close earlier every day", "Open later in the morning", "Close on Saturdays", "Th\xF4ng b\xE1o."],
+        ["On which evenings must The Tea Corner stay open until 10 p.m.?", "Fridays and Saturdays", "Thursdays only", "Every evening", "None", "C\u1EEDa h\xE0ng d\u01B0\u1EDBi n\u0103m nh\xE2n vi\xEAn \u0111\u01B0\u1EE3c mi\u1EC5n th\u1EE9 N\u0103m."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-17-l.ts
+var L17 = {
+  p2: [
+    ["Where is the annual meeting being held?", "At the Riverside Hotel.", "On the tenth of May.", "For shareholders.", "Where \u2192 \u0111\u1ECBa \u0111i\u1EC3m."],
+    ["Who repaired the photocopier?", "A technician came this morning.", "It copies quickly.", "Twice a year.", "Who \u2192 ng\u01B0\u1EDDi s\u1EEDa."],
+    ["When will the new price list be ready?", "By the end of the week.", "On the website.", "Ten percent higher.", "When \u2192 th\u1EDDi h\u1EA1n."],
+    ["How long does the training course last?", "Three days.", "In the main office.", "By a professional trainer.", "How long \u2192 th\u1EDDi l\u01B0\u1EE3ng."],
+    ["Would you like to speak to the manager?", "Yes, if she is available.", "She manages the store.", "I spoke yesterday.", "L\u1EDDi \u0111\u1EC1 ngh\u1ECB \u2192 nh\u1EADn."],
+    ["Why did the supplier raise the price?", "Their transport costs have gone up.", "By five percent.", "Last month.", "Why \u2192 l\xFD do."],
+    ["Did you find the report I left on your desk?", "Yes, thank you. I am reading it now.", "On the left side.", "A weather report.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Which software do you use for invoices?", "The same one as the accounts team.", "Every month.", "In the invoice.", "Which \u2192 x\xE1c \u0111\u1ECBnh."],
+    ["The clients are arriving at noon, aren't they?", "No, their flight lands at two.", "They are new clients.", "At the noon meeting.", "C\xE2u h\u1ECFi \u0111u\xF4i \u2192 \u0111\xEDnh ch\xEDnh."],
+    ["Could you book me a taxi for six tomorrow morning?", "Certainly. Where are you going?", "I booked a room.", "Six taxis.", "L\u1EDDi nh\u1EDD \u2192 h\u1ECFi th\xEAm chi ti\u1EBFt."],
+    ["How many people work in your department?", "Fourteen, including me.", "On the third floor.", "Since last year.", "How many \u2192 s\u1ED1 l\u01B0\u1EE3ng."],
+    ["We have received a large order from Brazil.", "That is excellent news.", "It is a large country.", "In order.", "Tin t\u1ED1t \u2192 ph\u1EA3n h\u1ED3i."],
+    ["Do you want the window open or closed?", "Open, please. It is stuffy.", "Yes, I do.", "The store is closed.", "C\xE2u h\u1ECFi l\u1EF1a ch\u1ECDn."],
+    ["Is lunch provided at the workshop?", "Yes, at twelve thirty.", "I had lunch.", "A long workshop.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Why don't we send the contract by courier?", "Yes, that would be safer.", "Because it was sent.", "A career in law.", "L\u1EDDi g\u1EE3i \xFD \u2192 t\xE1n th\xE0nh."],
+    ["Whose coat is hanging by the door?", "I think it is the visitor's.", "It is a warm coat.", "Behind the door.", "Whose \u2192 ch\u1EE7 nh\xE2n."],
+    ["I am having trouble hearing you.", "Let me call you back on another line.", "I hear it is good.", "No trouble.", "V\u1EA5n \u0111\u1EC1 \u2192 gi\u1EA3i ph\xE1p."]
+  ],
+  p3: [
+    {
+      title: "A customer asks about a delivery",
+      lines: [
+        "W: Hello, I ordered a washing machine last week. When will it be delivered?",
+        "M: Let me check. It is scheduled for Thursday between eight and twelve.",
+        "W: I work in the mornings. Is an afternoon delivery possible?",
+        "M: I can change it to Friday between one and five.",
+        "W: That is better. Will the driver take the old machine away?",
+        "M: Yes, at no extra charge."
+      ],
+      qs: [
+        ["What did the woman order?", "A washing machine", "A dishwasher", "A television", "A refrigerator", "L\u1EDDi tho\u1EA1i."],
+        ["Why does the woman want to change the delivery?", "She works in the mornings.", "She is away on Thursday.", "She has moved.", "The price is wrong.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the driver do for free?", "Take away the old machine", "Install the machine", "Deliver on Sunday", "Bring a second machine", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Preparing for an audit",
+      lines: [
+        "M: The auditors arrive on Monday. Are the expense records for last year ready?",
+        "W: Almost. I am missing receipts from two sales trips in March.",
+        "M: Who made the trips?",
+        "W: Carlos. He is on vacation until Wednesday.",
+        "M: Email him anyway. He may have photos of the receipts on his phone."
+      ],
+      qs: [
+        ["Who is coming on Monday?", "Auditors", "Clients", "New employees", "Sales representatives", "L\u1EDDi tho\u1EA1i."],
+        ["What is missing?", "Some receipts", "A sales report", "A contract", "A vacation form", "L\u1EDDi tho\u1EA1i."],
+        ["What does the man suggest?", "Emailing Carlos", "Waiting until Wednesday", "Canceling the audit", "Calling the hotel", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A new company uniform",
+      lines: [
+        "W: Have you seen the designs for the new uniforms?",
+        "M: Yes. I like the dark blue jacket, but the shirts look uncomfortable.",
+        "W: Several people said the same. The supplier can use a softer cotton for two dollars more per shirt.",
+        "M: I think that is worth it. Staff wear them all day.",
+        "W: I will tell the supplier to change the fabric."
+      ],
+      qs: [
+        ["What are the speakers discussing?", "New uniforms", "A new supplier", "A dress code for visitors", "A sale on shirts", "L\u1EDDi tho\u1EA1i."],
+        ["What is the man's concern?", "The shirts look uncomfortable.", "The jacket is the wrong color.", "The price is too high.", "The delivery is late.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Ask the supplier to change the fabric", "Cancel the order", "Choose a new jacket", "Survey the staff", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A double-booked hotel room",
+      lines: [
+        "M: Good evening. I have a reservation under the name Becker.",
+        "W: Welcome, Mr. Becker. I am afraid there is a problem. The room we had for you has been given to another guest by mistake.",
+        "M: I confirmed the booking yesterday.",
+        "W: I am very sorry. We have a larger room with a balcony. You may have it at the same price, and breakfast will be free.",
+        "M: All right. Thank you."
+      ],
+      qs: [
+        ["What is the problem?", "The man's room was given to someone else.", "The hotel is closed.", "The man has no booking.", "The room is not clean.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman offer?", "A larger room at the same price", "A room at another hotel", "A refund", "A late checkout", "L\u1EDDi tho\u1EA1i."],
+        ["What else will the man receive?", "Free breakfast", "A free dinner", "A taxi", "A gift", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A conversation about a trade magazine",
+      lines: [
+        "W: A journalist from Retail Weekly wants to interview you about our new store design.",
+        "M: That is good publicity. When?",
+        "W: She suggested Tuesday at three. It would take about half an hour.",
+        "M: I have a meeting until three thirty. Could she come at four?",
+        "W: I will ask. She would also like to take a few photographs in the store."
+      ],
+      qs: [
+        ["What does the journalist want to discuss?", "A new store design", "Sales figures", "A new product", "Staff training", "L\u1EDDi tho\u1EA1i."],
+        ["Why can the man not meet at three?", "He has a meeting.", "He is traveling.", "The store is closed.", "He is on vacation.", "L\u1EDDi tho\u1EA1i."],
+        ["What else does the journalist want to do?", "Take photographs", "Interview customers", "See the accounts", "Visit another store", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A problem with a credit card machine",
+      lines: [
+        "M: The card machine at the second register is not accepting payments.",
+        "W: Has it lost its connection?",
+        'M: I think so. The screen says "no network."',
+        "W: Switch it off and on again. If that does not work, use the machine from the customer service desk.",
+        "M: OK. There are five people waiting.",
+        "W: I will open another register to help."
+      ],
+      qs: [
+        ["What is wrong with the card machine?", "It has no network connection.", "It has no paper.", "It is too slow.", "It was stolen.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman suggest first?", "Restarting the machine", "Calling a technician", "Accepting only cash", "Closing the register", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Open another register", "Serve the customers herself at the desk", "Go home", "Call the bank", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Planning a move abroad",
+      lines: [
+        "W: I hear you have accepted the position in our Sydney office. Congratulations.",
+        "M: Thank you. I leave in six weeks. There is a lot to organize.",
+        "W: Has the company found you somewhere to live?",
+        "M: They are paying for a hotel for the first month, and an agent will help me find an apartment.",
+        "W: That is helpful. Let me know if you need a contact there. My cousin lives in Sydney."
+      ],
+      qs: [
+        ["Where is the man moving?", "To Sydney", "To London", "To Singapore", "To Toronto", "L\u1EDDi tho\u1EA1i."],
+        ["What will the company pay for?", "A hotel for the first month", "An apartment for a year", "His furniture", "A car", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman offer?", "A personal contact", "A place to stay", "A job", "A plane ticket", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A complaint about a noisy office",
+      lines: [
+        "M: The building work next door is so loud that I cannot make phone calls.",
+        "W: I know. It will continue for another two weeks.",
+        "M: Is there anywhere quieter I could work?",
+        "W: The small meeting room at the back is free most mornings. I can book it for you.",
+        "M: That would be a great help. From nine to twelve, if possible."
+      ],
+      qs: [
+        ["What is the man's problem?", "Noise from building work", "A broken telephone", "A crowded office", "A slow computer", "L\u1EDDi tho\u1EA1i."],
+        ["How long will the problem continue?", "Two more weeks", "Two more days", "One month", "Until tomorrow", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman offer to do?", "Book a meeting room", "Stop the building work", "Buy headphones", "Let him work from home", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A customer wants a discount",
+      lines: [
+        "W: I would like to buy twenty of these office chairs. Is there a discount for large orders?",
+        "M: For twenty or more, we offer ten percent off.",
+        "W: Another store offered me fifteen percent.",
+        "M: I can match that if you also order from us regularly. Do you need desks as well?",
+        "W: Possibly. Send me a quote for twenty chairs and ten desks."
+      ],
+      qs: [
+        ["What does the woman want to buy?", "Office chairs", "Computers", "Filing cabinets", "Lamps", "L\u1EDDi tho\u1EA1i."],
+        ["What discount does the store normally offer for twenty or more?", "Ten percent", "Fifteen percent", "Twenty percent", "Five percent", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman ask for?", "A quote for chairs and desks", "Free delivery", "A sample chair", "A catalog", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A late report from a branch",
+      lines: [
+        "M: Has the monthly report from the Leeds branch arrived?",
+        "W: No. Their manager has been off sick all week.",
+        "M: Head office wants all the reports by tomorrow noon.",
+        "W: I could ask the assistant manager to send the sales figures, and we could fill in the rest ourselves.",
+        "M: Please do. I will let head office know that Leeds may be a little late."
+      ],
+      qs: [
+        ["What has not arrived?", "A monthly report", "A delivery", "A payment", "A new manager", "L\u1EDDi tho\u1EA1i."],
+        ["Why is it late?", "The manager is ill.", "The computers failed.", "The branch is closed.", "The figures are wrong.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man do?", "Inform head office", "Go to Leeds", "Write the report alone", "Call the manager at home", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Choosing a hotel for a business trip",
+      lines: [
+        "W: I need a hotel in Hamburg for two nights. It should be within walking distance of the trade fair.",
+        "M: Here are four options. What is your limit per night?",
+        "W: One hundred and fifty euros.",
+        "M: And do you need breakfast included?",
+        "W: Yes, I have early meetings.",
+        "M: Then there is one that matches everything."
+      ],
+      graphic: ["Hotels in Hamburg", "Hotel | Distance to fair | Breakfast | Price\nAlster | 300 m | Included | \u20AC180\nHafen | 500 m | Included | \u20AC140\nMessehof | 200 m | Not included | \u20AC120\nNordstern | 4 km | Included | \u20AC95"],
+      qs: [
+        ["Why is the woman going to Hamburg?", "For a trade fair", "For a vacation", "For a wedding", "For a job interview", "L\u1EDDi tho\u1EA1i."],
+        ["What is her limit per night?", "\u20AC150", "\u20AC180", "\u20AC120", "\u20AC95", "L\u1EDDi tho\u1EA1i."],
+        ["Look at the graphic. Which hotel will she choose?", "Hafen", "Alster", "Messehof", "Nordstern", "\u0110i b\u1ED9 \u0111\u01B0\u1EE3c, c\xF3 b\u1EEFa s\xE1ng, \u2264 \u20AC150: Hafen."]
+      ]
+    }
+  ],
+  p4: [
+    {
+      title: "Announcement on a ferry",
+      lines: [
+        "W: Good afternoon, passengers. Because of strong winds, our arrival in Port Clare will be about thirty minutes later than scheduled.",
+        "W: For your safety, the outside decks are now closed. The restaurant and the shop will remain open.",
+        "W: Passengers with connecting buses should speak to a crew member at the information desk."
+      ],
+      qs: [
+        ["Why will the ferry arrive late?", "Because of strong winds", "Because of an engine fault", "Because of fog", "Because of a late departure", "Th\xF4ng b\xE1o."],
+        ["What has been closed?", "The outside decks", "The restaurant", "The shop", "The information desk", "Th\xF4ng b\xE1o."],
+        ["Who should go to the information desk?", "Passengers with connecting buses", "Passengers with cars", "Passengers who feel ill", "All passengers", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Voicemail from a recruiter",
+      lines: [
+        "M: Hello, Ms. Petrova. This is Adam Clarke from Horizon Recruitment.",
+        "M: The company you interviewed with last week would like to see you again for a second interview, this time with the managing director.",
+        "M: They have suggested next Wednesday at ten. Please bring examples of your previous design work. Call me back to confirm."
+      ],
+      qs: [
+        ["Why is the speaker calling?", "To arrange a second interview", "To offer a job", "To cancel an interview", "To ask for a reference", "L\u1EDDi nh\u1EAFn."],
+        ["Who will the listener meet?", "The managing director", "The recruiter", "A designer", "A customer", "L\u1EDDi nh\u1EAFn."],
+        ["What should the listener bring?", "Examples of her work", "Her passport", "A list of references", "A laptop", "L\u1EDDi nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Advertisement for a hotel restaurant",
+      lines: [
+        "W: Looking for somewhere special for a business lunch? Try the Terrace Restaurant at the Park Hotel.",
+        "W: Our two-course lunch menu costs just twenty-two dollars and is served in under forty-five minutes, so you will be back at your desk on time.",
+        "W: Private rooms are available for groups of eight or more. Reserve your table online today."
+      ],
+      qs: [
+        ["Who is the advertisement aimed at?", "Business people", "Families", "Tourists", "Students", "Qu\u1EA3ng c\xE1o."],
+        ["What is promised about the lunch menu?", "It is served quickly.", "It is free for groups.", "It changes daily.", "It includes wine.", "Qu\u1EA3ng c\xE1o."],
+        ["What is available for groups of eight or more?", "Private rooms", "A discount", "Free parking", "A special menu", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Talk to visitors at a recycling plant",
+      lines: [
+        "M: Welcome to the Northfield Recycling Center. Every day, we sort two hundred tons of paper, plastic, glass, and metal.",
+        "M: On today's tour, you will see how machines separate the different materials using magnets, air, and cameras.",
+        "M: Please stay behind the yellow line at all times, and keep your ear protection on in the sorting hall. The tour will end in the education room, where you can ask questions."
+      ],
+      qs: [
+        ["What is sorted at the center?", "Recyclable materials", "Mail", "Food", "Clothing", "L\u1EDDi n\xF3i."],
+        ["What must visitors wear in the sorting hall?", "Ear protection", "Gloves", "Masks", "Boots", "L\u1EDDi n\xF3i."],
+        ["Where will the tour end?", "In the education room", "In the sorting hall", "At the entrance", "In the car park", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Recorded message for an insurance company",
+      lines: [
+        "W: Thank you for calling Shield Insurance.",
+        "W: To report a car accident or make a new claim, press one. To ask about an existing claim, press two and have your claim number ready.",
+        "W: Our offices are open from eight to six, Monday to Saturday. Outside these hours, claims can be made on our website."
+      ],
+      qs: [
+        ["Why would a caller press one?", "To make a new claim", "To ask about an existing claim", "To buy insurance", "To change an address", "Th\xF4ng b\xE1o."],
+        ["What should callers who press two have ready?", "Their claim number", "Their passport", "Their car keys", "A credit card", "Th\xF4ng b\xE1o."],
+        ["How can claims be made outside office hours?", "On the website", "By fax", "By visiting an office", "They cannot be made", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Excerpt from a meeting about customer service",
+      lines: [
+        "M: Our survey shows that customers wait an average of nine minutes to speak to an agent. Our target is three.",
+        "M: From next month, we will add a call-back option. Customers can leave their number, and the system will call them when an agent is free.",
+        "M: We are also hiring six part-time agents for the busiest hours, between twelve and two. Training begins on the fifth."
+      ],
+      qs: [
+        ["What is the current average waiting time?", "Nine minutes", "Three minutes", "Six minutes", "Twelve minutes", "L\u1EDDi n\xF3i."],
+        ["What new option will be added?", "A call-back service", "An online chat", "A new phone number", "A weekend service", "L\u1EDDi n\xF3i."],
+        ["When are the busiest hours?", "Between twelve and two", "Between nine and eleven", "After five", "Before eight", "L\u1EDDi n\xF3i."]
+      ]
+    },
+    {
+      title: "News report on a new factory",
+      lines: [
+        "W: The electric car maker Voltis has confirmed that it will build a battery factory on the site of the old steelworks.",
+        "W: Construction will start in the spring and take two years. When it opens, the factory will employ twelve hundred people.",
+        "W: The regional government is contributing fifty million dollars and will also improve the road to the motorway."
+      ],
+      qs: [
+        ["What will be built?", "A battery factory", "A steelworks", "A motorway", "A car showroom", "B\u1EA3n tin."],
+        ["How long will construction take?", "Two years", "One spring", "Twelve months", "Five years", "B\u1EA3n tin."],
+        ["What will the regional government do?", "Contribute money and improve a road", "Buy the cars", "Run the factory", "Close the steelworks", "B\u1EA3n tin."]
+      ]
+    },
+    {
+      title: "Message about an office seating plan",
+      lines: [
+        "M: Hi, everyone. This is Tariq with news about the seating plan for the new office.",
+        "M: Most teams keep the area they were given. The exception is the team that makes the most phone calls, which will move to the area furthest from the quiet zone.",
+        "M: The plan is attached to my email. Let me know by Friday if you see any problems."
+      ],
+      graphic: ["Office areas", "Area | Distance from quiet zone | Original team\nA | Next to it | Sales\nB | 10 meters | Design\nC | 20 meters | Finance\nD | 40 meters | IT"],
+      qs: [
+        ["What is the message about?", "A seating plan", "A new phone system", "A team lunch", "A move to another city", "L\u1EDDi nh\u1EAFn."],
+        ["Look at the graphic. Where will the team that makes the most phone calls sit?", "Area D", "Area A", "Area B", "Area C", "Khu xa khu y\xEAn t\u0129nh nh\u1EA5t: D (40 m\xE9t)."],
+        ["What should listeners do by Friday?", "Report any problems", "Pack their desks", "Choose a seat", "Sign the plan", "C\xE2u cu\u1ED1i."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-17-r.ts
+var R17 = {
+  p5: [
+    ["The firm will ____ its new headquarters in March.", "occupy", "occupation", "occupant", "occupied", 'Sau "will" l\xE0 V nguy\xEAn m\u1EABu.'],
+    ["The speaker answered the questions ____.", "confidently", "confident", "confidence", "confide", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "answered".'],
+    ["The new store opens ____ the first of June.", "on", "in", "at", "to", '"on + ng\xE0y".'],
+    ["The report was ____ written and easy to read.", "clearly", "clear", "clarity", "clears", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "written".'],
+    ["Ms. Jung is responsible ____ training new staff.", "for", "to", "of", "with", '"responsible for".'],
+    ["The company ____ a large order from a Japanese client.", "received", "receiving", "receipt", "receive", "\u0110\u1ED9ng t\u1EEB qu\xE1 kh\u1EE9."],
+    ["The hotel offers ____ rates for long stays.", "reduced", "reducing", "reduce", "reduction", "Ph\xE2n t\u1EEB l\xE0m t\xEDnh t\u1EEB."],
+    ["The team worked ____ to meet the deadline.", "tirelessly", "tireless", "tired", "tiring", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "worked".'],
+    ["Please keep all receipts ____ your records.", "for", "at", "on", "by", '"for your records".'],
+    ["The manager was ____ impressed by the presentation.", "deeply", "deep", "depth", "deepen", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "impressed".'],
+    ["The contract will be valid ____ a period of two years.", "for", "since", "during", "while", '"for a period of".'],
+    ["The product is ____ in three sizes.", "available", "availability", "availably", "avail", 'Sau "is" c\u1EA7n t\xEDnh t\u1EEB.'],
+    ["The seminar was attended by ____ fifty managers.", "roughly", "rough", "roughness", "rougher", "Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho con s\u1ED1."],
+    ["Staff should wash their hands ____ handling food.", "before", "ago", "prior", "earlier", '"before + V-ing".'],
+    ["The proposal is ____ consideration by the board.", "under", "in", "on", "at", '"under consideration".'],
+    ["The number of visitors ____ doubled since last year.", "has", "have", "are", "were", '"The number of" + \u0111\u1ED9ng t\u1EEB s\u1ED1 \xEDt.'],
+    ["Nowhere else ____ such a wide choice of products.", "will you find", "you will find", "you find", "find you", '\u0110\u1EA3o ng\u1EEF sau "Nowhere else".'],
+    ["The doctor recommended that he ____ a few days off.", "take", "takes", "took", "taking", 'Th\u1EC3 gi\u1EA3 \u0111\u1ECBnh sau "recommend that".']
+  ],
+  p6: [
+    {
+      title: "Email: Delivery confirmation",
+      text: "Dear Ms. Yamada,\n\nThank you for your order of twenty office desks. We are pleased to (1)____ that they will be delivered on Tuesday, June 10.\n\nOur team will arrive between 8:00 and 10:00 a.m. (2)____. This usually takes about three hours.\n\nPlease make sure that the rooms are (3)____ before we arrive. If you would like us to take away your old furniture, let us know in (4)____, and we will bring a larger truck.\n\nKind regards,\nNordic Office",
+      qs: [
+        ["(1) ____", "confirm", "confirming", "confirmed", "confirmation", '"be pleased to + V".'],
+        ["(2) ____", "They will carry the desks to each room and assemble them.", "Desks are made of wood.", "Tuesday is a working day.", "Our trucks are blue.", '"This usually takes about three hours".'],
+        ["(3) ____", "empty", "emptily", "emptiness", "emptying", 'Sau "are" c\u1EA7n t\xEDnh t\u1EEB.'],
+        ["(4) ____", "advance", "advanced", "advancing", "advancement", '"in advance".']
+      ]
+    },
+    {
+      title: "Notice: New ID cards",
+      text: "NEW STAFF ID CARDS\n\nAll employees will receive a new ID card with a photograph next month. To prepare, a photographer will be in Meeting Room 1 on Wednesday and Thursday (1)____ 9:00 a.m. and 4:00 p.m.\n\nNo appointment is needed. (2)____. Please come at a time when you are not busy.\n\nYour new card will also (3)____ as your key to the building and the car park. Old cards will stop (4)____ on July 1.",
+      qs: [
+        ["(1) ____", "between", "among", "from", "during", '"between ... and ...".'],
+        ["(2) ____", "Each photograph takes less than two minutes.", "Cameras are expensive.", "Meeting Room 1 has a window.", "Wednesday is in the middle of the week.", 'Ph\xF9 h\u1EE3p v\u1EDBi "No appointment is needed".'],
+        ["(3) ____", "serve", "serving", "served", "service", 'Sau "will also" l\xE0 V nguy\xEAn m\u1EABu.'],
+        ["(4) ____", "working", "work", "worked", "works", '"stop + V-ing".']
+      ]
+    },
+    {
+      title: "Advertisement: Hotel conference package",
+      text: "PLAN YOUR NEXT MEETING AT THE GRAND PLAZA\n\nOur conference package includes everything you need for a (1)____ event: a fully equipped room, lunch, and unlimited coffee.\n\nA member of our events team will be with you all day. (2)____. You can therefore concentrate on your meeting.\n\nPrices start at $65 per person. Book before the end of the month and receive free (3)____ for all delegates. For more (4)____, call 555-0160.",
+      qs: [
+        ["(1) ____", "successful", "success", "successfully", "succeed", "T\xEDnh t\u1EEB tr\u01B0\u1EDBc danh t\u1EEB."],
+        ["(2) ____", "He or she will deal with any technical problems.", "Our hotel has a pool.", "Coffee comes from Brazil.", "Delegates wear badges.", '"therefore concentrate on your meeting".'],
+        ["(3) ____", "parking", "park", "parked", "parks", 'Danh t\u1EEB: "free parking".'],
+        ["(4) ____", "details", "detailed", "detailing", "detailer", '"for more details".']
+      ]
+    },
+    {
+      title: "Letter: Request for a reference",
+      text: "Dear Mr. Okonkwo,\n\nMs. Farah Malik has applied for the position of office manager with our company and has given your name as a (1)____.\n\nWe would be grateful if you could tell us how long she worked for you and what her main duties were. (2)____. Any information you give will be treated as confidential.\n\nWe hope to make a decision by the end of next week. A reply by email would therefore be very much (3)____. Thank you in advance for your (4)____.\n\nYours sincerely,\nAnna Weiss, Human Resources",
+      qs: [
+        ["(1) ____", "reference", "refer", "referred", "referring", 'Sau "a" c\u1EA7n danh t\u1EEB.'],
+        ["(2) ____", "We would also like to know whether you would employ her again.", "Office managers answer telephones.", "Our company is ten years old.", "Emails are fast.", 'B\u1ED5 sung th\xEAm th\xF4ng tin c\u1EA7n h\u1ECFi ("also").'],
+        ["(3) ____", "appreciated", "appreciating", "appreciate", "appreciation", "B\u1ECB \u0111\u1ED9ng: would be appreciated."],
+        ["(4) ____", "help", "helpful", "helpfully", "helped", 'Sau "your" c\u1EA7n danh t\u1EEB.']
+      ]
+    }
+  ],
+  p7: [
+    {
+      title: "Sign: Car park",
+      text: "CAR PARK FULL\n\nPlease use the overflow car park on Station Road (3 minutes' walk). Parking there is free for customers with a receipt from any shop in the center.",
+      qs: [
+        ["Where should drivers park?", "On Station Road", "In this car park", "On the street", "At the station platform", "Bi\u1EC3n b\xE1o."],
+        ["How can customers park there for free?", "By showing a shop receipt", "By arriving early", "By paying in advance", "By staying under an hour", "Bi\u1EC3n b\xE1o."]
+      ]
+    },
+    {
+      title: "Text message",
+      text: "From: Northern Bank\n\nYour new debit card has been sent and should arrive within 5 working days. Your PIN will follow separately. To activate the card, use it once in a cash machine with your PIN.",
+      qs: [
+        ["What has the bank sent?", "A debit card", "A loan offer", "A statement", "A check", "Tin nh\u1EAFn."],
+        ["How is the card activated?", "By using it in a cash machine", "By calling the bank", "By signing it", "By visiting a branch", "Tin nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Email: Sales training",
+      text: "To: Regional sales team\nFrom: Laura Chen\nSubject: Training on the new product range\n\nOur new range of kitchen appliances will be in stores from October 1. To prepare, all sales staff must attend a half-day training session at head office.\n\nSessions will be held on September 16 and 18, from 9:00 to 1:00. Travel costs will be refunded. Each participant will receive a sample blender to try at home.\n\nPlease tell your manager which date you prefer by September 5.",
+      qs: [
+        ["Why is training being held?", "New products are being launched.", "Sales have fallen.", "New staff have joined.", "A store is opening.", "Email."],
+        ["What will participants receive?", "A sample blender", "A bonus", "A certificate", "A free lunch", "Email."],
+        ["What must staff do by September 5?", "Choose a date", "Pay for travel", "Buy the products", "Visit head office", "Email."]
+      ]
+    },
+    {
+      title: "Advertisement: Document shredding",
+      text: "SECURESHRED \u2013 Confidential document destruction\n\nProtect your business and your customers. We collect your old documents in locked boxes and destroy them at our secure plant.\n\n\u2022 Weekly, monthly, or one-time collections\n\u2022 A certificate of destruction after every collection\n\u2022 All shredded paper is recycled\n\nFirst collection free for new customers. Call 555-0193.",
+      qs: [
+        ["What service is offered?", "Destroying documents", "Storing documents", "Printing documents", "Delivering mail", "Qu\u1EA3ng c\xE1o."],
+        ["What do customers receive after each collection?", "A certificate", "A new box", "An invoice only", "Recycled paper", "Qu\u1EA3ng c\xE1o."],
+        ["What is offered to new customers?", "A free first collection", "A free box", "A discount for a year", "A free visit to the plant", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Memo: Energy saving",
+      text: "MEMO\nTo: All staff\nFrom: Office Manager\n\nOur electricity bill has risen by 20 percent this year. To reduce it:\n\n\u2022 Switch off lights in empty rooms.\n\u2022 Turn off your monitor when you leave your desk for more than ten minutes.\n\u2022 Do not use personal heaters; tell me if your area is cold.\n\nFrom December 1, the heating will be set to 20\xB0C. The team that saves the most energy in three months will win a team dinner.",
+      qs: [
+        ["Why was the memo written?", "The electricity bill has increased.", "The office is too hot.", "New lights were installed.", "A team won a prize.", "Th\xF4ng b\xE1o."],
+        ["What should staff NOT use?", "Personal heaters", "Monitors", "Lights", "The heating", "Th\xF4ng b\xE1o."],
+        ["What will the winning team receive?", "A team dinner", "Extra pay", "A new heater", "A day off", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Information: Trade fair entry",
+      text: "INTERNATIONAL FOOD FAIR \u2013 Visitor information\n\nOpen: Thursday\u2013Saturday, 9:00 a.m. \u2013 6:00 p.m.\nTrade visitors only on Thursday and Friday; open to the public on Saturday.\nTickets: $25 at the door, $18 online in advance. Students: $10.\nNo children under 12 on trade days. Free cloakroom at Entrance B.",
+      qs: [
+        ["When can the general public visit?", "On Saturday", "On Thursday", "On Friday", "Every day", "Th\xF4ng tin."],
+        ["How much is a ticket bought online?", "$18", "$25", "$10", "$12", "Th\xF4ng tin."],
+        ["Where is the cloakroom?", "At Entrance B", "At the ticket office", "In Hall 9", "Outside", "Th\xF4ng tin."]
+      ]
+    },
+    {
+      title: "Article: Caf\xE9 chain trains young people",
+      text: `The caf\xE9 chain Bean & Leaf has opened a training center for young people who left school without qualifications. \u2014 [1] \u2014 Over twelve weeks, trainees learn to make coffee, serve customers, and manage stock.
+
+The course is free, and trainees receive a small weekly allowance. \u2014 [2] \u2014 Those who complete it are guaranteed a job interview at one of the company's caf\xE9s.
+
+Of the first forty trainees, thirty-one now have permanent jobs. \u2014 [3] \u2014 "I did not think anyone would hire me," said nineteen-year-old Jamal Reid, who now manages a shift. \u2014 [4] \u2014 The company plans to open two more centers next year.`,
+      qs: [
+        ["Who is the training center for?", "Young people without qualifications", "Experienced managers", "University students", "Caf\xE9 owners", "\u0110o\u1EA1n 1."],
+        ["What are trainees guaranteed?", "A job interview", "A permanent job", "A university place", "A loan", "\u0110o\u1EA1n 2."],
+        ["How many of the first forty trainees found permanent jobs?", "Thirty-one", "Forty", "Twelve", "Nineteen", "\u0110o\u1EA1n 3."],
+        ['In which position does this sentence best belong? "This helps them pay for travel."', "[2]", "[1]", "[3]", "[4]", '"This" ch\u1EC9 kho\u1EA3n tr\u1EE3 c\u1EA5p h\xE0ng tu\u1EA7n.']
+      ]
+    },
+    {
+      title: "Email and schedule",
+      text: "To: Conference speakers\nFrom: Organizing Committee\nSubject: Final arrangements\n\nThank you for agreeing to speak. Please arrive at least thirty minutes before your session to test your slides. Each talk is limited to twenty minutes, followed by ten minutes of questions. Speakers are invited to dinner at 7:30 p.m. at the Harbor Restaurant.\n\n--------------------\nPROGRAM \u2013 Hall B\n9:30 \u2013 Dr. Elena Costa: Smart packaging\n10:15 \u2013 Mr. Raj Patel: Reducing food waste\n11:00 \u2013 Coffee break\n11:30 \u2013 Ms. Ingrid Olsen: The future of delivery\n12:15 \u2013 Lunch",
+      qs: [
+        ["How early should speakers arrive?", "Thirty minutes before their session", "One hour before", "The day before", "Ten minutes before", "Email."],
+        ["How long may each talk last?", "Twenty minutes", "Thirty minutes", "Ten minutes", "Forty-five minutes", "Email."],
+        ["By when should Mr. Patel arrive?", "By 9:45", "By 10:15", "By 9:00", "By 10:45", "30 ph\xFAt tr\u01B0\u1EDBc 10:15."],
+        ["Who speaks after the coffee break?", "Ms. Olsen", "Dr. Costa", "Mr. Patel", "Nobody", "Ch\u01B0\u01A1ng tr\xECnh."],
+        ["What are speakers invited to in the evening?", "A dinner", "A concert", "A boat trip", "A second talk", "Email."]
+      ]
+    },
+    {
+      title: "Web page and email",
+      text: "ALPINE SPORTS \u2013 Ski hire (per day)\nAdult skis and boots: $38 \xB7 Child skis and boots: $22 \xB7 Helmet: $6 (free for children)\nHire for 5 days or more and get 20% off. Collect from 4:00 p.m. the day before; return by 6:00 p.m. on your last day.\n\n--------------------\nTo: Alpine Sports\nFrom: Marc Dubois\n\nWe are a family of two adults and two children (8 and 11) and will ski for six days from Monday, February 10. We would like skis and boots for everyone, and helmets for all four. Can we collect on Sunday evening?",
+      qs: [
+        ["How much is a helmet for a child?", "Free", "$6", "$22", "$3", "Trang web."],
+        ["Why will the Dubois family receive a discount?", "They are hiring for more than five days.", "They are a family.", "They booked early.", "They are collecting on Sunday.", "S\xE1u ng\xE0y."],
+        ["How much is the hire per day before the discount?", "$132", "$120", "$144", "$98", "2 \xD7 $38 + 2 \xD7 $22 + 2 \xD7 $6."],
+        ["Is Sunday evening collection possible?", "Yes, from 4:00 p.m.", "No, only on Monday", "Yes, at any time", "No, the shop is closed", "L\u1EA5y \u0111\u1ED3 t\u1EEB 4 gi\u1EDD chi\u1EC1u ng\xE0y h\xF4m tr\u01B0\u1EDBc."],
+        ["By when must the equipment be returned?", "By 6:00 p.m. on the last day", "By noon on the last day", "The following morning", "By 4:00 p.m.", "Trang web."]
+      ]
+    },
+    {
+      title: "Notice, email, and reply",
+      text: "HARBOR TOWER \u2013 Notice to tenants\nThe building's reception desk will be staffed from 7:00 a.m. to 7:00 p.m. from March 1 (currently 8:00 a.m. to 6:00 p.m.). Outside these hours, visitors must be met at the entrance by their host. Deliveries are accepted at reception only during staffed hours.\n\n--------------------\nTo: Building Management\nFrom: Tomas Lund, Lund Architects\n\nWe often receive large rolls of drawings from the printer at about 7:30 in the evening. Under the new hours, will someone still be able to accept them?\n\n--------------------\nTo: Tomas Lund\nFrom: Building Management\n\nI am afraid not. You could ask the printer to deliver before 7:00, or you may collect a key to the secure delivery locker beside the entrance. The key deposit is $20.",
+      qs: [
+        ["How will the reception hours change?", "They will be two hours longer.", "They will be shorter.", "They will not change.", "Reception will close.", "7\u20137 thay v\xEC 8\u20136."],
+        ["What must visitors do outside staffed hours?", "Be met by their host", "Sign in alone", "Wait until morning", "Call the police", "Th\xF4ng b\xE1o."],
+        ["What is Mr. Lund's problem?", "Deliveries arrive after reception closes.", "His drawings are too large.", "His printer has closed.", "He has lost his key.", "Email."],
+        ["What is one solution offered?", "Using a delivery locker", "Hiring a receptionist", "Moving offices", "Changing printers", "Email tr\u1EA3 l\u1EDDi."],
+        ["How much is the key deposit?", "$20", "$7", "$30", "Nothing", "Email tr\u1EA3 l\u1EDDi."]
+      ]
+    },
+    {
+      title: "Advertisement, form, and email",
+      text: 'CITY CHAMBER OF COMMERCE \u2013 Business breakfast\n"Selling to Customers Abroad" with guest speaker Dr. Mei Tanaka\nThursday, April 24, 7:30\u20139:00 a.m., Royal Hotel\nMembers: $20 \xB7 Non-members: $35 \xB7 Tables of eight: $140 (members only)\n\n--------------------\nBOOKING FORM\nCompany: Hartley Exports (member)   Contact: Sam Hartley\nBooking: one table of eight   Special requests: two vegetarian breakfasts\n\n--------------------\nTo: Sam Hartley\nFrom: Chamber of Commerce\n\nYour table is confirmed. Please send us the names of your eight guests by April 17 so that we can print badges. Dr. Tanaka will be happy to answer questions after her talk.',
+      qs: [
+        ["What is the topic of the event?", "Selling to customers abroad", "Hotel management", "Healthy breakfasts", "Tax law", "Qu\u1EA3ng c\xE1o."],
+        ["How much would eight separate member tickets cost?", "$160", "$140", "$280", "$120", "8 \xD7 $20."],
+        ["How much did Hartley Exports save by booking a table?", "$20", "$140", "$15", "Nothing", "$160 \u2212 $140."],
+        ["What special request was made?", "Two vegetarian breakfasts", "A table near the stage", "A later start", "Extra badges", "Phi\u1EBFu."],
+        ["What must Mr. Hartley send by April 17?", "The names of his guests", "The payment", "His questions", "A menu", "Email."]
+      ]
+    },
+    {
+      title: "Schedule, email, and notice",
+      text: "EASTGATE LEISURE CENTRE \u2013 Badminton court bookings\nCourts 1\u20134, one-hour sessions from 9:00 a.m. to 9:00 p.m.\nMembers: $8 per hour \xB7 Non-members: $12 per hour\nBookings open seven days in advance. Cancel at least 24 hours ahead for a full refund.\n\n--------------------\nTo: Eastgate Leisure Centre\nFrom: Nina Patel (member)\n\nI booked Court 2 for Saturday at 10:00 a.m. I can no longer come. It is now Thursday evening. Can I have a refund, or move the booking to Sunday at the same time?\n\n--------------------\nNOTICE at reception\nSunday: Courts 1 and 2 closed all day for a junior tournament. Courts 3 and 4 open as normal.",
+      qs: [
+        ["How much does a member pay per hour?", "$8", "$12", "$4", "$20", "L\u1ECBch."],
+        ["How far ahead can courts be booked?", "Seven days", "One day", "One month", "Three days", "L\u1ECBch."],
+        ["Is Ms. Patel entitled to a full refund?", "Yes, she is canceling more than 24 hours ahead.", "No, she is too late.", "Only half.", "Members cannot cancel.", "T\u1ED1i th\u1EE9 N\u0103m cho s\xE1ng th\u1EE9 B\u1EA3y."],
+        ["Why can she not have Court 2 on Sunday?", "It is closed for a tournament.", "It is fully booked.", "She is not a member.", "It is being repaired.", "Th\xF4ng b\xE1o."],
+        ["Which courts could she use on Sunday?", "Courts 3 and 4", "Courts 1 and 2", "All courts", "None", "Th\xF4ng b\xE1o."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-18-l.ts
+var L18 = {
+  p2: [
+    ["Where can I pick up my conference badge?", "At the registration table.", "It is blue.", "At nine o'clock.", "Where \u2192 v\u1ECB tr\xED."],
+    ["Who is in charge of the warehouse at night?", "The night supervisor, Mr. Ali.", "Until six a.m.", "It is a large warehouse.", "Who \u2192 ng\u01B0\u1EDDi ph\u1EE5 tr\xE1ch."],
+    ["When does the early-bird discount end?", "On the last day of the month.", "Twenty percent.", "Online only.", "When \u2192 th\u1EDDi h\u1EA1n."],
+    ["How do I reserve a company car?", "Through the online booking system.", "A blue sedan.", "For three days.", "How \u2192 c\xE1ch l\xE0m."],
+    ["Would you like a copy of the agenda?", "No, thanks. I have it on my tablet.", "I copied it.", "It is long.", "L\u1EDDi m\u1EDDi \u2192 t\u1EEB ch\u1ED1i."],
+    ["Why is the front entrance closed?", "They are replacing the doors.", "At the front.", "It closes at eight.", "Why \u2192 l\xFD do."],
+    ["Have you spoken to the client about the delay?", "Yes, she was very understanding.", "By two days.", "A new client.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Which room is the training in?", "Room 12, I think.", "For two hours.", "By the trainer.", "Which \u2192 ph\xF2ng."],
+    ["You are not working this Saturday, are you?", "No, it is my weekend off.", "It works well.", "On Saturday morning.", "C\xE2u h\u1ECFi \u0111u\xF4i."],
+    ["Could you send me the directions to your office?", "I will email you a map.", "It is direct.", "In the office.", "L\u1EDDi nh\u1EDD \u2192 \u0111\u1ED3ng \xFD."],
+    ["How much is a return ticket to Boston?", "Eighty-five dollars.", "At platform two.", "Three hours.", "How much \u2192 gi\xE1."],
+    ["The new intern speaks four languages.", "That will be useful with our foreign clients.", "He spoke loudly.", "Four people.", "Th\xF4ng tin \u2192 nh\u1EADn x\xE9t."],
+    ["Shall we print the report in color or in black and white?", "Black and white is cheaper.", "Yes, print it.", "It is colorful.", "C\xE2u h\u1ECFi l\u1EF1a ch\u1ECDn."],
+    ["Is there somewhere I can store my luggage?", "Yes, at the concierge desk.", "It is very heavy.", "In the store.", "C\xE2u h\u1ECFi Yes/No \u2192 v\u1ECB tr\xED."],
+    ["Let's review the applications this afternoon.", "Fine. How many have we received?", "I applied yesterday.", "In the afternoon sun.", "\u0110\u1EC1 ngh\u1ECB \u2192 \u0111\u1ED3ng \xFD v\xE0 h\u1ECFi th\xEAm."],
+    ["Whose responsibility is it to order the catering?", "Laura usually does it.", "For fifty people.", "It is delicious.", "Whose \u2192 ng\u01B0\u1EDDi."],
+    ["I left my access card at home.", "You can get a temporary one from security.", "It is at home.", "A credit card.", "V\u1EA5n \u0111\u1EC1 \u2192 gi\u1EA3i ph\xE1p."]
+  ],
+  p3: [
+    {
+      title: "A customer at a furniture store",
+      lines: [
+        "W: I am interested in this dining table. Does it come in a larger size?",
+        "M: Yes, there is one that seats eight. It is two hundred dollars more.",
+        "W: And how long is the delivery?",
+        "M: The six-seat table is in stock. The larger one takes three weeks.",
+        "W: I have guests coming next weekend. I will take the one in stock.",
+        "M: We can deliver it on Thursday."
+      ],
+      qs: [
+        ["What is the woman interested in?", "A dining table", "A sofa", "A bed", "A desk", "L\u1EDDi tho\u1EA1i."],
+        ["Why does she choose the smaller table?", "She needs it soon.", "It is cheaper.", "Her room is small.", "She prefers the color.", "Kh\xE1ch \u0111\u1EBFn cu\u1ED1i tu\u1EA7n t\u1EDBi."],
+        ["When will it be delivered?", "On Thursday", "In three weeks", "Next weekend", "Today", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A change of venue for a meeting",
+      lines: [
+        "M: The air conditioning in the boardroom is broken, and it is thirty degrees in there.",
+        "W: The directors arrive in an hour. Is another room free?",
+        "M: The training room is, but it has no video equipment.",
+        "W: We need video for the call with Singapore. Could IT move a screen and a camera?",
+        "M: I will ask them now. It should take twenty minutes."
+      ],
+      qs: [
+        ["What is the problem with the boardroom?", "It is too hot.", "It is too small.", "It is being cleaned.", "It is booked.", "L\u1EDDi tho\u1EA1i."],
+        ["Why is video equipment needed?", "For a call with Singapore", "For a film", "For training", "For security", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man do?", "Ask IT for help", "Repair the air conditioning", "Cancel the meeting", "Call the directors", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A new delivery schedule",
+      lines: [
+        "W: The bakery wants to deliver at five thirty in the morning from next week, not at seven.",
+        "M: Nobody is here at five thirty.",
+        "W: They suggest leaving the bread in a locked box by the back door. They would give us a key.",
+        "M: That could work. Will the bread still be warm when we open?",
+        "W: They say the box is insulated. Let us try it for a week."
+      ],
+      qs: [
+        ["What does the bakery want to change?", "The delivery time", "The price", "The type of bread", "The driver", "L\u1EDDi tho\u1EA1i."],
+        ["What is the problem?", "Nobody is there so early.", "The bread is cold.", "The door is broken.", "The box is too small.", "L\u1EDDi tho\u1EA1i."],
+        ["What do the speakers decide?", "To try the new system for a week", "To change bakeries", "To open earlier", "To refuse the change", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A customer loses a ticket",
+      lines: [
+        "M: Excuse me, I have lost my parking ticket, and I cannot get out of the garage.",
+        "W: Do you remember when you arrived?",
+        "M: About nine this morning.",
+        "W: Without a ticket, the charge is the daily maximum, twenty-four dollars.",
+        "M: I only parked for three hours. I have a receipt from the dentist upstairs showing my appointment time.",
+        "W: In that case, I can charge you for three hours. That is nine dollars."
+      ],
+      qs: [
+        ["What has the man lost?", "A parking ticket", "His car keys", "A receipt", "His wallet", "L\u1EDDi tho\u1EA1i."],
+        ["What is the charge without a ticket?", "$24", "$9", "$3", "$12", "L\u1EDDi tho\u1EA1i."],
+        ["Why does the woman reduce the charge?", "He can prove when he arrived.", "He is a regular customer.", "The machine is broken.", "He is a dentist.", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "Discussing an employee award",
+      lines: [
+        "W: We need to choose the Employee of the Year by Friday.",
+        "M: I would nominate Amir. He solved the problem with the ordering system in one weekend.",
+        "W: He is a strong candidate. Elena also had an excellent year. She brought in three major clients.",
+        "M: True. Could we give two awards this year?",
+        "W: I will ask the director whether the budget allows it."
+      ],
+      qs: [
+        ["What must be decided by Friday?", "Who will receive an award", "Who will be hired", "Who will be promoted", "Who will attend a conference", "L\u1EDDi tho\u1EA1i."],
+        ["What did Elena do?", "She won three major clients.", "She fixed the ordering system.", "She trained new staff.", "She reduced costs.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman ask the director?", "Whether two awards are possible", "Whether Amir can be promoted", "Whether the ceremony can be moved", "Whether Elena is leaving", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A broken coffee machine in a caf\xE9",
+      lines: [
+        "M: The espresso machine has stopped heating. We cannot make coffee.",
+        "W: On a Saturday morning? That is terrible timing.",
+        "M: The repair company says the earliest they can come is Monday.",
+        "W: My friend owns a caf\xE9 two streets away and has a spare machine. I will call her.",
+        "M: Meanwhile, I will put up a sign and offer tea and cold drinks at half price."
+      ],
+      qs: [
+        ["What is the problem?", "A machine is broken.", "The caf\xE9 has no customers.", "The milk has run out.", "A member of staff is ill.", "L\u1EDDi tho\u1EA1i."],
+        ["When can the repair company come?", "On Monday", "Today", "Tomorrow", "Next Saturday", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man offer customers?", "Half-price tea and cold drinks", "Free coffee", "A voucher", "Free cake", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A visa for a business trip",
+      lines: [
+        "W: Do I need a visa for the conference in India next month?",
+        "M: Yes, but you can apply online. It usually takes four working days.",
+        "W: What documents do I need?",
+        "M: A scan of your passport, a photograph, and the invitation letter from the organizers.",
+        "W: I have not received the letter yet.",
+        "M: I will email them and ask them to send it today."
+      ],
+      qs: [
+        ["Where is the woman going?", "To India", "To Indonesia", "To Ireland", "To Italy", "L\u1EDDi tho\u1EA1i."],
+        ["How long does the visa usually take?", "Four working days", "One month", "One day", "Two weeks", "L\u1EDDi tho\u1EA1i."],
+        ["What is the woman still missing?", "An invitation letter", "A passport", "A photograph", "A plane ticket", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A customer service chat",
+      lines: [
+        "M: Hello, I bought a monthly train pass yesterday, but the gate at the station will not accept it.",
+        "W: I am sorry. Could you read me the number on the back?",
+        "M: It is seven seven one, four two zero.",
+        "W: I see. The pass was not activated when you bought it. I have done that now. Please try again in ten minutes.",
+        "M: Thank you. I paid for a single ticket this morning. Can I get that back?",
+        "W: Yes, I will add five dollars of credit to your account."
+      ],
+      qs: [
+        ["What is the man's problem?", "His pass does not work.", "He lost his pass.", "He missed his train.", "He was overcharged for the pass.", "L\u1EDDi tho\u1EA1i."],
+        ["What caused the problem?", "The pass was not activated.", "The gate was broken.", "The pass had expired.", "He used the wrong station.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman add to his account?", "Five dollars of credit", "A free month", "A new pass", "A single ticket", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Planning a store renovation",
+      lines: [
+        "W: The builders can renovate the store in January or in March.",
+        "M: January is our quietest month. We would lose less business.",
+        "W: True, but they charge ten percent more in January because of the holidays.",
+        "M: I still think it is the better choice. Closing in March would cost us far more in sales.",
+        "W: I agree. I will sign the contract for January."
+      ],
+      qs: [
+        ["What are the speakers planning?", "A renovation", "A sale", "A new store", "A holiday", "L\u1EDDi tho\u1EA1i."],
+        ["Why does the man prefer January?", "It is the quietest month.", "It is cheaper.", "The builders are free.", "The weather is better.", "L\u1EDDi tho\u1EA1i."],
+        ["What is the disadvantage of January?", "The builders charge more.", "The store is busy.", "Staff are away.", "It is too cold.", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A call about a job offer",
+      lines: [
+        "M: Hello, Ms. Hall. I am pleased to tell you that we would like to offer you the position.",
+        "W: That is wonderful news. Thank you.",
+        "M: The salary is fifty-two thousand dollars, with twenty-five days of vacation. Could you start on the first of the month?",
+        "W: I have to give my current employer four weeks' notice. The fifteenth would be possible.",
+        "M: That is acceptable. I will send you the contract this afternoon."
+      ],
+      qs: [
+        ["Why is the man calling?", "To offer the woman a job", "To arrange an interview", "To ask for a reference", "To discuss a complaint", "L\u1EDDi tho\u1EA1i."],
+        ["Why can the woman not start on the first?", "She must give notice.", "She is on vacation.", "She is moving house.", "She has another interview.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man send?", "A contract", "A plane ticket", "A uniform", "A schedule", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Choosing a printer for the office",
+      lines: [
+        "W: We need a new printer. It must print in color and at least thirty pages a minute.",
+        "M: Here are the models from our supplier.",
+        "W: Two of them meet those needs. Which is cheaper to run?",
+        "M: The cost per page is in the last column.",
+        "W: Then we will take the one with the lower cost per page."
+      ],
+      graphic: ["Office printers", "Model | Color | Pages per minute | Cost per page\nP100 | No | 40 | 1 cent\nP200 | Yes | 25 | 3 cents\nP300 | Yes | 35 | 4 cents\nP400 | Yes | 45 | 6 cents"],
+      qs: [
+        ["What does the office need?", "A new printer", "A new supplier", "More paper", "A scanner", "L\u1EDDi tho\u1EA1i."],
+        ["What speed is required?", "At least thirty pages a minute", "At least forty", "Exactly twenty-five", "It does not matter", "L\u1EDDi tho\u1EA1i."],
+        ["Look at the graphic. Which model will be chosen?", "P300", "P100", "P200", "P400", "In m\xE0u, \u2265 30 trang/ph\xFAt: P300 v\xE0 P400; r\u1EBB h\u01A1n m\u1ED7i trang l\xE0 P300."]
+      ]
+    }
+  ],
+  p4: [
+    {
+      title: "Announcement at a trade fair",
+      lines: [
+        "M: Good morning, exhibitors and visitors. Welcome to the third day of the Home and Garden Fair.",
+        "M: At eleven o'clock, the awards for the best stand will be presented on the main stage in Hall One.",
+        "M: Please note that the fair closes at four today, two hours earlier than on other days. Exhibitors may begin taking down their stands at four fifteen."
+      ],
+      qs: [
+        ["What will happen at eleven?", "Awards will be presented.", "The fair will close.", "A concert will begin.", "Lunch will be served.", "Th\xF4ng b\xE1o."],
+        ["What time does the fair close today?", "At four", "At six", "At two", "At eleven", "Th\xF4ng b\xE1o."],
+        ["When may exhibitors start removing their stands?", "At 4:15", "At 4:00", "At 6:00", "At noon", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Voicemail from a building manager",
+      lines: [
+        "W: Hello, this is a message for all tenants on the sixth floor. This is Karen from building management.",
+        "W: A water pipe has burst in the ceiling above the corridor. The water has been turned off, and a plumber is on the way.",
+        "W: Please do not use the kitchen or the restrooms on your floor until further notice. The facilities on the fifth floor are available."
+      ],
+      qs: [
+        ["What has happened?", "A pipe has burst.", "The power is off.", "A window is broken.", "The elevator is stuck.", "L\u1EDDi nh\u1EAFn."],
+        ["Who is on the way?", "A plumber", "An electrician", "A cleaner", "The fire service", "L\u1EDDi nh\u1EAFn."],
+        ["What should tenants do?", "Use the facilities on the fifth floor", "Leave the building", "Turn off their computers", "Call the plumber", "L\u1EDDi nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Advertisement for a business magazine",
+      lines: [
+        "M: Stay ahead of your competitors with Business Insight, the monthly magazine for managers.",
+        "M: Each issue includes interviews with successful leaders, practical advice, and a report on one growing industry.",
+        'M: Subscribe today for just forty-nine dollars a year and receive a free book, "The Smart Manager." Subscribers also get free entry to our annual conference.'
+      ],
+      qs: [
+        ["Who is the magazine for?", "Managers", "Students", "Tourists", "Engineers only", "Qu\u1EA3ng c\xE1o."],
+        ["How often is it published?", "Monthly", "Weekly", "Daily", "Once a year", "Qu\u1EA3ng c\xE1o."],
+        ["What do subscribers receive?", "A free book", "A discount on travel", "A free laptop", "A second magazine", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Talk to new bank employees",
+      lines: [
+        "W: Welcome to First City Bank. During this first week, you will learn our systems and our rules on security.",
+        "W: Never write down your password, and always lock your screen when you leave your desk, even for a minute.",
+        "W: If a customer asks for information about another person's account, you must refuse, even if they say they are a relative. If you are unsure, ask your supervisor."
+      ],
+      qs: [
+        ["What will the listeners learn this week?", "Systems and security rules", "How to sell loans", "How to manage a branch", "Foreign languages", "L\u1EDDi n\xF3i."],
+        ["What should staff do when leaving their desks?", "Lock their screens", "Switch off the computer", "Tell a supervisor", "Take their passwords", "L\u1EDDi n\xF3i."],
+        ["What must staff do if asked about another person's account?", "Refuse", "Check the relative's ID", "Give limited details", "Call the customer", "L\u1EDDi n\xF3i."]
+      ]
+    },
+    {
+      title: "Recorded message for a pharmacy",
+      lines: [
+        "M: Thank you for calling Greenway Pharmacy.",
+        "M: To order a repeat prescription, press one. Please allow two working days before collecting your medicine.",
+        "M: Our flu vaccination service is now available without an appointment on weekdays between ten and four. We are closed on Sundays."
+      ],
+      qs: [
+        ["How long should customers wait before collecting a repeat prescription?", "Two working days", "One hour", "One week", "The same day", "Th\xF4ng b\xE1o."],
+        ["What service needs no appointment?", "Flu vaccination", "Eye tests", "Blood tests", "Dental checks", "Th\xF4ng b\xE1o."],
+        ["When is the pharmacy closed?", "On Sundays", "On Saturdays", "On weekdays after four", "On Mondays", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Excerpt from a planning meeting",
+      lines: [
+        "W: Our lease on this building ends in eighteen months, so we need to decide whether to stay or move.",
+        "W: The owner has offered to renew for five years, but the rent would rise by fifteen percent. I have found two other buildings nearby that are slightly cheaper.",
+        "W: I would like three volunteers to visit them with me next Tuesday and report back to this group."
+      ],
+      qs: [
+        ["What must the company decide?", "Whether to stay or move", "Whether to hire staff", "Whether to buy the building", "Whether to close", "L\u1EDDi n\xF3i."],
+        ["What would happen to the rent if they stay?", "It would rise by fifteen percent.", "It would fall.", "It would stay the same.", "It would double.", "L\u1EDDi n\xF3i."],
+        ["What does the speaker ask for?", "Volunteers to visit buildings", "A new lease", "A meeting with the owner", "A budget", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "News report on a tourism campaign",
+      lines: [
+        "M: The regional tourist board has launched a campaign to attract visitors in winter.",
+        "M: Hotels will offer three nights for the price of two from November to February, and museums will be free on Sundays.",
+        "M: Last year, eighty percent of tourists came between May and September. The board hopes to increase winter visitors by a quarter."
+      ],
+      qs: [
+        ["What is the aim of the campaign?", "To attract winter visitors", "To build new hotels", "To close museums", "To reduce summer crowds", "B\u1EA3n tin."],
+        ["What will hotels offer?", "Three nights for the price of two", "Free breakfast", "Half-price rooms", "Free transport", "B\u1EA3n tin."],
+        ["When will museums be free?", "On Sundays", "Every day", "In summer", "On Mondays", "B\u1EA3n tin."]
+      ]
+    },
+    {
+      title: "Message about a sales trip",
+      lines: [
+        "W: Hi, Dan. It is Monica. I have planned our sales trip for next week.",
+        "W: We will visit the customer who placed the largest order last year first, on Monday, and then the others in order of size.",
+        "W: I have booked the hotel for four nights. Please bring the new catalogs."
+      ],
+      graphic: ["Customers \u2013 orders last year", "Customer | City | Orders\nAlder Stores | Leeds | $120,000\nBaxter & Co. | York | $85,000\nCrown Retail | Hull | $210,000\nDale Group | Bath | $60,000"],
+      qs: [
+        ["What has the speaker planned?", "A sales trip", "A conference", "A vacation", "A training day", "L\u1EDDi nh\u1EAFn."],
+        ["Look at the graphic. Which city will the speakers visit on Monday?", "Hull", "Leeds", "York", "Bath", "Kh\xE1ch h\xE0ng c\xF3 \u0111\u01A1n l\u1EDBn nh\u1EA5t: Crown Retail \u1EDF Hull."],
+        ["What should the listener bring?", "The new catalogs", "The hotel booking", "A laptop", "Product samples", "C\xE2u cu\u1ED1i."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-18-r.ts
+var R18 = {
+  p5: [
+    ["The company will ____ three new stores next year.", "open", "opening", "opened", "openly", 'Sau "will" l\xE0 V nguy\xEAn m\u1EABu.'],
+    ["The receptionist greeted each guest ____.", "politely", "polite", "politeness", "politer", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "greeted".'],
+    ["The documents must be signed ____ both parties.", "by", "from", "with", "at", "B\u1ECB \u0111\u1ED9ng: by + t\xE1c nh\xE2n."],
+    ["The new model is ____ more powerful than the old one.", "far", "very", "so", "too", '"far + so s\xE1nh h\u01A1n".'],
+    ["Ms. Abbas has been ____ to the board of directors.", "elected", "electing", "elect", "election", "B\u1ECB \u0111\u1ED9ng hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh."],
+    ["The store will give a refund ____ the item is returned within a week.", "if", "unless", "although", "whereas", "M\u1EC7nh \u0111\u1EC1 \u0111i\u1EC1u ki\u1EC7n."],
+    ["The manager spoke ____ of the new employee.", "highly", "high", "height", "higher", '"speak highly of".'],
+    ["The firm is known for its ____ customer service.", "outstanding", "outstandingly", "outstand", "outstands", "T\xEDnh t\u1EEB tr\u01B0\u1EDBc danh t\u1EEB."],
+    ["All packages are inspected ____ they are shipped.", "before", "during", "ahead", "prior", '"before + m\u1EC7nh \u0111\u1EC1".'],
+    ["The meeting room is available ____ Tuesday afternoons.", "on", "in", "at", "by", '"on Tuesday afternoons".'],
+    ["The director made a ____ to hire more staff.", "decision", "decide", "decisive", "decided", 'Sau "a" c\u1EA7n danh t\u1EEB.'],
+    ["The software runs ____ on older computers.", "slowly", "slow", "slowness", "slowing", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "runs".'],
+    ["Employees should ____ any safety concerns to their supervisor.", "report", "reporting", "reported", "reporter", 'Sau "should" l\xE0 V nguy\xEAn m\u1EABu.'],
+    ["The price is the same ____ of the size.", "regardless", "regarding", "regard", "regarded", '"regardless of".'],
+    ["The project was a success ____ the team's hard work.", "thanks to", "despite", "although", "unless", '"thanks to + danh t\u1EEB".'],
+    ["Every one of the applicants ____ interviewed last week.", "was", "were", "have been", "are", '"Every one of..." + \u0111\u1ED9ng t\u1EEB s\u1ED1 \xEDt.'],
+    ["Only when the alarm sounded ____ the building.", "did they leave", "they left", "they did leave", "left they", '\u0110\u1EA3o ng\u1EEF sau "Only when".'],
+    ["The manager requested that all staff ____ present.", "be", "are", "were", "being", 'Th\u1EC3 gi\u1EA3 \u0111\u1ECBnh sau "request that".']
+  ],
+  p6: [
+    {
+      title: "Email: Change of meeting date",
+      text: "Dear all,\n\nBecause several members of the team will be at the Berlin trade fair, the monthly planning meeting has been (1)____ from March 12 to March 19.\n\nThe time and place remain the same: 10:00 a.m. in Conference Room A. (2)____. Please read it before the meeting.\n\nIf you have items to add, send them to me (3)____ March 14. I apologize for any (4)____ this change may cause.\n\nRegards,\nMichael",
+      qs: [
+        ["(1) ____", "moved", "moving", "move", "movement", "B\u1ECB \u0111\u1ED9ng hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh."],
+        ["(2) ____", "The agenda is attached to this email.", "Berlin is in Germany.", "Trade fairs are crowded.", "Room A has twelve chairs.", '"Please read it before the meeting" \u2013 "it" l\xE0 agenda.'],
+        ["(3) ____", "by", "until", "onto", "at", '"by + h\u1EA1n".'],
+        ["(4) ____", "inconvenience", "inconvenient", "inconveniently", "inconvenienced", 'Sau "any" c\u1EA7n danh t\u1EEB.']
+      ]
+    },
+    {
+      title: "Notice: Bicycle parking",
+      text: "NEW BICYCLE SHELTER\n\nA covered bicycle shelter with space for sixty bicycles has been (1)____ behind Building B.\n\nThe shelter is locked at all times. (2)____. Cards can be requested from the security office at no cost.\n\nPlease do not leave bicycles (3)____ to railings or trees; they will be removed. Showers and lockers for cyclists are (4)____ on the ground floor of Building B.",
+      qs: [
+        ["(1) ____", "installed", "installing", "install", "installation", "B\u1ECB \u0111\u1ED9ng hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh."],
+        ["(2) ____", "To enter, you will need an access card.", "Bicycles are good exercise.", "Building B is the tallest.", "Rain is common in autumn.", 'C\xE2u sau: "Cards can be requested".'],
+        ["(3) ____", "chained", "chaining", "chain", "chains", 'Ph\xE2n t\u1EEB qu\xE1 kh\u1EE9: "leave bicycles chained to".'],
+        ["(4) ____", "located", "locating", "locate", "location", "B\u1ECB \u0111\u1ED9ng: are located."]
+      ]
+    },
+    {
+      title: "Advertisement: Corporate gifts",
+      text: "THANK YOUR CLIENTS IN STYLE\n\nAt GiftCraft, we create gift boxes that your clients will remember. Choose from fine chocolates, teas, and locally made products, or let us (1)____ a box to suit your budget.\n\nEvery box can carry your company logo and a personal message. (2)____. You simply send us a list of addresses.\n\nOrders of fifty boxes or more receive a ten percent discount. To be sure of (3)____ before the holidays, please order (4)____ December 1.",
+      qs: [
+        ["(1) ____", "design", "designing", "designed", "designer", '"let us + V nguy\xEAn m\u1EABu".'],
+        ["(2) ____", "We also deliver each gift directly to the recipient.", "Chocolate melts in the sun.", "Our shop is on the corner.", "Tea comes from Asia.", '"You simply send us a list of addresses".'],
+        ["(3) ____", "delivery", "deliver", "delivered", "delivers", 'Sau gi\u1EDBi t\u1EEB "of" c\u1EA7n danh t\u1EEB.'],
+        ["(4) ____", "by", "until", "since", "during", '"by December 1".']
+      ]
+    },
+    {
+      title: "Letter: Overdue library books",
+      text: "Dear Ms. Carter,\n\nOur records show that three books borrowed on your card were due back on May 2 and have not yet been (1)____.\n\nA fine of twenty cents per book per day is now being charged. (2)____. You can do this at any branch or through the book drop outside.\n\nIf you believe that you have already returned the books, please contact us (3)____ we can check our shelves. Until the matter is resolved, you will not be able to borrow (4)____ items.\n\nYours sincerely,\nCity Library Service",
+      qs: [
+        ["(1) ____", "returned", "returning", "return", "returns", "B\u1ECB \u0111\u1ED9ng hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh."],
+        ["(2) ____", "To avoid further charges, please bring them back as soon as possible.", "Books are printed on paper.", "May is a spring month.", "Our branches open at nine.", '"You can do this at any branch".'],
+        ["(3) ____", "so that", "in case of", "even if", "as though", '"so that + m\u1EC7nh \u0111\u1EC1".'],
+        ["(4) ____", "further", "farther", "furthest", "far", '"further items".']
+      ]
+    }
+  ],
+  p7: [
+    {
+      title: "Sign: Cafeteria",
+      text: "TODAY'S SPECIAL\n\nGrilled chicken with rice and salad \u2013 $7.50\nVegetable soup with bread \u2013 $4.00\n\nFree fruit with every meal on Fridays. Please return your tray to the rack.",
+      qs: [
+        ["How much is the soup?", "$4.00", "$7.50", "$3.50", "Free", "Bi\u1EC3n b\xE1o."],
+        ["What is free on Fridays?", "Fruit", "Soup", "Coffee", "Bread", "Bi\u1EC3n b\xE1o."]
+      ]
+    },
+    {
+      title: "Text message",
+      text: "From: Pedro\n\nHi Anna, the delivery truck has arrived early, and I am alone in the shop. Could you come in thirty minutes before your shift to help me unload? I will buy you lunch!",
+      qs: [
+        ["What is Pedro's problem?", "He needs help with a delivery.", "The truck is late.", "He is ill.", "The shop is closed.", "Tin nh\u1EAFn."],
+        ["What does he offer Anna?", "Lunch", "Extra pay", "A day off", "A ride home", "Tin nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Email: Website feedback",
+      text: `To: Web Team
+From: Carla Rossi, Customer Service
+Subject: Complaints about the new website
+
+Since the new website went live on Monday, we have received about thirty calls from customers who cannot find the "Track my order" page. It used to be on the home page; now it is under "My account," which requires a password.
+
+Many of our customers order as guests and do not have an account. Could the link be put back on the home page? I am happy to explain the problem in more detail at tomorrow's meeting.`,
+      qs: [
+        ["What are customers complaining about?", "They cannot find a page.", "The site is too slow.", "Prices are wrong.", "They cannot pay.", "Email."],
+        ["Why is the new location a problem?", "Many customers have no account.", "The page is too long.", "The password is too short.", "The link is broken.", "Email."],
+        ["What does Ms. Rossi request?", "Moving the link back to the home page", "Closing the website", "Hiring more staff", "Changing the password rules", "Email."]
+      ]
+    },
+    {
+      title: "Advertisement: Language school",
+      text: "SPEAK SPANISH FOR BUSINESS\n\nNew ten-week course starting October 6 at the Instituto Sol.\n\n\u2022 Tuesday and Thursday evenings, 6:30\u20138:00\n\u2022 Small groups (maximum eight students)\n\u2022 Focus on meetings, emails, and telephone calls\n\u2022 Course book included in the fee of $290\n\nA free trial lesson will be held on September 29. Register at institutosol.example.",
+      qs: [
+        ["How long is the course?", "Ten weeks", "Eight weeks", "Six months", "Two days", "Qu\u1EA3ng c\xE1o."],
+        ["What is included in the fee?", "A course book", "A dictionary", "A trip to Spain", "Private lessons", "Qu\u1EA3ng c\xE1o."],
+        ["What happens on September 29?", "A free trial lesson", "The course begins", "Registration closes", "An examination", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Memo: Visitors from head office",
+      text: "MEMO\nTo: All staff, Bristol branch\nFrom: Branch Manager\n\nThe chief executive and two directors will visit our branch on Thursday, May 8, from 10:00 a.m.\n\nThey would like to meet staff informally, so please continue your normal work. However, I ask everyone to keep their desks tidy and to wear their name badges. The visitors will have lunch in the staff canteen at 12:30, and all are welcome to join them.",
+      qs: [
+        ["Who will visit the branch?", "The chief executive and two directors", "Customers", "Inspectors", "New employees", "Th\xF4ng b\xE1o."],
+        ["What should staff do during the visit?", "Carry on working as usual", "Stop work and line up", "Go home early", "Prepare a presentation", "Th\xF4ng b\xE1o."],
+        ["Where will the visitors have lunch?", "In the staff canteen", "In a restaurant", "In the manager's office", "At a hotel", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Information: Luggage allowance",
+      text: "CABIN BAGGAGE \u2013 Sunway Air\n\nEach passenger may bring one cabin bag (max. 55 \xD7 40 \xD7 20 cm, 8 kg) and one small personal item, such as a handbag or laptop case.\n\nBags that are too large or too heavy must be checked in at the gate for a fee of $45. Liquids must be in containers of 100 ml or less, inside a clear plastic bag.",
+      qs: [
+        ["What is the weight limit for a cabin bag?", "8 kg", "20 kg", "55 kg", "45 kg", "Th\xF4ng tin."],
+        ["What happens to bags that are too large?", "They are checked in for a fee.", "They are left behind.", "They are carried free.", "They are sent by post.", "Th\xF4ng tin."],
+        ["What is the maximum size of a liquid container?", "100 ml", "1 liter", "45 ml", "8 ml", "Th\xF4ng tin."]
+      ]
+    },
+    {
+      title: "Article: Small firm wins export prize",
+      text: `A family firm that makes wooden toys has won this year's Regional Export Prize. \u2014 [1] \u2014 Pinewood Toys, which employs just eighteen people, now sells to twenty-three countries.
+
+The company began exporting only five years ago, after founder Anna Berg took a stand at a toy fair in Germany. \u2014 [2] \u2014 Orders arrived from shops in Japan and Canada within weeks.
+
+Ms. Berg believes that the firm's size is an advantage. \u2014 [3] \u2014 "We can change a design in a day if a customer asks," she said. \u2014 [4] \u2014 The prize includes $10,000, which the company will use to build a new website.`,
+      qs: [
+        ["What does Pinewood Toys make?", "Wooden toys", "Furniture", "Websites", "Trade fair stands", "\u0110o\u1EA1n 1."],
+        ["What started the company's exports?", "A toy fair in Germany", "A government grant", "A television program", "A visit from Japan", "\u0110o\u1EA1n 2."],
+        ["What will the prize money be used for?", "A new website", "A new factory", "More staff", "A trip to Canada", "\u0110o\u1EA1n cu\u1ED1i."],
+        ['In which position does this sentence best belong? "It was the first time she had shown her products abroad."', "[2]", "[1]", "[3]", "[4]", "N\u1ED1i v\u1EDBi h\u1ED9i ch\u1EE3 \u0111\u1ED3 ch\u01A1i \u1EDF \u0110\u1EE9c."]
+      ]
+    },
+    {
+      title: "Email and table",
+      text: "To: All managers\nFrom: Facilities\nSubject: Meeting room bookings\n\nFrom next week, the four meeting rooms can be booked only through the new online calendar. Please note the equipment in each room below. Rooms may be booked for a maximum of two hours. Bookings not used within ten minutes of the start time will be canceled automatically.\n\n--------------------\nMEETING ROOMS\nRoom | Seats | Equipment\nAspen | 6 | Screen\nBirch | 10 | Screen, video camera\nCedar | 16 | Screen, video camera, whiteboard\nElm | 4 | None",
+      qs: [
+        ["How must rooms be booked from next week?", "Through an online calendar", "By telephone", "By email to Facilities", "On a paper list", "Email."],
+        ["What is the maximum booking time?", "Two hours", "Ten minutes", "Four hours", "One hour", "Email."],
+        ["Which is the smallest room with a video camera?", "Birch", "Aspen", "Cedar", "Elm", "Birch 10 ch\u1ED7 c\xF3 camera."],
+        ["Which room has no equipment?", "Elm", "Aspen", "Birch", "Cedar", "B\u1EA3ng."],
+        ["What happens if a room is not used within ten minutes?", "The booking is canceled.", "A fee is charged.", "The manager is warned.", "Nothing.", "Email."]
+      ]
+    },
+    {
+      title: "Web page and email",
+      text: "GREENWAY TAXIS \u2013 Airport fixed fares\nFrom the city center: $38 \xB7 From the north suburbs: $46 \xB7 From the south suburbs: $52\nFares are per car (up to 4 passengers). Larger vehicle (up to 7): add $15. Night surcharge (11 p.m.\u20135 a.m.): add $8. Book online at least 2 hours ahead.\n\n--------------------\nTo: Greenway Taxis\nFrom: Paula Meier\n\nI need a taxi from the south suburbs to the airport next Friday. There will be six of us with suitcases. Our flight is at 7:00 a.m., so we would like to be collected at 4:15 a.m. Please confirm the fare.",
+      qs: [
+        ["How much is the basic fare from the south suburbs?", "$52", "$38", "$46", "$60", "Trang web."],
+        ["Why does Ms. Meier need a larger vehicle?", "There are six passengers.", "She has a pet.", "She has a bicycle.", "She wants more comfort.", "Email."],
+        ["Why will a night surcharge apply?", "The pickup is before 5 a.m.", "The flight is late.", "It is a Friday.", "The airport is far.", "\u0110\xF3n l\xFAc 4:15 s\xE1ng."],
+        ["What will the total fare be?", "$75", "$67", "$60", "$52", "$52 + $15 + $8."],
+        ["How far ahead must the taxi be booked?", "At least 2 hours", "At least 24 hours", "One week", "No booking is needed", "Trang web."]
+      ]
+    },
+    {
+      title: "Advertisement, email, and reply",
+      text: "THE OLD MILL \u2013 Rooms for private events\nRiver Room (up to 40 guests): $300 for the evening \xB7 Barn (up to 120 guests): $700 for the evening\nBoth include tables, chairs, and a sound system. Our kitchen offers a buffet from $28 per person. Music must end by 11:30 p.m.\n\n--------------------\nTo: The Old Mill\nFrom: Greg Nolan\n\nI would like to hold my parents' anniversary party on Saturday, June 14, for about 90 guests, with a buffet. We have hired a band. How late may they play?\n\n--------------------\nTo: Greg Nolan\nFrom: The Old Mill\n\nThe Barn is available on June 14. With the basic buffet for 90 guests, the total would be $3,220. As our advertisement says, the band should finish half an hour before midnight.",
+      qs: [
+        ["What is included with both rooms?", "A sound system", "A band", "Food", "Flowers", "Qu\u1EA3ng c\xE1o."],
+        ["Why does Mr. Nolan need the Barn?", "He has about 90 guests.", "It is cheaper.", "It is near the river.", "The River Room is booked.", "River Room ch\u1EC9 ch\u1EE9a 40."],
+        ["How is $3,220 calculated?", "$700 plus 90 buffets at $28", "$300 plus 90 buffets at $28", "90 buffets at $28 only", "$700 plus 120 buffets", "$700 + $2,520."],
+        ["What is the event?", "An anniversary party", "A wedding", "A birthday", "A company dinner", "Email."],
+        ["When must the band stop playing?", "At 11:30 p.m.", "At midnight", "At 11:00 p.m.", "At 10:30 p.m.", "N\u1EEDa gi\u1EDD tr\u01B0\u1EDBc n\u1EEDa \u0111\xEAm."]
+      ]
+    },
+    {
+      title: "Notice, form, and email",
+      text: "STAFF SUGGESTION SCHEME\nHave an idea that would save money or improve our service? Submit it on the form below. Ideas that are adopted earn $100. The best idea of the year wins $1,000. Suggestions are reviewed on the first Friday of each month.\n\n--------------------\nSUGGESTION FORM\nName: Kofi Mensah   Department: Warehouse   Date: March 18\nIdea: Reuse the cardboard boxes from incoming deliveries for outgoing orders instead of buying new ones. I estimate that this would save $9,000 a year.\n\n--------------------\nTo: Kofi Mensah\nFrom: Operations Director\nDate: April 5\n\nYour suggestion was reviewed yesterday and approved. We will begin next month. Thank you. Your reward will be added to your April pay.",
+      qs: [
+        ["How much is paid for an adopted idea?", "$100", "$1,000", "$9,000", "Nothing", "Th\xF4ng b\xE1o."],
+        ["What does Mr. Mensah suggest?", "Reusing cardboard boxes", "Buying cheaper boxes", "Hiring fewer staff", "Changing suppliers", "Phi\u1EBFu."],
+        ["How much could his idea save each year?", "$9,000", "$1,000", "$100", "$900", "Phi\u1EBFu."],
+        ["When was his suggestion reviewed?", "On April 4", "On March 18", "On April 5", "On May 1", 'Email ng\xE0y 5/4: "reviewed yesterday".'],
+        ["How will he receive his reward?", "With his April pay", "In cash", "As a voucher", "At the end of the year", "Email."]
+      ]
+    },
+    {
+      title: "Article, email, and notice",
+      text: "LOCAL NEWS \u2013 The Riverside Cinema will close for two weeks from September 1 while new seats are fitted. The number of seats will fall from 300 to 220, giving each customer more room. Ticket prices will not change.\n\n--------------------\nTo: Riverside Cinema\nFrom: Hannah Weiss, Film Club Secretary\n\nOur film club has held its monthly meeting at the cinema on the first Wednesday of every month for ten years. With the closure, where can we meet in September? There are usually about forty of us.\n\n--------------------\nNOTICE \u2013 Riverside Cinema\nDuring the closure, the Film Club meeting on Wednesday, September 3, will be held in the upstairs room of the Town Library at the usual time of 7:30 p.m. The cinema reopens on September 15.",
+      qs: [
+        ["Why is the cinema closing?", "New seats are being fitted.", "It is being sold.", "Ticket sales have fallen.", "The roof is leaking.", "B\xE0i b\xE1o."],
+        ["How many seats will the cinema have afterwards?", "220", "300", "80", "40", "B\xE0i b\xE1o."],
+        ["How often does the film club meet?", "Once a month", "Every week", "Twice a year", "Every day", "Email."],
+        ["Where will the club meet in September?", "At the Town Library", "At the cinema", "At a caf\xE9", "At the secretary's home", "Th\xF4ng b\xE1o."],
+        ["When does the cinema reopen?", "On September 15", "On September 1", "On September 3", "On October 1", "Th\xF4ng b\xE1o."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-19-l.ts
+var L19 = {
+  p2: [
+    ["Where should I leave the samples?", "On the table in the showroom.", "Six of them.", "They are free.", "Where \u2192 v\u1ECB tr\xED."],
+    ["Who approved this purchase order?", "The finance manager.", "For two thousand dollars.", "In order.", "Who \u2192 ng\u01B0\u1EDDi duy\u1EC7t."],
+    ["When does the warranty period begin?", "On the date of delivery.", "For two years.", "In the box.", "When \u2192 th\u1EDDi \u0111i\u1EC3m."],
+    ["How was your meeting with the supplier?", "Very productive. We agreed on a price.", "By car.", "For two hours.", "How was \u2192 nh\u1EADn x\xE9t."],
+    ["Would you like a table inside or outside?", "Outside, if there is one in the shade.", "Yes, please.", "A table for two.", "C\xE2u h\u1ECFi l\u1EF1a ch\u1ECDn."],
+    ["Why is the printer making that noise?", "I think a piece of paper is stuck.", "In the corner.", "It is very loud.", "Why \u2192 l\xFD do."],
+    ["Has the new schedule been approved?", "Yes, it starts next Monday.", "On schedule.", "I approved the price.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Which bus goes to the business park?", "The number thirty.", "Every ten minutes.", "It is a big park.", "Which \u2192 s\u1ED1 xe."],
+    ["The packages were sent yesterday, weren't they?", "Yes, by express delivery.", "A large package.", "They are sending it.", "C\xE2u h\u1ECFi \u0111u\xF4i."],
+    ["Could you translate this email for me?", "Sure. Is it in German?", "It was sent.", "I can mail it.", "L\u1EDDi nh\u1EDD \u2192 \u0111\u1ED3ng \xFD, h\u1ECFi l\u1EA1i."],
+    ["How many rooms have been booked for the conference?", "Forty-five so far.", "At the Grand Hotel.", "For three nights.", "How many \u2192 s\u1ED1 l\u01B0\u1EE3ng."],
+    ["The elevator will be out of service tomorrow.", "Then I will take the stairs.", "It serves coffee.", "Up to the tenth floor.", "Th\xF4ng b\xE1o \u2192 h\u1EC7 qu\u1EA3."],
+    ["Should we invite the suppliers or just the clients?", "Both, I think.", "Yes, we should.", "The invitations are blue.", "C\xE2u h\u1ECFi l\u1EF1a ch\u1ECDn."],
+    ["Is the gym open to all employees?", "Yes, from six in the morning.", "I exercise daily.", "On the lower level.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Why don't you call the help desk?", "I already did. They are sending someone.", "Because it is helpful.", "At the desk.", 'L\u1EDDi g\u1EE3i \xFD \u2192 "\u0111\xE3 g\u1ECDi r\u1ED3i".'],
+    ["Whose desk is next to the window?", "That is Fatima's.", "It is very bright.", "A wooden desk.", "Whose \u2192 ng\u01B0\u1EDDi."],
+    ["I cannot open the storage room.", "The key is at reception.", "It is a big room.", "Open the window.", "V\u1EA5n \u0111\u1EC1 \u2192 gi\u1EA3i ph\xE1p."]
+  ],
+  p3: [
+    {
+      title: "A customer wants to rent a car",
+      lines: [
+        "M: Good morning. I would like to rent a car for three days.",
+        "W: Certainly. Do you have a preference?",
+        "M: Something small and automatic. I will mostly be driving in the city.",
+        "W: We have a compact automatic for forty-five dollars a day. May I see your license and a credit card?",
+        "M: Here you are. Is there a limit on mileage?",
+        "W: No, it is unlimited."
+      ],
+      qs: [
+        ["How long does the man need the car?", "Three days", "One day", "A week", "Five days", "L\u1EDDi tho\u1EA1i."],
+        ["What kind of car does he want?", "A small automatic", "A large van", "A sports car", "A manual car", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman say about mileage?", "It is unlimited.", "It is limited to 100 km a day.", "It costs extra.", "It must be recorded.", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A late shipment to a customer",
+      lines: [
+        "W: Mr. Patel called. He still has not received the two hundred chairs he ordered.",
+        "M: They were supposed to leave the factory on Monday.",
+        "W: The factory says one of the machines broke down. They can ship one hundred tomorrow and the rest next week.",
+        "M: Call Mr. Patel and explain. Offer him free delivery for the whole order.",
+        "W: I will do that right now."
+      ],
+      qs: [
+        ["What did Mr. Patel order?", "Chairs", "Tables", "Machines", "Desks", "L\u1EDDi tho\u1EA1i."],
+        ["Why is the order late?", "A machine broke down.", "The truck was delayed.", "The payment was late.", "The address was wrong.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman offer Mr. Patel?", "Free delivery", "A refund", "Extra chairs", "A discount on tables", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A new member of the cleaning staff",
+      lines: [
+        "M: Hello, I am Viktor. I am starting today with the cleaning team.",
+        "W: Welcome, Viktor. I am Dana, the supervisor. You will be working on the third and fourth floors.",
+        "M: What time do I start each day?",
+        "W: At six in the evening, after the offices close. Here is your uniform and a card for the doors.",
+        "M: Thank you. Where are the cleaning materials?",
+        "W: In the cupboard next to the elevator on each floor."
+      ],
+      qs: [
+        ["Who is the woman?", "A supervisor", "A receptionist", "A new cleaner", "An office manager", "L\u1EDDi tho\u1EA1i."],
+        ["When does the man start work each day?", "At six in the evening", "At six in the morning", "At noon", "At midnight", "L\u1EDDi tho\u1EA1i."],
+        ["Where are the cleaning materials kept?", "In a cupboard by the elevator", "In the basement", "At reception", "In the supervisor's office", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A change to a business trip",
+      lines: [
+        "W: The client in Milan has asked to move our meeting from Tuesday to Thursday.",
+        "M: I have already booked my flight for Monday evening.",
+        "W: Can you change it?",
+        "M: Yes, but there is a fee of eighty euros. And I will need the hotel for different nights.",
+        "W: The company will cover the fee. I will change the hotel booking for you."
+      ],
+      qs: [
+        ["What has the client asked for?", "A later meeting date", "A meeting in another city", "A lower price", "A video call", "L\u1EDDi tho\u1EA1i."],
+        ["What will changing the flight cost?", "\u20AC80", "\u20AC18", "\u20AC800", "Nothing", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Change the hotel booking", "Fly to Milan herself", "Cancel the meeting", "Pay the fee personally", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A customer complaint about noise",
+      lines: [
+        "M: Excuse me, the table next to us is very loud. We cannot hear each other.",
+        "W: I am sorry, sir. It is a birthday party. Would you like to move to another table?",
+        "M: Yes, please, if there is one.",
+        "W: There is a quiet table on the terrace. It is a little cooler outside, but I can bring you a heater.",
+        "M: That would be fine."
+      ],
+      qs: [
+        ["What is the man's complaint?", "The next table is noisy.", "The food is cold.", "The service is slow.", "The bill is wrong.", "L\u1EDDi tho\u1EA1i."],
+        ["What is the cause?", "A birthday party", "Loud music", "Building work", "A football match", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman bring?", "A heater", "A blanket", "A menu", "A free dessert", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "Planning a recruitment day",
+      lines: [
+        "W: We are taking part in the university job fair on the twentieth. Who should represent us?",
+        "M: I think two people from engineering and one from human resources.",
+        "W: Good. We will need brochures and a banner.",
+        "M: The banner from last year is damaged. I will order a new one today.",
+        "W: And I will ask the engineers who is free that day."
+      ],
+      qs: [
+        ["What event are the speakers preparing for?", "A job fair", "A trade show", "A graduation", "A company party", "L\u1EDDi tho\u1EA1i."],
+        ["Why is a new banner needed?", "The old one is damaged.", "The old one is too small.", "The logo has changed.", "It was lost.", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman do?", "Find out which engineers are available", "Order brochures", "Design the banner", "Call the university", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A question about an electricity bill",
+      lines: [
+        "M: Hello, my electricity bill for this month is twice as high as usual.",
+        "W: Let me look at your account. I see that the last bill was based on an estimate, because we could not read your meter.",
+        "M: So this bill corrects the estimate?",
+        "W: Exactly. It includes electricity you used earlier but were not charged for.",
+        "M: I see. Can I pay it in two parts?",
+        "W: Yes, I can arrange that for you now."
+      ],
+      qs: [
+        ["Why is the man calling?", "His bill is unusually high.", "His power is off.", "He wants a new meter.", "He is moving house.", "L\u1EDDi tho\u1EA1i."],
+        ["Why is the bill high?", "An earlier bill was only an estimate.", "The price has doubled.", "The meter is broken.", "He was charged twice.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the man ask to do?", "Pay in two parts", "Change supplier", "Speak to a manager", "Have the meter replaced", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A problem in a warehouse",
+      lines: [
+        "W: We are short of space in the warehouse. The new shipment arrives on Friday.",
+        "M: What is taking up the most room?",
+        "W: The garden furniture from last summer. We still have three hundred sets.",
+        "M: Let us sell them at half price this week. I would rather lose a little money than pay for extra storage.",
+        "W: I will ask marketing to send an email to our customers today."
+      ],
+      qs: [
+        ["What is the problem?", "There is not enough space.", "A shipment is late.", "Furniture is damaged.", "Staff are absent.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the man suggest?", "Selling old stock at half price", "Renting more space", "Canceling the shipment", "Giving the furniture away", "L\u1EDDi tho\u1EA1i."],
+        ["What will the woman ask marketing to do?", "Email customers", "Design a poster", "Call suppliers", "Count the stock", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A customer at a travel agency",
+      lines: [
+        "M: I would like to book a week in Greece for two people in September.",
+        "W: Do you prefer an island or the mainland?",
+        "M: An island, somewhere quiet.",
+        "W: I recommend Naxos. This hotel is right on the beach and costs nine hundred euros per person, including flights and breakfast.",
+        "M: That sounds perfect. Can I pay a deposit today?",
+        "W: Yes, twenty percent secures the booking."
+      ],
+      qs: [
+        ["Where does the man want to go?", "To a quiet island", "To a large city", "To the mountains", "To a busy resort", "L\u1EDDi tho\u1EA1i."],
+        ["What is included in the price?", "Flights and breakfast", "All meals", "Car rental", "Excursions", "L\u1EDDi tho\u1EA1i."],
+        ["How much deposit is required?", "Twenty percent", "Ten percent", "Half", "The full amount", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A training request",
+      lines: [
+        "W: I would like to attend a course on spreadsheet software. I waste a lot of time doing calculations by hand.",
+        "M: That is a good idea. Is there one nearby?",
+        "W: The college offers a one-day course on Saturdays for ninety dollars.",
+        "M: The company can pay, provided that you share what you learn with the team.",
+        "W: Of course. I could give a short session the following week."
+      ],
+      qs: [
+        ["What does the woman want to learn?", "Spreadsheet software", "A foreign language", "Accounting law", "Public speaking", "L\u1EDDi tho\u1EA1i."],
+        ["When is the course held?", "On Saturdays", "On weekday evenings", "On Mondays", "Online at any time", "L\u1EDDi tho\u1EA1i."],
+        ["What condition does the man set?", "She must share what she learns.", "She must pay half.", "She must pass an exam.", "She must take vacation time.", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "Choosing a laptop for a new employee",
+      lines: [
+        "M: I need to order a laptop for the new designer. She needs a large screen and at least sixteen gigabytes of memory.",
+        "W: Here is the price list. What is the budget?",
+        "M: Twelve hundred dollars.",
+        "W: Then only one model has both and stays within the budget.",
+        "M: Please order it today."
+      ],
+      graphic: ["Laptop price list", "Model | Screen | Memory | Price\nLite | 13 inch | 8 GB | $700\nPro 15 | 15 inch | 16 GB | $1,150\nPro 17 | 17 inch | 16 GB | $1,450\nStudio | 17 inch | 32 GB | $1,900"],
+      qs: [
+        ["Who is the laptop for?", "A new designer", "The man", "A customer", "An accountant", "L\u1EDDi tho\u1EA1i."],
+        ["What is the budget?", "$1,200", "$700", "$1,450", "$1,900", "L\u1EDDi tho\u1EA1i."],
+        ["Look at the graphic. Which model will be ordered?", "Pro 15", "Lite", "Pro 17", "Studio", "M\xE0n h\xECnh l\u1EDBn, 16 GB, \u2264 $1,200: Pro 15."]
+      ]
+    }
+  ],
+  p4: [
+    {
+      title: "Announcement at a hospital",
+      lines: [
+        "W: Attention, visitors. Visiting hours on all wards end at eight p.m.",
+        "W: Please use the hand gel at the entrance to each ward when you arrive and when you leave.",
+        "W: The main car park closes at nine. If you need to stay later, please move your car to the north car park, which is open all night."
+      ],
+      qs: [
+        ["When do visiting hours end?", "At eight p.m.", "At nine p.m.", "At six p.m.", "At midnight", "Th\xF4ng b\xE1o."],
+        ["What are visitors asked to use?", "Hand gel", "Masks", "Gloves", "A sign-in book", "Th\xF4ng b\xE1o."],
+        ["Which car park is open all night?", "The north car park", "The main car park", "The staff car park", "None", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Voicemail from a caterer",
+      lines: [
+        "M: Hello, Ms. Jensen. This is Luca from Bella Catering.",
+        "M: I am calling about your office party on Friday. You ordered food for sixty people, but your email this morning mentions seventy-five guests.",
+        "M: We can prepare the extra food, but I need you to confirm the new number by noon tomorrow. The additional cost would be three hundred dollars."
+      ],
+      qs: [
+        ["What is the call about?", "The number of guests at a party", "A late payment", "A change of menu", "A change of date", "L\u1EDDi nh\u1EAFn."],
+        ["By when must the listener confirm?", "By noon tomorrow", "By Friday", "This morning", "By next week", "L\u1EDDi nh\u1EAFn."],
+        ["How much would the extra food cost?", "$300", "$75", "$60", "$15", "L\u1EDDi nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Advertisement for a car service",
+      lines: [
+        "W: Is your car ready for a long summer drive? Bring it to Roadwise for a holiday check.",
+        "W: For just thirty-nine dollars, we will check your tires, brakes, oil, and air conditioning. It takes only forty minutes, and you can relax in our waiting room with free coffee.",
+        "W: No appointment is needed on weekdays. Roadwise: drive with peace of mind."
+      ],
+      qs: [
+        ["What is being advertised?", "A car check", "A car rental", "A holiday", "A coffee shop", "Qu\u1EA3ng c\xE1o."],
+        ["How long does the check take?", "Forty minutes", "Thirty-nine minutes", "One day", "Two hours", "Qu\u1EA3ng c\xE1o."],
+        ["When is an appointment unnecessary?", "On weekdays", "At weekends", "In summer", "Never", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Talk to new supermarket employees",
+      lines: [
+        "M: Good morning, and welcome to FreshWay. Today you will learn how to stock the shelves correctly.",
+        'M: The most important rule is "first in, first out." Always put new products behind the older ones, so that the older ones are sold first.',
+        "M: Check the dates on dairy products every morning, and remove anything that expires that day. If you find a damaged package, bring it to the service desk."
+      ],
+      qs: [
+        ["What will the listeners learn today?", "How to stock shelves", "How to use the cash register", "How to order products", "How to serve at the bakery", "L\u1EDDi n\xF3i."],
+        ["Where should new products be placed?", "Behind the older ones", "In front of the older ones", "On the top shelf", "In the storeroom", "L\u1EDDi n\xF3i."],
+        ["What should be done with a damaged package?", "Take it to the service desk", "Throw it away", "Sell it at half price", "Leave it on the shelf", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Recorded message for a museum",
+      lines: [
+        "W: Thank you for calling the Museum of Modern Art.",
+        "W: The museum is open from ten to six, Wednesday to Monday. We are closed on Tuesdays. Admission is free on the first Sunday of each month.",
+        'W: Tickets for the special exhibition "Light and Color" must be booked online in advance. For group visits, press three.'
+      ],
+      qs: [
+        ["On which day is the museum closed?", "Tuesday", "Monday", "Wednesday", "Sunday", "Th\xF4ng b\xE1o."],
+        ["When is admission free?", "On the first Sunday of each month", "Every Sunday", "On Tuesdays", "For groups", "Th\xF4ng b\xE1o."],
+        ["How must tickets for the special exhibition be obtained?", "Online in advance", "At the door", "By telephone", "By mail", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Excerpt from a quality meeting",
+      lines: [
+        "M: Last month, four percent of the products leaving line three had a fault, compared with one percent on the other lines.",
+        "M: We traced the problem to a sensor that was not adjusted correctly after maintenance. It has now been reset.",
+        "M: To prevent this from happening again, a second engineer will check every machine after maintenance, and both must sign the record."
+      ],
+      qs: [
+        ["What was the problem on line three?", "A higher rate of faulty products", "A shortage of workers", "A power cut", "A late delivery", "L\u1EDDi n\xF3i."],
+        ["What caused it?", "A sensor was not adjusted correctly.", "A machine was too old.", "Materials were poor.", "Staff were untrained.", "L\u1EDDi n\xF3i."],
+        ["What new rule is introduced?", "A second engineer will check machines.", "Maintenance will be stopped.", "Line three will close.", "Sensors will be removed.", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "News report on a road project",
+      lines: [
+        "W: Work on the new ring road around the city will begin next month, the transport department confirmed today.",
+        "W: The twelve-kilometer road will take heavy trucks away from the city center and is expected to cut journey times by twenty minutes.",
+        "W: During construction, parts of the existing north road will be closed at night. Drivers are advised to check the department's website for details."
+      ],
+      qs: [
+        ["What will be built?", "A ring road", "A bridge", "A railway", "A tunnel", "B\u1EA3n tin."],
+        ["What is one benefit?", "Fewer trucks in the city center", "More parking", "Lower fuel prices", "New bus routes", "B\u1EA3n tin."],
+        ["What will happen during construction?", "Part of a road will close at night.", "The city center will be closed.", "Trucks will be banned.", "Tolls will be charged.", "B\u1EA3n tin."]
+      ]
+    },
+    {
+      title: "Message about an office supplies order",
+      lines: [
+        "M: Hi, Susan. It is Raj. I checked the stock room this morning.",
+        "M: We agreed to reorder any item when fewer than ten are left. Only one item is below that level, so I will order twenty of those today. Everything else is fine.",
+        "M: Let me know if you need anything that is not on the list."
+      ],
+      graphic: ["Stock room \u2013 this morning", "Item | In stock\nPrinter paper (boxes) | 14\nBlue pens (packs) | 22\nEnvelopes (packs) | 6\nNotebooks | 30"],
+      qs: [
+        ["What did the speaker check?", "The stock room", "The mail", "The printer", "The budget", "L\u1EDDi nh\u1EAFn."],
+        ["Look at the graphic. What will be ordered today?", "Envelopes", "Printer paper", "Blue pens", "Notebooks", "Ch\u1EC9 c\xF3 phong b\xEC d\u01B0\u1EDBi 10."],
+        ["How many will be ordered?", "Twenty", "Ten", "Six", "Thirty", "L\u1EDDi nh\u1EAFn."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-19-r.ts
+var R19 = {
+  p5: [
+    ["The manager will ____ the new schedule tomorrow.", "announce", "announcement", "announcing", "announced", 'Sau "will" l\xE0 V nguy\xEAn m\u1EABu.'],
+    ["The new assistant works very ____.", "efficiently", "efficient", "efficiency", "more efficient", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "works".'],
+    ["The office is closed ____ public holidays.", "on", "in", "at", "to", '"on public holidays".'],
+    ["The product has been ____ successful in Asia.", "extremely", "extreme", "extremity", "extremes", "Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho t\xEDnh t\u1EEB."],
+    ["Ms. Cole is an expert ____ international law.", "in", "onto", "for", "by", '"an expert in".'],
+    ["The company ____ its customers a free trial.", "offers", "offering", "offer", "offerings", "Ch\u1EE7 ng\u1EEF s\u1ED1 \xEDt, hi\u1EC7n t\u1EA1i \u0111\u01A1n."],
+    ["The meeting was ____ by all department heads.", "attended", "attending", "attend", "attendance", "B\u1ECB \u0111\u1ED9ng qu\xE1 kh\u1EE9."],
+    ["The store is located ____ from the station.", "directly across", "direct across", "direction across", "directed", "Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho c\u1EE5m gi\u1EDBi t\u1EEB."],
+    ["Please keep your receipt in ____ you need to return the item.", "case", "order", "spite", "time", '"in case + m\u1EC7nh \u0111\u1EC1".'],
+    ["The director gave a ____ speech at the ceremony.", "memorable", "memory", "memorably", "memorize", "T\xEDnh t\u1EEB tr\u01B0\u1EDBc danh t\u1EEB."],
+    ["The firm has ____ fifty offices worldwide.", "over", "overly", "more", "upper", '"over fifty".'],
+    ["The task was completed ____ than planned.", "faster", "fast", "fastest", "more fast", 'So s\xE1nh h\u01A1n v\u1EDBi "than".'],
+    ["The customer was ____ about the long wait.", "annoyed", "annoying", "annoy", "annoyance", "Ng\u01B0\u1EDDi c\u1EA3m th\u1EA5y \u2192 -ed."],
+    ["The software must be installed ____ the computer is restarted.", "before", "during", "ahead", "prior", '"before + m\u1EC7nh \u0111\u1EC1".'],
+    ["Staff are reminded ____ smoking is not allowed on the premises.", "that", "what", "which", "whether", '"remind that + m\u1EC7nh \u0111\u1EC1".'],
+    ["Most of the information in the report ____ accurate.", "is", "are", "were", "have been", '"information" kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c \u2192 \u0111\u1ED9ng t\u1EEB s\u1ED1 \xEDt.'],
+    ["Under no circumstances ____ the alarm be switched off.", "should", "ought", "does", "is", '\u0110\u1EA3o ng\u1EEF sau "Under no circumstances".'],
+    ["The board insisted that the plan ____ revised.", "be", "is", "was", "will be", 'Th\u1EC3 gi\u1EA3 \u0111\u1ECBnh sau "insist that".']
+  ],
+  p6: [
+    {
+      title: "Email: New supplier introduction",
+      text: "Dear Ms. Olsen,\n\nMy name is Thomas Baker, and I am the sales manager of Baker Packaging. I am writing to (1)____ our company and our products.\n\nWe have been making cardboard boxes for food companies for thirty years. (2)____. We can therefore offer short delivery times at competitive prices.\n\nI would be happy to send you samples or to visit your factory. Would you be (3)____ for a short meeting next week? I look forward to (4)____ from you.\n\nYours sincerely,\nThomas Baker",
+      qs: [
+        ["(1) ____", "introduce", "introducing", "introduced", "introduction", '"to + V".'],
+        ["(2) ____", "Our factory is only twenty kilometers from yours.", "Cardboard is made from trees.", "Food companies are large.", "Thirty years is a long time.", '"therefore offer short delivery times".'],
+        ["(3) ____", "available", "capable", "suitable", "possible", '"be available for a meeting".'],
+        ["(4) ____", "hearing", "hear", "heard", "hears", '"look forward to + V-ing".']
+      ]
+    },
+    {
+      title: "Notice: Staff training day",
+      text: "STORE CLOSED FOR TRAINING\n\nThis store will be closed on Wednesday, February 12, (1)____ all our staff can attend a training day.\n\nWe will reopen at 9:00 a.m. on Thursday. (2)____. You can find its address on our website.\n\nOnline orders will not be affected. We apologize for any inconvenience and thank you for your (3)____. We believe that better training means better (4)____ for you.",
+      qs: [
+        ["(1) ____", "so that", "because of", "in spite of", "as well as", '"so that + m\u1EC7nh \u0111\u1EC1".'],
+        ["(2) ____", "In the meantime, our branch on Hill Street will be open as usual.", "Training is important.", "February is a short month.", "Our staff wear blue shirts.", '"its address" ch\u1EC9 chi nh\xE1nh Hill Street.'],
+        ["(3) ____", "understanding", "understand", "understood", "understands", 'Sau "your" c\u1EA7n danh t\u1EEB.'],
+        ["(4) ____", "service", "serve", "served", "serving", 'Sau t\xEDnh t\u1EEB "better" c\u1EA7n danh t\u1EEB.']
+      ]
+    },
+    {
+      title: "Advertisement: Office cleaning",
+      text: "A CLEAN OFFICE IS A PRODUCTIVE OFFICE\n\nCrystal Clean provides daily and weekly cleaning for offices of all sizes. Our staff are fully trained and (1)____, and they work in the evening so that your employees are not disturbed.\n\nWe use only products that are safe for people and the environment. (2)____. If anything is not perfect, we will return the same day.\n\nContact us for a free quote. Sign a twelve-month contract and (3)____ the first month (4)____.",
+      qs: [
+        ["(1) ____", "insured", "insuring", "insure", "insurance", 'T\xEDnh t\u1EEB (ph\xE2n t\u1EEB) song song v\u1EDBi "trained".'],
+        ["(2) ____", "A supervisor checks every office after it has been cleaned.", "Offices have many desks.", "Evenings are dark in winter.", "Our vans are white.", "D\u1EABn t\u1EDBi cam k\u1EBFt quay l\u1EA1i trong ng\xE0y."],
+        ["(3) ____", "receive", "receiving", "received", "receives", 'C\xE2u m\u1EC7nh l\u1EC7nh song song v\u1EDBi "Sign".'],
+        ["(4) ____", "free", "freely", "freedom", "freeing", '"receive the first month free".']
+      ]
+    },
+    {
+      title: "Letter: Conference refund",
+      text: "Dear Dr. Yilmaz,\n\nWe are sorry to hear that you are (1)____ to attend the Annual Health Conference next month.\n\nAs you canceled more than thirty days before the event, you are entitled to a full refund of your registration fee. (2)____. Please allow up to ten working days.\n\nYour hotel booking was made separately and must be canceled (3)____ with the hotel. We hope that you will be able to join us next year and will send you the program as soon as it is (4)____.\n\nYours sincerely,\nConference Office",
+      qs: [
+        ["(1) ____", "unable", "incapable", "impossible", "unlikely", '"be unable to + V".'],
+        ["(2) ____", "The money will be returned to the card you used to pay.", "Conferences are held every year.", "Our office is open on weekdays.", "Health is very important.", 'C\xE2u sau: "allow up to ten working days".'],
+        ["(3) ____", "directly", "direct", "direction", "directed", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "canceled".'],
+        ["(4) ____", "available", "availability", "availably", "avail", 'Sau "is" c\u1EA7n t\xEDnh t\u1EEB.']
+      ]
+    }
+  ],
+  p7: [
+    {
+      title: "Sign: Fitting rooms",
+      text: "FITTING ROOMS\n\nMaximum of four items per person. Please give unwanted items to the assistant.\n\nFitting rooms close 15 minutes before the store.",
+      qs: [
+        ["How many items may a customer take in?", "Four", "Fifteen", "Two", "Unlimited", "Bi\u1EC3n b\xE1o."],
+        ["What should customers do with unwanted items?", "Give them to the assistant", "Leave them inside", "Put them back on the shelf", "Take them to the register", "Bi\u1EC3n b\xE1o."]
+      ]
+    },
+    {
+      title: "Text message",
+      text: "From: MediCare Clinic\n\nYour test results are ready. Please call 555-0172 between 9 a.m. and 5 p.m. to make an appointment with Dr. Hill to discuss them. Results cannot be given by text or email.",
+      qs: [
+        ["What is ready?", "Test results", "A prescription", "An invoice", "A new card", "Tin nh\u1EAFn."],
+        ["What should the patient do?", "Call to make an appointment", "Reply by text", "Send an email", "Visit without calling", "Tin nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Email: Customer event",
+      text: "To: Store team\nFrom: Nadia Rahimi, Store Manager\nSubject: Late-night shopping event\n\nOn Friday, November 28, the store will stay open until 10:00 p.m. for our annual late-night shopping event. All items will be 15 percent off after 6:00 p.m.\n\nI need eight volunteers to work from 5:00 to 10:30 p.m. You will be paid at one and a half times your normal rate, and a taxi home will be provided.\n\nIf you can help, please sign the sheet in the staff room by Monday.",
+      qs: [
+        ["What is special about November 28?", "The store will close late.", "The store will be closed.", "A new store will open.", "Staff will be trained.", "Email."],
+        ["What will volunteers receive?", "Higher pay and a taxi home", "A day off", "A gift card", "Free shopping", "Email."],
+        ["How should staff volunteer?", "By signing a sheet", "By emailing the manager", "By calling head office", "By telling a customer", "Email."]
+      ]
+    },
+    {
+      title: "Advertisement: Business cards",
+      text: "QUICKCARD \u2013 Business cards in 24 hours\n\nUpload your design or choose one of our 500 templates. Order before noon, and your cards will be shipped the next day.\n\n250 cards: $19 \xB7 500 cards: $29 \xB7 1,000 cards: $45\n\nFree shipping on orders over $40. Not happy? We will reprint your order or return your money.",
+      qs: [
+        ["When are cards shipped if ordered before noon?", "The next day", "The same day", "In a week", "In two days", "Qu\u1EA3ng c\xE1o."],
+        ["How much do 500 cards cost?", "$29", "$19", "$45", "$40", "Qu\u1EA3ng c\xE1o."],
+        ["Which order qualifies for free shipping?", "1,000 cards", "250 cards", "500 cards", "None", "$45 > $40."]
+      ]
+    },
+    {
+      title: "Memo: New telephone system",
+      text: "MEMO\nTo: All employees\nFrom: IT Department\n\nA new telephone system will be installed over the weekend of April 12\u201313. On Monday, you will find a new handset on your desk. Your extension number will not change.\n\nVoicemail messages on the old system will be deleted, so please listen to them before Friday. A one-page guide to the new phones is attached. Short training sessions will be held on Monday at 10:00 and 2:00 in the canteen.",
+      qs: [
+        ["When will the new system be installed?", "Over a weekend", "On Monday", "On Friday", "Next month", "Th\xF4ng b\xE1o."],
+        ["What will stay the same?", "Extension numbers", "Handsets", "Voicemail messages", "The canteen", "Th\xF4ng b\xE1o."],
+        ["What should staff do before Friday?", "Listen to their voicemail", "Return their handsets", "Attend training", "Change their numbers", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Information: Hotel checkout",
+      text: "CHECKOUT INFORMATION\n\nCheckout time is 11:00 a.m. Late checkout until 2:00 p.m. is available for $25 if requested by 9:00 a.m.\n\nYou may use express checkout: leave your key card in the box at reception, and your receipt will be emailed. Luggage can be stored free of charge until 6:00 p.m.",
+      qs: [
+        ["What time is normal checkout?", "11:00 a.m.", "2:00 p.m.", "9:00 a.m.", "6:00 p.m.", "Th\xF4ng tin."],
+        ["How does express checkout work?", "Guests leave their key card in a box.", "Guests call reception.", "Guests pay the night before.", "Guests email the hotel.", "Th\xF4ng tin."],
+        ["Until when can luggage be stored?", "6:00 p.m.", "2:00 p.m.", "11:00 a.m.", "Midnight", "Th\xF4ng tin."]
+      ]
+    },
+    {
+      title: "Article: Airline introduces quiet zone",
+      text: 'Travelers who want to sleep or work may soon find flying a little easier. \u2014 [1] \u2014 Northern Skies Airlines has announced that its long-distance flights will include a "quiet zone" of seven rows at the front of the economy cabin.\n\nIn the quiet zone, lights will be kept low, and announcements will be made only when necessary. \u2014 [2] \u2014 Children under twelve will not be seated there.\n\nA seat in the zone will cost an extra $30. \u2014 [3] \u2014 The airline says the idea came from customer surveys, in which noise was the most common complaint. \u2014 [4] \u2014 The first flights with the new zone will depart in March.',
+      qs: [
+        ["What is the airline introducing?", "A quiet area on its planes", "A new route", "Cheaper tickets", "Free meals", "\u0110o\u1EA1n 1."],
+        ["Who may not sit in the zone?", "Children under twelve", "Business travelers", "Passengers with laptops", "Crew members", "\u0110o\u1EA1n 2."],
+        ["Where did the idea come from?", "Customer surveys", "A competitor", "The pilots", "A government rule", "\u0110o\u1EA1n 3."],
+        ['In which position does this sentence best belong? "Passengers will also be asked to use headphones."', "[2]", "[1]", "[3]", "[4]", 'B\u1ED5 sung quy \u0111\u1ECBnh trong khu y\xEAn t\u0129nh ("also").']
+      ]
+    },
+    {
+      title: "Email and invoice",
+      text: "To: Summit Office Supplies\nFrom: Kate Brennan, Brennan Design\nSubject: Invoice 9917\n\nI have checked invoice 9917 against our order. We ordered five boxes of paper, not six. In addition, your catalog offers 10 percent off toner when two or more cartridges are bought, but the discount is missing. Please send a corrected invoice.\n\n--------------------\nINVOICE 9917 \u2013 Summit Office Supplies\nCopy paper: 6 boxes \xD7 $20 ........ $120\nToner cartridge: 2 \xD7 $50 ........... $100\nDelivery ..................................... $10\nTotal ........................................ $230",
+      qs: [
+        ["How many boxes of paper did Ms. Brennan order?", "Five", "Six", "Two", "Ten", "Email."],
+        ["What discount is missing?", "10 percent off toner", "10 percent off paper", "Free delivery", "$20 off the total", "Email."],
+        ["What should the paper cost after correction?", "$100", "$120", "$80", "$60", "5 \xD7 $20."],
+        ["What should the toner cost after the discount?", "$90", "$100", "$50", "$45", "$100 \u2212 10%."],
+        ["What will the corrected total be?", "$200", "$230", "$190", "$210", "$100 + $90 + $10."]
+      ]
+    },
+    {
+      title: "Web page and email",
+      text: "LAKEVIEW CAMPING \u2013 Prices per night\nTent pitch: $18 \xB7 Motorhome pitch with electricity: $32 \xB7 Wooden cabin (sleeps 4): $75\nShowers and Wi-Fi are free. Bicycle hire: $10 per day. The site shop is open 8\u201311 a.m. and 4\u20137 p.m. Dogs are welcome on pitches but not in cabins.\n\n--------------------\nTo: Lakeview Camping\nFrom: Jan de Vries\n\nWe are two adults, two children, and a dog, and would like to stay for four nights from August 3. We do not have a tent. What would you suggest?",
+      qs: [
+        ["What is free at the campsite?", "Showers and Wi-Fi", "Bicycle hire", "Electricity", "Cabins", "Trang web."],
+        ["When is the shop closed?", "Between 11 a.m. and 4 p.m.", "In the morning", "In the evening before 7", "On weekends", "Trang web."],
+        ["Why would a cabin seem suitable for the family?", "They have no tent and are four people.", "It is the cheapest.", "It has electricity for a motorhome.", "It is by the lake.", "Email."],
+        ["What is the problem with a cabin for this family?", "Dogs are not allowed in cabins.", "It sleeps only two.", "It is closed in August.", "It has no shower.", "Trang web."],
+        ["How much would a cabin cost for their stay?", "$300", "$75", "$128", "$72", "4 \xD7 $75."]
+      ]
+    },
+    {
+      title: "Advertisement, email, and reply",
+      text: "TECHFIX \u2013 Computer repair for small businesses\nOn-site visit: $60 call-out plus $50 per hour \xB7 Remote support by internet: $40 per hour (no call-out fee)\nMonthly support plan: $150 for up to 5 computers, unlimited remote support and one free visit a month.\n\n--------------------\nTo: TechFix\nFrom: Olga Marin, Marin Accounting\n\nWe have four computers. One will not start at all, and another is very slow. We seem to need help every month. What would be the best option for us?\n\n--------------------\nTo: Olga Marin\nFrom: TechFix\n\nA computer that will not start needs a visit. Given how often you need help, I recommend the monthly plan: the visit would be free, and the slow computer can be fixed remotely at no extra cost. Without the plan, this job alone would cost about $160.",
+      qs: [
+        ["How much is remote support per hour without a plan?", "$40", "$50", "$60", "$150", "Qu\u1EA3ng c\xE1o."],
+        ["How many computers does the monthly plan cover?", "Up to five", "Up to four", "One", "Unlimited", "Qu\u1EA3ng c\xE1o."],
+        ["Why does one computer need an on-site visit?", "It will not start.", "It is very slow.", "It has a virus.", "It is too old.", "Email."],
+        ["What does TechFix recommend?", "The monthly support plan", "Buying new computers", "Remote support only", "A single visit", "Email."],
+        ["Why is the plan good value for Ms. Marin?", "She needs help every month.", "She has ten computers.", "She lives far away.", "She works at night.", "Email."]
+      ]
+    },
+    {
+      title: "Notice, form, and email",
+      text: "GREENFIELD BUSINESS AWARDS \u2013 Call for entries\nCategories: Best New Business (under 3 years old) \xB7 Best Employer \xB7 Green Business of the Year \xB7 Exporter of the Year\nEntry is free. Deadline: September 30. Winners will be announced at a dinner on November 14.\n\n--------------------\nENTRY FORM\nCompany: Sunleaf Solar   Founded: 2 years ago   Employees: 12\nCategory: Best New Business\nReason: We have installed solar panels on 400 homes and doubled our sales this year.\n\n--------------------\nTo: Sunleaf Solar\nFrom: Awards Committee\n\nThank you for your entry. Because of your work, the judges would also like to consider you for Green Business of the Year. May we enter you in both categories? You have been shortlisted, and two free tickets to the dinner are enclosed.",
+      qs: [
+        ["How much does it cost to enter?", "Nothing", "$30", "$14", "$100", "Th\xF4ng b\xE1o."],
+        ["Why does Sunleaf Solar qualify for Best New Business?", "It is under three years old.", "It has twelve employees.", "It exports its products.", "It won last year.", "Th\xE0nh l\u1EADp hai n\u0103m tr\u01B0\u1EDBc."],
+        ["What has the company done this year?", "Doubled its sales", "Opened a factory", "Hired 400 people", "Moved abroad", "Phi\u1EBFu."],
+        ["What do the judges suggest?", "Entering a second category", "Changing category", "Paying a fee", "Withdrawing", "Email."],
+        ["What is enclosed with the email?", "Two dinner tickets", "A trophy", "A check", "An entry form", "Email."]
+      ]
+    },
+    {
+      title: "Schedule, email, and notice",
+      text: "CITY LINK COACHES \u2013 Hartford to Bayview (daily)\nDepart Hartford: 7:00 \xB7 9:30 \xB7 12:00 \xB7 3:00 \xB7 6:00\nArrive Bayview: 9:10 \xB7 11:40 \xB7 2:10 \xB7 5:10 \xB7 8:10\nFare: $24 one way. Seats can be reserved online.\n\n--------------------\nTo: City Link Coaches\nFrom: Ruth Adler\n\nI need to be in Bayview for a job interview at 1:00 p.m. on Thursday. I would like to arrive at least an hour early. Which coach should I take?\n\n--------------------\nNOTICE \u2013 Thursday only\nBecause of road works, all coaches will take 30 minutes longer than usual. Departure times are unchanged.",
+      qs: [
+        ["How long does the journey normally take?", "Two hours and ten minutes", "One hour", "Three hours", "Two and a half hours", "7:00 \u2192 9:10."],
+        ["Why is Ms. Adler traveling?", "For a job interview", "For a holiday", "For a conference", "To visit family", "Email."],
+        ["By what time does she want to arrive?", "By 12:00 noon", "By 1:00 p.m.", "By 11:00 a.m.", "By 2:00 p.m.", "M\u1ED9t gi\u1EDD tr\u01B0\u1EDBc 1:00."],
+        ["When will the 9:30 coach arrive on Thursday?", "At 12:10", "At 11:40", "At 12:40", "At 11:10", "11:40 + 30 ph\xFAt."],
+        ["Which coach should she take on Thursday?", "The 7:00", "The 9:30", "The 12:00", "The 3:00", "Chuy\u1EBFn 9:30 \u0111\u1EBFn 12:10, tr\u1EC5 h\u01A1n 12:00 \u2192 c\u1EA7n chuy\u1EBFn 7:00."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-20-l.ts
+var L20 = {
+  p2: [
+    ["Where is the staff entrance?", "Around the back, next to the car park.", "At eight thirty.", "With your ID card.", "Where \u2192 v\u1ECB tr\xED."],
+    ["Who is giving the welcome speech?", "The managing director.", "For ten minutes.", "In the main hall.", "Who \u2192 ng\u01B0\u1EDDi."],
+    ["When will the new software be installed?", "Over the weekend.", "On every computer.", "By the IT team.", "When \u2192 th\u1EDDi gian."],
+    ["How many boxes were delivered this morning?", "Twelve, I think.", "At nine.", "By truck.", "How many \u2192 s\u1ED1 l\u01B0\u1EE3ng."],
+    ["Would you like to add insurance to your booking?", "No, thank you. I am already covered.", "It is a good book.", "I booked it online.", "L\u1EDDi m\u1EDDi \u2192 t\u1EEB ch\u1ED1i."],
+    ["Why is the store so busy today?", "It is the first day of the sale.", "On the high street.", "Until nine.", "Why \u2192 l\xFD do."],
+    ["Have you sent the samples to the laboratory?", "They went this morning by courier.", "A simple test.", "In the lab.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Which platform does the train to Leeds leave from?", "Platform five.", "In ten minutes.", "A return ticket.", "Which \u2192 s\xE2n ga."],
+    ["You have met Mr. Tan before, haven't you?", "Yes, at the conference in May.", "He is tanned.", "Before noon.", "C\xE2u h\u1ECFi \u0111u\xF4i."],
+    ["Could you hold the elevator, please?", "Sure. Which floor?", "It holds ten people.", "I held it yesterday.", "L\u1EDDi nh\u1EDD \u2192 \u0111\u1ED3ng \xFD."],
+    ["How far is it to the nearest bank?", "About five minutes on foot.", "Until five.", "A savings account.", "How far \u2192 kho\u1EA3ng c\xE1ch."],
+    ["The conference room projector has been replaced.", "Good. The old one was too dim.", "I placed it there.", "A new project.", "Th\xF4ng tin \u2192 nh\u1EADn x\xE9t."],
+    ["Should I schedule the interview for Monday or Tuesday?", "Tuesday is better for me.", "Yes, schedule it.", "It was an interview.", "C\xE2u h\u1ECFi l\u1EF1a ch\u1ECDn."],
+    ["Is this the line for returns?", "No, returns are at the next counter.", "I returned it.", "It is a long line.", "C\xE2u h\u1ECFi Yes/No."],
+    ["Let's share a taxi to the station.", "Good idea. It will be cheaper.", "I shared the file.", "At the station.", "\u0110\u1EC1 ngh\u1ECB \u2192 \u0111\u1ED3ng \xFD."],
+    ["Whose turn is it to lock up tonight?", "I did it yesterday, so it is yours.", "With the key.", "At six.", "Whose \u2192 ng\u01B0\u1EDDi."],
+    ["My badge does not open the door.", "Go to security and have it reset.", "It is a nice badge.", "The door is open.", "V\u1EA5n \u0111\u1EC1 \u2192 gi\u1EA3i ph\xE1p."]
+  ],
+  p3: [
+    {
+      title: "A customer books a hotel room",
+      lines: [
+        "W: Hello, I would like to book a double room for two nights from the eighth of March.",
+        "M: Certainly. We have a standard double for one hundred and ten dollars a night, or a room with a sea view for one hundred and forty.",
+        "W: The sea view, please. Is breakfast included?",
+        "M: Yes, it is served from seven until ten.",
+        "W: Good. We will arrive late, around ten p.m.",
+        "M: That is no problem. Reception is open twenty-four hours."
+      ],
+      qs: [
+        ["How long will the woman stay?", "Two nights", "Eight nights", "One night", "A week", "L\u1EDDi tho\u1EA1i."],
+        ["Which room does she choose?", "The room with a sea view", "The standard double", "A single room", "A suite", "L\u1EDDi tho\u1EA1i."],
+        ["What does the man say about reception?", "It is always open.", "It closes at ten.", "It opens at seven.", "It is on the first floor.", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A problem with a delivery van",
+      lines: [
+        "M: One of our vans will not start this morning, and we have forty deliveries to make.",
+        "W: Can the other two vans share them?",
+        "M: Not all of them. They are already full.",
+        "W: Then let us rent a van for the day. The rental office opens at eight.",
+        "M: I will call them now. Could you phone the customers who may get their orders late?"
+      ],
+      qs: [
+        ["What is the problem?", "A van will not start.", "A driver is ill.", "Orders are missing.", "The road is closed.", "L\u1EDDi tho\u1EA1i."],
+        ["What does the woman suggest?", "Renting a van", "Canceling deliveries", "Buying a new van", "Using taxis", "L\u1EDDi tho\u1EA1i."],
+        ["What does the man ask the woman to do?", "Call some customers", "Drive a van", "Repair the van", "Open the rental office", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Discussing a customer survey",
+      lines: [
+        "W: The survey results show that customers love our products but find the website hard to use.",
+        "M: What do they find difficult?",
+        "W: Mostly the checkout. It has six steps, and many people give up halfway.",
+        "M: We should reduce it to three. Can the web team do that before the holiday season?",
+        "W: They say it would take a month. I will ask them to start next week."
+      ],
+      qs: [
+        ["What do customers like?", "The products", "The website", "The prices", "The delivery", "L\u1EDDi tho\u1EA1i."],
+        ["What is the main problem with the website?", "The checkout has too many steps.", "It is too slow.", "It has no pictures.", "It crashes often.", "L\u1EDDi tho\u1EA1i."],
+        ["How long would the change take?", "A month", "A week", "Three days", "Six months", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A lost item at a gym",
+      lines: [
+        "M: Excuse me, I left my watch in a locker yesterday. Has anyone handed it in?",
+        "W: Let me check the lost property box. What does it look like?",
+        "M: It is silver, with a black leather strap.",
+        "W: Yes, here it is. A cleaner found it last night. Could you sign here, please?",
+        "M: Of course. Thank you so much."
+      ],
+      qs: [
+        ["What did the man lose?", "A watch", "A phone", "A key", "A wallet", "L\u1EDDi tho\u1EA1i."],
+        ["Who found it?", "A cleaner", "Another member", "The receptionist", "A trainer", "L\u1EDDi tho\u1EA1i."],
+        ["What must the man do?", "Sign for it", "Pay a fee", "Show his passport", "Come back tomorrow", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "Planning a retirement gift",
+      lines: [
+        "W: Mrs. Kato retires at the end of the month. What shall we give her?",
+        "M: She loves gardening. How about a voucher for the garden center?",
+        "W: Good idea. We have collected two hundred and thirty dollars.",
+        "M: Then a voucher for two hundred, and flowers with the rest.",
+        "W: Perfect. I will buy them on Thursday and get a card for everyone to sign."
+      ],
+      qs: [
+        ["Why are the speakers buying a gift?", "A colleague is retiring.", "It is a birthday.", "A colleague is getting married.", "A manager was promoted.", "L\u1EDDi tho\u1EA1i."],
+        ["What will they give?", "A garden center voucher and flowers", "A watch", "A book", "A holiday", "L\u1EDDi tho\u1EA1i."],
+        ["What else will the woman get?", "A card to sign", "A cake", "A photograph", "Balloons", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A question about a bus pass",
+      lines: [
+        "M: Hi, I would like to buy a monthly bus pass.",
+        "W: For which zones?",
+        "M: I live in zone three and work in zone one.",
+        "W: Then you need the three-zone pass. It is seventy-two dollars. If your employer is in our partner program, you get twenty percent off.",
+        "M: I work for the city hospital.",
+        "W: They are in the program. I just need to see your staff card."
+      ],
+      qs: [
+        ["What does the man want to buy?", "A monthly bus pass", "A single ticket", "A train ticket", "A parking permit", "L\u1EDDi tho\u1EA1i."],
+        ["Why will the man get a discount?", "His employer is in a partner program.", "He is a student.", "He is buying two passes.", "It is a special offer this month.", "L\u1EDDi tho\u1EA1i."],
+        ["What must the man show?", "His staff card", "His passport", "His old pass", "A bank card", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A broken heating system in a store",
+      lines: [
+        "W: The heating has failed, and it is only twelve degrees in the store.",
+        "M: Have you called the engineer?",
+        "W: Yes, he will be here at two. Until then, customers are complaining.",
+        "M: Bring the portable heaters from the stockroom and put one near each cash register.",
+        "W: Good idea. Should we offer hot drinks?",
+        "M: Yes, free tea and coffee for everyone."
+      ],
+      qs: [
+        ["What is the problem?", "The store is cold.", "The store is too hot.", "The lights are off.", "The registers are broken.", "L\u1EDDi tho\u1EA1i."],
+        ["When will the engineer arrive?", "At two", "At twelve", "Tomorrow", "In ten minutes", "L\u1EDDi tho\u1EA1i."],
+        ["What will customers be offered?", "Free hot drinks", "A discount", "A voucher", "Blankets", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "Arranging a meeting with a lawyer",
+      lines: [
+        "M: I need to see a lawyer about a contract with a new supplier.",
+        "W: Ms. Reid handles commercial contracts. She is free on Wednesday at ten or Thursday at three.",
+        "M: Wednesday at ten, please.",
+        "W: Could you send us a copy of the contract beforehand, so that she can read it?",
+        "M: I will email it this afternoon. How long will the meeting last?",
+        "W: About an hour."
+      ],
+      qs: [
+        ["Why does the man need a lawyer?", "To discuss a contract", "To buy a house", "To make a complaint", "To start a company", "L\u1EDDi tho\u1EA1i."],
+        ["When will the meeting take place?", "Wednesday at ten", "Thursday at three", "Wednesday at three", "Thursday at ten", "L\u1EDDi tho\u1EA1i."],
+        ["What will the man send?", "A copy of the contract", "A payment", "His passport", "A list of questions", "L\u1EDDi tho\u1EA1i."]
+      ]
+    },
+    {
+      title: "A change to a work schedule",
+      lines: [
+        "W: Paul, could you work the early shift tomorrow instead of the late one?",
+        "M: What time does it start?",
+        "W: At six. Maria has a hospital appointment.",
+        "M: I can do that, but I have no car in the morning, and the first bus arrives at six fifteen.",
+        "W: I live near you. I will pick you up at five thirty."
+      ],
+      qs: [
+        ["What does the woman ask the man to do?", "Work an earlier shift", "Work on his day off", "Stay late", "Train Maria", "L\u1EDDi tho\u1EA1i."],
+        ["What is the man's difficulty?", "He has no transport early in the morning.", "He has an appointment.", "He is too tired.", "He lives far away.", "L\u1EDDi tho\u1EA1i."],
+        ["How will the problem be solved?", "The woman will drive him.", "He will take a taxi.", "He will start later.", "Maria will come in.", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "A customer orders printed mugs",
+      lines: [
+        "M: I would like a hundred mugs with our company logo, as gifts for clients.",
+        "W: Certainly. In white or in color?",
+        "M: White, with the logo in blue.",
+        "W: That will be four dollars each. We need five working days.",
+        "M: Fine. Could you pack each one in a gift box?",
+        "W: Yes, for fifty cents extra per mug."
+      ],
+      qs: [
+        ["What does the man want to order?", "Mugs with a logo", "T-shirts", "Pens", "Gift boxes only", "L\u1EDDi tho\u1EA1i."],
+        ["How long will the order take?", "Five working days", "One day", "Two weeks", "A month", "L\u1EDDi tho\u1EA1i."],
+        ["How much will each mug cost with a gift box?", "$4.50", "$4.00", "$5.00", "$0.50", "$4 + 50 xu."]
+      ]
+    },
+    {
+      title: "Choosing a venue for a company dinner",
+      lines: [
+        "W: We need a restaurant for forty-five people on the nineteenth.",
+        "M: Here are four that have private rooms. Our budget is fifty dollars a head.",
+        "W: And it must have parking, because most people will drive.",
+        "M: Then there is only one choice.",
+        "W: I will call them this afternoon."
+      ],
+      graphic: ["Restaurants with private rooms", "Restaurant | Room size | Price per person | Parking\nAzure | 40 | $45 | Yes\nBistro 21 | 60 | $48 | No\nCedar House | 50 | $50 | Yes\nDelmar | 80 | $65 | Yes"],
+      qs: [
+        ["How many people will attend?", "Forty-five", "Forty", "Fifty", "Sixty", "L\u1EDDi tho\u1EA1i."],
+        ["Why is parking important?", "Most people will drive.", "The restaurant is far from the station.", "It will be raining.", "The director insists.", "L\u1EDDi tho\u1EA1i."],
+        ["Look at the graphic. Which restaurant will be chosen?", "Cedar House", "Azure", "Bistro 21", "Delmar", "\u0110\u1EE7 45 ch\u1ED7, \u2264 $50, c\xF3 b\xE3i \u0111\u1ED7: Cedar House."]
+      ]
+    }
+  ],
+  p4: [
+    {
+      title: "Announcement in a train carriage",
+      lines: [
+        "M: Good evening, ladies and gentlemen. We will shortly be arriving at Bristol, our final stop.",
+        "M: Please make sure you take all your belongings with you when you leave the train.",
+        "M: Passengers continuing to Cardiff should cross to platform seven, where the connecting train will depart in twelve minutes."
+      ],
+      qs: [
+        ["Where is the train arriving?", "In Bristol", "In Cardiff", "In London", "In Bath", "Th\xF4ng b\xE1o."],
+        ["What are passengers reminded to do?", "Take their belongings", "Show their tickets", "Stay seated", "Use the front doors", "Th\xF4ng b\xE1o."],
+        ["Where does the Cardiff train leave from?", "Platform seven", "Platform twelve", "The same platform", "Platform one", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Voicemail from an electrician",
+      lines: [
+        "W: Hello, Mr. Dean. This is Sara from Brightwire Electrical.",
+        "W: I am sorry, but I will not be able to come at ten as we arranged. My previous job is taking longer than expected.",
+        "W: I can be with you at one o'clock instead, or tomorrow at nine. Please text me to say which you prefer. Again, I apologize for the change."
+      ],
+      qs: [
+        ["Why is the speaker calling?", "To change an appointment", "To send a bill", "To cancel a job", "To ask for directions", "L\u1EDDi nh\u1EAFn."],
+        ["Why can she not come at ten?", "Another job is taking longer.", "Her van broke down.", "She is ill.", "She has no parts.", "L\u1EDDi nh\u1EAFn."],
+        ["How should the listener reply?", "By text message", "By email", "By calling the office", "In person", "L\u1EDDi nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Advertisement for an office furniture sale",
+      lines: [
+        "M: Setting up a new office? Visit Deskline's warehouse sale this Friday and Saturday.",
+        "M: Desks, chairs, and cabinets from our showroom are reduced by up to seventy percent. Everything is in perfect condition.",
+        "M: Delivery is free within thirty kilometers. Doors open at nine. Come early, because once an item is sold, it is gone."
+      ],
+      qs: [
+        ["When is the sale?", "On Friday and Saturday", "All week", "On Sunday", "Next month", "Qu\u1EA3ng c\xE1o."],
+        ["What is said about the furniture?", "It is in perfect condition.", "It is damaged.", "It is second-hand from customers.", "It must be assembled.", "Qu\u1EA3ng c\xE1o."],
+        ["What is free?", "Delivery within thirty kilometers", "A chair with every desk", "Assembly", "Parking", "Qu\u1EA3ng c\xE1o."]
+      ]
+    },
+    {
+      title: "Talk to visitors at a television studio",
+      lines: [
+        "W: Welcome to Channel Nine Studios. On today's tour, you will see where our evening news is made.",
+        "W: We will visit the newsroom, the control room, and finally the studio itself, where you can sit at the presenter's desk and have your photograph taken.",
+        "W: Please switch off your phones in the control room, because they can interfere with our equipment. The tour lasts about an hour."
+      ],
+      qs: [
+        ["What will visitors see?", "Where the news is produced", "Where films are made", "Where newspapers are printed", "Where radios are built", "L\u1EDDi n\xF3i."],
+        ["What can visitors do in the studio?", "Have a photograph taken at the desk", "Read the news on air", "Meet a film star", "Operate the cameras", "L\u1EDDi n\xF3i."],
+        ["Why must phones be switched off in the control room?", "They can affect the equipment.", "Photographs are forbidden.", "The room is quiet.", "There is no signal.", "L\u1EDDi n\xF3i."]
+      ]
+    },
+    {
+      title: "Recorded message for a restaurant",
+      lines: [
+        "M: Thank you for calling the Olive Garden Bistro. We are open for lunch from twelve to three and for dinner from six to eleven.",
+        "M: We are fully booked this Saturday evening for a private event.",
+        "M: To make a reservation for another day, please leave your name, number, and the date after the tone, and we will call you back within two hours."
+      ],
+      qs: [
+        ["When is the restaurant open for dinner?", "From six to eleven", "From twelve to three", "From five to ten", "All day", "Th\xF4ng b\xE1o."],
+        ["Why are there no tables on Saturday evening?", "There is a private event.", "The restaurant is closed.", "The kitchen is being repaired.", "It is a holiday.", "Th\xF4ng b\xE1o."],
+        ["What should callers do to reserve a table?", "Leave a message", "Send an email", "Press one", "Call back tomorrow", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Excerpt from a meeting about staff turnover",
+      lines: [
+        "W: In the past year, eleven people have left our customer service team. That is nearly a third of the department.",
+        "W: In their exit interviews, most said the same thing: there was no chance of promotion.",
+        "W: So we are creating a new position of senior adviser, with higher pay and more responsibility. Applications open next month, and they are open only to current team members."
+      ],
+      qs: [
+        ["What problem is the speaker discussing?", "Many staff have left.", "Customers are unhappy.", "Pay is too high.", "The department is too large.", "L\u1EDDi n\xF3i."],
+        ["What reason did most leavers give?", "There was no chance of promotion.", "The hours were too long.", "The office was too far.", "The work was boring.", "L\u1EDDi n\xF3i."],
+        ["Who may apply for the new position?", "Current team members", "Anyone in the company", "External candidates only", "Managers", "C\xE2u cu\u1ED1i."]
+      ]
+    },
+    {
+      title: "News report on a book fair",
+      lines: [
+        "M: The city's annual book fair opens tomorrow in the Exhibition Hall and runs for five days.",
+        "M: More than two hundred publishers will take part, and forty authors will give talks and sign copies of their books.",
+        "M: Entry is free for children under sixteen. On Saturday, the fair will stay open until ten p.m. for a special evening of poetry and music."
+      ],
+      qs: [
+        ["How long does the fair last?", "Five days", "Two days", "One week", "Forty days", "B\u1EA3n tin."],
+        ["Who enters free?", "Children under sixteen", "All visitors", "Authors only", "Students", "B\u1EA3n tin."],
+        ["What is special about Saturday?", "The fair stays open late.", "The fair is closed.", "Books are half price.", "Publishers leave.", "B\u1EA3n tin."]
+      ]
+    },
+    {
+      title: "Message about a client presentation",
+      lines: [
+        "W: Hi, Leo. It is Marta. I have looked at the four presentation slots the client offered us.",
+        "W: We need at least forty-five minutes, and it has to be a morning, because our designer flies back in the afternoon. Only one slot works, so I have accepted it.",
+        "W: Please have the slides ready by Monday."
+      ],
+      graphic: ["Presentation slots", "Day | Time | Length\nTuesday | 9:00 a.m. | 30 minutes\nTuesday | 2:00 p.m. | 60 minutes\nWednesday | 10:00 a.m. | 60 minutes\nThursday | 3:00 p.m. | 45 minutes"],
+      qs: [
+        ["How long does the team need?", "At least forty-five minutes", "Thirty minutes", "Two hours", "One day", "L\u1EDDi nh\u1EAFn."],
+        ["Look at the graphic. When will the presentation take place?", "Wednesday at 10:00 a.m.", "Tuesday at 9:00 a.m.", "Tuesday at 2:00 p.m.", "Thursday at 3:00 p.m.", "Bu\u1ED5i s\xE1ng v\xE0 \u2265 45 ph\xFAt: th\u1EE9 T\u01B0 10:00."],
+        ["What should the listener do by Monday?", "Prepare the slides", "Book a flight", "Call the client", "Design a logo", "C\xE2u cu\u1ED1i."]
+      ]
+    }
+  ]
+};
+
+// src/app/data/exam/tests/full/toeic-20-r.ts
+var R20 = {
+  p5: [
+    ["The company will ____ a new chief executive next month.", "appoint", "appointment", "appointing", "appointed", 'Sau "will" l\xE0 V nguy\xEAn m\u1EABu.'],
+    ["Customers have responded ____ to the new design.", "enthusiastically", "enthusiastic", "enthusiasm", "enthuse", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "responded".'],
+    ["The conference takes place ____ October.", "in", "on", "at", "by", '"in + th\xE1ng".'],
+    ["The new system is ____ easier to use.", "much", "very", "so", "too", '"much + so s\xE1nh h\u01A1n".'],
+    ["Mr. Bianchi is ____ of leading the project.", "capable", "able", "possible", "skilled", '"be capable of + V-ing".'],
+    ["The store ____ a wide range of electrical goods.", "stocks", "stocking", "stock", "stockist", "Ch\u1EE7 ng\u1EEF s\u1ED1 \xEDt, hi\u1EC7n t\u1EA1i \u0111\u01A1n."],
+    ["The proposal was ____ rejected by the committee.", "firmly", "firm", "firmness", "firmer", 'Tr\u1EA1ng t\u1EEB b\u1ED5 ngh\u0129a cho "rejected".'],
+    ["All visitors must be ____ by a member of staff.", "accompanied", "accompanying", "accompany", "company", 'B\u1ECB \u0111\u1ED9ng v\u1EDBi "must be".'],
+    ["The firm has built a strong ____ over twenty years.", "reputation", "reputable", "reputed", "reputedly", 'Sau "a strong" c\u1EA7n danh t\u1EEB.'],
+    ["Please send your reply ____ the end of the week.", "before", "ago", "while", "since", '"before the end of the week".'],
+    ["The hotel is ____ for business travelers.", "ideal", "ideally", "idea", "idealize", 'Sau "is" c\u1EA7n t\xEDnh t\u1EEB.'],
+    ["The price includes delivery ____ installation.", "and", "but", "nor", "so", "Hai danh t\u1EEB song song."],
+    ["The manager was ____ with the results of the survey.", "satisfied", "satisfying", "satisfy", "satisfaction", "Ng\u01B0\u1EDDi c\u1EA3m th\u1EA5y \u2192 -ed."],
+    ["Employees may work from home ____ their manager agrees.", "provided that", "in order that", "so as", "as though", '"provided that": v\u1EDBi \u0111i\u1EC1u ki\u1EC7n.'],
+    ["The new product sold ____ than we had hoped.", "better", "good", "best", "well", 'So s\xE1nh h\u01A1n v\u1EDBi "than".'],
+    ["The news about the merger ____ announced yesterday.", "was", "were", "have been", "are", '"news" kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c \u2192 \u0111\u1ED9ng t\u1EEB s\u1ED1 \xEDt.'],
+    ["Not once ____ late during her ten years at the firm.", "was she", "she was", "did she", "she did", '\u0110\u1EA3o ng\u1EEF sau "Not once" v\u1EDBi t\xEDnh t\u1EEB "late": was she.'],
+    ["It is essential that every employee ____ the safety course.", "complete", "completes", "completed", "completing", 'Th\u1EC3 gi\u1EA3 \u0111\u1ECBnh sau "It is essential that".']
+  ],
+  p6: [
+    {
+      title: "Email: Thank-you to a conference speaker",
+      text: "Dear Professor Lindqvist,\n\nOn behalf of the organizing committee, I would like to thank you for your (1)____ talk at last week's Energy Forum.\n\nThe feedback from delegates has been excellent. (2)____. Several asked whether your slides could be made available.\n\nWould you be (3)____ to share them on our website? We would also be honored if you would consider (4)____ to speak again next year.\n\nWith best wishes,\nAnna Sorensen",
+      qs: [
+        ["(1) ____", "inspiring", "inspired", "inspire", "inspiration", "T\xEDnh t\u1EEB -ing m\xF4 t\u1EA3 b\xE0i n\xF3i."],
+        ["(2) ____", "Many described your session as the highlight of the event.", "The forum lasted three days.", "Energy prices are rising.", "Our website is new.", 'C\xE2u sau: "Several asked..." ch\u1EC9 c\xE1c \u0111\u1EA1i bi\u1EC3u.'],
+        ["(3) ____", "willing", "will", "willingly", "willingness", '"be willing to + V".'],
+        ["(4) ____", "returning", "return", "returned", "returns", '"consider + V-ing".']
+      ]
+    },
+    {
+      title: "Notice: Change of supplier for the canteen",
+      text: "CANTEEN NEWS\n\nFrom Monday, May 5, our canteen will be run by a new catering company, Fresh Table. The change follows the results of last month's staff (1)____.\n\nFresh Table uses local ingredients and prepares all meals on site. (2)____. Prices will stay the same for at least a year.\n\nThe canteen will be closed on Friday, May 2, (3)____ the new team can prepare the kitchen. On their first day, every employee will receive a free dessert as a (4)____ gift.",
+      qs: [
+        ["(1) ____", "survey", "surveyed", "surveying", "surveyor", 'Danh t\u1EEB: "staff survey".'],
+        ["(2) ____", "There will be a vegetarian and a vegan dish every day.", "The kitchen has two ovens.", "May is a spring month.", "Canteens are noisy.", "B\u1ED5 sung th\xF4ng tin v\u1EC1 th\u1EF1c \u0111\u01A1n m\u1EDBi."],
+        ["(3) ____", "so that", "because of", "in spite of", "as well as", '"so that + m\u1EC7nh \u0111\u1EC1".'],
+        ["(4) ____", "welcome", "welcomed", "welcomer", "welcomes", 'Danh t\u1EEB gh\xE9p "welcome gift".']
+      ]
+    },
+    {
+      title: "Advertisement: Business travel agency",
+      text: "TRAVEL SMARTER WITH CORPORATE WINGS\n\nBooking business trips can take hours. Let us do it for you. Our agents find the best flights and hotels and (1)____ everything in a single invoice.\n\nIf your plans change, one call is enough. (2)____. You will never be left waiting at an airport.\n\nOur clients save an average of 18 percent on travel costs in the first year. Call us today for a free (3)____ of your current spending, with no (4)____ to sign up.",
+      qs: [
+        ["(1) ____", "combine", "combining", "combined", "combination", 'Song song v\u1EDBi "find".'],
+        ["(2) ____", "Our emergency line is answered twenty-four hours a day.", "Airports are busy places.", "Our office has a view.", "Invoices are sent by email.", 'D\u1EABn t\u1EDBi "never be left waiting".'],
+        ["(3) ____", "review", "reviewed", "reviewing", "reviewer", 'Sau "a free" c\u1EA7n danh t\u1EEB.'],
+        ["(4) ____", "obligation", "oblige", "obliged", "obligatory", '"with no obligation".']
+      ]
+    },
+    {
+      title: "Letter: Rent increase",
+      text: "Dear Mr. Petrov,\n\nWe are writing to inform you that the rent for your shop at 14 High Street will increase from $1,500 to $1,575 per month, (1)____ from July 1.\n\nThis is the first increase in three years. (2)____. We have tried to keep the rise as small as possible.\n\nIf you wish to discuss the matter, please contact our office. Unless we hear from you by June 15, we will (3)____ that you accept the new terms. We thank you for being such a (4)____ tenant.\n\nYours sincerely,\nHigh Street Properties",
+      qs: [
+        ["(1) ____", "effective", "effect", "effectively", "effecting", '"effective from + ng\xE0y".'],
+        ["(2) ____", "It reflects higher costs for maintaining the building.", "High Street is very long.", "July is in the summer.", "Shops sell many things.", "Gi\u1EA3i th\xEDch l\xFD do t\u0103ng ti\u1EC1n thu\xEA."],
+        ["(3) ____", "assume", "assuming", "assumed", "assumption", 'Sau "will" l\xE0 V nguy\xEAn m\u1EABu.'],
+        ["(4) ____", "reliable", "rely", "reliably", "reliability", 'T\xEDnh t\u1EEB tr\u01B0\u1EDBc danh t\u1EEB "tenant".']
+      ]
+    }
+  ],
+  p7: [
+    {
+      title: "Sign: Office door",
+      text: "MEETING IN PROGRESS\n\nPlease do not disturb until 3:30 p.m.\nFor urgent matters, contact Laura at extension 118.",
+      qs: [
+        ["Until when should people not enter?", "3:30 p.m.", "1:18 p.m.", "3:00 p.m.", "The end of the day", "Bi\u1EC3n b\xE1o."],
+        ["Who should be contacted for urgent matters?", "Laura", "The manager", "Reception", "Security", "Bi\u1EC3n b\xE1o."]
+      ]
+    },
+    {
+      title: "Text message",
+      text: 'From: City Library\n\nThe book you reserved, "Leading Teams," is now available. Please collect it from the front desk within 7 days. After that, it will be offered to the next person on the list.',
+      qs: [
+        ["What is the message about?", "A reserved book is ready.", "A book is overdue.", "The library is closing.", "A fine must be paid.", "Tin nh\u1EAFn."],
+        ["What happens after seven days?", "The book goes to someone else.", "A fee is charged.", "The book is mailed.", "The reservation is renewed.", "Tin nh\u1EAFn."]
+      ]
+    },
+    {
+      title: "Email: Client feedback",
+      text: "To: Design Team\nFrom: Rachel Adams\nSubject: Feedback from Orion Hotels\n\nI met with Orion Hotels this morning. They are very pleased with the new brochure, especially the photographs of the rooms.\n\nThey have two small requests. First, the map on the back page should show the nearest train station. Second, the telephone number needs to be larger. They would like to print 5,000 copies before the tourism fair on May 20.\n\nCould you send me the revised file by Friday?",
+      qs: [
+        ["What does the client like most?", "The photographs", "The map", "The telephone number", "The price", "Email."],
+        ["What should be added to the map?", "A train station", "A hotel", "A restaurant", "A car park", "Email."],
+        ["Why does the client need the brochure by May 20?", "For a tourism fair", "For a hotel opening", "For a staff meeting", "For a holiday", "Email."]
+      ]
+    },
+    {
+      title: "Advertisement: Evening classes",
+      text: "LEARN TO CODE \u2013 No experience needed\n\nJoin our twelve-week evening course and build your first website. Classes meet on Mondays and Wednesdays, 6:30\u20138:30 p.m., at the Tech Hub on Canal Street.\n\n\u2022 Maximum 15 students\n\u2022 Laptops provided\n\u2022 Certificate on completion\n\nCourse fee: $360. Pay in full before August 1 and save $40.",
+      qs: [
+        ["How long is the course?", "Twelve weeks", "Fifteen weeks", "Two weeks", "Six months", "Qu\u1EA3ng c\xE1o."],
+        ["What is provided?", "Laptops", "Dinner", "Textbooks only", "Transport", "Qu\u1EA3ng c\xE1o."],
+        ["How much does the course cost if paid before August 1?", "$320", "$360", "$400", "$40", "$360 \u2212 $40."]
+      ]
+    },
+    {
+      title: "Memo: Holiday party",
+      text: "MEMO\nTo: All staff\nFrom: Social Committee\n\nThis year's holiday party will be held on Friday, December 13, at the Riverside Restaurant, starting at 7:00 p.m. Dinner and soft drinks are paid for by the company.\n\nEach employee may bring one guest for $25. Please tell us by November 29 whether you are coming and whether you have any dietary requirements. A bus will leave the office at 6:30 and return at 11:30.",
+      qs: [
+        ["Who pays for dinner?", "The company", "Each employee", "The guests", "The restaurant", "Th\xF4ng b\xE1o."],
+        ["How much does a guest cost?", "$25", "$13", "$29", "Nothing", "Th\xF4ng b\xE1o."],
+        ["When does the bus return?", "At 11:30", "At 6:30", "At 7:00", "At midnight", "Th\xF4ng b\xE1o."]
+      ]
+    },
+    {
+      title: "Information: Customer loyalty card",
+      text: "YOUR GREENLEAF REWARDS CARD\n\nEarn 1 point for every dollar you spend. 200 points = a $10 voucher, sent automatically by email.\n\nDouble points on Tuesdays. Points expire after 12 months without a purchase. Register your card online to protect your points if it is lost.",
+      qs: [
+        ["How many points are needed for a $10 voucher?", "200", "100", "10", "12", "Th\xF4ng tin."],
+        ["When are double points earned?", "On Tuesdays", "On weekends", "Every day", "In December", "Th\xF4ng tin."],
+        ["Why should customers register the card online?", "To protect their points", "To earn double points", "To get a new card", "To avoid a fee", "Th\xF4ng tin."]
+      ]
+    },
+    {
+      title: "Article: Town opens business hub",
+      text: 'A former railway station in the town of Elmsworth has reopened as a center for new businesses. \u2014 [1] \u2014 The building, which stood empty for fifteen years, now contains thirty small offices and a shared meeting space.\n\nRents are about half the usual local rate for the first two years. \u2014 [2] \u2014 Tenants also receive free advice from experienced business people.\n\nAll thirty offices were taken within a month. \u2014 [3] \u2014 "I could never have afforded an office in town otherwise," said Priya Shah, who runs a software company with three employees. \u2014 [4] \u2014 The council is now looking for a second building.',
+      qs: [
+        ["What was the building before?", "A railway station", "A school", "A factory", "A bank", "\u0110o\u1EA1n 1."],
+        ["What do tenants receive besides low rent?", "Free business advice", "Free equipment", "Free staff", "Free advertising", "\u0110o\u1EA1n 2."],
+        ["What is the council doing now?", "Looking for another building", "Raising the rents", "Closing the center", "Selling the station", "\u0110o\u1EA1n cu\u1ED1i."],
+        ['In which position does this sentence best belong? "After that, they rise gradually to the normal level."', "[2]", "[1]", "[3]", "[4]", 'N\u1ED1i v\u1EDBi "for the first two years".']
+      ]
+    },
+    {
+      title: "Email and schedule",
+      text: "To: All staff\nFrom: Health and Safety\nSubject: First-aid courses\n\nWe need two trained first-aiders on every floor. Free one-day courses will be held next month (see below). Each course has twelve places. If you are interested, reply to this email with your preferred date. Those who complete the course will receive a certificate valid for three years.\n\n--------------------\nFIRST-AID COURSES \u2013 Training Room 2, 9:00\u20134:30\nTuesday, June 3 \u2013 12 places (FULL)\nThursday, June 12 \u2013 5 places left\nMonday, June 23 \u2013 12 places left",
+      qs: [
+        ["How many first-aiders are needed on each floor?", "Two", "One", "Twelve", "Three", "Email."],
+        ["How long is the certificate valid?", "Three years", "One year", "One day", "Twelve months", "Email."],
+        ["Which course can no longer be booked?", "June 3", "June 12", "June 23", "All of them", "L\u1ECBch."],
+        ["How many people have already booked the June 12 course?", "Seven", "Five", "Twelve", "None", "12 \u2212 5."],
+        ["How should staff apply?", "By replying to the email", "By calling the trainer", "By signing a list", "By visiting Room 2", "Email."]
+      ]
+    },
+    {
+      title: "Web page and email",
+      text: "SKYLINE STORAGE \u2013 Document storage for businesses\nStandard box: $1.20 per month \xB7 Retrieval (next day): $8 per box \xB7 Urgent retrieval (4 hours): $20 per box\nSecure destruction: $3 per box. Minimum contract: 50 boxes for 12 months. Free collection of your boxes at the start.\n\n--------------------\nTo: Skyline Storage\nFrom: Irene Koh, Koh & Partners\n\nWe would like to store 80 boxes of old client files. We expect to need about two boxes back each month, usually without hurry. Could you tell me the monthly storage cost and what a normal retrieval would cost?",
+      qs: [
+        ["What is free at the start of a contract?", "Collection of the boxes", "Destruction", "Retrieval", "The first year", "Trang web."],
+        ["Does Ms. Koh meet the minimum contract size?", "Yes, she has more than 50 boxes.", "No, she has too few.", "Exactly.", "It is not stated.", "80 h\u1ED9p."],
+        ["What will storage cost per month?", "$96", "$80", "$120", "$60", "80 \xD7 $1.20."],
+        ["How much would two normal retrievals cost?", "$16", "$8", "$40", "$20", "2 \xD7 $8."],
+        ["Which service would she use if she needed a box within hours?", "Urgent retrieval", "Standard retrieval", "Secure destruction", "Free collection", "Trang web."]
+      ]
+    },
+    {
+      title: "Advertisement, email, and reply",
+      text: "HARBOR CRUISES \u2013 Private charters\nThe Seagull (up to 30 guests): $600 for 3 hours \xB7 The Albatross (up to 80 guests): $1,400 for 3 hours\nCatering from $25 per person. Music system on board. Cruises depart from Pier 4. A 30% deposit confirms your booking.\n\n--------------------\nTo: Harbor Cruises\nFrom: Luis Ortega, Vega Software\n\nWe would like to hold a summer party for 55 employees on Friday, July 18, in the evening, with catering. Is a boat available?\n\n--------------------\nTo: Luis Ortega\nFrom: Harbor Cruises\n\nYes, the Albatross is free from 6:30 to 9:30 p.m. on July 18. With catering for 55, the total would be $2,775. Please pay the deposit by June 20.",
+      qs: [
+        ["Where do cruises depart from?", "Pier 4", "Pier 30", "The harbor office", "Pier 80", "Qu\u1EA3ng c\xE1o."],
+        ["Why does Mr. Ortega need the Albatross?", "His group is larger than 30.", "It is cheaper.", "It has a music system.", "The Seagull is booked.", "55 kh\xE1ch."],
+        ["How is $2,775 calculated?", "$1,400 plus 55 \xD7 $25", "$600 plus 55 \xD7 $25", "55 \xD7 $25 only", "$1,400 plus 80 \xD7 $25", "$1,400 + $1,375."],
+        ["How much is the deposit?", "$832.50", "$277.50", "$420", "$1,400", "30% c\u1EE7a $2,775."],
+        ["By when must the deposit be paid?", "June 20", "July 18", "June 30", "July 1", "Email tr\u1EA3 l\u1EDDi."]
+      ]
+    },
+    {
+      title: "Notice, form, and email",
+      text: "WESTFIELD COLLEGE \u2013 Guest speaker program\nWe invite local professionals to speak to our business students about their careers. Talks last 40 minutes and take place on Thursdays at 2:00 p.m. Speakers receive lunch in the staff restaurant and a parking permit for the day.\n\n--------------------\nSPEAKER OFFER FORM\nName: Dana Whitfield   Occupation: Marketing Director, Lumen Foods\nTopic: How we launched a new brand in six months\nAvailable dates: any Thursday in March except March 13\n\n--------------------\nTo: Dana Whitfield\nFrom: Westfield College\n\nThank you for your kind offer. Could you speak on March 20? Please come to reception at 12:30 for lunch. Around sixty students will attend, and they usually ask plenty of questions.",
+      qs: [
+        ["Who are the talks for?", "Business students", "Teachers", "Local companies", "Parents", "Th\xF4ng b\xE1o."],
+        ["What do speakers receive?", "Lunch and a parking permit", "A fee", "A certificate", "A gift card", "Th\xF4ng b\xE1o."],
+        ["What will Ms. Whitfield talk about?", "Launching a new brand", "Finding a job", "Managing money", "Cooking", "Phi\u1EBFu."],
+        ["Why was March 13 not proposed?", "She is not available that day.", "The college is closed.", "It is not a Thursday.", "The room is booked.", "Phi\u1EBFu."],
+        ["What time should she arrive on March 20?", "At 12:30", "At 2:00", "At 1:20", "At noon", "Email."]
+      ]
+    },
+    {
+      title: "Article, email, and notice",
+      text: "BUSINESS NEWS \u2013 Supermarket chain FreshWay will begin delivering groceries by electric cargo bicycle in the city center next month. The company says the bicycles are faster than vans in traffic and will cut delivery costs by a fifth.\n\n--------------------\nTo: FreshWay Customer Service\nFrom: Helen Brandt\n\nI live in the city center and order from you every week. My orders are usually large, about six bags. Can a bicycle carry that much, and will the delivery fee change?\n\n--------------------\nNOTICE TO CUSTOMERS\nFrom March 1, city-center orders of up to eight bags will be delivered by cargo bicycle. Larger orders will continue to arrive by van. The delivery fee for bicycle orders will fall from $5 to $3.",
+      qs: [
+        ["What will FreshWay start using?", "Electric cargo bicycles", "Larger vans", "Drones", "Taxis", "B\xE0i b\xE1o."],
+        ["Why is the company making the change?", "Bicycles are faster and cheaper.", "Vans are banned.", "Customers demanded it.", "Drivers are hard to find.", "B\xE0i b\xE1o."],
+        ["What is Ms. Brandt worried about?", "The size of her orders", "The quality of the food", "The opening hours", "Her address", "Email."],
+        ["How will her usual order be delivered from March 1?", "By cargo bicycle", "By van", "By mail", "She must collect it", "S\xE1u t\xFAi \u2264 t\xE1m t\xFAi."],
+        ["How much will she pay for delivery?", "$3", "$5", "$8", "Nothing", "Th\xF4ng b\xE1o."]
+      ]
+    }
+  ]
+};
+
 // src/app/data/exam/tests/toeic-all.ts
 var FULL22 = {
   1: [L, R],
@@ -51431,7 +54359,13 @@ var FULL22 = {
   11: [L11, R11],
   12: [L12, R12],
   13: [L13, R13],
-  14: [L14, R14]
+  14: [L14, R14],
+  15: [L15, R15],
+  16: [L16, R16],
+  17: [L17, R17],
+  18: [L18, R18],
+  19: [L19, R19],
+  20: [L20, R20]
   // <full-map>
 };
 var TOEIC_TESTS = [...TESTS6, ...TESTS7, ...TESTS8, ...TESTS9, ...TESTS10, ...TESTS11, ...TESTS12, ...TESTS13, ...TESTS14, ...TESTS15].map((t) => FULL22[t.no] ? toeicFull(t, ...FULL22[t.no]) : t);

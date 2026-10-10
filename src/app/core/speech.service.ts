@@ -39,8 +39,19 @@ export class SpeechService {
   /** Đang đọc hay không (để hiển thị hiệu ứng) */
   readonly speaking = signal(false);
 
-  /** File âm thanh Bông đang phát (nếu có) */
+  /** Đang trong một lượt đọc tiếng Anh (cả bài nghe/hội thoại, kể cả lúc nghỉ giữa các câu) */
+  readonly busy = signal(false);
+  /** Lượt đọc đang tạm dừng (bấm nút tạm dừng ở trình phát bài nghe) */
+  readonly paused = signal(false);
+  /** Lượt đọc hiện tại đang ở chế độ đọc chậm */
+  readonly slow = signal(false);
+
+  /** File âm thanh đang phát (nếu có) */
   private clip: HTMLAudioElement | null = null;
+  /** Kết thúc sớm file tiếng Anh đang phát (dùng khi hủy) */
+  private clipEnd: (() => void) | null = null;
+  /** Các bước đang chờ người dùng bấm phát tiếp */
+  private waiters: (() => void)[] = [];
 
   /** Mã phiên đọc: tăng lên mỗi khi hủy để bỏ qua các lời gọi cũ */
   private token = 0;
@@ -113,27 +124,88 @@ export class SpeechService {
 
   /** Đọc một đoạn tiếng Anh. `slow` = đọc chậm hơn để nghe rõ từng âm */
   speakEn(text: string, opts: { slow?: boolean; who?: 'A' | 'B' } = {}, keepQueue = false): Promise<void> {
+    if (!text.trim()) return Promise.resolve();
+    // Đọc nối tiếp trong một lượt (hội thoại, chuỗi lựa chọn): giữ nguyên tốc độ của lượt đó
+    if (keepQueue) return this.sayEn(text, opts.who);
+    return this.session(!!opts.slow, () => this.sayEn(text, opts.who));
+  }
+
+  /** Mở một lượt đọc mới: hủy lượt cũ, bật trạng thái "đang đọc" cho tới khi đọc xong hoặc bị hủy */
+  private async session(slow: boolean, run: (myToken: number) => Promise<void>): Promise<void> {
+    this.cancel();
+    const myToken = this.token;
+    this.slow.set(slow);
+    this.busy.set(true);
+    try {
+      await run(myToken);
+    } finally {
+      if (myToken === this.token) this.busy.set(false);
+    }
+  }
+
+  /** Đọc một câu trong lượt hiện tại: ưu tiên file thu sẵn, không có thì dùng giọng của thiết bị */
+  private async sayEn(text: string, who?: 'A' | 'B'): Promise<void> {
+    const myToken = this.token;
+    const voice: AudioVoice = who === 'B' ? 'm' : 'f';
+    const paths = await this.clipsFor(text, voice);
+    for (const path of paths ?? []) {
+      if (myToken !== this.token) return;
+      const ok = await this.playClip(path, myToken);
+      if (!ok && myToken === this.token) return this.sayWithDevice(text, who);
+    }
+    if (!paths && myToken === this.token) return this.sayWithDevice(text, who);
+  }
+
+  /** Dự phòng: đọc bằng giọng tiếng Anh của thiết bị (Web Speech API) */
+  private async sayWithDevice(text: string, who?: 'A' | 'B'): Promise<void> {
+    const myToken = this.token;
+    await this.whenResumed();
+    if (myToken !== this.token) return;
     const s = this.progress.settings();
     // Tiếng Anh: nâng cao độ nhẹ hơn tiếng Việt để vẫn nghe rõ phát âm
     let pitch = 1 + (s.pitch - 1) * 0.7;
     // Hội thoại: người nói B có cao độ thấp hơn một chút để phân biệt với A
-    if (opts.who === 'B') pitch = Math.max(0.8, pitch - 0.35);
-    const rate = s.rate * (opts.slow ? 0.6 : 1);
-    if (!text.trim()) return Promise.resolve();
-    if (!keepQueue) this.cancel();
-    const myToken = this.token;
-    const voice: AudioVoice = opts.who === 'B' ? 'm' : 'f';
-    // Tốc độ phát file thu sẵn: theo cài đặt, chậm hơn khi bấm "nghe chậm"
-    const clipRate = Math.min(1.5, Math.max(0.5, s.rate * (opts.slow ? 0.7 : 1)));
-    return this.clipsFor(text, voice).then(async (paths) => {
-      if (myToken !== this.token) return;
-      if (!paths) return this.speak(text, 'en', pitch, rate, true);
-      for (const path of paths) {
-        if (myToken !== this.token) return;
-        const ok = await this.playClip(path, clipRate, myToken);
-        if (!ok && myToken === this.token) return this.speak(text, 'en', pitch, rate, true);
-      }
-    });
+    if (who === 'B') pitch = Math.max(0.8, pitch - 0.35);
+    return this.speak(text, 'en', pitch, s.rate * (this.slow() ? 0.6 : 1), true);
+  }
+
+  /** Tốc độ phát file thu sẵn: theo cài đặt, chậm hơn khi đang ở chế độ đọc chậm */
+  private clipRate(): number {
+    return Math.min(1.5, Math.max(0.5, this.progress.settings().rate * (this.slow() ? 0.7 : 1)));
+  }
+
+  /** Bật/tắt đọc chậm; nếu đang phát thì đổi tốc độ ngay, không phải nghe lại từ đầu */
+  setSlow(slow: boolean): void {
+    this.slow.set(slow);
+    if (this.clip && this.clipEnd) this.clip.playbackRate = this.clipRate();
+  }
+
+  /** Tạm dừng lượt đọc đang chạy (giữ nguyên vị trí) */
+  pause(): void {
+    if (!this.busy() || this.paused()) return;
+    this.paused.set(true);
+    this.clip?.pause();
+    if (this.supported) window.speechSynthesis.pause();
+  }
+
+  /** Phát tiếp lượt đọc đang tạm dừng */
+  resume(): void {
+    if (!this.paused()) return;
+    this.paused.set(false);
+    void this.clip?.play().catch(() => this.clipEnd?.());
+    if (this.supported) window.speechSynthesis.resume();
+    this.flushWaiters();
+  }
+
+  /** Chờ tới khi hết tạm dừng (trả về ngay nếu không tạm dừng) */
+  private whenResumed(): Promise<void> {
+    return this.paused() ? new Promise<void>((r) => this.waiters.push(r)) : Promise.resolve();
+  }
+
+  private flushWaiters(): void {
+    const list = this.waiters;
+    this.waiters = [];
+    for (const w of list) w();
   }
 
   /** Số file âm thanh tiếng Anh thu sẵn có trong app (0 nếu chưa chạy build:audio) */
@@ -170,22 +242,33 @@ export class SpeechService {
   }
 
   /** Phát một file âm thanh; trả về false nếu không phát được (để chuyển sang giọng của thiết bị) */
-  private playClip(path: string, rate: number, myToken: number): Promise<boolean> {
+  private async playClip(path: string, myToken: number): Promise<boolean> {
+    await this.whenResumed();
+    if (myToken !== this.token) return true;
     return new Promise<boolean>((resolve) => {
       const a = new Audio(path);
       a.preservesPitch = true;
-      a.playbackRate = rate;
+      // Đặt cả tốc độ mặc định: trình duyệt đưa playbackRate về mặc định mỗi khi nạp file
+      a.defaultPlaybackRate = a.playbackRate = this.clipRate();
+      let settled = false;
       const end = (ok: boolean) => {
+        if (settled) return;
+        settled = true;
+        if (this.clip === a) {
+          this.clip = null;
+          this.clipEnd = null;
+        }
         if (myToken === this.token) this.speaking.set(false);
         resolve(ok);
       };
       a.onended = () => end(true);
       a.onerror = () => end(false);
-      // Bị hủy giữa chừng (cancel() gọi pause) -> coi như đã xong để không đọc lại bằng giọng khác
-      a.onpause = () => { if (!a.ended) end(true); };
       this.clip = a;
+      // Bị hủy giữa chừng -> coi như đã xong để không đọc lại bằng giọng khác
+      this.clipEnd = () => end(true);
       this.speaking.set(true);
-      a.play().catch(() => end(false));
+      // Tạm dừng ngay lúc đang nạp làm play() bị từ chối: không phải lỗi, sẽ phát tiếp khi bấm lại
+      a.play().catch(() => { if (!this.paused()) end(false); });
     });
   }
 
@@ -207,33 +290,34 @@ export class SpeechService {
       a.onended = () => resolve();
       a.onerror = fallback;
       this.clip = a;
+      this.clipEnd = null;
       a.play().catch(fallback);
     });
   }
 
   /** Đọc lần lượt các dòng hội thoại (A và B dùng cao độ khác nhau) */
-  async speakDialogue(lines: { who: 'A' | 'B'; text: string }[]): Promise<void> {
-    this.cancel();
-    const myToken = this.token;
-    for (const line of lines) {
-      if (myToken !== this.token) return; // đã bị hủy giữa chừng
-      await this.speakEn(line.text, { who: line.who }, true);
-    }
+  speakDialogue(lines: { who: 'A' | 'B'; text: string }[], opts: { slow?: boolean } = {}): Promise<void> {
+    return this.session(!!opts.slow, async (myToken) => {
+      for (const line of lines) {
+        if (myToken !== this.token) return; // đã bị hủy giữa chừng
+        await this.speakEn(line.text, { who: line.who }, true);
+      }
+    });
   }
 
   /**
    * Đọc lần lượt nhiều đoạn, nghỉ `gapMs` giữa các đoạn – dùng cho TOEIC Part 1/2
    * (giám khảo đọc câu hỏi rồi lần lượt các lựa chọn A, B, C, D).
    */
-  async speakSequence(parts: string[], opts: { slow?: boolean; gapMs?: number } = {}): Promise<void> {
-    this.cancel();
-    const myToken = this.token;
-    for (const [i, part] of parts.entries()) {
-      if (myToken !== this.token) return; // đã bị hủy giữa chừng
-      if (i > 0) await new Promise((r) => setTimeout(r, opts.gapMs ?? 650));
-      if (myToken !== this.token) return;
-      await this.speakEn(part, { slow: opts.slow }, true);
-    }
+  speakSequence(parts: string[], opts: { slow?: boolean; gapMs?: number } = {}): Promise<void> {
+    return this.session(!!opts.slow, async (myToken) => {
+      for (const [i, part] of parts.entries()) {
+        if (myToken !== this.token) return; // đã bị hủy giữa chừng
+        if (i > 0) await new Promise((r) => setTimeout(r, opts.gapMs ?? 650));
+        if (myToken !== this.token) return;
+        await this.speakEn(part, {}, true);
+      }
+    });
   }
 
   /** Dừng mọi âm thanh đang đọc */
@@ -241,8 +325,14 @@ export class SpeechService {
     this.token++;
     this.clip?.pause();
     this.clip = null;
+    const end = this.clipEnd;
+    this.clipEnd = null;
+    end?.();
     if (this.supported) window.speechSynthesis.cancel();
     this.speaking.set(false);
+    this.busy.set(false);
+    this.paused.set(false);
+    this.flushWaiters();
   }
 
   /**
