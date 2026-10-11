@@ -15,9 +15,13 @@ export interface GrammarRule {
   note: string;
 }
 
+import { IconName } from '../theme/icons';
+
 export interface GrammarLesson {
   id: string;
   icon: string;
+  /** Icon của bài trong bộ icon của theme */
+  ico: IconName;
   title: string;
   titleEn: string;
   level: 'starter' | 'basic' | 'intermediate';
@@ -31,7 +35,7 @@ export interface GrammarLesson {
 
 export const GRAMMAR: GrammarLesson[] = [
   {
-    id: 'to-be', icon: '🟦', title: 'Động từ "to be"', titleEn: 'The verb "to be"', level: 'starter',
+    id: 'to-be', icon: '🟦', ico: 'equal', title: 'Động từ "to be"', titleEn: 'The verb "to be"', level: 'starter',
     summary: '"To be" nghĩa là "thì, là, ở". Hiện tại có 3 dạng: am (đi với I), is (he/she/it và danh từ số ít), are (you/we/they và số nhiều).',
     rules: [
       { form: 'I am / I\'m', note: 'Chỉ dùng với I' },
@@ -54,7 +58,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Mẹo: I → am, số ít → is, số nhiều → are.',
   },
   {
-    id: 'present-simple', icon: '🔁', title: 'Thì hiện tại đơn', titleEn: 'Present simple', level: 'starter',
+    id: 'present-simple', icon: '🔁', ico: 'repeat', title: 'Thì hiện tại đơn', titleEn: 'Present simple', level: 'starter',
     summary: 'Dùng cho thói quen, sự thật hiển nhiên, lịch trình. Với he/she/it, động từ thêm -s/-es. Phủ định và câu hỏi dùng do/does.',
     rules: [
       { form: 'I / You / We / They + V', note: 'I play football.' },
@@ -77,7 +81,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Nhớ "s" của he/she/it: He playS, she watchES.',
   },
   {
-    id: 'present-continuous', icon: '⏳', title: 'Thì hiện tại tiếp diễn', titleEn: 'Present continuous', level: 'starter',
+    id: 'present-continuous', icon: '⏳', ico: 'hourglass', title: 'Thì hiện tại tiếp diễn', titleEn: 'Present continuous', level: 'starter',
     summary: 'Diễn tả hành động đang xảy ra lúc nói hoặc kế hoạch gần. Công thức: am/is/are + V-ing.',
     rules: [
       { form: 'S + am/is/are + V-ing', note: 'I am reading a book.' },
@@ -99,7 +103,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Thấy now, Look!, Listen! → nghĩ ngay đến "be + V-ing".',
   },
   {
-    id: 'past-simple', icon: '⏮️', title: 'Thì quá khứ đơn', titleEn: 'Past simple', level: 'basic',
+    id: 'past-simple', icon: '⏮️', ico: 'history', title: 'Thì quá khứ đơn', titleEn: 'Past simple', level: 'basic',
     summary: 'Diễn tả hành động đã xảy ra và kết thúc trong quá khứ. Động từ có quy tắc thêm -ed; động từ bất quy tắc phải học thuộc (go → went).',
     rules: [
       { form: 'S + V-ed / V2', note: 'I played, she went, they saw' },
@@ -122,7 +126,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Bất quy tắc hay gặp: go–went, see–saw, eat–ate, buy–bought, take–took, make–made.',
   },
   {
-    id: 'future', icon: '🔮', title: 'Tương lai: will & be going to', titleEn: 'Future: will / be going to', level: 'basic',
+    id: 'future', icon: '🔮', ico: 'rocket', title: 'Tương lai: will & be going to', titleEn: 'Future: will / be going to', level: 'basic',
     summary: '"Will" dùng cho quyết định tức thời, dự đoán, lời hứa. "Be going to" dùng cho kế hoạch đã định sẵn hoặc dự đoán có dấu hiệu rõ ràng.',
     rules: [
       { form: 'S + will + V', note: 'I will help you. (quyết định ngay)' },
@@ -144,7 +148,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Đã lên kế hoạch → going to. Mới nghĩ ra → will.',
   },
   {
-    id: 'articles', icon: '🅰️', title: 'Mạo từ a / an / the', titleEn: 'Articles', level: 'starter',
+    id: 'articles', icon: '🅰️', ico: 'letter-a', title: 'Mạo từ a / an / the', titleEn: 'Articles', level: 'starter',
     summary: '"A" đứng trước âm phụ âm, "an" trước âm nguyên âm (a, e, i, o, u theo cách ĐỌC). "The" dùng khi người nghe đã biết đối tượng hoặc vật duy nhất.',
     rules: [
       { form: 'a + âm phụ âm', note: 'a book, a university (/juː/)' },
@@ -166,7 +170,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Nghe âm đầu chứ không nhìn chữ: an hour, a uniform.',
   },
   {
-    id: 'countable', icon: '🍎', title: 'Danh từ đếm được & không đếm được', titleEn: 'Countable & uncountable nouns', level: 'basic',
+    id: 'countable', icon: '🍎', ico: 'apple', title: 'Danh từ đếm được & không đếm được', titleEn: 'Countable & uncountable nouns', level: 'basic',
     summary: 'Danh từ đếm được có số ít/số nhiều (an apple, two apples). Danh từ không đếm được không có số nhiều (water, rice, information). Dùng many với đếm được, much với không đếm được.',
     rules: [
       { form: 'many + danh từ số nhiều', note: 'many books, many people' },
@@ -189,7 +193,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Không đếm được hay gặp: water, milk, rice, bread, money, information, advice, homework.',
   },
   {
-    id: 'prepositions-time', icon: '🕒', title: 'Giới từ chỉ thời gian: in / on / at', titleEn: 'Prepositions of time', level: 'starter',
+    id: 'prepositions-time', icon: '🕒', ico: 'clock', title: 'Giới từ chỉ thời gian: in / on / at', titleEn: 'Prepositions of time', level: 'starter',
     summary: '"At" cho giờ và thời điểm cụ thể; "on" cho ngày, thứ; "in" cho tháng, năm, mùa, buổi và khoảng thời gian dài.',
     rules: [
       { form: 'at + giờ / thời điểm', note: 'at 7 o\'clock, at noon, at night, at the weekend' },
@@ -210,7 +214,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Nhỏ → lớn: AT (giờ) → ON (ngày) → IN (tháng, năm).',
   },
   {
-    id: 'comparison', icon: '📏', title: 'So sánh hơn & so sánh nhất', titleEn: 'Comparatives & superlatives', level: 'basic',
+    id: 'comparison', icon: '📏', ico: 'scale', title: 'So sánh hơn & so sánh nhất', titleEn: 'Comparatives & superlatives', level: 'basic',
     summary: 'Tính từ ngắn: thêm -er / the -est (tall → taller → the tallest). Tính từ dài: more / the most (beautiful → more beautiful → the most beautiful). Một số bất quy tắc: good → better → the best.',
     rules: [
       { form: 'adj-er + than', note: 'Tom is taller than Nam.' },
@@ -232,7 +236,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Có "than" → so sánh hơn. Có "the ... in/of" → so sánh nhất.',
   },
   {
-    id: 'modals', icon: '🛡️', title: 'Động từ khuyết thiếu: can / must / should', titleEn: 'Modal verbs', level: 'basic',
+    id: 'modals', icon: '🛡️', ico: 'shield-check', title: 'Động từ khuyết thiếu: can / must / should', titleEn: 'Modal verbs', level: 'basic',
     summary: '"Can" = có thể (khả năng, xin phép). "Must" = phải (bắt buộc). "Should" = nên (lời khuyên). Sau động từ khuyết thiếu luôn là động từ nguyên mẫu KHÔNG "to".',
     rules: [
       { form: 'can / can\'t + V', note: 'I can swim. You can\'t park here.' },
@@ -254,7 +258,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Không bao giờ: can to swim, must goes. Đúng: can swim, must go.',
   },
   {
-    id: 'present-perfect', icon: '✅', title: 'Thì hiện tại hoàn thành', titleEn: 'Present perfect', level: 'intermediate',
+    id: 'present-perfect', icon: '✅', ico: 'checks', title: 'Thì hiện tại hoàn thành', titleEn: 'Present perfect', level: 'intermediate',
     summary: 'Diễn tả trải nghiệm, hành động vừa xong, hoặc kéo dài từ quá khứ đến hiện tại. Công thức: have/has + V3 (quá khứ phân từ).',
     rules: [
       { form: 'I/You/We/They + have + V3', note: 'I have visited Hue.' },
@@ -276,7 +280,7 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'for + khoảng (for 3 days), since + mốc (since Monday).',
   },
   {
-    id: 'wh-questions', icon: '❓', title: 'Câu hỏi với từ để hỏi (Wh-)', titleEn: 'Wh-questions', level: 'starter',
+    id: 'wh-questions', icon: '❓', ico: 'help-circle', title: 'Câu hỏi với từ để hỏi (Wh-)', titleEn: 'Wh-questions', level: 'starter',
     summary: 'Từ để hỏi: What (cái gì), Where (ở đâu), When (khi nào), Who (ai), Why (tại sao), How (thế nào), How many/much (bao nhiêu), Which (cái nào).',
     rules: [
       { form: 'Wh- + do/does/did + S + V?', note: 'Where do you live?' },

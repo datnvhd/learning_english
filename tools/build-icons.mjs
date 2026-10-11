@@ -28,6 +28,8 @@ export const NAMES = [
   'presentation', 'clock-play', 'circle-check', 'circle-x',
   // Bổ sung cho giao diện English Master (sidebar, topbar, bảng điều khiển)
   'wifi', 'wifi-off', 'chevron-up', 'dots-vertical', 'plus', 'minus', 'calendar-event', 'layout-dashboard', 'clipboard-list', 'clipboard-check', 'database', 'device-floppy', 'send', 'arrow-left', 'trending-up', 'adjustments-horizontal', 'history', 'user', 'users', 'menu-2', 'list', 'file-description', 'alarm', 'help-circle', 'flag', 'category', 'folder', 'leaf', 'map-pin', 'cloud-download', 'shield-check', 'text-size', 'arrows-shuffle', 'logout', 'eye-off', 'books', 'vocabulary', 'writing', 'report-analytics', 'device-desktop', 'edit', 'stopwatch', 'circle', 'bookmarks', 'graph', 'chart-donut', 'chart-pie', 'zoom-check', 'coffee', 'building', 'currency-dollar', 'heartbeat',
+  // Ngữ pháp, thẻ từ, trò chơi (thay cho emoji)
+  'equal', 'letter-a', 'apple', 'scale', 'question-mark', 'hand-finger',
 ];
 
 const out = {};

@@ -7,6 +7,7 @@ import { SfxService } from '../../core/sfx.service';
 import { SpeechService } from '../../core/speech.service';
 import { sample, shuffle } from '../../core/text-utils';
 import { Word } from '../../models/vocab.model';
+import { IconComponent } from '../../theme/icon.component';
 import { GameResult } from './game.model';
 
 /** Thời gian mỗi ván (giây) */
@@ -14,12 +15,13 @@ const DURATION = 60;
 
 @Component({
   selector: 'app-speed-game',
+  imports: [IconComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="hud">
-      <span>⭐ <b>{{ score() }}</b></span>
-      <span class="combo" [class.hot]="streak() >= 3">🔥 x{{ multiplier() }} <small>({{ streak() }} liên tiếp)</small></span>
-      <span>✅ <b>{{ right() }}</b></span>
+      <span><app-icon name="star" /> <b>{{ score() }}</b></span>
+      <span class="combo" [class.hot]="streak() >= 3"><app-icon name="flame" /> x{{ multiplier() }} <small>({{ streak() }} liên tiếp)</small></span>
+      <span><app-icon name="circle-check" /> <b>{{ right() }}</b></span>
     </div>
     <div class="timer"><i [style.width.%]="(left() / duration) * 100" [class.low]="left() <= 10"></i></div>
     <p class="secs" [class.low]="left() <= 10">{{ left() }}s</p>
@@ -39,6 +41,8 @@ const DURATION = 60;
     }
   `,
   styles: `
+    .hud span { display: inline-flex; align-items: center; gap: 6px; }
+    .hud app-icon { width: 18px; height: 18px; color: var(--primary); }
     .hud { display: flex; justify-content: space-around; align-items: center; background: var(--white); border-radius: 99px; padding: 8px 12px; box-shadow: var(--shadow-sm); margin-bottom: 10px; }
     .combo small { color: var(--ink-soft); }
     .combo.hot { color: var(--tangerine-600); }

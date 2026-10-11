@@ -17,10 +17,11 @@ import { POS_LABEL } from '../../models/vocab.model';
 import { photoOf } from '../../core/photos';
 import { BongComponent } from '../../shared/bong.component';
 import { PageHeaderComponent } from '../../shared/page-header.component';
+import { IconComponent } from '../../theme/icon.component';
 
 @Component({
   selector: 'app-lesson-study',
-  imports: [RouterLink, BongComponent, PageHeaderComponent],
+  imports: [RouterLink, BongComponent, PageHeaderComponent, IconComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <main class="page no-nav stack">
@@ -42,8 +43,8 @@ import { PageHeaderComponent } from '../../shared/page-header.component';
               <p class="ipa">/{{ w.ipa }}/</p>
 
               <div class="sound" (click)="$event.stopPropagation()">
-                <button class="icon-btn big" type="button" (click)="play(false)" aria-label="Nghe">🔊</button>
-                <button class="icon-btn big" type="button" (click)="play(true)" aria-label="Nghe chậm">🐢</button>
+                <button class="icon-btn big" type="button" (click)="play(false)" aria-label="Nghe"><app-icon name="volume" /></button>
+                <button class="icon-btn big" type="button" (click)="play(true)" aria-label="Nghe chậm"><app-icon name="gauge" /></button>
               </div>
 
               @if (flipped()) {
@@ -51,18 +52,18 @@ import { PageHeaderComponent } from '../../shared/page-header.component';
                   <p class="vi">{{ w.vi }}</p>
                   <p class="ex">“{{ w.ex }}”</p>
                   <p class="muted">{{ w.exVi }}</p>
-                  <button class="icon-btn" type="button" (click)="playExample($event)" aria-label="Nghe câu ví dụ">🔊 </button>
+                  <button class="icon-btn" type="button" (click)="playExample($event)" aria-label="Nghe câu ví dụ"><app-icon name="volume" /></button>
                 </div>
               } @else {
-                <p class="tap muted">👆 Chạm để xem nghĩa</p>
+                <p class="tap muted"><app-icon name="hand-finger" /> Chạm để xem nghĩa</p>
               }
             </section>
 
             <div class="row nav">
-              <button class="btn btn-ghost" type="button" [disabled]="idx() === 0" (click)="prev()">‹ Trước</button>
-              <button class="btn btn-soft" type="button" (click)="known()">Mình biết từ này ✔</button>
+              <button class="btn btn-ghost" type="button" [disabled]="idx() === 0" (click)="prev()"><app-icon name="chevron-left" /> Trước</button>
+              <button class="btn btn-soft" type="button" (click)="known()"><app-icon name="check" /> Mình biết từ này</button>
               <button class="btn btn-primary" type="button" (click)="next()">
-                {{ idx() === words().length - 1 ? 'Xong' : 'Tiếp ›' }}
+                {{ idx() === words().length - 1 ? 'Xong' : 'Tiếp' }} <app-icon [name]="idx() === words().length - 1 ? 'check' : 'chevron-right'" />
               </button>
             </div>
           }
@@ -74,9 +75,9 @@ import { PageHeaderComponent } from '../../shared/page-header.component';
             <p>Bạn vừa xem xong {{ words().length }} từ của bài “{{ l.vi }}”.</p>
             <p class="muted">Làm bài kiểm tra nhanh để nhớ những từ này thật lâu nhé!</p>
             <a class="btn btn-accent btn-block" [routerLink]="['/session/lesson', topicId()]" [queryParams]="{ lesson: lessonIndex() }">
-              📝 Làm bài kiểm tra nhanh
+              <app-icon name="list-check" /> Làm bài kiểm tra nhanh
             </a>
-            <button class="btn btn-ghost btn-block" type="button" (click)="restart()">🔁 Xem lại từ đầu</button>
+            <button class="btn btn-ghost btn-block" type="button" (click)="restart()"><app-icon name="refresh" /> Xem lại từ đầu</button>
             <a class="btn btn-soft btn-block" [routerLink]="['/vocab', topicId()]">Về danh sách từ</a>
           </section>
         }
@@ -131,7 +132,16 @@ import { PageHeaderComponent } from '../../shared/page-header.component';
     .icon-btn.big {
       width: 54px;
       height: 54px;
-      font-size: 1.5rem;
+      border-radius: 50%;
+      background: var(--primary-soft);
+      border: 1px solid var(--sky-100);
+    }
+    .icon-btn.big:hover {
+      background: var(--sky-100);
+    }
+    .icon-btn.big app-icon {
+      width: 26px;
+      height: 26px;
     }
     .back {
       display: flex;
@@ -152,6 +162,9 @@ import { PageHeaderComponent } from '../../shared/page-header.component';
     }
     .tap {
       margin-top: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
     .nav {
       justify-content: space-between;

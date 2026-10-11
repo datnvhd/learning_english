@@ -43,7 +43,7 @@ import { IconComponent } from '../../theme/icon.component';
         }
       </section>
 
-      <a class="btn btn-accent btn-block" [routerLink]="['/session/mixed', id()]">🔁 Luyện lại (tổng hợp 4 kỹ năng)</a>
+      <a class="btn btn-accent btn-block" [routerLink]="['/session/mixed', id()]"><app-icon name="refresh" /> Luyện lại (tổng hợp 4 kỹ năng)</a>
       <a class="btn btn-soft btn-block" routerLink="/vocab">Quay về Từ vựng</a>
     </main>
   `,

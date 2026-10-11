@@ -16,7 +16,7 @@ import { BADGES } from '../../data/badges';
 import { SECTION_BY_ID } from '../../data/exam/sections';
 import { testTitle } from '../../data/exam/tests/catalog';
 import { isFullExam, testNoOf } from '../../models/exam.model';
-import { SKILL_INFO, TOPICS, topicWordCount, totalWordCount } from '../../data/topics';
+import { SKILL_INFO, TOPICS, TOPIC_ICON, topicWordCount, totalWordCount } from '../../data/topics';
 import { LANGUAGE_SKILLS, Skill } from '../../models/content.model';
 import { RingComponent } from '../../shared/ring.component';
 import { IconComponent } from '../../theme/icon.component';
@@ -81,7 +81,7 @@ import { IconComponent } from '../../theme/icon.component';
             <div class="grid-2 tp">
               @for (t of topicRows(); track t.id) {
                 <a class="trow" [routerLink]="['/vocab', t.id]">
-                  <div class="row"><span class="te">{{ t.emoji }}</span><b class="tn">{{ t.title }}</b><span class="spacer"></span><small class="muted">{{ t.learned }}/{{ t.total }} từ</small></div>
+                  <div class="row"><span class="tile-ic sm" [style.--c]="t.color"><app-icon [name]="t.ico" /></span><b class="tn">{{ t.title }}</b><span class="spacer"></span><small class="muted">{{ t.learned }}/{{ t.total }} từ</small></div>
                   <div class="bar blue"><i [style.width.%]="t.percent"></i></div>
                   <div class="sc">@for (s of t.skills; track s.skill) { <span class="sp" [class.zero]="s.best === 0"><app-icon [name]="s.ico" /> {{ s.best }}%</span> }</div>
                 </a>
@@ -162,7 +162,6 @@ import { IconComponent } from '../../theme/icon.component';
     .tp { gap: var(--space-3); }
     .trow { display: flex; flex-direction: column; gap: 6px; padding: var(--space-3); border: 1px solid var(--line); border-radius: var(--radius-md); }
     .trow:hover { border-color: var(--sky-300); }
-    .te { font-size: 1.2rem; }
     .sc { display: flex; gap: var(--space-3); font-size: var(--fs-xs); color: var(--slate-600); }
     .sp { display: inline-flex; align-items: center; gap: 3px; }
     .sp app-icon { width: 14px; height: 14px; }
@@ -267,7 +266,7 @@ export class ProgressPage {
       const total = topicWordCount(t.id);
       const learned = this.progress.learnedCount(t.id);
       return {
-        id: t.id, emoji: t.emoji, title: t.title, total, learned, percent: pct(learned, total),
+        id: t.id, ico: TOPIC_ICON[t.id].icon, color: TOPIC_ICON[t.id].color, title: t.title, total, learned, percent: pct(learned, total),
         skills: LANGUAGE_SKILLS.map((s) => ({ skill: s, ico: SKILL_INFO[s].ico, best: this.progress.bestScore(t.id, s) })),
       };
     });

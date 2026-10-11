@@ -17,7 +17,7 @@ import { ProgressService } from '../../core/progress.service';
 import { SpeechService } from '../../core/speech.service';
 import { UxService } from '../../core/ux.service';
 import { VocabService } from '../../core/vocab.service';
-import { TOPICS, TOPIC_BY_ID, totalWordCount } from '../../data/topics';
+import { TOPICS, TOPIC_BY_ID, TOPIC_ICON, totalWordCount } from '../../data/topics';
 import { TopicId } from '../../models/content.model';
 import { CEFR_LEVELS, CefrLevel, POS_LABEL, Word } from '../../models/vocab.model';
 import { DonutComponent } from '../../shared/donut.component';
@@ -40,13 +40,6 @@ const GROUPS: { id: string; label: string; topics: TopicId[] }[] = [
 ];
 
 /** Icon và màu của từng chủ đề (ô "Chủ đề phổ biến") */
-const TOPIC_ICON: Record<TopicId, { icon: IconName; color: string }> = {
-  daily: { icon: 'home', color: 'var(--sun-500)' }, it: { icon: 'device-laptop', color: 'var(--sky-500)' },
-  travel: { icon: 'plane', color: 'var(--sky-400)' }, study: { icon: 'school', color: 'var(--grape-500)' },
-  health: { icon: 'heartbeat', color: 'var(--coral-500)' }, food: { icon: 'tools-kitchen-2', color: 'var(--tangerine-500)' },
-  b1: { icon: 'book', color: 'var(--leaf-600)' }, b2: { icon: 'books', color: 'var(--tangerine-600)' },
-  ielts: { icon: 'certificate', color: 'var(--blossom-600)' }, toeic: { icon: 'briefcase', color: 'var(--sky-600)' },
-};
 
 @Component({
   selector: 'app-vocab',
@@ -234,6 +227,13 @@ const TOPIC_ICON: Record<TopicId, { icon: IconName; color: string }> = {
     .find app-icon { width: 18px; height: 18px; }
     .cnt { font-size: var(--fs-sm); }
     .scroll { overflow-x: auto; }
+    .tbl th, .tbl td { padding-inline: var(--space-2); }
+    .tbl th:first-child, .tbl td:first-child { padding-left: var(--space-4); }
+    .tbl td:nth-child(3), .tbl td:nth-child(6), .tbl td:nth-child(7), .tbl td:nth-child(8), .tbl td.act { white-space: nowrap; }
+    .tbl td:nth-child(4) { min-width: 96px; }
+    .tbl td:nth-child(5) .tag { display: inline-block; max-width: 124px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: middle; }
+    /* Cột Kỳ thi trùng ý với Chủ đề: ẩn khi bảng hẹp để các cột còn lại hiện đủ */
+    @media (max-width: 1700px) { .tbl th:nth-child(6), .tbl td:nth-child(6) { display: none; } }
     .tbl td.w { white-space: nowrap; font-weight: 700; }
     .tbl td.w a:hover { color: var(--primary); }
     .tbl td.w .icon-btn { width: 30px; height: 30px; vertical-align: middle; margin-left: 2px; }

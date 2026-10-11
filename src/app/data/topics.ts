@@ -85,6 +85,15 @@ export function totalWordCount(): number {
 }
 
 /** Nhãn hiển thị của từng kỹ năng */
+/** Icon và màu của từng chủ đề từ vựng (dùng thay emoji ở mọi danh sách chủ đề) */
+export const TOPIC_ICON: Record<TopicId, { icon: IconName; color: string }> = {
+  daily: { icon: 'home', color: 'var(--sun-500)' }, it: { icon: 'device-laptop', color: 'var(--sky-500)' },
+  travel: { icon: 'plane', color: 'var(--sky-400)' }, study: { icon: 'school', color: 'var(--grape-500)' },
+  health: { icon: 'heartbeat', color: 'var(--coral-500)' }, food: { icon: 'tools-kitchen-2', color: 'var(--tangerine-500)' },
+  b1: { icon: 'book', color: 'var(--leaf-600)' }, b2: { icon: 'books', color: 'var(--tangerine-600)' },
+  ielts: { icon: 'certificate', color: 'var(--blossom-600)' }, toeic: { icon: 'briefcase', color: 'var(--sky-600)' },
+};
+
 /** Thông tin hiển thị của từng kỹ năng: màu lấy từ theme (SKILL_COLORS), icon theo bộ icon của theme */
 export const SKILL_INFO: Record<string, { label: string; labelEn: string; icon: string; ico: IconName; color: string; hint: string }> = {
   vocab: { label: 'Từ vựng', labelEn: 'Vocabulary', icon: '📖', ico: 'book-2', color: SKILL_COLORS.vocab, hint: 'Học và nhớ từ mới' },

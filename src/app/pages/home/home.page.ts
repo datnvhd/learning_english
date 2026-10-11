@@ -232,7 +232,7 @@ const MODULES: { title: string; icon: IconName; color: string; desc: string; lin
             <div class="ratio">
               <small class="gl">Tỉ lệ luyện tập</small>
               <div class="rrow">
-                <app-donut [segments]="ratioSegments()" [size]="96" [thickness]="16" />
+                <app-donut [segments]="ratioSegments()" [size]="80" [thickness]="14" />
                 <ul>
                   @for (r of ratio(); track r.skill) {
                     <li><i [style.background]="r.color"></i><span>{{ r.label }}</span><b>{{ r.percent }}%</b></li>
@@ -310,11 +310,13 @@ const MODULES: { title: string; icon: IconName; color: string; desc: string; lin
     .radio { width: 20px; height: 20px; border-radius: 50%; border: 2px solid var(--slate-300); display: grid; place-items: center; flex: none; }
     .radio.on { background: var(--good); border-color: var(--good); color: var(--white); }
     .radio app-icon { width: 12px; height: 12px; }
+    .stats { container-type: inline-size; }
     .quick { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-2); }
+    .quick .stat > span { min-width: 0; }
     .quick .stat { padding: var(--space-2); gap: var(--space-2); }
     .quick .stat app-icon { width: 24px; height: 24px; flex: none; }
     .quick .stat b { font-size: var(--fs-md); white-space: nowrap; }
-    .quick .stat small { font-size: 0.7rem; white-space: nowrap; }
+    .quick .stat small { display: block; font-size: 0.7rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .c-or { color: var(--tangerine-500); }
     .c-bl { color: var(--primary); }
     .c-gr { color: var(--good); }
@@ -331,7 +333,14 @@ const MODULES: { title: string; icon: IconName; color: string; desc: string; lin
     .rrow ul { list-style: none; margin: 0; padding: 0; flex: 1; display: flex; flex-direction: column; gap: 5px; font-size: var(--fs-xs); }
     .rrow li { display: flex; align-items: center; gap: 6px; }
     .rrow li span { flex: 1; color: var(--ink-soft); }
-    .rrow li i { width: 8px; height: 8px; border-radius: 50%; }
+    .rrow li i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+    .rrow li b { flex: none; }
+    /* Thẻ hẹp (cột thứ ba của trang chủ): 2 ô số liệu mỗi hàng, hai biểu đồ xếp dọc */
+    @container (max-width: 560px) {
+      .quick { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .charts { grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: var(--space-3); }
+      .rrow { gap: var(--space-2); }
+    }
 
     .mods { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: var(--space-3); }
     .mod { display: flex; flex-direction: column; gap: var(--space-2); background: linear-gradient(180deg, color-mix(in srgb, var(--c) 7%, var(--white)), var(--white) 55%); border-color: color-mix(in srgb, var(--c) 18%, var(--white)); }

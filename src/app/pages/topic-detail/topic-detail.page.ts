@@ -59,8 +59,8 @@ import { IconComponent } from '../../theme/icon.component';
         </section>
 
         <div class="row extra">
-          <a class="btn btn-soft" style="flex:1" [routerLink]="['/topic', t.id, 'summary']">📊 Tổng hợp chủ đề</a>
-          <a class="btn btn-accent" style="flex:1" [routerLink]="['/session/test', t.id]" [queryParams]="{ kind: 'all' }">📝 Kiểm tra</a>
+          <a class="btn btn-soft" style="flex:1" [routerLink]="['/topic', t.id, 'summary']"><app-icon name="chart-bar" /> Tổng hợp chủ đề</a>
+          <a class="btn btn-accent" style="flex:1" [routerLink]="['/session/test', t.id]" [queryParams]="{ kind: 'all' }"><app-icon name="list-check" /> Kiểm tra</a>
         </div>
       </main>
     }

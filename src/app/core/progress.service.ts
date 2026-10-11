@@ -450,7 +450,7 @@ export class ProgressService {
   //  THỜI GIAN HỌC, CÂU SAI, LỊCH HỌC
   // ---------------------------------------------------------------------
 
-  /** Cộng thời gian học (giây) vào nhật ký hôm nay – App gọi định kỳ khi đang mở */
+  /** Cộng thời gian học (giây) vào nhật ký hôm nay – ActivityService gọi khi người học đang thật sự dùng app */
   addTime(seconds: number): void {
     const st = this._state();
     const log = (st.days[dayKey()] ??= emptyDay());

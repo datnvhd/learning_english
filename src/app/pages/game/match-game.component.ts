@@ -7,6 +7,7 @@ import { SfxService } from '../../core/sfx.service';
 import { SpeechService } from '../../core/speech.service';
 import { shuffle } from '../../core/text-utils';
 import { Word } from '../../models/vocab.model';
+import { IconComponent } from '../../theme/icon.component';
 import { GameResult } from './game.model';
 
 interface Card {
@@ -18,18 +19,19 @@ interface Card {
 
 @Component({
   selector: 'app-match-game',
+  imports: [IconComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="hud">
-      <span>🎯 Lượt: <b>{{ moves() }}</b></span>
-      <span>⏱ <b>{{ secs() }}s</b></span>
-      <span>✅ <b>{{ matched().size / 2 }}/{{ pairs() }}</b></span>
+      <span><app-icon name="target" /> Lượt: <b>{{ moves() }}</b></span>
+      <span><app-icon name="stopwatch" /> <b>{{ secs() }}s</b></span>
+      <span><app-icon name="circle-check" /> <b>{{ matched().size / 2 }}/{{ pairs() }}</b></span>
     </div>
     <div class="board">
       @for (c of cards(); track c.id) {
         <button type="button" class="card3d" [class.flip]="isUp(c.id)" [class.done]="matched().has(c.id)" [class.bad]="wrong().includes(c.id)"
                 (click)="flip(c)" [attr.aria-label]="isUp(c.id) ? c.text : 'Thẻ úp'">
-          <span class="face back">❓</span>
+          <span class="face back"><app-icon name="question-mark" /></span>
           <span class="face front" [class.en]="c.lang === 'en'">{{ c.text }}</span>
         </button>
       }
@@ -37,8 +39,11 @@ interface Card {
     <p class="muted center tip">Lật hai thẻ: từ tiếng Anh và nghĩa tiếng Việt tương ứng. Thẻ tiếng Anh sẽ được đọc thành tiếng!</p>
   `,
   styles: `
+    .hud span { display: inline-flex; align-items: center; gap: 6px; }
+    .hud app-icon { width: 18px; height: 18px; color: var(--primary); }
+    .face.back app-icon { width: 28px; height: 28px; }
     .hud { display: flex; justify-content: space-around; background: var(--white); border-radius: 99px; padding: 8px 12px; box-shadow: var(--shadow-sm); margin-bottom: 12px; }
-    .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+    .board { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 500px; margin-inline: auto; }
     .card3d { position: relative; aspect-ratio: 3 / 4; perspective: 600px; background: transparent; padding: 0; }
     .face { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 4px; border-radius: 14px; backface-visibility: hidden; transition: transform 0.35s; font-size: 0.8rem; line-height: 1.15; word-break: break-word; }
     .back { background: linear-gradient(160deg, var(--sky-400), var(--sky-500)); color: var(--white); font-size: 1.8rem; box-shadow: 0 4px 0 var(--primary-dark); }

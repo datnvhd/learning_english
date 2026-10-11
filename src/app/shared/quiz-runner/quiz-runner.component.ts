@@ -18,7 +18,7 @@
  */
 import { SKILL_INFO } from '../../data/topics';
 import {
-  ChangeDetectionStrategy, Component, computed, effect, inject, input, linkedSignal, OnDestroy, OnInit, output, signal, untracked, viewChild,
+  ChangeDetectionStrategy, Component, computed, effect, ElementRef, inject, input, linkedSignal, OnDestroy, OnInit, output, signal, untracked, viewChild,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RecognitionService } from '../../core/recognition.service';
@@ -123,6 +123,7 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
   private popId = 0;
   private clock: ReturnType<typeof setInterval> | null = null;
   private readonly confetti = viewChild(ConfettiComponent);
+  private readonly strip = viewChild<ElementRef<HTMLElement>>('strip');
 
   private readonly startedAt = Date.now();
   private audioEl: HTMLAudioElement | null = null;
@@ -238,8 +239,16 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
         if (this.audioSrc !== undefined && src !== this.audioSrc && this.speech.busy()) this.speech.cancel();
         this.audioSrc = src;
         if (q.autoPlay) setTimeout(() => this.playMain(), 350);
+        setTimeout(() => this.centerStrip());
       });
     });
+  }
+
+  /** Cuộn dải số câu để ô của câu đang làm nằm giữa (chỉ có tác dụng khi dải cuộn ngang) */
+  private centerStrip(): void {
+    const el = this.strip()?.nativeElement;
+    const cur = el?.querySelector<HTMLElement>('.cur');
+    if (el && cur) el.scrollLeft = cur.offsetLeft - el.offsetLeft - (el.clientWidth - cur.offsetWidth) / 2;
   }
 
   ngOnInit(): void {

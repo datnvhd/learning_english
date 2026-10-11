@@ -832,6 +832,18 @@
   gap: 6px;
 }
 
+/* Đề dài (TOEIC 200 câu, IELTS 85 mục): một hàng cuộn ngang, câu đang làm luôn ở giữa */
+.strip.long {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 4px 2px 8px;
+  scrollbar-width: thin;
+}
+
+.strip.long .n {
+  flex: none;
+}
+
 .strip .n {
   min-width: 34px;
   height: 34px;

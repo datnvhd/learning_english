@@ -73,7 +73,7 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | Mock Test | `/mock` | **Bộ đề cố định: 20 đề IELTS + 20 đề TOEIC** (làm lại vẫn đúng đề đó); thi thử ngẫu nhiên IELTS, TOEIC L&R, TOEIC S&W có đồng hồ; đề theo từng kỹ năng; yêu thích; kết quả gần đây |
 | Làm bài | `/session/...` | Đầu trang có đồng hồ, dải số câu; bài đọc/bài nghe bên trái – câu hỏi bên phải; trang kết quả chi tiết |
 | Error Review | `/errors` | Mọi câu làm sai kèm đáp án, giải thích; lọc theo kỹ năng; từ hay sai; luyện lại |
-| Progress | `/progress` | Chuỗi ngày, thời gian học, XP, biểu đồ 7 ngày, lịch hoạt động 12 tuần, huy hiệu, lịch sử |
+| Progress | `/progress` | Chuỗi ngày, thời gian học (chỉ tính khi đang thao tác hoặc đang nghe – treo máy quá 2 phút hay ẩn tab thì không tính), XP, biểu đồ 7 ngày, lịch hoạt động 12 tuần, huy hiệu, lịch sử |
 | Lịch học | `/schedule` | Lịch tự học hằng tuần (gợi ý theo mục tiêu, thêm/xóa buổi), lịch tháng, buổi sắp tới |
 | Settings | `/settings` | Hồ sơ, mục tiêu band/điểm, âm thanh, hiển thị, **quản lý dữ liệu offline**, sao lưu |
 

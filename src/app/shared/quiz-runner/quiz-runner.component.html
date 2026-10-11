@@ -27,7 +27,7 @@
   </header>
 
   <!-- Dải số câu: xanh lá = đúng, đỏ = sai, xanh dương = câu đang làm (chế độ thi chỉ đánh dấu đã làm) -->
-  <nav class="strip" aria-label="Danh sách câu hỏi">
+  <nav class="strip" #strip [class.long]="total() > 60" aria-label="Danh sách câu hỏi">
     @for (m of marks(); track $index) {
       <span [class]="'n ' + m" [attr.aria-current]="m === 'cur' ? 'step' : null">{{ $index + 1 }}</span>
     }

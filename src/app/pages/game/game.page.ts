@@ -35,7 +35,7 @@ import { hasPhoto } from '../../core/photos';
         <button class="icon-btn" type="button" (click)="quit()" aria-label="Thoát"><app-icon name="x" /></button>
         <h1 class="title"><app-icon [name]="info().ico" /> {{ info().title }}</h1>
         <span class="spacer"></span>
-        <span class="best">🏆 {{ best() }}</span>
+        <span class="best"><app-icon name="trophy" /> {{ best() }}</span>
       </header>
 
       @switch (state()) {
@@ -53,12 +53,12 @@ import { hasPhoto } from '../../core/photos';
           @if (result(); as r) {
             <section class="card over center fade-up">
               <app-bong [mood]="record() ? 'cheer' : 'hello'" [size]="100" />
-              <h2>{{ record() ? '🏆 Kỷ lục mới!' : 'Hoàn thành!' }}</h2>
+              <h2 class="ovt">@if (record()) { <app-icon name="trophy" /> } {{ record() ? 'Kỷ lục mới!' : 'Hoàn thành!' }}</h2>
               <div class="big">{{ r.score }}<small> điểm</small></div>
               <p class="muted">{{ r.label }}</p>
               <span class="pill">+{{ r.xp }} XP</span>
               <div class="row acts">
-                <button class="btn btn-accent" type="button" (click)="start()">🔁 Chơi lại</button>
+                <button class="btn btn-accent" type="button" (click)="start()"><app-icon name="refresh" /> Chơi lại</button>
                 <a class="btn btn-soft" routerLink="/practice">Xong</a>
               </div>
             </section>
@@ -71,7 +71,10 @@ import { hasPhoto } from '../../core/photos';
   styles: `
     .head { display: flex; align-items: center; gap: 10px; }
     .title { display: flex; align-items: center; gap: 8px; font-size: 1.25rem; background: var(--white); padding: 6px 18px 6px 12px; border-radius: 999px; box-shadow: var(--shadow-sm); color: var(--primary-dark); }
-    .best { font-family: var(--font-head); color: var(--ink-soft); }
+    .best { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-head); color: var(--ink-soft); }
+    .best app-icon { width: 18px; height: 18px; color: var(--sun-500); }
+    .ovt { display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .ovt app-icon { width: 28px; height: 28px; color: var(--sun-500); }
     .over { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 20px 14px; }
     .over h2 { color: var(--primary-dark); font-size: 1.6rem; }
     .big { font-family: var(--font-head); font-size: 3.4rem; color: var(--primary); line-height: 1; }

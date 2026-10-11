@@ -7,22 +7,24 @@ import { SfxService } from '../../core/sfx.service';
 import { SpeechService } from '../../core/speech.service';
 import { shuffle } from '../../core/text-utils';
 import { Word } from '../../models/vocab.model';
+import { IconComponent } from '../../theme/icon.component';
 import { GameResult } from './game.model';
 
 @Component({
   selector: 'app-scramble-game',
+  imports: [IconComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="hud">
       <span>Từ <b>{{ index() + 1 }}/{{ words().length }}</b></span>
-      <span>⭐ <b>{{ score() }}</b></span>
+      <span><app-icon name="star" /> <b>{{ score() }}</b></span>
     </div>
 
     @if (word(); as w) {
       <section class="card box" [class.shake]="shake()">
         <p class="pos">({{ w.pos }})</p>
         <h2 class="vi">{{ w.vi }}</h2>
-        <button class="icon-btn" type="button" (click)="say()" aria-label="Nghe phát âm">🔊</button>
+        <button class="icon-btn" type="button" (click)="say()" aria-label="Nghe phát âm"><app-icon name="volume" /></button>
 
         <div class="slots">
           @for (ch of slots(); track $index) {
@@ -37,15 +39,17 @@ import { GameResult } from './game.model';
         </div>
 
         <div class="row acts">
-          <button class="btn btn-ghost btn-sm" type="button" (click)="clear()">↺ Xóa</button>
-          <button class="btn btn-soft btn-sm" type="button" (click)="hint()">💡 Gợi ý (−1)</button>
+          <button class="btn btn-ghost btn-sm" type="button" (click)="clear()"><app-icon name="refresh" /> Xóa</button>
+          <button class="btn btn-soft btn-sm" type="button" (click)="hint()"><app-icon name="bulb" /> Gợi ý (−1)</button>
           <button class="btn btn-ghost btn-sm" type="button" (click)="skip()">Bỏ qua</button>
         </div>
-        @if (solved()) { <p class="ok">✅ Chính xác: <b>{{ w.word }}</b> /{{ w.ipa }}/</p> }
+        @if (solved()) { <p class="ok"><app-icon name="circle-check" /> Chính xác: <b>{{ w.word }}</b> /{{ w.ipa }}/</p> }
       </section>
     }
   `,
   styles: `
+    .hud span { display: inline-flex; align-items: center; gap: 6px; }
+    .hud app-icon { width: 18px; height: 18px; color: var(--primary); }
     .hud { display: flex; justify-content: space-around; background: var(--white); border-radius: 99px; padding: 8px 12px; box-shadow: var(--shadow-sm); margin-bottom: 12px; }
     .box { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 18px 14px; text-align: center; }
     .pos { color: var(--purple); }
@@ -58,7 +62,7 @@ import { GameResult } from './game.model';
     .tile:disabled { opacity: 0.25; box-shadow: none; }
     .tile:active:not(:disabled) { transform: translateY(2px); box-shadow: none; }
     .acts { flex-wrap: wrap; justify-content: center; }
-    .ok { color: var(--good); }
+    .ok { color: var(--good); display: flex; align-items: center; justify-content: center; gap: 6px; flex-wrap: wrap; }
   `,
 })
 export class ScrambleGameComponent implements OnInit {

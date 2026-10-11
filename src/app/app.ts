@@ -8,12 +8,13 @@
  *  │ thẻ Offline │                                                   │
  *  └─────────────┴───────────────────────────────────────────────────┘
  *  Màn hình hẹp: sidebar thu lại thành ngăn kéo, mở bằng nút ☰ trên topbar.
- *  App cũng đếm thời gian học (mỗi 30 giây khi tab đang hiển thị) để hiện "Hôm nay".
+ *  App cũng đếm thời gian học thực (core/activity.service.ts – không tính lúc treo máy) để hiện "Hôm nay".
  */
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { NavigationEnd, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { filter, map } from 'rxjs';
+import { ActivityService } from './core/activity.service';
 import { OfflineService, formatBytes } from './core/offline.service';
 import { ProgressService } from './core/progress.service';
 import { UxService } from './core/ux.service';
@@ -303,12 +304,8 @@ export class App {
   protected readonly noteCount = computed(() => this.noteList().length);
 
   constructor() {
-    // Đếm thời gian học: +30 giây mỗi nửa phút khi tab đang hiển thị
-    if (typeof window !== 'undefined') {
-      setInterval(() => {
-        if (document.visibilityState === 'visible') this.progress.addTime(30);
-      }, 30_000);
-    }
+    // Đếm thời gian học: chỉ tính khi tab đang hiển thị và người học đang thao tác / đang nghe (không tính lúc treo máy)
+    inject(ActivityService).start();
   }
 
   /** Tìm kiếm từ ô trên topbar: chuyển sang trang tra từ với từ khóa */

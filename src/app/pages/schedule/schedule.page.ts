@@ -179,7 +179,7 @@ function fmt(min: number): string {
     .add label { display: flex; flex-direction: column; gap: 4px; font-size: var(--fs-xs); font-weight: 600; color: var(--slate-600); }
     .add label:first-child { flex: 1; min-width: 180px; }
     .scroll { overflow-x: auto; border-top: 1px solid var(--line); }
-    .grid { display: grid; grid-template-columns: 58px repeat(var(--cols), minmax(118px, 1fr)); min-width: 900px; }
+    .grid { display: grid; grid-template-columns: 54px repeat(var(--cols), minmax(92px, 1fr)); min-width: 700px; }
     .grid.dayview { min-width: 0; }
     .gh { padding: var(--space-2); text-align: center; display: flex; flex-direction: column; justify-content: center; background: var(--slate-50); border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); line-height: 1.35; }
     .gh small { color: var(--ink-soft); }

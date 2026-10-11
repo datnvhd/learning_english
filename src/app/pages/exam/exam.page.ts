@@ -263,7 +263,7 @@ const ROADMAP: Record<ExamId, { title: string; desc: string; from: number; to: n
     .sk { display: flex; flex-direction: column; gap: var(--space-2); padding: var(--space-3); border-radius: var(--radius-md); border: 1px solid color-mix(in srgb, var(--c) 22%, var(--white)); background: color-mix(in srgb, var(--c) 4%, var(--white)); transition: box-shadow var(--motion-fast), transform var(--motion-fast); }
     .sk:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
     .skt { display: flex; align-items: center; gap: var(--space-2); }
-    .skt b { flex: 1; }
+    .skt b { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .sk > small { min-height: 2.8em; line-height: 1.4; }
     .skf { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: var(--space-2); color: var(--ink-soft); }
     .go { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--line); background: var(--white); display: grid; place-items: center; color: var(--primary); }
@@ -320,7 +320,7 @@ const ROADMAP: Record<ExamId, { title: string; desc: string; from: number; to: n
     .doc span:last-child { display: flex; flex-direction: column; min-width: 0; line-height: 1.35; }
     .doc b { font-size: var(--fs-sm); }
     .doc small { color: var(--ink-soft); }
-    @media (max-width: 1320px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (max-width: 1640px) { .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 760px) {
       .two { grid-template-columns: minmax(0, 1fr); }
       .road { grid-template-columns: minmax(0, 1fr); gap: var(--space-3); }

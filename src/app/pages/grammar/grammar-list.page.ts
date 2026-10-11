@@ -10,10 +10,10 @@ import { BongComponent } from '../../shared/bong.component';
 import { PageHeaderComponent } from '../../shared/page-header.component';
 import { IconComponent } from '../../theme/icon.component';
 
-const LEVELS: { id: GrammarLesson['level']; label: string }[] = [
-  { id: 'starter', label: 'Nền tảng' },
-  { id: 'basic', label: 'Cơ bản' },
-  { id: 'intermediate', label: 'Nâng cao' },
+const LEVELS: { id: GrammarLesson['level']; label: string; color: string }[] = [
+  { id: 'starter', label: 'Nền tảng', color: 'var(--leaf-600)' },
+  { id: 'basic', label: 'Cơ bản', color: 'var(--sky-500)' },
+  { id: 'intermediate', label: 'Nâng cao', color: 'var(--grape-500)' },
 ];
 
 @Component({
@@ -35,7 +35,7 @@ const LEVELS: { id: GrammarLesson['level']; label: string }[] = [
         <div class="grid">
           @for (g of byLevel(lv.id); track g.id) {
             <a class="card interactive item" [routerLink]="['/grammar', g.id]">
-              <span class="emo">{{ g.icon }}</span>
+              <span class="tile-ic" [style.--c]="lv.color"><app-icon [name]="g.ico" /></span>
               <span class="tx">
                 <b>{{ g.title }}</b>
                 <small class="muted">{{ g.titleEn }}</small>
@@ -56,11 +56,10 @@ const LEVELS: { id: GrammarLesson['level']; label: string }[] = [
     .prog { display: flex; flex-direction: column; gap: var(--space-2); }
     .grid { display: grid; grid-template-columns: 1fr; gap: var(--space-2); }
     .item { display: flex; align-items: center; gap: var(--space-3); min-height: 64px; }
-    .emo { font-size: 1.8rem; width: 48px; height: 48px; border-radius: 50%; background: var(--primary-soft); display: grid; place-items: center; flex: none; }
-    .tx { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+    .tx { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
     .score { font-family: var(--font-head); color: var(--accent-dark); }
     .score.good { color: var(--good-dark); }
-    .go { color: var(--ink-mute); }
+    .go { width: 18px; height: 18px; color: var(--ink-mute); }
     @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
   `,
 })
