@@ -168,11 +168,13 @@ import { IconComponent } from '../../theme/icon.component';
     }
     .nav {
       justify-content: space-between;
-      flex-wrap: wrap;
+      gap: 8px;
     }
     .nav .btn {
-      padding: 11px 16px;
+      flex: 1 1 auto;
+      padding: 11px 10px;
       font-size: 0.95rem;
+      white-space: nowrap;
     }
     .done {
       display: flex;

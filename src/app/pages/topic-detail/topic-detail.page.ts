@@ -13,7 +13,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { map } from 'rxjs';
 import { ProgressService } from '../../core/progress.service';
 import { pct } from '../../core/text-utils';
-import { SKILL_INFO, TOPIC_BY_ID, topicLessonCount, topicWordCount } from '../../data/topics';
+import { SKILL_INFO, TOPIC_BY_ID, TOPIC_ICON, topicLessonCount, topicWordCount } from '../../data/topics';
 import { Skill, TopicId } from '../../models/content.model';
 import { PageHeaderComponent } from '../../shared/page-header.component';
 import { ArtComponent } from '../../shared/art/art.component';
@@ -26,7 +26,7 @@ import { IconComponent } from '../../theme/icon.component';
   template: `
     @if (topic(); as t) {
       <main class="page no-nav stack">
-        <app-page-header [title]="t.title" [icon]="t.emoji" back="/vocab" />
+        <app-page-header [title]="t.title" [ico]="topicIcon[t.id].icon" back="/vocab" />
 
         <section class="hero card" [style.--c]="t.color">
           @if (t.id === 'travel') {
@@ -76,7 +76,7 @@ import { IconComponent } from '../../theme/icon.component';
     }
     .banner {
       position: relative;
-      aspect-ratio: 16 / 10;
+      height: clamp(180px, 28vw, 300px);
       overflow: hidden;
       display: grid;
       place-items: center;
@@ -162,6 +162,7 @@ export class TopicDetailPage {
   private readonly route = inject(ActivatedRoute);
 
   protected readonly info = SKILL_INFO;
+  protected readonly topicIcon = TOPIC_ICON;
   protected readonly skills: Skill[] = ['vocab', 'listening', 'speaking', 'reading', 'writing'];
 
   private readonly id = toSignal(this.route.paramMap.pipe(map((p) => p.get('id') as TopicId)), { requireSync: true });

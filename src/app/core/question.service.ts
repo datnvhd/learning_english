@@ -103,7 +103,7 @@ ${explain}`,
       return q;
     });
     for (const [en, vi] of sample(g.examples, 2)) {
-      const answer = en.trim().split(/s+/);
+      const answer = en.trim().split(/\s+/);
       let tiles = shuffle(answer);
       for (let i = 0; i < 5 && tiles.join(' ') === answer.join(' '); i++) tiles = shuffle(answer);
       const q: OrderQuestion = { id: `g${seq++}`, kind: 'order', skill: 'writing', prompt: 'Sắp xếp các từ thành câu đúng.', focus: vi, tiles, answer, audio: en, explain: `${en}

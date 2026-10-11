@@ -116,4 +116,69 @@ describe('SpeechService – trình phát bài nghe', () => {
     expect(last().playing).toBe(false);
     expect(svc.busy()).toBe(false);
   });
+  it('chọn một giọng của thiết bị trong Cài đặt thì đọc bằng giọng đó thay cho bản thu sẵn', async () => {
+    // Giả lập Web Speech API của trình duyệt với hai giọng tiếng Anh
+    const voices = [{ name: 'Voice One', lang: 'en-US', localService: true }, { name: 'Voice Two', lang: 'en-GB', localService: true }];
+    const spoken: { text: string; voice?: { name: string } }[] = [];
+    const w = window as unknown as Record<string, unknown>;
+    w['SpeechSynthesisUtterance'] = class { voice?: { name: string }; onend?: () => void; constructor(readonly text: string) {} };
+    w['speechSynthesis'] = {
+      getVoices: () => voices, cancel: () => undefined, pause: () => undefined, resume: () => undefined,
+      speak: (u: { text: string; voice?: { name: string }; onend?: () => void }) => { spoken.push(u); u.onend?.(); },
+    };
+    TestBed.resetTestingModule();
+    const speech = TestBed.inject(SpeechService);
+    const progress = TestBed.inject(ProgressService);
+    await speech.recordedCount();
+    try {
+      // Mặc định: phát bản thu sẵn
+      void speech.speakEn('Look at the picture.');
+      await tick();
+      expect(FakeAudio.all.length).toBe(1);
+      expect(spoken.length).toBe(0);
+      speech.cancel();
+
+      for (const name of ['Voice One', 'Voice Two']) {
+        progress.updateSettings({ enVoice: name });
+        void speech.speakEn('Look at the picture.');
+        await new Promise((r) => setTimeout(r, 80));
+        expect(spoken[spoken.length - 1].voice?.name).toBe(name);
+      }
+      expect(FakeAudio.all.length).toBe(1);
+
+      // Lời hướng dẫn tiếng Việt: mặc định phát file thu sẵn, chọn giọng thiết bị thì đọc bằng giọng đó;
+      // nút nghe thử (force) vẫn phát khi đã tắt lời hướng dẫn
+      voices.push({ name: 'Giong Viet', lang: 'vi-VN', localService: true });
+      speech.voices.set(voices as unknown as SpeechSynthesisVoice[]);
+      progress.updateSettings({ bongTalks: false });
+      void speech.bong('test');
+      await tick();
+      expect(FakeAudio.all.length).toBe(1);
+      void speech.bong('test', true);
+      await tick();
+      expect(last().src).toContain('assets/voice/test.mp3');
+      // Giọng nam thu sẵn nằm ở thư mục riêng
+      progress.updateSettings({ viVoice: 'clip:nam' });
+      void speech.bong('test', true);
+      await tick();
+      expect(last().src).toContain('assets/voice/nam/test.mp3');
+      const clips = FakeAudio.all.length;
+      progress.updateSettings({ viVoice: 'Giong Viet' });
+      void speech.bong('test', true);
+      await new Promise((r) => setTimeout(r, 80));
+      expect(spoken[spoken.length - 1].voice?.name).toBe('Giong Viet');
+      expect(FakeAudio.all.length).toBe(clips);
+      FakeAudio.all.length = 1;
+
+      // Giọng đã chọn không còn trên máy -> quay về bản thu sẵn
+      progress.updateSettings({ enVoice: 'Missing Voice' });
+      void speech.speakEn('Look at the picture.');
+      await tick();
+      expect(FakeAudio.all.length).toBe(2);
+    } finally {
+      speech.cancel();
+      delete w['speechSynthesis'];
+      delete w['SpeechSynthesisUtterance'];
+    }
+  });
 });

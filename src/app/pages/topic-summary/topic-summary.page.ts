@@ -48,7 +48,7 @@ import { IconComponent } from '../../theme/icon.component';
     </main>
   `,
   styles: `
-    .card:first-of-type {
+    section.card {
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -68,12 +68,29 @@ import { IconComponent } from '../../theme/icon.component';
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 12px;
-      border: 3px solid color-mix(in srgb, var(--c) 45%, white);
-      background: color-mix(in srgb, var(--c) 10%, white);
+      gap: 14px;
+      padding: 14px 16px;
+      border: 1.5px solid color-mix(in srgb, var(--c) 35%, white);
+      background: color-mix(in srgb, var(--c) 7%, white);
+      transition: box-shadow var(--motion-fast), transform var(--motion-fast);
+    }
+    .tile:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-1px);
     }
     .ic {
-      font-size: 2rem;
+      width: 48px;
+      height: 48px;
+      flex: none;
+      display: grid;
+      place-items: center;
+      border-radius: var(--radius-md);
+      background: var(--white);
+      color: var(--c);
+    }
+    .ic app-icon {
+      width: 26px;
+      height: 26px;
     }
     .tt {
       display: flex;

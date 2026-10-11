@@ -76,6 +76,12 @@ describe('Ngữ pháp', () => {
           expect(new Set(q.options).size, `${g.id}: lựa chọn trùng`).toBe(q.options.length);
           expect(q.focus, g.id).toContain('____');
         }
+        if (q.kind === 'order') {
+          // Mỗi mảnh là một từ trọn vẹn (không có khoảng trắng) và ghép lại đúng bằng câu gốc
+          expect(q.tiles.every((t) => t.length > 0 && !/\s/.test(t)), `${g.id}: ${q.tiles.join('|')}`).toBe(true);
+          expect([...q.tiles].sort(), g.id).toEqual([...q.answer].sort());
+          expect(q.answer.join(' '), g.id).toBe(q.audio);
+        }
       }
     }
   });

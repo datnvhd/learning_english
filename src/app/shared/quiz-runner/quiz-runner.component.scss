@@ -150,6 +150,22 @@
   flex: none;
 }
 
+.dlg .wave {
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .dlg {
+    gap: 8px;
+    padding: 6px 8px;
+  }
+
+  .dlg .btn {
+    padding-inline: 8px;
+  }
+}
+
 .dlg .btn.on {
   background: var(--primary);
   color: var(--white);

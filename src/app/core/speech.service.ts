@@ -22,6 +22,15 @@ import { BONG_LINES, BongLineKey } from '../data/bong-lines';
 import { AudioVoice, audioKey, audioPath } from './audio-key';
 import { ProgressService } from './progress.service';
 
+/**
+ * Giọng tiếng Việt THU SẴN đóng gói trong app (tools/build-voice.py). Giá trị lưu ở cài đặt `viVoice`:
+ * '' = giọng nữ mặc định, 'clip:nam' = giọng nam; giá trị khác = tên một giọng của thiết bị.
+ */
+export const VI_CLIP_VOICES = [
+  { id: '', label: 'Hoài My – giọng nữ', dir: '' },
+  { id: 'clip:nam', label: 'Nam Minh – giọng nam', dir: 'nam/' },
+] as const;
+
 /** Ngôn ngữ đọc */
 export type SpeechLang = 'en' | 'vi';
 
@@ -146,6 +155,8 @@ export class SpeechService {
   /** Đọc một câu trong lượt hiện tại: ưu tiên file thu sẵn, không có thì dùng giọng của thiết bị */
   private async sayEn(text: string, who?: 'A' | 'B'): Promise<void> {
     const myToken = this.token;
+    // Người học đã chọn một giọng của thiết bị trong Cài đặt -> đọc bằng đúng giọng đó thay cho bản thu sẵn
+    if (this.usesDeviceVoice()) return this.sayWithDevice(text, who);
     const voice: AudioVoice = who === 'B' ? 'm' : 'f';
     const paths = await this.clipsFor(text, voice);
     for (const path of paths ?? []) {
@@ -156,7 +167,17 @@ export class SpeechService {
     if (!paths && myToken === this.token) return this.sayWithDevice(text, who);
   }
 
-  /** Dự phòng: đọc bằng giọng tiếng Anh của thiết bị (Web Speech API) */
+  /**
+   * Có đọc (tiếng Anh / lời hướng dẫn tiếng Việt) bằng giọng của thiết bị thay cho bản thu sẵn không: chỉ khi người học chọn đích danh
+   * một giọng trong Cài đặt và giọng đó còn trên máy. Để "Giọng thu sẵn" (mặc định) thì luôn phát file mp3.
+   */
+  usesDeviceVoice(lang: SpeechLang = 'en'): boolean {
+    const s = this.progress.settings();
+    const name = lang === 'vi' ? s.viVoice : s.enVoice;
+    return !!name && this.supported && this.voicesFor(lang).some((v) => v.name === name);
+  }
+
+  /** Đọc bằng giọng tiếng Anh của thiết bị (Web Speech API): giọng người học chọn, hoặc dự phòng khi thiếu bản thu */
   private async sayWithDevice(text: string, who?: 'A' | 'B'): Promise<void> {
     const myToken = this.token;
     await this.whenResumed();
@@ -275,18 +296,24 @@ export class SpeechService {
   /**
    * Bông nói một câu tiếng Việt cố định bằng file âm thanh giọng bé gái Việt Nam.
    * Nếu không phát được file thì thử đọc bằng giọng tiếng Việt của thiết bị (nếu có).
-   * Bỏ qua nếu người dùng tắt "Bông nói tiếng Việt".
+   * Bỏ qua nếu người dùng tắt "Bông nói tiếng Việt" (trừ khi `force`, dùng cho nút nghe thử trong Cài đặt).
+   * Nếu người học chọn đích danh một giọng tiếng Việt của thiết bị thì đọc bằng giọng đó thay cho file thu sẵn.
    */
-  bong(key: BongLineKey): Promise<void> {
+  bong(key: BongLineKey, force = false): Promise<void> {
     const s = this.progress.settings();
-    if (!s.bongTalks || typeof Audio === 'undefined') return Promise.resolve();
+    if (!s.bongTalks && !force) return Promise.resolve();
     this.cancel();
+    const viaDevice = () => this.speak(BONG_LINES[key], 'vi', s.pitch, s.rate + 0.1);
+    if (this.usesDeviceVoice('vi') || typeof Audio === 'undefined') return viaDevice();
     return new Promise<void>((resolve) => {
-      const fallback = () => void this.speak(BONG_LINES[key], 'vi', s.pitch, s.rate + 0.1).then(resolve);
-      const a = new Audio(`assets/voice/${key}.mp3`);
-      // Tăng tốc độ phát => cao độ tăng theo, giọng nghe trẻ con hơn (pitch 1.5 => x1.125)
-      a.preservesPitch = false;
-      a.playbackRate = 1 + (s.pitch - 1) * 0.25;
+      const fallback = () => void viaDevice().then(resolve);
+      const clipVoice = VI_CLIP_VOICES.find((v) => v.id === s.viVoice) ?? VI_CLIP_VOICES[0];
+      const a = new Audio(`assets/voice/${clipVoice.dir}${key}.mp3`);
+      // Giọng nữ: tăng tốc độ phát => cao độ tăng theo, nghe trẻ con hơn (pitch 1.5 => x1.125). Giọng nam giữ nguyên.
+      if (!clipVoice.dir) {
+        a.preservesPitch = false;
+        a.playbackRate = 1 + (s.pitch - 1) * 0.25;
+      }
       a.onended = () => resolve();
       a.onerror = fallback;
       this.clip = a;

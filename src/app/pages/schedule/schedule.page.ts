@@ -140,7 +140,7 @@ function fmt(min: number): string {
                 <span class="md" [class.out]="!c.inMonth" [class.today]="c.today" [class.done]="c.xp > 0" [title]="c.xp > 0 ? c.xp + ' XP' : ''">{{ c.day }}</span>
               }
             </div>
-            <small class="muted lg"><i></i> Ngày đã học</small>
+            <small class="muted lgd"><i></i> Ngày đã học</small>
           </section>
 
           <section class="card">
@@ -211,8 +211,8 @@ function fmt(min: number): string {
     .md.done::after { content: ''; position: absolute; bottom: 3px; width: 5px; height: 5px; border-radius: 50%; background: var(--good); }
     .md.today { background: var(--primary); color: var(--white); }
     .md.today.done::after { background: var(--white); }
-    .lg { display: flex; align-items: center; gap: 6px; margin-top: var(--space-2); }
-    .lg i { width: 6px; height: 6px; border-radius: 50%; background: var(--good); }
+    .lgd { display: flex; align-items: center; gap: 6px; margin-top: var(--space-2); }
+    .lgd i { width: 6px; height: 6px; border-radius: 50%; background: var(--good); }
     .ck { display: flex; align-items: center; gap: var(--space-2); padding: 6px 0; cursor: pointer; font-size: var(--fs-sm); }
     .ck input { width: 17px; height: 17px; accent-color: var(--primary); }
     .ck i { width: 11px; height: 11px; border-radius: 50%; }

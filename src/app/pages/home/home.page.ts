@@ -72,7 +72,7 @@ const MODULES: { title: string; icon: IconName; color: string; desc: string; lin
       { label: 'Chọn dạng bài', icon: 'target', link: '/practice' },
       { label: 'Luyện theo chủ đề', icon: 'category', link: '/practice' },
       { label: 'Ngữ pháp', icon: 'notebook', link: '/grammar' },
-      { label: 'Trò chơi từ vựng', icon: 'dice-5', link: '/practice', query: { tab: 'games' } },
+      { label: 'Trò chơi từ vựng & ngữ pháp', icon: 'dice-5', link: '/games' },
     ],
   },
   {

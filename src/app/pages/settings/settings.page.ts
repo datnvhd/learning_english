@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { OfflineService, formatBytes } from '../../core/offline.service';
 import { ProgressService } from '../../core/progress.service';
-import { SpeechService } from '../../core/speech.service';
+import { SpeechService, VI_CLIP_VOICES } from '../../core/speech.service';
 import { HERO_PHOTOS } from '../../data/hero-photos';
 import { TOPICS, totalWordCount } from '../../data/topics';
 import { LearningGoal } from '../../models/progress.model';
@@ -86,11 +86,19 @@ const GOALS: { id: LearningGoal; label: string }[] = [
           </label>
           <label class="check"><input type="checkbox" [ngModel]="settings().sfx" (ngModelChange)="set({ sfx: $event })" /> Hiệu ứng âm thanh khi trả lời</label>
           <label class="check"><input type="checkbox" [ngModel]="settings().bongTalks" (ngModelChange)="set({ bongTalks: $event })" /> Lời hướng dẫn, động viên bằng tiếng Việt</label>
-          <label>Giọng dự phòng của thiết bị (chỉ dùng cho câu chưa có bản thu)
+          <label>Giọng đọc tiếng Anh
             <select class="input" [ngModel]="settings().enVoice" (ngModelChange)="set({ enVoice: $event })">
-              <option value="">Tự chọn giọng phù hợp</option>
+              <option value="">Giọng thu sẵn (mặc định · offline)</option>
               @for (v of enVoices(); track v.name) { <option [value]="v.name">{{ v.name }}{{ v.localService ? ' · offline' : ' · cần mạng' }}</option> }
             </select>
+            <small class="muted">{{ settings().enVoice ? 'Mọi nội dung tiếng Anh sẽ được đọc bằng giọng này của thiết bị. Giọng ghi "cần mạng" không đọc được khi mất Internet.' : 'Bản thu giọng tự nhiên đóng gói sẵn trong app (nữ, và nam cho người nói thứ hai). Chọn một giọng của thiết bị nếu bạn muốn nghe giọng khác.' }}</small>
+          </label>
+          <label>Giọng hướng dẫn tiếng Việt
+            <select class="input" [ngModel]="settings().viVoice" (ngModelChange)="set({ viVoice: $event })">
+              @for (c of viClips; track c.id) { <option [value]="c.id">{{ c.label }} (thu sẵn · offline)</option> }
+              @for (v of viVoices(); track v.name) { <option [value]="v.name">{{ v.name }}{{ v.localService ? ' · offline' : ' · cần mạng' }}</option> }
+            </select>
+            <small class="muted">{{ usesViDevice() ? 'Lời hướng dẫn, động viên sẽ được đọc bằng giọng này của thiết bị.' : 'Hai giọng nữ và nam thu sẵn được đóng gói trong app, nghe được khi không có Internet.' }}</small>
           </label>
           <div class="row wrap">
             <button class="btn btn-soft btn-sm" type="button" (click)="testEn()"><app-icon name="player-play" /> Nghe thử tiếng Anh</button>
@@ -226,6 +234,9 @@ export class SettingsPage {
   protected readonly initial = computed(() => (this.settings().name.trim()[0] ?? 'H').toUpperCase());
   protected readonly message = signal('');
   protected readonly enVoices = computed(() => this.speech.voicesFor('en'));
+  protected readonly viVoices = computed(() => this.speech.voicesFor('vi'));
+  protected readonly viClips = VI_CLIP_VOICES;
+  protected readonly usesViDevice = computed(() => { this.settings(); return this.speech.usesDeviceVoice('vi'); });
   protected readonly audioCount = resource({ loader: () => this.speech.recordedCount() });
 
   // --- gói dữ liệu offline ---
@@ -248,7 +259,8 @@ export class SettingsPage {
   }
 
   protected testVi(): void {
-    void this.speech.bong('test');
+    // Nghe thử luôn phát, kể cả khi đang tắt "Lời hướng dẫn, động viên bằng tiếng Việt"
+    void this.speech.bong('test', true);
   }
 
   protected testEn(): void {

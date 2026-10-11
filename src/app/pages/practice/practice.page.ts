@@ -14,11 +14,10 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProgressService } from '../../core/progress.service';
 import { SKILL_INFO, TOPICS, TOPIC_BY_ID } from '../../data/topics';
 import { LANGUAGE_SKILLS, Skill, TopicId } from '../../models/content.model';
-import { GAME_INFO, GameType } from '../game/game.model';
 import { IconName } from '../../theme/icons';
 import { IconComponent } from '../../theme/icon.component';
 
-type Tab = 'practice' | 'test' | 'review' | 'games';
+type Tab = 'practice' | 'test' | 'review';
 
 @Component({
   selector: 'app-practice',
@@ -43,7 +42,7 @@ type Tab = 'practice' | 'test' | 'review' | 'games';
 
       <div class="cols">
         <div class="stack">
-          <!-- Chọn phạm vi chủ đề (dùng cho Luyện tập, Kiểm tra, Trò chơi) -->
+          <!-- Chọn phạm vi chủ đề (dùng cho Luyện tập, Kiểm tra) -->
           @if (tab() !== 'review') {
             <section class="card scope">
               <b>Chủ đề</b>
@@ -102,22 +101,6 @@ type Tab = 'practice' | 'test' | 'review' | 'games';
             </section>
           }
 
-          <!-- ===== TRÒ CHƠI ===== -->
-          @if (tab() === 'games') {
-            <section class="card">
-              <div class="card-head"><app-icon name="dice-5" /><h2>Trò chơi từ vựng</h2><small class="muted">Chơi mà học – phá kỷ lục của chính bạn</small></div>
-              <div class="grid">
-                @for (g of gameTypes; track g) {
-                  <a class="sk" [routerLink]="['/game', g, scope()]" [style.--c]="gameInfo[g].color">
-                    <span class="tile-ic"><app-icon [name]="gameInfo[g].ico" /></span>
-                    <div class="tx"><b>{{ gameInfo[g].title }}</b><small class="muted">{{ gameInfo[g].desc }}</small><small class="rec"><app-icon name="trophy" /> Kỷ lục: {{ gameBest(g) }}</small></div>
-                    <span class="btn btn-soft btn-sm">Chơi</span>
-                  </a>
-                }
-              </div>
-            </section>
-          }
-
           <!-- ===== ÔN TẬP ===== -->
           @if (tab() === 'review') {
             <section class="card rv">
@@ -142,6 +125,7 @@ type Tab = 'practice' | 'test' | 'review' | 'games';
         <aside class="side">
           <section class="card">
             <div class="card-head"><app-icon name="bolt" /><h3>Lối tắt</h3></div>
+            <a class="list-row" routerLink="/games"><span class="tile-ic" style="--c: var(--tangerine-500)"><app-icon name="device-gamepad-2" /></span><span class="lr-text"><b>Trò chơi</b><small>7 trò chơi từ vựng &amp; ngữ pháp, thử thách mỗi ngày</small></span><app-icon name="chevron-right" class="chev" /></a>
             <a class="list-row" routerLink="/grammar"><span class="tile-ic" style="--c: var(--grape-500)"><app-icon name="notebook" /></span><span class="lr-text"><b>Ngữ pháp</b><small>12 chủ điểm cốt lõi có bài luyện</small></span><app-icon name="chevron-right" class="chev" /></a>
             <a class="list-row" routerLink="/search"><span class="tile-ic"><app-icon name="search" /></span><span class="lr-text"><b>Tra từ</b><small>Tìm trong 3.600 từ, sổ tay từ đã lưu</small></span><app-icon name="chevron-right" class="chev" /></a>
             <a class="list-row" routerLink="/errors"><span class="tile-ic" style="--c: var(--coral-500)"><app-icon name="alert-triangle" /></span><span class="lr-text"><b>Error Review</b><small>{{ errorCount() }} câu sai cần xem lại</small></span><app-icon name="chevron-right" class="chev" /></a>
@@ -182,6 +166,16 @@ type Tab = 'practice' | 'test' | 'review' | 'games';
     .general small { color: var(--sky-100); font-size: var(--fs-sm); }
     .rec { display: inline-flex; align-items: center; gap: 4px; color: var(--sun-600); font-weight: 600; }
     .rec app-icon { width: 14px; height: 14px; }
+    .kind { font-size: 0.68rem; font-weight: 700; padding: 1px 7px; border-radius: 99px; background: color-mix(in srgb, var(--c) 12%, var(--white)); color: var(--c); vertical-align: middle; margin-left: 4px; white-space: nowrap; }
+    .daily { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-3) var(--space-4); border-color: color-mix(in srgb, var(--c) 30%, var(--white)); background: linear-gradient(100deg, color-mix(in srgb, var(--c) 9%, var(--white)), var(--white) 70%); transition: box-shadow var(--motion-fast), transform var(--motion-fast); }
+    .daily:hover { box-shadow: var(--shadow-md); transform: translateY(-1px); }
+    .daily .tx { flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 2px; }
+    .daily .tx b { font-size: var(--fs-xl); }
+    .dl { display: inline-flex; align-items: center; gap: 4px; color: var(--tangerine-600); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.72rem; }
+    .dl app-icon { width: 14px; height: 14px; }
+    .daily .tag { display: inline-flex; align-items: center; gap: 4px; }
+    .daily .tag app-icon { width: 14px; height: 14px; }
+    .daily.done { opacity: 0.85; }
     .rv { display: flex; align-items: center; flex-wrap: wrap; gap: var(--space-3); }
     .rv b { font-size: var(--fs-lg); }
     .small { font-size: var(--fs-sm); margin-bottom: var(--space-2); }
@@ -203,13 +197,10 @@ export class PracticePage {
   protected readonly tabs: { id: Tab; label: string; ico: IconName }[] = [
     { id: 'practice', label: 'Luyện tập', ico: 'target' },
     { id: 'test', label: 'Kiểm tra', ico: 'list-check' },
-    { id: 'games', label: 'Trò chơi', ico: 'dice-5' },
     { id: 'review', label: 'Ôn tập', ico: 'refresh' },
   ];
-  protected readonly gameTypes: GameType[] = ['picture', 'match', 'scramble', 'speed'];
-  protected readonly gameInfo = GAME_INFO;
 
-  protected readonly tab = signal<Tab>((this.route.snapshot.queryParamMap.get('tab') as Tab | null) ?? 'practice');
+  protected readonly tab = signal<Tab>(this.tabs.find((t) => t.id === this.route.snapshot.queryParamMap.get('tab'))?.id ?? 'practice');
   /** Phạm vi chủ đề: 'all' hoặc một mã chủ đề */
   protected readonly scope = signal<TopicId | 'all'>('all');
 
@@ -235,11 +226,6 @@ export class PracticePage {
     return this.progress.bestScore(scope, skill);
   }
 
-  /** Kỷ lục của một trò chơi trong phạm vi đang chọn */
-  protected gameBest(game: GameType): number {
-    this.progress.state();
-    return this.progress.gameBest(game, this.scope());
-  }
 
   /** Phân bố các từ theo hộp nhớ 1..5 */
   protected readonly boxes = computed(() => {

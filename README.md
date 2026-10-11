@@ -38,7 +38,7 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | **Âm thanh tiếng Anh thu sẵn**: 14.182 tệp mp3 cho mọi từ, câu ví dụ, hội thoại (2 giọng), bài nghe luyện thi, bài mẫu | `public/assets/audio` | ≈ 380 MB |
 | Ảnh từ vựng, ảnh đề thi TOEIC Part 1 | `public/assets/photos` | ≈ 2,7 MB |
 | Ảnh bìa, hình minh họa | `public/assets/art` | ≈ 1 MB |
-| Lời hướng dẫn tiếng Việt | `public/assets/voice` | ≈ 0,7 MB |
+| Lời hướng dẫn tiếng Việt, 2 giọng thu sẵn: nữ (Hoài My) và nam (Nam Minh) – chọn trong Settings | `public/assets/voice` | ≈ 1,7 MB |
 | Font Inter, bộ icon | đóng gói trong bản build | – |
 
 - **Nghe phát âm**: `SpeechService` tìm file mp3 theo mã băm của câu (`core/audio-key.ts`) và phát file đó.
@@ -69,7 +69,8 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | Dashboard | `/home` | Band IELTS / điểm TOEIC hiện tại → mục tiêu, tiếp tục học, "Hôm nay học gì?", thống kê nhanh, lối tắt |
 | IELTS, TOEIC | `/ielts`, `/toeic` | Banner, 4 kỹ năng / Part 1–7 / Speaking & Writing, lộ trình, đề gợi ý, điểm mạnh – yếu, chiến lược làm bài |
 | Từ vựng & Cụm từ | `/vocab`, `/word/:id` | Bảng từ có lọc – tìm – phân trang, bài học flashcard, yêu thích, ôn tập; trang chi tiết từ có bài tập vận dụng |
-| Practice | `/practice` | Luyện theo kỹ năng và chủ đề, kiểm tra, trò chơi từ vựng, ôn tập ngắt quãng, ngữ pháp |
+| Practice | `/practice` | Luyện theo kỹ năng và chủ đề, kiểm tra, ôn tập ngắt quãng, ngữ pháp |
+| Trò chơi | `/games` | **7 trò chơi** từ vựng & ngữ pháp (Đoán từ kiểu Wordle, Xây câu, Thử thách ngữ pháp 3 mạng, Nghe và chọn ảnh, Ghép cặp, Xếp chữ, Đố nhanh 60 giây), **Thử thách hôm nay** (mỗi ngày một trò, hoàn thành được +20 XP), bảng kỷ lục theo chủ đề |
 | Mock Test | `/mock` | **Bộ đề cố định: 20 đề IELTS + 20 đề TOEIC** (làm lại vẫn đúng đề đó); thi thử ngẫu nhiên IELTS, TOEIC L&R, TOEIC S&W có đồng hồ; đề theo từng kỹ năng; yêu thích; kết quả gần đây |
 | Làm bài | `/session/...` | Đầu trang có đồng hồ, dải số câu; bài đọc/bài nghe bên trái – câu hỏi bên phải; trang kết quả chi tiết |
 | Error Review | `/errors` | Mọi câu làm sai kèm đáp án, giải thích; lọc theo kỹ năng; từ hay sai; luyện lại |

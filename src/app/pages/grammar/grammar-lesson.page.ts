@@ -19,7 +19,7 @@ import { IconComponent } from '../../theme/icon.component';
   template: `
     @if (lesson(); as g) {
       <main class="page no-nav stack">
-        <app-page-header [title]="g.title" [icon]="g.icon" back="/grammar" />
+        <app-page-header [title]="g.title" [ico]="g.ico" back="/grammar" />
 
         <section class="card intro">
           <span class="en">{{ g.titleEn }}</span>

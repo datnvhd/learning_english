@@ -9,7 +9,8 @@
  *  /vocab, /vocab/:id         Từ vựng & Cụm từ: bảng từ, bài học flashcard, yêu thích, ôn tập
  *  /word/:id                  Chi tiết một từ (mã "<chủ đề>:<từ>")
  *  /learn/:id/:lesson         Học một bài từ vựng bằng thẻ (flashcard)
- *  /practice                  Practice: luyện theo kỹ năng, kiểm tra, trò chơi, ôn tập
+ *  /practice                  Practice: luyện theo kỹ năng, kiểm tra, ôn tập
+ *  /games                     Trò chơi: thử thách hôm nay, 7 trò chơi từ vựng & ngữ pháp, bảng kỷ lục
  *  /mock                      Mock Test: danh sách đề thi thử và đề theo kỹ năng
  *  /session/:mode/:topic      Làm bài (luyện tập, kiểm tra, ôn tập, luyện thi, thi thử...)
  *  /errors                    Error Review: các câu đã làm sai kèm đáp án và giải thích
@@ -43,6 +44,7 @@ export const routes: Routes = [
   { path: 'settings', loadComponent: () => import('./pages/settings/settings.page').then((m) => m.SettingsPage) },
   { path: 'grammar', loadComponent: () => import('./pages/grammar/grammar-list.page').then((m) => m.GrammarListPage) },
   { path: 'grammar/:id', loadComponent: () => import('./pages/grammar/grammar-lesson.page').then((m) => m.GrammarLessonPage) },
+  { path: 'games', loadComponent: () => import('./pages/games/games.page').then((m) => m.GamesPage) },
   { path: 'game/:type/:topic', loadComponent: () => import('./pages/game/game.page').then((m) => m.GamePage) },
   { path: 'topic/:id', loadComponent: () => import('./pages/topic-detail/topic-detail.page').then((m) => m.TopicDetailPage) },
   { path: 'topic/:id/summary', loadComponent: () => import('./pages/topic-summary/topic-summary.page').then((m) => m.TopicSummaryPage) },

@@ -78,7 +78,7 @@ import { IconComponent } from '../theme/icon.component';
 
           <div class="card fade-up">
             <div class="card-head"><app-icon name="clipboard-check" /><h2>Chi tiết kết quả từng câu</h2>
-              <span class="lg"><i class="g"></i> Đúng</span><span class="lg"><i class="r"></i> Sai</span><span class="lg"><i class="y"></i> Gần đúng</span>
+              <span class="lgd"><i class="g"></i> Đúng</span><span class="lgd"><i class="r"></i> Sai</span><span class="lgd"><i class="y"></i> Gần đúng</span>
             </div>
             <div class="cells">
               @for (m of marks(); track $index) { <span [class]="'cell ' + m">{{ $index + 1 }}</span> }
@@ -184,8 +184,8 @@ import { IconComponent } from '../theme/icon.component';
     .skc small { color: var(--ink-soft); }
     .pl { display: flex; align-items: center; gap: var(--space-2); margin-top: 4px; }
     .pl .bar { flex: 1; }
-    .lg { display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-sm); color: var(--slate-600); margin-left: var(--space-3); }
-    .lg i, .dist i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    .lgd { display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-sm); color: var(--slate-600); margin-left: var(--space-3); }
+    .lgd i, .dist i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
     .g { background: var(--good); }
     .r { background: var(--bad); }
     .y { background: var(--sun-400); }
