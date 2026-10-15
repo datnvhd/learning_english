@@ -25,11 +25,20 @@ Hoặc bấm đúp **chay-app.bat**. Khi phát triển: `npm start` (http://loca
 | `npm run build:vocab` | Sinh lại dữ liệu từ vựng từ `tools/vocab-src/*.txt` |
 | `npm run fetch:images` | Tải/cập nhật ảnh minh họa từ vựng (Openverse, CC0) |
 | `npm run fetch:hero` | Tải ảnh bìa (banner, ảnh đề thi – Openverse, CC0) |
-| `npm run fetch:asr` | Tải mô hình nhận dạng giọng nói tiếng Anh (Vosk small en-us, Apache-2.0, ~41 MB) dùng để chấm Speaking offline |
+| `npm run fetch:asr` | Tải mô hình nhận dạng giọng nói tiếng Anh (Vosk small en-us, Apache-2.0, ~41 MB, chia thành các phần ≤ 20 MB) dùng để chấm Speaking offline |
 | `npm run fetch:dict` | Tạo từ điển chính tả offline (danh sách ENABLE – public domain – gộp với từ trong nội dung app) để chấm Writing |
 | `npm run fetch:phoneme` | Tải mô hình nhận dạng âm vị (wav2vec2 XLS-R `robg/speako-phoneme-recognizer`, Apache-2.0, ONNX INT8 ~343 MB) và từ điển phát âm CMU để chấm phát âm từng âm |
 | `npm run build:icons` | Sinh lại bộ icon Tabler dùng trong app |
 | `npm run check:theme` | Kiểm tra tuân thủ theme (`-- --fix` để tự sửa) |
+
+## Triển khai lên Cloudflare Pages
+
+- Build command `npm run build`, thư mục kết quả `dist/english-adventure/browser`.
+- Pages giới hạn **25 MiB mỗi tệp** và 20.000 tệp mỗi lần triển khai. Vì vậy mô hình Vosk được chia thành các phần ≤ 20 MB
+  (app ghép lại trong trình duyệt và nhớ bản đã giải nén trong IndexedDB) và ONNX Runtime `.wasm` được lưu nén gzip
+  (giải nén bằng `DecompressionStream`). `tools/build-offline-manifest.mjs` cảnh báo nếu còn tệp nào vượt 25 MiB.
+- Mô hình âm vị (~343 MB) không nằm trong git nên bản trên Pages không có phần "phát âm từng âm"; các phần chấm khác
+  vẫn hoạt động. Muốn có thì lưu mô hình ở nơi cho phép tệp lớn (ví dụ Cloudflare R2) – chưa hỗ trợ sẵn.
 
 ## Học hoàn toàn offline
 
@@ -42,11 +51,11 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | Ảnh từ vựng, ảnh đề thi TOEIC Part 1 | `public/assets/photos` | ≈ 2,7 MB |
 | Ảnh bìa, hình minh họa | `public/assets/art` | ≈ 1 MB |
 | Lời hướng dẫn tiếng Việt, 2 giọng thu sẵn: nữ (Hoài My) và nam (Nam Minh) – chọn trong Settings | `public/assets/voice` | ≈ 1,7 MB |
-| Mô hình nhận dạng giọng nói tiếng Anh (chấm Speaking) | `public/assets/asr` | ≈ 41 MB |
+| Mô hình nhận dạng giọng nói tiếng Anh (chấm Speaking), chia 2 phần `en-us.tar.gz.000/.001` | `public/assets/asr` | ≈ 41 MB |
 | Từ điển chính tả tiếng Anh (chấm Writing) | `public/assets/dict` | ≈ 1,7 MB |
 | Bộ kiểm tra ngữ pháp Harper (WebAssembly, Apache-2.0) | `public/assets/harper` | ≈ 16 MB |
 | Mô hình nhận dạng âm vị + từ điển phát âm CMU (chấm phát âm từng âm) | `public/assets/phoneme` | ≈ 343 MB |
-| ONNX Runtime Web (chạy mô hình âm vị) | `public/assets/ort` | ≈ 26 MB |
+| ONNX Runtime Web (chạy mô hình âm vị, .wasm lưu nén gzip) | `public/assets/ort` | ≈ 6,7 MB |
 | Font Inter, bộ icon | đóng gói trong bản build | – |
 
 - **Nghe phát âm**: `SpeechService` tìm file mp3 theo mã băm của câu (`core/audio-key.ts`) và phát file đó.

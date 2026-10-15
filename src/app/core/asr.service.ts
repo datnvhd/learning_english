@@ -3,9 +3,12 @@
  *  asr.service.ts – Nhận dạng giọng nói tiếng Anh NGAY TRÊN MÁY (không cần Internet)
  * ============================================================================
  *  Dùng thư viện vosk-browser (Kaldi biên dịch sang WebAssembly, Apache-2.0) với mô hình
- *  vosk-model-small-en-us-0.15 đóng gói trong app (public/assets/asr/en-us.tar.gz, tải bằng
- *  `npm run fetch:asr`). Lần đầu mô hình được giải nén vào bộ nhớ trình duyệt (IndexedDB),
- *  các lần sau mở rất nhanh. Âm thanh ghi âm KHÔNG được gửi đi đâu.
+ *  vosk-model-small-en-us-0.15 đóng gói trong app (public/assets/asr/en-us.tar.gz.000, .001... ≤ 20 MB mỗi phần
+ *  vì Cloudflare Pages giới hạn 25 MB/tệp; danh sách ở en-us.json; tải bằng `npm run fetch:asr`).
+ *  Lần đầu: tải đủ các phần, ghép lại thành một Blob, đưa địa chỉ blob: cho vosk-browser; thư viện giải nén vào
+ *  bộ nhớ trình duyệt (IndexedDB) trong thư mục đặt tên theo ĐỊA CHỈ mô hình. App ghi nhớ địa chỉ đó
+ *  (localStorage) nên các lần sau vosk-browser tìm thấy bản đã giải nén và mở ngay, không tải lại.
+ *  Âm thanh ghi âm KHÔNG được gửi đi đâu.
  *
  *  transcribe(blob): giải mã bản ghi → 16 kHz mono → nhận dạng → chữ + thời điểm + độ tin cậy từng từ.
  */
@@ -13,11 +16,22 @@ import { Injectable, signal } from '@angular/core';
 import type { KaldiRecognizer, Model } from 'vosk-browser';
 import { AsrResult, AsrWord } from './speaking-score';
 
-/** Đường dẫn mô hình (tương đối với trang) */
-const MODEL_PATH = 'assets/asr/en-us.tar.gz';
+/** Danh sách các phần của mô hình (tương đối với trang) */
+const MANIFEST = 'assets/asr/en-us.json';
+/** Địa chỉ mô hình đã giải nén vào IndexedDB lần trước (khóa thư mục cache của vosk-browser) */
+const LS_MODEL = 'em.asr.model';
+/** Chờ tối đa khi mở mô hình từ cache (nếu cache đã bị xóa, vosk-browser không tải được địa chỉ cũ) */
+const CACHE_TIMEOUT = 20_000;
 const RATE = 16000;
 /** Mỗi lần gửi 0,25 giây âm thanh cho bộ nhận dạng */
 const CHUNK = 4000;
+
+interface ModelManifest {
+  version: string;
+  parts: string[];
+}
+
+type VoskModule = typeof import('vosk-browser');
 
 interface VoskResult {
   text?: string;
@@ -39,11 +53,7 @@ export class AsrService {
   load(): Promise<Model> {
     if (!this.model) {
       this.state.set('loading');
-      this.model = import('vosk-browser')
-        .then((m) => {
-          const create = (m as unknown as { createModel?: typeof m.createModel; default?: { createModel: typeof m.createModel } });
-          return (create.createModel ?? create.default!.createModel)(new URL(MODEL_PATH, document.baseURI).href, -1);
-        })
+      this.model = this.open()
         .then((model) => {
           this.state.set('ready');
           return model;
@@ -55,6 +65,42 @@ export class AsrService {
         });
     }
     return this.model;
+  }
+
+  private async open(): Promise<Model> {
+    const m = await import('vosk-browser');
+    const vosk = ((m as unknown as { default?: VoskModule }).default ?? m) as VoskModule;
+    const base = (p: string) => new URL(p, document.baseURI).href;
+    const manifest = (await (await fetch(base(MANIFEST))).json()) as ModelManifest;
+
+    // 1) Đã giải nén lần trước: mở lại bằng đúng địa chỉ cũ (vosk-browser dùng bản trong IndexedDB)
+    const saved = readSaved();
+    if (saved?.version === manifest.version) {
+      try {
+        return await openModel(vosk, saved.url, CACHE_TIMEOUT);
+      } catch {
+        /* cache đã bị xóa: tải lại bên dưới */
+      }
+    }
+
+    // 2) Tải các phần, ghép lại và giải nén
+    const chunks = await Promise.all(manifest.parts.map(async (p) => {
+      const res = await fetch(base('assets/asr/' + p));
+      if (!res.ok) throw new Error(`Không tải được ${p} (${res.status})`);
+      return res.arrayBuffer();
+    }));
+    const url = URL.createObjectURL(new Blob(chunks, { type: 'application/gzip' }));
+    try {
+      const model = await openModel(vosk, url);
+      try {
+        localStorage.setItem(LS_MODEL, JSON.stringify({ version: manifest.version, url }));
+      } catch {
+        /* không lưu được: lần sau sẽ giải nén lại */
+      }
+      return model;
+    } finally {
+      URL.revokeObjectURL(url); // mô hình đã nằm trong bộ nhớ của bộ nhận dạng
+    }
   }
 
   /** Nhận dạng một bản ghi âm (webm/ogg/wav... mà trình duyệt giải mã được) */
@@ -112,4 +158,33 @@ export class AsrService {
       rec.retrieveFinalResult();
     });
   }
+}
+
+/** Địa chỉ mô hình đã giải nén lần trước */
+function readSaved(): { version: string; url: string } | null {
+  try {
+    return JSON.parse(localStorage.getItem(LS_MODEL) ?? 'null');
+  } catch {
+    return null;
+  }
+}
+
+/** Mở mô hình; báo lỗi (thay vì chờ mãi) khi vosk-browser không tải / giải nén được */
+function openModel(vosk: VoskModule, url: string, timeout = 0): Promise<Model> {
+  const model = new vosk.Model(url, -1);
+  return new Promise((resolve, reject) => {
+    const fail = (why: string) => {
+      clearTimeout(timer);
+      model.terminate();
+      reject(new Error(why));
+    };
+    const timer = timeout ? setTimeout(() => fail('Hết thời gian mở mô hình'), timeout) : undefined;
+    model.on('load', (msg) => {
+      if ((msg as { result?: boolean }).result) {
+        clearTimeout(timer);
+        resolve(model);
+      } else fail('Không mở được mô hình');
+    });
+    model.on('error', (msg) => fail(String((msg as { error?: string }).error ?? 'Lỗi mô hình')));
+  });
 }

@@ -5,11 +5,14 @@
  * Transformers.js + ONNX Runtime Web (WebAssembly), mọi file đều nằm trong public/assets (không cần mạng):
  *   assets/phoneme/speako/…   mô hình        (npm run fetch:phoneme)
  *   assets/phoneme/cmudict.dict  từ điển phát âm CMU (cách đọc chuẩn)
- *   assets/ort/…              ONNX Runtime    (tools/copy-wasm.mjs)
+ *   assets/ort/…              ONNX Runtime    (tools/copy-wasm.mjs; .wasm lưu nén gzip, giải nén khi nạp)
  * Lần đầu nạp mất một lúc (đọc 355 MB); trình duyệt lưu đệm nên các lần sau nhanh hơn.
  */
 import { Injectable, signal } from '@angular/core';
 import { PronDict, PronResult, parseCmuDict, scorePronunciation } from './phoneme-score';
+
+/** Tên tệp ONNX Runtime (bản asyncify, đơn luồng) trong assets/ort */
+const ORT = 'ort-wasm-simd-threaded.asyncify';
 
 /** Nhận dạng chuỗi âm IPA từ âm thanh 16 kHz */
 type Recognizer = (audio: Float32Array) => Promise<string>;
@@ -39,7 +42,8 @@ export class PhonemeService {
         t.env.localModelPath = this.base('assets/phoneme/');
         const wasm = t.env.backends.onnx.wasm;
         if (wasm) {
-          wasm.wasmPaths = this.base('assets/ort/');
+          // File .wasm được lưu nén gzip (vượt 25 MB/tệp của Cloudflare Pages nếu để nguyên): giải nén thành blob
+          wasm.wasmPaths = { mjs: this.base(`assets/ort/${ORT}.mjs`), wasm: await this.ortWasm() };
           wasm.numThreads = 1; // không cần cấu hình máy chủ đặc biệt (cross-origin isolation)
         }
         // Gọi trực tiếp bộ trích đặc trưng + mô hình CTC, rồi tự giải mã chuỗi âm (CTC tham lam)
@@ -77,6 +81,14 @@ export class PhonemeService {
       });
     }
     return this.model;
+  }
+
+  /** Giải nén ONNX Runtime wasm (.wasm.gz) thành địa chỉ blob: để ONNX Runtime nạp */
+  private async ortWasm(): Promise<string> {
+    const res = await fetch(this.base(`assets/ort/${ORT}.wasm.gz`));
+    if (!res.ok || !res.body) throw new Error(`Không tải được ONNX Runtime (${res.status})`);
+    const wasm = await new Response(res.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
+    return URL.createObjectURL(new Blob([wasm], { type: 'application/wasm' }));
   }
 
   /** Từ điển phát âm CMU */

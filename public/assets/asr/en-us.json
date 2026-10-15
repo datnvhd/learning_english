@@ -1,0 +1,9 @@
+{
+ "model": "vosk-model-small-en-us-0.15",
+ "version": "e6e273e614a2",
+ "size": 41253086,
+ "parts": [
+  "en-us.tar.gz.000",
+  "en-us.tar.gz.001"
+ ]
+}

@@ -47,6 +47,16 @@ for (const [id, label] of Object.entries(GROUPS)) {
   if (id !== 'audio') for (const p of list) files.push('assets/' + relative(ASSETS, p).split(sep).join('/'));
 }
 
+// Cloudflare Pages (và nhiều nơi lưu trữ tĩnh) từ chối tệp > 25 MiB: cảnh báo sớm.
+// Mô hình âm vị (~343 MB) không nằm trong git nên không bị đưa lên khi Pages build từ GitHub.
+const LIMIT = 25 * 1024 * 1024;
+for (const p of walk(ASSETS)) {
+  const rel = relative(ROOT, p).split(sep).join('/');
+  if (statSync(p).size > LIMIT && !rel.includes('/phoneme/speako/onnx/')) {
+    console.warn(`⚠ ${rel} (${(statSync(p).size / 1048576).toFixed(1)} MiB) vượt giới hạn 25 MiB/tệp của Cloudflare Pages – hãy chia nhỏ hoặc nén.`);
+  }
+}
+
 const ts = `/**
  * Gói dữ liệu offline của app (SINH TỰ ĐỘNG bởi tools/build-offline-manifest.mjs – không sửa tay).
  */
