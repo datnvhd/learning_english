@@ -42,3 +42,9 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Mô hình âm vị (~343 MB, vượt giới hạn 100 MB/tệp của GitHub) – tải lại bằng: npm run fetch:phoneme
+/public/assets/phoneme/speako/onnx/
+# WebAssembly sao chép từ node_modules lúc build/start (tools/copy-wasm.mjs)
+/public/assets/harper/
+/public/assets/ort/

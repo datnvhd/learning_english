@@ -2,22 +2,26 @@
  * talk-card.component.ts – Khung làm bài nói: IELTS Speaking (Part 1/2/3) và TOEIC Speaking (Q1–11).
  *
  * Các bước: đọc đề (giám khảo đọc câu hỏi) → thời gian chuẩn bị có đồng hồ đếm ngược
- * → nói và GHI ÂM có đồng hồ → nghe lại giọng mình + xem câu trả lời mẫu → tự chấm theo tiêu chí
- * → ước tính band IELTS hoặc điểm TOEIC (0–3 / 0–5).
+ * → nói và GHI ÂM có đồng hồ → máy NHẬN DẠNG GIỌNG NÓI ngay trên thiết bị (offline) và CHẤM TỰ ĐỘNG
+ * theo tiêu chí → band IELTS hoặc điểm TOEIC (0–3 / 0–5), kèm lời máy nghe được và lời khuyên.
+ * Chỉ khi thiết bị không chạy được bộ nhận dạng mới phải tự đánh giá theo tiêu chí.
  * Đề TOEIC có thể kèm ảnh (mô tả tranh), bảng thông tin (lịch trình) và câu hỏi chỉ nghe (Q8–10).
- * Ghi âm dùng micro của thiết bị nên hoạt động OFFLINE; nếu không có micro vẫn luyện được với đồng hồ.
+ * Ghi âm và nhận dạng đều chạy trên thiết bị nên hoạt động OFFLINE.
  */
 import { ChangeDetectionStrategy, Component, OnDestroy, computed, effect, inject, input, output, signal, untracked } from '@angular/core';
 import { scoreToBand } from '../../core/exam.service';
 import { RecognitionService } from '../../core/recognition.service';
+import { SpeakingService } from '../../core/speaking.service';
+import { SpeakScore } from '../../core/speaking-score';
 import { SpeechService } from '../../core/speech.service';
+import { SpeakResultComponent } from '../speak-result.component';
 import { SpeakingCriteria, SpeakingItem } from '../../models/exam.model';
 import { IconComponent } from '../../theme/icon.component';
 import { ChildResult } from './essay-card.component';
 
-type Step = 'intro' | 'prep' | 'speak' | 'review';
+type Step = 'intro' | 'prep' | 'speak' | 'scoring' | 'review';
 
-/** Bộ tiêu chí tự chấm: IELTS (4 tiêu chí) và TOEIC (theo tiêu chí chấm của ETS) */
+/** Bộ tiêu chí (chỉ dùng để tự đánh giá khi thiết bị không chạy được bộ nhận dạng) */
 const CRITERIA_SETS: Record<SpeakingCriteria, { id: string; label: string }[]> = {
   ielts: [
     { id: 'fluency', label: 'Độ trôi chảy (Fluency)' },
@@ -40,7 +44,7 @@ const CRITERIA_SETS: Record<SpeakingCriteria, { id: string; label: string }[]> =
 
 @Component({
   selector: 'app-talk-card',
-  imports: [IconComponent],
+  imports: [IconComponent, SpeakResultComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="talk">
@@ -89,13 +93,27 @@ const CRITERIA_SETS: Record<SpeakingCriteria, { id: string; label: string }[]> =
         @case ('speak') {
           <div class="clock live">{{ fmt(left()) }}</div>
           <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <p class="center">{{ recording() ? 'Đang ghi âm...' : 'Hãy nói to và rõ ràng nhé!' }}</p>
+          <p class="center">{{ recording() ? 'Đang ghi âm... nói to và rõ ràng nhé!' : 'Không mở được micro – bài nói sẽ không được chấm.' }}</p>
           <button class="btn btn-accent btn-block" type="button" (click)="stopSpeak()"><app-icon name="player-stop" /> Xong, dừng lại</button>
         }
+        @case ('scoring') {
+          <div class="scoring">
+            <span class="spin" aria-hidden="true"></span>
+            <p>{{ aiGrading() ? 'Gemini đang nghe và chấm bài nói của bạn...' : asrState() === 'loading' ? 'Đang chuẩn bị bộ chấm (lần đầu mất vài giây)...' : 'Máy đang nghe và chấm bài nói của bạn...' }}</p>
+          </div>
+        }
         @case ('review') {
-          @if (recUrl()) {
-            <button class="btn btn-soft btn-block" type="button" (click)="playRec()"><app-icon name="player-play" /> Nghe lại giọng của mình</button>
+          @if (result(); as r) {
+            <app-speak-result [score]="r" [title]="isToeic() ? 'Điểm ước tính' : 'Band ước tính'" />
+          } @else if (failure()) {
+            <p class="warn"><app-icon name="alert-triangle" /> {{ failure() }}</p>
           }
+          <div class="row acts">
+            @if (recUrl()) {
+              <button class="btn btn-soft btn-sm" type="button" (click)="playRec()"><app-icon name="player-play" /> Nghe lại giọng của mình</button>
+            }
+            <button class="btn btn-ghost btn-sm" type="button" (click)="retry()"><app-icon name="refresh" /> Nói lại</button>
+          </div>
           <div class="sample-box">
             <button class="btn btn-ghost btn-sm" type="button" (click)="showSample.set(!showSample())"><app-icon name="book-2" /> {{ showSample() ? 'Ẩn' : 'Xem' }} {{ isRead() ? 'đoạn đọc mẫu' : 'câu trả lời mẫu' }}</button>
             @if (showSample()) {
@@ -106,19 +124,22 @@ const CRITERIA_SETS: Record<SpeakingCriteria, { id: string; label: string }[]> =
               </div>
             }
           </div>
-          <h4>Tự đánh giá (1–5 sao)</h4>
-          @for (c of criteriaList(); track c.id) {
-            <div class="rate">
-              <span>{{ c.label }}</span>
-              <span class="stars">
-                @for (s of [1, 2, 3, 4, 5]; track s) {
-                  <button type="button" class="st" [class.on]="(ratings()[c.id] ?? 0) >= s" (click)="rate(c.id, s)" [attr.aria-label]="s + ' sao'">★</button>
-                }
-              </span>
-            </div>
+          @if (selfRate()) {
+            <!-- Dự phòng: thiết bị không chạy được bộ nhận dạng giọng nói -->
+            <h4>Tự đánh giá (1–5 sao)</h4>
+            @for (c of criteriaList(); track c.id) {
+              <div class="rate">
+                <span>{{ c.label }}</span>
+                <span class="stars">
+                  @for (s of [1, 2, 3, 4, 5]; track s) {
+                    <button type="button" class="st" [class.on]="(ratings()[c.id] ?? 0) >= s" (click)="rate(c.id, s)" [attr.aria-label]="s + ' sao'">★</button>
+                  }
+                </span>
+              </div>
+            }
+            @if (allRated()) { <p class="center">{{ isToeic() ? 'Điểm ước tính' : 'Band ước tính' }}: <b class="band">{{ scoreText() }}</b></p> }
           }
-          @if (allRated()) { <p class="center">{{ isToeic() ? 'Điểm ước tính' : 'Band ước tính' }}: <b class="band">{{ scoreText() }}</b></p> }
-          <button class="btn btn-primary btn-block" type="button" [disabled]="!allRated()" (click)="finish()">Tiếp tục ›</button>
+          <button class="btn btn-primary btn-block" type="button" [disabled]="selfRate() && !allRated()" (click)="finish()">Tiếp tục ›</button>
         }
       }
     </div>
@@ -154,11 +175,18 @@ const CRITERIA_SETS: Record<SpeakingCriteria, { id: string; label: string }[]> =
     .cue p.q { font-weight: 800; }
     .hidden-q { color: var(--ink-soft); }
     .hidden-q app-icon, .btn app-icon { width: 1.1em; height: 1.1em; vertical-align: -0.18em; }
+    .scoring { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 18px 0; color: var(--ink-soft); }
+    .spin { width: 34px; height: 34px; border-radius: 50%; border: 4px solid var(--sky-100); border-top-color: var(--primary); animation: spin 0.9s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .warn { display: flex; align-items: flex-start; gap: 6px; color: var(--tangerine-600); background: var(--sun-100); padding: 10px 12px; border-radius: var(--radius-sm); }
+    .warn app-icon { width: 18px; height: 18px; flex: none; margin-top: 2px; }
+    .acts { gap: 8px; flex-wrap: wrap; }
   `,
 })
 export class TalkCardComponent implements OnDestroy {
   private readonly recog = inject(RecognitionService);
   private readonly speech = inject(SpeechService);
+  private readonly speaking = inject(SpeakingService);
 
   readonly item = input.required<SpeakingItem>();
   readonly prepSeconds = input(0);
@@ -183,6 +211,15 @@ export class TalkCardComponent implements OnDestroy {
   protected readonly recUrl = signal<string | null>(null);
   protected readonly showSample = signal(false);
   protected readonly ratings = signal<Record<string, number>>({});
+  /** Kết quả chấm tự động */
+  protected readonly result = signal<SpeakScore | null>(null);
+  /** Lý do không chấm được (không có micro, không nghe được...) */
+  protected readonly failure = signal('');
+  /** true = thiết bị không chạy được bộ nhận dạng -> cho tự đánh giá */
+  protected readonly selfRate = signal(false);
+  protected readonly asrState = this.speaking.asrState;
+  /** Lần chấm này dùng AI Gemini */
+  protected readonly aiGrading = signal(false);
 
   private timer: ReturnType<typeof setInterval> | null = null;
   private audio: HTMLAudioElement | null = null;
@@ -209,6 +246,8 @@ export class TalkCardComponent implements OnDestroy {
       this.item();
       untracked(() => this.reset());
     });
+    // Nạp sẵn bộ nhận dạng giọng nói để lúc chấm không phải chờ
+    this.speaking.warmUp();
   }
 
   ngOnDestroy(): void {
@@ -229,6 +268,9 @@ export class TalkCardComponent implements OnDestroy {
     this.showSample.set(false);
     this.ratings.set({});
     this.recording.set(false);
+    this.result.set(null);
+    this.failure.set('');
+    this.selfRate.set(false);
   }
 
   private clear(): void {
@@ -273,9 +315,36 @@ export class TalkCardComponent implements OnDestroy {
 
   protected async stopSpeak(): Promise<void> {
     this.clear();
-    if (this.recording()) this.recUrl.set(await this.recog.stopRecording());
+    const recorded = this.recording();
+    if (recorded) this.recUrl.set(await this.recog.stopRecording());
     this.recording.set(false);
+    if (!recorded) {
+      this.failure.set('Không ghi âm được (chưa cho phép dùng micro hoặc máy không có micro) nên bài nói chưa được chấm. Hãy cho phép micro rồi bấm "Nói lại".');
+      this.step.set('review');
+      return;
+    }
+    this.aiGrading.set(this.speaking.usesAi());
+    this.step.set('scoring');
+    const it = this.item();
+    const grade = this.isRead()
+      ? await this.speaking.gradeReading(it.lines.join(' '), it.maxScore ?? 3)
+      : await this.speaking.gradeFree({
+          question: it.lines.join(' '), sample: it.sample, seconds: this.speakSeconds(),
+          exam: this.isToeic() ? 'toeic' : 'ielts', maxPoints: it.maxScore ?? 3,
+        });
+    if (grade.ok) this.result.set(grade.score);
+    else if (grade.reason === 'no-audio') this.failure.set('Bản ghi âm trống – máy chưa nghe thấy bạn nói. Hãy kiểm tra micro rồi bấm "Nói lại".');
+    else {
+      this.failure.set('Thiết bị này chưa chạy được bộ chấm giọng nói tự động. Bạn hãy nghe lại giọng mình, so với câu trả lời mẫu rồi tự đánh giá.');
+      this.selfRate.set(true);
+    }
     this.step.set('review');
+  }
+
+  /** Nói lại từ đầu câu này */
+  protected retry(): void {
+    this.audio?.pause();
+    this.reset();
   }
 
   protected playRec(): void {
@@ -291,9 +360,19 @@ export class TalkCardComponent implements OnDestroy {
   }
 
   protected finish(): void {
-    const score = Math.max(0, (this.avg() - 0.2) / 0.8);
-    const label = this.isToeic() ? `${this.scoreText()} điểm` : `band ≈ ${this.band().toFixed(1)}`;
-    this.done.emit({ score, given: `Tự đánh giá: ${label}`, correct: this.item().sample });
+    const r = this.result();
+    if (r) {
+      this.done.emit({ score: r.overall, given: `Máy chấm: ${r.label} · “${r.transcript || '...'}”`, correct: this.item().sample });
+      return;
+    }
+    if (this.selfRate()) {
+      const score = Math.max(0, (this.avg() - 0.2) / 0.8);
+      const label = this.isToeic() ? `${this.scoreText()} điểm` : `band ≈ ${this.band().toFixed(1)}`;
+      this.done.emit({ score, given: `Tự đánh giá: ${label}`, correct: this.item().sample });
+      return;
+    }
+    // Không ghi âm / không nghe được: không có điểm
+    this.done.emit({ score: 0, given: '(không có bài nói)', correct: this.item().sample });
   }
 
   protected skip(): void {

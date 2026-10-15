@@ -1,6 +1,7 @@
 /**
  * ============================================================================
- *  grammar.ts – 12 chủ điểm ngữ pháp cốt lõi (giải thích tiếng Việt, ví dụ, bài luyện)
+ *  grammar.ts – Chủ điểm ngữ pháp A1 → C1 (giải thích tiếng Việt, ví dụ, bài luyện):
+ *  12 bài cốt lõi ở file này + các bài B1–C1 ở grammar-advanced.ts
  * ============================================================================
  *  Mỗi bài gồm:
  *   - summary : giải thích ngắn gọn bằng tiếng Việt
@@ -16,6 +17,7 @@ export interface GrammarRule {
 }
 
 import { IconName } from '../theme/icons';
+import { GRAMMAR_ADVANCED } from './grammar-advanced';
 
 export interface GrammarLesson {
   id: string;
@@ -24,7 +26,8 @@ export interface GrammarLesson {
   ico: IconName;
   title: string;
   titleEn: string;
-  level: 'starter' | 'basic' | 'intermediate';
+  /** starter ≈ A1, basic ≈ A2, intermediate ≈ B1, upper ≈ B2, advanced ≈ C1 */
+  level: 'starter' | 'basic' | 'intermediate' | 'upper' | 'advanced';
   summary: string;
   rules: GrammarRule[];
   examples: [string, string][];
@@ -33,7 +36,7 @@ export interface GrammarLesson {
   tip: string;
 }
 
-export const GRAMMAR: GrammarLesson[] = [
+const CORE: GrammarLesson[] = [
   {
     id: 'to-be', icon: '🟦', ico: 'equal', title: 'Động từ "to be"', titleEn: 'The verb "to be"', level: 'starter',
     summary: '"To be" nghĩa là "thì, là, ở". Hiện tại có 3 dạng: am (đi với I), is (he/she/it và danh từ số ít), are (you/we/they và số nhiều).',
@@ -302,6 +305,9 @@ export const GRAMMAR: GrammarLesson[] = [
     tip: 'Nhìn câu trả lời để đoán từ để hỏi: nơi chốn → Where, người → Who.',
   },
 ];
+
+/** Toàn bộ bài ngữ pháp, từ dễ đến khó */
+export const GRAMMAR: GrammarLesson[] = [...CORE, ...GRAMMAR_ADVANCED];
 
 /** Tra nhanh bài ngữ pháp theo id */
 export const GRAMMAR_BY_ID = Object.fromEntries(GRAMMAR.map((g) => [g.id, g])) as Record<string, GrammarLesson>;

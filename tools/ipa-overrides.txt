@@ -54,3 +54,7 @@ ecotourism=ˈiːkoʊˌtʊrɪzəm
 
 memorise=ˈmeməraɪz
 tumour=ˈtuːmər
+afforestation=əˌfɔːrɪˈsteɪʃn
+desertification=dɪˌzɜːrtɪfɪˈkeɪʃn
+numeracy=ˈnuːmərəsi
+conurbation=ˌkɑːnɜːrˈbeɪʃn

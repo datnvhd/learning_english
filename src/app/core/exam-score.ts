@@ -10,7 +10,7 @@ export function rawToBand(raw40: number): number {
   return 2;
 }
 
-/** Điểm 0..1 -> band (dùng cho Writing/Speaking tự đánh giá) */
+/** Điểm 0..1 -> band (dùng cho Writing/Speaking chấm tự động) */
 export function scoreToBand(score: number): number {
   return Math.round((3 + Math.max(0, Math.min(1, score)) * 5) * 2) / 2;
 }

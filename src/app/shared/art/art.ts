@@ -11,7 +11,7 @@
 /** Các hình minh họa có sẵn */
 export type ArtKind =
   | 'hero' | 'world' | 'travel-hero'
-  | 'daily' | 'it' | 'travel' | 'study' | 'health' | 'food' | 'b1' | 'b2' | 'ielts' | 'toeic'
+  | 'daily' | 'it' | 'travel' | 'study' | 'health' | 'food' | 'b1' | 'b2' | 'c1' | 'ielts' | 'toeic'
   | 'chest' | 'chest-open'
   | 'bong-hello' | 'bong-cheer' | 'bong-write' | 'bong-avatar';
 
@@ -19,7 +19,7 @@ export type ArtKind =
 export const ART_SIZE: Record<ArtKind, [number, number]> = {
   hero: [1080, 1387], world: [2400, 180], 'travel-hero': [1080, 608],
   daily: [384, 444], it: [384, 440], travel: [384, 447], study: [384, 470], health: [384, 432], food: [384, 463],
-  b1: [800, 600], b2: [800, 600], ielts: [800, 600], toeic: [800, 600],
+  b1: [800, 600], b2: [800, 600], c1: [800, 600], ielts: [800, 600], toeic: [800, 600],
   chest: [360, 360], 'chest-open': [360, 360],
   'bong-hello': [320, 320], 'bong-cheer': [320, 320], 'bong-write': [320, 320], 'bong-avatar': [320, 320],
 };

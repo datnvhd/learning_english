@@ -11,9 +11,9 @@ import { TopicId } from './content.model';
  */
 export type WordTuple = readonly [string, string, string, string, string, string, string];
 
-/** Trình độ theo Khung tham chiếu châu Âu (CEFR): A1–A2 cơ bản, B1 trung cấp, B2 trung cao cấp */
-export type CefrLevel = 'A1' | 'A2' | 'B1' | 'B2';
-export const CEFR_LEVELS: CefrLevel[] = ['A1', 'A2', 'B1', 'B2'];
+/** Trình độ theo Khung tham chiếu châu Âu (CEFR): A1–A2 cơ bản, B1 trung cấp, B2 trung cao cấp, C1 cao cấp */
+export type CefrLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
+export const CEFR_LEVELS: CefrLevel[] = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
 /** Một bài học nhỏ gồm khoảng 10–13 từ cùng chủ điểm (ví dụ "Gia đình") */
 export interface LessonData {

@@ -22,10 +22,13 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RecognitionService } from '../../core/recognition.service';
+import { SpeakingService } from '../../core/speaking.service';
+import { SpeakScore } from '../../core/speaking-score';
+import { SpeakResultComponent } from '../speak-result.component';
 import { SfxService } from '../../core/sfx.service';
 import { SpeechService } from '../../core/speech.service';
 import { gradePicSentence } from '../../core/exam.service';
-import { gradeTyped, normalizeText, wordSimilarity } from '../../core/text-utils';
+import { gradeTyped, normalizeText } from '../../core/text-utils';
 import { BONG_LINES, BongLineKey } from '../../data/bong-lines';
 import {
   AnswerResult, EssayQuestion, McqQuestion, OrderQuestion, PicWriteQuestion, Question, SessionResult, SpeakQuestion, TalkQuestion,
@@ -44,7 +47,7 @@ const ALMOST: BongLineKey[] = ['almost1', 'almost2', 'almost3'];
 const RETRY: BongLineKey[] = ['retry1', 'retry2', 'retry3'];
 
 /** Trạng thái của câu hỏi nói */
-type SpeakState = 'idle' | 'listening' | 'recording' | 'rate' | 'done';
+type SpeakState = 'idle' | 'recording' | 'scoring' | 'rate' | 'done';
 
 /** Kết quả chấm tạm thời của câu hiện tại (chờ bấm "Tiếp theo" mới ghi nhận) */
 interface Pending {
@@ -65,7 +68,7 @@ interface PassageBlock {
 
 @Component({
   selector: 'app-quiz-runner',
-  imports: [FormsModule, BongComponent, ConfettiComponent, EssayCardComponent, TalkCardComponent, IconComponent],
+  imports: [FormsModule, BongComponent, ConfettiComponent, EssayCardComponent, TalkCardComponent, IconComponent, SpeakResultComponent],
   templateUrl: './quiz-runner.component.html',
   styleUrl: './quiz-runner.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -73,6 +76,7 @@ interface PassageBlock {
 export class QuizRunnerComponent implements OnInit, OnDestroy {
   private readonly speech = inject(SpeechService);
   private readonly recog = inject(RecognitionService);
+  private readonly speaking = inject(SpeakingService);
   private readonly sfx = inject(SfxService);
   private readonly ux = inject(UxService);
 
@@ -115,6 +119,8 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
   protected readonly speakMsg = signal('');
   protected readonly transcript = signal('');
   protected readonly recUrl = signal<string | null>(null);
+  /** Kết quả chấm phát âm tự động của câu nói hiện tại */
+  protected readonly speakResult = signal<SpeakScore | null>(null);
 
   // Đồng hồ đếm ngược, chuỗi đúng liên tiếp (combo) và hiệu ứng +XP
   protected readonly remaining = signal(0);
@@ -224,7 +230,6 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
   });
 
   /** Hỗ trợ ghi âm/nhận dạng của thiết bị (để hiển thị hướng dẫn phù hợp) */
-  protected readonly canRecognize = computed(() => this.recog.canRecognize);
   protected readonly canRecord = this.recog.recordingSupported;
 
   constructor() {
@@ -304,7 +309,6 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     if (this.clock) clearInterval(this.clock);
     this.speech.cancel();
-    this.recog.stopListening();
     void this.recog.stopRecording();
     this.audioEl?.pause();
   }
@@ -393,6 +397,7 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
     this.speakMsg.set('');
     this.transcript.set('');
     this.recUrl.set(null);
+    this.speakResult.set(null);
     this.bongSays.set('');
   }
 
@@ -537,78 +542,47 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
   //  NÓI
   // ---------------------------------------------------------------------
 
-  /** Bấm nút micro: nhận dạng giọng nói nếu được, không thì ghi âm để tự đánh giá */
+  /** Bấm nút micro: lần 1 bắt đầu ghi âm, lần 2 dừng rồi máy nhận dạng và chấm điểm (offline) */
   protected async micPressed(): Promise<void> {
     const q = this.speakQ();
     if (!q || this.phase() !== 'answer') return;
 
-    // Đang ghi âm -> bấm lần nữa để dừng và chuyển sang tự đánh giá
     if (this.speakState() === 'recording') {
       this.recUrl.set(await this.recog.stopRecording());
-      this.speakState.set('rate');
-      this.speakMsg.set('Nghe lại giọng của bạn rồi tự đánh giá nhé!');
-      return;
-    }
-    if (this.speakState() === 'listening') {
-      this.recog.stopListening();
+      this.speakState.set('scoring');
+      this.speakMsg.set(this.speaking.usesAi() ? 'Gemini đang nghe và chấm phát âm...' : this.speaking.asrState() === 'loading' ? 'Đang chuẩn bị bộ chấm (lần đầu mất vài giây)...' : 'Máy đang nghe và chấm phát âm...');
+      const grade = await this.speaking.gradeReading(q.target);
+      if (this.speakQ() !== q) return; // đã chuyển câu khác trong lúc chấm
+      if (grade.ok) {
+        const s = grade.score;
+        this.speakResult.set(s);
+        this.transcript.set(s.transcript);
+        this.speakState.set('done');
+        this.speakMsg.set('');
+        // Quy về thang của bài luyện: tốt (≥ 80%) = đúng, khá (≥ 50%) = gần đúng
+        this.setPending({ score: s.overall >= 0.8 ? 1 : s.overall >= 0.5 ? 0.5 : 0, given: s.transcript || '(không nghe được)', correct: q.target });
+      } else if (grade.reason === 'no-audio') {
+        this.speakState.set('idle');
+        this.speakMsg.set('Máy chưa nghe thấy gì. Kiểm tra micro, nói to hơn rồi thử lại nhé!');
+      } else {
+        this.speakState.set('rate');
+        this.speakMsg.set('Thiết bị này chưa chạy được bộ chấm giọng nói. Nghe lại giọng của bạn rồi tự đánh giá nhé!');
+      }
       return;
     }
 
     this.speech.cancel();
-    if (this.recog.canRecognize) {
-      this.speakState.set('listening');
-      this.speakMsg.set('Đang nghe... Hãy nói thật rõ nhé!');
-      const out = await this.recog.listen('en-US');
-      if (out.ok) {
-        this.evaluateSpeech(q, out.transcripts);
-        return;
-      }
-      if (out.reason === 'denied') {
-        this.speakState.set('idle');
-        this.speakMsg.set('Bạn hãy cho phép trình duyệt dùng micro rồi thử lại nhé.');
-        return;
-      }
-      if (out.reason === 'no-speech') {
-        this.speakState.set('idle');
-        this.speakMsg.set('Chưa nghe thấy gì. Bấm micro và thử lại nhé!');
-        return;
-      }
-      // offline/unsupported/error -> chuyển sang ghi âm
-      this.speakMsg.set('Nhận dạng giọng nói cần Internet nên app chuyển sang chế độ ghi âm (offline).');
-    }
-    await this.startRecord();
-  }
-
-  /** Bắt đầu ghi âm (chế độ offline) */
-  private async startRecord(): Promise<void> {
+    this.speaking.warmUp();
     if (await this.recog.startRecording()) {
       this.speakState.set('recording');
-      this.speakMsg.set('Đang ghi âm... Bấm ⏹ khi đọc xong.');
+      this.speakMsg.set('Đang ghi âm... đọc to câu trên rồi bấm nút dừng.');
     } else {
-      // Không có micro: chỉ cho tự đánh giá
-      this.speakState.set('rate');
-      this.speakMsg.set('Không mở được micro. Hãy đọc to theo mẫu rồi tự đánh giá nhé!');
+      this.speakState.set('idle');
+      this.speakMsg.set('Không mở được micro. Hãy cho phép trình duyệt dùng micro rồi thử lại nhé.');
     }
   }
 
-  /** Chấm bài nói dựa vào bản chép lời tốt nhất */
-  private evaluateSpeech(q: SpeakQuestion, transcripts: string[]): void {
-    let best = '';
-    let sim = 0;
-    for (const t of transcripts) {
-      const s = wordSimilarity(t, q.target);
-      if (s > sim) {
-        sim = s;
-        best = t;
-      }
-    }
-    this.transcript.set(best || transcripts[0] || '');
-    const score = sim >= 0.85 ? 1 : sim >= 0.55 ? 0.5 : 0;
-    this.speakState.set('done');
-    this.setPending({ score, given: this.transcript(), correct: q.target });
-  }
-
-  /** Người học tự chấm bài nói (chế độ offline) */
+  /** Dự phòng khi thiết bị không chạy được bộ nhận dạng: người học tự đánh giá */
   protected selfRate(score: number): void {
     const q = this.speakQ();
     if (!q) return;
@@ -634,6 +608,7 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
     this.speakState.set('idle');
     this.speakMsg.set('');
     this.transcript.set('');
+    this.speakResult.set(null);
     this.bongSays.set('');
   }
 }

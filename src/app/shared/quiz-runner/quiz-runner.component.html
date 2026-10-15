@@ -238,14 +238,17 @@
           <p class="tvi">{{ s.targetVi }}</p>
         }
 
-        @if (speakState() !== 'rate' && speakState() !== 'done') {
-          <button class="mic" type="button" [class.live]="speakState() === 'listening' || speakState() === 'recording'"
+        @if (speakState() === 'idle' || speakState() === 'recording') {
+          <button class="mic" type="button" [class.live]="speakState() === 'recording'"
                   (click)="micPressed()" [attr.aria-label]="speakState() === 'recording' ? 'Dừng ghi âm' : 'Bấm để nói'">
             <app-icon [name]="speakState() === 'recording' ? 'player-stop' : 'microphone'" />
           </button>
-          <div class="wave big" [class.live]="speakState() === 'listening' || speakState() === 'recording'" aria-hidden="true">
+          <div class="wave big" [class.live]="speakState() === 'recording'" aria-hidden="true">
             <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
           </div>
+        }
+        @if (speakState() === 'scoring') {
+          <div class="scoring"><span class="spin" aria-hidden="true"></span></div>
         }
 
         @if (speakMsg()) {
@@ -253,11 +256,11 @@
         }
         @if (speakState() === 'idle') {
           <p class="muted tiny">
-            {{ canRecognize() ? 'Bấm micro rồi đọc to câu trên. App sẽ chấm điểm phát âm cho bạn.' : (canRecord ? 'Bấm micro để ghi âm, nghe lại rồi tự đánh giá (hoạt động không cần internet).' : 'Đọc to theo mẫu rồi tự đánh giá nhé.') }}
+            {{ canRecord ? 'Bấm micro, đọc to câu trên rồi bấm dừng. Máy sẽ nghe và chấm điểm phát âm ngay trên thiết bị (không cần Internet).' : 'Thiết bị không có micro nên chưa luyện nói được – bạn có thể bỏ qua câu này.' }}
           </p>
         }
 
-        <!-- Chế độ ghi âm offline: nghe lại và tự chấm -->
+        <!-- Dự phòng: thiết bị không chạy được bộ nhận dạng giọng nói -> nghe lại và tự đánh giá -->
         @if (speakState() === 'rate') {
           <div class="rate">
             @if (recUrl()) {
@@ -271,7 +274,9 @@
           </div>
         }
 
-        @if (phase() === 'feedback' && transcript()) {
+        @if (phase() === 'feedback' && !isTest() && speakResult(); as sr) {
+          <app-speak-result [score]="sr" title="Điểm phát âm" />
+        } @else if (phase() === 'feedback' && transcript()) {
           <p class="heard">App nghe được: “{{ transcript() }}”</p>
         }
       </div>

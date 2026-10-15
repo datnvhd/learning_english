@@ -1,5 +1,5 @@
 /**
- * grammar-list.page.ts – Danh sách 12 chủ điểm ngữ pháp, nhóm theo trình độ, kèm điểm cao nhất.
+ * grammar-list.page.ts – Danh sách chủ điểm ngữ pháp A1 → C1, nhóm theo trình độ, kèm điểm cao nhất.
  * Bài phù hợp trình độ người học (chọn ở bước làm quen) được gắn nhãn "Hợp với bạn".
  */
 import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
@@ -11,9 +11,11 @@ import { PageHeaderComponent } from '../../shared/page-header.component';
 import { IconComponent } from '../../theme/icon.component';
 
 const LEVELS: { id: GrammarLesson['level']; label: string; color: string }[] = [
-  { id: 'starter', label: 'Nền tảng', color: 'var(--leaf-600)' },
-  { id: 'basic', label: 'Cơ bản', color: 'var(--sky-500)' },
-  { id: 'intermediate', label: 'Nâng cao', color: 'var(--grape-500)' },
+  { id: 'starter', label: 'Nền tảng (A1)', color: 'var(--leaf-600)' },
+  { id: 'basic', label: 'Cơ bản (A2)', color: 'var(--sky-500)' },
+  { id: 'intermediate', label: 'Trung cấp (B1)', color: 'var(--grape-500)' },
+  { id: 'upper', label: 'Trung cao cấp (B2)', color: 'var(--tangerine-600)' },
+  { id: 'advanced', label: 'Cao cấp (C1)', color: 'var(--coral-600)' },
 ];
 
 @Component({

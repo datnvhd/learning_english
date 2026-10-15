@@ -16,8 +16,8 @@ import { filter } from 'rxjs';
 import { photoOf } from '../core/photos';
 import { ProgressService } from '../core/progress.service';
 import { RecognitionService } from '../core/recognition.service';
+import { SpeakingService } from '../core/speaking.service';
 import { SpeechService } from '../core/speech.service';
-import { wordSimilarity } from '../core/text-utils';
 import { UxService } from '../core/ux.service';
 import { TOPIC_BY_ID } from '../data/topics';
 import { POS_LABEL } from '../models/vocab.model';
@@ -65,8 +65,8 @@ import { IconComponent } from '../theme/icon.component';
           <div class="row">
             <app-icon name="microphone" class="mic-ic" />
             <b class="spacer">Luyện phát âm</b>
-            <button class="btn btn-accent btn-sm" type="button" (click)="practice()" [disabled]="busy()">
-              {{ busy() ? (recording() ? 'Dừng' : 'Đang nghe...') : 'Thử nói' }}
+            <button class="btn btn-accent btn-sm" type="button" (click)="practice()" [disabled]="busy() && !recording()">
+              {{ recording() ? 'Dừng' : busy() ? 'Đang chấm...' : 'Thử nói' }}
             </button>
           </div>
           @if (feedback()) {
@@ -220,6 +220,7 @@ export class WordSheetComponent {
   private readonly speech = inject(SpeechService);
   private readonly progress = inject(ProgressService);
   private readonly recog = inject(RecognitionService);
+  private readonly speaking = inject(SpeakingService);
 
   protected readonly word = this.ux.sheetWord;
   protected readonly photo = computed(() => {
@@ -259,8 +260,7 @@ export class WordSheetComponent {
   @HostListener('document:keydown.escape')
   protected close(): void {
     if (!this.word()) return;
-    this.speech.cancel();
-    this.recog.stopListening();
+    this.speech.cancel();
     void this.recog.stopRecording();
     this.reset();
     this.ux.closeWord();
@@ -293,7 +293,7 @@ export class WordSheetComponent {
     }
   }
 
-  /** Luyện nói: nhận dạng giọng (có mạng) hoặc ghi âm (offline) */
+  /** Luyện nói: bấm lần 1 ghi âm, bấm lần 2 dừng → máy nhận dạng và chấm phát âm ngay trên thiết bị */
   protected async practice(): Promise<void> {
     this.ensureFresh();
     const w = this.word();
@@ -301,31 +301,28 @@ export class WordSheetComponent {
     if (this.recording()) {
       this.recUrl.set(await this.recog.stopRecording());
       this.recording.set(false);
+      this.feedback.set(this.speaking.usesAi() ? 'Gemini đang nghe và chấm phát âm...' : 'Máy đang nghe và chấm phát âm...');
+      const grade = await this.speaking.gradeReading(w.word);
       this.busy.set(false);
-      this.feedback.set('Nghe lại và so sánh với giọng mẫu nhé!');
+      if (!grade.ok) {
+        this.feedback.set(grade.reason === 'no-audio' ? 'Máy chưa nghe thấy gì – nói to hơn rồi thử lại nhé.' : 'Thiết bị chưa chạy được bộ chấm giọng nói. Nghe lại giọng mình và so với giọng mẫu nhé!');
+        return;
+      }
+      const s = grade.score;
+      this.score.set(s.overall);
+      const heard = s.transcript ? `Máy nghe được “${s.transcript}”.` : 'Máy chưa nghe rõ.';
+      this.feedback.set(s.overall >= 0.8 ? `Chuẩn lắm! ${heard} (${s.label})` : `${heard} Điểm phát âm ${s.label} – nghe mẫu rồi thử lại nhé!`);
+      this.ux.haptic(s.overall >= 0.8 ? 'good' : 'bad');
+      if (s.overall >= 0.8) void this.speech.bong('praise1');
       return;
     }
     this.speech.cancel();
-    this.busy.set(true);
-    if (this.recog.canRecognize) {
-      const out = await this.recog.listen('en-US');
-      this.busy.set(false);
-      if (out.ok) {
-        const best = Math.max(...out.transcripts.map((t) => wordSimilarity(t, w.word)));
-        this.score.set(best);
-        this.feedback.set(best >= 0.85 ? `Chuẩn lắm! App nghe được “${out.transcripts[0]}”.` : `App nghe thành “${out.transcripts[0]}”. Thử lại nhé!`);
-        this.ux.haptic(best >= 0.85 ? 'good' : 'bad');
-        if (best >= 0.85) void this.speech.bong('praise1');
-        return;
-      }
-    }
-    // chế độ ghi âm offline
+    this.speaking.warmUp();
     if (await this.recog.startRecording()) {
       this.recording.set(true);
-      this.feedback.set('Đang ghi âm... bấm "Dừng" khi đọc xong.');
-      this.busy.set(false);
+      this.busy.set(true);
+      this.feedback.set('Đang ghi âm... đọc từ này rồi bấm "Dừng".');
     } else {
-      this.busy.set(false);
       this.feedback.set('Không mở được micro. Hãy cho phép dùng micro nhé.');
     }
   }

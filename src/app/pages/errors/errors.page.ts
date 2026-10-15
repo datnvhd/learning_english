@@ -216,7 +216,7 @@ export class ErrorsPage {
       out.push({ title: `Tập trung kỹ năng ${worst.label}`, desc: `Bạn sai nhiều nhất ở ${worst.label} (${worst.count} câu). Luyện thêm 10 câu dạng này.`, icon: 'target', color: SKILL_COLORS[worst.skill], link: '/session/skill/all', query: { skill: worst.skill } });
     }
     out.push({ title: 'Ôn tập ngắt quãng', desc: 'Ôn các từ đến hạn mỗi ngày để chuyển từ trí nhớ ngắn hạn sang dài hạn.', icon: 'refresh', color: 'var(--tangerine-500)', link: '/session/review/all', query: {} });
-    out.push({ title: 'Xem lại ngữ pháp cốt lõi', desc: '12 chủ điểm có giải thích tiếng Việt và bài luyện 10 câu.', icon: 'notebook', color: 'var(--grape-500)', link: '/grammar', query: {} });
+    out.push({ title: 'Xem lại ngữ pháp cốt lõi', desc: '31 chủ điểm A1–C1 có giải thích tiếng Việt và bài luyện 10 câu.', icon: 'notebook', color: 'var(--grape-500)', link: '/grammar', query: {} });
     return out;
   });
 

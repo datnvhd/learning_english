@@ -17,9 +17,10 @@
  *      từ|loại từ|nghĩa tiếng Việt|câu ví dụ tiếng Anh|câu ví dụ tiếng Việt
  *  Dòng trống hoặc bắt đầu bằng "//" sẽ bị bỏ qua.
  *
- *   4. Gắn TRÌNH ĐỘ CEFR (A1, A2, B1, B2) cho từng từ theo danh sách CEFR-J (tools/cefr-j-wordlist.csv).
+ *   4. Gắn TRÌNH ĐỘ CEFR (A1–C1) cho từng từ theo danh sách CEFR-J (tools/cefr-j-wordlist.csv, có A1–B2).
  *      Cụm từ lấy trình độ cao nhất của các từ thành phần. Từ không có trong danh sách (tên món ăn,
- *      thuật ngữ...) được ƯỚC LƯỢNG theo chủ đề: đời sống = B1, IELTS/TOEIC/IT = B2.
+ *      thuật ngữ...) được ƯỚC LƯỢNG theo chủ đề: đời sống = B1, IELTS/TOEIC/IT = B2, chủ đề c1 = C1
+ *      (chủ đề C1 chỉ gồm từ NẰM NGOÀI danh sách CEFR-J A1–B2).
  *      Muốn tự đặt trình độ: thêm trường thứ 6 vào dòng, ví dụ  ...|câu ví dụ VI|B2
  * ============================================================================
  */
@@ -136,11 +137,14 @@ function lookupIpa(word) {
 //     (CEFR-J Wordlist Version 1.5, Tono Laboratory, Tokyo University of Foreign Studies –
 //      dùng miễn phí cho nghiên cứu và thương mại khi có ghi nguồn; xem CREDITS-MEDIA.md)
 // ---------------------------------------------------------------------------
-const LEVELS = ['A1', 'A2', 'B1', 'B2'];
+/** Trình độ có trong CEFR-J */
+const CEFRJ_LEVELS = ['A1', 'A2', 'B1', 'B2'];
+/** Mọi trình độ app dùng (C1 = từ ngoài CEFR-J, gắn theo chủ đề hoặc tự đặt) */
+const LEVELS = [...CEFRJ_LEVELS, 'C1'];
 const cefr = new Map();
 for (const line of readFileSync(join(ROOT, 'tools', 'cefr-j-wordlist.csv'), 'utf8').split(/\r?\n/).slice(1)) {
   const [headword, , level] = line.split(',');
-  if (!headword || !LEVELS.includes(level)) continue;
+  if (!headword || !CEFRJ_LEVELS.includes(level)) continue;
   for (const h of headword.split('/')) {
     const key = h.trim().toLowerCase();
     // Một từ có nhiều từ loại -> lấy trình độ thấp nhất (nghĩa thông dụng nhất)
@@ -148,7 +152,7 @@ for (const line of readFileSync(join(ROOT, 'tools', 'cefr-j-wordlist.csv'), 'utf
   }
 }
 /** Trình độ mặc định của từ nằm ngoài danh sách, theo chủ đề */
-const TOPIC_DEFAULT_LEVEL = { it: 'B2', ielts: 'B2', toeic: 'B2', b2: 'B2' };
+const TOPIC_DEFAULT_LEVEL = { it: 'B2', ielts: 'B2', toeic: 'B2', b2: 'B2', c1: 'C1' };
 const levelCount = {};
 
 /** Chỉnh tay cho vài từ mà danh sách CEFR-J xếp lệch so với mức thông dụng */
@@ -168,6 +172,8 @@ function levelOf(word, topicId) {
   if (LEVEL_OVERRIDES[key]) return LEVEL_OVERRIDES[key];
   const direct = lookupLevel(key);
   if (direct) return direct;
+  // Thành ngữ C1 ghép từ các từ dễ ("by and large") nhưng nghĩa bóng thuộc trình độ C1
+  if (topicId === 'c1') return 'C1';
   const fallback = TOPIC_DEFAULT_LEVEL[topicId] ?? 'B1';
   const parts = key.split(/[\s-]+/).map((p) => p.replace(/[.,!?;:"()']/g, '')).filter(Boolean);
   if (parts.length < 2) return fallback;

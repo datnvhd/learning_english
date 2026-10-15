@@ -11,6 +11,10 @@ export const VOCAB_STATS: Record<string, { words: number; lessons: number }> = {
     "words": 300,
     "lessons": 25
   },
+  "c1": {
+    "words": 300,
+    "lessons": 25
+  },
   "daily": {
     "words": 384,
     "lessons": 32

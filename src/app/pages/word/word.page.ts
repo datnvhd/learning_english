@@ -66,7 +66,7 @@ function splitExample(ex: string, word: string): { before: string; hit: string; 
               <div class="sub">
                 <span class="ipa">/{{ w.ipa }}/</span>
                 <span class="tag purple pos">{{ posLabel(w.pos) }}</span>
-                <span class="tag pos" [class.green]="w.level === 'B1'" [class.orange]="w.level === 'B2'" title="Trình độ CEFR">{{ w.level }}</span>
+                <span class="tag pos" [class.green]="w.level === 'B1'" [class.orange]="w.level === 'B2'" [class.purple]="w.level === 'C1'" title="Trình độ CEFR">{{ w.level }}</span>
                 <span class="tag" [class.red]="w.topicId === 'ielts'" [class.blue]="w.topicId !== 'ielts'">{{ topicTitle() }}</span>
                 <span class="tag amber">{{ lessonTitle() }}</span>
               </div>

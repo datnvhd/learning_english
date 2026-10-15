@@ -64,7 +64,13 @@ export interface ChildResult {
       } @else {
         @if (analysis(); as a) {
           <section class="fb fade-up">
-            <h3>{{ task().exam === 'toeic' ? 'Điểm ước tính' : 'Band ước tính' }}: <b class="band">{{ task().exam === 'toeic' ? a.label : a.band.toFixed(1) }}</b></h3>
+            @if (a.notice) { <p class="notice"><app-icon name="alert-triangle" /> {{ a.notice }}</p> }
+            <h3>{{ task().exam === 'toeic' ? 'Điểm ước tính' : 'Band ước tính' }}: <b class="band">{{ task().exam === 'toeic' ? a.label : a.band.toFixed(1) }}</b>
+              @if (a.ai) { <span class="aib"><app-icon name="sparkles" /> Gemini</span> }</h3>
+            @if (a.ai?.summary) { <p class="sum">{{ a.ai!.summary }}</p> }
+            @if (a.ai?.strengths?.length) {
+              <div class="strong"><b><app-icon name="circle-check" /> Điểm mạnh</b><ul>@for (t of a.ai!.strengths; track $index) { <li>{{ t }}</li> }</ul></div>
+            }
             <div class="parts">
               @for (p of a.parts; track p.label) {
                 <div class="part">
@@ -75,7 +81,23 @@ export interface ChildResult {
               }
             </div>
             <ul class="advice">@for (t of a.advice; track t) { <li>{{ t }}</li> }</ul>
-            <p class="muted tiny">Đây là phân tích tự động để tham khảo, không phải điểm chính thức.</p>
+            @if (a.issues.length) {
+              <div class="issues">
+                <b>Lỗi cần sửa ({{ a.issues.length }})</b>
+                @for (i of a.issues.slice(0, 20); track $index) {
+                  <div class="iss">
+                    <span class="tag" [class.red]="i.kind === 'spelling'" [class.amber]="i.kind === 'grammar'" [class.blue]="i.kind === 'punctuation'" [class.purple]="i.kind === 'vocabulary' || i.kind === 'coherence'">{{ kindLabel[i.kind] }}</span>
+                    <span class="iw"><s>{{ i.text }}</s> → <b>{{ i.fix }}</b></span>
+                    <small class="muted">{{ i.note }}</small>
+                  </div>
+                }
+                @if (a.issues.length > 20) { <small class="muted">... và {{ a.issues.length - 20 }} lỗi khác.</small> }
+              </div>
+            }
+            @if (a.ai?.improved) {
+              <details class="imp"><summary><app-icon name="wand" /> Bài viết gợi ý (nâng cấp từ bài của bạn)</summary><p>{{ a.ai!.improved }}</p></details>
+            }
+            <p class="muted tiny">{{ a.ai ? 'Chấm bởi AI Google Gemini (' + a.ai.model + ') – AI có thể nhầm, điểm chỉ để tham khảo.' : 'Đây là phân tích tự động trên máy để tham khảo, không phải điểm chính thức. Bật "Chấm điểm bằng AI" trong Cài đặt để có nhận xét chi tiết hơn.' }}</p>
 
             <button class="btn btn-soft btn-sm" type="button" (click)="showModel.set(!showModel())"><app-icon name="book-2" /> {{ showModel() ? 'Ẩn' : 'Xem' }} bài mẫu</button>
             @if (showModel()) {
@@ -109,6 +131,23 @@ export interface ChildResult {
     .parts { display: flex; flex-direction: column; gap: 8px; }
     .part { display: grid; grid-template-columns: 1fr; gap: 3px; }
     .advice { margin: 0; padding-left: 20px; line-height: 1.45; }
+    .issues { display: flex; flex-direction: column; gap: 6px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 10px 12px; }
+    .iss { display: grid; grid-template-columns: auto 1fr; gap: 2px 8px; align-items: center; padding: 4px 0; border-top: 1px dashed var(--line); }
+    .iss:first-of-type { border-top: 0; }
+    .iss small { grid-column: 2; }
+    .iw s { color: var(--bad-dark); }
+    .iw b { color: var(--good-dark); }
+    .notice { display: flex; gap: 6px; align-items: flex-start; font-size: var(--fs-sm); color: var(--tangerine-600); background: var(--sun-100); padding: 8px 10px; border-radius: var(--radius-sm); }
+    .notice app-icon { width: 16px; height: 16px; flex: none; margin-top: 2px; }
+    .aib { display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; padding: 2px 8px; border-radius: 99px; font-size: 0.72rem; font-weight: 700; color: var(--grape-600); background: color-mix(in srgb, var(--grape-500) 12%, var(--white)); vertical-align: middle; }
+    .aib app-icon { width: 12px; height: 12px; }
+    .sum { line-height: 1.55; }
+    .strong { background: var(--good-soft); border-radius: var(--radius-sm); padding: 10px 12px; }
+    .strong b { display: inline-flex; align-items: center; gap: 6px; color: var(--good-dark); }
+    .strong ul { margin: 6px 0 0; padding-left: 20px; line-height: 1.5; }
+    .imp { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 10px 12px; }
+    .imp summary { cursor: pointer; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+    .imp p { margin-top: 8px; line-height: 1.6; white-space: pre-line; }
     .model { background: var(--white); border-radius: var(--radius-sm); padding: 10px 12px; white-space: pre-line; line-height: 1.5; }
     .icon-btn.sm { width: 32px; height: 32px; }
   `,
@@ -117,6 +156,7 @@ export class EssayCardComponent {
   private readonly exam = inject(ExamService);
   private readonly speech = inject(SpeechService);
   protected readonly Math = Math;
+  protected readonly kindLabel = { spelling: 'Chính tả', grammar: 'Ngữ pháp', punctuation: 'Trình bày', vocabulary: 'Từ vựng', coherence: 'Mạch lạc' } as const;
 
   readonly task = input.required<WritingTask>();
   /** true = chế độ thi thử (không hiện phân tích) */

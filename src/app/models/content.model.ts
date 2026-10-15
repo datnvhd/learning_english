@@ -7,7 +7,7 @@
  */
 
 /** Mã chủ đề: trùng với tên file nguồn tools/vocab-src/<mã>.txt */
-export type TopicId = 'daily' | 'it' | 'travel' | 'study' | 'health' | 'food' | 'b1' | 'b2' | 'ielts' | 'toeic';
+export type TopicId = 'daily' | 'it' | 'travel' | 'study' | 'health' | 'food' | 'b1' | 'b2' | 'c1' | 'ielts' | 'toeic';
 
 /** Các kỹ năng trong app. "vocab" là phần từ vựng, 4 kỹ năng còn lại là Nghe-Nói-Đọc-Viết */
 export type Skill = 'vocab' | 'listening' | 'speaking' | 'reading' | 'writing';

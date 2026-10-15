@@ -15,6 +15,7 @@ import { RouterLink } from '@angular/router';
 import { OfflineService, formatBytes } from '../../core/offline.service';
 import { ProgressService } from '../../core/progress.service';
 import { SpeechService, VI_CLIP_VOICES } from '../../core/speech.service';
+import { GEMINI_MODELS, GeminiService } from '../../core/gemini.service';
 import { HERO_PHOTOS } from '../../data/hero-photos';
 import { TOPICS, totalWordCount } from '../../data/topics';
 import { LearningGoal } from '../../models/progress.model';
@@ -117,6 +118,41 @@ const GOALS: { id: LearningGoal; label: string }[] = [
         </section>
 
         <!-- Quản lý dữ liệu offline -->
+        <!-- Chấm điểm bằng AI (Gemini) – tùy chọn, cần Internet -->
+        <section class="card form wide" id="ai">
+          <div class="card-head"><span class="tile-ic sm" style="--c: var(--grape-500)"><app-icon name="sparkles" /></span><h2>Chấm điểm bằng AI (Google Gemini)</h2>
+            <span class="tag" [class.green]="aiReady()" [class.gray]="!aiReady()">{{ aiReady() ? 'Đang bật' : 'Đang tắt' }}</span></div>
+          <p class="muted">Khi bật, bài <b>Speaking</b> (bản ghi âm) và <b>Writing</b> được gửi tới Gemini để chấm theo tiêu chí IELTS/TOEIC và nhận xét chi tiết:
+            điểm từng tiêu chí, lỗi ngữ pháp – từ vựng kèm cách sửa, lỗi phát âm từng từ, bài mẫu nâng cấp từ bài của bạn.
+            Cần Internet; khi tắt, mất mạng hoặc lỗi, app tự dùng bộ chấm offline.</p>
+          <label class="check"><input type="checkbox" [ngModel]="aiOn()" (ngModelChange)="setAiOn($event)" /> Dùng Gemini để chấm Speaking và Writing</label>
+          <div class="two ai">
+            <label>API key Gemini
+              <span class="keyrow">
+                <input class="input" [type]="showKey() ? 'text' : 'password'" autocomplete="off" spellcheck="false" placeholder="Dán API key (bắt đầu bằng AIza...)"
+                       [ngModel]="aiKey()" (ngModelChange)="setAiKey($event)" />
+                <button class="icon-btn" type="button" (click)="showKey.set(!showKey())" [attr.aria-label]="showKey() ? 'Ẩn key' : 'Hiện key'"><app-icon [name]="showKey() ? 'eye-off' : 'eye'" /></button>
+              </span>
+            </label>
+            <label>Model
+              <select class="input" [ngModel]="aiModelChoice()" (ngModelChange)="pickModel($event)">
+                @for (m of aiModels; track m.id) { <option [value]="m.id">{{ m.label }}</option> }
+                <option value="__other">Model khác (tự nhập tên)...</option>
+              </select>
+              @if (aiModelChoice() === '__other') {
+                <input class="input" type="text" placeholder="Ví dụ: gemini-3.8-flash" spellcheck="false" [ngModel]="aiModel()" (ngModelChange)="setAiModel($event)" />
+              }
+            </label>
+          </div>
+          <div class="row wrap">
+            <button class="btn btn-soft btn-sm" type="button" [disabled]="!aiKey() || aiTesting()" (click)="testAi()"><app-icon name="wifi" /> {{ aiTesting() ? 'Đang kiểm tra...' : 'Kiểm tra kết nối' }}</button>
+            <a class="btn btn-ghost btn-sm" href="https://aistudio.google.com/api-keys" target="_blank" rel="noopener noreferrer"><app-icon name="arrow-right" /> Lấy API key miễn phí tại Google AI Studio</a>
+          </div>
+          @if (aiStatus(); as st) { <p class="aist" [class.bad]="!st.ok"><app-icon [name]="st.ok ? 'circle-check' : 'alert-triangle'" /> {{ st.text }}</p> }
+          <p class="muted tiny">API key chỉ lưu trên thiết bị này (không nằm trong file sao lưu) và được gửi thẳng tới Google. Việc dùng Gemini API tuân theo hạn mức
+            và điều khoản của tài khoản Google của bạn (gói miễn phí có thể dùng dữ liệu gửi lên để cải thiện dịch vụ của Google).</p>
+        </section>
+
         <section class="card form wide" id="data">
           <div class="card-head">
             <span class="tile-ic sm" style="--c: var(--leaf-600)"><app-icon name="database" /></span><h2>Quản lý dữ liệu offline</h2>
@@ -191,6 +227,14 @@ const GOALS: { id: LearningGoal; label: string }[] = [
     .wide { grid-column: 1 / -1; }
     section { scroll-margin-top: calc(var(--topbar-h) + var(--space-4)); }
     .form { display: flex; flex-direction: column; gap: var(--space-3); }
+    .keyrow { display: flex; gap: var(--space-2); align-items: center; }
+    .keyrow .input { flex: 1; min-width: 0; }
+    .two.ai { align-items: start; }
+    .two.ai label { display: flex; flex-direction: column; gap: 6px; }
+    .aist { display: flex; align-items: center; gap: 6px; color: var(--good-dark); font-weight: 600; }
+    .aist.bad { color: var(--bad-dark); }
+    .aist app-icon { width: 18px; height: 18px; flex: none; }
+    .tiny { font-size: var(--fs-xs); }
     .form .card-head { margin-bottom: 0; }
     label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; font-size: var(--fs-sm); color: var(--slate-700); }
     label.check { flex-direction: row; align-items: center; gap: var(--space-2); font-weight: 500; cursor: pointer; }
@@ -220,6 +264,7 @@ export class SettingsPage {
   private readonly progress = inject(ProgressService);
   private readonly speech = inject(SpeechService);
   private readonly offline = inject(OfflineService);
+  private readonly gemini = inject(GeminiService);
 
   protected readonly goals = GOALS;
   protected readonly xpGoals = [30, 50, 80, 100, 150];
@@ -234,6 +279,48 @@ export class SettingsPage {
   protected readonly initial = computed(() => (this.settings().name.trim()[0] ?? 'H').toUpperCase());
   protected readonly message = signal('');
   protected readonly enVoices = computed(() => this.speech.voicesFor('en'));
+
+  // --- chấm điểm bằng AI (Gemini) ---
+  protected readonly aiModels = GEMINI_MODELS;
+  protected readonly aiOn = this.gemini.enabled;
+  protected readonly aiKey = this.gemini.apiKey;
+  protected readonly aiModel = this.gemini.model;
+  protected readonly aiReady = this.gemini.ready;
+  protected readonly showKey = signal(false);
+  protected readonly aiTesting = signal(false);
+  protected readonly aiStatus = signal<{ ok: boolean; text: string } | null>(null);
+  protected readonly aiModelChoice = signal(GEMINI_MODELS.some((m) => m.id === this.gemini.model()) ? this.gemini.model() : '__other');
+
+  protected setAiOn(on: boolean): void {
+    this.gemini.setEnabled(on);
+    if (on && !this.gemini.apiKey()) this.aiStatus.set({ ok: false, text: 'Hãy dán API key Gemini để bắt đầu chấm bằng AI.' });
+  }
+
+  protected setAiKey(key: string): void {
+    this.gemini.setApiKey(key);
+    this.aiStatus.set(null);
+  }
+
+  protected setAiModel(model: string): void {
+    this.gemini.setModel(model);
+    this.aiStatus.set(null);
+  }
+
+  protected pickModel(id: string): void {
+    this.aiModelChoice.set(id);
+    if (id !== '__other') this.setAiModel(id);
+  }
+
+  protected async testAi(): Promise<void> {
+    this.aiTesting.set(true);
+    try {
+      this.aiStatus.set({ ok: true, text: await this.gemini.test() });
+    } catch (e) {
+      this.aiStatus.set({ ok: false, text: (e as Error).message });
+    } finally {
+      this.aiTesting.set(false);
+    }
+  }
   protected readonly viVoices = computed(() => this.speech.voicesFor('vi'));
   protected readonly viClips = VI_CLIP_VOICES;
   protected readonly usesViDevice = computed(() => { this.settings(); return this.speech.usesDeviceVoice('vi'); });

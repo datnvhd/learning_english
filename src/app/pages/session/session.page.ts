@@ -242,7 +242,7 @@ export class SessionPage {
     void this.speech.bong(s.percent >= 90 ? 'resultTop' : s.percent >= 60 ? 'resultGood' : 'resultLow');
   }
 
-  /** Lưu các câu trả lời sai (trừ bài luận / bài nói tự chấm) để xem lại ở trang Error Review */
+  /** Lưu các câu trả lời sai (trừ bài luận / bài nói chấm theo tiêu chí) để xem lại ở trang Error Review */
   private logErrors(r: SessionResult, exam?: ExamId): void {
     const byId = new Map(r.questions.map((q) => [q.id, q]));
     const source = this.title();

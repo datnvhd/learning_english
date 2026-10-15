@@ -11,7 +11,8 @@
  *  - summarize(...)          : quy đổi kết quả sang band IELTS hoặc điểm TOEIC (mang tính ước lượng)
  *
  *  Lưu ý quan trọng: điểm quy đổi chỉ là ƯỚC TÍNH để bạn theo dõi tiến bộ, không thay thế
- *  chấm điểm chính thức. Writing/Speaking không thể chấm tự động chính xác như giám khảo.
+ *  chấm điểm chính thức. Writing/Speaking được máy chấm theo tiêu chí (speaking-score.ts, writing-check.ts),
+ *  không thể chính xác như giám khảo.
  */
 import { rawToBand, scoreToBand, toeicLrScaled, toeicSwLevel, toeicSwScaled } from './exam-score';
 import { Injectable, inject } from '@angular/core';
@@ -34,6 +35,11 @@ import { FULL_TESTS, formatOf } from '../data/exam/tests/catalog';
 import { photoOf } from './photos';
 import { pct, sample, shuffle } from './text-utils';
 import { VocabService } from './vocab.service';
+import { AiFeedback, GeminiService } from './gemini.service';
+import { GrammarService } from './grammar.service';
+import { Dictionary, WritingIssue, checkGrammar, checkSpelling, parseDictionary, topicCoverage } from './writing-check';
+import { CefrIndex, buildCefrIndex, cohesion, comparisons, dataMentions, splitSentences, syntaxProfile, vocabProfile } from './language-features';
+import { ieltsOverall, toToeic, writingRubric } from './rubric';
 
 /** Kết quả phân tích một bài viết */
 export interface EssayAnalysis {
@@ -53,6 +59,12 @@ export interface EssayAnalysis {
   score: number;
   parts: { label: string; value: number; note: string }[];
   advice: string[];
+  /** Lỗi chính tả / ngữ pháp / trình bày phát hiện được */
+  issues: WritingIssue[];
+  /** Nhận xét chi tiết khi bài được chấm bằng AI (Gemini) */
+  ai?: AiFeedback;
+  /** Thông báo kèm theo (ví dụ: không gọi được AI nên dùng bộ chấm offline) */
+  notice?: string;
 }
 
 /** Kết quả chấm câu viết theo tranh (TOEIC Writing Q1–5) */
@@ -72,13 +84,6 @@ export interface ExamSummary {
   /** Nhãn ngắn lưu vào lịch sử */
   label: string;
 }
-
-/** Danh sách từ nối thường dùng trong Writing */
-const LINKERS = [
-  'however', 'moreover', 'furthermore', 'in addition', 'therefore', 'consequently', 'as a result', 'for example', 'for instance',
-  'in conclusion', 'to sum up', 'on the other hand', 'whereas', 'nevertheless', 'although', 'while', 'firstly', 'secondly',
-  'finally', 'in contrast', 'by contrast', 'overall', 'despite', 'similarly', 'besides', 'thus', 'meanwhile', 'in particular',
-];
 
 /** Kho đề TOEIC gộp bộ gốc + bộ bổ sung */
 const P2 = [...TOEIC_PART2, ...TOEIC_PART2_MORE];
@@ -187,6 +192,12 @@ export function gradePicSentence(text: string, words: [string[], string[]]): Pic
     }
   });
 
+  // Lỗi ngữ pháp / trình bày thường gặp (a/an, hòa hợp chủ ngữ – động từ, động từ sau can/did...)
+  for (const i of checkGrammar(clean).filter((x) => x.kind === 'grammar')) {
+    misuse = true;
+    notes.push(`"${i.text}" → "${i.fix}": ${i.note}`);
+  }
+
   let points: number;
   if (!used[0] && !used[1]) points = 0;
   else if (!both || count < 4) points = 1;
@@ -198,6 +209,17 @@ export function gradePicSentence(text: string, words: [string[], string[]]): Pic
 @Injectable({ providedIn: 'root' })
 export class ExamService {
   private readonly vocab = inject(VocabService);
+  private readonly gemini = inject(GeminiService);
+  private readonly grammar = inject(GrammarService);
+  private dict: Promise<Dictionary> | null = null;
+
+  /** Từ điển chính tả offline (assets/dict/en.txt); lỗi nạp thì bỏ qua phần chính tả */
+  private dictionary(): Promise<Dictionary> {
+    return (this.dict ??= fetch('assets/dict/en.txt')
+      .then((r) => (r.ok ? r.text() : ''))
+      .then(parseDictionary)
+      .catch(() => parseDictionary('')));
+  }
   private seq = 0;
 
   private id(): string {
@@ -516,96 +538,130 @@ export class ExamService {
 
   /** Phân tích bài viết luận và ước tính band IELTS / điểm TOEIC (chỉ mang tính tham khảo) */
   async analyzeEssay(text: string, task: WritingTask): Promise<EssayAnalysis> {
+    const local = await this.analyzeEssayOffline(text, task);
+    if (!this.gemini.usable() || !text.trim()) return local;
+    // Chấm bằng AI Gemini (đã bật trong Cài đặt): điểm, tiêu chí, lỗi và nhận xét do AI đưa ra;
+    // số từ / số đoạn vẫn lấy từ phân tích trên máy
+    try {
+      const exam = task.exam === 'toeic' ? 'toeic' : 'ielts';
+      const ai = await this.gemini.gradeEssay(text.trim(), {
+        exam,
+        kind: exam === 'toeic' ? (task.task === 1 ? 'TOEIC Writing Questions 6–7: respond to a written request (email)' : 'TOEIC Writing Question 8: opinion essay') : `IELTS Academic Writing Task ${task.task}`,
+        prompt: task.prompt, data: task.data, requirements: task.checks?.map((c) => c.label), minWords: task.minWords, maxPoints: task.maxScore,
+      });
+      return { ...local, band: ai.overall, label: ai.label, score: ai.score, parts: ai.parts, advice: ai.advice, issues: ai.issues, ai: ai.ai };
+    } catch (e) {
+      return { ...local, notice: `Không chấm được bằng Gemini (${(e as Error).message}) – đã dùng bộ chấm offline.` };
+    }
+  }
+
+  /** Bộ tra trình độ CEFR (nạp lười, dùng từ điển chính tả để nhận ra từ nâng cao ngoài danh sách) */
+  private cefr: Promise<CefrIndex> | null = null;
+  cefrIndex(): Promise<CefrIndex> {
+    return (this.cefr ??= Promise.all([import('../data/cefr-levels'), this.dictionary()]).then(([m, d]) =>
+      buildCefrIndex(m.CEFR_WORDS, d.all.size > 1000 ? d.all : undefined)));
+  }
+
+  /**
+   * Phân tích bài viết ngay trên máy (không cần Internet), chấm theo MÔ TẢ BAND (rubric.ts):
+   * đo các đặc trưng giám khảo dựa vào (bám đề, quan điểm/kết luận, tổng quan & số liệu ở Task 1,
+   * từ nối và quy chiếu, độ khó từ vựng theo CEFR, câu phức và dạng cấu trúc, tỉ lệ câu không lỗi)
+   * rồi quy về band từng tiêu chí, kèm lời giải thích "cần gì để lên band tiếp theo".
+   */
+  private async analyzeEssayOffline(text: string, task: WritingTask): Promise<EssayAnalysis> {
     const clean = text.trim();
     const words = clean ? clean.split(/\s+/).filter((w) => /[a-z0-9]/i.test(w)) : [];
     const lower = words.map((w) => w.toLowerCase().replace(/[^a-z']/g, '')).filter(Boolean);
-    const sentences = clean.split(/(?<=[.!?])\s+/).filter((s) => s.trim().length > 3);
-    const paragraphs = clean.split(/\n\s*\n|\n/).filter((p) => p.trim().length > 20);
     const total = lower.length;
-    const uniqueRatio = total ? new Set(lower).size / total : 0;
-    const lowerText = ' ' + clean.toLowerCase().replace(/[^a-z' ]/g, ' ').replace(/\s+/g, ' ') + ' ';
-    const linking = LINKERS.filter((l) => lowerText.includes(' ' + l + ' ')).length;
-
-    // Từ học thuật: đối chiếu với kho từ vựng IELTS/TOEIC đã đóng gói
-    const bank = await this.vocab.load(task.exam === 'toeic' ? 'toeic' : 'ielts');
-    const academicSet = new Set(bank.words.filter((w) => !w.word.includes(' ') && w.word.length >= 6).map((w) => w.word.toLowerCase()));
-    const academic = new Set(lower.filter((w) => academicSet.has(w))).size;
-
-    const avgSentence = sentences.length ? total / sentences.length : 0;
-    const capitalized = sentences.length ? sentences.filter((s) => /^[A-Z"']/.test(s.trim())).length / sentences.length : 0;
-
+    // Tách cả từ ghép có gạch nối để tra CEFR (face-to-face -> face, to, face)
+    // Từ để phân tích vốn từ: tách cả từ ghép có gạch nối, bỏ tên riêng (chữ hoa giữa câu: London, English)
+    const sentences = splitSentences(clean);
+    const tokens = sentences.flatMap((sent) => sent.split(/[^A-Za-z']+/).filter(Boolean)
+      .filter((w, i) => i === 0 || w === 'I' || !/^[A-Z]/.test(w)).map((w) => w.toLowerCase()));
+    const paraList = clean.split(/\n\s*\n|\n/).map((p) => p.trim()).filter((p) => p.length > 20);
     const isEmail = task.exam === 'toeic' && task.task === 1;
-    const need = isEmail ? 3 : task.task === 2 ? 4 : 3;
-    const lengthS = Math.min(1, total / task.minWords);
-    const structureS = Math.min(1, paragraphs.length / need);
-    const cohesionS = Math.min(1, linking / (isEmail ? 2 : task.task === 2 ? 6 : 4));
-    const lexicalS = Math.max(0, Math.min(1, (uniqueRatio - 0.35) / 0.25)) * 0.5 + Math.min(1, academic / (isEmail ? 3 : 6)) * 0.5;
-    const grammarS = Math.max(0, 1 - Math.max(0, Math.abs(avgSentence - (isEmail ? 15 : 19)) - 7) / 12) * 0.7 + capitalized * 0.3;
-    // Bài chép/lặp lại cùng một câu nhiều lần không được điểm cao
-    const sentenceKeys = sentences.map((x) => x.toLowerCase().replace(/[^a-z ]/g, '').trim());
-    const dupRatio = sentences.length ? 1 - new Set(sentenceKeys).size / sentences.length : 0;
+    const uniqueRatio = total ? new Set(lower).size / total : 0;
 
-    // Các ý bắt buộc (TOEIC): đếm số lần khớp mẫu
+    // Lỗi chính tả / ngữ pháp / trình bày (bắt bằng luật + từ điển offline)
+    const [dict, cefr] = await Promise.all([this.dictionary(), this.cefrIndex()]);
+    const issues = [...(await this.grammarCheck(clean)), ...checkSpelling(clean, dict)];
+    const nSpelling = issues.filter((i) => i.kind === 'spelling').length;
+    const nGrammar = issues.filter((i) => i.kind === 'grammar').length;
+    const nPunct = issues.filter((i) => i.kind === 'punctuation').length;
+    // Câu không lỗi: không chứa đoạn lỗi ngữ pháp / chính tả nào
+    const serious = issues.filter((i) => i.kind !== 'punctuation');
+    const errorFree = sentences.length ? sentences.filter((s) => !serious.some((i) => s.includes(i.text))).length / sentences.length : 0;
+
+    // Bám đề, các ý bắt buộc (TOEIC)
+    const coverage = topicCoverage(task.prompt, clean, task.data);
+    const offTopic = total >= 60 && coverage.score < 0.3;
     const checks = (task.checks ?? []).map((c) => {
       const hits = (clean.match(new RegExp(c.re, 'gim')) ?? []).length;
       return { label: c.label, ok: hits >= (c.min ?? 1), hits, min: c.min ?? 1 };
     });
     const checksS = checks.length ? checks.filter((c) => c.ok).length / checks.length : 1;
+    const sentenceKeys = sentences.map((x) => x.toLowerCase().replace(/[^a-z ]/g, '').trim());
+    const dupRatio = sentences.length ? 1 - new Set(sentenceKeys).size / sentences.length : 0;
+
+    const first = paraList[0] ?? clean;
+    const last = paraList[paraList.length - 1] ?? '';
+    const coh = cohesion(clean);
+    const vocab = vocabProfile(tokens, cefr);
+    const rubric = writingRubric({
+      task: task.task, email: isEmail, words: total, minWords: task.minWords, paragraphs: paraList.length, coverage: coverage.score,
+      position: /\b(in my (opinion|view)|i (strongly |firmly |would )?(believe|think|agree|disagree|argue|feel)|from my (perspective|point of view)|personally|this essay will|i am (convinced|of the opinion))\b/i.test(isEmail ? clean : first + ' ' + last),
+      conclusion: paraList.length >= 2 && /\b(in conclusion|to conclude|to sum up|in summary|all in all|on balance|overall|in short|to summari[sz]e)\b/i.test(last),
+      examples: (clean.match(/\b(for example|for instance|such as|e\.g\.|to illustrate|a case in point|in my (case|country|city|experience|family)|my own experience|a good example|take [a-z]+ as an example|according to|studies (show|suggest)|research (shows|suggests|has shown)|statistics show|when i was|my (friend|brother|sister|father|mother|cousin|neighbour|neighbor|parents|colleagues?))\b/gi) ?? []).length,
+      overview: /\b(overall|in general|it is (clear|evident|noticeable|apparent)|it can be seen|the most (striking|noticeable|significant)|generally speaking)\b/i.test(clean),
+      data: dataMentions(clean), compare: comparisons(clean),
+      cohesion: coh, vocab, syntax: syntaxProfile(sentences), errorFree,
+      spelling: total ? (nSpelling / total) * 100 : 0,
+    });
+    let band = ieltsOverall(rubric.map((r) => r.band));
+    if (dupRatio >= 0.2) band = Math.min(band, 4.5);
+    if (!total) band = 0;
 
     const advice: string[] = [];
-    if (total < task.minWords) advice.push(`Bài mới ${total}/${task.minWords} từ – thiếu từ sẽ bị trừ điểm. Hãy phát triển thêm ví dụ.`);
-    if (paragraphs.length < need) advice.push(`Nên chia thành ít nhất ${need} đoạn${isEmail ? ' (chào hỏi – nội dung – lời kết)' : ' (mở bài, thân bài, kết luận)'} – hiện có ${paragraphs.length} đoạn.`);
+    if (total < task.minWords) advice.push(`Bài mới ${total}/${task.minWords} từ – thiếu từ sẽ bị trừ điểm Task Response. Hãy phát triển thêm ví dụ.`);
     for (const c of checks.filter((x) => !x.ok)) advice.push(`Thiếu ý bắt buộc: ${c.label}.`);
-    if (linking < (isEmail ? 1 : task.task === 2 ? 4 : 2)) advice.push('Dùng thêm từ nối (first, in addition, however, for example, in conclusion...) để bài mạch lạc hơn.');
-    if (!isEmail && academic < 3) advice.push(`Thử dùng thêm từ vựng trong chủ đề ${task.exam === 'toeic' ? 'TOEIC' : 'IELTS'} của app để bài phong phú hơn.`);
-    if (avgSentence && (avgSentence < 10 || avgSentence > 28)) advice.push(`Độ dài câu trung bình ${avgSentence.toFixed(0)} từ – hãy trộn câu ngắn và câu phức (12–25 từ).`);
+    if (offTopic) advice.push(`Bài viết có vẻ chưa bám sát đề – hãy nhắc lại và triển khai các ý chính của đề (${coverage.missing.slice(0, 4).join(', ')}).`);
     if (dupRatio >= 0.2) advice.push('Nhiều câu bị lặp lại nguyên văn – hãy viết ý mới thay vì lặp lại.');
-    if (uniqueRatio && uniqueRatio < 0.45) advice.push('Bạn lặp lại nhiều từ – hãy dùng từ đồng nghĩa và paraphrase.');
+    for (const r of rubric) if (r.next.length && r.band < 9) advice.push(`${r.label} (band ${r.band}) → để lên band ${r.band + 1}: ${r.next.slice(0, 3).join('; ')}.`);
+    if (issues.length) advice.push(`Phát hiện ${issues.length} lỗi (${nSpelling} chính tả, ${nGrammar} ngữ pháp, ${nPunct} trình bày) – xem danh sách và cách sửa bên dưới.`);
 
-    const baseParts = [
-      { label: task.exam === 'toeic' ? 'Độ dài' : 'Độ dài / Task Response', value: lengthS, note: `${total}/${task.minWords} từ` },
-      { label: 'Bố cục', value: structureS, note: `${paragraphs.length} đoạn` },
-      { label: 'Liên kết (Cohesion)', value: cohesionS, note: `${linking} từ nối` },
-      { label: 'Từ vựng', value: lexicalS, note: `${academic} từ chuyên ngành` },
-      { label: 'Câu & ngữ pháp', value: grammarS, note: `TB ${avgSentence.toFixed(0)} từ/câu` },
-    ];
-    const common = { words: total, sentences: sentences.length, paragraphs: paragraphs.length, avgSentence, uniqueRatio, linking, academic };
+    const parts = rubric.map((r) => ({ label: `${r.label} · Band ${r.band}`, value: r.band / 9, note: r.evidence.join(' · ') }));
+    const common = {
+      words: total, sentences: sentences.length, paragraphs: paraList.length, avgSentence: sentences.length ? total / sentences.length : 0,
+      uniqueRatio, linking: coh.count, academic: vocab.advancedWords.length, issues,
+    };
 
-    // ---------------- TOEIC: thang 0–4 (email) hoặc 0–5 (bài luận) ----------------
+    // ---------------- TOEIC: quy band về thang 0–4 (email) hoặc 0–5 (bài luận) ----------------
     if (task.exam === 'toeic') {
       const max = task.maxScore ?? (isEmail ? 4 : 5);
-      const overall = checksS * 0.4 + lengthS * 0.2 + structureS * 0.1 + cohesionS * 0.1 + lexicalS * 0.1 + grammarS * 0.1;
-      let pts = Math.round(overall * max);
+      let pts = toToeic(band, max);
       if (total < task.minWords * 0.5) pts = Math.min(pts, Math.floor(max / 2));
-      if (dupRatio >= 0.2) pts = Math.min(pts, 2);
+      if (checksS < 1) pts = Math.min(pts, max - 1);
       if (checksS < 0.5) pts = Math.min(pts, max - 2);
+      if (offTopic) pts = Math.min(pts, Math.floor(max / 2));
       pts = total ? Math.max(1, pts) : 0;
-      if (!advice.length) advice.push('Bài viết đủ ý và rõ ràng! So sánh với bài mẫu để học thêm cách diễn đạt.');
       return {
         ...common, band: pts, label: `${pts}/${max} điểm`, score: pts / max, advice,
-        parts: [
-          ...checks.map((c) => ({ label: c.label, value: c.ok ? 1 : Math.min(0.99, c.hits / c.min), note: c.ok ? 'Đạt' : 'Chưa có' })),
-          ...baseParts,
-        ],
+        parts: [...checks.map((c) => ({ label: c.label, value: c.ok ? 1 : Math.min(0.99, c.hits / c.min), note: c.ok ? 'Đạt' : 'Chưa có' })), ...parts],
       };
     }
 
     // ---------------- IELTS: band ----------------
-    const overall = lengthS * 0.3 + structureS * 0.15 + cohesionS * 0.2 + lexicalS * 0.2 + grammarS * 0.15;
-    let band = 3.5 + overall * 4.5;
-    if (total < task.minWords * 0.5) band = Math.min(band, 4);
-    else if (total < task.minWords * 0.75) band = Math.min(band, 5);
-    if (dupRatio >= 0.2) band = Math.min(band, 4.5);
-    else if (uniqueRatio && uniqueRatio < 0.4) band = Math.min(band, 5.5);
-    band = Math.max(2.5, Math.round(Math.min(band, 8) * 2) / 2);
-    if (!total) band = 0;
-    if (!advice.length) advice.push('Bài viết có cấu trúc và từ vựng khá tốt! So sánh với bài mẫu để học thêm cách diễn đạt.');
-
+    if (offTopic) band = Math.min(band, 5);
     return {
       ...common, band, label: `Band ${band.toFixed(1)}`, advice,
       score: total ? Math.max(0, Math.min(1, (band - 3) / 5)) : 0,
-      parts: baseParts,
+      parts,
     };
+  }
+
+  /** Bắt lỗi ngữ pháp (bộ luật của app + Harper, đều chạy trên máy) */
+  grammarCheck(text: string): Promise<WritingIssue[]> {
+    return this.grammar.check(text);
   }
 
   // =====================================================================
@@ -641,7 +697,7 @@ export class ExamService {
       const label = hasLr ? (both ? `Tổng ≈ ${lr}/990` : `≈ ${lr}/495`) : swParts;
       const note = hasLr
         ? 'Điểm TOEIC quy đổi từ tỉ lệ đúng trong bản rút gọn, chỉ để tham khảo tiến bộ. Điểm thật phụ thuộc bảng quy đổi từng đề.'
-        : 'Speaking/Writing được ước tính từ phần chấm tự động (câu viết, email, bài luận) và phần tự đánh giá bài nói, thang 0–200. Chỉ để tham khảo.';
+        : 'Speaking/Writing được máy chấm tự động (nhận dạng giọng nói offline; bắt lỗi chính tả, ngữ pháp, độ dài, bám đề của bài viết), thang 0–200. Chỉ để tham khảo.';
       return { headline, rows, note, label };
     }
 
@@ -661,7 +717,7 @@ export class ExamService {
     return {
       headline: `Band ước tính ${overall.toFixed(1)}`,
       rows,
-      note: 'Band Listening/Reading quy đổi từ tỉ lệ đúng (thang 40 câu). Writing/Speaking dựa trên phân tích tự động và tự đánh giá nên chỉ mang tính tham khảo.',
+      note: 'Band Listening/Reading quy đổi từ tỉ lệ đúng (thang 40 câu). Writing/Speaking do máy chấm tự động (nhận dạng giọng nói và bắt lỗi bài viết ngay trên thiết bị) nên chỉ mang tính tham khảo.',
       label: `Band ${overall.toFixed(1)}`,
     };
   }

@@ -12,6 +12,7 @@ Tải bằng `npm run fetch:hero` từ Openverse – chỉ giấy phép CC0 / Pu
 | `assets/art/photo-skyline.jpg` | Unknown | CC0 | https://www.rawpixel.com/image/5967710/aerial-view-city-skyline-skyscraper |
 | `assets/art/photo-study.jpg` | Stanley Dai | CC0 | https://stocksnap.io/photo/laptop-apple-BUFBDV2NQW |
 | `assets/art/photo-library.jpg` | Patrik Goethe | CC0 | https://stocksnap.io/photo/books-library-EB9B6BC1F6 |
+| `assets/art/c1.webp` (cắt từ photo-library.jpg) | Patrik Goethe | CC0 | https://stocksnap.io/photo/books-library-EB9B6BC1F6 |
 | `assets/art/photo-writing.jpg` | Green Chameleon | CC0 | https://stocksnap.io/photo/writing-drawing-8Y0EDX4VP9 |
 | `assets/art/photo-headphones.jpg` | Burst | CC0 | https://stocksnap.io/photo/woman-listening-CXVAJQHIMC |
 | `assets/art/photo-mountain.jpg` | Unknown | CC0 | https://www.rawpixel.com/image/5904011/photo-image-public-domain-tree-green |

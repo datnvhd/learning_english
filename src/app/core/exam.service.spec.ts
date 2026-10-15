@@ -46,6 +46,38 @@ describe('ExamService', () => {
     expect(bad.band).toBeLessThanOrEqual(4.5);
   });
 
+  it('phân tích bài viết: lỗi ngữ pháp bị chỉ ra và làm giảm band, bài lạc đề bị giới hạn band', async () => {
+    const task = IELTS_WRITING.find((t) => t.task === 2)!;
+    const good = await svc().analyzeEssay(task.model, task);
+    expect(good.issues.filter((i) => i.kind === 'grammar')).toEqual([]);
+    // Cài lỗi người học hay mắc vào bài mẫu
+    const broken = task.model
+      .replace(/\bit is\b/gi, 'it are').replace(/\bpeople are\b/gi, 'people is').replace(/\ban\b/g, 'a')
+      .replace(/\. ([A-Z])/g, (_m, c: string) => '. ' + c.toLowerCase())
+      + " She have many good idea. They has a lot of informations. I can goes to school by myself. He don't agree.";
+    const bad = await svc().analyzeEssay(broken, task);
+    expect(bad.issues.length).toBeGreaterThan(5);
+    expect(bad.band).toBeLessThan(good.band);
+    const off = await svc().analyzeEssay(
+      Array.from({ length: 6 }, () => 'Football is a wonderful sport. My favourite team plays every Saturday, and I watch the matches with my friends at a cafe near my house.').join('\n\n'),
+      task,
+    );
+    expect(off.advice.join(' ')).toContain('bám sát đề');
+    expect(off.band).toBeLessThanOrEqual(5);
+  });
+
+  it('bài mẫu Writing không bị báo lạc đề; bài Task 1 không nói gì về bảng số liệu thì bị báo lạc đề', async () => {
+    const all = [...IELTS_WRITING, ...TOEIC_W_EMAIL, ...TOEIC_W_OPINION];
+    for (const t of all) {
+      const a = await svc().analyzeEssay(t.model, t);
+      expect(a.advice.join(' '), t.id).not.toContain('bám sát đề');
+    }
+    const task1 = IELTS_WRITING.find((t) => t.task === 1 && t.data)!;
+    const essay = Array.from({ length: 5 }, () => 'Online learning is becoming popular because students can study at home and save time. Teachers also share many useful lessons on the internet every week.').join('\n\n');
+    const a = await svc().analyzeEssay(essay, task1);
+    expect(a.advice.join(' ')).toContain('bám sát đề');
+  });
+
   it('bài mẫu Writing đạt số từ tối thiểu của đề', () => {
     for (const t of IELTS_WRITING) expect(t.model.split(/\s+/).length, t.id).toBeGreaterThanOrEqual(t.minWords);
   });

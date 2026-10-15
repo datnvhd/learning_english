@@ -32,7 +32,7 @@ const STATUS_LABEL: Record<WordStatus, string> = { new: 'Chưa học', learning:
 
 /** Nhóm chủ đề: kỳ thi hoặc đời sống */
 const GROUPS: { id: string; label: string; topics: TopicId[] }[] = [
-  { id: 'cefr', label: 'B1–B2 (CEFR)', topics: ['b1', 'b2'] },
+  { id: 'cefr', label: 'B1–C1 (CEFR)', topics: ['b1', 'b2', 'c1'] },
   { id: 'ielts', label: 'IELTS', topics: ['ielts'] },
   { id: 'toeic', label: 'TOEIC', topics: ['toeic'] },
   { id: 'life', label: 'Đời sống', topics: ['daily', 'food', 'health', 'travel'] },
@@ -245,6 +245,7 @@ const GROUPS: { id: string; label: string; topics: TopicId[] }[] = [
     .lv.A1, .lv.A2 { --c: var(--slate-500); }
     .lv.B1 { --c: var(--leaf-600); }
     .lv.B2 { --c: var(--tangerine-600); }
+    .lv.C1 { --c: var(--coral-600); }
     .lrow { display: grid; grid-template-columns: 44px 1fr 74px; align-items: center; gap: var(--space-3); width: 100%; padding: 6px var(--space-2); border-radius: var(--radius-sm); text-align: left; }
     .lrow:hover, .lrow.on { background: var(--primary-soft); }
     .lrow small { text-align: right; color: var(--slate-600); }
@@ -499,7 +500,7 @@ export class VocabPage {
   }
 
   protected examTag(id: TopicId): string {
-    return id === 'ielts' ? 'IELTS' : id === 'toeic' ? 'TOEIC' : id === 'b1' || id === 'b2' ? 'CEFR' : TOPIC_BY_ID[id].titleEn.split(' ')[0];
+    return id === 'ielts' ? 'IELTS' : id === 'toeic' ? 'TOEIC' : id === 'b1' || id === 'b2' || id === 'c1' ? 'CEFR' : TOPIC_BY_ID[id].titleEn.split(' ')[0];
   }
 
   protected wordCount(id: TopicId): number {

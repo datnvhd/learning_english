@@ -15,6 +15,7 @@ import { VOCAB as health } from '../src/app/data/vocab/health';
 import { VOCAB as food } from '../src/app/data/vocab/food';
 import { VOCAB as b1 } from '../src/app/data/vocab/b1';
 import { VOCAB as b2 } from '../src/app/data/vocab/b2';
+import { VOCAB as c1 } from '../src/app/data/vocab/c1';
 import { VOCAB as ielts } from '../src/app/data/vocab/ielts';
 import { VOCAB as toeic } from '../src/app/data/vocab/toeic';
 import { DIALOGUES } from '../src/app/data/dialogues';
@@ -41,7 +42,7 @@ function add(text: string | undefined, group: string, voice: AudioVoice = 'f'): 
 }
 
 // 1) Từ vựng: từ + câu ví dụ
-const VOCABS: TopicVocabData[] = [daily, it, travel, study, health, food, b1, b2, ielts, toeic];
+const VOCABS: TopicVocabData[] = [daily, it, travel, study, health, food, b1, b2, c1, ielts, toeic];
 for (const v of VOCABS) for (const l of v.lessons) for (const w of l.words) { add(w[0], 'word'); add(w[4], 'example'); }
 
 // 2) Hội thoại: A = giọng nữ, B = giọng nam; mọi câu thoại cũng có bản giọng nữ cho bài luyện nói

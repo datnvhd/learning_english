@@ -1,6 +1,6 @@
 /**
  * ============================================================================
- *  topics.ts – Danh sách các chủ đề từ vựng (đời sống, trình độ B1–B2 theo CEFR, IELTS, TOEIC)
+ *  topics.ts – Danh sách các chủ đề từ vựng (đời sống, trình độ B1–C1 theo CEFR, IELTS, TOEIC)
  * ============================================================================
  *  Ảnh minh họa mỗi chủ đề nằm ở public/assets/art/<mã chủ đề>.webp (xem shared/art/art.ts).
  *  Số từ / số bài của mỗi chủ đề lấy từ VOCAB_STATS (file sinh tự động).
@@ -52,6 +52,11 @@ export const TOPICS: TopicMeta[] = [
     intro: '300 từ trình độ B2 theo khung CEFR, chia thành 25 bài: cảm xúc mạnh, lập luận, tranh luận, kinh doanh, tài chính, luật pháp, lịch sử, công nghệ, y học, tâm lý, truyền thông, động từ và tính từ học thuật. Vốn từ này giúp bạn tranh luận, viết luận và đạt IELTS 5.5–6.5 hoặc TOEIC 785+.',
   },
   {
+    id: 'c1', title: 'Từ vựng C1 – Cao cấp', titleEn: 'C1 Advanced',
+    desc: 'Học thuật, chính sách, luật, khoa học, thành ngữ...', emoji: '📙', color: PALETTE.coral[600],
+    intro: '300 từ trình độ C1 (nằm ngoài danh sách CEFR-J A1–B2), chia thành 25 bài: cảm xúc tinh tế, lập luận, nghiên cứu học thuật, chính trị, luật pháp, tài chính, chiến lược kinh doanh, truyền thông, xã hội, môi trường, khoa học, y học, tâm lý, nghệ thuật, ngoại giao, đạo đức, mô tả số liệu, động từ học thuật, từ nối nâng cao và thành ngữ. Vốn từ này giúp bạn diễn đạt chính xác, tự nhiên để hướng tới IELTS 7.0+ hoặc TOEIC 900+.',
+  },
+  {
     id: 'ielts', title: 'Từ vựng IELTS', titleEn: 'IELTS Vocabulary',
     desc: 'Từ học thuật, Writing, Speaking, biểu đồ...', emoji: '🎓', color: PALETTE.leaf[600],
     intro: 'Kho từ vựng học thuật theo chủ đề thường gặp trong IELTS: giáo dục, môi trường, công nghệ, xã hội... cùng từ nối, cụm mô tả biểu đồ và cách trình bày quan điểm.',
@@ -91,6 +96,7 @@ export const TOPIC_ICON: Record<TopicId, { icon: IconName; color: string }> = {
   travel: { icon: 'plane', color: 'var(--sky-400)' }, study: { icon: 'school', color: 'var(--grape-500)' },
   health: { icon: 'heartbeat', color: 'var(--coral-500)' }, food: { icon: 'tools-kitchen-2', color: 'var(--tangerine-500)' },
   b1: { icon: 'book', color: 'var(--leaf-600)' }, b2: { icon: 'books', color: 'var(--tangerine-600)' },
+  c1: { icon: 'crown', color: 'var(--coral-600)' },
   ielts: { icon: 'certificate', color: 'var(--blossom-600)' }, toeic: { icon: 'briefcase', color: 'var(--sky-600)' },
 };
 

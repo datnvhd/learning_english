@@ -149,7 +149,7 @@ export interface WritingTask {
 /** Đề Writing IELTS (tên cũ, giữ để tương thích) */
 export type IeltsWritingTask = WritingTask;
 
-/** Bộ tiêu chí tự chấm bài nói */
+/** Bộ tiêu chí chấm bài nói (IELTS, TOEIC trả lời, TOEIC đọc to) */
 export type SpeakingCriteria = 'ielts' | 'toeic' | 'toeic-read';
 
 /** Đề Speaking (IELTS Part 1/2/3 hoặc câu hỏi TOEIC Speaking) */
@@ -167,7 +167,7 @@ export interface SpeakingItem {
   hideLines?: boolean;
   /** Câu giám khảo đọc khi bấm loa (mặc định đọc các dòng đề) */
   examiner?: string;
-  /** Bộ tiêu chí tự chấm (mặc định IELTS) */
+  /** Bộ tiêu chí chấm (mặc định IELTS) */
   criteria?: SpeakingCriteria;
   /** Điểm tối đa theo thang TOEIC (3 hoặc 5) */
   maxScore?: number;

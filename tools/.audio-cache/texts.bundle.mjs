@@ -28382,8 +28382,2889 @@ var VOCAB8 = {
   ]
 };
 
-// src/app/data/vocab/ielts.ts
+// src/app/data/vocab/c1.ts
 var VOCAB9 = {
+  "lessons": [
+    {
+      "icon": "\u{1F3AD}",
+      "vi": "C\u1EA3m x\xFAc tinh t\u1EBF",
+      "en": "Nuanced Feelings",
+      "words": [
+        [
+          "apprehensive",
+          "adj",
+          "\u02CC\xE6pr\u026A\u02C8hens\u026Av",
+          "lo \xE2u, e s\u1EE3",
+          "She felt apprehensive about moving to a new country alone.",
+          "C\xF4 \u1EA5y th\u1EA5y lo \xE2u khi chuy\u1EC3n t\u1EDBi m\u1ED9t \u0111\u1EA5t n\u01B0\u1EDBc m\u1EDBi m\u1ED9t m\xECnh.",
+          "C1"
+        ],
+        [
+          "elated",
+          "adj",
+          "\u026A\u02C8le\u026At\u0259d",
+          "ph\u1EA5n ch\u1EA5n t\u1ED9t \u0111\u1ED9",
+          "The team was elated after winning the final.",
+          "C\u1EA3 \u0111\u1ED9i ph\u1EA5n ch\u1EA5n t\u1ED9t \u0111\u1ED9 sau khi th\u1EAFng tr\u1EADn chung k\u1EBFt.",
+          "C1"
+        ],
+        [
+          "indignant",
+          "adj",
+          "\u02CC\u026An\u02C8d\u026A\u0261n\u0259nt",
+          "ph\u1EABn n\u1ED9 (v\xEC b\u1EA5t c\xF4ng)",
+          "He was indignant at being blamed for something he had not done.",
+          "Anh \u1EA5y ph\u1EABn n\u1ED9 v\xEC b\u1ECB \u0111\u1ED5 l\u1ED7i cho vi\u1EC7c m\xECnh kh\xF4ng l\xE0m.",
+          "C1"
+        ],
+        [
+          "wistful",
+          "adj",
+          "\u02C8w\u026Astf\u0259l",
+          "b\xE2ng khu\xE2ng, nu\u1ED1i ti\u1EBFc",
+          "She gave a wistful smile as she remembered her childhood.",
+          "C\xF4 \u1EA5y m\u1EC9m c\u01B0\u1EDDi b\xE2ng khu\xE2ng khi nh\u1EDB l\u1EA1i tu\u1ED5i th\u01A1.",
+          "C1"
+        ],
+        [
+          "disillusioned",
+          "adj",
+          "\u02CCd\u026As\u026A\u02C8lu\u02D0\u0292\u0259nd",
+          "v\u1EE1 m\u1ED9ng",
+          "Many young voters have become disillusioned with politics.",
+          "Nhi\u1EC1u c\u1EED tri tr\u1EBB \u0111\xE3 v\u1EE1 m\u1ED9ng v\u1EDBi ch\xEDnh tr\u1ECB.",
+          "C1"
+        ],
+        [
+          "exasperated",
+          "adj",
+          "\u026A\u0261\u02C8z\xE6sp\u0259r\u02CCe\u026At\u026Ad",
+          "b\u1EF1c t\u1EE9c c\u1EF1c \u0111\u1ED9",
+          "The teacher was exasperated by the constant interruptions.",
+          "Gi\xE1o vi\xEAn b\u1EF1c t\u1EE9c c\u1EF1c \u0111\u1ED9 v\xEC li\xEAn t\u1EE5c b\u1ECB ng\u1EAFt l\u1EDDi.",
+          "C1"
+        ],
+        [
+          "complacent",
+          "adj",
+          "k\u0259m\u02C8ple\u026As\u0259nt",
+          "t\u1EF1 m\xE3n",
+          "We cannot afford to be complacent about our success.",
+          "Ch\xFAng ta kh\xF4ng th\u1EC3 t\u1EF1 m\xE3n v\u1EDBi th\xE0nh c\xF4ng c\u1EE7a m\xECnh.",
+          "C1"
+        ],
+        [
+          "remorseful",
+          "adj",
+          "r\u026A\u02C8m\u0254\u02D0rsf\u0259l",
+          "\u0103n n\u0103n, h\u1ED1i h\u1EADn",
+          "The driver was deeply remorseful about the accident.",
+          "Ng\u01B0\u1EDDi l\xE1i xe v\xF4 c\xF9ng \u0103n n\u0103n v\u1EC1 v\u1EE5 tai n\u1EA1n.",
+          "C1"
+        ],
+        [
+          "resentful",
+          "adj",
+          "r\u026A\u02C8zentf\u0259l",
+          "o\xE1n gi\u1EADn",
+          "He felt resentful that his efforts went unnoticed.",
+          "Anh \u1EA5y o\xE1n gi\u1EADn v\xEC n\u1ED7 l\u1EF1c c\u1EE7a m\xECnh kh\xF4ng \u0111\u01B0\u1EE3c ai \u0111\u1EC3 \xFD.",
+          "C1"
+        ],
+        [
+          "euphoric",
+          "adj",
+          "ju\u02D0\u02C8f\u0254\u02D0r\u026Ak",
+          "h\u01B0ng ph\u1EA5n",
+          "The crowd was euphoric when the results were announced.",
+          "\u0110\xE1m \u0111\xF4ng h\u01B0ng ph\u1EA5n khi k\u1EBFt qu\u1EA3 \u0111\u01B0\u1EE3c c\xF4ng b\u1ED1.",
+          "C1"
+        ],
+        [
+          "dejected",
+          "adj",
+          "d\u026A\u02C8d\u0292ekt\u026Ad",
+          "ch\xE1n n\u1EA3n, th\u1EA5t v\u1ECDng",
+          "The players looked dejected after the defeat.",
+          "C\xE1c c\u1EA7u th\u1EE7 tr\xF4ng ch\xE1n n\u1EA3n sau th\u1EA5t b\u1EA1i.",
+          "C1"
+        ],
+        [
+          "ambivalent",
+          "adj",
+          "\xE6m\u02C8b\u026Av\u0259l\u0259nt",
+          "ph\xE2n v\xE2n, c\xF3 c\u1EA3m x\xFAc tr\xE1i chi\u1EC1u",
+          "I am ambivalent about the plan; it has clear pros and cons.",
+          "T\xF4i ph\xE2n v\xE2n v\u1EC1 k\u1EBF ho\u1EA1ch n\xE0y; n\xF3 c\xF3 c\u1EA3 \u01B0u l\u1EABn nh\u01B0\u1EE3c \u0111i\u1EC3m r\xF5 r\u1EC7t.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F9ED}",
+      "vi": "T\xEDnh c\xE1ch v\xE0 th\xE1i \u0111\u1ED9",
+      "en": "Character and Attitudes",
+      "words": [
+        [
+          "conscientious",
+          "adj",
+          "\u02CCk\u0251\u02D0n\u0283i\u02C8en\u0283\u0259s",
+          "t\u1EADn t\xE2m, chu \u0111\xE1o",
+          "She is a conscientious student who never misses a deadline.",
+          "C\xF4 \u1EA5y l\xE0 h\u1ECDc sinh t\u1EADn t\xE2m, kh\xF4ng bao gi\u1EDD tr\u1EC5 h\u1EA1n n\u1ED9p b\xE0i.",
+          "C1"
+        ],
+        [
+          "meticulous",
+          "adj",
+          "m\u0259\u02C8t\u026Akj\u0259l\u0259s",
+          "t\u1EC9 m\u1EC9",
+          "He keeps meticulous records of all his expenses.",
+          "Anh \u1EA5y ghi ch\xE9p t\u1EC9 m\u1EC9 m\u1ECDi kho\u1EA3n chi ti\xEAu.",
+          "C1"
+        ],
+        [
+          "resilient",
+          "adj",
+          "r\u026A\u02C8z\u026Alj\u0259nt",
+          "ki\xEAn c\u01B0\u1EDDng, mau ph\u1EE5c h\u1ED3i",
+          "Children are often more resilient than adults expect.",
+          "Tr\u1EBB em th\u01B0\u1EDDng ki\xEAn c\u01B0\u1EDDng h\u01A1n ng\u01B0\u1EDDi l\u1EDBn ngh\u0129.",
+          "C1"
+        ],
+        [
+          "pragmatic",
+          "adj",
+          "pr\xE6\u0261\u02C8m\xE6t\u026Ak",
+          "th\u1EF1c t\u1EBF, th\u1EF1c d\u1EE5ng",
+          "We need a pragmatic solution rather than an ideal one.",
+          "Ch\xFAng ta c\u1EA7n m\u1ED9t gi\u1EA3i ph\xE1p th\u1EF1c t\u1EBF h\u01A1n l\xE0 m\u1ED9t gi\u1EA3i ph\xE1p l\xFD t\u01B0\u1EDFng.",
+          "C1"
+        ],
+        [
+          "assertive",
+          "adj",
+          "\u0259\u02C8s\u025C\u02D0rt\u026Av",
+          "qu\u1EA3 quy\u1EBFt, d\xE1m kh\u1EB3ng \u0111\u1ECBnh m\xECnh",
+          "You need to be more assertive in meetings.",
+          "B\u1EA1n c\u1EA7n qu\u1EA3 quy\u1EBFt h\u01A1n trong c\xE1c cu\u1ED9c h\u1ECDp.",
+          "C1"
+        ],
+        [
+          "gullible",
+          "adj",
+          "\u02C8\u0261\u028Cl\u0259b\u0259l",
+          "c\u1EA3 tin",
+          "Gullible people are easy targets for online scams.",
+          "Ng\u01B0\u1EDDi c\u1EA3 tin l\xE0 m\u1EE5c ti\xEAu d\u1EC5 d\xE0ng c\u1EE7a l\u1EEBa \u0111\u1EA3o tr\xEAn m\u1EA1ng.",
+          "C1"
+        ],
+        [
+          "inquisitive",
+          "adj",
+          "\u02CC\u026An\u02C8kw\u026Az\u026At\u026Av",
+          "ham hi\u1EC3u bi\u1EBFt, t\xF2 m\xF2",
+          "Inquisitive children ask questions about everything.",
+          "Tr\u1EBB ham hi\u1EC3u bi\u1EBFt h\u1ECFi v\u1EC1 m\u1ECDi th\u1EE9.",
+          "C1"
+        ],
+        [
+          "obstinate",
+          "adj",
+          "\u02C8\u0251\u02D0bst\u0259n\u0259t",
+          "b\u01B0\u1EDBng b\u1EC9nh, ngoan c\u1ED1",
+          "He remained obstinate and refused to change his mind.",
+          "Anh ta v\u1EABn ngoan c\u1ED1 v\xE0 kh\xF4ng ch\u1ECBu \u0111\u1ED5i \xFD.",
+          "C1"
+        ],
+        [
+          "steadfast",
+          "adj",
+          "\u02C8sted\u02CCf\xE6st",
+          "ki\xEAn \u0111\u1ECBnh, trung th\xE0nh",
+          "She remained steadfast in her support for the project.",
+          "C\xF4 \u1EA5y v\u1EABn ki\xEAn \u0111\u1ECBnh \u1EE7ng h\u1ED9 d\u1EF1 \xE1n.",
+          "C1"
+        ],
+        [
+          "condescending",
+          "adj",
+          "\u02CCk\u0251\u02D0nd\u026A\u02C8send\u026A\u014B",
+          "k\u1EBB c\u1EA3, tr\u1ECBch th\u01B0\u1EE3ng",
+          "His condescending tone annoyed everyone in the room.",
+          "Gi\u1ECDng k\u1EBB c\u1EA3 c\u1EE7a anh ta l\xE0m m\u1ECDi ng\u01B0\u1EDDi trong ph\xF2ng kh\xF3 ch\u1ECBu.",
+          "C1"
+        ],
+        [
+          "altruistic",
+          "adj",
+          "\u02CC\u0254\u02D0ltru\u02D0\u02C8\u026Ast\u026Ak",
+          "v\u1ECB tha",
+          "Volunteering is often motivated by altruistic reasons.",
+          "Ho\u1EA1t \u0111\u1ED9ng t\xECnh nguy\u1EC7n th\u01B0\u1EDDng xu\u1EA5t ph\xE1t t\u1EEB \u0111\u1ED9ng c\u01A1 v\u1ECB tha.",
+          "C1"
+        ],
+        [
+          "impetuous",
+          "adj",
+          "\u02CC\u026Am\u02C8pet\u0283w\u0259s",
+          "b\u1ED1c \u0111\u1ED3ng, h\u1EA5p t\u1EA5p",
+          "It was an impetuous decision that he later regretted.",
+          "\u0110\xF3 l\xE0 m\u1ED9t quy\u1EBFt \u0111\u1ECBnh b\u1ED1c \u0111\u1ED3ng m\xE0 sau n\xE0y anh \u1EA5y h\u1ED1i ti\u1EBFc.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u2696\uFE0F",
+      "vi": "L\u1EADp lu\u1EADn v\xE0 thuy\u1EBFt ph\u1EE5c",
+      "en": "Argument and Persuasion",
+      "words": [
+        [
+          "allege",
+          "v",
+          "\u0259\u02C8led\u0292",
+          "c\xE1o bu\u1ED9c (ch\u01B0a c\xF3 b\u1EB1ng ch\u1EE9ng)",
+          "The report alleges that the company hid its losses.",
+          "B\u1EA3n b\xE1o c\xE1o c\xE1o bu\u1ED9c c\xF4ng ty \u0111\xE3 che gi\u1EA5u thua l\u1ED7.",
+          "C1"
+        ],
+        [
+          "contend",
+          "v",
+          "k\u0259n\u02C8tend",
+          "cho r\u1EB1ng, \u0111\u1EA5u tranh",
+          "Critics contend that the policy will harm small businesses.",
+          "Nh\u1EEFng ng\u01B0\u1EDDi ch\u1EC9 tr\xEDch cho r\u1EB1ng ch\xEDnh s\xE1ch s\u1EBD g\xE2y h\u1EA1i cho doanh nghi\u1EC7p nh\u1ECF.",
+          "C1"
+        ],
+        [
+          "rebut",
+          "v",
+          "r\u026A\u02C8b\u028Ct",
+          "b\xE1c b\u1ECF, ph\u1EA3n b\xE1c",
+          "The lawyer rebutted every point made by the prosecution.",
+          "Lu\u1EADt s\u01B0 ph\u1EA3n b\xE1c m\u1ECDi lu\u1EADn \u0111i\u1EC3m c\u1EE7a b\xEAn c\xF4ng t\u1ED1.",
+          "C1"
+        ],
+        [
+          "substantiate",
+          "v",
+          "s\u0259b\u02C8st\xE6nt\u0283i\u02CCe\u026At",
+          "ch\u1EE9ng minh, minh ch\u1EE9ng",
+          "There is no evidence to substantiate these allegations.",
+          "Kh\xF4ng c\xF3 b\u1EB1ng ch\u1EE9ng n\xE0o ch\u1EE9ng minh nh\u1EEFng c\xE1o bu\u1ED9c n\xE0y.",
+          "C1"
+        ],
+        [
+          "concur",
+          "v",
+          "k\u0259n\u02C8k\u025C\u02D0r",
+          "\u0111\u1ED3ng t\xECnh",
+          "Most experts concur with this view.",
+          "H\u1EA7u h\u1EBFt chuy\xEAn gia \u0111\u1ED3ng t\xECnh v\u1EDBi quan \u0111i\u1EC3m n\xE0y.",
+          "C1"
+        ],
+        [
+          "compelling",
+          "adj",
+          "k\u0259m\u02C8pel\u026A\u014B",
+          "thuy\u1EBFt ph\u1EE5c, h\u1EA5p d\u1EABn",
+          "She made a compelling case for reducing working hours.",
+          "C\xF4 \u1EA5y \u0111\u01B0a ra l\u1EADp lu\u1EADn r\u1EA5t thuy\u1EBFt ph\u1EE5c cho vi\u1EC7c gi\u1EA3m gi\u1EDD l\xE0m.",
+          "C1"
+        ],
+        [
+          "fallacy",
+          "n",
+          "\u02C8f\xE6l\u0259si",
+          "ng\u1EE5y bi\u1EC7n, quan ni\u1EC7m sai l\u1EA7m",
+          "It is a fallacy that money always brings happiness.",
+          "Ti\u1EC1n lu\xF4n mang l\u1EA1i h\u1EA1nh ph\xFAc l\xE0 m\u1ED9t quan ni\u1EC7m sai l\u1EA7m.",
+          "C1"
+        ],
+        [
+          "premise",
+          "n",
+          "\u02C8prem\u026As",
+          "ti\u1EC1n \u0111\u1EC1",
+          "The whole argument rests on a false premise.",
+          "To\xE0n b\u1ED9 l\u1EADp lu\u1EADn d\u1EF1a tr\xEAn m\u1ED9t ti\u1EC1n \u0111\u1EC1 sai.",
+          "C1"
+        ],
+        [
+          "cogent",
+          "adj",
+          "\u02C8ko\u028Ad\u0292\u0259nt",
+          "ch\u1EB7t ch\u1EBD, c\xF3 s\u1EE9c thuy\u1EBFt ph\u1EE5c",
+          "She presented a cogent argument for change.",
+          "C\xF4 \u1EA5y tr\xECnh b\xE0y m\u1ED9t l\u1EADp lu\u1EADn ch\u1EB7t ch\u1EBD cho s\u1EF1 thay \u0111\u1ED5i.",
+          "C1"
+        ],
+        [
+          "plausible",
+          "adj",
+          "\u02C8pl\u0254\u02D0z\u0259b\u0259l",
+          "h\u1EE3p l\xFD, c\xF3 v\u1EBB \u0111\xFAng",
+          "His explanation sounded plausible at first.",
+          "L\u1EDDi gi\u1EA3i th\xEDch c\u1EE7a anh \u1EA5y l\xFAc \u0111\u1EA7u nghe c\xF3 v\u1EBB h\u1EE3p l\xFD.",
+          "C1"
+        ],
+        [
+          "tenuous",
+          "adj",
+          "\u02C8tenj\u0259w\u0259s",
+          "mong manh, y\u1EBFu \u1EDBt",
+          "The link between the two events is tenuous at best.",
+          "M\u1ED1i li\xEAn h\u1EC7 gi\u1EEFa hai s\u1EF1 ki\u1EC7n n\xE0y nhi\u1EC1u l\u1EAFm c\u0169ng ch\u1EC9 mong manh.",
+          "C1"
+        ],
+        [
+          "debunk",
+          "v",
+          "d\u026A\u02C8b\u028C\u014Bk",
+          "v\u1EA1ch tr\u1EA7n (quan ni\u1EC7m sai)",
+          "The article debunks several common myths about diet.",
+          "B\xE0i b\xE1o v\u1EA1ch tr\u1EA7n m\u1ED9t s\u1ED1 l\u1EA7m t\u01B0\u1EDFng ph\u1ED5 bi\u1EBFn v\u1EC1 \u0103n ki\xEAng.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F52C}",
+      "vi": "Nghi\xEAn c\u1EE9u h\u1ECDc thu\u1EADt",
+      "en": "Academic Research",
+      "words": [
+        [
+          "quantitative",
+          "adj",
+          "\u02C8kw\u0251\u02D0nt\u026A\u02CCte\u026At\u026Av",
+          "\u0111\u1ECBnh l\u01B0\u1EE3ng",
+          "The study combines quantitative and qualitative data.",
+          "Nghi\xEAn c\u1EE9u k\u1EBFt h\u1EE3p d\u1EEF li\u1EC7u \u0111\u1ECBnh l\u01B0\u1EE3ng v\xE0 \u0111\u1ECBnh t\xEDnh.",
+          "C1"
+        ],
+        [
+          "empirical",
+          "adj",
+          "\u02CCem\u02C8p\u026Ar\u026Ak\u0259l",
+          "th\u1EF1c nghi\u1EC7m",
+          "The theory lacks empirical support.",
+          "L\xFD thuy\u1EBFt n\xE0y thi\u1EBFu c\u01A1 s\u1EDF th\u1EF1c nghi\u1EC7m.",
+          "C1"
+        ],
+        [
+          "methodology",
+          "n",
+          "\u02CCme\u03B8\u0259\u02C8d\u0251\u02D0l\u0259d\u0292i",
+          "ph\u01B0\u01A1ng ph\xE1p lu\u1EADn",
+          "The methodology of the study has been widely criticised.",
+          "Ph\u01B0\u01A1ng ph\xE1p lu\u1EADn c\u1EE7a nghi\xEAn c\u1EE9u \u0111\xE3 b\u1ECB ch\u1EC9 tr\xEDch r\u1ED9ng r\xE3i.",
+          "C1"
+        ],
+        [
+          "qualitative",
+          "adj",
+          "\u02C8kw\u0251\u02D0l\u0259\u02CCte\u026At\u026Av",
+          "\u0111\u1ECBnh t\xEDnh",
+          "Interviews provide useful qualitative information.",
+          "Ph\u1ECFng v\u1EA5n cung c\u1EA5p th\xF4ng tin \u0111\u1ECBnh t\xEDnh h\u1EEFu \xEDch.",
+          "C1"
+        ],
+        [
+          "causation",
+          "n",
+          "\u02CCk\u0254\u02D0\u02C8ze\u026A\u0283\u0259n",
+          "quan h\u1EC7 nh\xE2n qu\u1EA3",
+          "Correlation does not imply causation.",
+          "T\u01B0\u01A1ng quan kh\xF4ng c\xF3 ngh\u0129a l\xE0 c\xF3 quan h\u1EC7 nh\xE2n qu\u1EA3.",
+          "C1"
+        ],
+        [
+          "anomaly",
+          "n",
+          "\u0259\u02C8n\u0251\u02D0m\u0259li",
+          "\u0111i\u1EC1u b\u1EA5t th\u01B0\u1EDDng, d\u1ECB th\u01B0\u1EDDng",
+          "The researchers could not explain the anomaly in the results.",
+          "C\xE1c nh\xE0 nghi\xEAn c\u1EE9u kh\xF4ng gi\u1EA3i th\xEDch \u0111\u01B0\u1EE3c \u0111i\u1EC3m b\u1EA5t th\u01B0\u1EDDng trong k\u1EBFt qu\u1EA3.",
+          "C1"
+        ],
+        [
+          "replicate",
+          "v",
+          "\u02C8repl\u0259\u02CCke\u026At",
+          "l\u1EB7p l\u1EA1i (th\xED nghi\u1EC7m)",
+          "Other scientists failed to replicate the findings.",
+          "C\xE1c nh\xE0 khoa h\u1ECDc kh\xE1c kh\xF4ng l\u1EB7p l\u1EA1i \u0111\u01B0\u1EE3c k\u1EBFt qu\u1EA3 \u0111\xF3.",
+          "C1"
+        ],
+        [
+          "inconclusive",
+          "adj",
+          "\u02CC\u026Ank\u0259n\u02C8klu\u02D0s\u026Av",
+          "ch\u01B0a \u0111i \u0111\u1EBFn k\u1EBFt lu\u1EADn",
+          "The evidence remains inconclusive.",
+          "B\u1EB1ng ch\u1EE9ng v\u1EABn ch\u01B0a \u0111\u1EE7 \u0111\u1EC3 k\u1EBFt lu\u1EADn.",
+          "C1"
+        ],
+        [
+          "paradigm",
+          "n",
+          "\u02C8per\u0259\u02CCda\u026Am",
+          "m\xF4 h\xECnh, h\u1EC7 t\u01B0 t\u01B0\u1EDFng",
+          "The discovery led to a paradigm shift in physics.",
+          "Ph\xE1t hi\u1EC7n n\xE0y d\u1EABn t\u1EDBi s\u1EF1 thay \u0111\u1ED5i h\u1EC7 t\u01B0 t\u01B0\u1EDFng trong v\u1EADt l\xFD.",
+          "C1"
+        ],
+        [
+          "discrepancy",
+          "n",
+          "d\u026A\u02C8skrep\u0259nsi",
+          "s\u1EF1 ch\xEAnh l\u1EC7ch, kh\xF4ng kh\u1EDBp",
+          "There is a discrepancy between the two sets of figures.",
+          "C\xF3 s\u1EF1 kh\xF4ng kh\u1EDBp gi\u1EEFa hai b\u1ED9 s\u1ED1 li\u1EC7u.",
+          "C1"
+        ],
+        [
+          "corroborate",
+          "v",
+          "k\u0259r\u02C8\u0251\u02D0b\u0259r\u02CCe\u026At",
+          "x\xE1c nh\u1EADn, c\u1EE7ng c\u1ED1 (b\u1EB1ng ch\u1EE9ng)",
+          "Witnesses corroborated her version of events.",
+          "C\xE1c nh\xE2n ch\u1EE9ng x\xE1c nh\u1EADn l\u1EDDi k\u1EC3 c\u1EE7a c\xF4 \u1EA5y.",
+          "C1"
+        ],
+        [
+          "extrapolate",
+          "v",
+          "ek\u02C8str\xE6p\u0259\u02CCle\u026At",
+          "suy r\u1ED9ng, ngo\u1EA1i suy",
+          "It is risky to extrapolate from such a small sample.",
+          "Suy r\u1ED9ng t\u1EEB m\u1ED9t m\u1EABu nh\u1ECF nh\u01B0 v\u1EADy l\xE0 r\u1EE7i ro.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F4C8}",
+      "vi": "Thay \u0111\u1ED5i v\xE0 xu h\u01B0\u1EDBng",
+      "en": "Change and Trends",
+      "words": [
+        [
+          "escalate",
+          "v",
+          "\u02C8esk\u0259\u02CCle\u026At",
+          "leo thang",
+          "The dispute quickly escalated into a crisis.",
+          "Cu\u1ED9c tranh ch\u1EA5p nhanh ch\xF3ng leo thang th\xE0nh kh\u1EE7ng ho\u1EA3ng.",
+          "C1"
+        ],
+        [
+          "skyrocket",
+          "v",
+          "\u02C8ska\u026A\u02CCr\u0251\u02D0k\u0259t",
+          "t\u0103ng v\u1ECDt",
+          "Rents have skyrocketed in the city centre.",
+          "Gi\xE1 thu\xEA nh\xE0 \u1EDF trung t\xE2m th\xE0nh ph\u1ED1 t\u0103ng v\u1ECDt.",
+          "C1"
+        ],
+        [
+          "taper",
+          "v",
+          "\u02C8te\u026Ap\u0259r",
+          "thu nh\u1ECF d\u1EA7n, gi\u1EA3m d\u1EA7n",
+          "Demand began to taper off in the autumn.",
+          "Nhu c\u1EA7u b\u1EAFt \u0111\u1EA7u gi\u1EA3m d\u1EA7n v\xE0o m\xF9a thu.",
+          "C1"
+        ],
+        [
+          "oscillate",
+          "v",
+          "\u02C8\u0251\u02D0s\u0259\u02CCle\u026At",
+          "dao \u0111\u1ED9ng qua l\u1EA1i",
+          "Public opinion oscillated between hope and fear.",
+          "D\u01B0 lu\u1EADn dao \u0111\u1ED9ng gi\u1EEFa hy v\u1ECDng v\xE0 lo s\u1EE3.",
+          "C1"
+        ],
+        [
+          "stagnate",
+          "v",
+          "\u02C8st\xE6\u0261\u02CCne\u026At",
+          "tr\xEC tr\u1EC7",
+          "Wages have stagnated while living costs have risen.",
+          "Ti\u1EC1n l\u01B0\u01A1ng tr\xEC tr\u1EC7 trong khi chi ph\xED sinh ho\u1EA1t t\u0103ng.",
+          "C1"
+        ],
+        [
+          "dwindle",
+          "v",
+          "\u02C8dw\u026And\u0259l",
+          "thu h\u1EB9p d\u1EA7n, gi\u1EA3m d\u1EA7n",
+          "The number of local shops has dwindled.",
+          "S\u1ED1 l\u01B0\u1EE3ng c\u1EEDa h\xE0ng \u0111\u1ECBa ph\u01B0\u01A1ng gi\u1EA3m d\u1EA7n.",
+          "C1"
+        ],
+        [
+          "upsurge",
+          "n",
+          "\u02C8\u028Cp\u02CCs\u025C\u02D0rd\u0292",
+          "s\u1EF1 gia t\u0103ng m\u1EA1nh",
+          "There has been an upsurge in online shopping.",
+          "Mua s\u1EAFm tr\u1EF1c tuy\u1EBFn \u0111\xE3 gia t\u0103ng m\u1EA1nh.",
+          "C1"
+        ],
+        [
+          "unprecedented",
+          "adj",
+          "\u0259n\u02C8pres\u026A\u02CCdent\u026Ad",
+          "ch\u01B0a t\u1EEBng c\xF3",
+          "The company has grown at an unprecedented rate.",
+          "C\xF4ng ty ph\xE1t tri\u1EC3n v\u1EDBi t\u1ED1c \u0111\u1ED9 ch\u01B0a t\u1EEBng c\xF3.",
+          "C1"
+        ],
+        [
+          "incremental",
+          "adj",
+          "\u02CC\u026Ankr\u0259\u02C8ment\u0259l",
+          "t\u0103ng d\u1EA7n, t\u1EEBng b\u01B0\u1EDBc",
+          "We made incremental improvements to the design.",
+          "Ch\xFAng t\xF4i c\u1EA3i ti\u1EBFn thi\u1EBFt k\u1EBF t\u1EEBng b\u01B0\u1EDBc.",
+          "C1"
+        ],
+        [
+          "irreversible",
+          "adj",
+          "\u02CC\u026Ar\u026A\u02C8v\u025C\u02D0rs\u0259b\u0259l",
+          "kh\xF4ng th\u1EC3 \u0111\u1EA3o ng\u01B0\u1EE3c",
+          "Some damage to the environment is irreversible.",
+          "M\u1ED9t s\u1ED1 t\u1ED5n h\u1EA1i \u0111\u1ED1i v\u1EDBi m\xF4i tr\u01B0\u1EDDng l\xE0 kh\xF4ng th\u1EC3 \u0111\u1EA3o ng\u01B0\u1EE3c.",
+          "C1"
+        ],
+        [
+          "flux",
+          "n",
+          "fl\u028Cks",
+          "s\u1EF1 thay \u0111\u1ED5i li\xEAn t\u1EE5c",
+          "The industry is in a state of flux.",
+          "Ng\xE0nh n\xE0y \u0111ang trong t\xECnh tr\u1EA1ng thay \u0111\u1ED5i li\xEAn t\u1EE5c.",
+          "C1"
+        ],
+        [
+          "precipitate",
+          "v",
+          "pr\u026A\u02C8s\u026Ap\u026A\u02CCte\u026At",
+          "\u0111\u1EA9y nhanh, g\xE2y ra \u0111\u1ED9t ng\u1ED9t",
+          "The crisis precipitated the collapse of the government.",
+          "Cu\u1ED9c kh\u1EE7ng ho\u1EA3ng \u0111\xE3 \u0111\u1EA9y nhanh s\u1EF1 s\u1EE5p \u0111\u1ED5 c\u1EE7a ch\xEDnh ph\u1EE7.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F3DB}\uFE0F",
+      "vi": "Ch\xEDnh tr\u1ECB v\xE0 qu\u1EA3n tr\u1ECB",
+      "en": "Politics and Governance",
+      "words": [
+        [
+          "enact",
+          "v",
+          "\u026A\u02C8n\xE6kt",
+          "ban h\xE0nh (lu\u1EADt)",
+          "Parliament enacted a new law on data protection.",
+          "Qu\u1ED1c h\u1ED9i ban h\xE0nh lu\u1EADt m\u1EDBi v\u1EC1 b\u1EA3o v\u1EC7 d\u1EEF li\u1EC7u.",
+          "C1"
+        ],
+        [
+          "mandate",
+          "n",
+          "\u02C8m\xE6n\u02CCde\u026At",
+          "s\u1EF1 \u1EE7y nhi\u1EC7m, quy\u1EC1n h\u1EA1n",
+          "The government has a clear mandate to reform healthcare.",
+          "Ch\xEDnh ph\u1EE7 \u0111\u01B0\u1EE3c \u1EE7y nhi\u1EC7m r\xF5 r\xE0ng \u0111\u1EC3 c\u1EA3i c\xE1ch y t\u1EBF.",
+          "C1"
+        ],
+        [
+          "sovereignty",
+          "n",
+          "\u02C8s\u0251\u02D0vr\u0259nti",
+          "ch\u1EE7 quy\u1EC1n",
+          "The treaty respects the sovereignty of each nation.",
+          "Hi\u1EC7p \u01B0\u1EDBc t\xF4n tr\u1ECDng ch\u1EE7 quy\u1EC1n c\u1EE7a m\u1ED7i qu\u1ED1c gia.",
+          "C1"
+        ],
+        [
+          "electorate",
+          "n",
+          "\u026A\u02C8lekt\u0259r\u0259t",
+          "to\xE0n th\u1EC3 c\u1EED tri",
+          "The electorate is tired of broken promises.",
+          "C\u1EED tri \u0111\xE3 m\u1EC7t m\u1ECFi v\u1EDBi nh\u1EEFng l\u1EDDi h\u1EE9a su\xF4ng.",
+          "C1"
+        ],
+        [
+          "accountability",
+          "n",
+          "\u0259\u02C8ka\u028Ant\u0259\u02CCb\u026Al\u026Ati",
+          "tr\xE1ch nhi\u1EC7m gi\u1EA3i tr\xECnh",
+          "There must be greater accountability in public spending.",
+          "C\u1EA7n c\xF3 tr\xE1ch nhi\u1EC7m gi\u1EA3i tr\xECnh l\u1EDBn h\u01A1n trong chi ti\xEAu c\xF4ng.",
+          "C1"
+        ],
+        [
+          "referendum",
+          "n",
+          "\u02CCref\u0259r\u02C8end\u0259m",
+          "cu\u1ED9c tr\u01B0ng c\u1EA7u d\xE2n \xFD",
+          "The issue was decided by a national referendum.",
+          "V\u1EA5n \u0111\u1EC1 \u0111\u01B0\u1EE3c quy\u1EBFt \u0111\u1ECBnh b\u1EB1ng cu\u1ED9c tr\u01B0ng c\u1EA7u d\xE2n \xFD to\xE0n qu\u1ED1c.",
+          "C1"
+        ],
+        [
+          "constituency",
+          "n",
+          "k\u0259n\u02C8st\u026At\u0283u\u02D0\u0259nsi",
+          "khu v\u1EF1c b\u1EA7u c\u1EED",
+          "He represents a rural constituency.",
+          "\xD4ng \u1EA5y \u0111\u1EA1i di\u1EC7n cho m\u1ED9t khu v\u1EF1c b\u1EA7u c\u1EED n\xF4ng th\xF4n.",
+          "C1"
+        ],
+        [
+          "incumbent",
+          "n",
+          "\u02CC\u026An\u02C8k\u028Cmb\u0259nt",
+          "ng\u01B0\u1EDDi \u0111\u01B0\u01A1ng nhi\u1EC7m",
+          "The incumbent was re-elected with a large majority.",
+          "Ng\u01B0\u1EDDi \u0111\u01B0\u01A1ng nhi\u1EC7m t\xE1i \u0111\u1EAFc c\u1EED v\u1EDBi \u0111a s\u1ED1 phi\u1EBFu l\u1EDBn.",
+          "C1"
+        ],
+        [
+          "bipartisan",
+          "adj",
+          "ba\u026A\u02C8p\u0251\u02D0rt\u026Az\u0259n",
+          "c\xF3 s\u1EF1 \u1EE7ng h\u1ED9 c\u1EE7a c\u1EA3 hai \u0111\u1EA3ng",
+          "The bill received bipartisan support.",
+          "D\u1EF1 lu\u1EADt nh\u1EADn \u0111\u01B0\u1EE3c s\u1EF1 \u1EE7ng h\u1ED9 c\u1EE7a c\u1EA3 hai \u0111\u1EA3ng.",
+          "C1"
+        ],
+        [
+          "ratify",
+          "v",
+          "\u02C8r\xE6t\u0259\u02CCfa\u026A",
+          "ph\xEA chu\u1EA9n",
+          "Parliament has yet to ratify the agreement.",
+          "Qu\u1ED1c h\u1ED9i v\u1EABn ch\u01B0a ph\xEA chu\u1EA9n hi\u1EC7p \u0111\u1ECBnh.",
+          "C1"
+        ],
+        [
+          "dissent",
+          "n",
+          "d\u026A\u02C8sent",
+          "s\u1EF1 b\u1EA5t \u0111\u1ED3ng ch\xEDnh ki\u1EBFn",
+          "There was little dissent within the party.",
+          "C\xF3 r\u1EA5t \xEDt s\u1EF1 b\u1EA5t \u0111\u1ED3ng trong \u0111\u1EA3ng.",
+          "C1"
+        ],
+        [
+          "veto",
+          "v",
+          "\u02C8vi\u02D0\u02CCto\u028A",
+          "ph\u1EE7 quy\u1EBFt",
+          "The president vetoed the bill.",
+          "T\u1ED5ng th\u1ED1ng \u0111\xE3 ph\u1EE7 quy\u1EBFt d\u1EF1 lu\u1EADt.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F9D1}\u200D\u2696\uFE0F",
+      "vi": "Lu\u1EADt ph\xE1p v\xE0 c\xF4ng l\xFD",
+      "en": "Law and Justice",
+      "words": [
+        [
+          "jurisdiction",
+          "n",
+          "\u02CCd\u0292\u028Ar\u0259s\u02C8d\u026Ak\u0283\u0259n",
+          "quy\u1EC1n t\xE0i ph\xE1n, th\u1EA9m quy\u1EC1n",
+          "The case falls outside the court's jurisdiction.",
+          "V\u1EE5 \xE1n n\u1EB1m ngo\xE0i th\u1EA9m quy\u1EC1n c\u1EE7a t\xF2a.",
+          "C1"
+        ],
+        [
+          "litigation",
+          "n",
+          "\u02CCl\u026At\u0259\u02C8\u0261e\u026A\u0283\u0259n",
+          "s\u1EF1 ki\u1EC7n t\u1EE5ng",
+          "The dispute ended in costly litigation.",
+          "Tranh ch\u1EA5p k\u1EBFt th\xFAc b\u1EB1ng m\u1ED9t v\u1EE5 ki\u1EC7n t\u1EE5ng t\u1ED1n k\xE9m.",
+          "C1"
+        ],
+        [
+          "plaintiff",
+          "n",
+          "\u02C8ple\u026Ant\u0259f",
+          "nguy\xEAn \u0111\u01A1n",
+          "The plaintiff is seeking compensation for damages.",
+          "Nguy\xEAn \u0111\u01A1n \u0111ang \u0111\xF2i b\u1ED3i th\u01B0\u1EDDng thi\u1EC7t h\u1EA1i.",
+          "C1"
+        ],
+        [
+          "verdict",
+          "n",
+          "\u02C8v\u025C\u02D0rd\u026Akt",
+          "ph\xE1n quy\u1EBFt",
+          "The jury reached a unanimous verdict.",
+          "B\u1ED3i th\u1EA9m \u0111o\xE0n \u0111\xE3 \u0111\u01B0a ra ph\xE1n quy\u1EBFt nh\u1EA5t tr\xED.",
+          "C1"
+        ],
+        [
+          "acquit",
+          "v",
+          "\u0259\u02C8kw\u026At",
+          "tuy\xEAn tr\u1EAFng \xE1n",
+          "She was acquitted of all charges.",
+          "C\xF4 \u1EA5y \u0111\u01B0\u1EE3c tuy\xEAn tr\u1EAFng \xE1n \u0111\u1ED1i v\u1EDBi m\u1ECDi c\xE1o bu\u1ED9c.",
+          "C1"
+        ],
+        [
+          "indict",
+          "v",
+          "\u02CC\u026An\u02C8da\u026At",
+          "truy t\u1ED1, bu\u1ED9c t\u1ED9i",
+          "He was indicted on charges of fraud.",
+          "\xD4ng ta b\u1ECB truy t\u1ED1 v\u1EC1 t\u1ED9i l\u1EEBa \u0111\u1EA3o.",
+          "C1"
+        ],
+        [
+          "perjury",
+          "n",
+          "\u02C8p\u025C\u02D0rd\u0292\u0259ri",
+          "t\u1ED9i khai man tr\u01B0\u1EDBc t\xF2a",
+          "The witness was charged with perjury.",
+          "Nh\xE2n ch\u1EE9ng b\u1ECB bu\u1ED9c t\u1ED9i khai man tr\u01B0\u1EDBc t\xF2a.",
+          "C1"
+        ],
+        [
+          "contravene",
+          "v",
+          "\u02C8k\u0251\u02D0ntr\u0259\u02CCvi\u02D0n",
+          "vi ph\u1EA1m (lu\u1EADt, quy \u0111\u1ECBnh)",
+          "The advert contravened the code of practice.",
+          "M\u1EABu qu\u1EA3ng c\xE1o vi ph\u1EA1m quy t\u1EAFc h\xE0nh ngh\u1EC1.",
+          "C1"
+        ],
+        [
+          "precedent",
+          "n",
+          "\u02C8pres\u026Ad\u0259nt",
+          "ti\u1EC1n l\u1EC7",
+          "The ruling set an important legal precedent.",
+          "Ph\xE1n quy\u1EBFt \u0111\xE3 t\u1EA1o ra m\u1ED9t ti\u1EC1n l\u1EC7 ph\xE1p l\xFD quan tr\u1ECDng.",
+          "C1"
+        ],
+        [
+          "statutory",
+          "adj",
+          "\u02C8st\xE6t\u0283\u0259\u02CCt\u0254\u02D0ri",
+          "theo lu\u1EADt \u0111\u1ECBnh",
+          "Employees are entitled to statutory holiday pay.",
+          "Nh\xE2n vi\xEAn \u0111\u01B0\u1EE3c h\u01B0\u1EDFng l\u01B0\u01A1ng ngh\u1EC9 ph\xE9p theo lu\u1EADt \u0111\u1ECBnh.",
+          "C1"
+        ],
+        [
+          "culpable",
+          "adj",
+          "\u02C8k\u028Clp\u0259b\u0259l",
+          "c\xF3 l\u1ED7i, \u0111\xE1ng b\u1ECB khi\u1EC3n tr\xE1ch",
+          "The court found the company culpable for the accident.",
+          "T\xF2a \xE1n x\xE1c \u0111\u1ECBnh c\xF4ng ty c\xF3 l\u1ED7i trong v\u1EE5 tai n\u1EA1n.",
+          "C1"
+        ],
+        [
+          "leniency",
+          "n",
+          "\u02C8li\u02D0nj\u0259nsi",
+          "s\u1EF1 khoan h\u1ED3ng",
+          "The judge showed leniency because of his age.",
+          "Th\u1EA9m ph\xE1n khoan h\u1ED3ng v\xEC tu\u1ED5i t\xE1c c\u1EE7a anh ta.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F4B0}",
+      "vi": "Kinh t\u1EBF v\xE0 t\xE0i ch\xEDnh",
+      "en": "Economy and Finance",
+      "words": [
+        [
+          "austerity",
+          "n",
+          "\u02CC\u0254\u02D0\u02C8ster\u026Ati",
+          "ch\xEDnh s\xE1ch th\u1EAFt l\u01B0ng bu\u1ED9c b\u1EE5ng",
+          "Years of austerity have hit public services hard.",
+          "Nhi\u1EC1u n\u0103m th\u1EAFt l\u01B0ng bu\u1ED9c b\u1EE5ng \u0111\xE3 \u1EA3nh h\u01B0\u1EDFng n\u1EB7ng n\u1EC1 t\u1EDBi d\u1ECBch v\u1EE5 c\xF4ng.",
+          "C1"
+        ],
+        [
+          "collateral",
+          "n",
+          "k\u0259\u02C8l\xE6t\u0259r\u0259l",
+          "t\xE0i s\u1EA3n th\u1EBF ch\u1EA5p",
+          "He used his house as collateral for the loan.",
+          "Anh \u1EA5y d\xF9ng c\u0103n nh\xE0 l\xE0m t\xE0i s\u1EA3n th\u1EBF ch\u1EA5p cho kho\u1EA3n vay.",
+          "C1"
+        ],
+        [
+          "remittance",
+          "n",
+          "ri\u02C8m\u026At\u0259ns",
+          "ki\u1EC1u h\u1ED1i, kho\u1EA3n ti\u1EC1n g\u1EEDi v\u1EC1",
+          "Remittances from workers abroad support many families.",
+          "Ki\u1EC1u h\u1ED1i t\u1EEB ng\u01B0\u1EDDi lao \u0111\u1ED9ng \u1EDF n\u01B0\u1EDBc ngo\xE0i nu\xF4i s\u1ED1ng nhi\u1EC1u gia \u0111\xECnh.",
+          "C1"
+        ],
+        [
+          "monetary",
+          "adj",
+          "\u02C8m\u0251\u02D0n\u0259\u02CCteri",
+          "thu\u1ED9c ti\u1EC1n t\u1EC7",
+          "The central bank controls monetary policy.",
+          "Ng\xE2n h\xE0ng trung \u01B0\u01A1ng ki\u1EC3m so\xE1t ch\xEDnh s\xE1ch ti\u1EC1n t\u1EC7.",
+          "C1"
+        ],
+        [
+          "levy",
+          "n",
+          "\u02C8levi",
+          "kho\u1EA3n thu\u1EBF, ph\xED b\u1EAFt bu\u1ED9c",
+          "The government introduced a levy on sugary drinks.",
+          "Ch\xEDnh ph\u1EE7 \xE1p m\u1ED9t kho\u1EA3n thu\u1EBF l\xEAn \u0111\u1ED3 u\u1ED1ng c\xF3 \u0111\u01B0\u1EDDng.",
+          "C1"
+        ],
+        [
+          "downturn",
+          "n",
+          "\u02C8da\u028An\u02CCt\u025C\u02D0rn",
+          "s\u1EF1 suy tho\xE1i, \u0111i xu\u1ED1ng",
+          "The tourism industry suffered during the economic downturn.",
+          "Ng\xE0nh du l\u1ECBch ch\u1ECBu thi\u1EC7t h\u1EA1i trong th\u1EDDi k\u1EF3 kinh t\u1EBF \u0111i xu\u1ED1ng.",
+          "C1"
+        ],
+        [
+          "creditor",
+          "n",
+          "\u02C8kred\u0259t\u0259r",
+          "ch\u1EE7 n\u1EE3",
+          "The company could not pay its creditors.",
+          "C\xF4ng ty kh\xF4ng th\u1EC3 tr\u1EA3 ti\u1EC1n cho c\xE1c ch\u1EE7 n\u1EE3.",
+          "C1"
+        ],
+        [
+          "volatile",
+          "adj",
+          "\u02C8v\u0251\u02D0l\u0259t\u0259l",
+          "bi\u1EBFn \u0111\u1ED9ng m\u1EA1nh",
+          "Cryptocurrency prices are highly volatile.",
+          "Gi\xE1 ti\u1EC1n m\xE3 h\xF3a bi\u1EBFn \u0111\u1ED9ng r\u1EA5t m\u1EA1nh.",
+          "C1"
+        ],
+        [
+          "liquidity",
+          "n",
+          "l\u026A\u02C8kw\u026Ad\u0259ti",
+          "t\xEDnh thanh kho\u1EA3n",
+          "Banks must maintain sufficient liquidity.",
+          "C\xE1c ng\xE2n h\xE0ng ph\u1EA3i duy tr\xEC \u0111\u1EE7 thanh kho\u1EA3n.",
+          "C1"
+        ],
+        [
+          "tariff",
+          "n",
+          "\u02C8ter\u0259f",
+          "thu\u1EBF quan",
+          "The new tariffs made imported cars more expensive.",
+          "Thu\u1EBF quan m\u1EDBi khi\u1EBFn \xF4 t\xF4 nh\u1EADp kh\u1EA9u \u0111\u1EAFt h\u01A1n.",
+          "C1"
+        ],
+        [
+          "inflationary",
+          "adj",
+          "\u02CC\u026An\u02C8fle\u026A\u0283\u0259\u02CCneri",
+          "g\xE2y l\u1EA1m ph\xE1t",
+          "Printing money can have an inflationary effect.",
+          "In ti\u1EC1n c\xF3 th\u1EC3 g\xE2y ra t\xE1c \u0111\u1ED9ng l\u1EA1m ph\xE1t.",
+          "C1"
+        ],
+        [
+          "insolvent",
+          "adj",
+          "\u02CC\u026An\u02C8s\u0251\u02D0lv\u0259nt",
+          "v\u1EE1 n\u1EE3, m\u1EA5t kh\u1EA3 n\u0103ng thanh to\xE1n",
+          "The airline was declared insolvent.",
+          "H\xE3ng h\xE0ng kh\xF4ng b\u1ECB tuy\xEAn b\u1ED1 m\u1EA5t kh\u1EA3 n\u0103ng thanh to\xE1n.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F9E9}",
+      "vi": "Chi\u1EBFn l\u01B0\u1EE3c kinh doanh",
+      "en": "Business Strategy",
+      "words": [
+        [
+          "leverage",
+          "v",
+          "\u02C8lev\u0259r\u026Ad\u0292",
+          "t\u1EADn d\u1EE5ng, khai th\xE1c",
+          "We can leverage our brand to enter new markets.",
+          "Ch\xFAng ta c\xF3 th\u1EC3 t\u1EADn d\u1EE5ng th\u01B0\u01A1ng hi\u1EC7u \u0111\u1EC3 th\xE2m nh\u1EADp th\u1ECB tr\u01B0\u1EDDng m\u1EDBi.",
+          "C1"
+        ],
+        [
+          "diversify",
+          "v",
+          "da\u026A\u02C8v\u025C\u02D0rs\u0259\u02CCfa\u026A",
+          "\u0111a d\u1EA1ng h\xF3a",
+          "The firm decided to diversify into renewable energy.",
+          "C\xF4ng ty quy\u1EBFt \u0111\u1ECBnh \u0111a d\u1EA1ng h\xF3a sang n\u0103ng l\u01B0\u1EE3ng t\xE1i t\u1EA1o.",
+          "C1"
+        ],
+        [
+          "consolidate",
+          "v",
+          "k\u0259n\u02C8s\u0251\u02D0l\u026A\u02CCde\u026At",
+          "c\u1EE7ng c\u1ED1, h\u1EE3p nh\u1EA5t",
+          "The company plans to consolidate its position in Asia.",
+          "C\xF4ng ty d\u1EF1 \u0111\u1ECBnh c\u1EE7ng c\u1ED1 v\u1ECB th\u1EBF t\u1EA1i ch\xE2u \xC1.",
+          "C1"
+        ],
+        [
+          "conglomerate",
+          "n",
+          "k\u0259n\u02C8\u0261l\u0251\u02D0m\u0259r\u0259t",
+          "t\u1EADp \u0111o\xE0n \u0111a ng\xE0nh",
+          "The brand is owned by a huge conglomerate.",
+          "Th\u01B0\u01A1ng hi\u1EC7u thu\u1ED9c v\u1EC1 m\u1ED9t t\u1EADp \u0111o\xE0n \u0111a ng\xE0nh kh\u1ED5ng l\u1ED3.",
+          "C1"
+        ],
+        [
+          "divest",
+          "v",
+          "da\u026A\u02C8vest",
+          "tho\xE1i v\u1ED1n, b\xE1n b\u1EDBt",
+          "The group divested its hotel business.",
+          "T\u1EADp \u0111o\xE0n \u0111\xE3 tho\xE1i v\u1ED1n kh\u1ECFi m\u1EA3ng kinh doanh kh\xE1ch s\u1EA1n.",
+          "C1"
+        ],
+        [
+          "synergy",
+          "n",
+          "\u02C8s\u026An\u0259rd\u0292i",
+          "s\u1EE9c m\u1EA1nh c\u1ED9ng h\u01B0\u1EDFng",
+          "The merger will create synergy between the two firms.",
+          "V\u1EE5 s\xE1p nh\u1EADp s\u1EBD t\u1EA1o s\u1EE9c m\u1EA1nh c\u1ED9ng h\u01B0\u1EDFng gi\u1EEFa hai c\xF4ng ty.",
+          "C1"
+        ],
+        [
+          "benchmark",
+          "n",
+          "\u02C8bent\u0283\u02CCm\u0251\u02D0rk",
+          "chu\u1EA9n so s\xE1nh",
+          "These results will serve as a benchmark for future projects.",
+          "Nh\u1EEFng k\u1EBFt qu\u1EA3 n\xE0y s\u1EBD l\xE0 chu\u1EA9n so s\xE1nh cho c\xE1c d\u1EF1 \xE1n sau.",
+          "C1"
+        ],
+        [
+          "viable",
+          "adj",
+          "\u02C8va\u026A\u0259b\u0259l",
+          "kh\u1EA3 thi",
+          "Is this business model financially viable?",
+          "M\xF4 h\xECnh kinh doanh n\xE0y c\xF3 kh\u1EA3 thi v\u1EC1 t\xE0i ch\xEDnh kh\xF4ng?",
+          "C1"
+        ],
+        [
+          "scalable",
+          "adj",
+          "\u02C8ske\u026Al\u0259b\u0259l",
+          "c\xF3 th\u1EC3 m\u1EDF r\u1ED9ng quy m\xF4",
+          "Investors are looking for scalable start-ups.",
+          "Nh\xE0 \u0111\u1EA7u t\u01B0 \u0111ang t\xECm c\xE1c c\xF4ng ty kh\u1EDFi nghi\u1EC7p c\xF3 th\u1EC3 m\u1EDF r\u1ED9ng quy m\xF4.",
+          "C1"
+        ],
+        [
+          "niche",
+          "n",
+          "n\u026At\u0283",
+          "th\u1ECB tr\u01B0\u1EDDng ng\xE1ch",
+          "The company found a profitable niche in eco-friendly packaging.",
+          "C\xF4ng ty t\xECm \u0111\u01B0\u1EE3c m\u1ED9t th\u1ECB tr\u01B0\u1EDDng ng\xE1ch sinh l\u1EDDi l\xE0 bao b\xEC th\xE2n thi\u1EC7n m\xF4i tr\u01B0\u1EDDng.",
+          "C1"
+        ],
+        [
+          "streamline",
+          "v",
+          "\u02C8stri\u02D0m\u02CCla\u026An",
+          "tinh gi\u1EA3n, h\u1EE3p l\xFD h\xF3a",
+          "We need to streamline the ordering process.",
+          "Ch\xFAng ta c\u1EA7n tinh gi\u1EA3n quy tr\xECnh \u0111\u1EB7t h\xE0ng.",
+          "C1"
+        ],
+        [
+          "contingency",
+          "n",
+          "k\u0259n\u02C8t\u026And\u0292\u0259nsi",
+          "t\xECnh hu\u1ED1ng b\u1EA5t ng\u1EDD, d\u1EF1 ph\xF2ng",
+          "We have a contingency plan in case the supplier fails.",
+          "Ch\xFAng t\xF4i c\xF3 k\u1EBF ho\u1EA1ch d\u1EF1 ph\xF2ng n\u1EBFu nh\xE0 cung c\u1EA5p g\u1EB7p s\u1EF1 c\u1ED1.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F454}",
+      "vi": "L\xE3nh \u0111\u1EA1o v\xE0 c\xF4ng s\u1EDF",
+      "en": "Leadership and the Workplace",
+      "words": [
+        [
+          "meritocracy",
+          "n",
+          "mer\u026A\u02C8t\u0254\u02D0kr\u0259si",
+          "ch\u1EBF \u0111\u1ED9 tr\u1ECDng nh\xE2n t\xE0i",
+          "The firm prides itself on being a meritocracy.",
+          "C\xF4ng ty t\u1EF1 h\xE0o l\xE0 n\u01A1i tr\u1ECDng nh\xE2n t\xE0i.",
+          "C1"
+        ],
+        [
+          "autonomy",
+          "n",
+          "\u0254\u02D0\u02C8t\u0251\u02D0n\u0259mi",
+          "quy\u1EC1n t\u1EF1 ch\u1EE7",
+          "Employees value autonomy over how they work.",
+          "Nh\xE2n vi\xEAn coi tr\u1ECDng quy\u1EC1n t\u1EF1 ch\u1EE7 trong c\xE1ch l\xE0m vi\u1EC7c.",
+          "C1"
+        ],
+        [
+          "perk",
+          "n",
+          "p\u025C\u02D0rk",
+          "\u0111\u1EB7c quy\u1EC1n, ph\xFAc l\u1EE3i th\xEAm",
+          "Free lunches are one of the perks of the job.",
+          "B\u1EEFa tr\u01B0a mi\u1EC5n ph\xED l\xE0 m\u1ED9t trong nh\u1EEFng ph\xFAc l\u1EE3i c\u1EE7a c\xF4ng vi\u1EC7c.",
+          "C1"
+        ],
+        [
+          "morale",
+          "n",
+          "m\u0259r\u02C8\xE6l",
+          "tinh th\u1EA7n (t\u1EADp th\u1EC3)",
+          "Staff morale is low after the job cuts.",
+          "Tinh th\u1EA7n nh\xE2n vi\xEAn \u0111i xu\u1ED1ng sau \u0111\u1EE3t c\u1EAFt gi\u1EA3m nh\xE2n s\u1EF1.",
+          "C1"
+        ],
+        [
+          "hierarchy",
+          "n",
+          "\u02C8ha\u026A\u0259r\u02CC\u0251\u02D0rki",
+          "h\u1EC7 th\u1ED1ng th\u1EE9 b\u1EADc",
+          "The company has a very flat hierarchy.",
+          "C\xF4ng ty c\xF3 h\u1EC7 th\u1ED1ng th\u1EE9 b\u1EADc r\u1EA5t ph\u1EB3ng.",
+          "C1"
+        ],
+        [
+          "tenure",
+          "n",
+          "\u02C8tenj\u0259r",
+          "nhi\u1EC7m k\u1EF3, th\u1EDDi gian gi\u1EEF ch\u1EE9c",
+          "During her tenure as director, profits doubled.",
+          "Trong nhi\u1EC7m k\u1EF3 gi\xE1m \u0111\u1ED1c c\u1EE7a b\xE0 \u1EA5y, l\u1EE3i nhu\u1EADn t\u0103ng g\u1EA5p \u0111\xF4i.",
+          "C1"
+        ],
+        [
+          "absenteeism",
+          "n",
+          "\u02CC\xE6bs\u0259n\u02C8ti\u02D0\u026Az\u0259m",
+          "t\xECnh tr\u1EA1ng ngh\u1EC9 l\xE0m th\u01B0\u1EDDng xuy\xEAn",
+          "Poor management often leads to high absenteeism.",
+          "Qu\u1EA3n l\xFD k\xE9m th\u01B0\u1EDDng d\u1EABn t\u1EDBi t\xECnh tr\u1EA1ng ngh\u1EC9 l\xE0m nhi\u1EC1u.",
+          "C1"
+        ],
+        [
+          "collaborative",
+          "adj",
+          "k\u0259\u02C8l\xE6b\u0259r\u02CCe\u026At\u026Av",
+          "mang t\xEDnh h\u1EE3p t\xE1c",
+          "The project was a collaborative effort.",
+          "D\u1EF1 \xE1n l\xE0 n\u1ED7 l\u1EF1c h\u1EE3p t\xE1c c\u1EE7a nhi\u1EC1u ng\u01B0\u1EDDi.",
+          "C1"
+        ],
+        [
+          "proactive",
+          "adj",
+          "\u02CCpro\u028A\u02C8\xE6kt\u026Av",
+          "ch\u1EE7 \u0111\u1ED9ng",
+          "We need to take a proactive approach to safety.",
+          "Ch\xFAng ta c\u1EA7n ch\u1EE7 \u0111\u1ED9ng trong v\u1EA5n \u0111\u1EC1 an to\xE0n.",
+          "C1"
+        ],
+        [
+          "appraisal",
+          "n",
+          "\u0259\u02C8pre\u026Az\u0259l",
+          "s\u1EF1 \u0111\xE1nh gi\xE1 (n\u0103ng l\u1EF1c)",
+          "Annual appraisals help staff set new goals.",
+          "\u0110\xE1nh gi\xE1 h\u1EB1ng n\u0103m gi\xFAp nh\xE2n vi\xEAn \u0111\u1EB7t m\u1EE5c ti\xEAu m\u1EDBi.",
+          "C1"
+        ],
+        [
+          "remuneration",
+          "n",
+          "r\u026A\u02CCmju\u02D0n\u0259r\u02C8e\u026A\u0283\u0259n",
+          "th\xF9 lao, ti\u1EC1n c\xF4ng",
+          "The job offers attractive remuneration.",
+          "C\xF4ng vi\u1EC7c c\xF3 m\u1EE9c th\xF9 lao h\u1EA5p d\u1EABn.",
+          "C1"
+        ],
+        [
+          "redundancy",
+          "n",
+          "r\u026A\u02C8d\u028Cnd\u0259nsi",
+          "s\u1EF1 c\u1EAFt gi\u1EA3m bi\xEAn ch\u1EBF",
+          "Hundreds of workers face redundancy.",
+          "H\xE0ng tr\u0103m c\xF4ng nh\xE2n \u0111\u1ED1i m\u1EB7t v\u1EDBi vi\u1EC7c b\u1ECB c\u1EAFt gi\u1EA3m.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F4F0}",
+      "vi": "Truy\u1EC1n th\xF4ng v\xE0 th\xF4ng tin",
+      "en": "Media and Information",
+      "words": [
+        [
+          "slanderous",
+          "adj",
+          "\u02C8sl\xE6nd\u0259r\u0259s",
+          "vu kh\u1ED1ng",
+          "He denied making slanderous remarks.",
+          "Anh \u1EA5y ph\u1EE7 nh\u1EADn \u0111\xE3 \u0111\u01B0a ra nh\u1EEFng l\u1EDDi vu kh\u1ED1ng.",
+          "C1"
+        ],
+        [
+          "propaganda",
+          "n",
+          "\u02CCpr\u0251\u02D0p\u0259\u02C8\u0261\xE6nd\u0259",
+          "s\u1EF1 tuy\xEAn truy\u1EC1n",
+          "The posters were a form of wartime propaganda.",
+          "Nh\u1EEFng t\u1EA5m \xE1p ph\xEDch l\xE0 m\u1ED9t h\xECnh th\u1EE9c tuy\xEAn truy\u1EC1n th\u1EDDi chi\u1EBFn.",
+          "C1"
+        ],
+        [
+          "sensationalism",
+          "n",
+          "sen\u02C8se\u026A\u0283\u0259n\u0259\u02CCl\u026Az\u0259m",
+          "l\u1ED1i gi\u1EADt g\xE2n",
+          "Many readers are tired of sensationalism in the press.",
+          "Nhi\u1EC1u \u0111\u1ED9c gi\u1EA3 ch\xE1n l\u1ED1i \u0111\u01B0a tin gi\u1EADt g\xE2n c\u1EE7a b\xE1o ch\xED.",
+          "C1"
+        ],
+        [
+          "misinformation",
+          "n",
+          "\u02CCm\u026As\u026Anf\u0259r\u02C8me\u026A\u0283\u0259n",
+          "th\xF4ng tin sai l\u1EC7ch",
+          "Misinformation spreads quickly on social media.",
+          "Th\xF4ng tin sai l\u1EC7ch lan nhanh tr\xEAn m\u1EA1ng x\xE3 h\u1ED9i.",
+          "C1"
+        ],
+        [
+          "credibility",
+          "n",
+          "\u02CCkred\u0259\u02C8b\u026Al\u026Ati",
+          "s\u1EF1 \u0111\xE1ng tin c\u1EADy",
+          "The scandal damaged the newspaper's credibility.",
+          "V\u1EE5 b\xEA b\u1ED1i l\xE0m t\u1ED5n h\u1EA1i uy t\xEDn c\u1EE7a t\u1EDD b\xE1o.",
+          "C1"
+        ],
+        [
+          "insinuate",
+          "v",
+          "\u02CC\u026An\u02C8s\u026Anju\u02D0e\u026At",
+          "\xE1m ch\u1EC9, n\xF3i b\xF3ng gi\xF3",
+          "Are you insinuating that I lied?",
+          "B\u1EA1n \u0111ang \xE1m ch\u1EC9 l\xE0 t\xF4i n\xF3i d\u1ED1i \xE0?",
+          "C1"
+        ],
+        [
+          "bias",
+          "n",
+          "\u02C8ba\u026A\u0259s",
+          "s\u1EF1 thi\xEAn v\u1ECB, \u0111\u1ECBnh ki\u1EBFn",
+          "Journalists should try to avoid bias.",
+          "Nh\xE0 b\xE1o n\xEAn c\u1ED1 g\u1EAFng tr\xE1nh thi\xEAn v\u1ECB.",
+          "C1"
+        ],
+        [
+          "anonymity",
+          "n",
+          "\u02CC\xE6n\u0259\u02C8n\u026Am\u026Ati",
+          "s\u1EF1 \u1EA9n danh",
+          "The source spoke on condition of anonymity.",
+          "Ngu\u1ED3n tin ph\xE1t bi\u1EC3u v\u1EDBi \u0111i\u1EC1u ki\u1EC7n \u0111\u01B0\u1EE3c gi\u1EA5u t\xEAn.",
+          "C1"
+        ],
+        [
+          "disseminate",
+          "v",
+          "d\u026A\u02C8sem\u0259\u02CCne\u026At",
+          "ph\u1ED5 bi\u1EBFn, lan truy\u1EC1n",
+          "The results were disseminated to all schools.",
+          "K\u1EBFt qu\u1EA3 \u0111\u01B0\u1EE3c ph\u1ED5 bi\u1EBFn t\u1EDBi t\u1EA5t c\u1EA3 c\xE1c tr\u01B0\u1EDDng.",
+          "C1"
+        ],
+        [
+          "scrutiny",
+          "n",
+          "\u02C8skru\u02D0t\u0259ni",
+          "s\u1EF1 gi\xE1m s\xE1t k\u1EF9 l\u01B0\u1EE1ng",
+          "Politicians are under constant public scrutiny.",
+          "Ch\xEDnh tr\u1ECB gia lu\xF4n ch\u1ECBu s\u1EF1 gi\xE1m s\xE1t k\u1EF9 l\u01B0\u1EE1ng c\u1EE7a c\xF4ng ch\xFAng.",
+          "C1"
+        ],
+        [
+          "retract",
+          "v",
+          "ri\u02C8tr\xE6kt",
+          "r\xFAt l\u1EA1i (l\u1EDDi n\xF3i, b\xE0i b\xE1o)",
+          "The magazine was forced to retract the story.",
+          "T\u1EA1p ch\xED bu\u1ED9c ph\u1EA3i r\xFAt l\u1EA1i b\xE0i vi\u1EBFt.",
+          "C1"
+        ],
+        [
+          "defamation",
+          "n",
+          "\u02CCdef\u0259\u02C8me\u026A\u0283\u0259n",
+          "s\u1EF1 ph\u1EC9 b\xE1ng",
+          "He sued the paper for defamation.",
+          "\xD4ng \u1EA5y ki\u1EC7n t\u1EDD b\xE1o v\xEC t\u1ED9i ph\u1EC9 b\xE1ng.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F91D}",
+      "vi": "X\xE3 h\u1ED9i v\xE0 b\u1EA5t b\xECnh \u0111\u1EB3ng",
+      "en": "Society and Inequality",
+      "words": [
+        [
+          "disenfranchised",
+          "adj",
+          "d\u026As\u026An\u02C8fr\xE6n\u02CCt\u0283a\u026Azd",
+          "b\u1ECB t\u01B0\u1EDBc quy\u1EC1n, b\u1ECB g\u1EA1t ra ngo\xE0i",
+          "Many young people feel disenfranchised.",
+          "Nhi\u1EC1u ng\u01B0\u1EDDi tr\u1EBB c\u1EA3m th\u1EA5y b\u1ECB g\u1EA1t ra ngo\xE0i.",
+          "C1"
+        ],
+        [
+          "disparity",
+          "n",
+          "d\u026A\u02C8sper\u0259ti",
+          "s\u1EF1 ch\xEAnh l\u1EC7ch",
+          "There is a growing disparity between rich and poor.",
+          "Ch\xEAnh l\u1EC7ch gi\xE0u ngh\xE8o ng\xE0y c\xE0ng t\u0103ng.",
+          "C1"
+        ],
+        [
+          "deprivation",
+          "n",
+          "\u02CCdepr\u0259\u02C8ve\u026A\u0283\u0259n",
+          "s\u1EF1 thi\u1EBFu th\u1ED1n",
+          "Many children still live in deprivation.",
+          "Nhi\u1EC1u tr\u1EBB em v\u1EABn s\u1ED1ng trong c\u1EA3nh thi\u1EBFu th\u1ED1n.",
+          "C1"
+        ],
+        [
+          "affluent",
+          "adj",
+          "\u02C8\xE6flu\u02D0\u0259nt",
+          "gi\xE0u c\xF3",
+          "They live in an affluent suburb.",
+          "H\u1ECD s\u1ED1ng \u1EDF m\u1ED9t v\xF9ng ngo\u1EA1i \xF4 gi\xE0u c\xF3.",
+          "C1"
+        ],
+        [
+          "solidarity",
+          "n",
+          "\u02CCs\u0251\u02D0l\u0259\u02C8der\u0259ti",
+          "t\xECnh \u0111o\xE0n k\u1EBFt",
+          "Workers showed solidarity with the strikers.",
+          "C\xF4ng nh\xE2n b\xE0y t\u1ECF t\xECnh \u0111o\xE0n k\u1EBFt v\u1EDBi nh\u1EEFng ng\u01B0\u1EDDi \u0111\xECnh c\xF4ng.",
+          "C1"
+        ],
+        [
+          "integration",
+          "n",
+          "\u02CC\u026Ant\u0259\u02C8\u0261re\u026A\u0283\u0259n",
+          "s\u1EF1 h\xF2a nh\u1EADp",
+          "Language classes help the integration of immigrants.",
+          "C\xE1c l\u1EDBp h\u1ECDc ng\xF4n ng\u1EEF gi\xFAp ng\u01B0\u1EDDi nh\u1EADp c\u01B0 h\xF2a nh\u1EADp.",
+          "C1"
+        ],
+        [
+          "stigma",
+          "n",
+          "\u02C8st\u026A\u0261m\u0259",
+          "s\u1EF1 k\u1EF3 th\u1ECB",
+          "There is still a stigma attached to mental illness.",
+          "B\u1EC7nh t\xE2m th\u1EA7n v\u1EABn c\xF2n b\u1ECB k\u1EF3 th\u1ECB.",
+          "C1"
+        ],
+        [
+          "segregation",
+          "n",
+          "\u02CCse\u0261r\u0259\u02C8\u0261e\u026A\u0283\u0259n",
+          "s\u1EF1 ph\xE2n bi\u1EC7t, t\xE1ch bi\u1EC7t",
+          "Racial segregation was abolished decades ago.",
+          "S\u1EF1 ph\xE2n bi\u1EC7t ch\u1EE7ng t\u1ED9c \u0111\xE3 b\u1ECB x\xF3a b\u1ECF t\u1EEB nhi\u1EC1u th\u1EADp k\u1EF7 tr\u01B0\u1EDBc.",
+          "C1"
+        ],
+        [
+          "egalitarian",
+          "adj",
+          "\u026A\u02CC\u0261\xE6l\u0259\u02C8teri\u0259n",
+          "b\xECnh \u0111\u1EB3ng, theo ch\u1EE7 ngh\u0129a b\xECnh quy\u1EC1n",
+          "They aim to build a more egalitarian society.",
+          "H\u1ECD h\u01B0\u1EDBng t\u1EDBi x\xE2y d\u1EF1ng m\u1ED9t x\xE3 h\u1ED9i b\xECnh \u0111\u1EB3ng h\u01A1n.",
+          "C1"
+        ],
+        [
+          "underprivileged",
+          "adj",
+          "\u02C8\u028Cnd\u0259r\u02C8pr\u026Avl\u0259d\u0292d",
+          "thi\u1EC7t th\xF2i, k\xE9m may m\u1EAFn",
+          "The scheme helps underprivileged children go to university.",
+          "Ch\u01B0\u01A1ng tr\xECnh gi\xFAp tr\u1EBB em thi\u1EC7t th\xF2i v\xE0o \u0111\u1EA1i h\u1ECDc.",
+          "C1"
+        ],
+        [
+          "xenophobia",
+          "n",
+          "\u02CCzen\u0259\u02C8fo\u028Abi\u0259",
+          "t\xE2m l\xFD b\xE0i ngo\u1EA1i",
+          "The campaign aims to tackle xenophobia.",
+          "Chi\u1EBFn d\u1ECBch nh\u1EB1m gi\u1EA3i quy\u1EBFt t\xE2m l\xFD b\xE0i ngo\u1EA1i.",
+          "C1"
+        ],
+        [
+          "patriarchal",
+          "adj",
+          "\u02CCpe\u026Atri\u02C8\u0251\u02D0rk\u0259l",
+          "gia tr\u01B0\u1EDFng, ph\u1EE5 h\u1EC7",
+          "They grew up in a patriarchal society.",
+          "H\u1ECD l\u1EDBn l\xEAn trong m\u1ED9t x\xE3 h\u1ED9i gia tr\u01B0\u1EDFng.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F30D}",
+      "vi": "M\xF4i tr\u01B0\u1EDDng v\xE0 ph\xE1t tri\u1EC3n b\u1EC1n v\u1EEFng",
+      "en": "Environment and Sustainability",
+      "words": [
+        [
+          "afforestation",
+          "n",
+          "\u0259\u02CCf\u0254\u02D0r\u026A\u02C8ste\u026A\u0283n",
+          "s\u1EF1 tr\u1ED3ng r\u1EEBng m\u1EDBi",
+          "Afforestation can help absorb carbon dioxide.",
+          "Tr\u1ED3ng r\u1EEBng m\u1EDBi c\xF3 th\u1EC3 gi\xFAp h\u1EA5p th\u1EE5 kh\xED CO2.",
+          "C1"
+        ],
+        [
+          "replenish",
+          "v",
+          "ri\u02C8plen\u026A\u0283",
+          "b\u1ED5 sung, l\xE0m \u0111\u1EA7y l\u1EA1i",
+          "It takes years to replenish underground water supplies.",
+          "Ph\u1EA3i m\u1EA5t nhi\u1EC1u n\u0103m \u0111\u1EC3 b\u1ED5 sung ngu\u1ED3n n\u01B0\u1EDBc ng\u1EA7m.",
+          "C1"
+        ],
+        [
+          "depletion",
+          "n",
+          "d\u026A\u02C8pli\u02D0\u0283\u0259n",
+          "s\u1EF1 c\u1EA1n ki\u1EC7t",
+          "The depletion of natural resources is a global concern.",
+          "S\u1EF1 c\u1EA1n ki\u1EC7t t\xE0i nguy\xEAn thi\xEAn nhi\xEAn l\xE0 m\u1ED1i lo to\xE0n c\u1EA7u.",
+          "C1"
+        ],
+        [
+          "carcinogen",
+          "n",
+          "k\u0251\u02D0r\u02C8s\u026An\u0259d\u0292\u0259n",
+          "ch\u1EA5t g\xE2y ung th\u01B0",
+          "Tobacco smoke contains many carcinogens.",
+          "Kh\xF3i thu\u1ED1c l\xE1 ch\u1EE9a nhi\u1EC1u ch\u1EA5t g\xE2y ung th\u01B0.",
+          "C1"
+        ],
+        [
+          "desertification",
+          "n",
+          "d\u026A\u02CCz\u025C\u02D0rt\u026Af\u026A\u02C8ke\u026A\u0283n",
+          "s\u1EF1 sa m\u1EA1c h\xF3a",
+          "Overgrazing contributes to desertification.",
+          "Ch\u0103n th\u1EA3 qu\xE1 m\u1EE9c g\xF3p ph\u1EA7n g\xE2y sa m\u1EA1c h\xF3a.",
+          "C1"
+        ],
+        [
+          "toxicity",
+          "n",
+          "t\u0251\u02D0k\u02C8s\u026As\u0259ti",
+          "\u0111\u1ED9c t\xEDnh",
+          "Scientists measured the toxicity of the water.",
+          "C\xE1c nh\xE0 khoa h\u1ECDc \u0111o \u0111\u1ED9c t\xEDnh c\u1EE7a ngu\u1ED3n n\u01B0\u1EDBc.",
+          "C1"
+        ],
+        [
+          "pristine",
+          "adj",
+          "\u02C8pr\u026Astin",
+          "nguy\xEAn s\u01A1, c\xF2n nguy\xEAn v\u1EB9n",
+          "The island has pristine beaches.",
+          "H\xF2n \u0111\u1EA3o c\xF3 nh\u1EEFng b\xE3i bi\u1EC3n nguy\xEAn s\u01A1.",
+          "C1"
+        ],
+        [
+          "biodegradable",
+          "adj",
+          "\u02CCba\u026Ao\u028Ad\u0259\u02C8\u0261re\u026Ad\u0259b\u0259l",
+          "c\xF3 th\u1EC3 ph\xE2n h\u1EE7y sinh h\u1ECDc",
+          "Use biodegradable bags instead of plastic ones.",
+          "H\xE3y d\xF9ng t\xFAi ph\xE2n h\u1EE7y sinh h\u1ECDc thay cho t\xFAi nh\u1EF1a.",
+          "C1"
+        ],
+        [
+          "degradation",
+          "n",
+          "\u02CCde\u0261r\u0259\u02C8de\u026A\u0283\u0259n",
+          "s\u1EF1 suy tho\xE1i",
+          "Land degradation threatens food production.",
+          "S\u1EF1 suy tho\xE1i \u0111\u1EA5t \u0111e d\u1ECDa s\u1EA3n xu\u1EA5t l\u01B0\u01A1ng th\u1EF1c.",
+          "C1"
+        ],
+        [
+          "arable",
+          "adj",
+          "\u02C8\xE6r\u0259b\u0259l",
+          "canh t\xE1c \u0111\u01B0\u1EE3c",
+          "Only a small part of the land is arable.",
+          "Ch\u1EC9 m\u1ED9t ph\u1EA7n nh\u1ECF \u0111\u1EA5t \u0111ai c\xF3 th\u1EC3 canh t\xE1c.",
+          "C1"
+        ],
+        [
+          "offset",
+          "v",
+          "\u0254\u02D0f\u02C8set",
+          "b\xF9 \u0111\u1EAFp",
+          "Some airlines let passengers offset their carbon footprint.",
+          "M\u1ED9t s\u1ED1 h\xE3ng bay cho ph\xE9p h\xE0nh kh\xE1ch b\xF9 \u0111\u1EAFp l\u01B0\u1EE3ng kh\xED th\u1EA3i carbon.",
+          "C1"
+        ],
+        [
+          "deplete",
+          "v",
+          "d\u026A\u02C8pli\u02D0t",
+          "l\xE0m c\u1EA1n ki\u1EC7t",
+          "Overfishing has depleted fish stocks.",
+          "\u0110\xE1nh b\u1EAFt qu\xE1 m\u1EE9c \u0111\xE3 l\xE0m c\u1EA1n ki\u1EC7t ngu\u1ED3n c\xE1.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F680}",
+      "vi": "Khoa h\u1ECDc v\xE0 \u0111\u1ED5i m\u1EDBi",
+      "en": "Science and Innovation",
+      "words": [
+        [
+          "pioneering",
+          "adj",
+          "\u02CCpa\u026A\u0259\u02C8n\u026Ar\u026A\u014B",
+          "ti\xEAn phong",
+          "She did pioneering work in genetics.",
+          "B\xE0 \u1EA5y c\xF3 nh\u1EEFng c\xF4ng tr\xECnh ti\xEAn phong trong ng\xE0nh di truy\u1EC1n h\u1ECDc.",
+          "C1"
+        ],
+        [
+          "rudimentary",
+          "adj",
+          "\u02CCru\u02D0d\u0259\u02C8ment\u0259ri",
+          "s\u01A1 khai, th\xF4 s\u01A1",
+          "The early computers were rudimentary.",
+          "Nh\u1EEFng chi\u1EBFc m\xE1y t\xEDnh \u0111\u1EA7u ti\xEAn c\xF2n r\u1EA5t th\xF4 s\u01A1.",
+          "C1"
+        ],
+        [
+          "proliferation",
+          "n",
+          "\u02CCpro\u028Al\u026Af\u0259r\u02C8e\u026A\u0283\u0259n",
+          "s\u1EF1 gia t\u0103ng nhanh",
+          "The proliferation of smartphones changed how we communicate.",
+          "S\u1EF1 gia t\u0103ng nhanh c\u1EE7a \u0111i\u1EC7n tho\u1EA1i th\xF4ng minh thay \u0111\u1ED5i c\xE1ch ta giao ti\u1EBFp.",
+          "C1"
+        ],
+        [
+          "augment",
+          "v",
+          "\u0254\u02D0\u0261\u02C8ment",
+          "t\u0103ng c\u01B0\u1EDDng, b\u1ED5 sung",
+          "Virtual reality can augment classroom learning.",
+          "Th\u1EF1c t\u1EBF \u1EA3o c\xF3 th\u1EC3 t\u0103ng c\u01B0\u1EDDng vi\u1EC7c h\u1ECDc tr\xEAn l\u1EDBp.",
+          "C1"
+        ],
+        [
+          "genome",
+          "n",
+          "\u02C8d\u0292i\u02D0\u02CCno\u028Am",
+          "b\u1ED9 gen",
+          "Scientists have mapped the human genome.",
+          "C\xE1c nh\xE0 khoa h\u1ECDc \u0111\xE3 gi\u1EA3i m\xE3 b\u1ED9 gen ng\u01B0\u1EDDi.",
+          "C1"
+        ],
+        [
+          "synthetic",
+          "adj",
+          "s\u026An\u02C8\u03B8et\u026Ak",
+          "t\u1ED5ng h\u1EE3p, nh\xE2n t\u1EA1o",
+          "The jacket is made of synthetic fibres.",
+          "Chi\u1EBFc \xE1o kho\xE1c l\xE0m t\u1EEB s\u1EE3i t\u1ED5ng h\u1EE3p.",
+          "C1"
+        ],
+        [
+          "patent",
+          "n",
+          "\u02C8p\xE6t\u0259nt",
+          "b\u1EB1ng s\xE1ng ch\u1EBF",
+          "The company holds patents for several inventions.",
+          "C\xF4ng ty n\u1EAFm b\u1EB1ng s\xE1ng ch\u1EBF cho nhi\u1EC1u ph\xE1t minh.",
+          "C1"
+        ],
+        [
+          "ingenious",
+          "adj",
+          "\u02CC\u026An\u02C8d\u0292i\u02D0nj\u0259s",
+          "kh\xE9o l\xE9o, t\xE0i t\xECnh",
+          "It was an ingenious solution to a difficult problem.",
+          "\u0110\xF3 l\xE0 m\u1ED9t gi\u1EA3i ph\xE1p t\xE0i t\xECnh cho m\u1ED9t v\u1EA5n \u0111\u1EC1 kh\xF3.",
+          "C1"
+        ],
+        [
+          "feasible",
+          "adj",
+          "\u02C8fi\u02D0z\u0259b\u0259l",
+          "kh\u1EA3 thi",
+          "Is it technically feasible to build the bridge?",
+          "X\xE2y c\xE2y c\u1EA7u \u0111\xF3 c\xF3 kh\u1EA3 thi v\u1EC1 m\u1EB7t k\u1EF9 thu\u1EADt kh\xF4ng?",
+          "C1"
+        ],
+        [
+          "disruptive",
+          "adj",
+          "d\u026As\u02C8r\u028Cpt\u026Av",
+          "mang t\xEDnh \u0111\u1ED9t ph\xE1, g\xE2y x\xE1o tr\u1ED9n",
+          "Streaming was a disruptive technology for the music industry.",
+          "Ph\xE1t nh\u1EA1c tr\u1EF1c tuy\u1EBFn l\xE0 c\xF4ng ngh\u1EC7 g\xE2y x\xE1o tr\u1ED9n ng\xE0nh \xE2m nh\u1EA1c.",
+          "C1"
+        ],
+        [
+          "precursor",
+          "n",
+          "pri\u02C8k\u025C\u02D0rs\u0259r",
+          "ti\u1EC1n th\xE2n",
+          "The abacus was a precursor of the calculator.",
+          "B\xE0n t\xEDnh l\xE0 ti\u1EC1n th\xE2n c\u1EE7a m\xE1y t\xEDnh b\u1ECF t\xFAi.",
+          "C1"
+        ],
+        [
+          "obsolescence",
+          "n",
+          "\u02CC\u0251\u02D0bs\u0259\u02C8les\u0259ns",
+          "s\u1EF1 l\u1ED7i th\u1EDDi",
+          "Planned obsolescence forces people to buy new phones.",
+          "S\u1EF1 l\u1ED7i th\u1EDDi c\xF3 ch\u1EE7 \u0111\xEDch bu\u1ED9c ng\u01B0\u1EDDi d\xF9ng mua \u0111i\u1EC7n tho\u1EA1i m\u1EDBi.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1FA7A}",
+      "vi": "Y h\u1ECDc v\xE0 s\u1EE9c kh\u1ECFe c\u1ED9ng \u0111\u1ED3ng",
+      "en": "Medicine and Public Health",
+      "words": [
+        [
+          "benign",
+          "adj",
+          "b\u026A\u02C8na\u026An",
+          "l\xE0nh t\xEDnh",
+          "Fortunately, the tumour was benign.",
+          "May m\u1EAFn l\xE0 kh\u1ED1i u l\xE0nh t\xEDnh.",
+          "C1"
+        ],
+        [
+          "malignant",
+          "adj",
+          "m\u0259\u02C8l\u026A\u0261n\u0259nt",
+          "\xE1c t\xEDnh",
+          "Doctors removed a malignant growth.",
+          "C\xE1c b\xE1c s\u0129 \u0111\xE3 c\u1EAFt b\u1ECF m\u1ED9t kh\u1ED1i u \xE1c t\xEDnh.",
+          "C1"
+        ],
+        [
+          "pathogen",
+          "n",
+          "\u02C8p\xE6\u03B8\u0259d\u0292\u0259n",
+          "m\u1EA7m b\u1EC7nh",
+          "Some pathogens can survive for days on surfaces.",
+          "M\u1ED9t s\u1ED1 m\u1EA7m b\u1EC7nh c\xF3 th\u1EC3 t\u1ED3n t\u1EA1i nhi\u1EC1u ng\xE0y tr\xEAn b\u1EC1 m\u1EB7t.",
+          "C1"
+        ],
+        [
+          "palliative",
+          "adj",
+          "\u02C8p\xE6li\u0259t\u026Av",
+          "gi\u1EA3m nh\u1EB9 (tri\u1EC7u ch\u1EE9ng)",
+          "She works in palliative care.",
+          "C\xF4 \u1EA5y l\xE0m vi\u1EC7c trong l\u0129nh v\u1EF1c ch\u0103m s\xF3c gi\u1EA3m nh\u1EB9.",
+          "C1"
+        ],
+        [
+          "prognosis",
+          "n",
+          "pr\u0251\u02D0\u0261\u02C8no\u028As\u0259s",
+          "ti\xEAn l\u01B0\u1EE3ng b\u1EC7nh",
+          "The doctors say the prognosis is good.",
+          "C\xE1c b\xE1c s\u0129 n\xF3i ti\xEAn l\u01B0\u1EE3ng b\u1EC7nh kh\u1EA3 quan.",
+          "C1"
+        ],
+        [
+          "immunity",
+          "n",
+          "\u02CC\u026A\u02C8mju\u02D0n\u0259ti",
+          "kh\u1EA3 n\u0103ng mi\u1EC5n d\u1ECBch",
+          "Vaccines help build immunity to disease.",
+          "V\u1EAFc-xin gi\xFAp t\u1EA1o mi\u1EC5n d\u1ECBch v\u1EDBi b\u1EC7nh t\u1EADt.",
+          "C1"
+        ],
+        [
+          "lethargic",
+          "adj",
+          "l\u0259\u02C8\u03B8\u0251\u02D0rd\u0292\u026Ak",
+          "u\u1EC3 o\u1EA3i, l\u1EDD \u0111\u1EDD",
+          "The heat made everyone feel lethargic.",
+          "C\xE1i n\xF3ng khi\u1EBFn m\u1ECDi ng\u01B0\u1EDDi u\u1EC3 o\u1EA3i.",
+          "C1"
+        ],
+        [
+          "dosage",
+          "n",
+          "\u02C8do\u028As\u0259d\u0292",
+          "li\u1EC1u l\u01B0\u1EE3ng",
+          "Do not exceed the recommended dosage.",
+          "Kh\xF4ng d\xF9ng qu\xE1 li\u1EC1u l\u01B0\u1EE3ng khuy\u1EBFn c\xE1o.",
+          "C1"
+        ],
+        [
+          "debilitating",
+          "adj",
+          "d\u0259\u02C8b\u026Al\u0259\u02CCte\u026At\u026A\u014B",
+          "g\xE2y suy nh\u01B0\u1EE3c",
+          "She suffers from debilitating headaches.",
+          "C\xF4 \u1EA5y b\u1ECB nh\u1EEFng c\u01A1n \u0111au \u0111\u1EA7u g\xE2y suy nh\u01B0\u1EE3c.",
+          "C1"
+        ],
+        [
+          "susceptible",
+          "adj",
+          "s\u0259\u02C8sept\u0259b\u0259l",
+          "d\u1EC5 b\u1ECB \u1EA3nh h\u01B0\u1EDFng",
+          "Older people are more susceptible to infection.",
+          "Ng\u01B0\u1EDDi gi\xE0 d\u1EC5 b\u1ECB nhi\u1EC5m tr\xF9ng h\u01A1n.",
+          "C1"
+        ],
+        [
+          "inoculation",
+          "n",
+          "\u02CC\u026A\u02CCn\u0251\u02D0kj\u0259\u02C8le\u026A\u0283\u0259n",
+          "s\u1EF1 ti\xEAm ch\u1EE7ng",
+          "Inoculation against the disease is free for children.",
+          "Tr\u1EBB em \u0111\u01B0\u1EE3c ti\xEAm ch\u1EE7ng mi\u1EC5n ph\xED ph\xF2ng b\u1EC7nh n\xE0y.",
+          "C1"
+        ],
+        [
+          "therapeutic",
+          "adj",
+          "\u02CC\u03B8er\u0259\u02C8pju\u02D0t\u026Ak",
+          "c\xF3 t\xE1c d\u1EE5ng ch\u1EEFa tr\u1ECB",
+          "Gardening can be very therapeutic.",
+          "L\xE0m v\u01B0\u1EDDn c\xF3 th\u1EC3 c\xF3 t\xE1c d\u1EE5ng ch\u1EEFa l\xE0nh r\u1EA5t t\u1ED1t.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F9E0}",
+      "vi": "T\xE2m l\xFD v\xE0 h\xE0nh vi",
+      "en": "Psychology and Behaviour",
+      "words": [
+        [
+          "cognitive",
+          "adj",
+          "\u02C8k\u0251\u02D0\u0261n\u026At\u026Av",
+          "thu\u1ED9c nh\u1EADn th\u1EE9c",
+          "Reading improves cognitive skills.",
+          "\u0110\u1ECDc s\xE1ch c\u1EA3i thi\u1EC7n k\u1EF9 n\u0103ng nh\u1EADn th\u1EE9c.",
+          "C1"
+        ],
+        [
+          "cathartic",
+          "adj",
+          "k\u0259\u02C8\u03B8\u0251\u02D0rt\u026Ak",
+          "gi\xFAp gi\u1EA3i t\u1ECFa c\u1EA3m x\xFAc",
+          "Writing a diary can be cathartic.",
+          "Vi\u1EBFt nh\u1EADt k\xFD c\xF3 th\u1EC3 gi\xFAp gi\u1EA3i t\u1ECFa c\u1EA3m x\xFAc.",
+          "C1"
+        ],
+        [
+          "cognition",
+          "n",
+          "k\u0251\u02D0\u0261\u02C8n\u026A\u0283\u0259n",
+          "s\u1EF1 nh\u1EADn th\u1EE9c",
+          "Sleep loss affects cognition and mood.",
+          "Thi\u1EBFu ng\u1EE7 \u1EA3nh h\u01B0\u1EDFng t\u1EDBi nh\u1EADn th\u1EE9c v\xE0 t\xE2m tr\u1EA1ng.",
+          "C1"
+        ],
+        [
+          "conformity",
+          "n",
+          "k\u0259n\u02C8f\u0254\u02D0rm\u0259ti",
+          "s\u1EF1 tu\xE2n theo s\u1ED1 \u0111\xF4ng",
+          "Peer pressure encourages conformity among teenagers.",
+          "\xC1p l\u1EF1c b\u1EA1n b\xE8 khi\u1EBFn thanh thi\u1EBFu ni\xEAn l\xE0m theo s\u1ED1 \u0111\xF4ng.",
+          "C1"
+        ],
+        [
+          "introspection",
+          "n",
+          "\u02CC\u026Antr\u0259\u02C8spek\u0283\u0259n",
+          "s\u1EF1 t\u1EF1 xem x\xE9t n\u1ED9i t\xE2m",
+          "The trip was a time for introspection.",
+          "Chuy\u1EBFn \u0111i l\xE0 kho\u1EA3ng th\u1EDDi gian \u0111\u1EC3 t\u1EF1 nh\xECn l\u1EA1i b\u1EA3n th\xE2n.",
+          "C1"
+        ],
+        [
+          "gratification",
+          "n",
+          "\u02CC\u0261r\xE6t\u0259f\u0259\u02C8ke\u026A\u0283\u0259n",
+          "s\u1EF1 th\u1ECFa m\xE3n",
+          "Children must learn to delay gratification.",
+          "Tr\u1EBB em ph\u1EA3i h\u1ECDc c\xE1ch tr\xEC ho\xE3n s\u1EF1 th\u1ECFa m\xE3n.",
+          "C1"
+        ],
+        [
+          "resilience",
+          "n",
+          "r\u026A\u02C8z\u026Ali\u0259ns",
+          "s\u1EF1 ki\xEAn c\u01B0\u1EDDng",
+          "Sport helps young people build resilience.",
+          "Th\u1EC3 thao gi\xFAp ng\u01B0\u1EDDi tr\u1EBB r\xE8n luy\u1EC7n s\u1EF1 ki\xEAn c\u01B0\u1EDDng.",
+          "C1"
+        ],
+        [
+          "compulsive",
+          "adj",
+          "k\u0259m\u02C8p\u028Cls\u026Av",
+          "c\xF3 t\xEDnh c\u01B0\u1EE1ng ch\u1EBF, kh\xF4ng ki\u1EC3m so\xE1t \u0111\u01B0\u1EE3c",
+          "He is a compulsive gambler.",
+          "Anh ta l\xE0 m\u1ED9t ng\u01B0\u1EDDi nghi\u1EC7n c\u1EDD b\u1EA1c kh\xF4ng ki\u1EC3m so\xE1t \u0111\u01B0\u1EE3c.",
+          "C1"
+        ],
+        [
+          "inhibition",
+          "n",
+          "\u02CC\u026Anh\u0259\u02C8b\u026A\u0283\u0259n",
+          "s\u1EF1 \u1EE9c ch\u1EBF, ng\u1EA1i ng\xF9ng",
+          "Music helped her lose her inhibitions.",
+          "\xC2m nh\u1EA1c gi\xFAp c\xF4 \u1EA5y b\u1EDBt ng\u1EA1i ng\xF9ng.",
+          "C1"
+        ],
+        [
+          "predisposition",
+          "n",
+          "\u02CCpri\u02D0d\u026Asp\u0259\u02C8z\u026A\u0283\u0259n",
+          "khuynh h\u01B0\u1EDBng, thi\xEAn h\u01B0\u1EDBng",
+          "Some people have a genetic predisposition to anxiety.",
+          "M\u1ED9t s\u1ED1 ng\u01B0\u1EDDi c\xF3 thi\xEAn h\u01B0\u1EDBng di truy\u1EC1n d\u1EC5 lo \xE2u.",
+          "C1"
+        ],
+        [
+          "procrastinate",
+          "v",
+          "pr\u0259\u02C8kr\xE6st\u0259\u02CCne\u026At",
+          "tr\xEC ho\xE3n, ch\u1EA7n ch\u1EEB",
+          "I tend to procrastinate when a task is boring.",
+          "T\xF4i hay tr\xEC ho\xE3n khi m\u1ED9t vi\u1EC7c nh\xE0m ch\xE1n.",
+          "C1"
+        ],
+        [
+          "empathy",
+          "n",
+          "\u02C8emp\u0259\u03B8i",
+          "s\u1EF1 \u0111\u1ED3ng c\u1EA3m",
+          "Good doctors show empathy towards their patients.",
+          "B\xE1c s\u0129 gi\u1ECFi th\u1EC3 hi\u1EC7n s\u1EF1 \u0111\u1ED3ng c\u1EA3m v\u1EDBi b\u1EC7nh nh\xE2n.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F3A8}",
+      "vi": "Ngh\u1EC7 thu\u1EADt v\xE0 v\u0103n h\xF3a",
+      "en": "Arts and Culture",
+      "words": [
+        [
+          "aesthetic",
+          "adj",
+          "es\u02C8\u03B8et\u026Ak",
+          "thu\u1ED9c th\u1EA9m m\u1EF9",
+          "The building has great aesthetic appeal.",
+          "T\xF2a nh\xE0 c\xF3 s\u1EE9c h\u1EA5p d\u1EABn th\u1EA9m m\u1EF9 l\u1EDBn.",
+          "C1"
+        ],
+        [
+          "eclectic",
+          "adj",
+          "\u026A\u02C8klekt\u026Ak",
+          "\u0111a d\u1EA1ng, chi\u1EBFt trung",
+          "He has an eclectic taste in music.",
+          "Anh \u1EA5y c\xF3 gu \xE2m nh\u1EA1c r\u1EA5t \u0111a d\u1EA1ng.",
+          "C1"
+        ],
+        [
+          "satire",
+          "n",
+          "\u02C8s\xE6\u02CCta\u026A\u0259r",
+          "l\u1ED1i v\u0103n tr\xE0o ph\xFAng",
+          "The show is a satire on modern politics.",
+          "Ch\u01B0\u01A1ng tr\xECnh l\xE0 m\u1ED9t t\xE1c ph\u1EA9m tr\xE0o ph\xFAng v\u1EC1 ch\xEDnh tr\u1ECB hi\u1EC7n \u0111\u1EA1i.",
+          "C1"
+        ],
+        [
+          "connoisseur",
+          "n",
+          "\u02CCk\u0251\u02D0n\u0259\u02C8s\u025C\u02D0r",
+          "ng\u01B0\u1EDDi s\xE0nh s\u1ECFi",
+          "He is a connoisseur of fine wines.",
+          "\xD4ng \u1EA5y l\xE0 ng\u01B0\u1EDDi s\xE0nh r\u01B0\u1EE3u vang h\u1EA3o h\u1EA1ng.",
+          "C1"
+        ],
+        [
+          "artisan",
+          "n",
+          "\u02C8\u0251\u02D0rt\u0259z\u0259n",
+          "ngh\u1EC7 nh\xE2n",
+          "Local artisans make the pottery by hand.",
+          "C\xE1c ngh\u1EC7 nh\xE2n \u0111\u1ECBa ph\u01B0\u01A1ng l\xE0m g\u1ED1m b\u1EB1ng tay.",
+          "C1"
+        ],
+        [
+          "evocative",
+          "adj",
+          "\u026A\u02C8v\u0251\u02D0k\u0259t\u026Av",
+          "g\u1EE3i c\u1EA3m x\xFAc, g\u1EE3i nh\u1EDB",
+          "The film contains some evocative images of rural life.",
+          "B\u1ED9 phim c\xF3 nh\u1EEFng h\xECnh \u1EA3nh g\u1EE3i nh\u1EDB v\u1EC1 \u0111\u1EDDi s\u1ED1ng n\xF4ng th\xF4n.",
+          "C1"
+        ],
+        [
+          "acclaimed",
+          "adj",
+          "\u0259\u02C8kle\u026Amd",
+          "\u0111\u01B0\u1EE3c ca ng\u1EE3i",
+          "She is an internationally acclaimed pianist.",
+          "C\xF4 \u1EA5y l\xE0 ngh\u1EC7 s\u0129 d\u01B0\u01A1ng c\u1EA7m \u0111\u01B0\u1EE3c ca ng\u1EE3i tr\xEAn to\xE0n th\u1EBF gi\u1EDBi.",
+          "C1"
+        ],
+        [
+          "patronage",
+          "n",
+          "\u02C8p\xE6tr\u0259n\u026Ad\u0292",
+          "s\u1EF1 b\u1EA3o tr\u1EE3",
+          "The arts depended on royal patronage.",
+          "Ngh\u1EC7 thu\u1EADt t\u1EEBng ph\u1EE5 thu\u1ED9c v\xE0o s\u1EF1 b\u1EA3o tr\u1EE3 c\u1EE7a ho\xE0ng gia.",
+          "C1"
+        ],
+        [
+          "avant-garde",
+          "adj",
+          "\u0259\u02C8v\u0251\u02D0nt \u0261\u0251\u02D0rd",
+          "ti\xEAn phong (ngh\u1EC7 thu\u1EADt)",
+          "The festival showcases avant-garde theatre.",
+          "Li\xEAn hoan gi\u1EDBi thi\u1EC7u s\xE2n kh\u1EA5u ti\xEAn phong.",
+          "C1"
+        ],
+        [
+          "rendition",
+          "n",
+          "ren\u02C8d\u026A\u0283\u0259n",
+          "s\u1EF1 tr\xECnh b\xE0y, phi\xEAn b\u1EA3n bi\u1EC3u di\u1EC5n",
+          "Her rendition of the song moved the audience.",
+          "Ph\u1EA7n tr\xECnh b\xE0y ca kh\xFAc c\u1EE7a c\xF4 \u1EA5y l\xE0m kh\xE1n gi\u1EA3 x\xFAc \u0111\u1ED9ng.",
+          "C1"
+        ],
+        [
+          "indigenous",
+          "adj",
+          "\u02CC\u026An\u02C8d\u026Ad\u0292\u0259n\u0259s",
+          "b\u1EA3n \u0111\u1ECBa",
+          "The museum displays indigenous art.",
+          "B\u1EA3o t\xE0ng tr\u01B0ng b\xE0y ngh\u1EC7 thu\u1EADt b\u1EA3n \u0111\u1ECBa.",
+          "C1"
+        ],
+        [
+          "assimilation",
+          "n",
+          "\u0259\u02CCs\u026Am\u0259\u02C8le\u026A\u0283\u0259n",
+          "s\u1EF1 \u0111\u1ED3ng h\xF3a",
+          "Cultural assimilation can lead to the loss of traditions.",
+          "\u0110\u1ED3ng h\xF3a v\u0103n h\xF3a c\xF3 th\u1EC3 d\u1EABn t\u1EDBi m\u1EA5t truy\u1EC1n th\u1ED1ng.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F393}",
+      "vi": "Gi\xE1o d\u1EE5c v\xE0 tri th\u1EE9c",
+      "en": "Education and Knowledge",
+      "words": [
+        [
+          "didactic",
+          "adj",
+          "da\u026A\u02C8d\xE6kt\u026Ak",
+          "mang t\xEDnh gi\xE1o hu\u1EA5n",
+          "The novel is too didactic for modern readers.",
+          "Cu\u1ED1n ti\u1EC3u thuy\u1EBFt qu\xE1 mang t\xEDnh gi\xE1o hu\u1EA5n \u0111\u1ED1i v\u1EDBi \u0111\u1ED9c gi\u1EA3 hi\u1EC7n \u0111\u1EA1i.",
+          "C1"
+        ],
+        [
+          "pedagogy",
+          "n",
+          "\u02C8ped\u0259\u02CC\u0261o\u028Ad\u0292i",
+          "ph\u01B0\u01A1ng ph\xE1p s\u01B0 ph\u1EA1m",
+          "Modern pedagogy focuses on active learning.",
+          "Ph\u01B0\u01A1ng ph\xE1p s\u01B0 ph\u1EA1m hi\u1EC7n \u0111\u1EA1i ch\xFA tr\u1ECDng h\u1ECDc t\u1EADp ch\u1EE7 \u0111\u1ED9ng.",
+          "C1"
+        ],
+        [
+          "numeracy",
+          "n",
+          "\u02C8nu\u02D0m\u0259r\u0259si",
+          "kh\u1EA3 n\u0103ng t\xEDnh to\xE1n",
+          "Schools focus on literacy and numeracy.",
+          "C\xE1c tr\u01B0\u1EDDng ch\xFA tr\u1ECDng kh\u1EA3 n\u0103ng \u0111\u1ECDc vi\u1EBFt v\xE0 t\xEDnh to\xE1n.",
+          "C1"
+        ],
+        [
+          "rote",
+          "n",
+          "ro\u028At",
+          "h\u1ECDc v\u1EB9t, s\u1EF1 h\u1ECDc thu\u1ED9c l\xF2ng",
+          "Learning by rote does not encourage understanding.",
+          "H\u1ECDc v\u1EB9t kh\xF4ng khuy\u1EBFn kh\xEDch s\u1EF1 hi\u1EC3u b\xE0i.",
+          "C1"
+        ],
+        [
+          "erudite",
+          "adj",
+          "\u02C8er\u0259\u02CCda\u026At",
+          "uy\xEAn b\xE1c",
+          "The professor gave an erudite lecture on history.",
+          "Gi\xE1o s\u01B0 c\xF3 b\xE0i gi\u1EA3ng uy\xEAn b\xE1c v\u1EC1 l\u1ECBch s\u1EED.",
+          "C1"
+        ],
+        [
+          "accreditation",
+          "n",
+          "\u0259\u02CCkred\u0259\u02C8te\u026A\u0283\u0259n",
+          "s\u1EF1 ki\u1EC3m \u0111\u1ECBnh, c\xF4ng nh\u1EADn",
+          "The course has full professional accreditation.",
+          "Kh\xF3a h\u1ECDc \u0111\u01B0\u1EE3c ki\u1EC3m \u0111\u1ECBnh \u0111\u1EA7y \u0111\u1EE7 v\u1EC1 chuy\xEAn m\xF4n.",
+          "C1"
+        ],
+        [
+          "erudition",
+          "n",
+          "\u02CCer\u0259\u02C8d\u026A\u0283\u0259n",
+          "s\u1EF1 uy\xEAn b\xE1c",
+          "His lectures were full of erudition and wit.",
+          "C\xE1c b\xE0i gi\u1EA3ng c\u1EE7a \xF4ng \u1EA5y \u0111\u1EA7y s\u1EF1 uy\xEAn b\xE1c v\xE0 d\xED d\u1ECFm.",
+          "C1"
+        ],
+        [
+          "plagiarism",
+          "n",
+          "\u02C8ple\u026Ad\u0292\u0259r\u02CC\u026Az\u0259m",
+          "\u0111\u1EA1o v\u0103n",
+          "Plagiarism is treated very seriously at university.",
+          "\u0110\u1EA1o v\u0103n b\u1ECB x\u1EED l\xFD r\u1EA5t nghi\xEAm \u1EDF \u0111\u1EA1i h\u1ECDc.",
+          "C1"
+        ],
+        [
+          "dissertation",
+          "n",
+          "\u02CCd\u026As\u0259r\u02C8te\u026A\u0283\u0259n",
+          "lu\u1EADn v\u0103n",
+          "He is writing his dissertation on climate policy.",
+          "Anh \u1EA5y \u0111ang vi\u1EBFt lu\u1EADn v\u0103n v\u1EC1 ch\xEDnh s\xE1ch kh\xED h\u1EADu.",
+          "C1"
+        ],
+        [
+          "scholarly",
+          "adj",
+          "\u02C8sk\u0251\u02D0l\u0259rli",
+          "mang t\xEDnh h\u1ECDc thu\u1EADt",
+          "The book is aimed at a scholarly audience.",
+          "Cu\u1ED1n s\xE1ch d\xE0nh cho \u0111\u1ED9c gi\u1EA3 gi\u1EDBi h\u1ECDc thu\u1EADt.",
+          "C1"
+        ],
+        [
+          "proficiency",
+          "n",
+          "pr\u0259\u02C8f\u026A\u0283\u0259nsi",
+          "s\u1EF1 th\xE0nh th\u1EA1o",
+          "Applicants must show proficiency in English.",
+          "\u1EE8ng vi\xEAn ph\u1EA3i ch\u1EE9ng minh tr\xECnh \u0111\u1ED9 ti\u1EBFng Anh th\xE0nh th\u1EA1o.",
+          "C1"
+        ],
+        [
+          "holistic",
+          "adj",
+          "ho\u028A\u02C8l\u026Ast\u026Ak",
+          "to\xE0n di\u1EC7n",
+          "The school takes a holistic approach to education.",
+          "Tr\u01B0\u1EDDng theo c\xE1ch ti\u1EBFp c\u1EADn gi\xE1o d\u1EE5c to\xE0n di\u1EC7n.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F3D9}\uFE0F",
+      "vi": "\u0110\xF4 th\u1ECB v\xE0 h\u1EA1 t\u1EA7ng",
+      "en": "Urban Life and Infrastructure",
+      "words": [
+        [
+          "gridlock",
+          "n",
+          "\u02C8\u0261r\u026Ad\u02CCl\u0251\u02D0k",
+          "t\xECnh tr\u1EA1ng t\u1EAFc ngh\u1EBDn ho\xE0n to\xE0n",
+          "The accident caused gridlock across the city.",
+          "V\u1EE5 tai n\u1EA1n g\xE2y t\u1EAFc ngh\u1EBDn ho\xE0n to\xE0n kh\u1EAFp th\xE0nh ph\u1ED1.",
+          "C1"
+        ],
+        [
+          "thoroughfare",
+          "n",
+          "\u02C8\u03B8\u025C\u02D0ro\u028A\u02CCfer",
+          "\u0111\u01B0\u1EDDng ph\u1ED1 ch\xEDnh",
+          "Oxford Street is a busy thoroughfare.",
+          "Ph\u1ED1 Oxford l\xE0 m\u1ED9t con \u0111\u01B0\u1EDDng ch\xEDnh \u0111\xF4ng \u0111\xFAc.",
+          "C1"
+        ],
+        [
+          "gentrification",
+          "n",
+          "\u02CCd\u0292entr\u026Af\u026A\u02C8ke\u026A\u0283\u0259n",
+          "s\u1EF1 c\u1EA3i t\u1EA1o \u0111\xF4 th\u1ECB (\u0111\u1EA9y gi\xE1 l\xEAn)",
+          "Gentrification has pushed many residents out of the area.",
+          "Qu\xE1 tr\xECnh c\u1EA3i t\u1EA1o \u0111\xF4 th\u1ECB \u0111\xE3 \u0111\u1EA9y nhi\u1EC1u c\u01B0 d\xE2n ra kh\u1ECFi khu v\u1EF1c.",
+          "C1"
+        ],
+        [
+          "sprawl",
+          "n",
+          "spr\u0254\u02D0l",
+          "s\u1EF1 ph\xE1t tri\u1EC3n tr\xE0n lan (\u0111\xF4 th\u1ECB)",
+          "Urban sprawl destroys farmland.",
+          "\u0110\xF4 th\u1ECB ph\xE1t tri\u1EC3n tr\xE0n lan ph\xE1 h\u1EE7y \u0111\u1EA5t n\xF4ng nghi\u1EC7p.",
+          "C1"
+        ],
+        [
+          "amenity",
+          "n",
+          "\u0259\u02C8men\u0259ti",
+          "ti\u1EC7n \xEDch",
+          "The flat is close to shops and other amenities.",
+          "C\u0103n h\u1ED9 g\u1EA7n c\u1EEDa h\xE0ng v\xE0 c\xE1c ti\u1EC7n \xEDch kh\xE1c.",
+          "C1"
+        ],
+        [
+          "conurbation",
+          "n",
+          "\u02CCk\u0251\u02D0n\u025C\u02D0r\u02C8be\u026A\u0283n",
+          "v\xF9ng \u0111\xF4 th\u1ECB li\xEAn h\u1EE3p",
+          "Manchester is the centre of a large conurbation.",
+          "Manchester l\xE0 trung t\xE2m c\u1EE7a m\u1ED9t v\xF9ng \u0111\xF4 th\u1ECB li\xEAn h\u1EE3p l\u1EDBn.",
+          "C1"
+        ],
+        [
+          "dilapidated",
+          "adj",
+          "d\u0259\u02C8l\xE6p\u0259\u02CCde\u026At\u026Ad",
+          "\u0111\u1ED5 n\xE1t, xu\u1ED1ng c\u1EA5p",
+          "The council plans to restore the dilapidated buildings.",
+          "Ch\xEDnh quy\u1EC1n d\u1EF1 \u0111\u1ECBnh tu s\u1EEDa c\xE1c t\xF2a nh\xE0 xu\u1ED1ng c\u1EA5p.",
+          "C1"
+        ],
+        [
+          "derelict",
+          "adj",
+          "\u02C8der\u0259\u02CCl\u026Akt",
+          "b\u1ECF hoang, \u0111\u1ED5 n\xE1t",
+          "The derelict factory will be turned into flats.",
+          "Nh\xE0 m\xE1y b\u1ECF hoang s\u1EBD \u0111\u01B0\u1EE3c bi\u1EBFn th\xE0nh c\u0103n h\u1ED9.",
+          "C1"
+        ],
+        [
+          "municipal",
+          "adj",
+          "mju\u02D0\u02C8n\u026As\u0259p\u0259l",
+          "thu\u1ED9c th\xE0nh ph\u1ED1",
+          "Municipal authorities are responsible for waste collection.",
+          "Ch\xEDnh quy\u1EC1n th\xE0nh ph\u1ED1 ch\u1ECBu tr\xE1ch nhi\u1EC7m thu gom r\xE1c.",
+          "C1"
+        ],
+        [
+          "metropolitan",
+          "adj",
+          "\u02CCmetr\u0259\u02C8p\u0251\u02D0l\u0259t\u0259n",
+          "thu\u1ED9c \u0111\xF4 th\u1ECB l\u1EDBn",
+          "The metropolitan area has over ten million people.",
+          "V\xF9ng \u0111\xF4 th\u1ECB l\u1EDBn c\xF3 h\u01A1n m\u01B0\u1EDDi tri\u1EC7u d\xE2n.",
+          "C1"
+        ],
+        [
+          "redevelopment",
+          "n",
+          "\u02CCri\u02D0d\u026A\u02C8vel\u0259pm\u0259nt",
+          "s\u1EF1 t\xE1i ph\xE1t tri\u1EC3n, c\u1EA3i t\u1EA1o",
+          "The redevelopment of the docks created thousands of jobs.",
+          "Vi\u1EC7c c\u1EA3i t\u1EA1o khu b\u1EBFn c\u1EA3ng t\u1EA1o ra h\xE0ng ngh\xECn vi\u1EC7c l\xE0m.",
+          "C1"
+        ],
+        [
+          "zoning",
+          "n",
+          "\u02C8zo\u028An\u026A\u014B",
+          "s\u1EF1 quy ho\u1EA1ch v\xF9ng",
+          "Strict zoning laws limit new housing.",
+          "Lu\u1EADt quy ho\u1EA1ch nghi\xEAm ng\u1EB7t h\u1EA1n ch\u1EBF nh\xE0 \u1EDF m\u1EDBi.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F54A}\uFE0F",
+      "vi": "Xung \u0111\u1ED9t v\xE0 ngo\u1EA1i giao",
+      "en": "Conflict and Diplomacy",
+      "words": [
+        [
+          "diplomacy",
+          "n",
+          "d\u026A\u02C8plo\u028Am\u0259si",
+          "ngo\u1EA1i giao",
+          "The crisis was resolved through diplomacy.",
+          "Cu\u1ED9c kh\u1EE7ng ho\u1EA3ng \u0111\u01B0\u1EE3c gi\u1EA3i quy\u1EBFt b\u1EB1ng ngo\u1EA1i giao.",
+          "C1"
+        ],
+        [
+          "sanction",
+          "n",
+          "\u02C8s\xE6\u014Bk\u0283\u0259n",
+          "l\u1EC7nh tr\u1EEBng ph\u1EA1t",
+          "The UN imposed sanctions on the regime.",
+          "Li\xEAn H\u1EE3p Qu\u1ED1c \xE1p \u0111\u1EB7t l\u1EC7nh tr\u1EEBng ph\u1EA1t l\xEAn ch\u1EBF \u0111\u1ED9 \u0111\xF3.",
+          "C1"
+        ],
+        [
+          "ceasefire",
+          "n",
+          "\u02C8si\u02D0\u02C8sfa\u026A\u0259r",
+          "l\u1EC7nh ng\u1EEBng b\u1EAFn",
+          "Both sides agreed to a ceasefire.",
+          "Hai b\xEAn \u0111\u1ED3ng \xFD ng\u1EEBng b\u1EAFn.",
+          "C1"
+        ],
+        [
+          "truce",
+          "n",
+          "tru\u02D0s",
+          "s\u1EF1 \u0111\xECnh chi\u1EBFn, th\u1ECFa thu\u1EADn t\u1EA1m d\u1EEBng",
+          "The two families finally called a truce.",
+          "Hai gia \u0111\xECnh cu\u1ED1i c\xF9ng c\u0169ng t\u1EA1m d\u1EEBng xung \u0111\u1ED9t.",
+          "C1"
+        ],
+        [
+          "mediate",
+          "v",
+          "\u02C8mi\u02D0di\u02CCe\u026At",
+          "h\xF2a gi\u1EA3i, l\xE0m trung gian",
+          "Norway offered to mediate between the two sides.",
+          "Na Uy \u0111\u1EC1 ngh\u1ECB l\xE0m trung gian h\xF2a gi\u1EA3i gi\u1EEFa hai b\xEAn.",
+          "C1"
+        ],
+        [
+          "hostility",
+          "n",
+          "h\u0251\u02D0\u02C8st\u026Al\u0259ti",
+          "s\u1EF1 th\xF9 \u0111\u1ECBch",
+          "There is open hostility between the two groups.",
+          "C\xF3 s\u1EF1 th\xF9 \u0111\u1ECBch c\xF4ng khai gi\u1EEFa hai nh\xF3m.",
+          "C1"
+        ],
+        [
+          "reconciliation",
+          "n",
+          "\u02CCrek\u0259n\u02CCs\u026Ali\u02C8e\u026A\u0283\u0259n",
+          "s\u1EF1 h\xF2a gi\u1EA3i",
+          "The commission promoted reconciliation after the war.",
+          "\u1EE6y ban th\xFAc \u0111\u1EA9y h\xF2a gi\u1EA3i sau chi\u1EBFn tranh.",
+          "C1"
+        ],
+        [
+          "humanitarian",
+          "adj",
+          "\u02CChju\u02D0\u02CCm\xE6n\u0259\u02C8teri\u0259n",
+          "nh\xE2n \u0111\u1EA1o",
+          "Aid agencies warn of a humanitarian crisis.",
+          "C\xE1c t\u1ED5 ch\u1EE9c c\u1EE9u tr\u1EE3 c\u1EA3nh b\xE1o v\u1EC1 m\u1ED9t cu\u1ED9c kh\u1EE7ng ho\u1EA3ng nh\xE2n \u0111\u1EA1o.",
+          "C1"
+        ],
+        [
+          "asylum",
+          "n",
+          "\u0259\u02C8sa\u026Al\u0259m",
+          "s\u1EF1 t\u1ECB n\u1EA1n (ch\xEDnh tr\u1ECB)",
+          "They applied for political asylum.",
+          "H\u1ECD xin t\u1ECB n\u1EA1n ch\xEDnh tr\u1ECB.",
+          "C1"
+        ],
+        [
+          "envoy",
+          "n",
+          "\u02C8env\u0254\u026A",
+          "\u0111\u1EB7c ph\xE1i vi\xEAn",
+          "A special envoy was sent to the region.",
+          "M\u1ED9t \u0111\u1EB7c ph\xE1i vi\xEAn \u0111\u01B0\u1EE3c c\u1EED t\u1EDBi khu v\u1EF1c.",
+          "C1"
+        ],
+        [
+          "insurgency",
+          "n",
+          "\u02CC\u026An\u02C8s\u025C\u02D0rd\u0292\u0259nsi",
+          "cu\u1ED9c n\u1ED5i d\u1EADy",
+          "The army struggled to contain the insurgency.",
+          "Qu\xE2n \u0111\u1ED9i ch\u1EADt v\u1EADt ki\u1EC1m ch\u1EBF cu\u1ED9c n\u1ED5i d\u1EADy.",
+          "C1"
+        ],
+        [
+          "stalemate",
+          "n",
+          "\u02C8ste\u026Al\u02CCme\u026At",
+          "th\u1EBF b\u1EBF t\u1EAFc",
+          "The talks ended in stalemate.",
+          "C\xE1c cu\u1ED9c \u0111\xE0m ph\xE1n k\u1EBFt th\xFAc trong b\u1EBF t\u1EAFc.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1FA9E}",
+      "vi": "\u0110\u1EA1o \u0111\u1EE9c v\xE0 gi\xE1 tr\u1ECB",
+      "en": "Ethics and Values",
+      "words": [
+        [
+          "integrity",
+          "n",
+          "\u02CC\u026An\u02C8te\u0261r\u0259ti",
+          "s\u1EF1 ch\xEDnh tr\u1EF1c",
+          "She is a woman of great integrity.",
+          "B\xE0 \u1EA5y l\xE0 ng\u01B0\u1EDDi v\xF4 c\xF9ng ch\xEDnh tr\u1EF1c.",
+          "C1"
+        ],
+        [
+          "complicity",
+          "n",
+          "k\u0259m\u02C8pl\u026As\u0259ti",
+          "s\u1EF1 \u0111\u1ED3ng l\xF5a",
+          "He denied any complicity in the crime.",
+          "Anh ta ph\u1EE7 nh\u1EADn m\u1ECDi s\u1EF1 \u0111\u1ED3ng l\xF5a trong v\u1EE5 \xE1n.",
+          "C1"
+        ],
+        [
+          "accountable",
+          "adj",
+          "\u0259\u02C8ka\u028Ant\u0259b\u0259l",
+          "ch\u1ECBu tr\xE1ch nhi\u1EC7m",
+          "Leaders must be held accountable for their decisions.",
+          "L\xE3nh \u0111\u1EA1o ph\u1EA3i ch\u1ECBu tr\xE1ch nhi\u1EC7m v\u1EC1 quy\u1EBFt \u0111\u1ECBnh c\u1EE7a m\xECnh.",
+          "C1"
+        ],
+        [
+          "exploitation",
+          "n",
+          "\u02CCek\u02CCspl\u0254\u026A\u02C8te\u026A\u0283\u0259n",
+          "s\u1EF1 b\xF3c l\u1ED9t",
+          "The report exposed the exploitation of child workers.",
+          "B\u1EA3n b\xE1o c\xE1o ph\u01A1i b\xE0y s\u1EF1 b\xF3c l\u1ED9t lao \u0111\u1ED9ng tr\u1EBB em.",
+          "C1"
+        ],
+        [
+          "transparency",
+          "n",
+          "tr\xE6n\u02C8sper\u0259nsi",
+          "s\u1EF1 minh b\u1EA1ch",
+          "Voters demand more transparency from the government.",
+          "C\u1EED tri \u0111\xF2i ch\xEDnh ph\u1EE7 minh b\u1EA1ch h\u01A1n.",
+          "C1"
+        ],
+        [
+          "righteous",
+          "adj",
+          "\u02C8ra\u026At\u0283\u0259s",
+          "ch\xEDnh \u0111\xE1ng, ngay th\u1EB3ng",
+          "She was filled with righteous anger.",
+          "C\xF4 \u1EA5y tr\xE0n \u0111\u1EA7y c\u01A1n gi\u1EADn ch\xEDnh \u0111\xE1ng.",
+          "C1"
+        ],
+        [
+          "hypocrisy",
+          "n",
+          "h\u026A\u02C8p\u0251\u02D0kr\u0259si",
+          "s\u1EF1 \u0111\u1EA1o \u0111\u1EE9c gi\u1EA3",
+          "He was accused of hypocrisy for flying to a climate conference.",
+          "\xD4ng \u1EA5y b\u1ECB ch\u1EC9 tr\xEDch l\xE0 \u0111\u1EA1o \u0111\u1EE9c gi\u1EA3 khi bay t\u1EDBi h\u1ED9i ngh\u1ECB kh\xED h\u1EADu.",
+          "C1"
+        ],
+        [
+          "scrupulous",
+          "adj",
+          "\u02C8skru\u02D0pj\u0259l\u0259s",
+          "c\u1EA9n tr\u1ECDng, li\xEAm ch\xEDnh",
+          "She is scrupulous about telling the truth.",
+          "C\xF4 \u1EA5y r\u1EA5t c\u1EA9n tr\u1ECDng trong vi\u1EC7c n\xF3i s\u1EF1 th\u1EADt.",
+          "C1"
+        ],
+        [
+          "unethical",
+          "adj",
+          "\u0259\u02C8ne\u03B8\u026Ak\u0259l",
+          "phi \u0111\u1EA1o \u0111\u1EE9c",
+          "Testing cosmetics on animals is considered unethical.",
+          "Th\u1EED nghi\u1EC7m m\u1EF9 ph\u1EA9m tr\xEAn \u0111\u1ED9ng v\u1EADt b\u1ECB coi l\xE0 phi \u0111\u1EA1o \u0111\u1EE9c.",
+          "C1"
+        ],
+        [
+          "bigotry",
+          "n",
+          "\u02C8b\u026A\u0261\u0259tri",
+          "s\u1EF1 c\u1ED1 ch\u1EA5p, m\xF9 qu\xE1ng",
+          "Religious bigotry still exists in many places.",
+          "S\u1EF1 c\u1ED1 ch\u1EA5p t\xF4n gi\xE1o v\u1EABn t\u1ED3n t\u1EA1i \u1EDF nhi\u1EC1u n\u01A1i.",
+          "C1"
+        ],
+        [
+          "ethos",
+          "n",
+          "\u02C8i\u02D0\u03B8\u0251\u02D0s",
+          "tinh th\u1EA7n, \u0111\u1EB7c t\xEDnh (c\u1EE7a t\u1ED5 ch\u1EE9c)",
+          "The school has a strong ethos of community service.",
+          "Tr\u01B0\u1EDDng c\xF3 tinh th\u1EA7n ph\u1EE5c v\u1EE5 c\u1ED9ng \u0111\u1ED3ng m\u1EA1nh m\u1EBD.",
+          "C1"
+        ],
+        [
+          "magnanimous",
+          "adj",
+          "m\xE6\u0261\u02C8n\xE6n\u0259m\u0259s",
+          "cao th\u01B0\u1EE3ng, h\xE0o hi\u1EC7p",
+          "She was magnanimous in victory.",
+          "C\xF4 \u1EA5y cao th\u01B0\u1EE3ng khi chi\u1EBFn th\u1EAFng.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F522}",
+      "vi": "M\xF4 t\u1EA3 s\u1ED1 li\u1EC7u ch\xEDnh x\xE1c",
+      "en": "Describing Data Precisely",
+      "words": [
+        [
+          "marginal",
+          "adj",
+          "\u02C8m\u0251\u02D0rd\u0292\u0259n\u0259l",
+          "kh\xF4ng \u0111\xE1ng k\u1EC3, r\u1EA5t nh\u1ECF",
+          "There was only a marginal increase in sales.",
+          "Doanh s\u1ED1 ch\u1EC9 t\u0103ng kh\xF4ng \u0111\xE1ng k\u1EC3.",
+          "C1"
+        ],
+        [
+          "nominal",
+          "adj",
+          "\u02C8n\u0251\u02D0m\u0259n\u0259l",
+          "danh ngh\u0129a; r\u1EA5t nh\u1ECF",
+          "Members pay a nominal fee of one dollar.",
+          "Th\xE0nh vi\xEAn \u0111\xF3ng m\u1ED9t kho\u1EA3n ph\xED t\u01B0\u1EE3ng tr\u01B0ng m\u1ED9t \u0111\xF4 la.",
+          "C1"
+        ],
+        [
+          "negligible",
+          "adj",
+          "\u02C8ne\u0261l\u0259d\u0292\u0259b\u0259l",
+          "kh\xF4ng \u0111\xE1ng k\u1EC3",
+          "The risk to public health is negligible.",
+          "R\u1EE7i ro \u0111\u1ED1i v\u1EDBi s\u1EE9c kh\u1ECFe c\u1ED9ng \u0111\u1ED3ng l\xE0 kh\xF4ng \u0111\xE1ng k\u1EC3.",
+          "C1"
+        ],
+        [
+          "proportionate",
+          "adj",
+          "pr\u0259\u02C8p\u0254\u02D0r\u0283\u0259n\u0259t",
+          "t\u01B0\u01A1ng x\u1EE9ng",
+          "The punishment should be proportionate to the crime.",
+          "H\xECnh ph\u1EA1t n\xEAn t\u01B0\u01A1ng x\u1EE9ng v\u1EDBi t\u1ED9i danh.",
+          "C1"
+        ],
+        [
+          "disproportionate",
+          "adj",
+          "\u02CCd\u026Aspr\u0259\u02C8p\u0254\u02D0r\u0283\u0259n\u026At",
+          "kh\xF4ng c\xE2n x\u1EE9ng",
+          "The poor spend a disproportionate amount on food.",
+          "Ng\u01B0\u1EDDi ngh\xE8o chi m\u1ED9t ph\u1EA7n kh\xF4ng c\xE2n x\u1EE9ng cho th\u1EF1c ph\u1EA9m.",
+          "C1"
+        ],
+        [
+          "plateau",
+          "v",
+          "pl\xE6\u02C8to\u028A",
+          "ch\u1EEFng l\u1EA1i",
+          "After years of growth, profits have plateaued.",
+          "Sau nhi\u1EC1u n\u0103m t\u0103ng tr\u01B0\u1EDFng, l\u1EE3i nhu\u1EADn \u0111\xE3 ch\u1EEFng l\u1EA1i.",
+          "C1"
+        ],
+        [
+          "trough",
+          "n",
+          "tr\u0254\u02D0f",
+          "\u0111i\u1EC3m \u0111\xE1y",
+          "Unemployment reached a trough in 2019.",
+          "T\u1EC9 l\u1EC7 th\u1EA5t nghi\u1EC7p ch\u1EA1m \u0111\xE1y v\xE0o n\u0103m 2019.",
+          "C1"
+        ],
+        [
+          "consecutive",
+          "adj",
+          "k\u0259n\u02C8sekj\u0259t\u026Av",
+          "li\xEAn ti\u1EBFp",
+          "Prices rose for the third consecutive month.",
+          "Gi\xE1 t\u0103ng th\xE1ng th\u1EE9 ba li\xEAn ti\u1EBFp.",
+          "C1"
+        ],
+        [
+          "cumulative",
+          "adj",
+          "\u02C8kju\u02D0mj\u0259l\u0259t\u026Av",
+          "t\xEDch l\u0169y",
+          "The cumulative effect of small changes can be huge.",
+          "T\xE1c \u0111\u1ED9ng t\xEDch l\u0169y c\u1EE7a nh\u1EEFng thay \u0111\u1ED5i nh\u1ECF c\xF3 th\u1EC3 r\u1EA5t l\u1EDBn.",
+          "C1"
+        ],
+        [
+          "tally",
+          "n",
+          "\u02C8t\xE6li",
+          "s\u1ED1 \u0111\u1EBFm, t\u1ED5ng s\u1ED1",
+          "The final tally was 52 votes to 48.",
+          "T\u1ED5ng s\u1ED1 phi\u1EBFu cu\u1ED1i c\xF9ng l\xE0 52 so v\u1EDBi 48.",
+          "C1"
+        ],
+        [
+          "outnumber",
+          "v",
+          "a\u028At\u02C8n\u028Cmb\u0259r",
+          "\u0111\xF4ng h\u01A1n, v\u01B0\u1EE3t v\u1EC1 s\u1ED1 l\u01B0\u1EE3ng",
+          "Women now outnumber men at the university.",
+          "Hi\u1EC7n n\u1EEF gi\u1EDBi \u0111\xF4ng h\u01A1n nam gi\u1EDBi \u1EDF tr\u01B0\u1EDDng \u0111\u1EA1i h\u1ECDc.",
+          "C1"
+        ],
+        [
+          "exponential",
+          "adj",
+          "\u02CCekspo\u028A\u02C8nen\u0283\u0259l",
+          "theo c\u1EA5p s\u1ED1 nh\xE2n",
+          "The app has seen exponential growth.",
+          "\u1EE8ng d\u1EE5ng \u0111\xE3 t\u0103ng tr\u01B0\u1EDFng theo c\u1EA5p s\u1ED1 nh\xE2n.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u270D\uFE0F",
+      "vi": "\u0110\u1ED9ng t\u1EEB h\u1ECDc thu\u1EADt",
+      "en": "Academic Verbs",
+      "words": [
+        [
+          "ascertain",
+          "v",
+          "\u02CC\xE6s\u0259r\u02C8te\u026An",
+          "x\xE1c \u0111\u1ECBnh ch\u1EAFc ch\u1EAFn",
+          "Police are trying to ascertain the cause of the fire.",
+          "C\u1EA3nh s\xE1t \u0111ang c\u1ED1 x\xE1c \u0111\u1ECBnh nguy\xEAn nh\xE2n v\u1EE5 ch\xE1y.",
+          "C1"
+        ],
+        [
+          "reiterate",
+          "v",
+          "ri\u02C8\u026At\u0259r\u02CCe\u026At",
+          "nh\u1EAFc l\u1EA1i, nh\u1EA5n m\u1EA1nh l\u1EA1i",
+          "Let me reiterate the main points.",
+          "T\xF4i xin nh\u1EAFc l\u1EA1i c\xE1c \xFD ch\xEDnh.",
+          "C1"
+        ],
+        [
+          "posit",
+          "v",
+          "\u02C8p\u0251\u02D0z\u0259t",
+          "\u0111\u1EB7t ra (gi\u1EA3 \u0111\u1ECBnh), cho r\u1EB1ng",
+          "The theory posits that the universe is expanding.",
+          "L\xFD thuy\u1EBFt cho r\u1EB1ng v\u0169 tr\u1EE5 \u0111ang gi\xE3n n\u1EDF.",
+          "C1"
+        ],
+        [
+          "delineate",
+          "v",
+          "d\u026A\u02C8l\u026Ani\u02CCe\u026At",
+          "ph\xE1c h\u1ECDa, v\u1EA1ch r\xF5",
+          "The report delineates the main risks.",
+          "B\u1EA3n b\xE1o c\xE1o v\u1EA1ch r\xF5 c\xE1c r\u1EE7i ro ch\xEDnh.",
+          "C1"
+        ],
+        [
+          "elucidate",
+          "v",
+          "\u026A\u02C8lu\u02D0s\u0259\u02CCde\u026At",
+          "l\xE0m s\xE1ng t\u1ECF",
+          "The lecturer elucidated the theory with examples.",
+          "Gi\u1EA3ng vi\xEAn l\xE0m s\xE1ng t\u1ECF l\xFD thuy\u1EBFt b\u1EB1ng v\xED d\u1EE5.",
+          "C1"
+        ],
+        [
+          "encompass",
+          "v",
+          "en\u02C8k\u028Cmp\u0259s",
+          "bao g\u1ED3m, bao qu\xE1t",
+          "The course encompasses all aspects of design.",
+          "Kh\xF3a h\u1ECDc bao qu\xE1t m\u1ECDi kh\xEDa c\u1EA1nh c\u1EE7a thi\u1EBFt k\u1EBF.",
+          "C1"
+        ],
+        [
+          "necessitate",
+          "v",
+          "n\u0259\u02C8ses\u0259\u02CCte\u026At",
+          "\u0111\xF2i h\u1ECFi, c\u1EA7n ph\u1EA3i c\xF3",
+          "The growth of the city will necessitate new schools.",
+          "S\u1EF1 ph\xE1t tri\u1EC3n c\u1EE7a th\xE0nh ph\u1ED1 s\u1EBD \u0111\xF2i h\u1ECFi c\xF3 tr\u01B0\u1EDDng h\u1ECDc m\u1EDBi.",
+          "C1"
+        ],
+        [
+          "ameliorate",
+          "v",
+          "\u0259\u02C8mi\u02D0lj\u0259r\u02CCe\u026At",
+          "c\u1EA3i thi\u1EC7n, l\xE0m t\u1ED1t h\u01A1n",
+          "Steps were taken to ameliorate working conditions.",
+          "C\xE1c bi\u1EC7n ph\xE1p \u0111\xE3 \u0111\u01B0\u1EE3c \u0111\u01B0a ra \u0111\u1EC3 c\u1EA3i thi\u1EC7n \u0111i\u1EC1u ki\u1EC7n l\xE0m vi\u1EC7c.",
+          "C1"
+        ],
+        [
+          "postulate",
+          "v",
+          "\u02C8p\u0251\u02D0st\u0283\u0259\u02CCle\u026At",
+          "cho l\xE0 \u0111\xFAng (l\xE0m c\u01A1 s\u1EDF)",
+          "Scientists postulate that life began in the oceans.",
+          "C\xE1c nh\xE0 khoa h\u1ECDc cho r\u1EB1ng s\u1EF1 s\u1ED1ng b\u1EAFt ngu\u1ED3n t\u1EEB \u0111\u1EA1i d\u01B0\u01A1ng.",
+          "C1"
+        ],
+        [
+          "underpin",
+          "v",
+          "\u02C8\u028Cnd\u0259r\u02CCp\u026An",
+          "l\xE0m n\u1EC1n t\u1EA3ng cho",
+          "Strong values underpin the company's success.",
+          "Nh\u1EEFng gi\xE1 tr\u1ECB v\u1EEFng ch\u1EAFc l\xE0m n\u1EC1n t\u1EA3ng cho th\xE0nh c\xF4ng c\u1EE7a c\xF4ng ty.",
+          "C1"
+        ],
+        [
+          "exemplify",
+          "v",
+          "\u026A\u0261\u02C8zempl\u0259\u02CCfa\u026A",
+          "l\xE0 v\xED d\u1EE5 ti\xEAu bi\u1EC3u cho",
+          "This building exemplifies modern architecture.",
+          "T\xF2a nh\xE0 n\xE0y l\xE0 v\xED d\u1EE5 ti\xEAu bi\u1EC3u cho ki\u1EBFn tr\xFAc hi\u1EC7n \u0111\u1EA1i.",
+          "C1"
+        ],
+        [
+          "juxtapose",
+          "v",
+          "\u02CCd\u0292\u028Ckst\u0259\u02C8po\u028Az",
+          "\u0111\u1EB7t c\u1EA1nh nhau (\u0111\u1EC3 so s\xE1nh)",
+          "The exhibition juxtaposes old and new photographs.",
+          "Tri\u1EC3n l\xE3m \u0111\u1EB7t \u1EA3nh c\u0169 v\xE0 m\u1EDBi c\u1EA1nh nhau \u0111\u1EC3 so s\xE1nh.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F517}",
+      "vi": "Tr\u1EA1ng t\u1EEB v\xE0 t\u1EEB n\u1ED1i n\xE2ng cao",
+      "en": "Advanced Adverbs and Linkers",
+      "words": [
+        [
+          "hitherto",
+          "adv",
+          "\u02C8h\u026A\u02CC\xF0\u025C\u02D0r\u02C8tu\u02D0",
+          "cho t\u1EDBi nay",
+          "The study revealed hitherto unknown facts.",
+          "Nghi\xEAn c\u1EE9u ti\u1EBFt l\u1ED9 nh\u1EEFng s\u1EF1 th\u1EADt cho t\u1EDBi nay ch\u01B0a ai bi\u1EBFt.",
+          "C1"
+        ],
+        [
+          "notwithstanding",
+          "prep",
+          "\u02CCn\u0251\u02D0tw\u026A\u03B8\u02C8st\xE6nd\u026A\u014B",
+          "b\u1EA5t ch\u1EA5p, m\u1EB7c d\xF9",
+          "Notwithstanding the bad weather, the event was a success.",
+          "B\u1EA5t ch\u1EA5p th\u1EDDi ti\u1EBFt x\u1EA5u, s\u1EF1 ki\u1EC7n v\u1EABn th\xE0nh c\xF4ng.",
+          "C1"
+        ],
+        [
+          "insofar",
+          "adv",
+          "\u02C8\u026Ans\u0259f\u0251\u02D0r",
+          "trong ch\u1EEBng m\u1EF1c (insofar as)",
+          "I will help insofar as I can.",
+          "T\xF4i s\u1EBD gi\xFAp trong ch\u1EEBng m\u1EF1c c\xF3 th\u1EC3.",
+          "C1"
+        ],
+        [
+          "whereby",
+          "adv",
+          "wer\u02C8ba\u026A",
+          "theo \u0111\xF3, nh\u1EDD \u0111\xF3",
+          "They set up a system whereby students can borrow laptops.",
+          "H\u1ECD l\u1EADp ra m\u1ED9t h\u1EC7 th\u1ED1ng theo \u0111\xF3 sinh vi\xEAn c\xF3 th\u1EC3 m\u01B0\u1EE3n m\xE1y t\xEDnh.",
+          "C1"
+        ],
+        [
+          "henceforth",
+          "adv",
+          "\u02C8hen\u02C8sf\u0254\u02D0r\u03B8",
+          "t\u1EEB nay v\u1EC1 sau",
+          "Henceforth, all meetings will be held online.",
+          "T\u1EEB nay v\u1EC1 sau, m\u1ECDi cu\u1ED9c h\u1ECDp s\u1EBD di\u1EC5n ra tr\u1EF1c tuy\u1EBFn.",
+          "C1"
+        ],
+        [
+          "inadvertently",
+          "adv",
+          "\u02CC\u026An\u0259d\u02C8v\u025C\u02D0rt\u0259ntli",
+          "v\xF4 t\xECnh, s\u01A1 \xFD",
+          "I inadvertently deleted the file.",
+          "T\xF4i v\xF4 t\xECnh x\xF3a m\u1EA5t t\u1EC7p.",
+          "C1"
+        ],
+        [
+          "predominantly",
+          "adv",
+          "\u02CCpr\u026A\u02C8d\u0251\u02D0m\u0259n\u0259nt\u02CCli\u02D0",
+          "ch\u1EE7 y\u1EBFu",
+          "The audience was predominantly young.",
+          "Kh\xE1n gi\u1EA3 ch\u1EE7 y\u1EBFu l\xE0 ng\u01B0\u1EDDi tr\u1EBB.",
+          "C1"
+        ],
+        [
+          "arguably",
+          "adv",
+          "\u02C8\u0251\u02D0r\u0261ju\u02D0\u0259bli",
+          "c\xF3 th\u1EC3 n\xF3i l\xE0",
+          "She is arguably the best player of her generation.",
+          "C\xF3 th\u1EC3 n\xF3i c\xF4 \u1EA5y l\xE0 c\u1EA7u th\u1EE7 gi\u1ECFi nh\u1EA5t th\u1EBF h\u1EC7 m\xECnh.",
+          "C1"
+        ],
+        [
+          "inherently",
+          "adv",
+          "\u026An\u02C8h\u026Ar\u0259ntli",
+          "v\u1ED1n d\u0129",
+          "No job is inherently boring.",
+          "Kh\xF4ng c\xF4ng vi\u1EC7c n\xE0o v\u1ED1n d\u0129 nh\xE0m ch\xE1n.",
+          "C1"
+        ],
+        [
+          "ostensibly",
+          "adv",
+          "\u0251\u02D0\u02C8stens\u0259bli",
+          "b\u1EC1 ngo\xE0i l\xE0, n\xF3i l\xE0",
+          "He was ostensibly on a business trip.",
+          "B\u1EC1 ngo\xE0i th\xEC anh ta \u0111i c\xF4ng t\xE1c.",
+          "C1"
+        ],
+        [
+          "thereby",
+          "adv",
+          "\u02C8\xF0er\u02C8ba\u026A",
+          "nh\u1EDD \u0111\xF3, b\u1EB1ng c\xE1ch \u0111\xF3",
+          "The new road cuts travel time, thereby reducing costs.",
+          "Con \u0111\u01B0\u1EDDng m\u1EDBi r\xFAt ng\u1EAFn th\u1EDDi gian di chuy\u1EC3n, nh\u1EDD \u0111\xF3 gi\u1EA3m chi ph\xED.",
+          "C1"
+        ],
+        [
+          "albeit",
+          "conj",
+          "\u0254\u02D0l\u02C8bi\u02D0\u026At",
+          "m\u1EB7c d\xF9",
+          "The plan worked, albeit slowly.",
+          "K\u1EBF ho\u1EA1ch \u0111\xE3 hi\u1EC7u qu\u1EA3, m\u1EB7c d\xF9 ch\u1EADm.",
+          "C1"
+        ]
+      ]
+    },
+    {
+      "icon": "\u{1F4AC}",
+      "vi": "C\u1EE5m t\u1EEB v\xE0 th\xE0nh ng\u1EEF C1",
+      "en": "C1 Idioms and Phrases",
+      "words": [
+        [
+          "a double-edged sword",
+          "phrase",
+          "\u0259 \u02C8d\u028Cb\u0259l ed\u0292d s\u0254\u02D0rd",
+          "con dao hai l\u01B0\u1EE1i",
+          "Social media is a double-edged sword.",
+          "M\u1EA1ng x\xE3 h\u1ED9i l\xE0 con dao hai l\u01B0\u1EE1i.",
+          "C1"
+        ],
+        [
+          "the tip of the iceberg",
+          "phrase",
+          "\xF0\u0259 t\u026Ap \u028Cv \xF0\u0259 \u02C8a\u026Asb\u0259r\u0261",
+          "ph\u1EA7n n\u1ED5i c\u1EE7a t\u1EA3ng b\u0103ng",
+          "These complaints are just the tip of the iceberg.",
+          "Nh\u1EEFng l\u1EDDi ph\xE0n n\xE0n n\xE0y ch\u1EC9 l\xE0 ph\u1EA7n n\u1ED5i c\u1EE7a t\u1EA3ng b\u0103ng.",
+          "C1"
+        ],
+        [
+          "a vicious circle",
+          "phrase",
+          "\u0259 \u02C8v\u026A\u0283\u0259s \u02C8s\u025C\u02D0rk\u0259l",
+          "v\xF2ng lu\u1EA9n qu\u1EA9n",
+          "Poverty and poor health form a vicious circle.",
+          "Ngh\xE8o \u0111\xF3i v\xE0 s\u1EE9c kh\u1ECFe k\xE9m t\u1EA1o th\xE0nh m\u1ED9t v\xF2ng lu\u1EA9n qu\u1EA9n.",
+          "C1"
+        ],
+        [
+          "come to terms with",
+          "phrase",
+          "k\u028Cm tu\u02D0 t\u025C\u02D0rmz w\u026A\xF0",
+          "ch\u1EA5p nh\u1EADn (\u0111i\u1EC1u kh\xF3 kh\u0103n)",
+          "She is still coming to terms with her loss.",
+          "C\xF4 \u1EA5y v\u1EABn \u0111ang d\u1EA7n ch\u1EA5p nh\u1EADn m\u1EA5t m\xE1t c\u1EE7a m\xECnh.",
+          "C1"
+        ],
+        [
+          "by and large",
+          "phrase",
+          "ba\u026A \u0259nd l\u0251\u02D0rd\u0292",
+          "nh\xECn chung",
+          "By and large, the project was a success.",
+          "Nh\xECn chung, d\u1EF1 \xE1n \u0111\xE3 th\xE0nh c\xF4ng.",
+          "C1"
+        ],
+        [
+          "turn a blind eye to",
+          "phrase",
+          "t\u025C\u02D0rn \u0259 bla\u026And a\u026A tu\u02D0",
+          "l\xE0m ng\u01A1 tr\u01B0\u1EDBc",
+          "The authorities turned a blind eye to the problem.",
+          "Ch\xEDnh quy\u1EC1n l\xE0m ng\u01A1 tr\u01B0\u1EDBc v\u1EA5n \u0111\u1EC1.",
+          "C1"
+        ],
+        [
+          "go to great lengths",
+          "phrase",
+          "\u0261o\u028A tu\u02D0 \u0261re\u026At le\u014Bk\u03B8s",
+          "c\u1ED1 g\u1EAFng h\u1EBFt s\u1EE9c, b\u1EA5t ch\u1EA5p m\u1ECDi gi\xE1",
+          "She went to great lengths to help us.",
+          "C\xF4 \u1EA5y \u0111\xE3 c\u1ED1 g\u1EAFng h\u1EBFt s\u1EE9c \u0111\u1EC3 gi\xFAp ch\xFAng t\xF4i.",
+          "C1"
+        ],
+        [
+          "a far cry from",
+          "phrase",
+          "\u0259 f\u0251\u02D0r kra\u026A fr\u028Cm",
+          "kh\xE1c xa v\u1EDBi",
+          "The final result was a far cry from what we expected.",
+          "K\u1EBFt qu\u1EA3 cu\u1ED1i c\xF9ng kh\xE1c xa v\u1EDBi nh\u1EEFng g\xEC ch\xFAng t\xF4i mong \u0111\u1EE3i.",
+          "C1"
+        ],
+        [
+          "pave the way for",
+          "phrase",
+          "pe\u026Av \xF0\u0259 we\u026A f\u0254\u02D0r",
+          "m\u1EDF \u0111\u01B0\u1EDDng cho",
+          "The discovery paved the way for new treatments.",
+          "Ph\xE1t hi\u1EC7n n\xE0y m\u1EDF \u0111\u01B0\u1EDDng cho nh\u1EEFng ph\u01B0\u01A1ng ph\xE1p \u0111i\u1EC1u tr\u1ECB m\u1EDBi.",
+          "C1"
+        ],
+        [
+          "on the verge of",
+          "phrase",
+          "\u0251\u02D0n \xF0\u0259 v\u025C\u02D0rd\u0292 \u028Cv",
+          "b\xEAn b\u1EDD, s\u1EAFp s\u1EEDa",
+          "The species is on the verge of extinction.",
+          "Lo\xE0i n\xE0y \u0111ang b\xEAn b\u1EDD tuy\u1EC7t ch\u1EE7ng.",
+          "C1"
+        ],
+        [
+          "the bottom line",
+          "phrase",
+          "\xF0\u0259 \u02C8b\u0251\u02D0t\u0259m la\u026An",
+          "\u0111i\u1EC1u c\u1ED1t l\xF5i",
+          "The bottom line is that we need more money.",
+          "\u0110i\u1EC1u c\u1ED1t l\xF5i l\xE0 ch\xFAng ta c\u1EA7n th\xEAm ti\u1EC1n.",
+          "C1"
+        ],
+        [
+          "food for thought",
+          "phrase",
+          "fu\u02D0d f\u0254\u02D0r \u03B8\u0254\u02D0t",
+          "\u0111i\u1EC1u \u0111\xE1ng suy ng\u1EABm",
+          "The lecture gave us plenty of food for thought.",
+          "B\xE0i gi\u1EA3ng mang l\u1EA1i cho ch\xFAng t\xF4i nhi\u1EC1u \u0111i\u1EC1u \u0111\xE1ng suy ng\u1EABm.",
+          "C1"
+        ]
+      ]
+    }
+  ]
+};
+
+// src/app/data/vocab/ielts.ts
+var VOCAB10 = {
   "lessons": [
     {
       "icon": "\u{1F9EC}",
@@ -31397,7 +34278,7 @@ var VOCAB9 = {
 };
 
 // src/app/data/vocab/toeic.ts
-var VOCAB10 = {
+var VOCAB11 = {
   "lessons": [
     {
       "icon": "\u{1F381}",
@@ -35403,11 +38284,551 @@ var PASSAGES = [
   }
 ];
 
+// src/app/data/grammar-advanced.ts
+var GRAMMAR_ADVANCED = [
+  // ---------------------------------------------------------------- B1
+  {
+    id: "passive",
+    icon: "\u{1F504}",
+    ico: "arrows-shuffle",
+    title: "C\xE2u b\u1ECB \u0111\u1ED9ng",
+    titleEn: "The passive voice",
+    level: "intermediate",
+    summary: 'C\xE2u b\u1ECB \u0111\u1ED9ng nh\u1EA5n m\u1EA1nh h\xE0nh \u0111\u1ED9ng ho\u1EB7c ng\u01B0\u1EDDi/v\u1EADt ch\u1ECBu t\xE1c \u0111\u1ED9ng, khi ng\u01B0\u1EDDi l\xE0m kh\xF4ng quan tr\u1ECDng ho\u1EB7c kh\xF4ng r\xF5. C\xF4ng th\u1EE9c: be (chia theo th\xEC) + V3/ed; ng\u01B0\u1EDDi l\xE0m (n\u1EBFu c\u1EA7n) \u0111\u1EE9ng sau "by".',
+    rules: [
+      { form: "Hi\u1EC7n t\u1EA1i \u0111\u01A1n: am / is / are + V3", note: "English is spoken all over the world." },
+      { form: "Qu\xE1 kh\u1EE9 \u0111\u01A1n: was / were + V3", note: "The bridge was built in 1990." },
+      { form: "Hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh: has / have been + V3", note: "The report has been finished." },
+      { form: "\u0110\u1ED9ng t\u1EEB khuy\u1EBFt thi\u1EBFu: can / must / will + be + V3", note: "The work must be done today." },
+      { form: "Ti\u1EBFp di\u1EC5n: am / is / are / was / were + being + V3", note: "The road is being repaired." }
+    ],
+    examples: [["This song was written by my father.", "B\xE0i h\xE1t n\xE0y do b\u1ED1 t\xF4i vi\u1EBFt."], ["Rice is grown in many parts of Asia.", "L\xFAa \u0111\u01B0\u1EE3c tr\u1ED3ng \u1EDF nhi\u1EC1u v\xF9ng c\u1EE7a ch\xE2u \xC1."], ["The meeting has been cancelled.", "Cu\u1ED9c h\u1ECDp \u0111\xE3 b\u1ECB h\u1EE7y."], ["Phones must be switched off.", "\u0110i\u1EC7n tho\u1EA1i ph\u1EA3i \u0111\u01B0\u1EE3c t\u1EAFt."]],
+    quiz: [
+      ["The Eiffel Tower ____ in 1889.", "was built", "built", "is built", "has built", 'S\u1EF1 vi\u1EC7c trong qu\xE1 kh\u1EE9, th\xE1p "\u0111\u01B0\u1EE3c x\xE2y" \u2192 was built.'],
+      ["Coffee ____ in Vietnam and Brazil.", "is grown", "grows by", "is growing", "grown", "S\u1EF1 th\u1EADt hi\u1EC7n t\u1EA1i, b\u1ECB \u0111\u1ED9ng \u2192 is grown."],
+      ["The results ____ yet.", "haven't been announced", "haven't announced", "weren't announce", "are not announce", 'C\xF3 "yet" \u2192 hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh b\u1ECB \u0111\u1ED9ng: have been + V3.'],
+      ["The new hospital ____ next year.", "will be opened", "will open by", "is opened", "will been opened", "T\u01B0\u01A1ng lai b\u1ECB \u0111\u1ED9ng: will be + V3."],
+      ["My car ____ at the moment, so I am taking the bus.", "is being repaired", "is repairing", "has repaired", "repairs", "\u0110ang di\u1EC5n ra l\xFAc n\xF3i, b\u1ECB \u0111\u1ED9ng \u2192 is being + V3."],
+      ["These forms must ____ in black ink.", "be completed", "completed", "be complete", "completing", "Sau \u0111\u1ED9ng t\u1EEB khuy\u1EBFt thi\u1EBFu: be + V3."],
+      ["The thief ____ by the police last night.", "was caught", "caught", "was catch", "is caught", '"last night" \u2192 qu\xE1 kh\u1EE9 b\u1ECB \u0111\u1ED9ng: was + V3.'],
+      ["A lot of plastic ____ into the ocean every year.", "is thrown", "throws", "is throwing", "thrown", 'R\xE1c "b\u1ECB n\xE9m" xu\u1ED1ng bi\u1EC3n h\u1EB1ng n\u0103m \u2192 is thrown.']
+    ],
+    tip: 'M\u1EB9o: ch\u1EC9 d\xF9ng "by + ng\u01B0\u1EDDi l\xE0m" khi th\xF4ng tin \u0111\xF3 quan tr\u1ECDng; th\u01B0\u1EDDng th\xEC b\u1ECF h\u1EB3n.'
+  },
+  {
+    id: "conditionals",
+    icon: "\u{1F500}",
+    ico: "arrows-shuffle",
+    title: "C\xE2u \u0111i\u1EC1u ki\u1EC7n lo\u1EA1i 0, 1, 2",
+    titleEn: "Zero, first & second conditionals",
+    level: "intermediate",
+    summary: 'C\xE2u \u0111i\u1EC1u ki\u1EC7n g\u1ED3m m\u1EC7nh \u0111\u1EC1 "If" (\u0111i\u1EC1u ki\u1EC7n) v\xE0 m\u1EC7nh \u0111\u1EC1 ch\xEDnh (k\u1EBFt qu\u1EA3). Lo\u1EA1i 0: s\u1EF1 th\u1EADt hi\u1EC3n nhi\xEAn. Lo\u1EA1i 1: vi\u1EC7c c\xF3 th\u1EC3 x\u1EA3y ra \u1EDF hi\u1EC7n t\u1EA1i/t\u01B0\u01A1ng lai. Lo\u1EA1i 2: vi\u1EC7c kh\xF4ng c\xF3 th\u1EADt ho\u1EB7c kh\xF3 x\u1EA3y ra \u1EDF hi\u1EC7n t\u1EA1i.',
+    rules: [
+      { form: "Lo\u1EA1i 0: If + hi\u1EC7n t\u1EA1i \u0111\u01A1n, hi\u1EC7n t\u1EA1i \u0111\u01A1n", note: "If you heat ice, it melts." },
+      { form: "Lo\u1EA1i 1: If + hi\u1EC7n t\u1EA1i \u0111\u01A1n, will + V", note: "If it rains, we will stay at home." },
+      { form: "Lo\u1EA1i 2: If + qu\xE1 kh\u1EE9 \u0111\u01A1n, would + V", note: "If I had more time, I would learn Chinese." },
+      { form: 'Lo\u1EA1i 2 v\u1EDBi "be": If I / he / she were...', note: "If I were you, I would apologise." },
+      { form: "unless = if ... not", note: "Unless you hurry, you'll miss the bus." }
+    ],
+    examples: [["If you heat water to 100 degrees, it boils.", "N\u1EBFu \u0111un n\u01B0\u1EDBc t\u1EDBi 100 \u0111\u1ED9, n\xF3 s\xF4i."], ["If it rains tomorrow, we will cancel the trip.", "N\u1EBFu mai tr\u1EDDi m\u01B0a, ch\xFAng t\xF4i s\u1EBD h\u1EE7y chuy\u1EBFn \u0111i."], ["If I won the lottery, I would travel the world.", "N\u1EBFu tr\xFAng x\u1ED5 s\u1ED1, t\xF4i s\u1EBD \u0111i du l\u1ECBch v\xF2ng quanh th\u1EBF gi\u1EDBi."], ["If I were you, I would take the job.", "N\u1EBFu t\xF4i l\xE0 b\u1EA1n, t\xF4i s\u1EBD nh\u1EADn c\xF4ng vi\u1EC7c \u0111\xF3."]],
+    quiz: [
+      ["If you mix red and white, you ____ pink.", "get", "will got", "would get", "got", "S\u1EF1 th\u1EADt hi\u1EC3n nhi\xEAn \u2192 lo\u1EA1i 0: hi\u1EC7n t\u1EA1i \u0111\u01A1n \u1EDF c\u1EA3 hai v\u1EBF."],
+      ["If she studies hard, she ____ the exam.", "will pass", "would pass", "passed", "passes will", "C\xF3 th\u1EC3 x\u1EA3y ra trong t\u01B0\u01A1ng lai \u2192 lo\u1EA1i 1: will + V."],
+      ["If I ____ a car, I would drive to work.", "had", "have", "will have", "would have", "Kh\xF4ng c\xF3 th\u1EADt \u1EDF hi\u1EC7n t\u1EA1i \u2192 lo\u1EA1i 2: If + qu\xE1 kh\u1EE9 \u0111\u01A1n."],
+      ["If I ____ you, I would see a doctor.", "were", "am", "will be", "be", 'L\u1EDDi khuy\xEAn: If I were you (d\xF9ng "were" cho m\u1ECDi ng\xF4i).'],
+      ["We will miss the train ____ we leave now.", "unless", "if", "when", "because", "unless = if not: s\u1EBD l\u1EE1 t\xE0u n\u1EBFu KH\xD4NG \u0111i ngay."],
+      ["If he ____ more, he wouldn't be so tired.", "slept", "sleeps", "will sleep", "has slept", `V\u1EBF sau "wouldn't be" \u2192 lo\u1EA1i 2: If + qu\xE1 kh\u1EE9 \u0111\u01A1n.`],
+      ["If it ____ sunny tomorrow, we'll go to the beach.", "is", "will be", "was", "were", "M\u1EC7nh \u0111\u1EC1 If c\u1EE7a lo\u1EA1i 1 d\xF9ng hi\u1EC7n t\u1EA1i \u0111\u01A1n, kh\xF4ng d\xF9ng will."],
+      ["What would you do if you ____ a million dollars?", "found", "find", "will find", "would find", "Gi\u1EA3 \u0111\u1ECBnh kh\xF4ng c\xF3 th\u1EADt \u2192 lo\u1EA1i 2: qu\xE1 kh\u1EE9 \u0111\u01A1n."]
+    ],
+    tip: 'Kh\xF4ng d\xF9ng "will" hay "would" ngay sau "If" \u2013 ch\u1EC9 d\xF9ng \u1EDF m\u1EC7nh \u0111\u1EC1 k\u1EBFt qu\u1EA3.'
+  },
+  {
+    id: "relative-clauses",
+    icon: "\u{1F517}",
+    ico: "list",
+    title: "M\u1EC7nh \u0111\u1EC1 quan h\u1EC7",
+    titleEn: "Relative clauses",
+    level: "intermediate",
+    summary: "M\u1EC7nh \u0111\u1EC1 quan h\u1EC7 b\u1ED5 sung th\xF4ng tin cho danh t\u1EEB \u0111\u1EE9ng tr\u01B0\u1EDBc. Who: ng\u01B0\u1EDDi; which: v\u1EADt; that: ng\u01B0\u1EDDi/v\u1EADt (ch\u1EC9 trong m\u1EC7nh \u0111\u1EC1 x\xE1c \u0111\u1ECBnh); whose: s\u1EDF h\u1EEFu; where: n\u01A1i ch\u1ED1n; when: th\u1EDDi gian.",
+    rules: [
+      { form: "who / that \u2192 ng\u01B0\u1EDDi", note: "The woman who lives next door is a nurse." },
+      { form: "which / that \u2192 v\u1EADt", note: "This is the book which I told you about." },
+      { form: "whose + danh t\u1EEB \u2192 s\u1EDF h\u1EEFu", note: "He is the boy whose bike was stolen." },
+      { form: "where \u2192 n\u01A1i ch\u1ED1n, when \u2192 th\u1EDDi gian", note: "The town where I grew up is small." },
+      { form: 'M\u1EC7nh \u0111\u1EC1 kh\xF4ng x\xE1c \u0111\u1ECBnh: c\xF3 d\u1EA5u ph\u1EA9y, KH\xD4NG d\xF9ng "that"', note: "My sister, who lives in Hanoi, is a doctor." }
+    ],
+    examples: [["The man who helped me was very kind.", "Ng\u01B0\u1EDDi \u0111\xE0n \xF4ng \u0111\xE3 gi\xFAp t\xF4i r\u1EA5t t\u1ED1t b\u1EE5ng."], ["I lost the watch which my mother gave me.", "T\xF4i l\xE0m m\u1EA5t chi\u1EBFc \u0111\u1ED3ng h\u1ED3 m\xE0 m\u1EB9 t\u1EB7ng."], ["That is the house where I was born.", "\u0110\xF3 l\xE0 ng\xF4i nh\xE0 n\u01A1i t\xF4i sinh ra."], ["She is the student whose essay won the prize.", "C\xF4 \u1EA5y l\xE0 h\u1ECDc sinh c\xF3 b\xE0i lu\u1EADn \u0111o\u1EA1t gi\u1EA3i."]],
+    quiz: [
+      ["The doctor ____ treated me was very friendly.", "who", "which", "whose", "where", "Thay cho ng\u01B0\u1EDDi (the doctor), l\xE0m ch\u1EE7 ng\u1EEF \u2192 who."],
+      ["Is this the bag ____ you bought yesterday?", "which", "who", "where", "whose", "Thay cho v\u1EADt (the bag) \u2192 which / that."],
+      ["I know a girl ____ father is a pilot.", "whose", "who", "which", "that", "S\u1EDF h\u1EEFu (cha c\u1EE7a c\xF4 g\xE1i) \u2192 whose + danh t\u1EEB."],
+      ["This is the caf\xE9 ____ we first met.", "where", "which", "who", "when", "N\u01A1i ch\u1ED1n \u2192 where."],
+      ["I will never forget the day ____ I graduated.", "when", "where", "which", "who", "Th\u1EDDi gian (the day) \u2192 when."],
+      ["Ho Chi Minh City, ____ is the largest city in Vietnam, is very busy.", "which", "that", "who", "where", 'M\u1EC7nh \u0111\u1EC1 kh\xF4ng x\xE1c \u0111\u1ECBnh (c\xF3 d\u1EA5u ph\u1EA9y) kh\xF4ng d\xF9ng "that" \u2192 which.'],
+      ["The people ____ we met on holiday were from Canada.", "that", "which", "whose", "where", "Ng\u01B0\u1EDDi, m\u1EC7nh \u0111\u1EC1 x\xE1c \u0111\u1ECBnh \u2192 who / that."],
+      ["My grandfather, ____ is 90, still walks every day.", "who", "that", "which", "whose", "Ng\u01B0\u1EDDi + m\u1EC7nh \u0111\u1EC1 c\xF3 d\u1EA5u ph\u1EA9y \u2192 who."]
+    ],
+    tip: 'C\xF3 d\u1EA5u ph\u1EA9y \u2192 kh\xF4ng d\xF9ng "that". \u0110\u1EA1i t\u1EEB quan h\u1EC7 l\xE0m t\xE2n ng\u1EEF c\xF3 th\u1EC3 l\u01B0\u1EE3c b\u1ECF: the book (that) I read.'
+  },
+  {
+    id: "reported-speech",
+    icon: "\u{1F4AC}",
+    ico: "messages",
+    title: "C\xE2u t\u01B0\u1EDDng thu\u1EADt",
+    titleEn: "Reported speech",
+    level: "intermediate",
+    summary: "C\xE2u t\u01B0\u1EDDng thu\u1EADt thu\u1EADt l\u1EA1i l\u1EDDi ng\u01B0\u1EDDi kh\xE1c. Khi \u0111\u1ED9ng t\u1EEB t\u01B0\u1EDDng thu\u1EADt \u1EDF qu\xE1 kh\u1EE9 (said, told, asked), th\xEC c\u1EE7a c\xE2u g\u1ED1c th\u01B0\u1EDDng l\xF9i m\u1ED9t b\u1EADc; \u0111\u1EA1i t\u1EEB, tr\u1EA1ng t\u1EEB th\u1EDDi gian/n\u01A1i ch\u1ED1n c\u0169ng \u0111\u1ED5i theo.",
+    rules: [
+      { form: "hi\u1EC7n t\u1EA1i \u2192 qu\xE1 kh\u1EE9; qu\xE1 kh\u1EE9 / hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh \u2192 qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh", note: '"I am tired." \u2192 She said (that) she was tired.' },
+      { form: "will \u2192 would; can \u2192 could; must \u2192 had to", note: '"I will call you." \u2192 He said he would call me.' },
+      { form: "C\xE2u h\u1ECFi Yes/No: asked + if / whether + S + V", note: '"Are you OK?" \u2192 She asked if I was OK.' },
+      { form: "C\xE2u h\u1ECFi Wh-: asked + t\u1EEB \u0111\u1EC3 h\u1ECFi + S + V (kh\xF4ng \u0111\u1EA3o ng\u1EEF)", note: '"Where do you live?" \u2192 He asked where I lived.' },
+      { form: "M\u1EC7nh l\u1EC7nh: told / asked + O + (not) to V", note: '"Sit down." \u2192 The teacher told us to sit down.' }
+    ],
+    examples: [["She said that she was very busy.", "C\xF4 \u1EA5y n\xF3i r\u1EB1ng c\xF4 \u1EA5y r\u1EA5t b\u1EADn."], ["He told me he would come later.", "Anh \u1EA5y b\u1EA3o t\xF4i l\xE0 anh \u1EA5y s\u1EBD \u0111\u1EBFn sau."], ["They asked where the station was.", "H\u1ECD h\u1ECFi nh\xE0 ga \u1EDF \u0111\xE2u."], ["The doctor told me not to eat sugar.", "B\xE1c s\u0129 d\u1EB7n t\xF4i kh\xF4ng \u0103n \u0111\u01B0\u1EDDng."]],
+    quiz: [
+      ['"I like pizza," he said. \u2192 He said that he ____ pizza.', "liked", "likes", "will like", "has liked", "L\xF9i th\xEC: hi\u1EC7n t\u1EA1i \u0111\u01A1n \u2192 qu\xE1 kh\u1EE9 \u0111\u01A1n."],
+      ['"I will help you," she said. \u2192 She said she ____ help me.', "would", "will", "can", "shall", "will \u2192 would."],
+      ['"Do you speak English?" \u2192 He asked me ____ I spoke English.', "if", "that", "what", "do", "C\xE2u h\u1ECFi Yes/No \u2192 if / whether."],
+      ['"Where do you work?" \u2192 She asked me where I ____.', "worked", "did work", "do work", "work", "C\xE2u h\u1ECFi Wh- t\u01B0\u1EDDng thu\u1EADt kh\xF4ng \u0111\u1EA3o ng\u1EEF, l\xF9i th\xEC \u2192 where I worked."],
+      ['"Close the door." \u2192 The teacher told me ____ the door.', "to close", "close", "closing", "that close", "M\u1EC7nh l\u1EC7nh \u2192 told + O + to V."],
+      [`"Don't be late." \u2192 My boss told me ____ late.`, "not to be", "don't be", "to not being", "not be", "M\u1EC7nh l\u1EC7nh ph\u1EE7 \u0111\u1ECBnh \u2192 not to V."],
+      ['"I have finished." \u2192 He said he ____ finished.', "had", "has", "have", "was", "Hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh \u2192 qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh (had + V3)."],
+      ['"I can swim." \u2192 She said she ____ swim.', "could", "can", "could to", "was able", "can \u2192 could."]
+    ],
+    tip: "say + (that) + m\u1EC7nh \u0111\u1EC1; tell + NG\u01AF\u1EDCI + (that) + m\u1EC7nh \u0111\u1EC1: She told ME that..."
+  },
+  {
+    id: "gerund-infinitive",
+    icon: "\u{1F9E9}",
+    ico: "puzzle",
+    title: "Danh \u0111\u1ED9ng t\u1EEB (V-ing) v\xE0 to V",
+    titleEn: "Gerunds & infinitives",
+    level: "intermediate",
+    summary: "M\u1ED9t s\u1ED1 \u0111\u1ED9ng t\u1EEB \u0111i v\u1EDBi V-ing, m\u1ED9t s\u1ED1 \u0111i v\u1EDBi to V, m\u1ED9t s\u1ED1 \u0111i \u0111\u01B0\u1EE3c c\u1EA3 hai nh\u01B0ng \u0111\u1ED5i ngh\u0129a. Sau gi\u1EDBi t\u1EEB lu\xF4n d\xF9ng V-ing.",
+    rules: [
+      { form: "enjoy / avoid / finish / mind / suggest / keep + V-ing", note: "I enjoy reading." },
+      { form: "want / decide / plan / hope / promise / refuse + to V", note: "She decided to leave." },
+      { form: "Gi\u1EDBi t\u1EEB + V-ing", note: "I am interested in learning English." },
+      { form: "remember / forget / stop / try + V-ing \u2260 + to V", note: "stop smoking (b\u1ECF h\xFAt) \u2260 stop to smoke (d\u1EEBng l\u1EA1i \u0111\u1EC3 h\xFAt)" },
+      { form: "look forward to / be used to + V-ing", note: '"to" \u1EDF \u0111\xE2y l\xE0 gi\u1EDBi t\u1EEB' }
+    ],
+    examples: [["I enjoy listening to music.", "T\xF4i th\xEDch nghe nh\u1EA1c."], ["She decided to study abroad.", "C\xF4 \u1EA5y quy\u1EBFt \u0111\u1ECBnh \u0111i du h\u1ECDc."], ["He is good at solving problems.", "Anh \u1EA5y gi\u1ECFi gi\u1EA3i quy\u1EBFt v\u1EA5n \u0111\u1EC1."], ["I look forward to hearing from you.", "T\xF4i mong nh\u1EADn \u0111\u01B0\u1EE3c h\u1ED3i \xE2m c\u1EE7a b\u1EA1n."]],
+    quiz: [
+      ["Would you mind ____ the window?", "opening", "to open", "open", "opened", "mind + V-ing."],
+      ["They hope ____ a new house next year.", "to buy", "buying", "buy", "bought", "hope + to V."],
+      ["She is afraid of ____ alone at night.", "walking", "to walk", "walk", "walked", "Sau gi\u1EDBi t\u1EEB (of) \u2192 V-ing."],
+      ["I look forward to ____ you soon.", "seeing", "see", "to see", "saw", '"to" l\xE0 gi\u1EDBi t\u1EEB trong "look forward to" \u2192 V-ing.'],
+      ["Please remember ____ the lights before you leave.", "to turn off", "turning off", "turn off", "turned off", "remember to V: nh\u1EDB ph\u1EA3i l\xE0m (vi\u1EC7c ch\u01B0a l\xE0m)."],
+      ["I remember ____ him at a party years ago.", "meeting", "to meet", "meet", "met", "remember V-ing: nh\u1EDB \u0111\xE3 l\xE0m (vi\u1EC7c trong qu\xE1 kh\u1EE9)."],
+      ["He promised ____ late again.", "not to be", "not being", "don't be", "to not being", "promise + (not) to V."],
+      ["My doctor suggested ____ more exercise.", "doing", "to do", "do", "done", "suggest + V-ing."]
+    ],
+    tip: "H\u1ECDc theo c\u1EE5m: enjoy doing, decide to do, be interested in doing."
+  },
+  {
+    id: "past-continuous-perfect",
+    icon: "\u23EA",
+    ico: "history",
+    title: "Qu\xE1 kh\u1EE9 ti\u1EBFp di\u1EC5n & qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh",
+    titleEn: "Past continuous & past perfect",
+    level: "intermediate",
+    summary: "Qu\xE1 kh\u1EE9 ti\u1EBFp di\u1EC5n di\u1EC5n t\u1EA3 h\xE0nh \u0111\u1ED9ng \u0111ang x\u1EA3y ra t\u1EA1i m\u1ED9t th\u1EDDi \u0111i\u1EC3m trong qu\xE1 kh\u1EE9 ho\u1EB7c b\u1ECB m\u1ED9t h\xE0nh \u0111\u1ED9ng kh\xE1c c\u1EAFt ngang. Qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh di\u1EC5n t\u1EA3 h\xE0nh \u0111\u1ED9ng x\u1EA3y ra TR\u01AF\u1EDAC m\u1ED9t h\xE0nh \u0111\u1ED9ng/th\u1EDDi \u0111i\u1EC3m kh\xE1c trong qu\xE1 kh\u1EE9.",
+    rules: [
+      { form: "Qu\xE1 kh\u1EE9 ti\u1EBFp di\u1EC5n: was / were + V-ing", note: "At 8 p.m. I was watching TV." },
+      { form: "H\xE0nh \u0111\u1ED9ng b\u1ECB c\u1EAFt ngang: was V-ing ... when + qu\xE1 kh\u1EE9 \u0111\u01A1n", note: "I was cooking when the phone rang." },
+      { form: "Hai h\xE0nh \u0111\u1ED9ng song song: while + qu\xE1 kh\u1EE9 ti\u1EBFp di\u1EC5n", note: "While I was reading, he was sleeping." },
+      { form: "Qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh: had + V3", note: "When we arrived, the film had started." },
+      { form: "D\u1EA5u hi\u1EC7u: before, after, by the time, already", note: "By the time she called, I had left." }
+    ],
+    examples: [["I was having dinner when you called.", "T\xF4i \u0111ang \u0103n t\u1ED1i th\xEC b\u1EA1n g\u1ECDi."], ["While she was driving, it started to rain.", "Trong l\xFAc c\xF4 \u1EA5y \u0111ang l\xE1i xe th\xEC tr\u1EDDi b\u1EAFt \u0111\u1EA7u m\u01B0a."], ["The train had left before we got there.", "T\xE0u \u0111\xE3 r\u1EDDi \u0111i tr\u01B0\u1EDBc khi ch\xFAng t\xF4i t\u1EDBi."], ["He had never seen snow until last year.", "Cho t\u1EDBi n\u0103m ngo\xE1i anh \u1EA5y ch\u01B0a t\u1EEBng th\u1EA5y tuy\u1EBFt."]],
+    quiz: [
+      ["I ____ a shower when the lights went out.", "was taking", "took", "had taken", "am taking", "H\xE0nh \u0111\u1ED9ng \u0111ang di\u1EC5n ra b\u1ECB c\u1EAFt ngang \u2192 qu\xE1 kh\u1EE9 ti\u1EBFp di\u1EC5n."],
+      ["What ____ you doing at 9 o'clock last night?", "were", "did", "was", "had", "H\u1ECFi vi\u1EC7c \u0111ang l\xE0m t\u1EA1i th\u1EDDi \u0111i\u1EC3m qu\xE1 kh\u1EE9 \u2192 were + V-ing."],
+      ["While we ____ dinner, the doorbell rang.", "were having", "had", "have had", "had had", "while + qu\xE1 kh\u1EE9 ti\u1EBFp di\u1EC5n."],
+      ["When I got to the cinema, the film ____.", "had already started", "already started", "was already start", "has already started", "Phim b\u1EAFt \u0111\u1EA7u TR\u01AF\u1EDAC khi t\xF4i \u0111\u1EBFn \u2192 qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh."],
+      ["By the time the police arrived, the thief ____.", "had escaped", "escaped", "was escaping", "has escaped", "By the time + qu\xE1 kh\u1EE9 \u2192 m\u1EC7nh \u0111\u1EC1 ch\xEDnh d\xF9ng qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh."],
+      ["She was tired because she ____ all day.", "had worked", "has worked", "works", "was work", "Nguy\xEAn nh\xE2n x\u1EA3y ra tr\u01B0\u1EDBc \u2192 had + V3."],
+      ["I ____ him before the meeting, so I didn't recognise him.", "hadn't met", "didn't meet", "haven't met", "wasn't meeting", "Ch\u01B0a t\u1EEBng g\u1EB7p tr\u01B0\u1EDBc th\u1EDDi \u0111i\u1EC3m \u0111\xF3 \u2192 hadn't met."],
+      ["It ____ heavily when we left the house.", "was raining", "rained", "had rain", "rains", "B\u1ED1i c\u1EA3nh \u0111ang di\u1EC5n ra \u2192 qu\xE1 kh\u1EE9 ti\u1EBFp di\u1EC5n."]
+    ],
+    tip: "Hai vi\u1EC7c trong qu\xE1 kh\u1EE9: vi\u1EC7c x\u1EA3y ra tr\u01B0\u1EDBc d\xF9ng had + V3, vi\u1EC7c sau d\xF9ng qu\xE1 kh\u1EE9 \u0111\u01A1n."
+  },
+  {
+    id: "used-to",
+    icon: "\u{1F570}\uFE0F",
+    ico: "clock-play",
+    title: "Used to / be used to / get used to",
+    titleEn: "Used to & be used to",
+    level: "intermediate",
+    summary: '"Used to + V" n\xF3i v\u1EC1 th\xF3i quen ho\u1EB7c tr\u1EA1ng th\xE1i trong qu\xE1 kh\u1EE9 nay kh\xF4ng c\xF2n. "Be used to + V-ing" l\xE0 \u0111\xE3 quen v\u1EDBi vi\u1EC7c g\xEC; "get used to + V-ing" l\xE0 d\u1EA7n quen v\u1EDBi vi\u1EC7c g\xEC.',
+    rules: [
+      { form: "used to + V nguy\xEAn m\u1EABu", note: "I used to play football every day." },
+      { form: "Ph\u1EE7 \u0111\u1ECBnh / c\xE2u h\u1ECFi: didn't use to / Did you use to...?", note: "She didn't use to like coffee." },
+      { form: "be used to + V-ing / danh t\u1EEB", note: "I am used to getting up early." },
+      { form: "get used to + V-ing / danh t\u1EEB", note: "You'll soon get used to the noise." }
+    ],
+    examples: [["We used to live in the countryside.", "Ch\xFAng t\xF4i t\u1EEBng s\u1ED1ng \u1EDF n\xF4ng th\xF4n."], ["He didn't use to wear glasses.", "Tr\u01B0\u1EDBc \u0111\xE2y anh \u1EA5y kh\xF4ng \u0111eo k\xEDnh."], ["I am used to working at night.", "T\xF4i \u0111\xE3 quen l\xE0m vi\u1EC7c v\xE0o ban \u0111\xEAm."], ["She is getting used to the cold weather.", "C\xF4 \u1EA5y \u0111ang d\u1EA7n quen v\u1EDBi th\u1EDDi ti\u1EBFt l\u1EA1nh."]],
+    quiz: [
+      ["When I was a child, I ____ climb trees.", "used to", "am used to", "use to", "was used to", "Th\xF3i quen trong qu\xE1 kh\u1EE9 \u2192 used to + V."],
+      ["I ____ to drive on the left now; it is easy.", "am used", "used", "use", "get use", "\u0110\xE3 quen \u2192 be used to."],
+      ["He is used to ____ long hours.", "working", "work", "worked", "works", "be used to + V-ing."],
+      ["Did you ____ to have long hair?", "use", "used", "using", "uses", "C\xE2u h\u1ECFi v\u1EDBi did \u2192 use to (kh\xF4ng c\xF3 -d)."],
+      ["It took me months to get used to ____ in a big city.", "living", "live", "lived", "lives", "get used to + V-ing."],
+      ["There ____ be a cinema here, but now it is a bank.", "used to", "is used to", "gets used to", "was used", "Tr\u1EA1ng th\xE1i trong qu\xE1 kh\u1EE9 nay kh\xF4ng c\xF2n \u2192 used to."],
+      ["She ____ like vegetables, but now she loves them.", "didn't use to", "wasn't used to", "didn't used to", "isn't used to", "Ph\u1EE7 \u0111\u1ECBnh c\u1EE7a used to \u2192 didn't use to."],
+      ["Foreign students soon get used ____ the food here.", "to", "with", "for", "at", "get used TO + danh t\u1EEB."]
+    ],
+    tip: "used to do = T\u1EEANG l\xE0m (gi\u1EDD kh\xF4ng c\xF2n); be used to doing = \u0110\xC3 QUEN l\xE0m."
+  },
+  // ---------------------------------------------------------------- B2
+  {
+    id: "third-conditional",
+    icon: "\u{1F519}",
+    ico: "history",
+    title: "\u0110i\u1EC1u ki\u1EC7n lo\u1EA1i 3 & c\xE2u \u01B0\u1EDBc",
+    titleEn: "Third conditional & wishes",
+    level: "upper",
+    summary: 'C\xE2u \u0111i\u1EC1u ki\u1EC7n lo\u1EA1i 3 n\xF3i v\u1EC1 \u0111i\u1EC1u KH\xD4NG x\u1EA3y ra trong qu\xE1 kh\u1EE9 v\xE0 k\u1EBFt qu\u1EA3 t\u01B0\u1EDFng t\u01B0\u1EE3ng c\u1EE7a n\xF3 (th\u01B0\u1EDDng \u0111\u1EC3 ti\u1EBFc nu\u1ED1i). "Wish" di\u1EC5n t\u1EA3 mong \u01B0\u1EDBc tr\xE1i v\u1EDBi hi\u1EC7n t\u1EA1i ho\u1EB7c qu\xE1 kh\u1EE9.',
+    rules: [
+      { form: "If + had + V3, would have + V3", note: "If I had studied, I would have passed." },
+      { form: "could / might have + V3 \u1EDF m\u1EC7nh \u0111\u1EC1 ch\xEDnh", note: "If we had left earlier, we might have caught the train." },
+      { form: "wish + qu\xE1 kh\u1EE9 \u0111\u01A1n \u2192 tr\xE1i v\u1EDBi hi\u1EC7n t\u1EA1i", note: "I wish I knew the answer." },
+      { form: "wish + had + V3 \u2192 ti\u1EBFc v\u1EC1 qu\xE1 kh\u1EE9", note: "I wish I hadn't said that." },
+      { form: "wish + would \u2192 ph\xE0n n\xE0n, mong ng\u01B0\u1EDDi kh\xE1c thay \u0111\u1ED5i", note: "I wish you would stop talking." }
+    ],
+    examples: [["If I had known, I would have helped you.", "N\u1EBFu t\xF4i bi\u1EBFt th\xEC t\xF4i \u0111\xE3 gi\xFAp b\u1EA1n r\u1ED3i."], ["If she hadn't missed the bus, she wouldn't have been late.", "N\u1EBFu c\xF4 \u1EA5y kh\xF4ng l\u1EE1 xe bu\xFDt th\xEC \u0111\xE3 kh\xF4ng b\u1ECB mu\u1ED9n."], ["I wish I lived closer to the sea.", "\u01AF\u1EDBc g\xEC t\xF4i s\u1ED1ng g\u1EA7n bi\u1EC3n h\u01A1n."], ["He wishes he had studied harder.", "Anh \u1EA5y \u01B0\u1EDBc m\xECnh \u0111\xE3 h\u1ECDc ch\u0103m h\u01A1n."]],
+    quiz: [
+      ["If you ____ me, I would have picked you up.", "had called", "called", "have called", "would call", "Tr\xE1i v\u1EDBi qu\xE1 kh\u1EE9 \u2192 If + had + V3."],
+      ["If they had trained harder, they ____ the match.", "would have won", "would win", "had won", "will have won", "K\u1EBFt qu\u1EA3 tr\xE1i qu\xE1 kh\u1EE9 \u2192 would have + V3."],
+      ["I wish I ____ how to swim. (T\xF4i kh\xF4ng bi\u1EBFt b\u01A1i)", "knew", "know", "had know", "would know", "Tr\xE1i v\u1EDBi hi\u1EC7n t\u1EA1i \u2192 wish + qu\xE1 kh\u1EE9 \u0111\u01A1n."],
+      ["She wishes she ____ that car last year.", "hadn't bought", "didn't buy", "doesn't buy", "wouldn't buy", "Ti\u1EBFc v\u1EC1 qu\xE1 kh\u1EE9 \u2192 wish + had + V3."],
+      ["I wish my neighbours ____ so much noise. It's annoying.", "wouldn't make", "didn't made", "hadn't make", "don't make", "Ph\xE0n n\xE0n v\u1EC1 th\xF3i quen ng\u01B0\u1EDDi kh\xE1c \u2192 wish + would."],
+      ["If I hadn't been ill, I ____ to the party.", "would have gone", "would go", "had gone", "will go", "Lo\u1EA1i 3 \u2192 would have + V3."],
+      ["We ____ the flight if the taxi had come on time.", "wouldn't have missed", "didn't miss", "wouldn't miss", "hadn't missed", "K\u1EBFt qu\u1EA3 tr\xE1i qu\xE1 kh\u1EE9 \u2192 wouldn't have + V3."],
+      ["If only I ____ more careful yesterday!", "had been", "was", "were", "have been", '"If only" = wish; ti\u1EBFc v\u1EC1 qu\xE1 kh\u1EE9 \u2192 had been.']
+    ],
+    tip: 'Lo\u1EA1i 3 = had V3 + would have V3; nh\u1EDB: c\u1EA3 hai v\u1EBF \u0111\u1EC1u "l\xF9i" v\u1EC1 qu\xE1 kh\u1EE9 ho\xE0n th\xE0nh.'
+  },
+  {
+    id: "modals-deduction",
+    icon: "\u{1F575}\uFE0F",
+    ico: "zoom-check",
+    title: "\u0110\u1ED9ng t\u1EEB khuy\u1EBFt thi\u1EBFu suy \u0111o\xE1n",
+    titleEn: "Modals of deduction",
+    level: "upper",
+    summary: "D\xF9ng must / might / may / could / can't \u0111\u1EC3 suy \u0111o\xE1n m\u1EE9c \u0111\u1ED9 ch\u1EAFc ch\u1EAFn. V\u1EDBi qu\xE1 kh\u1EE9: modal + have + V3.",
+    rules: [
+      { form: "must + V \u2192 g\u1EA7n nh\u01B0 ch\u1EAFc ch\u1EAFn \u0111\xFAng", note: "She must be tired after the long flight." },
+      { form: "can't + V \u2192 g\u1EA7n nh\u01B0 ch\u1EAFc ch\u1EAFn sai", note: "He can't be at home; his car is gone." },
+      { form: "might / may / could + V \u2192 c\xF3 th\u1EC3", note: "They might be stuck in traffic." },
+      { form: "must / might / can't + have + V3 \u2192 suy \u0111o\xE1n v\u1EC1 qu\xE1 kh\u1EE9", note: "You must have left your keys in the office." },
+      { form: "should have + V3 \u2192 l\u1EBD ra n\xEAn (nh\u01B0ng kh\xF4ng l\xE0m)", note: "You should have told me earlier." }
+    ],
+    examples: [["That must be the new manager.", "\u0110\xF3 h\u1EB3n l\xE0 qu\u1EA3n l\xFD m\u1EDBi."], ["It can't be true!", "Kh\xF4ng th\u1EC3 n\xE0o l\xE0 th\u1EADt \u0111\u01B0\u1EE3c!"], ["She might have missed the train.", "C\xF3 l\u1EBD c\xF4 \u1EA5y \u0111\xE3 l\u1EE1 chuy\u1EBFn t\xE0u."], ["They can't have finished already.", "H\u1ECD kh\xF4ng th\u1EC3 \u0111\xE3 xong r\u1ED3i \u0111\u01B0\u1EE3c."]],
+    quiz: [
+      ["He has worked for twelve hours. He ____ be exhausted.", "must", "can't", "should", "would", "Suy lu\u1EADn g\u1EA7n nh\u01B0 ch\u1EAFc ch\u1EAFn \u2192 must."],
+      ["That ____ be Anna; she's in Paris this week.", "can't", "must", "might", "should", "Ch\u1EAFc ch\u1EAFn kh\xF4ng ph\u1EA3i \u2192 can't."],
+      ["I am not sure where Tom is. He ____ be in the library.", "might", "must", "can't", "had to", "Kh\xF4ng ch\u1EAFc \u2192 might / may / could."],
+      ["The ground is wet. It ____ last night.", "must have rained", "must rain", "can't have rained", "should rain", "Suy lu\u1EADn v\u1EC1 qu\xE1 kh\u1EE9, g\u1EA7n nh\u01B0 ch\u1EAFc ch\u1EAFn \u2192 must have + V3."],
+      ["She ____ the email; she hasn't replied yet.", "might not have seen", "must not see", "can't see", "should see", "C\xF3 th\u1EC3 \u0111\xE3 kh\xF4ng th\u1EA5y (qu\xE1 kh\u1EE9) \u2192 might not have + V3."],
+      ["He ____ stolen the money; he was with me all evening.", "can't have", "must have", "should have", "might", "Ch\u1EAFc ch\u1EAFn kh\xF4ng th\u1EC3 (qu\xE1 kh\u1EE9) \u2192 can't have + V3."],
+      ["You ____ me you were coming. I would have cooked more.", "should have told", "must have told", "could tell", "can't have told", "L\u1EBD ra n\xEAn l\xE0m nh\u01B0ng kh\xF4ng l\xE0m \u2192 should have + V3."],
+      ["The lights are off. They ____ to bed.", "must have gone", "must go", "can have gone", "should go", "Suy lu\u1EADn ch\u1EAFc ch\u1EAFn v\u1EC1 vi\u1EC7c \u0111\xE3 x\u1EA3y ra \u2192 must have gone."]
+    ],
+    tip: `\u0110\u1ED1i l\u1EADp c\u1EE7a "must" (ch\u1EAFc \u0111\xFAng) l\xE0 "can't" (ch\u1EAFc sai), kh\xF4ng ph\u1EA3i "mustn't".`
+  },
+  {
+    id: "passive-advanced",
+    icon: "\u{1F5DE}\uFE0F",
+    ico: "news",
+    title: "B\u1ECB \u0111\u1ED9ng n\xE2ng cao & th\u1EC3 sai khi\u1EBFn",
+    titleEn: "Advanced passive & causative",
+    level: "upper",
+    summary: 'C\u1EA5u tr\xFAc b\u1ECB \u0111\u1ED9ng v\u1EDBi \u0111\u1ED9ng t\u1EEB t\u01B0\u1EDDng thu\u1EADt (say, believe, think, report...) d\xF9ng nhi\u1EC1u trong v\u0103n vi\u1EBFt trang tr\u1ECDng, tin t\u1EE9c. Th\u1EC3 sai khi\u1EBFn "have / get something done" di\u1EC5n t\u1EA3 nh\u1EDD ng\u01B0\u1EDDi kh\xE1c l\xE0m gi\xFAp.',
+    rules: [
+      { form: "It is said / believed / reported + that + m\u1EC7nh \u0111\u1EC1", note: "It is said that the house is haunted." },
+      { form: "S + is said / believed + to V", note: "He is believed to be very rich." },
+      { form: "S + is said + to have + V3 (vi\u1EC7c trong qu\xE1 kh\u1EE9)", note: "The painting is thought to have been stolen." },
+      { form: "have / get + v\u1EADt + V3 (nh\u1EDD ng\u01B0\u1EDDi kh\xE1c l\xE0m)", note: "I had my hair cut yesterday." },
+      { form: "have + ng\u01B0\u1EDDi + V; get + ng\u01B0\u1EDDi + to V", note: "I got my brother to fix my bike." }
+    ],
+    examples: [["It is believed that the virus came from bats.", "Ng\u01B0\u1EDDi ta tin r\u1EB1ng virus b\u1EAFt ngu\u1ED3n t\u1EEB d\u01A1i."], ["She is said to be the best chef in town.", "Ng\u01B0\u1EDDi ta n\xF3i c\xF4 \u1EA5y l\xE0 \u0111\u1EA7u b\u1EBFp gi\u1ECFi nh\u1EA5t th\u1ECB tr\u1EA5n."], ["We are having our kitchen redecorated.", "Ch\xFAng t\xF4i \u0111ang thu\xEA ng\u01B0\u1EDDi s\u1EEDa sang l\u1EA1i nh\xE0 b\u1EBFp."], ["You should get your eyes tested.", "B\u1EA1n n\xEAn \u0111i ki\u1EC3m tra m\u1EAFt."]],
+    quiz: [
+      ["It ____ that prices will rise again next year.", "is expected", "expects", "is expecting", "expected", "B\u1ECB \u0111\u1ED9ng v\u1EDBi \u0111\u1ED9ng t\u1EEB t\u01B0\u1EDDng thu\u1EADt: It is expected that..."],
+      ["The president is believed ____ the country tomorrow.", "to leave", "leaving", "leave", "that he leaves", "S + is believed + to V."],
+      ["The thieves are thought ____ the country last week.", "to have left", "to leave", "leaving", "have left", "Vi\u1EC7c \u0111\xE3 x\u1EA3y ra tr\u01B0\u1EDBc \u2192 to have + V3."],
+      ["I need to ____ my car serviced before the trip.", "have", "make", "let", "do", "Th\u1EC3 sai khi\u1EBFn: have + v\u1EADt + V3."],
+      ["She got her sister ____ the children.", "to look after", "look after", "looked after", "looking after", "get + ng\u01B0\u1EDDi + to V."],
+      ["We had the roof ____ after the storm.", "repaired", "repair", "to repair", "repairing", "have + v\u1EADt + V3."],
+      ["It ____ that more than 100 people were injured.", "has been reported", "has reported", "reports", "is reporting", "B\u1ECB \u0111\u1ED9ng: It has been reported that..."],
+      ["The manager had his assistant ____ the documents.", "prepare", "to prepare", "prepared", "preparing", "have + ng\u01B0\u1EDDi + V nguy\xEAn m\u1EABu."]
+    ],
+    tip: 'V\u0103n phong IELTS/tin t\u1EE9c: "It is widely believed that..." trang tr\u1ECDng h\u01A1n "People think that...".'
+  },
+  {
+    id: "future-forms",
+    icon: "\u{1F6F0}\uFE0F",
+    ico: "calendar-event",
+    title: "T\u01B0\u01A1ng lai ti\u1EBFp di\u1EC5n & t\u01B0\u01A1ng lai ho\xE0n th\xE0nh",
+    titleEn: "Future continuous & future perfect",
+    level: "upper",
+    summary: "T\u01B0\u01A1ng lai ti\u1EBFp di\u1EC5n (will be V-ing) di\u1EC5n t\u1EA3 h\xE0nh \u0111\u1ED9ng \u0111ang di\u1EC5n ra t\u1EA1i m\u1ED9t th\u1EDDi \u0111i\u1EC3m trong t\u01B0\u01A1ng lai. T\u01B0\u01A1ng lai ho\xE0n th\xE0nh (will have V3) di\u1EC5n t\u1EA3 h\xE0nh \u0111\u1ED9ng s\u1EBD ho\xE0n t\u1EA5t TR\u01AF\u1EDAC m\u1ED9t th\u1EDDi \u0111i\u1EC3m trong t\u01B0\u01A1ng lai.",
+    rules: [
+      { form: "will be + V-ing", note: "This time tomorrow I will be flying to Tokyo." },
+      { form: "will have + V3", note: "By 2030, we will have built ten new schools." },
+      { form: "by + m\u1ED1c th\u1EDDi gian / by the time + hi\u1EC7n t\u1EA1i \u0111\u01A1n", note: "By the time you arrive, I will have finished." },
+      { form: "will have been + V-ing \u2192 nh\u1EA5n m\u1EA1nh kho\u1EA3ng th\u1EDDi gian", note: "In May I will have been working here for ten years." }
+    ],
+    examples: [["Don't call at eight; I'll be having dinner.", "\u0110\u1EEBng g\u1ECDi l\xFAc t\xE1m gi\u1EDD; khi \u0111\xF3 t\xF4i \u0111ang \u0103n t\u1ED1i."], ["By next June, she will have graduated.", "T\u1EDBi th\xE1ng S\xE1u n\u0103m sau, c\xF4 \u1EA5y s\u1EBD t\u1ED1t nghi\u1EC7p xong."], ["This time next week we will be lying on a beach.", "Gi\u1EDD n\xE0y tu\u1EA7n sau ch\xFAng t\xF4i s\u1EBD \u0111ang n\u1EB1m tr\xEAn b\xE3i bi\u1EC3n."], ["The film will have started by the time we get there.", "Phim s\u1EBD b\u1EAFt \u0111\u1EA7u tr\u01B0\u1EDBc khi ch\xFAng ta t\u1EDBi n\u01A1i."]],
+    quiz: [
+      ["At 10 a.m. tomorrow I ____ an exam, so I cannot answer the phone.", "will be taking", "will take", "will have taken", "take", "\u0110ang di\u1EC5n ra t\u1EA1i th\u1EDDi \u0111i\u1EC3m t\u01B0\u01A1ng lai \u2192 will be + V-ing."],
+      ["By the end of this year, I ____ 50 books.", "will have read", "will read", "will be reading", "read", '"By the end of" \u2192 ho\xE0n t\u1EA5t tr\u01B0\u1EDBc m\u1ED1c t\u01B0\u01A1ng lai \u2192 will have + V3.'],
+      ["By the time you get home, I ____ the housework.", "will have done", "will do", "did", "have done", "By the time + hi\u1EC7n t\u1EA1i \u0111\u01A1n \u2192 will have + V3."],
+      ["This time next month, they ____ in their new house.", "will be living", "will have lived", "live", "will live in", "Tr\u1EA1ng th\xE1i \u0111ang di\u1EC5n ra l\xFAc \u0111\xF3 \u2192 will be + V-ing."],
+      ["Next year, my parents ____ married for 30 years.", "will have been", "will be", "are", "will have", "Kho\u1EA3ng th\u1EDDi gian t\xEDnh t\u1EDBi m\u1ED1c t\u01B0\u01A1ng lai \u2192 will have been."],
+      ["Will you ____ the car this evening? I need to borrow it.", "be using", "have used", "used", "using", "H\u1ECFi l\u1ECBch tr\xECnh l\u1ECBch s\u1EF1 \u2192 will you be + V-ing."],
+      ["By 2050, scientists ____ a cure for the disease.", "will have found", "will be finding", "find", "have found", "Ho\xE0n t\u1EA5t tr\u01B0\u1EDBc 2050 \u2192 will have + V3."],
+      ["Don't worry, the paint ____ by tomorrow.", "will have dried", "will be drying", "dries", "has dried", "S\u1EBD kh\xF4 xong tr\u01B0\u1EDBc ng\xE0y mai \u2192 will have + V3."]
+    ],
+    tip: 'Th\u1EA5y "by + th\u1EDDi \u0111i\u1EC3m t\u01B0\u01A1ng lai" \u2192 ngh\u0129 ngay t\u1EDBi will have + V3.'
+  },
+  {
+    id: "contrast-linkers",
+    icon: "\u2696\uFE0F",
+    ico: "scale",
+    title: "T\u1EEB n\u1ED1i ch\u1EC9 s\u1EF1 t\u01B0\u01A1ng ph\u1EA3n & m\u1EE5c \u0111\xEDch",
+    titleEn: "Linkers of contrast & purpose",
+    level: "upper",
+    summary: "Although / even though + m\u1EC7nh \u0111\u1EC1; despite / in spite of + danh t\u1EEB ho\u1EB7c V-ing; however / nevertheless \u0111\u1EE9ng \u0111\u1EA7u c\xE2u, sau d\u1EA5u ch\u1EA5m ho\u1EB7c ch\u1EA5m ph\u1EA9y; whereas / while so s\xE1nh hai v\u1EBF \u0111\u1ED1i l\u1EADp. M\u1EE5c \u0111\xEDch: so that + m\u1EC7nh \u0111\u1EC1, in order to + V.",
+    rules: [
+      { form: "Although / Even though + S + V", note: "Although it rained, we went out." },
+      { form: "Despite / In spite of + danh t\u1EEB / V-ing", note: "Despite the rain, we went out." },
+      { form: "Despite the fact that + S + V", note: "Despite the fact that it was late, he kept working." },
+      { form: "...; however, ... / ... . However, ...", note: "The plan is good. However, it is expensive." },
+      { form: "so that + S + can / could; in order (not) to + V", note: "I left early so that I could catch the bus." }
+    ],
+    examples: [["Although he was tired, he finished the report.", "D\xF9 m\u1EC7t, anh \u1EA5y v\u1EABn ho\xE0n th\xE0nh b\xE1o c\xE1o."], ["Despite having little money, they were happy.", "D\xF9 c\xF3 \xEDt ti\u1EC1n, h\u1ECD v\u1EABn h\u1EA1nh ph\xFAc."], ["Some people love cities, whereas others prefer the countryside.", "M\u1ED9t s\u1ED1 ng\u01B0\u1EDDi th\xEDch th\xE0nh ph\u1ED1, trong khi s\u1ED1 kh\xE1c th\xEDch n\xF4ng th\xF4n."], ["She saved money in order to buy a house.", "C\xF4 \u1EA5y ti\u1EBFt ki\u1EC7m \u0111\u1EC3 mua nh\xE0."]],
+    quiz: [
+      ["____ the heavy traffic, we arrived on time.", "Despite", "Although", "However", "Even though", "Theo sau l\xE0 c\u1EE5m danh t\u1EEB \u2192 Despite."],
+      ["____ she was ill, she went to work.", "Although", "Despite", "In spite of", "However", "Theo sau l\xE0 m\u1EC7nh \u0111\u1EC1 \u2192 Although."],
+      ["The hotel was expensive. ____, the service was poor.", "Moreover", "Despite", "Although", "Whereas", "B\u1ED5 sung \xFD ti\xEAu c\u1EF1c c\xF9ng chi\u1EC1u \u2192 Moreover (H\u01A1n n\u1EEFa)."],
+      ["The flat is small; ____, it is in a great location.", "however", "although", "despite", "because", "\u0110\u1ED1i l\u1EADp, \u0111\u1EE9ng sau d\u1EA5u ch\u1EA5m ph\u1EA9y \u2192 however."],
+      ["In spite of ____ hard, he failed the test.", "studying", "he studied", "study", "to study", "In spite of + V-ing."],
+      ["My brother likes sport, ____ I prefer reading.", "whereas", "despite", "in spite", "so that", "So s\xE1nh hai v\u1EBF tr\xE1i ng\u01B0\u1EE3c \u2192 whereas."],
+      ["I spoke slowly ____ everyone could understand.", "so that", "in order to", "despite", "although", "M\u1EE5c \u0111\xEDch + m\u1EC7nh \u0111\u1EC1 \u2192 so that."],
+      ["She took a taxi in order ____ late.", "not to be", "to not", "don't be", "not being", "in order not to + V."]
+    ],
+    tip: 'M\u1EC7nh \u0111\u1EC1 \u2192 although; danh t\u1EEB / V-ing \u2192 despite. \u0110\u1EEBng vi\u1EBFt "despite of".'
+  },
+  {
+    id: "quantifiers",
+    icon: "\u{1F522}",
+    ico: "list-check",
+    title: "L\u01B0\u1EE3ng t\u1EEB n\xE2ng cao",
+    titleEn: "Advanced quantifiers",
+    level: "upper",
+    summary: 'L\u01B0\u1EE3ng t\u1EEB \u0111i v\u1EDBi danh t\u1EEB \u0111\u1EBFm \u0111\u01B0\u1EE3c / kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c kh\xE1c nhau: few / a few (\u0111\u1EBFm \u0111\u01B0\u1EE3c), little / a little (kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c). "A few / a little" mang ngh\u0129a t\xEDch c\u1EF1c (m\u1ED9t v\xE0i, \u0111\u1EE7 d\xF9ng), "few / little" mang ngh\u0129a ti\xEAu c\u1EF1c (r\u1EA5t \xEDt). Both / either / neither n\xF3i v\u1EC1 hai \u0111\u1ED1i t\u01B0\u1EE3ng.',
+    rules: [
+      { form: "a few / few + danh t\u1EEB s\u1ED1 nhi\u1EC1u", note: "I have a few friends here. / Few people came." },
+      { form: "a little / little + danh t\u1EEB kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c", note: "There is a little milk left. / We have little time." },
+      { form: "a large number of + s\u1ED1 nhi\u1EC1u; a great deal of + kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c", note: "a great deal of money" },
+      { form: "both ... and / either ... or / neither ... nor", note: "Neither Tom nor Anna was at home." },
+      { form: "each / every + danh t\u1EEB s\u1ED1 \xEDt; all + s\u1ED1 nhi\u1EC1u", note: "Every student has a book." }
+    ],
+    examples: [["Only a few students passed the test.", "Ch\u1EC9 m\u1ED9t v\xE0i h\u1ECDc sinh qua b\xE0i ki\u1EC3m tra."], ["We have very little information.", "Ch\xFAng t\xF4i c\xF3 r\u1EA5t \xEDt th\xF4ng tin."], ["Neither of my parents speaks English.", "C\u1EA3 b\u1ED1 l\u1EABn m\u1EB9 t\xF4i \u0111\u1EC1u kh\xF4ng n\xF3i ti\u1EBFng Anh."], ["A great deal of research has been done.", "R\u1EA5t nhi\u1EC1u nghi\xEAn c\u1EE9u \u0111\xE3 \u0111\u01B0\u1EE3c th\u1EF1c hi\u1EC7n."]],
+    quiz: [
+      ["Hurry up! We've got very ____ time.", "little", "few", "a few", "many", '"time" kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c, ngh\u0129a ti\xEAu c\u1EF1c \u2192 little.'],
+      ["I know ____ people in this town, so I am not lonely.", "a few", "few", "a little", "little", "\u0110\u1EBFm \u0111\u01B0\u1EE3c, ngh\u0129a t\xEDch c\u1EF1c (\u0111\u1EE7 \u0111\u1EC3 kh\xF4ng c\xF4 \u0111\u01A1n) \u2192 a few."],
+      ["____ tourists visit this village; it is almost empty.", "Few", "A few", "Little", "A little", "\u0110\u1EBFm \u0111\u01B0\u1EE3c, ngh\u0129a ti\xEAu c\u1EF1c \u2192 Few."],
+      ["The project required a great deal of ____.", "effort", "efforts", "workers", "ideas", "a great deal of + danh t\u1EEB kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c."],
+      ["____ my brother nor my sister likes fish.", "Neither", "Either", "Both", "None", "neither ... nor."],
+      ["You can pay ____ by cash or by card.", "either", "neither", "both", "all", "either ... or."],
+      ["____ student in the class has a laptop.", "Every", "All", "Both", "Few", "Every + danh t\u1EEB s\u1ED1 \xEDt."],
+      ["A large number of people ____ against the plan.", "are", "is", "has", "was", "a large number of + danh t\u1EEB s\u1ED1 nhi\u1EC1u \u2192 \u0111\u1ED9ng t\u1EEB s\u1ED1 nhi\u1EC1u."]
+    ],
+    tip: 'C\xF3 "a" (a few, a little) \u2192 ngh\u0129a t\xEDch c\u1EF1c; kh\xF4ng c\xF3 "a" \u2192 g\u1EA7n nh\u01B0 kh\xF4ng c\xF3.'
+  },
+  // ---------------------------------------------------------------- C1
+  {
+    id: "inversion",
+    icon: "\u{1F643}",
+    ico: "arrows-shuffle",
+    title: "\u0110\u1EA3o ng\u1EEF \u0111\u1EC3 nh\u1EA5n m\u1EA1nh",
+    titleEn: "Inversion for emphasis",
+    level: "advanced",
+    summary: "Khi \u0111\u01B0a tr\u1EA1ng t\u1EEB ph\u1EE7 \u0111\u1ECBnh ho\u1EB7c gi\u1EDBi h\u1EA1n (Never, Rarely, Seldom, Not only, Hardly, No sooner, Only then, Under no circumstances...) l\xEAn \u0111\u1EA7u c\xE2u, ta \u0111\u1EA3o tr\u1EE3 \u0111\u1ED9ng t\u1EEB l\xEAn tr\u01B0\u1EDBc ch\u1EE7 ng\u1EEF nh\u01B0 c\xE2u h\u1ECFi. V\u0103n phong trang tr\u1ECDng, r\u1EA5t \u0111\u01B0\u1EE3c \u0111i\u1EC3m trong IELTS Writing.",
+    rules: [
+      { form: "Never / Rarely / Seldom + tr\u1EE3 \u0111\u1ED9ng t\u1EEB + S + V", note: "Never have I seen such a beautiful view." },
+      { form: "Not only + tr\u1EE3 \u0111\u1ED9ng t\u1EEB + S + V, but ... also", note: "Not only is she clever, but she is also kind." },
+      { form: "Hardly / Scarcely + had + S + V3 + when ...", note: "Hardly had we arrived when it began to rain." },
+      { form: "No sooner + had + S + V3 + than ...", note: "No sooner had he left than the phone rang." },
+      { form: "Only after / Only when / Not until + m\u1EC7nh \u0111\u1EC1, tr\u1EE3 \u0111\u1ED9ng t\u1EEB + S + V", note: "Only when I left home did I realise how lucky I was." },
+      { form: "Under no circumstances / On no account + tr\u1EE3 \u0111\u1ED9ng t\u1EEB + S + V", note: "Under no circumstances should you open this door." }
+    ],
+    examples: [["Never have I been so embarrassed.", "Ch\u01B0a bao gi\u1EDD t\xF4i x\u1EA5u h\u1ED5 \u0111\u1EBFn th\u1EBF."], ["Rarely do we see such talent.", "Hi\u1EBFm khi ch\xFAng ta th\u1EA5y t\xE0i n\u0103ng nh\u01B0 v\u1EADy."], ["Not only did he lie, but he also stole money.", "Anh ta kh\xF4ng ch\u1EC9 n\xF3i d\u1ED1i m\xE0 c\xF2n \u0103n c\u1EAFp ti\u1EC1n."], ["Under no circumstances should you share your password.", "Trong b\u1EA5t k\u1EF3 tr\u01B0\u1EDDng h\u1EE3p n\xE0o b\u1EA1n c\u0169ng kh\xF4ng \u0111\u01B0\u1EE3c chia s\u1EBB m\u1EADt kh\u1EA9u."]],
+    quiz: [
+      ["Never ____ such a terrible film.", "have I seen", "I have seen", "I saw", "did I saw", "Never \u0111\u1EA7u c\xE2u \u2192 \u0111\u1EA3o tr\u1EE3 \u0111\u1ED9ng t\u1EEB: have I seen."],
+      ["Rarely ____ to the cinema these days.", "do they go", "they go", "they do go", "go they", "Rarely \u0111\u1EA7u c\xE2u, hi\u1EC7n t\u1EA1i \u0111\u01A1n \u2192 do + S + V."],
+      ["Not only ____ the exam, but she also got the highest score.", "did she pass", "she passed", "she did pass", "passed she", "Not only + tr\u1EE3 \u0111\u1ED9ng t\u1EEB (did) + S + V."],
+      ["Hardly ____ down when the phone rang.", "had I sat", "I had sat", "did I sit", "I sat", "Hardly + had + S + V3 + when."],
+      ["No sooner had the match started ____ it began to snow.", "than", "when", "then", "that", "No sooner ... than (kh\xF4ng d\xF9ng when)."],
+      ["Only when I moved abroad ____ how much I missed my family.", "did I realise", "I realised", "I did realise", "realised I", "Only when + m\u1EC7nh \u0111\u1EC1, r\u1ED3i m\u1EDBi \u0111\u1EA3o \u1EDF m\u1EC7nh \u0111\u1EC1 ch\xEDnh."],
+      ["Under no circumstances ____ leave the building during the test.", "should candidates", "candidates should", "candidates must", "do candidates", "Under no circumstances + should + S + V."],
+      ["Seldom ____ such a generous offer.", "have we received", "we have received", "we received", "received we", "Seldom \u0111\u1EA7u c\xE2u \u2192 \u0111\u1EA3o: have we received."]
+    ],
+    tip: "\u0110\u1EA3o ng\u1EEF = \u0111\u01B0a tr\u1EA1ng t\u1EEB ph\u1EE7 \u0111\u1ECBnh l\xEAn \u0111\u1EA7u + \u0111\u1EA3o nh\u01B0 c\xE2u h\u1ECFi. D\xF9ng 1\u20132 l\u1EA7n trong b\xE0i vi\u1EBFt l\xE0 \u0111\u1EE7 \u1EA5n t\u01B0\u1EE3ng."
+  },
+  {
+    id: "cleft-sentences",
+    icon: "\u2702\uFE0F",
+    ico: "text-size",
+    title: "C\xE2u ch\u1EBB (nh\u1EA5n m\u1EA1nh th\xF4ng tin)",
+    titleEn: "Cleft sentences",
+    level: "advanced",
+    summary: 'C\xE2u ch\u1EBB t\xE1ch m\u1ED9t c\xE2u th\xE0nh hai ph\u1EA7n \u0111\u1EC3 l\xE0m n\u1ED5i b\u1EADt m\u1ED9t th\xF4ng tin. "It is/was ... that/who ..." nh\u1EA5n m\u1EA1nh m\u1ED9t th\xE0nh ph\u1EA7n; "What ... is/was ..." nh\u1EA5n m\u1EA1nh h\xE0nh \u0111\u1ED9ng ho\u1EB7c \u0111i\u1EC1u m\xECnh mu\u1ED1n n\xF3i.',
+    rules: [
+      { form: "It is / was + ph\u1EA7n nh\u1EA5n m\u1EA1nh + that / who + ph\u1EA7n c\xF2n l\u1EA1i", note: "It was Tom who broke the window." },
+      { form: "What + S + V + is / was + ph\u1EA7n nh\u1EA5n m\u1EA1nh", note: "What I need is a long holiday." },
+      { form: "All (that) + S + V + is / was ...", note: "All I want is some peace and quiet." },
+      { form: "The reason why ... is that ...", note: "The reason why I left is that I was bored." },
+      { form: "What happened was (that) ... / What ... did was + V", note: "What she did was call the police." }
+    ],
+    examples: [["It was my mother who taught me to cook.", "Ch\xEDnh m\u1EB9 t\xF4i l\xE0 ng\u01B0\u1EDDi d\u1EA1y t\xF4i n\u1EA5u \u0103n."], ["What I love about Hanoi is the food.", "\u0110i\u1EC1u t\xF4i y\xEAu \u1EDF H\xE0 N\u1ED9i l\xE0 \u0111\u1ED3 \u0103n."], ["All I need is a good night's sleep.", "T\u1EA5t c\u1EA3 nh\u1EEFng g\xEC t\xF4i c\u1EA7n l\xE0 m\u1ED9t gi\u1EA5c ng\u1EE7 ngon."], ["It is in the morning that I work best.", "Ch\xEDnh v\xE0o bu\u1ED5i s\xE1ng t\xF4i l\xE0m vi\u1EC7c hi\u1EC7u qu\u1EA3 nh\u1EA5t."]],
+    quiz: [
+      ["It was Mary ____ called you yesterday, not me.", "who", "what", "which", "when", "Nh\u1EA5n m\u1EA1nh ng\u01B0\u1EDDi \u2192 It was ... who."],
+      ["____ I need now is a cup of coffee.", "What", "That", "Which", "It", "What + S + V + is ..."],
+      ["It is the price ____ worries me, not the quality.", "that", "what", "who", "where", "Nh\u1EA5n m\u1EA1nh v\u1EADt \u2192 It is ... that."],
+      ["All I want ____ to be left alone.", "is", "are", "was being", "have", "All + S + V + is ..."],
+      ["What he did ____ resign immediately.", "was", "were", "did", "had", "What ... did was + V (nguy\xEAn m\u1EABu)."],
+      ["The reason why she failed is ____ she did not prepare.", "that", "because of", "why", "what", 'The reason why ... is that ... (kh\xF4ng d\xF9ng "because" sau "reason").'],
+      ["It was not until midnight ____ they finished the work.", "that", "when", "which", "what", "C\u1EA5u tr\xFAc nh\u1EA5n m\u1EA1nh: It was not until ... that ..."],
+      ["____ surprised me most was his honesty.", "What", "That", "It", "Which", "What + V + was ... (What \u0111\xF3ng vai ch\u1EE7 ng\u1EEF)."]
+    ],
+    tip: 'Speaking: "What I really enjoy is..." gi\xFAp c\xE2u tr\u1EA3 l\u1EDDi t\u1EF1 nhi\xEAn v\xE0 gi\xE0u c\u1EA5u tr\xFAc h\u01A1n.'
+  },
+  {
+    id: "mixed-conditionals",
+    icon: "\u{1F501}",
+    ico: "repeat",
+    title: "C\xE2u \u0111i\u1EC1u ki\u1EC7n h\u1ED7n h\u1EE3p",
+    titleEn: "Mixed conditionals",
+    level: "advanced",
+    summary: 'C\xE2u \u0111i\u1EC1u ki\u1EC7n h\u1ED7n h\u1EE3p k\u1EBFt h\u1EE3p lo\u1EA1i 2 v\xE0 lo\u1EA1i 3 khi th\u1EDDi gian c\u1EE7a \u0111i\u1EC1u ki\u1EC7n v\xE0 k\u1EBFt qu\u1EA3 kh\xE1c nhau: \u0111i\u1EC1u ki\u1EC7n trong qu\xE1 kh\u1EE9 \u2192 k\u1EBFt qu\u1EA3 \u1EDF hi\u1EC7n t\u1EA1i, ho\u1EB7c \u0111\u1EB7c \u0111i\u1EC3m \u1EDF hi\u1EC7n t\u1EA1i \u2192 k\u1EBFt qu\u1EA3 trong qu\xE1 kh\u1EE9. C\xF3 th\u1EC3 d\xF9ng \u0111\u1EA3o ng\u1EEF thay cho "If" trong v\u0103n trang tr\u1ECDng.',
+    rules: [
+      { form: "If + had + V3, would + V (qu\xE1 kh\u1EE9 \u2192 hi\u1EC7n t\u1EA1i)", note: "If I had taken the job, I would be rich now." },
+      { form: "If + qu\xE1 kh\u1EE9 \u0111\u01A1n, would have + V3 (hi\u1EC7n t\u1EA1i \u2192 qu\xE1 kh\u1EE9)", note: "If I weren't so shy, I would have spoken to her." },
+      { form: "\u0110\u1EA3o ng\u1EEF lo\u1EA1i 1: Should + S + V", note: "Should you need help, call me." },
+      { form: "\u0110\u1EA3o ng\u1EEF lo\u1EA1i 2: Were + S + to V / Were + S ...", note: "Were I in your position, I would accept." },
+      { form: "\u0110\u1EA3o ng\u1EEF lo\u1EA1i 3: Had + S + V3", note: "Had I known, I would have come." },
+      { form: "But for / Without + danh t\u1EEB = n\u1EBFu kh\xF4ng c\xF3", note: "But for your help, I would have failed." }
+    ],
+    examples: [["If I had studied medicine, I would be a doctor now.", "N\u1EBFu h\u1ED3i \u0111\xF3 t\xF4i h\u1ECDc y th\xEC gi\u1EDD t\xF4i \u0111\xE3 l\xE0 b\xE1c s\u0129."], ["If she spoke French, she would have got the job.", "N\u1EBFu c\xF4 \u1EA5y bi\u1EBFt ti\u1EBFng Ph\xE1p th\xEC \u0111\xE3 \u0111\u01B0\u1EE3c nh\u1EADn vi\u1EC7c r\u1ED3i."], ["Had we left earlier, we would have caught the train.", "N\u1EBFu ch\xFAng t\xF4i \u0111i s\u1EDBm h\u01A1n th\xEC \u0111\xE3 k\u1ECBp t\xE0u."], ["Should you have any questions, please contact us.", "N\u1EBFu c\xF3 b\u1EA5t k\u1EF3 c\xE2u h\u1ECFi n\xE0o, xin vui l\xF2ng li\xEAn h\u1EC7 ch\xFAng t\xF4i."]],
+    quiz: [
+      ["If I had saved more money, I ____ a car now.", "would have", "would have had", "had", "will have", "\u0110i\u1EC1u ki\u1EC7n qu\xE1 kh\u1EE9 \u2192 k\u1EBFt qu\u1EA3 hi\u1EC7n t\u1EA1i (now) \u2192 would + V."],
+      ["If he weren't so lazy, he ____ the exam last week.", "would have passed", "would pass", "passed", "had passed", "\u0110\u1EB7c \u0111i\u1EC3m hi\u1EC7n t\u1EA1i \u2192 k\u1EBFt qu\u1EA3 qu\xE1 kh\u1EE9 \u2192 would have + V3."],
+      ["____ I known about the meeting, I would have attended.", "Had", "If", "Should", "Were", "\u0110\u1EA3o ng\u1EEF lo\u1EA1i 3: Had + S + V3."],
+      ["____ you need any further information, do not hesitate to call.", "Should", "Had", "Were", "Would", "\u0110\u1EA3o ng\u1EEF lo\u1EA1i 1 (th\u01B0 trang tr\u1ECDng): Should + S + V."],
+      ["____ I in your shoes, I would talk to the manager.", "Were", "Was", "Had", "Should", "\u0110\u1EA3o ng\u1EEF lo\u1EA1i 2: Were + S."],
+      ["____ the storm, the flight would have landed on time.", "But for", "Unless", "Despite", "Except", "But for + danh t\u1EEB = n\u1EBFu kh\xF4ng c\xF3."],
+      ["If we had booked a table, we ____ waiting outside now.", "wouldn't be", "wouldn't have been", "won't be", "hadn't been", "Qu\xE1 kh\u1EE9 \u2192 hi\u1EC7n t\u1EA1i (now) \u2192 wouldn't be."],
+      ["Were the government ____ taxes, people would protest.", "to raise", "raising", "raise", "raised", "Were + S + to V (\u0111\u1EA3o ng\u1EEF lo\u1EA1i 2)."]
+    ],
+    tip: "X\xE1c \u0111\u1ECBnh th\u1EDDi gian c\u1EE7a T\u1EEANG v\u1EBF: v\u1EBF n\xE0o n\xF3i v\u1EC1 qu\xE1 kh\u1EE9 d\xF9ng had V3 / would have V3, v\u1EBF hi\u1EC7n t\u1EA1i d\xF9ng qu\xE1 kh\u1EE9 \u0111\u01A1n / would V."
+  },
+  {
+    id: "subjunctive",
+    icon: "\u{1F4DC}",
+    ico: "file-description",
+    title: "Gi\u1EA3 \u0111\u1ECBnh c\xE1ch & c\u1EA5u tr\xFAc trang tr\u1ECDng",
+    titleEn: "The subjunctive & formal structures",
+    level: "advanced",
+    summary: `Sau c\xE1c \u0111\u1ED9ng t\u1EEB / t\xEDnh t\u1EEB ch\u1EC9 \u0111\u1EC1 ngh\u1ECB, y\xEAu c\u1EA7u, t\u1EA7m quan tr\u1ECDng (suggest, recommend, insist, demand, essential, vital...), m\u1EC7nh \u0111\u1EC1 "that" d\xF9ng \u0111\u1ED9ng t\u1EEB NGUY\xCAN M\u1EAAU cho m\u1ECDi ng\xF4i (kh\xF4ng chia). "It's (high) time" v\xE0 "would rather" + qu\xE1 kh\u1EE9 di\u1EC5n t\u1EA3 mong mu\u1ED1n tr\xE1i hi\u1EC7n t\u1EA1i.`,
+    rules: [
+      { form: "suggest / recommend / insist / demand + that + S + V nguy\xEAn m\u1EABu", note: "The doctor recommended that he stop smoking." },
+      { form: "It is essential / vital / important + that + S + V nguy\xEAn m\u1EABu", note: "It is vital that everyone be on time." },
+      { form: "Ph\u1EE7 \u0111\u1ECBnh: that + S + not + V", note: "They insisted that we not leave." },
+      { form: "It's (high) time + S + qu\xE1 kh\u1EE9 \u0111\u01A1n", note: "It's high time you found a job." },
+      { form: "would rather + S + qu\xE1 kh\u1EE9 \u0111\u01A1n", note: "I'd rather you didn't smoke here." }
+    ],
+    examples: [["I suggest that she apply for the scholarship.", "T\xF4i \u0111\u1EC1 ngh\u1ECB c\xF4 \u1EA5y n\u1ED9p \u0111\u01A1n xin h\u1ECDc b\u1ED5ng."], ["It is essential that every child have access to education.", "\u0110i\u1EC1u thi\u1EBFt y\u1EBFu l\xE0 m\u1ECDi tr\u1EBB em \u0111\u1EC1u \u0111\u01B0\u1EE3c ti\u1EBFp c\u1EADn gi\xE1o d\u1EE5c."], ["It's time we went home.", "\u0110\xE3 \u0111\u1EBFn l\xFAc ch\xFAng ta v\u1EC1 nh\xE0."], ["I'd rather you told me the truth.", "T\xF4i mu\u1ED1n b\u1EA1n n\xF3i th\u1EADt v\u1EDBi t\xF4i h\u01A1n."]],
+    quiz: [
+      ["The teacher insisted that every student ____ the essay by Friday.", "submit", "submits", "submitted", "will submit", "Sau insist that \u2192 V nguy\xEAn m\u1EABu cho m\u1ECDi ng\xF4i."],
+      ["It is vital that the patient ____ complete rest.", "have", "has", "had", "having", "It is vital that + S + V nguy\xEAn m\u1EABu."],
+      ["The committee recommended that the plan ____ postponed.", "be", "is", "was", "being", "B\u1ECB \u0111\u1ED9ng gi\u1EA3 \u0111\u1ECBnh: that + S + be + V3."],
+      ["It's high time the government ____ action on pollution.", "took", "take", "takes", "has taken", "It's high time + qu\xE1 kh\u1EE9 \u0111\u01A1n."],
+      ["I'd rather you ____ my phone without asking.", "didn't use", "don't use", "not use", "won't use", "would rather + S + qu\xE1 kh\u1EE9 \u0111\u01A1n."],
+      ["She demanded that he ____ immediately.", "apologise", "apologises", "apologised", "to apologise", "demand that + V nguy\xEAn m\u1EABu."],
+      ["It is important that he ____ late again.", "not be", "isn't", "won't be", "not is", "Ph\u1EE7 \u0111\u1ECBnh gi\u1EA3 \u0111\u1ECBnh: that + S + not + V."],
+      ["My parents suggested that I ____ a gap year.", "take", "took", "taking", "to take", "suggest that + S + V nguy\xEAn m\u1EABu."]
+    ],
+    tip: 'M\u1EB9o: sau suggest/insist/essential that... coi nh\u01B0 c\xF3 "should" b\u1ECB l\u01B0\u1EE3c: that he (should) stop.'
+  },
+  {
+    id: "participle-clauses",
+    icon: "\u{1FAA2}",
+    ico: "writing",
+    title: "M\u1EC7nh \u0111\u1EC1 ph\xE2n t\u1EEB & r\xFAt g\u1ECDn",
+    titleEn: "Participle clauses",
+    level: "advanced",
+    summary: "M\u1EC7nh \u0111\u1EC1 ph\xE2n t\u1EEB gi\xFAp c\xE2u ng\u1EAFn g\u1ECDn, trang tr\u1ECDng: V-ing (ch\u1EE7 \u0111\u1ED9ng), V3 (b\u1ECB \u0111\u1ED9ng), Having + V3 (vi\u1EC7c x\u1EA3y ra tr\u01B0\u1EDBc). Ch\u1EE7 ng\u1EEF c\u1EE7a m\u1EC7nh \u0111\u1EC1 ph\xE2n t\u1EEB ph\u1EA3i tr\xF9ng ch\u1EE7 ng\u1EEF c\u1EE7a m\u1EC7nh \u0111\u1EC1 ch\xEDnh.",
+    rules: [
+      { form: "V-ing ..., S + V (ch\u1EE7 \u0111\u1ED9ng, c\xF9ng l\xFAc / nguy\xEAn nh\xE2n)", note: "Feeling tired, she went to bed early." },
+      { form: "V3 ..., S + V (b\u1ECB \u0111\u1ED9ng)", note: "Built in 1900, the bridge is still in use." },
+      { form: "Having + V3 ..., S + V (x\u1EA3y ra tr\u01B0\u1EDBc)", note: "Having finished the report, he went home." },
+      { form: "R\xFAt g\u1ECDn m\u1EC7nh \u0111\u1EC1 quan h\u1EC7: N + V-ing / V3", note: "The man standing there is my boss. / The car stolen last week..." },
+      { form: "Li\xEAn t\u1EEB + V-ing: after / before / while / when + V-ing", note: "While walking home, I saw an accident." }
+    ],
+    examples: [["Not knowing what to say, he kept silent.", "Kh\xF4ng bi\u1EBFt n\xF3i g\xEC, anh \u1EA5y im l\u1EB7ng."], ["Written in simple English, the book is easy to read.", "\u0110\u01B0\u1EE3c vi\u1EBFt b\u1EB1ng ti\u1EBFng Anh \u0111\u01A1n gi\u1EA3n, cu\u1ED1n s\xE1ch r\u1EA5t d\u1EC5 \u0111\u1ECDc."], ["Having lost his keys, he could not get in.", "V\xEC \u0111\xE3 l\xE0m m\u1EA5t ch\xECa kh\xF3a, anh \u1EA5y kh\xF4ng v\xE0o \u0111\u01B0\u1EE3c nh\xE0."], ["Students wishing to apply should register online.", "Sinh vi\xEAn mu\u1ED1n \u0111\u0103ng k\xFD n\xEAn \u0111\u0103ng k\xFD tr\u1EF1c tuy\u1EBFn."]],
+    quiz: [
+      ["____ the news, she burst into tears.", "Hearing", "Heard", "To hear", "Having heard of", "Ch\u1EE7 \u0111\u1ED9ng, c\xF9ng l\xFAc \u2192 V-ing."],
+      ["____ in 1885, the hotel is the oldest in the city.", "Opened", "Opening", "Having opened", "To open", 'Kh\xE1ch s\u1EA1n "\u0111\u01B0\u1EE3c m\u1EDF" \u2192 b\u1ECB \u0111\u1ED9ng \u2192 V3.'],
+      ["____ all his money, he had to walk home.", "Having spent", "Spent", "Spending", "Being spent", "Ti\xEAu h\u1EBFt ti\u1EC1n x\u1EA3y ra TR\u01AF\u1EDAC \u2192 Having + V3."],
+      ["The woman ____ to the manager is my aunt.", "talking", "talked", "who talking", "to talk", "R\xFAt g\u1ECDn m\u1EC7nh \u0111\u1EC1 quan h\u1EC7 ch\u1EE7 \u0111\u1ED9ng \u2192 V-ing."],
+      ["Most of the goods ____ in this factory are exported.", "made", "making", "are made", "make", "R\xFAt g\u1ECDn m\u1EC7nh \u0111\u1EC1 quan h\u1EC7 b\u1ECB \u0111\u1ED9ng \u2192 V3."],
+      ["____ what to do, I asked my teacher for advice.", "Not knowing", "Don't knowing", "Knowing not", "Not known", "Ph\u1EE7 \u0111\u1ECBnh: Not + V-ing."],
+      ["After ____ the contract, they celebrated.", "signing", "signed", "sign", "to sign", "After + V-ing."],
+      ["____ by the noise, the baby started crying.", "Frightened", "Frightening", "Having frightening", "To frighten", 'Em b\xE9 "b\u1ECB l\xE0m s\u1EE3" \u2192 b\u1ECB \u0111\u1ED9ng \u2192 V3.']
+    ],
+    tip: 'Tr\xE1nh l\u1ED7i "dangling": "Walking home, the rain started" sai v\xEC c\u01A1n m\u01B0a kh\xF4ng \u0111i b\u1ED9.'
+  },
+  {
+    id: "academic-style",
+    icon: "\u{1F393}",
+    ico: "school",
+    title: "V\u0103n phong h\u1ECDc thu\u1EADt: danh t\u1EEB h\xF3a & r\xE0o \u0111\xF3n",
+    titleEn: "Academic style: nominalisation & hedging",
+    level: "advanced",
+    summary: "V\u0103n vi\u1EBFt h\u1ECDc thu\u1EADt (IELTS Writing, b\xE1o c\xE1o) chu\u1ED9ng danh t\u1EEB h\xF3a \u2013 bi\u1EBFn \u0111\u1ED9ng t\u1EEB / t\xEDnh t\u1EEB th\xE0nh danh t\u1EEB \u0111\u1EC3 c\xE2u kh\xE1ch quan, c\xF4 \u0111\u1ECDng \u2013 v\xE0 l\u1ED1i r\xE0o \u0111\xF3n (hedging) \u0111\u1EC3 tr\xE1nh kh\u1EB3ng \u0111\u1ECBnh tuy\u1EC7t \u0111\u1ED1i.",
+    rules: [
+      { form: "Danh t\u1EEB h\xF3a: V \u2192 N", note: "Prices increased sharply. \u2192 There was a sharp increase in prices." },
+      { form: "The + N + of + ...", note: "The government decided... \u2192 The decision of the government..." },
+      { form: "R\xE0o \u0111\xF3n b\u1EB1ng modal: may / might / could / tend to", note: "This may lead to higher costs." },
+      { form: "R\xE0o \u0111\xF3n b\u1EB1ng tr\u1EA1ng t\u1EEB: arguably / possibly / to some extent", note: "It is arguably the best solution." },
+      { form: "C\u1EA5u tr\xFAc kh\xE1ch quan: It appears / seems that... ; There is evidence to suggest that...", note: "It appears that young people read less." }
+    ],
+    examples: [["There has been a significant rise in obesity.", "\u0110\xE3 c\xF3 s\u1EF1 gia t\u0103ng \u0111\xE1ng k\u1EC3 v\u1EC1 b\xE9o ph\xEC."], ["The introduction of the tax reduced pollution.", "Vi\u1EC7c \xE1p d\u1EE5ng lo\u1EA1i thu\u1EBF n\xE0y l\xE0m gi\u1EA3m \xF4 nhi\u1EC5m."], ["This trend may be explained by rising costs.", "Xu h\u01B0\u1EDBng n\xE0y c\xF3 th\u1EC3 \u0111\u01B0\u1EE3c gi\u1EA3i th\xEDch b\u1EDFi chi ph\xED t\u0103ng."], ["It appears that the policy has been effective.", "C\xF3 v\u1EBB nh\u01B0 ch\xEDnh s\xE1ch \u0111\xE3 c\xF3 hi\u1EC7u qu\u1EA3."]],
+    quiz: [
+      ["The number of tourists grew rapidly. \u2192 There was a rapid ____ in the number of tourists.", "growth", "grow", "grown", "growing", "Danh t\u1EEB h\xF3a: grow \u2192 growth."],
+      ["They failed to act. \u2192 Their ____ to act caused problems.", "failure", "fail", "failing to", "failed", "fail \u2192 failure."],
+      ["Technology ____ to make people less patient. (r\xE0o \u0111\xF3n)", "tends", "always", "definitely", "proves", "R\xE0o \u0111\xF3n: tend to + V."],
+      ["It ____ that the number of readers is declining.", "appears", "is appearing", "appear", "has appear", "C\u1EA5u tr\xFAc kh\xE1ch quan: It appears that..."],
+      ["The ____ of the new law has reduced accidents.", "introduction", "introduce", "introducing of", "introduced", "introduce \u2192 introduction."],
+      ["These findings ____ suggest a link between diet and mood.", "may", "must certainly", "always", "definitely", "R\xE0o \u0111\xF3n k\u1EBFt lu\u1EADn: may suggest."],
+      ["There is evidence to ____ that exercise improves memory.", "suggest", "suggesting", "suggestion", "suggested", "There is evidence to suggest that..."],
+      ["The city expanded rapidly. \u2192 The rapid ____ of the city caused traffic problems.", "expansion", "expand", "expanding", "expanded", "Danh t\u1EEB h\xF3a: expand \u2192 expansion."]
+    ],
+    tip: "\u0110\u1EEBng l\u1EA1m d\u1EE5ng: m\u1ED7i \u0111o\u1EA1n 1\u20132 c\u1EE5m danh t\u1EEB h\xF3a v\xE0 m\u1ED9t c\xE2u r\xE0o \u0111\xF3n l\xE0 \u0111\u1EE7 t\u1EF1 nhi\xEAn."
+  }
+];
+
 // src/app/data/grammar.ts
-var GRAMMAR = [
+var CORE = [
   {
     id: "to-be",
     icon: "\u{1F7E6}",
+    ico: "equal",
     title: '\u0110\u1ED9ng t\u1EEB "to be"',
     titleEn: 'The verb "to be"',
     level: "starter",
@@ -35435,6 +38856,7 @@ var GRAMMAR = [
   {
     id: "present-simple",
     icon: "\u{1F501}",
+    ico: "repeat",
     title: "Th\xEC hi\u1EC7n t\u1EA1i \u0111\u01A1n",
     titleEn: "Present simple",
     level: "starter",
@@ -35462,6 +38884,7 @@ var GRAMMAR = [
   {
     id: "present-continuous",
     icon: "\u23F3",
+    ico: "hourglass",
     title: "Th\xEC hi\u1EC7n t\u1EA1i ti\u1EBFp di\u1EC5n",
     titleEn: "Present continuous",
     level: "starter",
@@ -35488,6 +38911,7 @@ var GRAMMAR = [
   {
     id: "past-simple",
     icon: "\u23EE\uFE0F",
+    ico: "history",
     title: "Th\xEC qu\xE1 kh\u1EE9 \u0111\u01A1n",
     titleEn: "Past simple",
     level: "basic",
@@ -35515,6 +38939,7 @@ var GRAMMAR = [
   {
     id: "future",
     icon: "\u{1F52E}",
+    ico: "rocket",
     title: "T\u01B0\u01A1ng lai: will & be going to",
     titleEn: "Future: will / be going to",
     level: "basic",
@@ -35541,6 +38966,7 @@ var GRAMMAR = [
   {
     id: "articles",
     icon: "\u{1F170}\uFE0F",
+    ico: "letter-a",
     title: "M\u1EA1o t\u1EEB a / an / the",
     titleEn: "Articles",
     level: "starter",
@@ -35567,6 +38993,7 @@ var GRAMMAR = [
   {
     id: "countable",
     icon: "\u{1F34E}",
+    ico: "apple",
     title: "Danh t\u1EEB \u0111\u1EBFm \u0111\u01B0\u1EE3c & kh\xF4ng \u0111\u1EBFm \u0111\u01B0\u1EE3c",
     titleEn: "Countable & uncountable nouns",
     level: "basic",
@@ -35594,6 +39021,7 @@ var GRAMMAR = [
   {
     id: "prepositions-time",
     icon: "\u{1F552}",
+    ico: "clock",
     title: "Gi\u1EDBi t\u1EEB ch\u1EC9 th\u1EDDi gian: in / on / at",
     titleEn: "Prepositions of time",
     level: "starter",
@@ -35619,6 +39047,7 @@ var GRAMMAR = [
   {
     id: "comparison",
     icon: "\u{1F4CF}",
+    ico: "scale",
     title: "So s\xE1nh h\u01A1n & so s\xE1nh nh\u1EA5t",
     titleEn: "Comparatives & superlatives",
     level: "basic",
@@ -35645,6 +39074,7 @@ var GRAMMAR = [
   {
     id: "modals",
     icon: "\u{1F6E1}\uFE0F",
+    ico: "shield-check",
     title: "\u0110\u1ED9ng t\u1EEB khuy\u1EBFt thi\u1EBFu: can / must / should",
     titleEn: "Modal verbs",
     level: "basic",
@@ -35671,6 +39101,7 @@ var GRAMMAR = [
   {
     id: "present-perfect",
     icon: "\u2705",
+    ico: "checks",
     title: "Th\xEC hi\u1EC7n t\u1EA1i ho\xE0n th\xE0nh",
     titleEn: "Present perfect",
     level: "intermediate",
@@ -35697,6 +39128,7 @@ var GRAMMAR = [
   {
     id: "wh-questions",
     icon: "\u2753",
+    ico: "help-circle",
     title: "C\xE2u h\u1ECFi v\u1EDBi t\u1EEB \u0111\u1EC3 h\u1ECFi (Wh-)",
     titleEn: "Wh-questions",
     level: "starter",
@@ -35721,6 +39153,7 @@ var GRAMMAR = [
     tip: "Nh\xECn c\xE2u tr\u1EA3 l\u1EDDi \u0111\u1EC3 \u0111o\xE1n t\u1EEB \u0111\u1EC3 h\u1ECFi: n\u01A1i ch\u1ED1n \u2192 Where, ng\u01B0\u1EDDi \u2192 Who."
   }
 ];
+var GRAMMAR = [...CORE, ...GRAMMAR_ADVANCED];
 var GRAMMAR_BY_ID = Object.fromEntries(GRAMMAR.map((g) => [g.id, g]));
 
 // src/app/data/exam/ielts.ts
@@ -54897,7 +58330,7 @@ function add(text, group, voice = "f") {
   if (old && old.t.toLowerCase() !== t.toLowerCase()) throw new Error(`Tr\xF9ng m\xE3 \xE2m thanh: "${old.t}" v\xE0 "${t}"`);
   if (!old) out.set(k, { k, t, v: voice, g: group });
 }
-var VOCABS = [VOCAB, VOCAB2, VOCAB3, VOCAB4, VOCAB5, VOCAB6, VOCAB7, VOCAB8, VOCAB9, VOCAB10];
+var VOCABS = [VOCAB, VOCAB2, VOCAB3, VOCAB4, VOCAB5, VOCAB6, VOCAB7, VOCAB8, VOCAB9, VOCAB10, VOCAB11];
 for (const v of VOCABS) for (const l of v.lessons) for (const w of l.words) {
   add(w[0], "word");
   add(w[4], "example");

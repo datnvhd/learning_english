@@ -21,6 +21,7 @@ const LOADERS: Record<TopicId, () => Promise<{ VOCAB: TopicVocabData }>> = {
   food: () => import('../data/vocab/food'),
   b1: () => import('../data/vocab/b1'),
   b2: () => import('../data/vocab/b2'),
+  c1: () => import('../data/vocab/c1'),
   ielts: () => import('../data/vocab/ielts'),
   toeic: () => import('../data/vocab/toeic'),
 };

@@ -4,7 +4,7 @@
  * ============================================================================
  *  Điểm "hiện tại" được ƯỚC TÍNH từ tỉ lệ đúng của các bài luyện thi đã làm (ProgressService):
  *   - IELTS: mỗi kỹ năng quy ra band (Listening/Reading theo thang 40 câu, Writing/Speaking theo
- *     phần chấm tự động + tự đánh giá); band tổng = trung bình các kỹ năng đã luyện, làm tròn 0.5.
+ *     phần chấm tự động); band tổng = trung bình các kỹ năng đã luyện, làm tròn 0.5.
  *   - TOEIC: Listening và Reading quy ra thang 5–495, tổng 10–990.
  *  Chưa luyện kỹ năng nào thì giá trị là null và giao diện hiển thị "—".
  *  Mục tiêu (targetBand, targetToeic) nằm trong Cài đặt.

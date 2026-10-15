@@ -58,10 +58,11 @@ const MODULES: { title: string; icon: IconName; color: string; desc: string; lin
     ],
   },
   {
-    title: 'Từ vựng & Cụm từ', icon: 'letter-case', color: 'var(--leaf-600)', link: '/vocab', desc: '3.600 từ vựng có gắn trình độ CEFR: trọng tâm B1–B2, IELTS & TOEIC.',
+    title: 'Từ vựng & Cụm từ', icon: 'letter-case', color: 'var(--leaf-600)', link: '/vocab', desc: '3.900 từ vựng có gắn trình độ CEFR A1–C1, IELTS & TOEIC.',
     items: [
       { label: 'Từ vựng B1 – Trung cấp', icon: 'book', link: '/vocab/b1', query: { tab: 'lessons' } },
       { label: 'Từ vựng B2 – Trung cao cấp', icon: 'books', link: '/vocab/b2', query: { tab: 'lessons' } },
+      { label: 'Từ vựng C1 – Cao cấp', icon: 'crown', link: '/vocab/c1', query: { tab: 'lessons' } },
       { label: 'Flashcard', icon: 'cards', link: '/vocab', query: { tab: 'lessons' } },
       { label: 'Ôn tập (Spaced Repetition)', icon: 'refresh', link: '/session/review/all' },
     ],

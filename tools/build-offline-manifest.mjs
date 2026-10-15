@@ -21,6 +21,11 @@ const GROUPS = {
   photos: 'Ảnh từ vựng & ảnh đề thi',
   art: 'Hình minh họa',
   voice: 'Giọng hướng dẫn tiếng Việt',
+  asr: 'Bộ nhận dạng giọng nói (chấm Speaking offline)',
+  dict: 'Từ điển kiểm tra chính tả (chấm Writing)',
+  harper: 'Bộ kiểm tra ngữ pháp Harper (chấm Writing/Speaking)',
+  phoneme: 'Mô hình nhận dạng âm vị (chấm phát âm từng âm)',
+  ort: 'Bộ chạy mô hình ONNX Runtime (chấm phát âm)',
 };
 
 function walk(dir, out = []) {

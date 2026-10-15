@@ -17,7 +17,7 @@
  *  /progress                  Progress: thống kê, biểu đồ, huy hiệu, lịch sử
  *  /schedule                  Lịch học hằng tuần
  *  /settings                  Settings: hồ sơ, mục tiêu, âm thanh, quản lý dữ liệu offline
- *  /grammar, /grammar/:id     12 chủ điểm ngữ pháp: giải thích, ví dụ, bài luyện
+ *  /grammar, /grammar/:id     31 chủ điểm ngữ pháp A1–C1: giải thích, ví dụ, bài luyện
  *  /game/:type/:topic         Trò chơi mini (ghép cặp, xếp chữ, đố nhanh, nghe chọn ảnh)
  *  /topic/:id (+ /summary)    Giới thiệu một chủ đề từ vựng và luyện tập tổng hợp của chủ đề
  *  /search                    Tra từ trên toàn bộ kho từ vựng (ô tìm kiếm trên topbar)

@@ -25,6 +25,9 @@ Hoặc bấm đúp **chay-app.bat**. Khi phát triển: `npm start` (http://loca
 | `npm run build:vocab` | Sinh lại dữ liệu từ vựng từ `tools/vocab-src/*.txt` |
 | `npm run fetch:images` | Tải/cập nhật ảnh minh họa từ vựng (Openverse, CC0) |
 | `npm run fetch:hero` | Tải ảnh bìa (banner, ảnh đề thi – Openverse, CC0) |
+| `npm run fetch:asr` | Tải mô hình nhận dạng giọng nói tiếng Anh (Vosk small en-us, Apache-2.0, ~41 MB) dùng để chấm Speaking offline |
+| `npm run fetch:dict` | Tạo từ điển chính tả offline (danh sách ENABLE – public domain – gộp với từ trong nội dung app) để chấm Writing |
+| `npm run fetch:phoneme` | Tải mô hình nhận dạng âm vị (wav2vec2 XLS-R `robg/speako-phoneme-recognizer`, Apache-2.0, ONNX INT8 ~343 MB) và từ điển phát âm CMU để chấm phát âm từng âm |
 | `npm run build:icons` | Sinh lại bộ icon Tabler dùng trong app |
 | `npm run check:theme` | Kiểm tra tuân thủ theme (`-- --fix` để tự sửa) |
 
@@ -34,11 +37,16 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 
 | Dữ liệu | Vị trí | Dung lượng |
 |---|---|---|
-| ~3.600 từ vựng (10 chủ đề, có gắn trình độ CEFR A1–B2), đề IELTS & TOEIC, bài đọc, hội thoại, ngữ pháp | `src/app/data/**` (đóng gói trong mã ứng dụng) | ≈ 2 MB |
-| **Âm thanh tiếng Anh thu sẵn**: 14.182 tệp mp3 cho mọi từ, câu ví dụ, hội thoại (2 giọng), bài nghe luyện thi, bài mẫu | `public/assets/audio` | ≈ 380 MB |
+| ~3.900 từ vựng (11 chủ đề, có gắn trình độ CEFR A1–C1), đề IELTS & TOEIC, bài đọc, hội thoại, 31 bài ngữ pháp A1–C1 | `src/app/data/**` (đóng gói trong mã ứng dụng) | ≈ 2 MB |
+| **Âm thanh tiếng Anh thu sẵn**: 15.010 tệp mp3 cho mọi từ, câu ví dụ, hội thoại (2 giọng), bài nghe luyện thi, bài mẫu | `public/assets/audio` | ≈ 363 MB |
 | Ảnh từ vựng, ảnh đề thi TOEIC Part 1 | `public/assets/photos` | ≈ 2,7 MB |
 | Ảnh bìa, hình minh họa | `public/assets/art` | ≈ 1 MB |
 | Lời hướng dẫn tiếng Việt, 2 giọng thu sẵn: nữ (Hoài My) và nam (Nam Minh) – chọn trong Settings | `public/assets/voice` | ≈ 1,7 MB |
+| Mô hình nhận dạng giọng nói tiếng Anh (chấm Speaking) | `public/assets/asr` | ≈ 41 MB |
+| Từ điển chính tả tiếng Anh (chấm Writing) | `public/assets/dict` | ≈ 1,7 MB |
+| Bộ kiểm tra ngữ pháp Harper (WebAssembly, Apache-2.0) | `public/assets/harper` | ≈ 16 MB |
+| Mô hình nhận dạng âm vị + từ điển phát âm CMU (chấm phát âm từng âm) | `public/assets/phoneme` | ≈ 343 MB |
+| ONNX Runtime Web (chạy mô hình âm vị) | `public/assets/ort` | ≈ 26 MB |
 | Font Inter, bộ icon | đóng gói trong bản build | – |
 
 - **Nghe phát âm**: `SpeechService` tìm file mp3 theo mã băm của câu (`core/audio-key.ts`) và phát file đó.
@@ -50,16 +58,50 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 - **Dùng như ứng dụng cài đặt**: bản production có service worker (PWA). Vào *Settings › Quản lý dữ liệu offline* bấm
   **Tải toàn bộ dữ liệu** để trình duyệt lưu hết ~9.700 tệp; sau đó app mở được kể cả khi tắt máy chủ và ngắt mạng.
 - **Tiến độ học** lưu trong `localStorage` của trình duyệt; sao lưu/khôi phục bằng tệp JSON ở trang Settings.
-- Chỉ còn một tính năng tùy chọn cần mạng: nhận dạng giọng nói của trình duyệt khi luyện nói. Không có mạng, app tự chuyển
-  sang ghi âm → nghe lại → tự đánh giá.
+- **Chấm Speaking tự động, offline**: ghi âm → nhận dạng giọng nói ngay trong trình duyệt (vosk-browser + mô hình Vosk,
+  `core/asr.service.ts`) → chấm theo tiêu chí (`core/speaking-score.ts`): đọc theo mẫu (độ chính xác từng từ, phát âm,
+  tốc độ & ngắt nghỉ) và trả lời tự do (IELTS: Fluency & Coherence, Lexical Resource, Grammatical Range, Pronunciation;
+  TOEIC: nội dung, từ vựng & ngữ pháp, phát âm, trôi chảy). Âm thanh không gửi đi đâu.
+  Chỉ khi thiết bị không chạy được bộ nhận dạng (thiếu WebAssembly/Worker) mới chuyển sang tự đánh giá.
+- **Chấm như giám khảo, không dùng AI/LLM** – các bước offline:
+  1. *Mô tả band thành luật đo được* (`core/rubric.ts`, `core/language-features.ts`): mỗi tiêu chí IELTS có các mức band kèm
+     điều kiện (tỉ lệ từ vựng B2+/C theo CEFR-J, độ đa dạng từ, tỉ lệ câu phức và số dạng cấu trúc, tỉ lệ câu không lỗi,
+     từ nối theo nhóm, tốc độ nói, số lần ngừng / "uh um" mỗi phút...). Band = mức cao nhất thỏa mọi điều kiện; phần nhận xét
+     liệt kê các điều kiện còn thiếu để lên band tiếp theo. TOEIC quy đổi từ band (`toToeic`).
+  2. *Bắt lỗi ngữ pháp*: bộ luật lỗi người Việt hay mắc (`core/writing-check.ts`) + Harper (`core/grammar.service.ts`,
+     lọc qua `core/harper-filter.ts`, chỉ giữ nhóm lỗi đáng tin; 0 báo nhầm trên ~10.000 câu đúng trong kho).
+  3. *Phát âm từng âm* (`core/phoneme.service.ts`, `core/phoneme-score.ts`): mô hình wav2vec2 nghe ra chuỗi âm IPA, so với cách
+     đọc chuẩn trong từ điển CMU (giữ mọi biến thể, bỏ qua từ chức năng đọc lướt, chấp nhận biến thể tự nhiên như t→ɾ, âm tắc
+     không bật hơi) → % âm đúng, từ đọc sai kèm chẩn đoán lỗi người Việt (mất âm cuối, /θ/→/t/, /ʃ/→/s/...). Lần đầu nạp mô hình
+     mất một lúc; thiết bị yếu (< 4 GB RAM) bỏ qua bước này.
+  4. *Ngữ điệu & trọng âm* (`core/prosody.ts`, xử lý tín hiệu, không cần mô hình): dò cao độ bằng YIN → khoảng dao động cao độ
+     (giọng đều đều hay có lên xuống), độ lớn từ nội dung so với từ chức năng (trọng âm câu), ngữ điệu cuối câu (câu kể xuống
+     giọng, câu hỏi Yes/No lên giọng).
+  5. *Hiệu chỉnh* (`core/calibration.spec.ts`): bài mẫu band cao, bài người học band ~4 và ~5.5, bài mẫu bị cắt ngắn / chèn lỗi
+     phải được xếp đúng khoảng band và đúng thứ tự. Chạy lại tệp này sau khi chỉnh ngưỡng trong `rubric.ts`.
+- **Chấm bằng AI Google Gemini (tùy chọn, cần Internet)** – `core/gemini.service.ts`: bật trong Cài đặt › Chấm điểm bằng AI,
+  dán API key Gemini (aistudio.google.com/api-keys), chọn model (mặc định `gemini-3.8-flash`). Bản ghi âm Speaking / bài Writing
+  được gửi tới Gemini API (`generateContent`, kết quả JSON theo schema) để chấm theo tiêu chí IELTS/TOEIC và nhận xét chi tiết:
+  điểm từng tiêu chí, lỗi kèm cách sửa, lỗi phát âm từng từ, bài mẫu nâng cấp. API key chỉ lưu ở localStorage của thiết bị
+  (không nằm trong file sao lưu). Tắt / mất mạng / lỗi gọi API → tự dùng bộ chấm offline bên dưới.
+- **Chấm Writing tự động, offline** (`core/writing-check.ts`): bắt lỗi chính tả (từ điển ENABLE), lỗi ngữ pháp thường gặp
+  (a/an, hòa hợp chủ ngữ – động từ, động từ sau can/did, so sánh kép, danh từ không đếm được...), trình bày (viết hoa, dấu câu)
+  và mức độ bám đề (từ khóa của đề, hạng mục bảng số liệu Task 1); hiện danh sách lỗi kèm cách sửa.
 
-## Từ vựng theo trình độ CEFR (trọng tâm B1–B2)
+## Từ vựng và ngữ pháp theo trình độ CEFR (A1 → C1)
 
-- Mỗi từ có nhãn trình độ **A1 / A2 / B1 / B2**. `tools/build-vocab.mjs` gắn nhãn theo danh sách **CEFR-J**
+- Mỗi từ có nhãn trình độ **A1 / A2 / B1 / B2 / C1**. `tools/build-vocab.mjs` gắn nhãn theo danh sách **CEFR-J**
   (`tools/cefr-j-wordlist.csv`); cụm từ lấy trình độ cao nhất của các từ thành phần; từ ngoài danh sách (tên món ăn,
-  thuật ngữ...) được ước lượng theo chủ đề (đời sống = B1, IELTS/TOEIC/IT = B2). Muốn tự đặt: thêm trường thứ 6 vào dòng nguồn.
+  thuật ngữ...) được ước lượng theo chủ đề (đời sống = B1, IELTS/TOEIC/IT = B2, chủ đề C1 = C1). Muốn tự đặt: thêm trường thứ 6 vào dòng nguồn.
 - Hai chủ đề riêng **Từ vựng B1 – Trung cấp** và **Từ vựng B2 – Trung cao cấp** (`tools/vocab-src/b1.txt`, `b2.txt`):
   mỗi chủ đề 25 bài × 12 từ, chọn từ danh sách CEFR-J và không trùng với các chủ đề khác.
+- Chủ đề **Từ vựng C1 – Cao cấp** (`tools/vocab-src/c1.txt`): 25 bài × 12 từ học thuật / trang trọng / thành ngữ
+  NẰM NGOÀI danh sách CEFR-J A1–B2 (CEFR-J không có C1), không trùng chủ đề khác; kiểm thử ở `core/vocab-level.spec.ts`.
+- **Ngữ pháp 31 bài** chia 5 nhóm: Nền tảng (A1), Cơ bản (A2), Trung cấp (B1: bị động, câu điều kiện 0/1/2, mệnh đề quan hệ,
+  câu tường thuật, V-ing / to V, quá khứ tiếp diễn & hoàn thành, used to), Trung cao cấp (B2: điều kiện loại 3 & wish,
+  động từ khuyết thiếu suy đoán, bị động nâng cao & thể sai khiến, tương lai tiếp diễn / hoàn thành, từ nối tương phản,
+  lượng từ) và Cao cấp (C1: đảo ngữ, câu chẻ, điều kiện hỗn hợp, giả định cách, mệnh đề phân từ, văn phong học thuật).
+  12 bài cốt lõi ở `data/grammar.ts`, bài B1–C1 ở `data/grammar-advanced.ts`; `data/grammar.spec.ts` kiểm tra dữ liệu.
 - Trang Từ vựng mặc định lọc **Trình độ: B1–B2**; đổi bộ lọc để xem A1/A2 hoặc tất cả. Cột phải có thống kê số từ đã thuộc theo trình độ.
 
 ## Các màn hình
@@ -78,8 +120,8 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
 | Lịch học | `/schedule` | Lịch tự học hằng tuần (gợi ý theo mục tiêu, thêm/xóa buổi), lịch tháng, buổi sắp tới |
 | Settings | `/settings` | Hồ sơ, mục tiêu band/điểm, âm thanh, hiển thị, **quản lý dữ liệu offline**, sao lưu |
 
-Band IELTS và điểm TOEIC trong app là **ước tính** từ các bài đã làm để theo dõi tiến bộ (Writing/Speaking chấm tự động +
-tự đánh giá), không thay thế điểm thi chính thức.
+Band IELTS và điểm TOEIC trong app là **ước tính** từ các bài đã làm để theo dõi tiến bộ (Writing/Speaking do máy chấm
+tự động theo tiêu chí), không thay thế điểm thi chính thức.
 
 ## Theme duy nhất "English Master"
 

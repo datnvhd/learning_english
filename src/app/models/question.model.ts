@@ -96,7 +96,7 @@ export interface EssayQuestion extends QuestionBase {
   task: WritingTask;
 }
 
-/** Bài nói (IELTS Part 1/2/3, TOEIC Q1–11): chuẩn bị – nói – ghi âm – tự chấm theo tiêu chí */
+/** Bài nói (IELTS Part 1/2/3, TOEIC Q1–11): chuẩn bị – nói – ghi âm – máy nhận dạng và chấm theo tiêu chí */
 export interface TalkQuestion extends QuestionBase {
   kind: 'talk';
   item: SpeakingItem;

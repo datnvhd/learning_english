@@ -239,7 +239,7 @@ const ROADMAP: Record<ExamId, { title: string; desc: string; from: number; to: n
             <div class="docs">
               <button type="button" class="doc" (click)="tab.set('tips')"><span class="tile-ic sm" style="--c: var(--tangerine-500)"><app-icon name="file-text" /></span><span><b>Chiến lược làm bài</b><small>Mẹo cho từng phần thi</small></span></button>
               <a class="doc" [routerLink]="['/vocab']" [queryParams]="{ exam: exam() }"><span class="tile-ic sm" style="--c: var(--grape-500)"><app-icon name="book" /></span><span><b>Từ vựng {{ name() }}</b><small>{{ vocabCount() }} từ theo chủ đề</small></span></a>
-              <a class="doc" routerLink="/grammar"><span class="tile-ic sm" style="--c: var(--leaf-500)"><app-icon name="notebook" /></span><span><b>Ngữ pháp cốt lõi</b><small>12 chủ điểm có bài luyện</small></span></a>
+              <a class="doc" routerLink="/grammar"><span class="tile-ic sm" style="--c: var(--leaf-500)"><app-icon name="notebook" /></span><span><b>Ngữ pháp A1–C1</b><small>31 chủ điểm có bài luyện</small></span></a>
               <a class="doc" [routerLink]="['/session/exam', exam()]" [queryParams]="{ mock: 1 }"><span class="tile-ic sm" style="--c: var(--sky-500)"><app-icon name="clock-play" /></span><span><b>Thi thử {{ info().mockMinutes }} phút</b><small>Có đồng hồ đếm ngược</small></span></a>
             </div>
           </section>

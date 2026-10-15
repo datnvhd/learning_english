@@ -1,0 +1,351 @@
+// Chủ đề: Từ vựng trình độ C1 (cao cấp) – từ học thuật / trang trọng NGOÀI danh sách CEFR-J A1–B2,
+// không trùng với các chủ đề khác. Trình độ mặc định của chủ đề: C1.
+## 🎭|Cảm xúc tinh tế|Nuanced Feelings
+apprehensive|adj|lo âu, e sợ|She felt apprehensive about moving to a new country alone.|Cô ấy thấy lo âu khi chuyển tới một đất nước mới một mình.
+elated|adj|phấn chấn tột độ|The team was elated after winning the final.|Cả đội phấn chấn tột độ sau khi thắng trận chung kết.
+indignant|adj|phẫn nộ (vì bất công)|He was indignant at being blamed for something he had not done.|Anh ấy phẫn nộ vì bị đổ lỗi cho việc mình không làm.
+wistful|adj|bâng khuâng, nuối tiếc|She gave a wistful smile as she remembered her childhood.|Cô ấy mỉm cười bâng khuâng khi nhớ lại tuổi thơ.
+disillusioned|adj|vỡ mộng|Many young voters have become disillusioned with politics.|Nhiều cử tri trẻ đã vỡ mộng với chính trị.
+exasperated|adj|bực tức cực độ|The teacher was exasperated by the constant interruptions.|Giáo viên bực tức cực độ vì liên tục bị ngắt lời.
+complacent|adj|tự mãn|We cannot afford to be complacent about our success.|Chúng ta không thể tự mãn với thành công của mình.
+remorseful|adj|ăn năn, hối hận|The driver was deeply remorseful about the accident.|Người lái xe vô cùng ăn năn về vụ tai nạn.
+resentful|adj|oán giận|He felt resentful that his efforts went unnoticed.|Anh ấy oán giận vì nỗ lực của mình không được ai để ý.
+euphoric|adj|hưng phấn|The crowd was euphoric when the results were announced.|Đám đông hưng phấn khi kết quả được công bố.
+dejected|adj|chán nản, thất vọng|The players looked dejected after the defeat.|Các cầu thủ trông chán nản sau thất bại.
+ambivalent|adj|phân vân, có cảm xúc trái chiều|I am ambivalent about the plan; it has clear pros and cons.|Tôi phân vân về kế hoạch này; nó có cả ưu lẫn nhược điểm rõ rệt.
+
+## 🧭|Tính cách và thái độ|Character and Attitudes
+conscientious|adj|tận tâm, chu đáo|She is a conscientious student who never misses a deadline.|Cô ấy là học sinh tận tâm, không bao giờ trễ hạn nộp bài.
+meticulous|adj|tỉ mỉ|He keeps meticulous records of all his expenses.|Anh ấy ghi chép tỉ mỉ mọi khoản chi tiêu.
+resilient|adj|kiên cường, mau phục hồi|Children are often more resilient than adults expect.|Trẻ em thường kiên cường hơn người lớn nghĩ.
+pragmatic|adj|thực tế, thực dụng|We need a pragmatic solution rather than an ideal one.|Chúng ta cần một giải pháp thực tế hơn là một giải pháp lý tưởng.
+assertive|adj|quả quyết, dám khẳng định mình|You need to be more assertive in meetings.|Bạn cần quả quyết hơn trong các cuộc họp.
+gullible|adj|cả tin|Gullible people are easy targets for online scams.|Người cả tin là mục tiêu dễ dàng của lừa đảo trên mạng.
+inquisitive|adj|ham hiểu biết, tò mò|Inquisitive children ask questions about everything.|Trẻ ham hiểu biết hỏi về mọi thứ.
+obstinate|adj|bướng bỉnh, ngoan cố|He remained obstinate and refused to change his mind.|Anh ta vẫn ngoan cố và không chịu đổi ý.
+steadfast|adj|kiên định, trung thành|She remained steadfast in her support for the project.|Cô ấy vẫn kiên định ủng hộ dự án.
+condescending|adj|kẻ cả, trịch thượng|His condescending tone annoyed everyone in the room.|Giọng kẻ cả của anh ta làm mọi người trong phòng khó chịu.
+altruistic|adj|vị tha|Volunteering is often motivated by altruistic reasons.|Hoạt động tình nguyện thường xuất phát từ động cơ vị tha.
+impetuous|adj|bốc đồng, hấp tấp|It was an impetuous decision that he later regretted.|Đó là một quyết định bốc đồng mà sau này anh ấy hối tiếc.
+
+## ⚖️|Lập luận và thuyết phục|Argument and Persuasion
+allege|v|cáo buộc (chưa có bằng chứng)|The report alleges that the company hid its losses.|Bản báo cáo cáo buộc công ty đã che giấu thua lỗ.
+contend|v|cho rằng, đấu tranh|Critics contend that the policy will harm small businesses.|Những người chỉ trích cho rằng chính sách sẽ gây hại cho doanh nghiệp nhỏ.
+rebut|v|bác bỏ, phản bác|The lawyer rebutted every point made by the prosecution.|Luật sư phản bác mọi luận điểm của bên công tố.
+substantiate|v|chứng minh, minh chứng|There is no evidence to substantiate these allegations.|Không có bằng chứng nào chứng minh những cáo buộc này.
+concur|v|đồng tình|Most experts concur with this view.|Hầu hết chuyên gia đồng tình với quan điểm này.
+compelling|adj|thuyết phục, hấp dẫn|She made a compelling case for reducing working hours.|Cô ấy đưa ra lập luận rất thuyết phục cho việc giảm giờ làm.
+fallacy|n|ngụy biện, quan niệm sai lầm|It is a fallacy that money always brings happiness.|Tiền luôn mang lại hạnh phúc là một quan niệm sai lầm.
+premise|n|tiền đề|The whole argument rests on a false premise.|Toàn bộ lập luận dựa trên một tiền đề sai.
+cogent|adj|chặt chẽ, có sức thuyết phục|She presented a cogent argument for change.|Cô ấy trình bày một lập luận chặt chẽ cho sự thay đổi.
+plausible|adj|hợp lý, có vẻ đúng|His explanation sounded plausible at first.|Lời giải thích của anh ấy lúc đầu nghe có vẻ hợp lý.
+tenuous|adj|mong manh, yếu ớt|The link between the two events is tenuous at best.|Mối liên hệ giữa hai sự kiện này nhiều lắm cũng chỉ mong manh.
+debunk|v|vạch trần (quan niệm sai)|The article debunks several common myths about diet.|Bài báo vạch trần một số lầm tưởng phổ biến về ăn kiêng.
+
+## 🔬|Nghiên cứu học thuật|Academic Research
+quantitative|adj|định lượng|The study combines quantitative and qualitative data.|Nghiên cứu kết hợp dữ liệu định lượng và định tính.
+empirical|adj|thực nghiệm|The theory lacks empirical support.|Lý thuyết này thiếu cơ sở thực nghiệm.
+methodology|n|phương pháp luận|The methodology of the study has been widely criticised.|Phương pháp luận của nghiên cứu đã bị chỉ trích rộng rãi.
+qualitative|adj|định tính|Interviews provide useful qualitative information.|Phỏng vấn cung cấp thông tin định tính hữu ích.
+causation|n|quan hệ nhân quả|Correlation does not imply causation.|Tương quan không có nghĩa là có quan hệ nhân quả.
+anomaly|n|điều bất thường, dị thường|The researchers could not explain the anomaly in the results.|Các nhà nghiên cứu không giải thích được điểm bất thường trong kết quả.
+replicate|v|lặp lại (thí nghiệm)|Other scientists failed to replicate the findings.|Các nhà khoa học khác không lặp lại được kết quả đó.
+inconclusive|adj|chưa đi đến kết luận|The evidence remains inconclusive.|Bằng chứng vẫn chưa đủ để kết luận.
+paradigm|n|mô hình, hệ tư tưởng|The discovery led to a paradigm shift in physics.|Phát hiện này dẫn tới sự thay đổi hệ tư tưởng trong vật lý.
+discrepancy|n|sự chênh lệch, không khớp|There is a discrepancy between the two sets of figures.|Có sự không khớp giữa hai bộ số liệu.
+corroborate|v|xác nhận, củng cố (bằng chứng)|Witnesses corroborated her version of events.|Các nhân chứng xác nhận lời kể của cô ấy.
+extrapolate|v|suy rộng, ngoại suy|It is risky to extrapolate from such a small sample.|Suy rộng từ một mẫu nhỏ như vậy là rủi ro.
+
+## 📈|Thay đổi và xu hướng|Change and Trends
+escalate|v|leo thang|The dispute quickly escalated into a crisis.|Cuộc tranh chấp nhanh chóng leo thang thành khủng hoảng.
+skyrocket|v|tăng vọt|Rents have skyrocketed in the city centre.|Giá thuê nhà ở trung tâm thành phố tăng vọt.
+taper|v|thu nhỏ dần, giảm dần|Demand began to taper off in the autumn.|Nhu cầu bắt đầu giảm dần vào mùa thu.
+oscillate|v|dao động qua lại|Public opinion oscillated between hope and fear.|Dư luận dao động giữa hy vọng và lo sợ.
+stagnate|v|trì trệ|Wages have stagnated while living costs have risen.|Tiền lương trì trệ trong khi chi phí sinh hoạt tăng.
+dwindle|v|thu hẹp dần, giảm dần|The number of local shops has dwindled.|Số lượng cửa hàng địa phương giảm dần.
+upsurge|n|sự gia tăng mạnh|There has been an upsurge in online shopping.|Mua sắm trực tuyến đã gia tăng mạnh.
+unprecedented|adj|chưa từng có|The company has grown at an unprecedented rate.|Công ty phát triển với tốc độ chưa từng có.
+incremental|adj|tăng dần, từng bước|We made incremental improvements to the design.|Chúng tôi cải tiến thiết kế từng bước.
+irreversible|adj|không thể đảo ngược|Some damage to the environment is irreversible.|Một số tổn hại đối với môi trường là không thể đảo ngược.
+flux|n|sự thay đổi liên tục|The industry is in a state of flux.|Ngành này đang trong tình trạng thay đổi liên tục.
+precipitate|v|đẩy nhanh, gây ra đột ngột|The crisis precipitated the collapse of the government.|Cuộc khủng hoảng đã đẩy nhanh sự sụp đổ của chính phủ.
+
+## 🏛️|Chính trị và quản trị|Politics and Governance
+enact|v|ban hành (luật)|Parliament enacted a new law on data protection.|Quốc hội ban hành luật mới về bảo vệ dữ liệu.
+mandate|n|sự ủy nhiệm, quyền hạn|The government has a clear mandate to reform healthcare.|Chính phủ được ủy nhiệm rõ ràng để cải cách y tế.
+sovereignty|n|chủ quyền|The treaty respects the sovereignty of each nation.|Hiệp ước tôn trọng chủ quyền của mỗi quốc gia.
+electorate|n|toàn thể cử tri|The electorate is tired of broken promises.|Cử tri đã mệt mỏi với những lời hứa suông.
+accountability|n|trách nhiệm giải trình|There must be greater accountability in public spending.|Cần có trách nhiệm giải trình lớn hơn trong chi tiêu công.
+referendum|n|cuộc trưng cầu dân ý|The issue was decided by a national referendum.|Vấn đề được quyết định bằng cuộc trưng cầu dân ý toàn quốc.
+constituency|n|khu vực bầu cử|He represents a rural constituency.|Ông ấy đại diện cho một khu vực bầu cử nông thôn.
+incumbent|n|người đương nhiệm|The incumbent was re-elected with a large majority.|Người đương nhiệm tái đắc cử với đa số phiếu lớn.
+bipartisan|adj|có sự ủng hộ của cả hai đảng|The bill received bipartisan support.|Dự luật nhận được sự ủng hộ của cả hai đảng.
+ratify|v|phê chuẩn|Parliament has yet to ratify the agreement.|Quốc hội vẫn chưa phê chuẩn hiệp định.
+dissent|n|sự bất đồng chính kiến|There was little dissent within the party.|Có rất ít sự bất đồng trong đảng.
+veto|v|phủ quyết|The president vetoed the bill.|Tổng thống đã phủ quyết dự luật.
+
+## 📜|Luật pháp và công lý|Law and Justice
+jurisdiction|n|quyền tài phán, thẩm quyền|The case falls outside the court's jurisdiction.|Vụ án nằm ngoài thẩm quyền của tòa.
+litigation|n|sự kiện tụng|The dispute ended in costly litigation.|Tranh chấp kết thúc bằng một vụ kiện tụng tốn kém.
+plaintiff|n|nguyên đơn|The plaintiff is seeking compensation for damages.|Nguyên đơn đang đòi bồi thường thiệt hại.
+verdict|n|phán quyết|The jury reached a unanimous verdict.|Bồi thẩm đoàn đã đưa ra phán quyết nhất trí.
+acquit|v|tuyên trắng án|She was acquitted of all charges.|Cô ấy được tuyên trắng án đối với mọi cáo buộc.
+indict|v|truy tố, buộc tội|He was indicted on charges of fraud.|Ông ta bị truy tố về tội lừa đảo.
+perjury|n|tội khai man trước tòa|The witness was charged with perjury.|Nhân chứng bị buộc tội khai man trước tòa.
+contravene|v|vi phạm (luật, quy định)|The advert contravened the code of practice.|Mẫu quảng cáo vi phạm quy tắc hành nghề.
+precedent|n|tiền lệ|The ruling set an important legal precedent.|Phán quyết đã tạo ra một tiền lệ pháp lý quan trọng.
+statutory|adj|theo luật định|Employees are entitled to statutory holiday pay.|Nhân viên được hưởng lương nghỉ phép theo luật định.
+culpable|adj|có lỗi, đáng bị khiển trách|The court found the company culpable for the accident.|Tòa án xác định công ty có lỗi trong vụ tai nạn.
+leniency|n|sự khoan hồng|The judge showed leniency because of his age.|Thẩm phán khoan hồng vì tuổi tác của anh ta.
+
+## 💰|Kinh tế và tài chính|Economy and Finance
+austerity|n|chính sách thắt lưng buộc bụng|Years of austerity have hit public services hard.|Nhiều năm thắt lưng buộc bụng đã ảnh hưởng nặng nề tới dịch vụ công.
+collateral|n|tài sản thế chấp|He used his house as collateral for the loan.|Anh ấy dùng căn nhà làm tài sản thế chấp cho khoản vay.
+remittance|n|kiều hối, khoản tiền gửi về|Remittances from workers abroad support many families.|Kiều hối từ người lao động ở nước ngoài nuôi sống nhiều gia đình.
+monetary|adj|thuộc tiền tệ|The central bank controls monetary policy.|Ngân hàng trung ương kiểm soát chính sách tiền tệ.
+levy|n|khoản thuế, phí bắt buộc|The government introduced a levy on sugary drinks.|Chính phủ áp một khoản thuế lên đồ uống có đường.
+downturn|n|sự suy thoái, đi xuống|The tourism industry suffered during the economic downturn.|Ngành du lịch chịu thiệt hại trong thời kỳ kinh tế đi xuống.
+creditor|n|chủ nợ|The company could not pay its creditors.|Công ty không thể trả tiền cho các chủ nợ.
+volatile|adj|biến động mạnh|Cryptocurrency prices are highly volatile.|Giá tiền mã hóa biến động rất mạnh.
+liquidity|n|tính thanh khoản|Banks must maintain sufficient liquidity.|Các ngân hàng phải duy trì đủ thanh khoản.
+tariff|n|thuế quan|The new tariffs made imported cars more expensive.|Thuế quan mới khiến ô tô nhập khẩu đắt hơn.
+inflationary|adj|gây lạm phát|Printing money can have an inflationary effect.|In tiền có thể gây ra tác động lạm phát.
+insolvent|adj|vỡ nợ, mất khả năng thanh toán|The airline was declared insolvent.|Hãng hàng không bị tuyên bố mất khả năng thanh toán.
+
+## 🧩|Chiến lược kinh doanh|Business Strategy
+leverage|v|tận dụng, khai thác|We can leverage our brand to enter new markets.|Chúng ta có thể tận dụng thương hiệu để thâm nhập thị trường mới.
+diversify|v|đa dạng hóa|The firm decided to diversify into renewable energy.|Công ty quyết định đa dạng hóa sang năng lượng tái tạo.
+consolidate|v|củng cố, hợp nhất|The company plans to consolidate its position in Asia.|Công ty dự định củng cố vị thế tại châu Á.
+conglomerate|n|tập đoàn đa ngành|The brand is owned by a huge conglomerate.|Thương hiệu thuộc về một tập đoàn đa ngành khổng lồ.
+divest|v|thoái vốn, bán bớt|The group divested its hotel business.|Tập đoàn đã thoái vốn khỏi mảng kinh doanh khách sạn.
+synergy|n|sức mạnh cộng hưởng|The merger will create synergy between the two firms.|Vụ sáp nhập sẽ tạo sức mạnh cộng hưởng giữa hai công ty.
+benchmark|n|chuẩn so sánh|These results will serve as a benchmark for future projects.|Những kết quả này sẽ là chuẩn so sánh cho các dự án sau.
+viable|adj|khả thi|Is this business model financially viable?|Mô hình kinh doanh này có khả thi về tài chính không?
+scalable|adj|có thể mở rộng quy mô|Investors are looking for scalable start-ups.|Nhà đầu tư đang tìm các công ty khởi nghiệp có thể mở rộng quy mô.
+niche|n|thị trường ngách|The company found a profitable niche in eco-friendly packaging.|Công ty tìm được một thị trường ngách sinh lời là bao bì thân thiện môi trường.
+streamline|v|tinh giản, hợp lý hóa|We need to streamline the ordering process.|Chúng ta cần tinh giản quy trình đặt hàng.
+contingency|n|tình huống bất ngờ, dự phòng|We have a contingency plan in case the supplier fails.|Chúng tôi có kế hoạch dự phòng nếu nhà cung cấp gặp sự cố.
+
+## 👔|Lãnh đạo và công sở|Leadership and the Workplace
+meritocracy|n|chế độ trọng nhân tài|The firm prides itself on being a meritocracy.|Công ty tự hào là nơi trọng nhân tài.
+autonomy|n|quyền tự chủ|Employees value autonomy over how they work.|Nhân viên coi trọng quyền tự chủ trong cách làm việc.
+perk|n|đặc quyền, phúc lợi thêm|Free lunches are one of the perks of the job.|Bữa trưa miễn phí là một trong những phúc lợi của công việc.
+morale|n|tinh thần (tập thể)|Staff morale is low after the job cuts.|Tinh thần nhân viên đi xuống sau đợt cắt giảm nhân sự.
+hierarchy|n|hệ thống thứ bậc|The company has a very flat hierarchy.|Công ty có hệ thống thứ bậc rất phẳng.
+tenure|n|nhiệm kỳ, thời gian giữ chức|During her tenure as director, profits doubled.|Trong nhiệm kỳ giám đốc của bà ấy, lợi nhuận tăng gấp đôi.
+absenteeism|n|tình trạng nghỉ làm thường xuyên|Poor management often leads to high absenteeism.|Quản lý kém thường dẫn tới tình trạng nghỉ làm nhiều.
+collaborative|adj|mang tính hợp tác|The project was a collaborative effort.|Dự án là nỗ lực hợp tác của nhiều người.
+proactive|adj|chủ động|We need to take a proactive approach to safety.|Chúng ta cần chủ động trong vấn đề an toàn.
+appraisal|n|sự đánh giá (năng lực)|Annual appraisals help staff set new goals.|Đánh giá hằng năm giúp nhân viên đặt mục tiêu mới.
+remuneration|n|thù lao, tiền công|The job offers attractive remuneration.|Công việc có mức thù lao hấp dẫn.
+redundancy|n|sự cắt giảm biên chế|Hundreds of workers face redundancy.|Hàng trăm công nhân đối mặt với việc bị cắt giảm.
+
+## 📰|Truyền thông và thông tin|Media and Information
+slanderous|adj|vu khống|He denied making slanderous remarks.|Anh ấy phủ nhận đã đưa ra những lời vu khống.
+propaganda|n|sự tuyên truyền|The posters were a form of wartime propaganda.|Những tấm áp phích là một hình thức tuyên truyền thời chiến.
+sensationalism|n|lối giật gân|Many readers are tired of sensationalism in the press.|Nhiều độc giả chán lối đưa tin giật gân của báo chí.
+misinformation|n|thông tin sai lệch|Misinformation spreads quickly on social media.|Thông tin sai lệch lan nhanh trên mạng xã hội.
+credibility|n|sự đáng tin cậy|The scandal damaged the newspaper's credibility.|Vụ bê bối làm tổn hại uy tín của tờ báo.
+insinuate|v|ám chỉ, nói bóng gió|Are you insinuating that I lied?|Bạn đang ám chỉ là tôi nói dối à?
+bias|n|sự thiên vị, định kiến|Journalists should try to avoid bias.|Nhà báo nên cố gắng tránh thiên vị.
+anonymity|n|sự ẩn danh|The source spoke on condition of anonymity.|Nguồn tin phát biểu với điều kiện được giấu tên.
+disseminate|v|phổ biến, lan truyền|The results were disseminated to all schools.|Kết quả được phổ biến tới tất cả các trường.
+scrutiny|n|sự giám sát kỹ lưỡng|Politicians are under constant public scrutiny.|Chính trị gia luôn chịu sự giám sát kỹ lưỡng của công chúng.
+retract|v|rút lại (lời nói, bài báo)|The magazine was forced to retract the story.|Tạp chí buộc phải rút lại bài viết.
+defamation|n|sự phỉ báng|He sued the paper for defamation.|Ông ấy kiện tờ báo vì tội phỉ báng.
+
+## 🤝|Xã hội và bất bình đẳng|Society and Inequality
+disenfranchised|adj|bị tước quyền, bị gạt ra ngoài|Many young people feel disenfranchised.|Nhiều người trẻ cảm thấy bị gạt ra ngoài.
+disparity|n|sự chênh lệch|There is a growing disparity between rich and poor.|Chênh lệch giàu nghèo ngày càng tăng.
+deprivation|n|sự thiếu thốn|Many children still live in deprivation.|Nhiều trẻ em vẫn sống trong cảnh thiếu thốn.
+affluent|adj|giàu có|They live in an affluent suburb.|Họ sống ở một vùng ngoại ô giàu có.
+solidarity|n|tình đoàn kết|Workers showed solidarity with the strikers.|Công nhân bày tỏ tình đoàn kết với những người đình công.
+integration|n|sự hòa nhập|Language classes help the integration of immigrants.|Các lớp học ngôn ngữ giúp người nhập cư hòa nhập.
+stigma|n|sự kỳ thị|There is still a stigma attached to mental illness.|Bệnh tâm thần vẫn còn bị kỳ thị.
+segregation|n|sự phân biệt, tách biệt|Racial segregation was abolished decades ago.|Sự phân biệt chủng tộc đã bị xóa bỏ từ nhiều thập kỷ trước.
+egalitarian|adj|bình đẳng, theo chủ nghĩa bình quyền|They aim to build a more egalitarian society.|Họ hướng tới xây dựng một xã hội bình đẳng hơn.
+underprivileged|adj|thiệt thòi, kém may mắn|The scheme helps underprivileged children go to university.|Chương trình giúp trẻ em thiệt thòi vào đại học.
+xenophobia|n|tâm lý bài ngoại|The campaign aims to tackle xenophobia.|Chiến dịch nhằm giải quyết tâm lý bài ngoại.
+patriarchal|adj|gia trưởng, phụ hệ|They grew up in a patriarchal society.|Họ lớn lên trong một xã hội gia trưởng.
+
+## 🌍|Môi trường và phát triển bền vững|Environment and Sustainability
+afforestation|n|sự trồng rừng mới|Afforestation can help absorb carbon dioxide.|Trồng rừng mới có thể giúp hấp thụ khí CO2.
+replenish|v|bổ sung, làm đầy lại|It takes years to replenish underground water supplies.|Phải mất nhiều năm để bổ sung nguồn nước ngầm.
+depletion|n|sự cạn kiệt|The depletion of natural resources is a global concern.|Sự cạn kiệt tài nguyên thiên nhiên là mối lo toàn cầu.
+carcinogen|n|chất gây ung thư|Tobacco smoke contains many carcinogens.|Khói thuốc lá chứa nhiều chất gây ung thư.
+desertification|n|sự sa mạc hóa|Overgrazing contributes to desertification.|Chăn thả quá mức góp phần gây sa mạc hóa.
+toxicity|n|độc tính|Scientists measured the toxicity of the water.|Các nhà khoa học đo độc tính của nguồn nước.
+pristine|adj|nguyên sơ, còn nguyên vẹn|The island has pristine beaches.|Hòn đảo có những bãi biển nguyên sơ.
+biodegradable|adj|có thể phân hủy sinh học|Use biodegradable bags instead of plastic ones.|Hãy dùng túi phân hủy sinh học thay cho túi nhựa.
+degradation|n|sự suy thoái|Land degradation threatens food production.|Sự suy thoái đất đe dọa sản xuất lương thực.
+arable|adj|canh tác được|Only a small part of the land is arable.|Chỉ một phần nhỏ đất đai có thể canh tác.
+offset|v|bù đắp|Some airlines let passengers offset their carbon footprint.|Một số hãng bay cho phép hành khách bù đắp lượng khí thải carbon.
+deplete|v|làm cạn kiệt|Overfishing has depleted fish stocks.|Đánh bắt quá mức đã làm cạn kiệt nguồn cá.
+
+## 🚀|Khoa học và đổi mới|Science and Innovation
+pioneering|adj|tiên phong|She did pioneering work in genetics.|Bà ấy có những công trình tiên phong trong ngành di truyền học.
+rudimentary|adj|sơ khai, thô sơ|The early computers were rudimentary.|Những chiếc máy tính đầu tiên còn rất thô sơ.
+proliferation|n|sự gia tăng nhanh|The proliferation of smartphones changed how we communicate.|Sự gia tăng nhanh của điện thoại thông minh thay đổi cách ta giao tiếp.
+augment|v|tăng cường, bổ sung|Virtual reality can augment classroom learning.|Thực tế ảo có thể tăng cường việc học trên lớp.
+genome|n|bộ gen|Scientists have mapped the human genome.|Các nhà khoa học đã giải mã bộ gen người.
+synthetic|adj|tổng hợp, nhân tạo|The jacket is made of synthetic fibres.|Chiếc áo khoác làm từ sợi tổng hợp.
+patent|n|bằng sáng chế|The company holds patents for several inventions.|Công ty nắm bằng sáng chế cho nhiều phát minh.
+ingenious|adj|khéo léo, tài tình|It was an ingenious solution to a difficult problem.|Đó là một giải pháp tài tình cho một vấn đề khó.
+feasible|adj|khả thi|Is it technically feasible to build the bridge?|Xây cây cầu đó có khả thi về mặt kỹ thuật không?
+disruptive|adj|mang tính đột phá, gây xáo trộn|Streaming was a disruptive technology for the music industry.|Phát nhạc trực tuyến là công nghệ gây xáo trộn ngành âm nhạc.
+precursor|n|tiền thân|The abacus was a precursor of the calculator.|Bàn tính là tiền thân của máy tính bỏ túi.
+obsolescence|n|sự lỗi thời|Planned obsolescence forces people to buy new phones.|Sự lỗi thời có chủ đích buộc người dùng mua điện thoại mới.
+
+## 🩺|Y học và sức khỏe cộng đồng|Medicine and Public Health
+benign|adj|lành tính|Fortunately, the tumour was benign.|May mắn là khối u lành tính.
+malignant|adj|ác tính|Doctors removed a malignant growth.|Các bác sĩ đã cắt bỏ một khối u ác tính.
+pathogen|n|mầm bệnh|Some pathogens can survive for days on surfaces.|Một số mầm bệnh có thể tồn tại nhiều ngày trên bề mặt.
+palliative|adj|giảm nhẹ (triệu chứng)|She works in palliative care.|Cô ấy làm việc trong lĩnh vực chăm sóc giảm nhẹ.
+prognosis|n|tiên lượng bệnh|The doctors say the prognosis is good.|Các bác sĩ nói tiên lượng bệnh khả quan.
+immunity|n|khả năng miễn dịch|Vaccines help build immunity to disease.|Vắc-xin giúp tạo miễn dịch với bệnh tật.
+lethargic|adj|uể oải, lờ đờ|The heat made everyone feel lethargic.|Cái nóng khiến mọi người uể oải.
+dosage|n|liều lượng|Do not exceed the recommended dosage.|Không dùng quá liều lượng khuyến cáo.
+debilitating|adj|gây suy nhược|She suffers from debilitating headaches.|Cô ấy bị những cơn đau đầu gây suy nhược.
+susceptible|adj|dễ bị ảnh hưởng|Older people are more susceptible to infection.|Người già dễ bị nhiễm trùng hơn.
+inoculation|n|sự tiêm chủng|Inoculation against the disease is free for children.|Trẻ em được tiêm chủng miễn phí phòng bệnh này.
+therapeutic|adj|có tác dụng chữa trị|Gardening can be very therapeutic.|Làm vườn có thể có tác dụng chữa lành rất tốt.
+
+## 🧠|Tâm lý và hành vi|Psychology and Behaviour
+cognitive|adj|thuộc nhận thức|Reading improves cognitive skills.|Đọc sách cải thiện kỹ năng nhận thức.
+cathartic|adj|giúp giải tỏa cảm xúc|Writing a diary can be cathartic.|Viết nhật ký có thể giúp giải tỏa cảm xúc.
+cognition|n|sự nhận thức|Sleep loss affects cognition and mood.|Thiếu ngủ ảnh hưởng tới nhận thức và tâm trạng.
+conformity|n|sự tuân theo số đông|Peer pressure encourages conformity among teenagers.|Áp lực bạn bè khiến thanh thiếu niên làm theo số đông.
+introspection|n|sự tự xem xét nội tâm|The trip was a time for introspection.|Chuyến đi là khoảng thời gian để tự nhìn lại bản thân.
+gratification|n|sự thỏa mãn|Children must learn to delay gratification.|Trẻ em phải học cách trì hoãn sự thỏa mãn.
+resilience|n|sự kiên cường|Sport helps young people build resilience.|Thể thao giúp người trẻ rèn luyện sự kiên cường.
+compulsive|adj|có tính cưỡng chế, không kiểm soát được|He is a compulsive gambler.|Anh ta là một người nghiện cờ bạc không kiểm soát được.
+inhibition|n|sự ức chế, ngại ngùng|Music helped her lose her inhibitions.|Âm nhạc giúp cô ấy bớt ngại ngùng.
+predisposition|n|khuynh hướng, thiên hướng|Some people have a genetic predisposition to anxiety.|Một số người có thiên hướng di truyền dễ lo âu.
+procrastinate|v|trì hoãn, chần chừ|I tend to procrastinate when a task is boring.|Tôi hay trì hoãn khi một việc nhàm chán.
+empathy|n|sự đồng cảm|Good doctors show empathy towards their patients.|Bác sĩ giỏi thể hiện sự đồng cảm với bệnh nhân.
+
+## 🎨|Nghệ thuật và văn hóa|Arts and Culture
+aesthetic|adj|thuộc thẩm mỹ|The building has great aesthetic appeal.|Tòa nhà có sức hấp dẫn thẩm mỹ lớn.
+eclectic|adj|đa dạng, chiết trung|He has an eclectic taste in music.|Anh ấy có gu âm nhạc rất đa dạng.
+satire|n|lối văn trào phúng|The show is a satire on modern politics.|Chương trình là một tác phẩm trào phúng về chính trị hiện đại.
+connoisseur|n|người sành sỏi|He is a connoisseur of fine wines.|Ông ấy là người sành rượu vang hảo hạng.
+artisan|n|nghệ nhân|Local artisans make the pottery by hand.|Các nghệ nhân địa phương làm gốm bằng tay.
+evocative|adj|gợi cảm xúc, gợi nhớ|The film contains some evocative images of rural life.|Bộ phim có những hình ảnh gợi nhớ về đời sống nông thôn.
+acclaimed|adj|được ca ngợi|She is an internationally acclaimed pianist.|Cô ấy là nghệ sĩ dương cầm được ca ngợi trên toàn thế giới.
+patronage|n|sự bảo trợ|The arts depended on royal patronage.|Nghệ thuật từng phụ thuộc vào sự bảo trợ của hoàng gia.
+avant-garde|adj|tiên phong (nghệ thuật)|The festival showcases avant-garde theatre.|Liên hoan giới thiệu sân khấu tiên phong.
+rendition|n|sự trình bày, phiên bản biểu diễn|Her rendition of the song moved the audience.|Phần trình bày ca khúc của cô ấy làm khán giả xúc động.
+indigenous|adj|bản địa|The museum displays indigenous art.|Bảo tàng trưng bày nghệ thuật bản địa.
+assimilation|n|sự đồng hóa|Cultural assimilation can lead to the loss of traditions.|Đồng hóa văn hóa có thể dẫn tới mất truyền thống.
+
+## 🎓|Giáo dục và tri thức|Education and Knowledge
+didactic|adj|mang tính giáo huấn|The novel is too didactic for modern readers.|Cuốn tiểu thuyết quá mang tính giáo huấn đối với độc giả hiện đại.
+pedagogy|n|phương pháp sư phạm|Modern pedagogy focuses on active learning.|Phương pháp sư phạm hiện đại chú trọng học tập chủ động.
+numeracy|n|khả năng tính toán|Schools focus on literacy and numeracy.|Các trường chú trọng khả năng đọc viết và tính toán.
+rote|n|học vẹt, sự học thuộc lòng|Learning by rote does not encourage understanding.|Học vẹt không khuyến khích sự hiểu bài.
+erudite|adj|uyên bác|The professor gave an erudite lecture on history.|Giáo sư có bài giảng uyên bác về lịch sử.
+accreditation|n|sự kiểm định, công nhận|The course has full professional accreditation.|Khóa học được kiểm định đầy đủ về chuyên môn.
+erudition|n|sự uyên bác|His lectures were full of erudition and wit.|Các bài giảng của ông ấy đầy sự uyên bác và dí dỏm.
+plagiarism|n|đạo văn|Plagiarism is treated very seriously at university.|Đạo văn bị xử lý rất nghiêm ở đại học.
+dissertation|n|luận văn|He is writing his dissertation on climate policy.|Anh ấy đang viết luận văn về chính sách khí hậu.
+scholarly|adj|mang tính học thuật|The book is aimed at a scholarly audience.|Cuốn sách dành cho độc giả giới học thuật.
+proficiency|n|sự thành thạo|Applicants must show proficiency in English.|Ứng viên phải chứng minh trình độ tiếng Anh thành thạo.
+holistic|adj|toàn diện|The school takes a holistic approach to education.|Trường theo cách tiếp cận giáo dục toàn diện.
+
+## 🏙️|Đô thị và hạ tầng|Urban Life and Infrastructure
+gridlock|n|tình trạng tắc nghẽn hoàn toàn|The accident caused gridlock across the city.|Vụ tai nạn gây tắc nghẽn hoàn toàn khắp thành phố.
+thoroughfare|n|đường phố chính|Oxford Street is a busy thoroughfare.|Phố Oxford là một con đường chính đông đúc.
+gentrification|n|sự cải tạo đô thị (đẩy giá lên)|Gentrification has pushed many residents out of the area.|Quá trình cải tạo đô thị đã đẩy nhiều cư dân ra khỏi khu vực.
+sprawl|n|sự phát triển tràn lan (đô thị)|Urban sprawl destroys farmland.|Đô thị phát triển tràn lan phá hủy đất nông nghiệp.
+amenity|n|tiện ích|The flat is close to shops and other amenities.|Căn hộ gần cửa hàng và các tiện ích khác.
+conurbation|n|vùng đô thị liên hợp|Manchester is the centre of a large conurbation.|Manchester là trung tâm của một vùng đô thị liên hợp lớn.
+dilapidated|adj|đổ nát, xuống cấp|The council plans to restore the dilapidated buildings.|Chính quyền dự định tu sửa các tòa nhà xuống cấp.
+derelict|adj|bỏ hoang, đổ nát|The derelict factory will be turned into flats.|Nhà máy bỏ hoang sẽ được biến thành căn hộ.
+municipal|adj|thuộc thành phố|Municipal authorities are responsible for waste collection.|Chính quyền thành phố chịu trách nhiệm thu gom rác.
+metropolitan|adj|thuộc đô thị lớn|The metropolitan area has over ten million people.|Vùng đô thị lớn có hơn mười triệu dân.
+redevelopment|n|sự tái phát triển, cải tạo|The redevelopment of the docks created thousands of jobs.|Việc cải tạo khu bến cảng tạo ra hàng nghìn việc làm.
+zoning|n|sự quy hoạch vùng|Strict zoning laws limit new housing.|Luật quy hoạch nghiêm ngặt hạn chế nhà ở mới.
+
+## 🕊️|Xung đột và ngoại giao|Conflict and Diplomacy
+diplomacy|n|ngoại giao|The crisis was resolved through diplomacy.|Cuộc khủng hoảng được giải quyết bằng ngoại giao.
+sanction|n|lệnh trừng phạt|The UN imposed sanctions on the regime.|Liên Hợp Quốc áp đặt lệnh trừng phạt lên chế độ đó.
+ceasefire|n|lệnh ngừng bắn|Both sides agreed to a ceasefire.|Hai bên đồng ý ngừng bắn.
+truce|n|sự đình chiến, thỏa thuận tạm dừng|The two families finally called a truce.|Hai gia đình cuối cùng cũng tạm dừng xung đột.
+mediate|v|hòa giải, làm trung gian|Norway offered to mediate between the two sides.|Na Uy đề nghị làm trung gian hòa giải giữa hai bên.
+hostility|n|sự thù địch|There is open hostility between the two groups.|Có sự thù địch công khai giữa hai nhóm.
+reconciliation|n|sự hòa giải|The commission promoted reconciliation after the war.|Ủy ban thúc đẩy hòa giải sau chiến tranh.
+humanitarian|adj|nhân đạo|Aid agencies warn of a humanitarian crisis.|Các tổ chức cứu trợ cảnh báo về một cuộc khủng hoảng nhân đạo.
+asylum|n|sự tị nạn (chính trị)|They applied for political asylum.|Họ xin tị nạn chính trị.
+envoy|n|đặc phái viên|A special envoy was sent to the region.|Một đặc phái viên được cử tới khu vực.
+insurgency|n|cuộc nổi dậy|The army struggled to contain the insurgency.|Quân đội chật vật kiềm chế cuộc nổi dậy.
+stalemate|n|thế bế tắc|The talks ended in stalemate.|Các cuộc đàm phán kết thúc trong bế tắc.
+
+## 🪞|Đạo đức và giá trị|Ethics and Values
+integrity|n|sự chính trực|She is a woman of great integrity.|Bà ấy là người vô cùng chính trực.
+complicity|n|sự đồng lõa|He denied any complicity in the crime.|Anh ta phủ nhận mọi sự đồng lõa trong vụ án.
+accountable|adj|chịu trách nhiệm|Leaders must be held accountable for their decisions.|Lãnh đạo phải chịu trách nhiệm về quyết định của mình.
+exploitation|n|sự bóc lột|The report exposed the exploitation of child workers.|Bản báo cáo phơi bày sự bóc lột lao động trẻ em.
+transparency|n|sự minh bạch|Voters demand more transparency from the government.|Cử tri đòi chính phủ minh bạch hơn.
+righteous|adj|chính đáng, ngay thẳng|She was filled with righteous anger.|Cô ấy tràn đầy cơn giận chính đáng.
+hypocrisy|n|sự đạo đức giả|He was accused of hypocrisy for flying to a climate conference.|Ông ấy bị chỉ trích là đạo đức giả khi bay tới hội nghị khí hậu.
+scrupulous|adj|cẩn trọng, liêm chính|She is scrupulous about telling the truth.|Cô ấy rất cẩn trọng trong việc nói sự thật.
+unethical|adj|phi đạo đức|Testing cosmetics on animals is considered unethical.|Thử nghiệm mỹ phẩm trên động vật bị coi là phi đạo đức.
+bigotry|n|sự cố chấp, mù quáng|Religious bigotry still exists in many places.|Sự cố chấp tôn giáo vẫn tồn tại ở nhiều nơi.
+ethos|n|tinh thần, đặc tính (của tổ chức)|The school has a strong ethos of community service.|Trường có tinh thần phục vụ cộng đồng mạnh mẽ.
+magnanimous|adj|cao thượng, hào hiệp|She was magnanimous in victory.|Cô ấy cao thượng khi chiến thắng.
+
+## 🔢|Mô tả số liệu chính xác|Describing Data Precisely
+marginal|adj|không đáng kể, rất nhỏ|There was only a marginal increase in sales.|Doanh số chỉ tăng không đáng kể.
+nominal|adj|danh nghĩa; rất nhỏ|Members pay a nominal fee of one dollar.|Thành viên đóng một khoản phí tượng trưng một đô la.
+negligible|adj|không đáng kể|The risk to public health is negligible.|Rủi ro đối với sức khỏe cộng đồng là không đáng kể.
+proportionate|adj|tương xứng|The punishment should be proportionate to the crime.|Hình phạt nên tương xứng với tội danh.
+disproportionate|adj|không cân xứng|The poor spend a disproportionate amount on food.|Người nghèo chi một phần không cân xứng cho thực phẩm.
+plateau|v|chững lại|After years of growth, profits have plateaued.|Sau nhiều năm tăng trưởng, lợi nhuận đã chững lại.
+trough|n|điểm đáy|Unemployment reached a trough in 2019.|Tỉ lệ thất nghiệp chạm đáy vào năm 2019.
+consecutive|adj|liên tiếp|Prices rose for the third consecutive month.|Giá tăng tháng thứ ba liên tiếp.
+cumulative|adj|tích lũy|The cumulative effect of small changes can be huge.|Tác động tích lũy của những thay đổi nhỏ có thể rất lớn.
+tally|n|số đếm, tổng số|The final tally was 52 votes to 48.|Tổng số phiếu cuối cùng là 52 so với 48.
+outnumber|v|đông hơn, vượt về số lượng|Women now outnumber men at the university.|Hiện nữ giới đông hơn nam giới ở trường đại học.
+exponential|adj|theo cấp số nhân|The app has seen exponential growth.|Ứng dụng đã tăng trưởng theo cấp số nhân.
+
+## ✍️|Động từ học thuật|Academic Verbs
+ascertain|v|xác định chắc chắn|Police are trying to ascertain the cause of the fire.|Cảnh sát đang cố xác định nguyên nhân vụ cháy.
+reiterate|v|nhắc lại, nhấn mạnh lại|Let me reiterate the main points.|Tôi xin nhắc lại các ý chính.
+posit|v|đặt ra (giả định), cho rằng|The theory posits that the universe is expanding.|Lý thuyết cho rằng vũ trụ đang giãn nở.
+delineate|v|phác họa, vạch rõ|The report delineates the main risks.|Bản báo cáo vạch rõ các rủi ro chính.
+elucidate|v|làm sáng tỏ|The lecturer elucidated the theory with examples.|Giảng viên làm sáng tỏ lý thuyết bằng ví dụ.
+encompass|v|bao gồm, bao quát|The course encompasses all aspects of design.|Khóa học bao quát mọi khía cạnh của thiết kế.
+necessitate|v|đòi hỏi, cần phải có|The growth of the city will necessitate new schools.|Sự phát triển của thành phố sẽ đòi hỏi có trường học mới.
+ameliorate|v|cải thiện, làm tốt hơn|Steps were taken to ameliorate working conditions.|Các biện pháp đã được đưa ra để cải thiện điều kiện làm việc.
+postulate|v|cho là đúng (làm cơ sở)|Scientists postulate that life began in the oceans.|Các nhà khoa học cho rằng sự sống bắt nguồn từ đại dương.
+underpin|v|làm nền tảng cho|Strong values underpin the company's success.|Những giá trị vững chắc làm nền tảng cho thành công của công ty.
+exemplify|v|là ví dụ tiêu biểu cho|This building exemplifies modern architecture.|Tòa nhà này là ví dụ tiêu biểu cho kiến trúc hiện đại.
+juxtapose|v|đặt cạnh nhau (để so sánh)|The exhibition juxtaposes old and new photographs.|Triển lãm đặt ảnh cũ và mới cạnh nhau để so sánh.
+
+## 🔗|Trạng từ và từ nối nâng cao|Advanced Adverbs and Linkers
+hitherto|adv|cho tới nay|The study revealed hitherto unknown facts.|Nghiên cứu tiết lộ những sự thật cho tới nay chưa ai biết.
+notwithstanding|prep|bất chấp, mặc dù|Notwithstanding the bad weather, the event was a success.|Bất chấp thời tiết xấu, sự kiện vẫn thành công.
+insofar|adv|trong chừng mực (insofar as)|I will help insofar as I can.|Tôi sẽ giúp trong chừng mực có thể.
+whereby|adv|theo đó, nhờ đó|They set up a system whereby students can borrow laptops.|Họ lập ra một hệ thống theo đó sinh viên có thể mượn máy tính.
+henceforth|adv|từ nay về sau|Henceforth, all meetings will be held online.|Từ nay về sau, mọi cuộc họp sẽ diễn ra trực tuyến.
+inadvertently|adv|vô tình, sơ ý|I inadvertently deleted the file.|Tôi vô tình xóa mất tệp.
+predominantly|adv|chủ yếu|The audience was predominantly young.|Khán giả chủ yếu là người trẻ.
+arguably|adv|có thể nói là|She is arguably the best player of her generation.|Có thể nói cô ấy là cầu thủ giỏi nhất thế hệ mình.
+inherently|adv|vốn dĩ|No job is inherently boring.|Không công việc nào vốn dĩ nhàm chán.
+ostensibly|adv|bề ngoài là, nói là|He was ostensibly on a business trip.|Bề ngoài thì anh ta đi công tác.
+thereby|adv|nhờ đó, bằng cách đó|The new road cuts travel time, thereby reducing costs.|Con đường mới rút ngắn thời gian di chuyển, nhờ đó giảm chi phí.
+albeit|conj|mặc dù|The plan worked, albeit slowly.|Kế hoạch đã hiệu quả, mặc dù chậm.
+
+## 💬|Cụm từ và thành ngữ C1|C1 Idioms and Phrases
+a double-edged sword|phrase|con dao hai lưỡi|Social media is a double-edged sword.|Mạng xã hội là con dao hai lưỡi.
+the tip of the iceberg|phrase|phần nổi của tảng băng|These complaints are just the tip of the iceberg.|Những lời phàn nàn này chỉ là phần nổi của tảng băng.
+a vicious circle|phrase|vòng luẩn quẩn|Poverty and poor health form a vicious circle.|Nghèo đói và sức khỏe kém tạo thành một vòng luẩn quẩn.
+come to terms with|phrase|chấp nhận (điều khó khăn)|She is still coming to terms with her loss.|Cô ấy vẫn đang dần chấp nhận mất mát của mình.
+by and large|phrase|nhìn chung|By and large, the project was a success.|Nhìn chung, dự án đã thành công.
+turn a blind eye to|phrase|làm ngơ trước|The authorities turned a blind eye to the problem.|Chính quyền làm ngơ trước vấn đề.
+go to great lengths|phrase|cố gắng hết sức, bất chấp mọi giá|She went to great lengths to help us.|Cô ấy đã cố gắng hết sức để giúp chúng tôi.
+a far cry from|phrase|khác xa với|The final result was a far cry from what we expected.|Kết quả cuối cùng khác xa với những gì chúng tôi mong đợi.
+pave the way for|phrase|mở đường cho|The discovery paved the way for new treatments.|Phát hiện này mở đường cho những phương pháp điều trị mới.
+on the verge of|phrase|bên bờ, sắp sửa|The species is on the verge of extinction.|Loài này đang bên bờ tuyệt chủng.
+the bottom line|phrase|điều cốt lõi|The bottom line is that we need more money.|Điều cốt lõi là chúng ta cần thêm tiền.
+food for thought|phrase|điều đáng suy ngẫm|The lecture gave us plenty of food for thought.|Bài giảng mang lại cho chúng tôi nhiều điều đáng suy ngẫm.

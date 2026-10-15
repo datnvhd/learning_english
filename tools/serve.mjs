@@ -12,6 +12,7 @@
  */
 import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
+import { createReadStream } from 'node:fs';
 import { extname, join, normalize, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { exec } from 'node:child_process';
@@ -24,6 +25,8 @@ const MIME = {
   '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg',
   '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.webp': 'image/webp', '.mp3': 'audio/mpeg', '.woff': 'font/woff', '.woff2': 'font/woff2', '.webmanifest': 'application/manifest+json',
+  // Bộ chấm offline: WebAssembly (Harper, ONNX Runtime, Vosk), mô hình ONNX, từ điển
+  '.wasm': 'application/wasm', '.onnx': 'application/octet-stream', '.gz': 'application/gzip', '.dict': 'text/plain; charset=utf-8', '.txt': 'text/plain; charset=utf-8',
 };
 
 createServer(async (req, res) => {
@@ -42,8 +45,16 @@ createServer(async (req, res) => {
       if (extname(path)) throw new Error('missing');
       file = join(ROOT, 'index.html');
     }
+    const type = MIME[extname(file)] ?? 'application/octet-stream';
+    const size = (await stat(file)).size;
+    // File lớn (mô hình nhận dạng âm vị ~355 MB): gửi theo luồng, cho trình duyệt lưu đệm để lần sau mở nhanh
+    if (size > 5_000_000) {
+      res.writeHead(200, { 'Content-Type': type, 'Content-Length': size, 'Cache-Control': 'public, max-age=604800' });
+      createReadStream(file).pipe(res);
+      return;
+    }
     const body = await readFile(file);
-    res.writeHead(200, { 'Content-Type': MIME[extname(file)] ?? 'application/octet-stream', 'Cache-Control': 'no-cache' });
+    res.writeHead(200, { 'Content-Type': type, 'Cache-Control': 'no-cache' });
     res.end(body);
   } catch {
     res.writeHead(404).end('Not found');
