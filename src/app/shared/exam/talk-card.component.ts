@@ -99,7 +99,7 @@ const CRITERIA_SETS: Record<SpeakingCriteria, { id: string; label: string }[]> =
         @case ('scoring') {
           <div class="scoring">
             <span class="spin" aria-hidden="true"></span>
-            <p>{{ aiGrading() ? 'Gemini đang nghe và chấm bài nói của bạn...' : asrState() === 'loading' ? 'Đang chuẩn bị bộ chấm (lần đầu mất vài giây)...' : 'Máy đang nghe và chấm bài nói của bạn...' }}</p>
+            <p>{{ aiGrading() ? aiLabel() + ' đang nghe và chấm bài nói của bạn...' : asrState() === 'loading' ? 'Đang chuẩn bị bộ chấm (lần đầu mất vài giây)...' : 'Máy đang nghe và chấm bài nói của bạn...' }}</p>
           </div>
         }
         @case ('review') {
@@ -218,8 +218,9 @@ export class TalkCardComponent implements OnDestroy {
   /** true = thiết bị không chạy được bộ nhận dạng -> cho tự đánh giá */
   protected readonly selfRate = signal(false);
   protected readonly asrState = this.speaking.asrState;
-  /** Lần chấm này dùng AI Gemini */
+  /** Lần chấm này dùng AI */
   protected readonly aiGrading = signal(false);
+  protected readonly aiLabel = this.speaking.aiLabel;
 
   private timer: ReturnType<typeof setInterval> | null = null;
   private audio: HTMLAudioElement | null = null;

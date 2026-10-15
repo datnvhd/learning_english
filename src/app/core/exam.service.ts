@@ -35,7 +35,8 @@ import { FULL_TESTS, formatOf } from '../data/exam/tests/catalog';
 import { photoOf } from './photos';
 import { pct, sample, shuffle } from './text-utils';
 import { VocabService } from './vocab.service';
-import { AiFeedback, GeminiService } from './gemini.service';
+import type { AiFeedback } from './ai-grading';
+import { AiService } from './ai.service';
 import { GrammarService } from './grammar.service';
 import { Dictionary, WritingIssue, checkGrammar, checkSpelling, parseDictionary, topicCoverage } from './writing-check';
 import { CefrIndex, buildCefrIndex, cohesion, comparisons, dataMentions, splitSentences, syntaxProfile, vocabProfile } from './language-features';
@@ -61,7 +62,7 @@ export interface EssayAnalysis {
   advice: string[];
   /** Lỗi chính tả / ngữ pháp / trình bày phát hiện được */
   issues: WritingIssue[];
-  /** Nhận xét chi tiết khi bài được chấm bằng AI (Gemini) */
+  /** Nhận xét chi tiết khi bài được chấm bằng AI (Cloudflare Workers AI / Gemini) */
   ai?: AiFeedback;
   /** Thông báo kèm theo (ví dụ: không gọi được AI nên dùng bộ chấm offline) */
   notice?: string;
@@ -209,7 +210,7 @@ export function gradePicSentence(text: string, words: [string[], string[]]): Pic
 @Injectable({ providedIn: 'root' })
 export class ExamService {
   private readonly vocab = inject(VocabService);
-  private readonly gemini = inject(GeminiService);
+  private readonly ai = inject(AiService);
   private readonly grammar = inject(GrammarService);
   private dict: Promise<Dictionary> | null = null;
 
@@ -539,19 +540,19 @@ export class ExamService {
   /** Phân tích bài viết luận và ước tính band IELTS / điểm TOEIC (chỉ mang tính tham khảo) */
   async analyzeEssay(text: string, task: WritingTask): Promise<EssayAnalysis> {
     const local = await this.analyzeEssayOffline(text, task);
-    if (!this.gemini.usable() || !text.trim()) return local;
-    // Chấm bằng AI Gemini (đã bật trong Cài đặt): điểm, tiêu chí, lỗi và nhận xét do AI đưa ra;
+    if (!this.ai.usable() || !text.trim()) return local;
+    // Chấm bằng AI (đã bật trong Cài đặt): điểm, tiêu chí, lỗi và nhận xét do AI đưa ra;
     // số từ / số đoạn vẫn lấy từ phân tích trên máy
     try {
       const exam = task.exam === 'toeic' ? 'toeic' : 'ielts';
-      const ai = await this.gemini.gradeEssay(text.trim(), {
+      const ai = await this.ai.gradeEssay(text.trim(), {
         exam,
         kind: exam === 'toeic' ? (task.task === 1 ? 'TOEIC Writing Questions 6–7: respond to a written request (email)' : 'TOEIC Writing Question 8: opinion essay') : `IELTS Academic Writing Task ${task.task}`,
         prompt: task.prompt, data: task.data, requirements: task.checks?.map((c) => c.label), minWords: task.minWords, maxPoints: task.maxScore,
       });
       return { ...local, band: ai.overall, label: ai.label, score: ai.score, parts: ai.parts, advice: ai.advice, issues: ai.issues, ai: ai.ai };
     } catch (e) {
-      return { ...local, notice: `Không chấm được bằng Gemini (${(e as Error).message}) – đã dùng bộ chấm offline.` };
+      return { ...local, notice: `Không chấm được bằng ${this.ai.label()} (${(e as Error).message}) – đã dùng bộ chấm offline.` };
     }
   }
 

@@ -66,7 +66,7 @@ export interface ChildResult {
           <section class="fb fade-up">
             @if (a.notice) { <p class="notice"><app-icon name="alert-triangle" /> {{ a.notice }}</p> }
             <h3>{{ task().exam === 'toeic' ? 'Điểm ước tính' : 'Band ước tính' }}: <b class="band">{{ task().exam === 'toeic' ? a.label : a.band.toFixed(1) }}</b>
-              @if (a.ai) { <span class="aib"><app-icon name="sparkles" /> Gemini</span> }</h3>
+              @if (a.ai) { <span class="aib"><app-icon name="sparkles" /> AI</span> }</h3>
             @if (a.ai?.summary) { <p class="sum">{{ a.ai!.summary }}</p> }
             @if (a.ai?.strengths?.length) {
               <div class="strong"><b><app-icon name="circle-check" /> Điểm mạnh</b><ul>@for (t of a.ai!.strengths; track $index) { <li>{{ t }}</li> }</ul></div>
@@ -97,7 +97,7 @@ export interface ChildResult {
             @if (a.ai?.improved) {
               <details class="imp"><summary><app-icon name="wand" /> Bài viết gợi ý (nâng cấp từ bài của bạn)</summary><p>{{ a.ai!.improved }}</p></details>
             }
-            <p class="muted tiny">{{ a.ai ? 'Chấm bởi AI Google Gemini (' + a.ai.model + ') – AI có thể nhầm, điểm chỉ để tham khảo.' : 'Đây là phân tích tự động trên máy để tham khảo, không phải điểm chính thức. Bật "Chấm điểm bằng AI" trong Cài đặt để có nhận xét chi tiết hơn.' }}</p>
+            <p class="muted tiny">{{ a.ai ? 'Chấm bởi ' + (a.ai.provider ?? 'Google Gemini') + ' (' + a.ai.model + ') – AI có thể nhầm, điểm chỉ để tham khảo.' : 'Đây là phân tích tự động trên máy để tham khảo, không phải điểm chính thức. Bật "Chấm điểm bằng AI" trong Cài đặt để có nhận xét chi tiết hơn.' }}</p>
 
             <button class="btn btn-soft btn-sm" type="button" (click)="showModel.set(!showModel())"><app-icon name="book-2" /> {{ showModel() ? 'Ẩn' : 'Xem' }} bài mẫu</button>
             @if (showModel()) {

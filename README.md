@@ -79,11 +79,17 @@ Mọi thứ app cần đều đã được tải về và nằm trong thư mục
      giọng, câu hỏi Yes/No lên giọng).
   5. *Hiệu chỉnh* (`core/calibration.spec.ts`): bài mẫu band cao, bài người học band ~4 và ~5.5, bài mẫu bị cắt ngắn / chèn lỗi
      phải được xếp đúng khoảng band và đúng thứ tự. Chạy lại tệp này sau khi chỉnh ngưỡng trong `rubric.ts`.
-- **Chấm bằng AI Google Gemini (tùy chọn, cần Internet)** – `core/gemini.service.ts`: bật trong Cài đặt › Chấm điểm bằng AI,
-  dán API key Gemini (aistudio.google.com/api-keys), chọn model (mặc định `gemini-3.8-flash`). Bản ghi âm Speaking / bài Writing
-  được gửi tới Gemini API (`generateContent`, kết quả JSON theo schema) để chấm theo tiêu chí IELTS/TOEIC và nhận xét chi tiết:
-  điểm từng tiêu chí, lỗi kèm cách sửa, lỗi phát âm từng từ, bài mẫu nâng cấp. API key chỉ lưu ở localStorage của thiết bị
-  (không nằm trong file sao lưu). Tắt / mất mạng / lỗi gọi API → tự dùng bộ chấm offline bên dưới.
+- **Chấm bằng AI (tùy chọn, cần Internet)** – bật trong Cài đặt › Chấm điểm bằng AI, chọn nhà cung cấp (`core/ai.service.ts`):
+  - **Cloudflare Workers AI** (mặc định, `core/cloudflare-ai.service.ts`): app gọi Worker của bạn trong `cloudflare/worker`
+    (triển khai miễn phí: `cd cloudflare/worker && npx wrangler login && npx wrangler deploy`, xem `cloudflare/worker/README.md`).
+    Worker dùng **Whisper large v3 turbo** chép lời bài nói (app gửi WAV 16 kHz) và **Llama 3.3 70B** chấm theo tiêu chí, trả JSON.
+    Llama không nghe được âm thanh nên bài nói được chấm từ bản chép lời + số đo của bộ chấm offline (độ chính xác âm vị,
+    từ đọc sai, ngữ điệu, tốc độ, ngập ngừng); phần tô màu từng từ / phát âm từng âm / ngữ điệu của máy vẫn hiển thị kèm.
+    Trình duyệt không gọi thẳng `api.cloudflare.com` được (CORS) nên cần Worker; Worker gọi Workers AI qua binding, không cần token.
+    Có thể đặt `APP_TOKEN` để khóa Worker. Hạn mức miễn phí 10.000 neurons/ngày.
+  - **Google Gemini** (`core/gemini.service.ts`): dán API key (aistudio.google.com/api-keys); Gemini nghe trực tiếp bản ghi âm.
+  - Prompt, schema JSON và quy đổi kết quả dùng chung ở `core/ai-grading.ts`. Địa chỉ Worker / mã truy cập / API key chỉ lưu ở
+    localStorage của thiết bị (không nằm trong file sao lưu). Tắt / mất mạng / lỗi gọi API → tự dùng bộ chấm offline bên dưới.
 - **Chấm Writing tự động, offline** (`core/writing-check.ts`): bắt lỗi chính tả (từ điển ENABLE), lỗi ngữ pháp thường gặp
   (a/an, hòa hợp chủ ngữ – động từ, động từ sau can/did, so sánh kép, danh từ không đếm được...), trình bày (viết hoa, dấu câu)
   và mức độ bám đề (từ khóa của đề, hạng mục bảng số liệu Task 1); hiện danh sách lỗi kèm cách sửa.

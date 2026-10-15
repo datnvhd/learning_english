@@ -55,7 +55,7 @@ export const OFFLINE_PACK: OfflineGroup[] = [
     "id": "phoneme",
     "label": "Mô hình nhận dạng âm vị (chấm phát âm từng âm)",
     "files": 7,
-    "bytes": 358841017
+    "bytes": 358976437
   },
   {
     "id": "ort",

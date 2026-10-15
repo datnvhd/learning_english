@@ -260,7 +260,8 @@ export class WordSheetComponent {
   @HostListener('document:keydown.escape')
   protected close(): void {
     if (!this.word()) return;
-    this.speech.cancel();
+    this.speech.cancel();
+
     void this.recog.stopRecording();
     this.reset();
     this.ux.closeWord();
@@ -301,7 +302,7 @@ export class WordSheetComponent {
     if (this.recording()) {
       this.recUrl.set(await this.recog.stopRecording());
       this.recording.set(false);
-      this.feedback.set(this.speaking.usesAi() ? 'Gemini đang nghe và chấm phát âm...' : 'Máy đang nghe và chấm phát âm...');
+      this.feedback.set(this.speaking.usesAi() ? this.speaking.aiLabel() + ' đang nghe và chấm phát âm...' : 'Máy đang nghe và chấm phát âm...');
       const grade = await this.speaking.gradeReading(w.word);
       this.busy.set(false);
       if (!grade.ok) {

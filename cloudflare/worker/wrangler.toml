@@ -1,0 +1,13 @@
+# Cloudflare Worker chấm điểm bằng Workers AI cho English Master – xem README.md cùng thư mục
+name = "english-master-ai"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Binding Workers AI (không cần API token)
+[ai]
+binding = "AI"
+
+[vars]
+# Trang web được phép gọi Worker, phân tách bằng dấu phẩy. "*" = mọi nơi (kể cả app chạy ở http://localhost).
+# Ví dụ giới hạn: "https://english-master.pages.dev,http://localhost:4300"
+ALLOWED_ORIGINS = "*"

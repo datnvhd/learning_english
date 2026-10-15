@@ -15,7 +15,7 @@ import { IconComponent } from '../theme/icon.component';
     <section class="sr">
       @if (s.notice) { <p class="notice"><app-icon name="alert-triangle" /> {{ s.notice }}</p> }
       <div class="top">
-        <span class="lbl">{{ title() }} @if (s.ai) { <span class="aib"><app-icon name="sparkles" /> Gemini</span> }</span>
+        <span class="lbl">{{ title() }} @if (s.ai) { <span class="aib"><app-icon name="sparkles" /> AI</span> }</span>
         <b class="big" [class.low]="s.overall < 0.5" [class.mid]="s.overall >= 0.5 && s.overall < 0.75">{{ s.label }}</b>
       </div>
 
@@ -70,7 +70,7 @@ import { IconComponent } from '../theme/icon.component';
         @if (ai.improved) {
           <details class="blk imp"><summary><app-icon name="wand" /> Bài nói gợi ý (nâng cấp từ câu trả lời của bạn)</summary><p>{{ ai.improved }}</p></details>
         }
-        <p class="muted tiny"><app-icon name="info-circle" /> Chấm bởi AI Google Gemini ({{ ai.model }}) – AI có thể nhầm, điểm chỉ để tham khảo.</p>
+        <p class="muted tiny"><app-icon name="info-circle" /> Chấm bởi {{ ai.provider ?? 'Google Gemini' }} ({{ ai.model }}) – AI có thể nhầm, điểm chỉ để tham khảo.</p>
       } @else {
         @if (s.pron; as pr) {
         <div class="blk pr">

@@ -11,7 +11,7 @@
  *  Đây là ƯỚC TÍNH bằng máy để luyện tập, không thay thế giám khảo: máy không hiểu ý nghĩa sâu
  *  của câu trả lời, nên nhóm "nội dung" chỉ dựa vào độ dài và mức trùng từ khóa với đề/bài mẫu.
  */
-import type { AiFeedback } from './gemini.service';
+import type { AiFeedback } from './ai-grading';
 import type { PronResult } from './phoneme-score';
 import type { ProsodyResult } from './prosody';
 import { CefrIndex, cohesion, syntaxProfile, vocabProfile } from './language-features';
@@ -73,7 +73,7 @@ export interface SpeakScore {
   wpm: number;
   pauses: number;
   advice: string[];
-  /** Nhận xét chi tiết khi bài được chấm bằng AI (Gemini) */
+  /** Nhận xét chi tiết khi bài được chấm bằng AI */
   ai?: AiFeedback;
   /** Thông báo kèm theo (ví dụ: không gọi được AI nên dùng bộ chấm offline) */
   notice?: string;

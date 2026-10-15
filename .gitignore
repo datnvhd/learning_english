@@ -48,3 +48,7 @@ Thumbs.db
 # WebAssembly sao chép từ node_modules lúc build/start (tools/copy-wasm.mjs)
 /public/assets/harper/
 /public/assets/ort/
+
+# Cloudflare Worker (wrangler)
+/cloudflare/worker/.wrangler/
+/cloudflare/worker/node_modules/

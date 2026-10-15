@@ -550,7 +550,7 @@ export class QuizRunnerComponent implements OnInit, OnDestroy {
     if (this.speakState() === 'recording') {
       this.recUrl.set(await this.recog.stopRecording());
       this.speakState.set('scoring');
-      this.speakMsg.set(this.speaking.usesAi() ? 'Gemini đang nghe và chấm phát âm...' : this.speaking.asrState() === 'loading' ? 'Đang chuẩn bị bộ chấm (lần đầu mất vài giây)...' : 'Máy đang nghe và chấm phát âm...');
+      this.speakMsg.set(this.speaking.usesAi() ? this.speaking.aiLabel() + ' đang nghe và chấm phát âm...' : this.speaking.asrState() === 'loading' ? 'Đang chuẩn bị bộ chấm (lần đầu mất vài giây)...' : 'Máy đang nghe và chấm phát âm...');
       const grade = await this.speaking.gradeReading(q.target);
       if (this.speakQ() !== q) return; // đã chuyển câu khác trong lúc chấm
       if (grade.ok) {
